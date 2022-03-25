@@ -1,0 +1,10 @@
+baseURL: "https://data-dev.dckube.scilifelab.se/"
+languageCode: "en-us"
+title: "SciLifeLab Data Platform - hub for data-drive life science research in Sweden"
+params:
+  title: "SciLifeLab Data"
+  description: "SciLifeLab Data Platform - hub for data-drive life science research in Sweden"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

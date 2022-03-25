@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-8">
+      <div class="row">
+          <div class="col">
+            {{ .Content }}
+          </div>
+      </div>
+    </div>
+
+    <div class="col border rounded small mb-2">
+
+        <div class="row mb-1 mt-2">
+          <div class="col">
+            <h5>News</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              {{ range first 4 $.Site.Data.news_items }}
+              <div class="row">
+                <div class="col small">
+                  {{ .date }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                <h6>{{ .title }}</h6>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col mb-2 pb-2">
+                  {{ .description | markdownify }}
+                </div>
+              </div>
+              {{ end }}
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <a href="/news">See all news items <i class="bi bi-arrow-right-circle"></i></a>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+{{ end }}

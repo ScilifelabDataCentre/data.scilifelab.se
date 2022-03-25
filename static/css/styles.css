@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Brand colors
+  use 1, 0.75, 0.50, or 0.25
+  color: rgba(167, 201, 71, 1);  lime
+  color: rgba(73, 31, 83, 1);  grape, use as "color pop" or on smaller details
+  color: rgba(4, 92, 100, 1);  teal
+  color: rgba(76, 151, 159, 1); aqua
+
+  shades of black between 5-90% used as complementary colors
+  color: rgba(229, 229, 229, 1); light grey
+  color: rgba(166,166,166, 1); medium grey
+  color: rgba(63,63,63,1); dark grey
+*/
+
+body {
+    font-family: 'Lato', Times, Arial;
+}
