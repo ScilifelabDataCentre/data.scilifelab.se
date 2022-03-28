@@ -1,5 +1,7 @@
-<header>
-  <div class="container border">
-    header
+{{ if not .IsHome }}
+<header class="header mb-3" style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image}}{{ else }}/img/illustrations/test13.png{{ end }}');">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
   </div>
 </header>
+{{ end }}

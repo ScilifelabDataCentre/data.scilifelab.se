@@ -1,5 +1,7 @@
 ---
 title: Service catalogue
+cascade:
+  header_image: /img/illustrations/test10.png
 menu:
     navbar:
         name: Services
