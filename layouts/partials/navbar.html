@@ -14,7 +14,7 @@
           {{ range .Site.Menus.navbar_top }}
             <li class="nav-item"><a class="nav-link" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
           {{ end }}
-          <li class="nav-item nav-languages"><a class="nav-link" href="{{ .Page.RelPermalink }}"><span lang="#">en <img src="https://covid19dataportal.se/img/flag-en.svg" alt=""></span></a></li>
+          <li class="nav-item nav-languages"><a class="nav-link" href="{{ if eq .Page.RelPermalink "/sv/" }}/{{ else }}{{ .Page.RelPermalink }}{{ end }}"><span lang="#">en <img src="https://covid19dataportal.se/img/flag-en.svg" alt=""></span></a></li>
           <li class="nav-item nav-languages"><a class="nav-link" href="/sv"><span lang="#">sv <img src="https://covid19dataportal.se/img/flag-sv.svg" alt=""></span></a></li>
         </ul>
       </div>
