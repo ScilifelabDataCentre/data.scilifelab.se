@@ -23,6 +23,7 @@ body {
     background-size: cover;
     padding: 1.5rem 0;
     color: rgba(229, 229, 229, 1);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 .navbar-nav.navbar-top li:not(:first-child) a {

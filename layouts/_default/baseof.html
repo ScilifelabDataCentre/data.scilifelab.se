@@ -6,10 +6,7 @@
         {{- partial "header.html" . -}}
         {{- block "header" . }}{{- end }}
         <main>
-          <div class="container content border" id="content">
-            <!-- <div class="alert alert-info mx-5" role="alert">
-              <i class="bi bi-exclamation-circle"></i> The SciLifeLab Data Platform as well as this website are currently under development. At this point, this site contains information about the planned environment & news regarding the development process.
-            </div> -->
+          <div class="container" id="content">
                   {{ if .Params.toc }}
                           <div class="row">
                               <div class="col-md-3 order-md-first toc small">{{- partial "toc.html" . -}}</div>

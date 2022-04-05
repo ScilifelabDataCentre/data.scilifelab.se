@@ -8,20 +8,20 @@
 
 <div class="row mt-3">
   <div class="col">
-      {{ range $.Site.Data.news_items }}
+      {{ range .RegularPages }}
       <div class="row">
         <div class="col small">
-          {{ .date }}
+          {{ .Date }}
         </div>
       </div>
       <div class="row">
         <div class="col">
-        <h6>{{ .title }}</h6>
+        <h6>{{ .Title }}</h6>
       </div>
     </div>
       <div class="row">
         <div class="col mb-2 pb-2">
-          {{ .description | markdownify }}
+          {{ .Content }}
         </div>
       </div>
       {{ end }}

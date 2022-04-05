@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section>
+  <div>
+    {{ with .Site.GetPage "section" "highlights" }}{{ .Content }}{{ end }}
+    <h3>Data highlights marked with tag: {{ .Title }}</h3>
+  <div>
+</section>
+
+<section>
+  {{ .Scratch.Set "highlights_list" .RegularPages }}
+  {{ partial "highlights_cards.html" . }}
+</section>
+
+{{ end }}

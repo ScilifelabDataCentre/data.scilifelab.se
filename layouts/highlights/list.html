@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+<section>
+  <div>
+    {{ .Content }}</div>
+</section>
+
+<section>
+  <div>
+      <div class="row row-cols-md-2 g-2 g-lg-3">
+        {{ range .RegularPages }}
+        <div class="col">
+          <div class="border rounded">
+            <div>
+              <img class="img-fluid rounded-top" src="{{ .Params.banner }}">
+            </div>
+            <div class="px-2 text-muted">
+              {{ .Date | time.Format ":date_long" }}
+            </div>
+            <div class="px-2 mb-2">
+              <h5><a href="{{ .Page.RelPermalink }}">{{ .Title }}</a></h5>
+            </div>
+            <div class="px-2 mb-2">{{ .Summary }}</div>
+            <div class="px-2 mb-2">{{ range (.GetTerms "tags") }}
+                      <span class="badge bg-light"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+                      {{ end }}</div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+</section>
+
+{{ end }}

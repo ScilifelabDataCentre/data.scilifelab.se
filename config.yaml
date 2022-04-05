@@ -4,7 +4,24 @@ title: "SciLifeLab Data Platform - hub for data-drive life science research in S
 params:
   title: "SciLifeLab Data"
   description: "SciLifeLab Data Platform - hub for data-drive life science research in Sweden"
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+taxonomies:
+  tag: tags
+  author: authors
+
+permalinks:
+  tags: "/highlights/tags/:slug/"
+  authors: "/highlights/authors/:slug/"
+
+related:
+  includeNewer: false
+  indices:
+  - name: tags
+    weight: 100
+  threshold: 80
+  toLower: false

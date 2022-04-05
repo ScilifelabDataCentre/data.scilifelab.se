@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section>
+<div><h2>{{ .Title }}</h2></div>
+<div class="text-muted mb-1">Published on: {{ .Date | time.Format ":date_long" }}. Written by: {{ range (.GetTerms "authors") }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>
+
+<figure class="figure float-start me-3 w-50">
+  <img src="{{ if (isset .Params "banner_large") }}{{ .Params.banner_large }}{{ else }}{{ .Params.banner }}{{ end }}" alt="{{ .Title }}" class="img-thumbnail">
+  <figcaption class="figure-caption mt-1"><i>{{ .Params.banner_caption | markdownify }}</i></figcaption>
+</figure>
+
+{{ .Content }}
+
+<div class="mb-2 fs-5"><b>Tags:</b> {{ range (.GetTerms "tags") }}
+  <span class="badge bg-light"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+  {{ end }}</div>
+
+<div class="mb-2 fs-5"><b>Share this:</b>
+  <a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Data%20highlight%20on%20the%20SciLifeLab%20Data%20Platform:%20{{ .Title }}, {{ .Permalink }}"><i class="bi bi-twitter me-2"></i></a>
+  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"><i class="bi bi-linkedin me-2"></i></a>
+  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"><i class="bi bi-facebook me-2"></i></a>
+</div>
+</section>
+
+{{ $related := site.RegularPages.Related . }}
+
+{{ if $related }}
+<section>
+  <div class="mt-4">
+    <h3>Similar data highlights</h3>
+    {{ .Scratch.Set "highlights_list" $related }}
+    {{ partial "highlights_cards.html" . }}
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

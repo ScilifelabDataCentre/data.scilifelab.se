@@ -2,8 +2,41 @@
 
 {{ .Content }}
 
-<!--
-Include: name, description, who is taking care of it/who is developing it, support contact info
--->
+<div class="row g-2 mb-5">
+{{ range .Site.Data.services }}
+  <div class="col-md-6 col-lg-4">
+    <div class="p-3 border rounded">
+      <div class="d-flex justify-content-between">
+        <div>
+          {{ if in .type "tool" }}<i class="bi bi-gear-fill"></i> {{ end }}
+          {{ if in .type "database" }}<i class="bi bi-server"></i> {{ end }}
+          {{ if in .type "portal" }}<i class="bi bi-grid-1x2-fill"></i> {{ end }}
+          <h5>{{ .name }}</h5>
+        </div>
+        <div class="w-25 mx-1">
+          <img class="img-fluid" src="{{ if .logo_location }}{{ .logo_location}}{{ else }}/img/service_logos/default.png{{ end }}" alt="{{ .name }}">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          {{ .description }}
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <b>Maintained by:</b> {{ if .maintained_by_url}}<a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>{{ else }}{{ .maintained_by }}{{ end }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <b>Support:</b> {{ if .support_email }}<a href="mailto:{{ .support_email }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+          {{ if .support_website }}<a href="{{ .support_website }}"><i class="bi bi-globe"></i></a> {{ end }}
+          {{ if .support_github }}<a href="{{ .support_github }}"><i class="bi bi-github"></i></a> {{ end }}
+        </div>
+      </div>
+  </div>
+  </div>
+{{ end }}
+</div>
 
 {{ end }}
