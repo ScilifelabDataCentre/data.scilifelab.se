@@ -7,14 +7,14 @@
 
 <section>
   <div>
-      <div class="row row-cols-md-2 g-2 g-lg-3">
+      <div class="row g-2 g-lg-3">
         {{ range .RegularPages }}
-        <div class="col">
+        <div class="col-md-4">
           <div class="border rounded">
             <div>
               <img class="img-fluid rounded-top" src="{{ .Params.banner }}">
             </div>
-            <div class="px-2 text-muted">
+            <div class="px-2 my-1 text-muted">
               {{ .Date | time.Format ":date_long" }}
             </div>
             <div class="px-2 mb-2">
@@ -22,7 +22,7 @@
             </div>
             <div class="px-2 mb-2">{{ .Summary }}</div>
             <div class="px-2 mb-2">{{ range (.GetTerms "tags") }}
-                      <span class="badge bg-light"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+                      <span class="badge highlight-tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
                       {{ end }}</div>
           </div>
         </div>

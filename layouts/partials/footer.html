@@ -4,26 +4,25 @@
       <div class="col-6 col-md">
         <h6>Services</h6>
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Overview</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Hosting a service</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Development support</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Platform news</a></li>
+          {{ range .Site.Menus.bottom_services }}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+          {{ end }}
         </ul>
       </div>
       <div class="col-6 col-md">
         <h6>Community</h6>
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Data Highlights</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Events</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Training</a></li>
+          {{ range .Site.Menus.bottom_community }}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+          {{ end }}
         </ul>
       </div>
       <div class="col-6 col-md">
         <h6>About</h6>
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">About us</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Contact form</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">På svenska</a></li>
+          {{ range .Site.Menus.bottom_about }}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+          {{ end }}
         </ul>
         <div class="d-flex">
               <a class="p-2" style="font-size:1.5em;" target="_blank" href="https://twitter.com/scilifelab_DC"><i class="bi bi-twitter"></i></a>

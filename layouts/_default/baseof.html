@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
     {{- partial "head.html" . -}}
-    <body class="bg-light">
+    <body>
         {{- partial "navbar.html" . -}}
         {{- partial "header.html" . -}}
         {{- block "header" . }}{{- end }}
         <main>
           {{ if .IsHome }}
-          <section style="background-image: url('/img/illustrations/test7.png'); color: white; ">
+          <section style="background-image: url('/img/illustrations/circle_zoomed.png'); color: white; ">
             <div class="container" >
               <div class="row p-4">
-              <div class="col-md-4">
-
-              </div>
               <div class="col-md-8">
                 {{ .Content }}
+              </div>
+              <div class="col-md-4">
+
               </div>
             </div>
           </div>

@@ -4,12 +4,36 @@
   <div class="row mt-4">
     <div class="col-md-8 py-2">
       {{ with .Site.GetPage "section" "services" }}
-      <h3>Tools & Databases <i class="bi bi-arrow-right-square"></i></h3>
+      <h3><a href="{{ .RelPermalink }}">Tools & Databases <i class="bi bi-arrow-right-square"></i></a></h3>
       {{ end }}
+      <div class="row g-2">
+      {{ range .Site.Data.services }}
+        <div class="col-6 col-lg-4">
+          <div class="p-3 border rounded">
+            <div class="d-flex justify-content-between">
+              <div>
+                {{ if in .type "tool" }}<i class="bi bi-gear-fill service-types"></i> {{ end }}
+                {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
+                {{ if in .type "portal" }}<i class="bi bi-grid-1x2-fill service-types"></i> {{ end }}
+                {{ .name }}
+              </div>
+              {{ if .logo_location }}<div class="w-25 mx-1">
+                <img class="img-fluid" src="{{ .logo_location}}" alt="{{ .name }}">
+              </div>{{ end }}
+            </div>
+        </div>
+        </div>
+      {{ end }}
+      </div>
+      <div class="row">
+        <div class="col fs-6 text-end">
+          <a href="{{ .RelPermalink }}">See all services <i class="bi bi-arrow-right-square"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4 py-2 border rounded">
+    <div class="col-md-3 ms-auto py-2">
       {{ with .Site.GetPage "section" "news" }}
-      <h3>{{ .Title }} <i class="bi bi-arrow-right-square"></i></h3>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
       <div class="row small mb-2">
         <div class="col">
           {{ range first 3 .RegularPages }}
@@ -38,9 +62,9 @@
 
 <section>
   {{ with .Site.GetPage "section" "highlights" }}
-  <div class="row mt-4">
+  <div class="row mt-4 mb-1 mb-md-0">
     <div class="col">
-      <h3>{{ .Title }} <i class="bi bi-arrow-right-square"></i></h3>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
     </div>
   </div>
   {{ $latest_highlights := first 4 (where .RegularPages "Section" "highlights") }}
@@ -56,9 +80,9 @@
 
 <section>
   {{ with .Site.GetPage "section" "events" }}
-  <div class="row mt-4">
+  <div class="row mt-4 mb-1 mb-md-0">
     <div class="col">
-      <h3>{{ .Title }} <i class="bi bi-arrow-right-square"></i></h3>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
     </div>
   </div>
   <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
@@ -73,10 +97,10 @@
       <div class="p-2 border rounded">
         <div class="d-flex justify-content-between">
           <div>
-            [{{ .Params.type }}]
+            <span class="badge event-type mb-1">{{ .Params.type }}</span>
             <h6>{{ .Title }}</h6>
           </div>
-          <div class="px-2 m-2 d-flex flex-column bg-success rounded">
+          <div class="px-2 m-2 d-flex flex-column event-date rounded">
             <div class="px-1 fs-4 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
             <div class="pb-1 px-1 small mx-auto">{{ time.Format "January" .Params.date_start }}</div>
           </div>
@@ -94,7 +118,7 @@
 </section>
 
 <section>
-  <div class="row mt-4">
+  <div class="row mt-4 mb-1 mb-md-0">
     <div class="col">
       <h3>Datasets recently published in the SciLifeLab Data Repository</h3>
     </div>

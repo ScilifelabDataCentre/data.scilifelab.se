@@ -11,15 +11,25 @@
 
 {{ .Content }}
 
-<div class="mb-2 fs-5"><b>Tags:</b> {{ range (.GetTerms "tags") }}
-  <span class="badge bg-light"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
-  {{ end }}</div>
+<div class="row">
+  <div class="col-md">
+    <div class="mb-2"><span class="fs-5"><b>Tags:</b></span> {{ range (.GetTerms "tags") }}
+      <span class="badge highlight-tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+      {{ end }}</div>
+  </div>
 
-<div class="mb-2 fs-5"><b>Share this:</b>
-  <a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Data%20highlight%20on%20the%20SciLifeLab%20Data%20Platform:%20{{ .Title }}, {{ .Permalink }}"><i class="bi bi-twitter me-2"></i></a>
-  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"><i class="bi bi-linkedin me-2"></i></a>
-  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"><i class="bi bi-facebook me-2"></i></a>
+  <div class="col-md text-md-end">
+    <div class="mb-2 fs-5"><b>Share this:</b>
+      <a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Data%20highlight%20on%20the%20SciLifeLab%20Data%20Platform:%20{{ .Title }}, {{ .Permalink }}"><i class="bi bi-twitter me-2"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"><i class="bi bi-linkedin me-2"></i></a>
+      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"><i class="bi bi-facebook me-2"></i></a>
+    </div>
+  </div>
+
 </div>
+
+
+
 </section>
 
 {{ $related := site.RegularPages.Related . }}

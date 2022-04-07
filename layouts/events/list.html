@@ -17,11 +17,11 @@
       <div class="p-3 border rounded">
         <div class="d-flex justify-content-between">
           <div>
-            [{{ .Params.type }}]
-            <h5><a class="text-decoration-underline" role="button" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">{{ .Title }}</a></h5>
+            <span class="badge event-type mb-1">{{ .Params.type }}</span>
+            <h5><a class="" role="button" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">{{ .Title }}</a></h5>
             <!-- <h5><a target="_blank" href="{{ .Params.event_url }}">{{ .Title }}</a></h5> -->
           </div>
-          <div class="px-2 m-2 d-flex flex-column bg-success rounded">
+          <div class="px-2 m-2 d-flex flex-column rounded event-date">
             <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
             <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .Params.date_start }}</div>
           </div>
@@ -43,8 +43,8 @@
         </div>{{ end }}
         <div class="row mt-3">
           <div class="col">
-            <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">
-              Details
+            <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">
+              See details
             </button>
             <div class="modal fade" id="descriptionModal{{ $ind }}" tabindex="-1" aria-labelledby="descriptionModalLabel{{ $ind }}" aria-hidden="true">
               <div class="modal-dialog">
@@ -56,7 +56,7 @@
                   <div class="modal-body">
                     <div class="row">
                       <div class="col">
-                        <b>Event type:</b> {{ .Params.type }}
+                        <b>Event type:</b> <span class="badge event-type mb-1">{{ .Params.type }}</span>
                       </div>
                     </div>
                     <div class="row mt-1">

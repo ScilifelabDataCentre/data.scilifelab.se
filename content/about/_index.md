@@ -5,6 +5,10 @@ menu:
         name: About
         identifier: about
         weight: 10
+    bottom_about:
+        name: About us
+        identifier: about
+        weight: 10
 toc: True
 ---
 
@@ -16,28 +20,16 @@ The SciLifeLab Data Platform is built and maintained by the [SciLifeLab Data Cen
 
 The data platform is primarily funded and steered by [SciLifeLab](https://www.scilifelab.se/) and the [Wallenberg National Program on Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven).
 
+### Partner organizations
+
+The Data-Driven Life Science programme is [...]
+
 <div class="container-sm">
   <div class="row">
-  <div class="d-flex justify-content-center">
+  <div class="d-flex">
     <div class="col-lg-8">
       <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid">
     </div>
   </div>
   </div>
 </div>
-
-## Second level. Second level. Second level.
-
-### Third level
-
-### Hello
-
-#### Fourth level
-
-## Another second
-
-## Third second
-
-### Some info here
-
-#### Another fourth level
