@@ -8,9 +8,9 @@
     <div class="p-3 border rounded">
       <div class="d-flex justify-content-between">
         <div>
-          {{ if in .type "tool" }}<i class="bi bi-gear-fill service-types"></i> {{ end }}
+          {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
           {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
-          {{ if in .type "portal" }}<i class="bi bi-grid-1x2-fill service-types"></i> {{ end }}
+          {{ if in .type "portal" }}<i class="bi bi-window service-types"></i> {{ end }}
           <h5>{{ .name }}</h5>
         </div>
         {{ if .logo_location }}<div class="w-25 mx-1">

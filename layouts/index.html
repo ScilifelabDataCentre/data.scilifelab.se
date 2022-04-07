@@ -12,9 +12,9 @@
           <div class="p-3 border rounded">
             <div class="d-flex justify-content-between">
               <div>
-                {{ if in .type "tool" }}<i class="bi bi-gear-fill service-types"></i> {{ end }}
+                {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
                 {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
-                {{ if in .type "portal" }}<i class="bi bi-grid-1x2-fill service-types"></i> {{ end }}
+                {{ if in .type "portal" }}<i class="bi bi-window service-types"></i> {{ end }}
                 {{ .name }}
               </div>
               {{ if .logo_location }}<div class="w-25 mx-1">
@@ -33,7 +33,7 @@
     </div>
     <div class="col-md-3 ms-auto py-2">
       {{ with .Site.GetPage "section" "news" }}
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
+      <h3><a href="{{ .RelPermalink }}">News <i class="bi bi-arrow-right-square"></i></a></h3>
       <div class="row small mb-2">
         <div class="col">
           {{ range first 3 .RegularPages }}

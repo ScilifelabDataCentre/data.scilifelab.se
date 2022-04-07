@@ -2,7 +2,7 @@
 title: Service catalogue
 description: Overview of services available through the SciLifeLab Data Platform.
 cascade:
-  header_image: /img/illustrations/test10.png
+  header_image: /img/illustrations/gears.png
 menu:
     navbar:
         name: Services

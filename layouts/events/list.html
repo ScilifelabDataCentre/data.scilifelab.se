@@ -3,109 +3,134 @@
 <section>
   <div>
     {{ .Content }}</div>
-</section>
+  </section>
 
-<section>
-  <div class="row g-2 mb-5">
-  {{ $events := sort .RegularPages ".Params.date_start" "asc" }}
-  {{ range $ind, $cont := $events }}
-
-  {{/* Potentially different colors of the calendar icon depending on the event type */}}
-
-  {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
-    <div class="col-md-6 col-lg-4">
-      <div class="p-3 border rounded">
-        <div class="d-flex justify-content-between">
-          <div>
-            <span class="badge event-type mb-1">{{ .Params.type }}</span>
-            <h5><a class="" role="button" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">{{ .Title }}</a></h5>
-            <!-- <h5><a target="_blank" href="{{ .Params.event_url }}">{{ .Title }}</a></h5> -->
-          </div>
-          <div class="px-2 m-2 d-flex flex-column rounded event-date">
-            <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
-            <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .Params.date_start }}</div>
+  <section>
+    <div class="my-2 text-end">
+      <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
+        Submit an event
+      </button>
+      </div>
+      <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suggestionModalLabel">Events & training suggestion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              [Form will go here]
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-aqua">Submit</button>
+            </div>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col">
-            <b>Date and time:</b> {{ .Params.date_start | time.Format ":date_medium" }}{{ if .Params.time_start }} {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} - {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }} {{ .Params.time_end }}{{ end }}
+      </div>
+  </section>
+
+  <section>
+    <div class="row g-2 mb-5">
+      {{ $events := sort .RegularPages ".Params.date_start" "asc" }}
+      {{ range $ind, $cont := $events }}
+
+      {{/* Potentially different colors of the calendar icon depending on the event type */}}
+
+      {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 border rounded">
+          <div class="d-flex justify-content-between">
+            <div>
+              <span class="badge event-type mb-1">{{ .Params.type }}</span>
+              <h5><a class="" role="button" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">{{ .Title }}</a></h5>
+              <!-- <h5><a target="_blank" href="{{ .Params.event_url }}">{{ .Title }}</a></h5> -->
+            </div>
+            <div class="px-2 m-2 d-flex flex-column rounded event-date">
+              <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
+              <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .Params.date_start }}</div>
+            </div>
           </div>
-        </div>
-        {{ if .Params.organisers }}<div class="row">
-          <div class="col">
-            <b>Organiser(s):</b> {{ .Params.organisers }}
+          <div class="row mt-3">
+            <div class="col">
+              <b>Date and time:</b> {{ .Params.date_start | time.Format ":date_medium" }}{{ if .Params.time_start }} {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} - {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }} {{ .Params.time_end }}{{ end }}
+            </div>
           </div>
-        </div>{{ end }}
-        {{ if .Params.venue }}<div class="row">
-          <div class="col">
-            <b>Venue:</b> {{ .Params.venue }}
-          </div>
-        </div>{{ end }}
-        <div class="row mt-3">
-          <div class="col">
-            <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">
-              See details
-            </button>
-            <div class="modal fade" id="descriptionModal{{ $ind }}" tabindex="-1" aria-labelledby="descriptionModalLabel{{ $ind }}" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="descriptionModalLabel">{{ .Title }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                      <div class="col">
-                        <b>Event type:</b> <span class="badge event-type mb-1">{{ .Params.type }}</span>
-                      </div>
+          {{ if .Params.organisers }}<div class="row">
+            <div class="col">
+              <b>Organiser(s):</b> {{ .Params.organisers }}
+            </div>
+          </div>{{ end }}
+          {{ if .Params.venue }}<div class="row">
+            <div class="col">
+              <b>Venue:</b> {{ .Params.venue }}
+            </div>
+          </div>{{ end }}
+          <div class="row mt-3">
+            <div class="col">
+              <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">
+                See details
+              </button>
+              <div class="modal fade" id="descriptionModal{{ $ind }}" tabindex="-1" aria-labelledby="descriptionModalLabel{{ $ind }}" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="descriptionModalLabel">{{ .Title }}</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="row mt-1">
-                      <div class="col">
-                        <b>Date and time:</b> {{ .Params.date_start | time.Format ":date_medium" }}{{ if .Params.time_start }} {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} - {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }} {{ .Params.time_end }}{{ end }}
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col">
+                          <b>Event type:</b> <span class="badge event-type mb-1">{{ .Params.type }}</span>
+                        </div>
                       </div>
-                    </div>
-                    {{ if .Params.registration_deadline }}<div class="row mt-1">
-                      <div class="col">
-                        <b>Registration deadline:</b> {{ .Params.registration_deadline | time.Format ":date_medium" }}
+                      <div class="row mt-1">
+                        <div class="col">
+                          <b>Date and time:</b> {{ .Params.date_start | time.Format ":date_medium" }}{{ if .Params.time_start }} {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} - {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }} {{ .Params.time_end }}{{ end }}
+                        </div>
                       </div>
-                    </div>{{ end }}
-                    {{ if .Params.organisers }}<div class="row mt-1">
-                      <div class="col">
-                        <b>Organiser(s):</b> {{ .Params.organisers }}
-                      </div>
-                    </div>{{ end }}
-                    {{ if .Params.venue }}<div class="row mt-1">
-                      <div class="col">
-                        <b>Venue:</b> {{ .Params.venue }}
-                      </div>
-                    </div>{{ end }}
-                    {{ if .Params.description }}<div class="row mt-3">
-                      <div class="col"><b>Description:</b><br>
-                        {{ .Params.description }}
-                      </div>
-                    </div>{{ end }}
-                    <div class="row mt-3">
-                      <div class="col-md">
-                        <a target="_blank" href="{{ .Params.event_url }}"><i class="bi bi-globe"></i> Event webpage</a>
-                      </div>
-                      {{ if .Params.registration_url }}<div class="col-md">
-                        <a target="_blank" href="{{ .Params.registration_url }}"><i class="bi bi-globe"></i> Registration</a>
+                      {{ if .Params.registration_deadline }}<div class="row mt-1">
+                        <div class="col">
+                          <b>Registration deadline:</b> {{ .Params.registration_deadline | time.Format ":date_medium" }}
+                        </div>
                       </div>{{ end }}
+                      {{ if .Params.organisers }}<div class="row mt-1">
+                        <div class="col">
+                          <b>Organiser(s):</b> {{ .Params.organisers }}
+                        </div>
+                      </div>{{ end }}
+                      {{ if .Params.venue }}<div class="row mt-1">
+                        <div class="col">
+                          <b>Venue:</b> {{ .Params.venue }}
+                        </div>
+                      </div>{{ end }}
+                      {{ if .Params.description }}<div class="row mt-3">
+                        <div class="col"><b>Description:</b><br>
+                          {{ .Params.description }}
+                        </div>
+                      </div>{{ end }}
+                      <div class="row mt-3">
+                        <div class="col-md">
+                          <a target="_blank" href="{{ .Params.event_url }}"><i class="bi bi-globe"></i> Event webpage</a>
+                        </div>
+                        {{ if .Params.registration_url }}<div class="col-md">
+                          <a target="_blank" href="{{ .Params.registration_url }}"><i class="bi bi-globe"></i> Registration</a>
+                        </div>{{ end }}
+                      </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
     </div>
-    </div>
-  {{ end }}
-  {{ end }}
-  </div>
-</section>
+  </section>
 
-{{ end }}
+  {{ end }}
