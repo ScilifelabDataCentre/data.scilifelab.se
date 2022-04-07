@@ -4,7 +4,7 @@
   {{ with .Site.GetPage "section" "highlights" }}
   <header class="header" style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/test13.png{{ end }}');">
     <div class="container">
-      <h1>{{ .FirstSection.Title }}</h1>
+      <h2>{{ .FirstSection.Title }}</h2>
       {{ .FirstSection.Params.description }}
     </div>
   </header>
@@ -12,7 +12,7 @@
 {{ else }}
   <header class="header" style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/test13.png{{ end }}');">
     <div class="container">
-      <h1>{{ .FirstSection.Title }}</h1>
+      <h2>{{ .FirstSection.Title }}</h2>
       {{ .FirstSection.Params.description }}
     </div>
   </header>

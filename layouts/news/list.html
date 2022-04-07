@@ -6,26 +6,24 @@
   </div>
 </div>
 
-<div class="row mt-3">
-  <div class="col">
-      {{ range .RegularPages }}
-      <div class="row">
-        <div class="col small">
-          {{ .Date }}
-        </div>
-      </div>
-      <div class="row">
+<section>
+      <div class="row row-cols-1 row-cols-md-2 g-2 g-lg-3">
+        {{ range .RegularPages }}
         <div class="col">
-        <h6>{{ .Title }}</h6>
-      </div>
-    </div>
-      <div class="row">
-        <div class="col mb-2 pb-2">
-          {{ .Content }}
+          <div class="border rounded p-3">
+            <div>
+              {{ .Date | time.Format ":date_long" }}
+            </div>
+            <div>
+              <h5 id="{{ .Date.Format "20060102" }}">{{ .Title }}</h5>
+            </div>
+            <div>
+              {{ .Content }}
+            </div>
+          </div>
         </div>
+        {{ end }}
       </div>
-      {{ end }}
-  </div>
-</div>
+</section>
 
 {{ end }}

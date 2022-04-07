@@ -5,6 +5,7 @@ menu:
         name: About
         identifier: about
         weight: 10
+toc: True
 ---
 
 The *SciLifeLab Data Platform* is a technical environment for hosting data-centric tools and databases as well as an overarching web portal with the goal to support and accelerate life science research in Sweden.
@@ -24,3 +25,19 @@ The data platform is primarily funded and steered by [SciLifeLab](https://www.sc
   </div>
   </div>
 </div>
+
+## Second level. Second level. Second level.
+
+### Third level
+
+### Hello
+
+#### Fourth level
+
+## Another second
+
+## Third second
+
+### Some info here
+
+#### Another fourth level

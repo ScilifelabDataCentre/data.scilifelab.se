@@ -1,118 +1,126 @@
 {{ define "main" }}
 
 <section>
-  <div class="row mt-3">
-      <h3>Services</h3>
+  <div class="row mt-4">
+    <div class="col-md-8 py-2">
+      {{ with .Site.GetPage "section" "services" }}
+      <h3>Tools & Databases <i class="bi bi-arrow-right-square"></i></h3>
+      {{ end }}
     </div>
-</section>
-
-<section>
-  <div class="row mt-3">
-    <div class="col-md-8">
-      <h3>Services</h3>
-    </div>
-    <div class="col-md-4">
-      <h3>News</h3>
-      <div class="col small mb-2">
-
+    <div class="col-md-4 py-2 border rounded">
+      {{ with .Site.GetPage "section" "news" }}
+      <h3>{{ .Title }} <i class="bi bi-arrow-right-square"></i></h3>
+      <div class="row small mb-2">
+        <div class="col">
+          {{ range first 3 .RegularPages }}
           <div class="row">
-            <div class="col">
-              {{ $news_items := where .Site.RegularPages "Section" "news"}}
-              {{ range first 3 $news_items }}
-                <div class="row">
-                  <div class="col small">
-                    {{ .Date | time.Format ":date_long" }}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                  <h6>{{ .Title }}</h6>
-                </div>
-              </div>
-              {{ end }}
+            <div class="col small">
+              {{ .Date | time.Format ":date_long" }}
             </div>
           </div>
           <div class="row">
-              <div class="col">
-                <a href="/news">See all news items <i class="bi bi-arrow-right-circle"></i></a>
-              </div>
+            <div class="col">
+              <h6><a href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a></h6>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col fs-6 text-end">
+          <a href="{{ .RelPermalink }}">See all news items <i class="bi bi-arrow-right-square"></i></a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section>
+  {{ with .Site.GetPage "section" "highlights" }}
+  <div class="row mt-4">
+    <div class="col">
+      <h3>{{ .Title }} <i class="bi bi-arrow-right-square"></i></h3>
+    </div>
+  </div>
+  {{ $latest_highlights := first 4 (where .RegularPages "Section" "highlights") }}
+  {{ .Scratch.Set "highlights_list" $latest_highlights }}
+  {{ partial "highlights_cards.html" . }}
+  <div class="row mt-3">
+    <div class="col fs-6 text-end">
+        <a href="{{ .RelPermalink }}">See all data highlights <i class="bi bi-arrow-right-square"></i></a>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section>
+  {{ with .Site.GetPage "section" "events" }}
+  <div class="row mt-4">
+    <div class="col">
+      <h3>{{ .Title }} <i class="bi bi-arrow-right-square"></i></h3>
+    </div>
+  </div>
+  <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+    {{ $upcoming_events := slice }}
+    {{ range sort .RegularPages ".Params.date_start" "asc" }}
+    {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
+    {{ $upcoming_events = $upcoming_events | append . }}
+    {{ end }}
+    {{ end}}
+    {{ range first 4 $upcoming_events }}
+    <div class="col">
+      <div class="p-2 border rounded">
+        <div class="d-flex justify-content-between">
+          <div>
+            [{{ .Params.type }}]
+            <h6>{{ .Title }}</h6>
+          </div>
+          <div class="px-2 m-2 d-flex flex-column bg-success rounded">
+            <div class="px-1 fs-4 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
+            <div class="pb-1 px-1 small mx-auto">{{ time.Format "January" .Params.date_start }}</div>
           </div>
         </div>
+      </div>
     </div>
-    </div>
-</section>
-
-<section>
-  <div class="mt-3">
-    <h3>{{ with .Site.GetPage "section" "highlights" }}{{ .Title }}{{ end }}</h3>
-    {{ $latest_highlights := first 4 (where .Site.RegularPages "Section" "highlights") }}
-    {{ .Scratch.Set "highlights_list" $latest_highlights }}
-    {{ partial "highlights_cards.html" . }}
-    </div>
-</section>
-
-<section>
+    {{ end }}
+  </div>
   <div class="row mt-3">
-    <div class="col">
-      <h3>{{ with .Site.GetPage "section" "events" }}{{ .Title }}{{ end }}</h3>
+    <div class="col fs-6 text-end">
+        <a href="{{ .RelPermalink }}">See all data events & training opportunities <i class="bi bi-arrow-right-square"></i></a>
     </div>
-    </div>
+  </div>
+  {{ end }}
 </section>
 
 <section>
-  <div class="row mt-3">
+  <div class="row mt-4">
     <div class="col">
       <h3>Datasets recently published in the SciLifeLab Data Repository</h3>
     </div>
-    </div>
-</section>
-
-
-<div class="container mt-5">
-
-  <div class="row">
-
-    <div class="col-lg-8">
-      <div class="row">
-          <div class="col">
-            {{ .Content }}
-          </div>
-      </div>
-    </div>
-
-    <div class="col border rounded small mb-2">
-
-        <div class="row mb-1 mt-2">
-          <div class="col">
-            <h5>News</h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            {{ $news_items := where .Site.RegularPages "Section" "news"}}
-            {{ range $news_items }}
-              <div class="row">
-                <div class="col small">
-                  {{ .Date | time.Format ":date_long" }}
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                <h6>{{ .Title }}</h6>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        <div class="row">
-            <div class="col">
-              <a href="/news">See all news items <i class="bi bi-arrow-right-circle"></i></a>
-            </div>
-        </div>
-      </div>
-
-    </div>
-
   </div>
+  <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+    <div class="col">
+      <div class="p-2 border rounded">
+        Dataset
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-2 border rounded">
+        Dataset
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-2 border rounded">
+        Dataset
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-2 border rounded">
+        Dataset
+      </div>
+    </div>
+  </div>
+</section>
 
 {{ end }}
