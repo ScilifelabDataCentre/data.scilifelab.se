@@ -25,4 +25,9 @@
   <!-- Local CSS -->
   <link rel="stylesheet" href="/css/styles.css">
 
+  {{ if or (eq .Page.Section "contact") }}
+  <!-- reCAPTCHA for contact page -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  {{ end }}
+
 </head>

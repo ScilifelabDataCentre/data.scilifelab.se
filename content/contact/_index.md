@@ -15,3 +15,5 @@ On this page, we will have:
 
 - Info about how to reach us
 - Contact form which can be filled out to send us an email
+
+### Contact form
