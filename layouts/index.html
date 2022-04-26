@@ -2,12 +2,13 @@
 
 <section>
   <div class="row mt-4">
-    <div class="col-md-8 py-2">
+    <div class="col-md-8 py-2 pe-3">
       {{ with .Site.GetPage "section" "services" }}
       <h3><a href="{{ .RelPermalink }}">Tools & Databases <i class="bi bi-arrow-right-square"></i></a></h3>
       {{ end }}
       <div class="row g-2">
       {{ range .Site.Data.services }}
+      {{ if in .target "researchers" }}
         <div class="col-6 col-lg-4">
           <div class="p-3 border rounded">
             <div class="d-flex justify-content-between">
@@ -15,14 +16,15 @@
                 {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
                 {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
                 {{ if in .type "portal" }}<i class="bi bi-window service-types"></i> {{ end }}
-                {{ .name }}
+                <b>{{ .name }}</b>
               </div>
-              {{ if .logo_location }}<div class="w-25 mx-1">
+              {{ if .logo_location }}<div class="w-50 mx-1">
                 <img class="img-fluid" src="{{ .logo_location}}" alt="{{ .name }}">
               </div>{{ end }}
             </div>
         </div>
         </div>
+      {{ end }}
       {{ end }}
       </div>
       <div class="row">
@@ -31,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-3 ms-auto py-2">
+    <div class="col-md-4 ms-auto py-2 ps-3">
       {{ with .Site.GetPage "section" "news" }}
       <h3><a href="{{ .RelPermalink }}">News <i class="bi bi-arrow-right-square"></i></a></h3>
       <div class="row small mb-2">
