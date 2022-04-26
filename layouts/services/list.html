@@ -2,8 +2,11 @@
 
 {{ .Content }}
 
-<div class="row g-2 mb-5">
+<h3 id="for-researchers">Services for researchers</h3>
+<div class="mt-2"><p>Tools and databases listed below are hosted on the SciLifeLab Data Platform and are available free of charge to all life science researchers and communities in Sweden, regardless of SciLifeLab affiliation. These services are either publicly available or require logging in using Swedish university credentials. </p></div>
+<div class="row g-2 mb-5 mt-2">
 {{ range .Site.Data.services }}
+{{ if in .target "researchers" }}
   <div class="col-md-6 col-lg-3">
     <div class="p-3 border rounded">
       <div class="d-flex justify-content-between">
@@ -11,9 +14,9 @@
           {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
           {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
           {{ if in .type "portal" }}<i class="bi bi-window service-types"></i> {{ end }}
-          <h5>{{ .name }}</h5>
+          <h5><a href="{{ .url }}" target="_blank">{{ .name }}</a></h5>
         </div>
-        {{ if .logo_location }}<div class="w-25 mx-1">
+        {{ if .logo_location }}<div class="w-50 mx-1">
           <img class="img-fluid" src="{{ .logo_location}}" alt="{{ .name }}">
         </div>{{ end }}
       </div>
@@ -36,6 +39,48 @@
       </div>
   </div>
   </div>
+  {{ end }}
+{{ end }}
+</div>
+
+<h3 id="for-facilities">Services for data-producing facilities</h3>
+<div class="mt-2"><p>Tools and databases listed below are hosted on the SciLifeLab Data Platform and are offered to life science data-producing facilities in Sweden. Depending on the exact service, data-producing facilities can either apply to receive a facility account or instance of the service for their facility. All services below are open source and therefore facilities not connected to them and facilities outside of Sweden are welcome to use them on their own hosting solution.</p></div>
+<div class="row g-2 mb-5 mt-2">
+{{ range .Site.Data.services }}
+{{ if in .target "facilities" }}
+  <div class="col-md-6 col-lg-3">
+    <div class="p-3 border rounded">
+      <div class="d-flex justify-content-between">
+        <div>
+          {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
+          {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
+          {{ if in .type "portal" }}<i class="bi bi-window service-types"></i> {{ end }}
+          <h5><a href="{{ .url }}" target="_blank">{{ .name }}</a></h5>
+        </div>
+        {{ if .logo_location }}<div class="w-50 mx-1">
+          <img class="img-fluid" src="{{ .logo_location}}" alt="{{ .name }}">
+        </div>{{ end }}
+      </div>
+      <div class="row">
+        <div class="col">
+          {{ .description }}
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <b>Maintained by:</b> {{ if .maintained_by_url}}<a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>{{ else }}{{ .maintained_by }}{{ end }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <b>Contact:</b> {{ if .support_email }}<a href="mailto:{{ .support_email }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+          {{ if .support_website }}<a href="{{ .support_website }}"><i class="bi bi-globe"></i></a> {{ end }}
+          {{ if .support_github }}<a href="{{ .support_github }}"><i class="bi bi-github"></i></a> {{ end }}
+        </div>
+      </div>
+  </div>
+  </div>
+  {{ end }}
 {{ end }}
 </div>
 
