@@ -87,7 +87,7 @@
       <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
     </div>
   </div>
-  <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
     {{ $upcoming_events := slice }}
     {{ range sort .RegularPages ".Params.date_start" "asc" }}
     {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
@@ -104,7 +104,7 @@
           </div>
           <div class="px-2 m-2 d-flex flex-column event-date rounded">
             <div class="px-1 fs-4 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
-            <div class="pb-1 px-1 small mx-auto">{{ time.Format "January" .Params.date_start }}</div>
+            <div class="px-1 small mx-auto">{{ time.Format "January" .Params.date_start }}</div>
           </div>
         </div>
       </div>
