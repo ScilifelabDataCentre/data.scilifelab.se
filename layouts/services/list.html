@@ -8,7 +8,7 @@
 {{ range .Site.Data.services }}
 {{ if in .target "researchers" }}
   <div class="col-md-6 col-lg-3">
-    <div class="p-3 border rounded">
+    <div class="p-3 border rounded h-100">
       <div class="d-flex justify-content-between">
         <div>
           {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
@@ -49,7 +49,7 @@
 {{ range .Site.Data.services }}
 {{ if in .target "facilities" }}
   <div class="col-md-6 col-lg-3">
-    <div class="p-3 border rounded">
+    <div class="p-3 border rounded h-100">
       <div class="d-flex justify-content-between">
         <div>
           {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}

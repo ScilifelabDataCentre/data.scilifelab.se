@@ -10,7 +10,7 @@
       {{ range .Site.Data.services }}
       {{ if in .target "researchers" }}
         <div class="col-6 col-lg-4">
-          <div class="p-3 border rounded">
+          <div class="p-3 border rounded h-100">
             <div class="d-flex justify-content-between">
               <div>
                 {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
@@ -96,7 +96,7 @@
     {{ end}}
     {{ range first 4 $upcoming_events }}
     <div class="col">
-      <div class="p-2 border rounded">
+      <div class="p-2 border rounded h-100">
         <div class="d-flex justify-content-between">
           <div>
             <span class="badge event-type mb-1">{{ .Params.type }}</span>
@@ -127,22 +127,22 @@
   </div>
   <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
     <div class="col">
-      <div class="p-2 border rounded">
+      <div class="p-2 border rounded h-100">
         Dataset
       </div>
     </div>
     <div class="col">
-      <div class="p-2 border rounded">
+      <div class="p-2 border rounded h-100">
         Dataset
       </div>
     </div>
     <div class="col">
-      <div class="p-2 border rounded">
+      <div class="p-2 border rounded h-100">
         Dataset
       </div>
     </div>
     <div class="col">
-      <div class="p-2 border rounded">
+      <div class="p-2 border rounded h-100">
         Dataset
       </div>
     </div>
