@@ -169,6 +169,11 @@ h5 a:hover {
   color: white;
 }
 
+.data-item-type{
+  background-color: #16A085;
+  color: white;
+}
+
 .btn-details {
     color: #fff;
     background-color: #4C979F;
