@@ -30,6 +30,7 @@
           <b>Maintained by:</b> {{ if .maintained_by_url}}<a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>{{ else }}{{ .maintained_by }}{{ end }}
         </div>
       </div>
+      {{ if or (or .support_email .support_website) .support_github }}
       <div class="row">
         <div class="col">
           <b>Support:</b> {{ if .support_email }}<a href="mailto:{{ .support_email }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
@@ -37,6 +38,7 @@
           {{ if .support_github }}<a href="{{ .support_github }}"><i class="bi bi-github"></i></a> {{ end }}
         </div>
       </div>
+      {{ end }}
   </div>
   </div>
   {{ end }}
