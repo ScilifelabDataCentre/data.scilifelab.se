@@ -21,7 +21,7 @@
   <!-- Local CSS -->
   <link rel="stylesheet" href="/css/styles.css">
 
-  {{ if or (eq .Page.Section "contact") }}
+  {{ if or (eq .Page.Section "contact") (eq .Page.RelPermalink "/events/") (eq .Page.RelPermalink "/highlights/") }}
   <!-- reCAPTCHA for contact page -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   {{ end }}

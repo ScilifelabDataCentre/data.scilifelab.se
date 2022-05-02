@@ -2,7 +2,7 @@
 {{/* Tags and authors sections need to behave as highlights section, hence the big exception below. */}}
 {{ if or (eq .Section "tags") (eq .Section "authors") }}
   {{ with .Site.GetPage "section" "highlights" }}
-  <header class="header" style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/circle_side.png{{ end }}');">
+  <header class="header" style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/bubble_matrix.png{{ end }}');">
     <div class="container">
       <h2>{{ .FirstSection.Title }}</h2>
       {{ .FirstSection.Params.description }}
@@ -10,7 +10,7 @@
   </header>
   {{ end }}
 {{ else }}
-  <header class="header" style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/tunnel.png{{ end }}');">
+  <header class="header" style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/bubble_matrix.png{{ end }}');">
     <div class="container">
       <h2>{{ .FirstSection.Title }}</h2>
       {{ .FirstSection.Params.description }}

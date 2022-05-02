@@ -14,17 +14,95 @@
       <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
+            <form action="https://forms.dckube.scilifelab.se/api/v1/form/B6_setlwEffu0PMR/incoming" method="POST">
             <div class="modal-header">
               <h5 class="modal-title" id="suggestionModalLabel">Events & training suggestion</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              [Form will go here]
+              <div class="">
+                <p>We welcome suggestions for events to be displayed in this section. It can be an event that you are organising or an event that you simply think would be useful to others in the data-driven life science community in Sweden. We primarily aggregate events in Sweden or for a Swedish audience but submissions about important international events are also welcome.</p>
+                <p>Please fill out at least all obligatory fields (marked with an asterisk) below. After you submit the suggestion, the editorial team behind the SciLifeLab Data Platform will take a look at your suggestion and publish it in case it is considered suitable.</p>
+              </div>
+                <div class="mb-3">
+                  <label for="event_title" class="form-label fw-bold">Event title:*</label>
+                  <input type="text" class="form-control" id="event_title" name="event_title">
+                </div>
+                <div class="mb-3">
+                  <label for="event_type" class="form-label fw-bold">Event type:*</label>
+                  <select class="form-select" id="event_type" name="event_type">
+                    <option selected>---</option>
+                    <option value="conferece">Conference</option>
+                    <option value="course">Course</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="webinar">Webinar</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="event_start_date" class="form-label fw-bold">Event start date:*</label>
+                  <input type="date" class="form-control" id="event_start_date" name="event_start_date">
+                </div>
+                <div class="mb-3">
+                  <label for="event_start_time" class="form-label fw-bold">Event start time:</label>
+                  <input type="time" class="form-control" id="event_start_time" name="event_start_time">
+                </div>
+                <div class="mb-3">
+                  <label for="event_end_date" class="form-label fw-bold">Event end date:</label>
+                  <input type="date" class="form-control" id="event_end_date" name="event_end_date">
+                </div>
+                <div class="mb-3">
+                  <label for="event_end_time" class="form-label fw-bold">Event end time:</label>
+                  <input type="time" class="form-control" id="event_end_time" name="event_end_time">
+                </div>
+                <div class="mb-3">
+                  <label for="venue" class="form-label fw-bold">Venue:</label>
+                  <input type="text" class="form-control" id="venue" name="venue">
+                  <div class="form-text">For example, "Online event via Zoom" or "Biologihuset, Sölvegatan 35, Lund".</div>
+                </div>
+                <div class="mb-3">
+                  <label for="organisers" class="form-label fw-bold">Organiser(s):</label>
+                  <input type="text" class="form-control" id="organisers" name="organisers">
+                  <div class="form-text">For example, "Swedish National Infrastructure for Computing, SNIC; Chalmers e-commons infrastructure".</div>
+                </div>
+                <div class="mb-3">
+                  <label for="event_info_url" class="form-label fw-bold">Event information webpage:*</label>
+                  <input type="url" class="form-control" id="event_info_url" name="event_info_url">
+                  <div class="form-text">Enter URL starting with 'https://...'.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="event_registration_url" class="form-label fw-bold">Event registration webpage:</label>
+                  <input type="url" class="form-control" id="event_registration_url" name="event_registration_url">
+                  <div class="form-text">Enter URL starting with 'https://...'.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="event_description" class="form-label fw-bold">Event description:</label>
+                  <textarea class="form-control" id="event_description" name="event_description" rows="5"></textarea>
+                </div>
+                <div class="mb-3 form-check fw-bold">
+                  <input type="checkbox" class="form-check-input" id="involved_in_organising" name="involved_in_organising">
+                  <label class="form-check-label" for="involved_in_organising">I am involved in organising this event.</label>
+                </div>
+                <div class="mb-3">
+                  <label for="submitter_name" class="form-label fw-bold">Your name:</label>
+                  <input type="text" class="form-control" id="submitter_name" name="submitter_name">
+                  <div class="form-text">Enter your name if you agree to be contacted regarding this suggestion (your name will not be shown among the event information).</div>
+                </div>
+                <div class="mb-3">
+                  <label for="submitter_email" class="form-label fw-bold">Your contact email:</label>
+                  <input type="email" class="form-control" id="submitter_email" name="submitter_email">
+                  <div class="form-text">Enter your email address if you agree to be contacted regarding this suggestion (your email will not be displayed among the event information).</div>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
+                <input type="url" id="originUrl" name="originUrl" value="" hidden />
+                <input type='hidden' name='origin' value='event_training_suggestion'>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-aqua">Submit</button>
+              <button type="submit" class="btn btn-aqua">Submit</button>
             </div>
+          </form>
           </div>
         </div>
       </div>
@@ -39,7 +117,7 @@
 
       {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
       <div class="col-md-6 col-lg-4">
-        <div class="p-3 border rounded">
+        <div class="p-3 border rounded h-100">
           <div class="d-flex justify-content-between">
             <div>
               <span class="badge event-type mb-1">{{ .Params.type }}</span>
@@ -106,7 +184,7 @@
                       </div>{{ end }}
                       {{ if .Params.description }}<div class="row mt-3">
                         <div class="col"><b>Description:</b><br>
-                          {{ .Params.description }}
+                          {{ .Params.description | markdownify }}
                         </div>
                       </div>{{ end }}
                       <div class="row mt-3">
