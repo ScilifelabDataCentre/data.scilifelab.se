@@ -4,7 +4,7 @@ date: 2022-05-05
 summary: New pipeline called FoldDock from Elofsson lab uses AlphaFold2 to provide accurate predictions of heterodimeric complexes structures. This pipeline has the potential for rapidly expanding knowledge about structural protein interactions at a low cost. Read more about FoldDock and see link to GitHub.
 banner: /highlights/bryantetal.png
 banner_large: /highlights/bryantetal_large.png
-banner_caption: "This is an example of a large complex (20S proteasome) built from predictions of individual dimers and then combined together to form the entire complex."
+banner_caption: "This is an example of a large complex (20S proteasome) built from predictions of individual dimers and then combined together to form the entire complex. This image is courtesy of Arne Elofsson"
 tags: [Highlight, AlphaFold2, Protein structures, Data-driven , pipeline]
 authors: [Katarina Öjefors Stark]
 ---
