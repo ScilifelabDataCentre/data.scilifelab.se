@@ -14,51 +14,53 @@ toc: True
 
 ## About the SciLifeLab Data Platform
 
-The *SciLifeLab Data Platform* is a [technical hosting environment](/services/hosting/) for hosting data-centric tools and databases as well as an overarching web portal with the goal to support and accelerate data-driven life science research in Sweden. The platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven) though it is not restricted to research and organisations that are part of the programe. The SciLifeLab Data Platform aims to serve all life science researchers as well as data-producing facilities in Sweden.
+The *SciLifeLab Data Platform* comprises both a [technical hosting environment](/services/hosting/) for data-centric tools and databases, and a web portal. Both elements work together with the aim of supporting and accelerating data-driven life science research in Sweden. The platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). However, the SciLifeLab Data Platform aims to serve all life science researchers and data-producing facilities in Sweden. This means that you do not need to be part of the DDLS to have your tools/databases hosted, or to contribute to the web portal content.
 
-The services hosted on on the SciLifeLab Data Platform adhere to the values of [Open Science](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), [Transparent research](https://www.ucl.ac.uk/research/strategy-and-policy/research-transparency), and [FAIR (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18) as well as good data management practises throughout the data lifecycle.
+The services hosted on on the SciLifeLab Data Platform adhere to the values of [Open Science](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), [Transparent research](https://www.ucl.ac.uk/research/strategy-and-policy/research-transparency), and [FAIR (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18), as well as good data management practices throughout the data lifecycle.
 
-The SciLifeLab Data Platform is built and maintained by the [SciLifeLab Data Centre](https://scilifelab.se/data) and partners. Community-created content and services are welcome to integrate into the platform. With any questions, get in touch with us by emailing [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) or by sending us a message using our [contact form](/contact/).
+The SciLifeLab Data Platform was built and is maintained by the [SciLifeLab Data Centre](https://scilifelab.se/data) and our partners. We welcome any questions on any element of the platform. Please get in touch with us by emailing [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) or by sending us a message using our [contact form](/contact/).
 
 ### Hosting environment
 
-The SciLifeLab Data Platform technical environment is dedicated to hosting web-based computational tools and databases for data-driven life science research, including compute-intensive software and large-volume datasets. User-oriented services offered as part of the SciLifeLab Data Platform are available to any researcher in Sweden, regardless of the SciLifeLab affiliation. Services oriented at data-producing facilities are available to SciLifeLab facilities and enquiries are welcome from others.
+The SciLifeLab Data Platform technical environment is dedicated to hosting web-based computational tools and databases related to data-driven life science research. This will include compute-intensive software and large-volume datasets. User-oriented services offered as part of the SciLifeLab Data Platform are available to any individual affiliated with a Swedish institution. No affiliation to SciLifeLab is necessary. Services oriented at data-producing facilities are available to SciLifeLab infrastructure units, but enquiries from others are welcome.
 
-In the early phases, the platform will build on existing strengths and integrate services already in development by the SciLifeLab Data Centre and partners. In parallel, a number of external pathfinder projects will be identified for the purpose of technology development. In the near future, the goal is to formulate a specific set of requirements and an application procedure for services to be hosted on the SciLifeLab Data Platform. Individual research groups, organisations, and communities developing such tools will then be invited to make use of this technical environment to host services and make them available at the national or international level.
+The platform will initially focus on integrating services already in development by the SciLifeLab Data Centre and partners. A number of external pathfinder projects will also be identified for the purpose of technology development. We aim to formulate a set of specific requirements and an application procedure for tools/databases to be hosted on the SciLifeLab Data Platform. Individual research groups, organisations, and communities interested in making their tools/data available on a national or international level will be welcome to apply.
 
-<a href="/services/hosting/"><b>More about the hosting environment, vision & mission, applying for service hosting <i class="bi bi-arrow-right-square-fill"></i></b></a>
+<a href="/services/hosting/"><b>Find out more about the hosting environment, vision & mission, and applications related to hosting <i class="bi bi-arrow-right-square-fill"></i></b></a>
 
 ### Web portal
 
-The SciLifeLab Data Platform web portal (available at [data.scilifelab.se](https://data.scilifelab.se/)) aims to showcase and promote: services for data-driven life science research in Sweden, research from researchers affiliated with a Swedish research institute or university, relevant events and training, and community-driven initiatives.
+The SciLifeLab Data Platform web portal is available at [data.scilifelab.se](https://data.scilifelab.se/). It aims to showcase and promote services and research related to data-driven life science in Sweden, as well as relevant events, training, and community-driven initiatives.
 
-Content on the SciLifeLab Data Platform web portal is created by the team behind the platform as well as provided by the community of researchers. Contributions are welcome in each of the sections. For example, you can suggest a data highlight, an event, or a training opportunity in the corresponding sections. Other suggestions and inquiries are also welcome.
+The content of the portal is moderated by the team behind the SciLifeLab Data Platform. However, much of the content is contributed by the research community. Contributions are welcome in each of the sections. For example, you can suggest [a data highlight](/highlights/), [an event](/events/), or [a training opportunity](/events/). We'd also be happy to receive suggestions about other types of content that is not currently available on the platform.
 
-<a href="/contact/"><b>Contact form for inquiries and contributions <i class="bi bi-arrow-right-square-fill"></i></b></a>
+<a href="/contact/"><b>Contact form for enquiries and contributions <i class="bi bi-arrow-right-square-fill"></i></b></a>
 
 ## Organisations behind the platform
 
 ### SciLifeLab
 
-[scilifelab.se](https://www.scilifelab.se)
+SciLifeLab (Science for Life Laboratory) is an institution for the advancement of molecular biosciences in Sweden. We are funded as a national research infrastructure by the Swedish government.
 
-SciLifeLab, Science for Life Laboratory, is an institution for the advancement of molecular biosciences in Sweden. We are funded as a national research infrastructure by the Swedish government. Our organization leverages the unique strengths of individual researchers across Sweden into a focused resource for the life science community. We provide access for thousands of researchers to the cutting-edge instrumentation and deep scientific expertise necessary to be internationally competitive in bioscience research. This infrastructure is supported and developed by our research community, including internationally recognized experts in life science and technology. Our facilities and expertise create a unique environment for carrying out health and environmental research at the highest level.
+Our organisation leverages the unique strengths of individual researchers across Sweden into a focused resource for the life science community. For example, we provide thousands of researchers in Sweden with access to the cutting-edge instrumentation and scientific expertise necessary to be internationally competitive in bioscience research. The infrastructure that we provide is, in turn, supported and further developed by our research community, which includes internationally recognised experts in life science and technology. This results in a unique environment for carrying out health and environmental research at the highest level.
 
-SciLifeLab started out in 2010 as a joint effort between four universities: [Karolinska Institutet](https://www.ki.se/), [KTH Royal Institute of Technology](https://www.kth.se/), [Stockholm University](https://www.su.se/) and [Uppsala University](https://www.uu.se/). Today, we support research activities at all major Swedish universities.
+SciLifeLab started in 2010 as a joint effort between four universities; [Karolinska Institutet](https://www.ki.se/), [KTH Royal Institute of Technology](https://www.kth.se/), [Stockholm University](https://www.su.se/) and [Uppsala University](https://www.uu.se/). Today, we support research activities at all major Swedish universities.
+
+For more information about SciLifeLab, please see [scilifelab.se](https://www.scilifelab.se).
 
 ### SciLifeLab Data Centre
 
-[scilifelab.se/data/](https://www.scilifelab.se/data/)
+Life science research is increasingly becoming not only technology-driven, but also data-driven. SciLifeLab coordinates and supports activities throughout the data lifecycle. This includes project planning, data production, data analysis, data sharing, through to the publication and reuse of data, where researchers are dependent on advanced data analysis and e-infrastructures.
 
-Life science research is increasingly becoming not only technology-driven, but also data-driven. SciLifeLab coordinates and supports activities throughout the life cycle of data, from project planning, data production, data analysis, data sharing, to publishing and reuse of data, where researchers are dependent on advanced data analysis and e-infrastructures.
+SciLifeLab Data Centre focuses primarily on data generated by SciLifeLab infrastructure platforms. We work to maximise the value, and biological insight, that can be obtained from data, and to enable infrastructure to make data findable and accessible. At SciLifeLab Data Centre, we see data as one of the most valuable and long-lasting products of our operations and strive to make our data [FAIR](https://www.force11.org/group/fairgroup/fairprinciples), ensure that it is handled according to open science standards, and to maximise its long-term value to the scientific community.
 
-The focus of SciLifeLab Data Centre is on data arising from the use of SciLifeLab infrastructure platforms, both to promote research on adding value to data, research deriving biological knowledge from data, and infrastructure making data findable and available. At SciLifeLab Data Centre, we see data as one of the most valuable and long-lasting products of our operations and strive to make our data [FAIR](https://www.force11.org/group/fairgroup/fairprinciples), handled according to open science standards and that its long-term value to the scientific community is maximized.
+General information about the Data Centre is available at [scilifelab.se/data/](https://www.scilifelab.se/data/).
 
-### Partner organizations
+### Partner organisations
 
-The SciLifeLab Data Platform is part of the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). DDLS a 12-year initiative funded with a total of SEK 3.1 billion from the Knut and Alice Wallenberg Foundation. The purpose of the programme is to train the next generation of life scientists, to create a strong computational and data science base, and to strengthen the competencies in today’s research society, thereby enabling every scientist to better analyze data patterns and integrate their data with the global data flows in life sciences. Furthermore, the programme aims to strengthen national collaborations between universities, bridge the research communities of life sciences and data sciences, and create partnerships with industry, healthcare and other national and international actors.
+The SciLifeLab Data Platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). A total of 3.1 billion SEK  has been granted from the Knut and Alice Wallenberg Foundation over a period of 12 years. The purpose of the program is to train the next generation of life scientists, to create a strong computational and data science base, and to strengthen the competencies in today’s research society. Thereby, the program will ultimately enable every scientist to better analyse data patterns and integrate their data with the global data flows in life sciences. Furthermore, the program aims to strengthen national collaborations between universities, to build bridges between life and data science communities, and to create partnerships with industry, healthcare and other national and international entities.
 
-Apart from SciLifeLab and the Knut and Alice Wallenberg Foundation, a total of eleven organizations are participating in the DDLS programme:
+Eleven Swedish organisations are also participating in the DDLS, alongside SciLifeLab and the Knut and Alice Wallenberg Foundation. The organisations involved are shown below:
 
 <figure class="my-2 figure w-100 text-center">
   <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-75 d-none d-xl-inline">
