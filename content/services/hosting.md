@@ -10,7 +10,7 @@ menu:
 
 ## About the hosting environment
 
-The technical environment of the SciLifeLab Data Platform hosts web-based computational tools and databases related to data-driven life science research. This will include computer-intensive software and large-volume datasets.
+The technical environment of the SciLifeLab Data Platform hosts web-based computational tools and databases related to data-driven life science research. This will include compute-intensive software and large-volume datasets.
 
 The hosting environment is hosted on a three-node Kubernetes cluster (hardware located at KTH IT) with connected on-prem (from KTH IT) and cloud (SUNET) storage, which is managed by the [SciLifeLab Data Centre](https://scilifelab.se/data). User-oriented services offered on the SciLifeLab Data Platform are available to any researcher in Sweden, regardless of whether they are affiliated with SciLifeLab. Services targetted towards data-producing facilities are available to SciLifeLab infrastructure units, but we welcome enquiries from others.
 
@@ -20,7 +20,7 @@ The hosting and usage of services on the SciLifeLab Data Platform will be made a
 
 ## Vision & mission
 
-This platform aims to boost the number of services available for data-driven life science research in Sweden. Special attention will be paid to **enabling computer-intensive and large data volume services**, which are unlikely to be made available elsewhere.
+This platform aims to boost the number of services available for data-driven life science research in Sweden. Special attention will be paid to **enabling compute-intensive and large data volume services**, which are unlikely to be made available elsewhere.
 
 Our vision for the SciLifeLab Data Platform is to create an environment in which users (researchers, bioinformaticians, software engineers, healthcare professionals, industry partners, etc.), can easily locate, access, and use life science data (from research projects, from data-producing infrastructures, from data sharing platforms, etc.), and e-Infrastructure (specifically, national computing and storage infrastructures for research).
 
