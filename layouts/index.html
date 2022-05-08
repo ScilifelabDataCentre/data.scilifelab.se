@@ -159,7 +159,7 @@
         //Make the request to get recent items from scilifelab figshare
         var req = new XMLHttpRequest();
         req.overrideMimeType("application/json");
-        req.open("GET", "https://api.figshare.com/v2/articles?institution=803&page_size=4&order=published_date&order_direction=desc", true);
+        req.open("GET", "https://api.figshare.com/v2/articles?institution=803&page_size=8&order=published_date&order_direction=desc", true);
         req.onload  = function() {
            addDataItems(JSON.parse(req.responseText));
         };
