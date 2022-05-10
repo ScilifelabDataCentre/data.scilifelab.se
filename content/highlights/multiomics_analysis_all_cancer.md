@@ -32,10 +32,19 @@ Precision medicine is one of the areas prioritized by Swedish government. It is 
 
 #### Data
 
-* Summarized contents of FORALL (available at https://proteomics.se/forall/)
-  - Proteomics: MS-based protein profiles of 49 childhood ALL cell lines and two EBV transformed B-cell lines with biological replicates (N=82 samples).
-  - Transcriptomics: RNA-seq-based total RNA profiles of 49 childhood ALL cell lines and two as two EBV transformed cell lines with biological replicates (N=66 samples).
-  - Drugs response: 25 BCP-ALL, 16 T-ALL, and 2 B-ALL cell lines responses to treatment of a panel of 528 drugs.
+<div style="background-color: #D6E6F0; border-radius: 4px; padding: 8px 0px;" class="mb-1">
+  <ul class="mb-0">
+    <li>
+   Summarized contents of FORALL (available at <a href="https://proteomics.se/forall">https://proteomics.se/forall</a>)
+    <ul>
+      <li>Proteomics: MS-based protein profiles of 49 childhood ALL cell lines and two EBV transformed B-cell lines with biological replicates (N=82 samples).</li>
+      <li>Transcriptomics: RNA-seq-based total RNA profiles of 49 childhood ALL cell lines and two as two EBV transformed cell lines with biological replicates (N=66 samples).</li>
+      <li>Drugs response: 25 BCP-ALL, 16 T-ALL, and 2 B-ALL cell lines responses to treatment of a panel of 528 drugs.</li>
+    </ul>
+    </li>
+  </ul>
+</div>
+
 * Mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier [PXD023662](https://www.ebi.ac.uk/pride/archive/projects/PXD023662).
 * Raw RNA-seq data generated in this study have been deposited in NCBI’s Gene Expression Omnibus and are accessible through GEO Series accession number [GSE168386](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168386).
 * Publicly available transcriptomic data were obtained from The European Genome-phenome Archive (EGA) (Dataset ID: [EGAD00001002704](https://ega-archive.org/datasets/EGAD00001002704) and [EGAD00001002692](https://ega-archive.org/datasets/EGAD00001002692)) after access was provided from St. Jude Children’s Research Hospital Memphis  - Washington University Pediatric Cancer Genome Project.
