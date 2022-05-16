@@ -1,0 +1,172 @@
+{{ define "main" }}
+
+<section>
+  <div class="row mt-4">
+    <div class="col-md-8 py-2 pe-3">
+      {{ with .Site.GetPage "section" "services" }}
+      <h3><a href="{{ .RelPermalink }}">Tools & Databases <i class="bi bi-arrow-right-square"></i></a></h3>
+      {{ end }}
+      <div class="row g-2 cont-links">
+      {{ range .Site.Data.services }}
+      {{ if in .target "researchers" }}
+        <div class="col-6 col-lg-4">
+          <div class="p-3 border rounded h-100">
+            <div class="d-flex justify-content-between">
+              <div>
+                {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
+                {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
+                {{ if in .type "portal" }}<i class="bi bi-window service-types"></i> {{ end }}
+                {{ if in .type "helpdesk" }}<i class="bi bi-person-workspace"></i> {{ end }}
+                <b><a target="_blank" href="{{ .url }}">{{ .name }}</a></b>
+              </div>
+              {{ if .logo_location }}<div class="w-50 mx-1">
+                <img class="img-fluid" src="{{ .logo_location}}" alt="{{ .name }}">
+              </div>{{ end }}
+            </div>
+        </div>
+        </div>
+      {{ end }}
+      {{ end }}
+      </div>
+      <div class="row mt-3">
+        <div class="col fs-6 text-end">
+          <a href="{{ .RelPermalink }}">See all tools & databases <i class="bi bi-arrow-right-square-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 ms-auto py-2 ps-3">
+      {{ with .Site.GetPage "section" "news" }}
+      <h3><a href="{{ .RelPermalink }}">News <i class="bi bi-arrow-right-square"></i></a></h3>
+      <div class="row small mb-2">
+        <div class="col">
+          {{ range first 3 .RegularPages }}
+          <div class="row">
+            <div class="col small">
+              {{ .Date | time.Format ":date_long" }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h6><a href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a></h6>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col fs-6 text-end">
+          <a href="{{ .RelPermalink }}">See all news items <i class="bi bi-arrow-right-square-fill"></i></a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section>
+  {{ with .Site.GetPage "section" "highlights" }}
+  <div class="row mt-4 mb-1 mb-md-0">
+    <div class="col">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
+    </div>
+  </div>
+  {{ $latest_highlights := first 4 (where .RegularPages "Section" "highlights") }}
+  {{ .Scratch.Set "highlights_list" $latest_highlights }}
+  {{ partial "highlights_cards.html" . }}
+  <div class="row mt-3">
+    <div class="col fs-6 text-end">
+        <a href="{{ .RelPermalink }}">See all data highlights <i class="bi bi-arrow-right-square-fill"></i></a>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section>
+  {{ with .Site.GetPage "section" "events" }}
+  <div class="row mt-4 mb-1 mb-md-0">
+    <div class="col">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
+    {{ $upcoming_events := slice }}
+    {{ range sort .RegularPages ".Params.date_start" "asc" }}
+    {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
+    {{ $upcoming_events = $upcoming_events | append . }}
+    {{ end }}
+    {{ end}}
+    {{ range first 4 $upcoming_events }}
+    <div class="col">
+      <div class="p-2 border rounded h-100">
+        <div class="d-flex justify-content-between">
+          <div>
+            <span class="badge event-type mb-1">{{ .Params.type }}</span>
+            <h6>{{ .Title }}</h6>
+          </div>
+          <div class="px-2 m-2 d-flex flex-column event-date rounded">
+            <div class="px-1 fs-4 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
+            <div class="px-1 small mx-auto">{{ time.Format "January" .Params.date_start }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="row mt-3">
+    <div class="col fs-6 text-end">
+        <a href="{{ .RelPermalink }}">See all data events & training opportunities <i class="bi bi-arrow-right-square-fill"></i></a>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section>
+  <div class="row mt-4 mb-1 mb-md-0">
+    <div class="col">
+      <h3>Recently published items in the SciLifeLab Data Repository</h3>
+    </div>
+  </div>
+  <div id="recent-data-items" class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3"></div>
+  <div class="row mt-3">
+    <div class="col fs-6 text-end">
+        <a href="https://scilifelab.figshare.com" target="_blank">See all items in the Scilifelab Data Repository <i class="bi bi-arrow-right-square-fill"></i></a>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        function addDataItems (dataArray) {
+          var dataItemsHTML = "";
+          for (const data of dataArray) {
+              dataItemsHTML += `
+                  <div class="col">
+                    <div class="p-2 border rounded h-100">
+                      <div class="p-1">
+                      <a href="${data.url_public_html}" target="_blank">
+                        ${data.title}
+                      </a>
+                      </div>
+                      <div class="p-1">
+                        <span class="badge data-item-type">${data.defined_type_name}</span>
+                        <small class="badge bg-light text-muted ms-3">Published on: ${data.timeline.posted.slice(0,10)}</small>
+                      </div>
+                    </div>
+                  </div>
+              `;
+          };
+          var dataRow = document.getElementById('recent-data-items');
+          dataRow.innerHTML = dataItemsHTML;
+        };
+
+        //Make the request to get recent items from scilifelab figshare
+        var req = new XMLHttpRequest();
+        req.overrideMimeType("application/json");
+        req.open("GET", "https://api.figshare.com/v2/articles?institution=803&page_size=8&order=published_date&order_direction=desc", true);
+        req.onload  = function() {
+           addDataItems(JSON.parse(req.responseText));
+        };
+        req.send(null);
+     });
+  </script>
+</section>
+
+{{ end }}

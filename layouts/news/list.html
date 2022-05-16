@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div class="row">
+  <div class="col">
+    {{ .Content }}
+  </div>
+</div>
+
+<section>
+      <div class="row row-cols-1 row-cols-md-2 g-2 g-lg-3">
+        {{ range .RegularPages }}
+        <div class="col">
+          <div class="border rounded p-3 h-100">
+            <div class="my-1">
+              {{ .Date | time.Format ":date_long" }}
+            </div>
+            <div>
+              <h5 id="{{ .Date.Format "20060102" }}">{{ .Title }}</h5>
+            </div>
+            <div>
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+</section>
+
+{{ end }}

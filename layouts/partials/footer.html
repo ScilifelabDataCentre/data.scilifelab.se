@@ -1,0 +1,75 @@
+<footer class="mt-5 py-3 small border-top bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md">
+        <h6>Services</h6>
+        <ul class="list-unstyled text-small">
+          {{ range .Site.Menus.bottom_services }}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h6>Community</h6>
+        <ul class="list-unstyled text-small">
+          {{ range .Site.Menus.bottom_community }}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h6>About</h6>
+        <ul class="list-unstyled text-small">
+          {{ range .Site.Menus.bottom_about }}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+        <div class="d-flex">
+              <a class="p-2" style="font-size:1.5em;" target="_blank" href="https://twitter.com/scilifelab_DC"><i class="bi bi-twitter"></i></a>
+              <a class="p-2" style="font-size:1.5em;" target="_blank" href="https://linkedin.com/company/scilifelab-data-centre"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-4 col-md-2">
+        <img src="/img/logos/scilifelab_kaw_logo.png" class="img-fluid" alt="SciLifeLab and Knut and Alice Wallenberg Foundation logos">
+      </div>
+    </div>
+    <div class="row mt-3 mt-md-0">
+      <div class="col py-1 text-muted">
+        <p>The SciLifeLab Data Platform is maintained the <a href="https://scilifelab.se/data/">SciLifeLab Data Centre</a>. This work was supported by a grant from the Knut and Alice Wallenberg Foundation to SciLifeLab for research in Data-Driven Life Science (DDLS). The editorial team behind the SciLifeLab Data Platform neither takes part in, nor seeks to influence any decisions related to funding and hiring within the DDLS programme or any other.</p>
+        <p>Contact: <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-1 small text-muted">
+        <span><a href="/privacy">Privacy policy</a> | <a href="https://github.com/ScilifelabDataCentre/data.scilifelab.se"> Website code on GitHub</a></span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Cookies alert -->
+<div class="alert text-center cookiealert small" role="alert">
+We use cookies to improve your experience of the website. By continuing you accept that we use cookies. More information: <a href="/privacy/#cookies">About cookies</a>.
+<button type="button" class="btn btn-sm acceptcookies">
+I understand
+</button>
+</div>
+
+<!-- JS code for the cookie alert-->
+<script src="/js/cookiealert.js"></script>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!-- Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168266875-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168266875-3');
+</script>

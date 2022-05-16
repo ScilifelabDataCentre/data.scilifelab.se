@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Site meta -->
+  <title>{{ if ne .Title "Home"}}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content='{{ if .IsHome }}{{ .Param "description" }}{{ else }}{{ .Description }}{{ end }}'>
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  {{ if or (eq .Page.Section "contact") (eq .Page.RelPermalink "/events/") (eq .Page.RelPermalink "/highlights/") }}
+  <!-- reCAPTCHA for contact page -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  {{ end }}
+
+</head>
