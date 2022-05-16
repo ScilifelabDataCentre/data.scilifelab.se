@@ -25,7 +25,7 @@ The researchers used the approach outlined above to identify a putative therapeu
 
 > “With this dataset, we have demonstrated that disease-specific in-depth representation is highly valuable and adds additional layers of knowledge. We are continuing to apply these methods to additional translational pediatric ALL models to expand the FORALL resource, and we will also explore drug sensitivity results in depth in future studies” says Rozbeh Jafari, the senior corresponding author of the study.
 
-In summary, multi-omics approaches can be applied to childhood ALL lines for the purposes of potential drug discovery. Such approaches have relevance to precision medicine and can be used to better understand specific mechanisms of drug sensitivity in childhood ALL. 
+In summary, multi-omics approaches can be applied to childhood ALL lines for the purposes of potential drug discovery. Such approaches have relevance to precision medicine and can be used to better understand specific mechanisms of drug sensitivity in childhood ALL.
 Leo, Aswad, Stahl and colleagues have made their work available as an user-friendly web applications called [FORALL](https://proteomics.se/forall) *(Functional Omics Research of Acute Lymphoblastic Leukemia)*. It is a resource of Integrative Omics Data of Acute Lymphoblastic Leukemia cell lines. The data web application makes it possible for other researchers to explore the proteomic, transcriptomic, and drug sensitivity data described in the study.
 
 Precision medicine is one of the areas prioritized by Swedish government. It is also one of the key areas of the SciLifeLab and Wallenberg National Program for Data-Driven Life Science (DDLS program). You can read more about the DDLS program [here](https://www.scilifelab.se/data-driven).
@@ -52,9 +52,7 @@ Precision medicine is one of the areas prioritized by Swedish government. It is 
 
 #### Article
 
-DOI: [10.1038/s41467-022-29224-5](https://doi.org/10.1038/s41467-022-29224-5)
-
-Leo, I.R., Aswad, L., Stahl, M. et al. Integrative multi-omics and drug response profiling of childhood acute lymphoblastic leukemia cell lines. *Nat Commun* 13, 1691 (2022).
+Leo, I.R., Aswad, L., Stahl, M. et al. Integrative multi-omics and drug response profiling of childhood acute lymphoblastic leukemia cell lines. *Nat Commununications 13*, 1691 (2022). DOI: [10.1038/s41467-022-29224-5](https://doi.org/10.1038/s41467-022-29224-5)
 
 #### Funding
 
