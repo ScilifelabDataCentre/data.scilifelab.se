@@ -5,7 +5,6 @@
     <div class="col-md-8 py-2 pe-3">
       {{ with .Site.GetPage "section" "services" }}
       <h3><a href="{{ .RelPermalink }}">Tools & Databases <i class="bi bi-arrow-right-square"></i></a></h3>
-      {{ end }}
       <div class="row g-2 cont-links">
       {{ range .Site.Data.services }}
       {{ if in .target "researchers" }}
@@ -33,6 +32,7 @@
           <a href="{{ .RelPermalink }}">See all tools & databases <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
       </div>
+    {{ end }}
     </div>
     <div class="col-md-4 ms-auto py-2 ps-3">
       {{ with .Site.GetPage "section" "news" }}
