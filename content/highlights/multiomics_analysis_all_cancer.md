@@ -9,13 +9,13 @@ tags: [Highlight, Acute lymphoblastic leukemia, Multi-omics analysis, Precision 
 authors: [Katarina Öjefors Stark]
 ---
 
-Precision medicine involves the use of genetic information from the individual´s own genes and proteins to enable disease diagnosis, treatment, and prevention. It is especially important in treatment of cancer. Precision medicine enables, for example, the use of therapies that specifically target cancer cells, and the use of tumor biomarkers to diagnose specific cancers. It can also involve the development of novel diagnostic tools for research on cancer, as well as other diseases.
+Precision medicine involves the use of genetic information from the individual's own genes and proteins to enable disease diagnosis, treatment, and prevention. It is especially important in treatment of cancer. Precision medicine enables, for example, the use of therapies that specifically target cancer cells, and the use of tumor biomarkers to diagnose specific cancers. It can also involve the development of novel diagnostic tools for research on cancer, as well as other diseases.
 
 Each year about 300 children in Sweden are diagnosed with cancer. Acute lymphoblastic leukemia (ALL) is the most common form of childhood cancer, accounting for one in three childhood cancer diagnoses. Survival rates for ALL have improved in recent years due to the development of a number of different chemotherapy protocols and allogeneic hematopoietic stem cell transplantation (HSCT). Nevertheless, between 15 and 20% of children either do not respond well to currently available treatments or relapse, typically with poor survival outcomes. In addition, 80% of childhood ALL survivors experience a serious post-treatment medical event by middle age. In recent years, targeted therapies have been developed that reduce post-treatment complications and improve the outcome. However, work is still very much needed to develop novel therapeutic modalities for the treatment of high-risk patients and patients who relapse.
 
 The development of novel pharmacological and cellular therapies will require further research into the biological differences between children that are responsive to treatment, and those are not. Previous research using genetic and transcriptomic profiling have been able to, in part, explain why some children respond well and some do not. However, it is hoped that precision medicine will give better insight, as it will enable the characterization of the biomarkers and biology of responsive and non-responsive subtypes. This will be especially important for gaining more information on non-responders, about which relatively less is understood.
 
-In an article recently published in Nature Communications, researchers from Science for Life Laboratory, Karolinska Institutet and University of Muenster (First authors: Isabelle Rose Leo, Luay Aswad, Matthias Stahl, Corresponding author: [Rozbeh Jafari](https://staff.ki.se/people/rozbeh-jafari)) have investigated methods to identify potential drug candidates for childhood ALL. The researchers adopted a comprehensive multi-omic analysis of 49 readily available childhood ALL cell lines, using proteomics, transcriptomics, and pharmacoproteomic characterization.
+In a recently published article, researchers from SciLifeLab, Karolinska Institute and University of Muenster (first authors: Isabelle Rose Leo, Luay Aswad, Matthias Stahl; corresponding author: [Rozbeh Jafari](https://staff.ki.se/people/rozbeh-jafari)) have investigated methods to identify potential drug candidates for childhood ALL. The researchers adopted a comprehensive multi-omic analysis of 49 readily available childhood ALL cell lines, using proteomics, transcriptomics, and pharmacoproteomic characterization.
 
 Leo, Aswad, Stahl and colleagues used multi-omics layered analysis, including RNAseq, liquid chromatography-mass spectrometry (LC-MS), and drug sensitivity and resistance testing (DSRT), to study readily available childhood ALL cell lines. First, the research collaboration quantified over 12,000 proteins and 19,000 protein-coding transcripts. The sensitivity of 43 ALL cell lines to a panel of 528 approved oncological drugs and potential drug candidates was then tested using the DSRT.
 
@@ -26,33 +26,23 @@ The researchers used the approach outlined above to identify a putative therapeu
 > “With this dataset, we have demonstrated that disease-specific in-depth representation is highly valuable and adds additional layers of knowledge. We are continuing to apply these methods to additional translational pediatric ALL models to expand the FORALL resource, and we will also explore drug sensitivity results in depth in future studies” says Rozbeh Jafari, the senior corresponding author of the study.
 
 In summary, multi-omics approaches can be applied to childhood ALL lines for the purposes of potential drug discovery. Such approaches have relevance to precision medicine and can be used to better understand specific mechanisms of drug sensitivity in childhood ALL.
-Leo, Aswad, Stahl and colleagues have made their work available as an user-friendly web applications called [FORALL](https://proteomics.se/forall) *(Functional Omics Research of Acute Lymphoblastic Leukemia)*. It is a resource of Integrative Omics Data of Acute Lymphoblastic Leukemia cell lines. The data web application makes it possible for other researchers to explore the proteomic, transcriptomic, and drug sensitivity data described in the study.
 
-Precision medicine is one of the areas prioritized by Swedish government. It is also one of the key areas of the SciLifeLab and Wallenberg National Program for Data-Driven Life Science (DDLS program). You can read more about the DDLS program [here](https://www.scilifelab.se/data-driven).
+Leo, Aswad, Stahl and colleagues have made their work available as an user-friendly web application (R Shiny app) called [FORALL](https://proteomics.se/forall) *(Functional Omics Research of Acute Lymphoblastic Leukemia)*. The web application makes it possible for other researchers to further explore the proteomic, transcriptomic, and drug sensitivity data described in the study.
 
 #### Data
 
-<div style="background-color: #D6E6F0; border-radius: 4px; padding: 8px 0px;" class="mb-1">
-  <ul class="mb-0">
-    <li>
-   Summarized contents of FORALL (available at <a href="https://proteomics.se/forall">https://proteomics.se/forall</a>)
-    <ul>
-      <li>Proteomics: MS-based protein profiles of 49 childhood ALL cell lines and two EBV transformed B-cell lines with biological replicates (N=82 samples).</li>
-      <li>Transcriptomics: RNA-seq-based total RNA profiles of 49 childhood ALL cell lines and two as two EBV transformed cell lines with biological replicates (N=66 samples).</li>
-      <li>Drugs response: 25 BCP-ALL, 16 T-ALL, and 2 B-ALL cell lines responses to treatment of a panel of 528 drugs.</li>
-    </ul>
-    </li>
-  </ul>
-</div>
-
+* FORALL web portal, available at <a href="https://proteomics.se/forall">https://proteomics.se/forall</a>:
+    * Proteomics: MS-based protein profiles of 49 childhood ALL cell lines and two EBV transformed B-cell lines with biological replicates (N=82 samples).
+    * Transcriptomics: RNA-seq-based total RNA profiles of 49 childhood ALL cell lines and two as two EBV transformed cell lines with biological replicates (N=66 samples).
+    * Drugs response: 25 BCP-ALL, 16 T-ALL, and 2 B-ALL cell lines responses to treatment of a panel of 528 drugs.
 * Mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier [PXD023662](https://www.ebi.ac.uk/pride/archive/projects/PXD023662).
 * Raw RNA-seq data generated in this study have been deposited in NCBI’s Gene Expression Omnibus and are accessible through GEO Series accession number [GSE168386](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168386).
 * Publicly available transcriptomic data were obtained from The European Genome-phenome Archive (EGA) (Dataset ID: [EGAD00001002704](https://ega-archive.org/datasets/EGAD00001002704) and [EGAD00001002692](https://ega-archive.org/datasets/EGAD00001002692)) after access was provided from St. Jude Children’s Research Hospital Memphis  - Washington University Pediatric Cancer Genome Project.
-* Raw viable cell count output from flow cytometry experiments are found [here](https://github.com/isabelle-leo/FORALL/tree/main/data/flow_cytometry) in Github.
+* Raw viable cell count output from flow cytometry experiments [can be found on Github](https://github.com/isabelle-leo/FORALL/tree/main/data/flow_cytometry).
 
 #### Article
 
-Leo, I.R., Aswad, L., Stahl, M. et al. Integrative multi-omics and drug response profiling of childhood acute lymphoblastic leukemia cell lines. *Nat Commununications 13*, 1691 (2022). DOI: [10.1038/s41467-022-29224-5](https://doi.org/10.1038/s41467-022-29224-5)
+Leo, I.R., Aswad, L., Stahl, M. et al. Integrative multi-omics and drug response profiling of childhood acute lymphoblastic leukemia cell lines. *Nature Commununications 13*, 1691 (2022). DOI: [10.1038/s41467-022-29224-5](https://doi.org/10.1038/s41467-022-29224-5)
 
 #### Funding
 
