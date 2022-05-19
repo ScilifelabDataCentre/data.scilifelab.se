@@ -79,6 +79,11 @@ h5 a:hover {
     opacity: 1;
 }
 
+@media all and (min-width: 992px) {
+    .mobile-navbar {
+        display: none;
+    }
+}
 
 .btn-aqua {
     color: #fff;
