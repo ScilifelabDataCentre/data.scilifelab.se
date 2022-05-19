@@ -70,7 +70,7 @@ h5 a:hover {
 .nav-languages a img {
     width: 1rem;
     opacity: 0.5;
-    margin-left: 0.5rem;
+    margin-left: 0.1rem;
     margin-bottom: 0.1rem;
 }
 .nav-languages a:hover img,
