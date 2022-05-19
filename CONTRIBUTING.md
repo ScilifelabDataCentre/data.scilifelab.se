@@ -92,6 +92,20 @@ This is the text of the news item. Write one or max two paragraphs here. Markdow
 
 ## Services
 
-The items in the __Service catalogue__ are contained inside the `data/services.json` JSON file.
+The items in the __Service catalogue__ are contained inside the `data/services.json` JSON file. The parameters that can be defined for each services are provided below. Select one or more values in case of the list parameters (for target audience and type). The logo of the service needs to be uploaded to the folder `/static/img/service_logos/` and given here (without the `/static` part in the URL). Indicate one or more ways in which the users can receive support (email, website, github repository).
 
-[..]
+```JSON
+{
+  "target": ["researchers", "facilities"],
+  "type": ["database", "tool", "portal", "helpdesk"],
+  "name": "Service title",
+  "description": "Short description of the service",
+  "url": "https://...",
+  "logo_location": "/img/service_logos/...",
+  "maintained_by": "One or more maintainers as text",
+  "maintained_by_url": "https://...",
+  "support_email": "..@..",
+  "support_website": "https://...",
+  "support_github": "https://github.com/..."
+}
+```
