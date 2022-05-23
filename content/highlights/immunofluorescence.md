@@ -77,8 +77,6 @@ Below, you can explore the immunofluorescence images using the [Vizarr](https://
 
 Select a plate to view using the dropdown below. You can see the HPA ID of the antibody used and protein or gene name on the top left corner of the window. Scroll images using the slider just below or the three dots to the right of antibody ID to type a particular image number. Further down, you can adjust viewing options including changing contrast of each image channel.
 
-*At the moment, this feature works only in Google Chrome browser.*
-
 <div class="container mb-3">
   <div class="row">
     <div class="col-md-3">
