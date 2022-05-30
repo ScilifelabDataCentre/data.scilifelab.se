@@ -1,6 +1,6 @@
-# Contributing to the SciLifeLab Data Platform web portal
+# Contributing to the SciLifeLab Data Platform website
 
-Below are instructions on how to add or edit items in each of the SciLifeLab Data Platform web portal sections.
+Below are instructions on how to add or edit items in each of the SciLifeLab Data Platform website sections.
 
 ## Events & Training
 
@@ -26,7 +26,7 @@ description: "Event description here. Markdown formatting allowed." # optional; 
 
 ## Data highlights
 
-__Data highlights__ is a section of the portal highlighting new open datasets, tools, and research results based on open datasets and tools.
+__Data highlights__ is a section of the website highlighting new open datasets, tools, and research results based on open datasets and tools.
 
 ### Illustrations
 

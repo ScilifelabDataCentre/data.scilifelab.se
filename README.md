@@ -1,8 +1,8 @@
-# ![SciLifeLab Data Platform web portal](static/img/logos/sll_dp_outline.svg)
+# ![SciLifeLab Data Platform website](static/img/logos/sll_dp_outline.svg)
 
-# SciLifeLab Data Platform web portal
+# SciLifeLab Data Platform website
 
-This is the source code for the SciLifeLab Data Platform web portal:
+This is the source code for the SciLifeLab Data Platform website:
 [https://data.scilifelab.se/](https://data.scilifelab.se/).
 
 - [Introduction](#introduction)
@@ -100,16 +100,16 @@ $ hugo serve
 Start building sites …
 hugo v0.92.0+extended darwin/amd64 BuildDate=unknown
 
-                   | EN  
+                   | EN
 -------------------+-----
-  Pages            | 77  
-  Paginator pages  |  0  
-  Non-page files   |  0  
-  Static files     | 54  
-  Processed images |  0  
-  Aliases          |  0  
-  Sitemaps         |  1  
-  Cleaned          |  0  
+  Pages            | 77
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     | 54
+  Processed images |  0
+  Aliases          |  0
+  Sitemaps         |  1
+  Cleaned          |  0
 
 Built in 83 ms
 Watching for changes in /Users/arnold/Documents/data.scilifelab.se/{archetypes,content,data,layouts,static}

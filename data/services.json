@@ -40,7 +40,7 @@
     "url": "https://swefreq.nbis.se/",
     "description": "The Swedish Frequency resource for genomics (SweFreq) is a website developed to make genomic datasets more findable and accessible in order to promote collaboration, new research and increase public benefit.",
     "url": "https://swefreq.nbis.se/",
-    "maintained_by": "NBIS, SciLifeLab Data Centre"
+    "maintained_by": "SciLifeLab Data Centre"
   },
   {
     "target": ["researchers"],

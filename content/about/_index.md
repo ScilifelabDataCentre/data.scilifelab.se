@@ -20,7 +20,7 @@ Swedish life science research has an excellent reputation globally. Sweden has f
 
 ## About the SciLifeLab Data Platform
 
-In order for the Swedish life science research community to generate cutting-edge data-driven research. it will need access to appropriate services, tools, and support. The *SciLifeLab Data Platform* comprises both a **[technical hosting environment](/services/hosting/)** for data-centric tools and databases, and a **web portal**. Both elements work together with the aim of supporting and accelerating data-driven life science research in Sweden. The platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). However, the SciLifeLab Data Platform aims to serve all life science researchers and data-producing facilities in Sweden. This means that you do not need to be part of the DDLS to have your tools/databases hosted, or to contribute to the web portal content.
+In order for the Swedish life science research community to generate cutting-edge data-driven research. it will need access to appropriate services, tools, and support. The *SciLifeLab Data Platform* comprises both a **[technical hosting environment](/services/hosting/)** for data-centric tools and databases, and a **website**. Both elements work together with the aim of supporting and accelerating data-driven life science research in Sweden. The platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). However, the SciLifeLab Data Platform aims to serve all life science researchers and data-producing facilities in Sweden. This means that you do not need to be part of the DDLS to have your tools/databases hosted, or to contribute to the website content.
 
 The services hosted on on the SciLifeLab Data Platform adhere to the values of [Open Science](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), [Transparent research](https://www.ucl.ac.uk/research/strategy-and-policy/research-transparency), and [FAIR (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18), as well as good data management practices throughout the data lifecycle.
 
@@ -34,11 +34,11 @@ The platform will initially focus on integrating services already in development
 
 <a href="/services/hosting/"><b>Find out more about the hosting environment, vision & mission, and applications related to hosting <i class="bi bi-arrow-right-square-fill"></i></b></a>
 
-### Web portal
+### Website
 
-The SciLifeLab Data Platform web portal is available at [data.scilifelab.se](https://data.scilifelab.se/). It aims to showcase and promote services and research related to data-driven life science in Sweden, as well as relevant events, training, and community-driven initiatives.
+The SciLifeLab Data Platform website is available at [data.scilifelab.se](https://data.scilifelab.se/). It aims to showcase and promote services and research related to data-driven life science in Sweden, as well as relevant events, training, and community-driven initiatives.
 
-The content of the portal is moderated by the team behind the SciLifeLab Data Platform. However, much of the content is contributed by the research community. Contributions are welcome in each of the sections. For example, you can suggest [a data highlight](/highlights/), [an event](/events/), or [a training opportunity](/events/). We'd also be happy to receive suggestions about other types of content that is not currently available on the platform.
+The content of the website is moderated by the team behind the SciLifeLab Data Platform. However, much of the content is contributed by the research community. Contributions are welcome in each of the sections. For example, you can suggest [a data highlight](/highlights/), [an event](/events/), or [a training opportunity](/events/). We'd also be happy to receive suggestions about other types of content that is not currently available on the platform.
 
 <a href="/contact/"><b>Contact form for enquiries and contributions <i class="bi bi-arrow-right-square-fill"></i></b></a>
 

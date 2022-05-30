@@ -15,7 +15,7 @@ Life science, vetenskapen om allt levande, blir allt mer datadriven. Mängden oc
 
 ## Om SciLifeLab Data Platform
 
-För  att möjliggöra för det svensk life science att generera banbrytande datadriven forskning, kommer det behövas tillgång till lämpliga tjänster, verktyg och support. *SciLifeLab Data Platform* består av både en teknisk värdmiljö för datacentrerade verktyg och databaser och en webbportal. Båda delarna samverkar med syfte att stödja och accelerera svensk datadriven life science. Plattformen finansieras av ett [forskningsprogram för datadriven life science från Knut och Alice Wallenbergs stiftelse](https://www.scilifelab.se/data-driven). SciLifeLab Data Plattformen syftar dock till att ge support till alla forskare och dataproducerande anläggningar i Sverige inom fältet livsvetenskaper. Detta innebär att du inte behöver vara en del av DDLS för att använda verktyg/databaser eller för att bidra till webbportalens innehåll.
+För  att möjliggöra för det svensk life science att generera banbrytande datadriven forskning, kommer det behövas tillgång till lämpliga tjänster, verktyg och support. *SciLifeLab Data Platform* består av både en teknisk värdmiljö för datacentrerade verktyg och databaser och en webbsida. Båda delarna samverkar med syfte att stödja och accelerera svensk datadriven life science. Plattformen finansieras av ett [forskningsprogram för datadriven life science från Knut och Alice Wallenbergs stiftelse](https://www.scilifelab.se/data-driven). SciLifeLab Data Plattformen syftar dock till att ge support till alla forskare och dataproducerande anläggningar i Sverige inom fältet livsvetenskaper. Detta innebär att du inte behöver vara en del av DDLS för att använda verktyg/databaser eller för att bidra till webbsidans innehåll.
 
 Tjänsterna som finns på SciLifeLab Data Platform följer principerna för [öppen vetenskap och öppen delning](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), [transparens](https://www.ucl.ac.uk/research/strategy-and-policy/research-transparency), [FAIR data principer (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18), och goda datahanteringsmetoder under hela datalivscykeln. SciLifeLab Data Platform har byggts upp och drivs av [SciLifeLab Data Centre](https://scilifelab.se/data) och samarbetspartners. Vi välkomnar era frågor rörande plattformens innehåll och uppbyggnad. Kontakta oss gärna via epost [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) eller genom att [skicka ett meddelande via kontaktformuläret](/contact).
 
@@ -27,11 +27,11 @@ Plattformen kommer initialt att fokusera på att integrera tjänster som redan �
 
 <a href="/services/hosting/"><b>För att ta reda på mer om värdmiljön, vision och uppdrag bakom plattformen samt applikationer relaterade till plattformen se här <i class="bi bi-arrow-right-square-fill"></i></b></a>
 
-### Web portal
+### Webbsida
 
-SciLifeLab Data Platform web portal är tillgänglig på följande webbplats [data.scilifelab.se](https://data.scilifelab.se). Plattformens syfte är att tillgängliggöra och främja tjänster och forskning relaterad till datadriven forskning inom livsvetenskaperna i Sverige, detta inkl. såväl  relevanta evenemang, utbildningar som initiativ.
+SciLifeLab Data Platform websida är tillgänglig på följande webbplats [data.scilifelab.se](https://data.scilifelab.se). Plattformens syfte är att tillgängliggöra och främja tjänster och forskning relaterad till datadriven forskning inom livsvetenskaperna i Sverige, detta inkl. såväl  relevanta evenemang, utbildningar som initiativ.
 
-Teamet som arbetar med SciLifeLab Data Platform bidrar till portalens innehåll, vår ambition är att innehållet skall skapas i samarbete med forskarsamhället. Vi välkomnar forskarbidrag till portalens olika sektioner. Du kan exempelvis föreslå [en data notis](/highlights/), [ett event](/events/), eller [en kurs](/events/). Vi tar även gärna emot förslag på nya sektioner eller data som inte finns tillgängligt idag.
+Teamet som arbetar med SciLifeLab Data Platform bidrar till webbsidans innehåll, vår ambition är att innehållet skall skapas i samarbete med forskarsamhället. Vi välkomnar forskarbidrag till webbsidans olika sektioner. Du kan exempelvis föreslå [en data notis](/highlights/), [ett event](/events/), eller [en kurs](/events/). Vi tar även gärna emot förslag på nya sektioner eller data som inte finns tillgängligt idag.
 
 <a href="/contact/"><b>Kontaktformulär för förslag och bidrag <i class="bi bi-arrow-right-square-fill"></i></b></a>
 
