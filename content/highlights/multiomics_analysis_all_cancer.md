@@ -5,7 +5,7 @@ summary: Leo and colleagues used multi-omic analysis for studies of childhood Ac
 banner: /highlights/multiomics_analysis_all_cancer.png
 banner_large: /highlights/multiomics_analysis_all_cancer_large.png
 banner_caption: Fig 1b. from Leo et al. (2022). An overview of the most prominent molecular features of the 51 cell lines in this panel. BM bone marrow, PB peripheral blood, PE peripheral effusion, DSRT drug sensitivity and resistance testing.
-tags: [Highlight, Acute lymphoblastic leukemia, Multi-omics analysis, Precision medicine, Cancer]
+tags: [Highlight, Acute lymphoblastic leukemia, Multi-omics analysis, Precision medicine, Cancer, Haematology]
 authors: [Katarina Öjefors Stark]
 ---
 
