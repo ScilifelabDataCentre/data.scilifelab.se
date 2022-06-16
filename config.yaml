@@ -5,7 +5,7 @@ params:
   title: "SciLifeLab Data Platform"
   description: "SciLifeLab Data Platform - hub for data-driven life science research in Sweden"
   images:
-    - /img/logos/sll_dp_social_media.png
+    - https://data.scilifelab.se/img/logos/sll_dp_social_media.png
 
 markup:
   goldmark:
