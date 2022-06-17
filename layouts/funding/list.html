@@ -1,0 +1,212 @@
+{{ define "main" }}
+
+<section>
+  <div>
+    {{ .Content }}</div>
+</section>
+
+<!-- <section>
+  <div class="my-2 text-start">
+    <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
+      Tell us about a call, job, or project
+    </button>
+  </div>
+  <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="https://forms.dckube.scilifelab.se/api/v1/form/B6_setlwEffu0PMR/incoming" method="POST"
+          accept-charset="utf-8">
+          <div class="modal-header">
+            <h5 class="modal-title" id="suggestionModalLabel">Funding call, job listing, or masters
+              project</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <p>We are happy to list any funding calls, job listings or masters project opportunities related to data
+                driven science in Sweden.</p>
+              <p>If you know of a funding call/job listing/masters project that has not been listed on this page, but
+                feel that it should be, please fill in the form below. Obligatory fields are marked with an
+                asterisk.
+                The editorial team behind the SciLifeLab Data Platform will publish all suitable submissions as soon as
+                possible.</p>
+            </div>
+            <div class="mb-3">
+              <label for="funding_title" class="form-label fw-bold">Title:*</label>
+              <input type="text" class="form-control" id="funding_title" name="funding_title">
+            </div>
+            <div class="mb-3">
+              <label for="funding_type" class="form-label fw-bold">Type of listing:*</label>
+              <select class="form-select" id="funding_type" name="funding_type">
+                <option selected>---</option>
+                <option value="funding_call">Funding call</option>
+                <option value="job_listing">Job listing</option>
+                <option value="masters">Masters project</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="opening_date" class="form-label fw-bold">Opening date:</label>
+              <input type="date" class="form-control" id="opening_date" name="opening_date">
+              <div class="form-text">Primarily used for when funding calls open, but can be used for other types of
+                listing where appropriate.</div>
+            </div>
+            <div class="mb-3">
+              <label for="funding_deadline" class="form-label fw-bold">Application deadline:*</label>
+              <input type="date" class="form-control" id="funding_deadline" name="funding_deadline">
+              <div class="form-text">If no deadline applies, please write a date 1 year from today's date, or your best
+                estimate. Can also be used to state e.g. closing date for grant applications.</div>
+            </div>
+            <div class="mb-3">
+              <label for="location" class="form-label fw-bold">Location:*</label>
+              <input type="text" class="form-control" id="location" name="location">
+              <div class="form-text">Where is the position? List a physical location (e.g Uppsala, Sweden), or enter
+                'remote' for completely remote positions.</div>
+            </div>
+            <div class="mb-3">
+              <label for="funding_url" class="form-label fw-bold">Webpage with advertisement:*</label>
+              <input type="url" class="form-control" id="funding_url" name="funding_url">
+              <div class="form-text">Enter URL starting with 'https://...'</div>
+            </div>
+            <div class="mb-3">
+              <label for="funding_description" class="form-label fw-bold">Additional relevent information:</label>
+              <textarea class="form-control" id="funding_description" name="funding_description" rows="5"></textarea>
+              <div class="form-text">Any additional information that you feel could be useful.</div>
+            </div>
+            <div class="mb-3 form-check fw-bold">
+              <input type="checkbox" class="form-check-input" id="involved_in_listing" name="involved_in_listing">
+              <label class="form-check-label" for="involved_in_listing">I am involved in this listing</label>
+            </div>
+            <div class="mb-3">
+              <label for="submitter_name" class="form-label fw-bold">Your name:</label>
+              <input type="text" class="form-control" id="submitter_name" name="submitter_name">
+              <div class="form-text">Enter your name if you agree to be contacted regarding this submission (your name
+                will not be shown in the listing).</div>
+            </div>
+            <div class="mb-3">
+              <label for="submitter_email" class="form-label fw-bold">Your contact email:</label>
+              <input type="email" class="form-control" id="submitter_email" name="submitter_email">
+              <div class="form-text">Enter your email address if you agree to be contacted regarding this submission
+                (your email will not be displayed in the listing).</div>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
+            <input type="url" id="originUrl" name="originUrl" value="" hidden />
+            <input type='hidden' name='origin' value='event_training_suggestion'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-aqua">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section>
+  <div class="row g-2 mb-5">
+    {{ $events := sort .RegularPages ".Params.app_deadline" "asc" }}
+    {{ range $ind, $cont := $events }}
+
+    {{/* Potentially different colors of the calendar icon depending on the event type */}}
+
+    {{ if gt (.Params.app_deadline | time.Format "20060102") (now | time.Format "20060102") }}
+    <div class="col-md-6 col-lg-4">
+      <div class="p-3 border rounded h-100">
+        <div class="d-flex justify-content-between">
+          <div>
+            <span class="badge event-type mb-1">{{ .Params.type }}</span>
+            <h5><a class="" role="button" data-bs-toggle="modal"
+                data-bs-target="#descriptionModal{{ $ind }}">{{ .Title }}</a></h5>
+            <!-- <h5><a target="_blank" href="{{ .Params.event_url }}">{{ .Title }}</a></h5> -->
+          </div>
+          <div class="px-2 m-2 d-flex flex-column rounded event-date">
+            <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .Params.app_deadline }}</div>
+            <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .Params.app_deadline }}</div>
+          </div>
+        </div>
+        {{ if .Params.location }}<div class="row">
+          <div class="col">
+            <b>Location:</b> {{ .Params.location }}
+          </div>
+        </div>{{ end }}
+        <div class="row mt-3">
+          <div class="col">
+            <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal"
+              data-bs-target="#descriptionModal{{ $ind }}">
+              See details
+            </button>
+            <div class="modal fade" id="descriptionModal{{ $ind }}" tabindex="-1"
+              aria-labelledby="descriptionModalLabel{{ $ind }}" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="descriptionModalLabel">{{ .Title }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col">
+                        <b>Listing type:</b> <span class="badge event-type mb-1">{{ .Params.type }}</span>
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col">
+                        <b>Deadline for applications:</b>
+                        {{ .Params.app_deadline | time.Format ":date_medium" }}{{ if .Params.time_start }}
+                        {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} -
+                        {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }}
+                        {{ .Params.time_end }}{{ end }}
+                      </div>
+                    </div>
+                    {{ if .Params.registration_deadline }}<div class="row mt-1">
+                      <div class="col">
+                        <b>Registration deadline:</b> {{ .Params.registration_deadline | time.Format ":date_medium" }}
+                      </div>
+                    </div>{{ end }}
+                    {{ if .Params.organisers }}<div class="row mt-1">
+                      <div class="col">
+                        <b>Organiser(s):</b> {{ .Params.organisers }}
+                      </div>
+                    </div>{{ end }}
+                    {{ if .Params.location }}<div class="row mt-1">
+                      <div class="col">
+                        <b>Location:</b> {{ .Params.location }}
+                      </div>
+                    </div>{{ end }}
+                    {{ if .Params.opening_date }}<div class="row mt-1">
+                      <div class="col">
+                        <b>Opening date:</b> {{ .Params.opening_date }}
+                      </div>
+                    </div>{{ end }}
+                    {{ if .Params.description }}<div class="row mt-3">
+                      <div class="col"><b>Brief description:</b><br>
+                        {{ .Params.description | markdownify }}
+                      </div>
+                    </div>{{ end }}
+                    <div class="row mt-3">
+                      <div class="col-md">
+                        <a target="_blank" href="{{ .Params.funding_url }}"><i class="bi bi-globe"></i> Listing
+                          webpage</a>
+                      </div>
+                      {{ if .Params.registration_url }}<div class="col-md">
+                        <a target="_blank" href="{{ .Params.registration_url }}"><i class="bi bi-globe"></i>
+                          Registration</a>
+                      </div>{{ end }}
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}
