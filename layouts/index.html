@@ -6,8 +6,8 @@
       {{ with .Site.GetPage "section" "services" }}
       <h3><a href="{{ .RelPermalink }}">Tools & Databases <i class="bi bi-arrow-right-square"></i></a></h3>
       <div class="row g-2 cont-links">
-      {{ range .Site.Data.services }}
-      {{ if in .target "researchers" }}
+        {{ range .Site.Data.services }}
+        {{ if in .target "researchers" }}
         <div class="col-6 col-lg-4">
           <div class="p-3 border rounded h-100">
             <div class="d-flex justify-content-between">
@@ -22,21 +22,21 @@
                 <img class="img-fluid" src="{{ .logo_location}}" alt="{{ .name }}">
               </div>{{ end }}
             </div>
+          </div>
         </div>
-        </div>
-      {{ end }}
-      {{ end }}
+        {{ end }}
+        {{ end }}
       </div>
       <div class="row mt-3">
         <div class="col fs-6 text-end">
           <a href="{{ .RelPermalink }}">See all tools & databases <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
       </div>
-    {{ end }}
+      {{ end }}
     </div>
     <div class="col-md-4 ms-auto py-2 ps-3">
       {{ with .Site.GetPage "section" "news" }}
-      <h3><a href="{{ .RelPermalink }}">News <i class="bi bi-arrow-right-square"></i></a></h3>
+      <h3><a href="{{ .RelPermalink }}">What's new? <i class="bi bi-arrow-right-square"></i></a></h3>
       <div class="row small mb-2">
         <div class="col">
           {{ range first 3 .RegularPages }}
@@ -75,7 +75,7 @@
   {{ partial "highlights_cards.html" . }}
   <div class="row mt-3">
     <div class="col fs-6 text-end">
-        <a href="{{ .RelPermalink }}">See all data highlights <i class="bi bi-arrow-right-square-fill"></i></a>
+      <a href="{{ .RelPermalink }}">See all data highlights <i class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
   {{ end }}
@@ -114,7 +114,8 @@
   </div>
   <div class="row mt-3">
     <div class="col fs-6 text-end">
-        <a href="{{ .RelPermalink }}">See all data events & training opportunities <i class="bi bi-arrow-right-square-fill"></i></a>
+      <a href="{{ .RelPermalink }}">See all data events & training opportunities <i
+          class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
   {{ end }}
@@ -129,15 +130,16 @@
   <div id="recent-data-items" class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3"></div>
   <div class="row mt-3">
     <div class="col fs-6 text-end">
-        <a href="https://scilifelab.figshare.com" target="_blank">See all items in the Scilifelab Data Repository <i class="bi bi-arrow-right-square-fill"></i></a>
+      <a href="https://scilifelab.figshare.com" target="_blank">See all items in the Scilifelab Data Repository <i
+          class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
   <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        function addDataItems (dataArray) {
-          var dataItemsHTML = "";
-          for (const data of dataArray) {
-              dataItemsHTML += `
+    document.addEventListener("DOMContentLoaded", function (event) {
+      function addDataItems(dataArray) {
+        var dataItemsHTML = "";
+        for (const data of dataArray) {
+          dataItemsHTML += `
                   <div class="col">
                     <div class="p-2 border rounded h-100">
                       <div class="p-1">
@@ -147,25 +149,25 @@
                       </div>
                       <div class="p-1">
                         <span class="badge data-item-type">${data.defined_type_name}</span>
-                        <small class="badge bg-light text-muted ms-3">Published on: ${data.timeline.posted.slice(0,10)}</small>
+                        <small class="badge bg-light text-muted ms-3">Published on: ${data.timeline.posted.slice(0, 10)}</small>
                       </div>
                     </div>
                   </div>
               `;
-          };
-          var dataRow = document.getElementById('recent-data-items');
-          dataRow.innerHTML = dataItemsHTML;
         };
+        var dataRow = document.getElementById('recent-data-items');
+        dataRow.innerHTML = dataItemsHTML;
+      };
 
-        //Make the request to get recent items from scilifelab figshare
-        var req = new XMLHttpRequest();
-        req.overrideMimeType("application/json");
-        req.open("GET", "https://api.figshare.com/v2/articles?institution=803&page_size=8&order=published_date&order_direction=desc", true);
-        req.onload  = function() {
-           addDataItems(JSON.parse(req.responseText));
-        };
-        req.send(null);
-     });
+      //Make the request to get recent items from scilifelab figshare
+      var req = new XMLHttpRequest();
+      req.overrideMimeType("application/json");
+      req.open("GET", "https://api.figshare.com/v2/articles?institution=803&page_size=8&order=published_date&order_direction=desc", true);
+      req.onload = function () {
+        addDataItems(JSON.parse(req.responseText));
+      };
+      req.send(null);
+    });
   </script>
 </section>
 
