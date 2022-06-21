@@ -1,7 +1,7 @@
 ---
 title: Novel FoldDock pipeline uses AlphaFold2 to provide accurate predictions of heterodimeric complexes structures
 date: 2022-05-05
-summary: New pipeline called FoldDock uses AlphaFold2 to provide accurate predictions of heterodimeric complexes structures. This pipeline has the potential for rapidly expanding knowledge about structural protein interactions at a low cost.  run FoldDock and reproduce the analysis has been published on GitLab.
+summary: New pipeline called FoldDock uses AlphaFold2 to provide accurate predictions of heterodimeric complexes structures. This pipeline has the potential for rapidly expanding knowledge about structural protein interactions at a low cost. The code required to run FoldDock and reproduce the analysis has been published on GitLab.
 banner: /highlights/bryantetal.png
 banner_large: /highlights/bryantetal_large.png
 banner_caption: "This is an example of a large complex (20S proteasome) built from predictions of individual dimers and then combined together to form the entire complex. This image is courtesy of Arne Elofsson"
