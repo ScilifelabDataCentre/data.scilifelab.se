@@ -57,10 +57,9 @@
                 estimate. Can also be used to state e.g. closing date for grant applications.</div>
             </div>
             <div class="mb-3">
-              <label for="location" class="form-label fw-bold">Location:*</label>
-              <input type="text" class="form-control" id="location" name="location">
-              <div class="form-text">Where is the position? List a physical location (e.g Uppsala, Sweden), or enter
-                'remote' for completely remote positions.</div>
+              <label for="employer" class="form-label fw-bold">Employer:*</label>
+              <input type="text" class="form-control" id="employer" name="employer">
+              <div class="form-text">Where is the position? List an employer</div>
             </div>
             <div class="mb-3">
               <label for="funding_url" class="form-label fw-bold">Webpage with advertisement:*</label>
@@ -124,9 +123,9 @@
             <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .Params.app_deadline }}</div>
           </div>
         </div>
-        {{ if .Params.location }}<div class="row">
+        {{ if .Params.employer }}<div class="row">
           <div class="col">
-            <b>Location:</b> {{ .Params.location }}
+            <b>Employer:</b> {{ .Params.employer }}
           </div>
         </div>{{ end }}
         <div class="row mt-3">
@@ -158,19 +157,9 @@
                         {{ .Params.time_end }}{{ end }}
                       </div>
                     </div>
-                    {{ if .Params.registration_deadline }}<div class="row mt-1">
+                    {{ if .Params.employer }}<div class="row mt-1">
                       <div class="col">
-                        <b>Registration deadline:</b> {{ .Params.registration_deadline | time.Format ":date_medium" }}
-                      </div>
-                    </div>{{ end }}
-                    {{ if .Params.organisers }}<div class="row mt-1">
-                      <div class="col">
-                        <b>Organiser(s):</b> {{ .Params.organisers }}
-                      </div>
-                    </div>{{ end }}
-                    {{ if .Params.location }}<div class="row mt-1">
-                      <div class="col">
-                        <b>Location:</b> {{ .Params.location }}
+                        <b>Employer:</b> {{ .Params.employer }}
                       </div>
                     </div>{{ end }}
                     {{ if .Params.opening_date }}<div class="row mt-1">
@@ -188,10 +177,6 @@
                         <a target="_blank" href="{{ .Params.funding_url }}"><i class="bi bi-globe"></i> Listing
                           webpage</a>
                       </div>
-                      {{ if .Params.registration_url }}<div class="col-md">
-                        <a target="_blank" href="{{ .Params.registration_url }}"><i class="bi bi-globe"></i>
-                          Registration</a>
-                      </div>{{ end }}
                     </div>
                   </div>
                   <div class="modal-footer">
