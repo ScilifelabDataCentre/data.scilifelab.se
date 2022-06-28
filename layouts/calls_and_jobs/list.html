@@ -5,27 +5,28 @@
     {{ .Content }}</div>
 </section>
 
-<!-- <section>
+<section>
   <div class="my-2 text-start">
     <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
-      Tell us about a call, job, or project
+      Tell us about an open position/funding call
     </button>
   </div>
   <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form action="https://forms.dckube.scilifelab.se/api/v1/form/B6_setlwEffu0PMR/incoming" method="POST"
+        <form action="https://forms.dckube.scilifelab.se/api/v1/form/M5GfePAbHxkPdIph/incoming" method="POST"
           accept-charset="utf-8">
           <div class="modal-header">
-            <h5 class="modal-title" id="suggestionModalLabel">Funding call, job listing, or masters
+            <h5 class="modal-title" id="suggestionModalLabel">Calls, jobs, PhD position, or masters
               project</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="">
-              <p>We are happy to list any funding calls, job listings or masters project opportunities related to data
+              <p>We are happy to list any funding calls, job listings, PhD positions, or masters project opportunities
+                related to data
                 driven science in Sweden.</p>
-              <p>If you know of a funding call/job listing/masters project that has not been listed on this page, but
+              <p>If you know of an opportunity that has not been listed on this page, but
                 feel that it should be, please fill in the form below. Obligatory fields are marked with an
                 asterisk.
                 The editorial team behind the SciLifeLab Data Platform will publish all suitable submissions as soon as
@@ -41,14 +42,15 @@
                 <option selected>---</option>
                 <option value="funding_call">Funding call</option>
                 <option value="job_listing">Job listing</option>
+                <option value="phd">PhD position</option>
                 <option value="masters">Masters project</option>
               </select>
             </div>
             <div class="mb-3">
               <label for="opening_date" class="form-label fw-bold">Opening date:</label>
               <input type="date" class="form-control" id="opening_date" name="opening_date">
-              <div class="form-text">Primarily used for when funding calls open, but can be used for other types of
-                listing where appropriate.</div>
+              <div class="form-text">Primarily used for when funding calls open but can be used for other types of
+                listing, where appropriate.</div>
             </div>
             <div class="mb-3">
               <label for="funding_deadline" class="form-label fw-bold">Application deadline:*</label>
@@ -89,7 +91,7 @@
             </div>
             <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
             <input type="url" id="originUrl" name="originUrl" value="" hidden />
-            <input type='hidden' name='origin' value='event_training_suggestion'>
+            <input type='hidden' name='origin' value='call_job_suggestion'>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -99,7 +101,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <section>
   <div class="row g-2 mb-5">
