@@ -20,4 +20,4 @@ aliases:
 
 In this section, we show the latest job opportunities, funding calls, PhD positions, and masters project opportunities related to *data-driven life science in Sweden*. We may show some 'global' opportunities but, in each case, it will be possible for individuals based in Sweden to apply.
 
-If you know of any opportunity that is not listed below, but feel that it should be, please email datacentre@scilifelab.se.
+If you know of any opportunity that is not listed below, but feel that it should be, please *click the button below and fill in the short form*.
