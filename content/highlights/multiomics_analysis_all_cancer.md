@@ -42,7 +42,7 @@ Leo, Aswad, Stahl and colleagues have made their work available as an user-frien
 
 #### Article
 
-Leo, I.R., Aswad, L., Stahl, M. et al. Integrative multi-omics and drug response profiling of childhood acute lymphoblastic leukemia cell lines. *Nature Commununications 13*, 1691 (2022). DOI: [10.1038/s41467-022-29224-5](https://doi.org/10.1038/s41467-022-29224-5)
+Leo, I. R., Aswad, L., Stahl, M., Kunold, E., Post, F., Erkers, T., Struyf, N., Mermelekas, G., Joshi, R. N., Gracia-Villacampa, E., Östling, P., Kallioniemi, O. P., Tamm, K. P., Siavelis, I., Lehtiö, J., Vesterlund, M.Jafari, R. (2022). Integrative multi-omics and drug response profiling of childhood acute lymphoblastic leukemia cell lines. *Nature Commununications*,  *13*, 1691. [10.1038/s41467-022-29224-5](https://doi.org/10.1038/s41467-022-29224-5).
 
 #### Funding
 

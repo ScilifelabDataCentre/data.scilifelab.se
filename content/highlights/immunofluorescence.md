@@ -100,4 +100,4 @@ Select a plate to view using the dropdown below. You can see the HPA ID of the a
 
 #### Preprint
 
-Jayasankar Mohanakrishnan Kaimal, Marianna Tampere, Trang H. Le,Ulrika Axelsson, Hao Xu, Hanna Axelsson, Anna Bäckström, Francesco Marabita, Elisabeth Moussaud-Lamodière, Duncan Njenda, Carolina Oses Sepulveda, Wei Oyuang, Brinton Seashore-Ludlow, Caroline Vernersson, Ali Mirazimi, Emma Lundberg, Päivi Östling, Charlotte Stadler. Subcellular mapping of the protein landscape of SARS-CoV-2 infected cells for target-centric drug repurposing. *bioRxiv* (2022). DOI: [10.1101/2022.03.29.482838](https://doi.org/10.1101/2022.03.29.482838)
+Kaimal, J. M., Tampere, M., Le, T. H., Axelsson, U., Xu, H., Axelsson, H., Bäckström, A., Marabita, F., Moussaud-Lamodière, E., Njenda, D., Sepulveda, C. O., Oyuang, W., Seashore-Ludlow, B., Vernersson, C., Mirazimi, A., Lundberg, E., Östling, P., Stadler. C. (2022). Subcellular mapping of the protein landscape of SARS-CoV-2 infected cells for target-centric drug repurposing. *bioRxiv*. [10.1101/2022.03.29.482838](https://doi.org/10.1101/2022.03.29.482838).
