@@ -30,7 +30,7 @@ In summary, Bryant and colleagues showed that, by using an optimized MSAs with A
 
 #### Article
 
-Bryant, P., Pozzati, G. & Elofsson, A. Improved prediction of protein-protein interactions using AlphaFold2. *Nature Communications 13*, 1265 (2022). DOI: [10.1038/s41467-022-28865-w](https://doi.org/10.1038/s41467-022-28865-w)
+Bryant, P., Pozzati, G. Elofsson, A. (2022). Improved prediction of protein-protein interactions using AlphaFold2. *Nature Communications*, *13*, 1265. [10.1038/s41467-022-28865-w](https://doi.org/10.1038/s41467-022-28865-w)
 
 #### Funding
 
