@@ -34,7 +34,7 @@ In summary, the findings in this article could represent the first step towards 
 
 #### Article
 
-Ujjwal Neogi , Nazif Elaldi, Sofia Appelberg, Anoop Ambikan, Emma Kennedy, Stuart Dowall, Binnur K Bagci, Soham Gupta, Jimmy E Rodriguez, Sara Svensson-Akusjärvi, Vanessa Monteil, Akos Vegvari, Rui Benfeitas, Akhil Banerjea, Friedemann Weber, Roger Hewson, Ali Mirazimi. Multi-omics insights into host-viral response and pathogenesis in Crimean-Congo hemorrhagic fever viruses for novel therapeutic target. *eLife* 2022;11:e76071. DOI: [10.7554/eLife.76071](https://doi.org/10.7554/eLife.76071).
+Neogi, U., Elaldi, N., Appelberg, S., Ambikan, A., Kennedy, E., Dowall, S., Bagci, B. K., Gupta, S., Rodriguez, J. E., Svensson-Akusjärvi, S., Monteil, V., Vegvari, A., Benfeitas, R., Banerjea, A., Weber, F., Hewson, R., Mirazimi, A. (2022) Multi-omics insights into host-viral response and pathogenesis in Crimean-Congo hemorrhagic fever viruses for novel therapeutic target. *eLife*, *11*, e76071. [10.7554/eLife.76071](https://doi.org/10.7554/eLife.76071).
 
 #### Funding
 
