@@ -17,7 +17,7 @@ This study identified the chain of events involved in mitoribosome assembly and 
 
 #### Data
 
-The atomic coordinates have been deposited in the Protein Data Bank and electron microscopy (EM) maps in  the Electron Microscopy Data Bank:
+The atomic coordinates have been deposited in the Protein Data Bank and electron microscopy (EM) maps in the Electron Microscopy Data Bank:
 
 * [7PNT](https://doi.org/10.2210/pdb7PNT/pdb) and [EMD-13551](https://www.ebi.ac.uk/emdb/EMD-13551) (pre-SSU-1)
 * [7PNU](https://doi.org/10.2210/pdb7PNU/pdb) and [EMD-13552](https://www.ebi.ac.uk/emdb/EMD-13552) (pre-SSU-2)
@@ -32,7 +32,7 @@ The atomic coordinates have been deposited in the Protein Data Bank and electron
 * [7PO3](https://www.wwpdb.org/pdb?id=pdb_00007po3) and EMD-135561 (mature SSU)
 * [7PO4](https://www.wwpdb.org/pdb?id=pdb_00007po4) and EMD-135562 (pre-LSU)
 
-All of the above use the mouse as a sample organism.
+The first four above use the mouse as a sample organism, the rest are from human cells.
 
 Mass spectrometry data are available via [ProteomeXchan](http://proteomecentral.proteomexchange.org/) with identifier PXD031678 (this has not yet been released).
 
