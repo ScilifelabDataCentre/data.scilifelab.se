@@ -34,7 +34,7 @@ The atomic coordinates have been deposited in the Protein Data Bank and electron
 
 The first four above use the mouse as a sample organism, the rest are from human cells.
 
-Mass spectrometry data are available via [ProteomeXchan](http://proteomecentral.proteomexchange.org/) with identifier PXD031678 (this has not yet been released).
+Mass spectrometry data are available via [ProteomeXchan](http://proteomecentral.proteomexchange.org/) with identifier [PXD031678](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD031678). Released 11th July 2022.
 
 #### Article
 
