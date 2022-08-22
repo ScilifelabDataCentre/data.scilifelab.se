@@ -7,6 +7,7 @@ banner_large: /highlights/daphnia_abstract.png
 banner_caption: The graphical abstract from Feiner et al. (2022).
 tags: [Epigenetic, Highlight, Transgenerational, Ecosystem Dynamics, Daphnia]
 authors: [Katarina Öjefors Stark]
+images: ["/highlights/daphnia_banner.png"]
 ---
 
 Recent studies indicate that environmental stress can induce systemic changes in development and physiology. These so-called 'environmentally induced epigenetic effects' are potentially heritable. However, there remains debate about whether inheriting them impacts eco-evolutionary dynamics (*cf.* [Anway *et al.*, 2005](https://doi.org/10.1126/science.1108190); [Baugh and Day, 2020](https://doi.org/10.7554/eLife.58498)).
