@@ -7,6 +7,7 @@ banner_large: /highlights/deep_learning_framework_estimate_biodiv.png
 banner_caption: The data preparation workflow implemented in Andermann *et al.* 2022 (Fig. 2 in original article).
 tags: [Highlight, Deep-learning, Biodiversity, Conservation]
 authors: [Katarina Öjefors Stark]
+images: ["/highlights/deep_learning_framework_estimate_biodiv_small.png"]
 ---
 
 Global biodiversity is currently under threat. Today, an estimated 1 million species are threatened with extinction. Reliable maps of species richness are crucial in targeting conversation efforts towards areas under threat.
