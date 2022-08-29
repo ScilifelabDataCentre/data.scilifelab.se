@@ -7,6 +7,7 @@ banner_large: /highlights/immunofluorescence.png
 banner_caption: Part of Figure 2 from Kaimal, Tampere et al 2022; Representative images of proteins with reduced or increased intensity during SARS-CoV-2 infection. # change later
 tags: [Highlight, Immunofluorescence, SARS-CoV-2, Infectious diseases, Drug repurposing]
 authors: [Katarina Öjefors Stark]
+images: ["/highlights/immunofluorescence.png"]
 announcement: "This Data Highlight was originally [published on the Swedish COVID-19 & Pandemic Preparedness Data Portal](https://covid19dataportal.se/highlights/immunofluorescence/)."
 imjoy:
     config:

@@ -7,6 +7,7 @@ banner_large: /highlights/multiomics_analysis_all_cancer_large.png
 banner_caption: Fig 1b. from Leo et al. (2022). An overview of the most prominent molecular features of the 51 cell lines in this panel. BM bone marrow, PB peripheral blood, PE peripheral effusion, DSRT drug sensitivity and resistance testing.
 tags: [Highlight, Acute lymphoblastic leukemia, Multi-omics analysis, Precision medicine, Cancer, Haematology]
 authors: [Katarina Öjefors Stark]
+images: ["/highlights/multiomics_analysis_all_cancer.png"]
 ---
 
 Precision medicine involves the use of genetic information from the individual's own genes and proteins to enable disease diagnosis, treatment, and prevention. It is especially important in treatment of cancer. Precision medicine enables, for example, the use of therapies that specifically target cancer cells, and the use of tumor biomarkers to diagnose specific cancers. It can also involve the development of novel diagnostic tools for research on cancer, as well as other diseases.
