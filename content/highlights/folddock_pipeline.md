@@ -7,6 +7,7 @@ banner_large: /highlights/bryantetal_large.png
 banner_caption: "This is an example of a large complex (20S proteasome) built from predictions of individual dimers and then combined together to form the entire complex. This image is courtesy of Arne Elofsson"
 tags: [Highlight, AlphaFold2, Protein structures]
 authors: [Katarina Öjefors Stark]
+images: ["/highlights/bryantetal.png"]
 ---
 
 Reliably determining the three-dimensional (3D) structure of proteins has long since been considered one of the major challenges of modern-day biology. Understanding the 3D structure of proteins is believed to be key in, for example, elucidating previously unknown protein functions and gaining insight into protein-protein interactions. The ability to reliably predict 3D protein structure is therefore crucial in deepening our understanding of many fields, including human biology, drug discovery, antibiotic resistance, environmental challenges, and climate change.
