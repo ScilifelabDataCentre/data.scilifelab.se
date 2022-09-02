@@ -199,6 +199,11 @@ h5 a:hover {
   color: white;
 }
 
+.serve-app-type{
+  background-color: #A48FA9;
+  color: white;
+}
+
 .btn-details {
     color: #fff;
     background-color: #4C979F;
