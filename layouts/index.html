@@ -140,6 +140,12 @@
   <div class="row mt-4 mb-1 mb-md-0">
     <div class="col">
       <h3>Apps recently deployed on SciLifeLab Serve</h3>
+      <p>If you would like further information about SciLifeLab Serve or experience issues with the apps below, please
+        email <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se
+        </a>. If you have questions about a specific app, go to the <a href="https://serve.scilifelab.se/apps"
+          target="_blank">apps page on SciLifeLab Serve
+        </a> and click on the 'Details' button of the to find contact information for the owner of the app.
+      </p>
     </div>
   </div>
   <div id="recent-serve-apps" class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3"></div>
@@ -203,10 +209,13 @@
         dataItemsHTML += `
         <div class="col">
           <div class="p-2 border rounded h-100">
-            <div class="row p-1">
+            <div class="p-1">
               <a href="${data.table_field.url}" target="_blank">
                 ${data.name}
               </a>
+            </div>
+            <div class="p-1">
+                <small>${data.description}</small> 
             </div>
             <div class="p-1">
               <span class="badge serve-app-type">${data.app_type}</span>
