@@ -209,10 +209,13 @@
         dataItemsHTML += `
         <div class="col">
           <div class="p-2 border rounded h-100">
-            <div class="row p-1">
+            <div class="p-1">
               <a href="${data.table_field.url}" target="_blank">
                 ${data.name}
               </a>
+            </div>
+            <div class="p-1">
+                <small>${data.description}</small> 
             </div>
             <div class="p-1">
               <span class="badge serve-app-type">${data.app_type}</span>
