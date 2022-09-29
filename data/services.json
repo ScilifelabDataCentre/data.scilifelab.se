@@ -8,7 +8,7 @@
       "helpdesk"
     ],
     "name": "SciLifeLab RDM Guidelines Portal",
-    "description": "A web portal that contains information relevant for the management of life science research data in Sweden. Guidance is given for each stage of the data life cycle, and users can also receive direct support from the associated Helpdesk.",
+    "description": "A web portal that contains information relevant for the management of life science research data in Sweden. Guidance is given for each phase of the data life cycle, and users can also receive direct support from the associated Helpdesk.",
     "url": "https://data-guidelines.scilifelab.se",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
     "support_email": "data-management@scilifelab.se",
