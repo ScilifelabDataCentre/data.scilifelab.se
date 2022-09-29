@@ -186,9 +186,13 @@
                   ${data.title}
               </a>
             </div>
-            <div class="p-1">
-              <span class="badge data-item-type">${data.defined_type_name}</span>
-              <small class="badge bg-light text-muted ms-3">Published on: ${data.timeline.posted.slice(0, 10)}</small>
+            <div class="row-cols-1 p-1">
+              <div class="col">
+                <small class="text-muted">Published on: ${data.timeline.posted.slice(0, 10)}</small>
+              </div>
+              <div class="col">
+                <span class="badge data-item-type">${data.defined_type_name}</span>
+              </div>
             </div>
           </div>
         </div>`;
@@ -218,9 +222,13 @@
             <div class="p-1">
                 <small>${data.description}</small> 
             </div>
-            <div class="p-1">
-              <span class="badge serve-app-type">${data.app_type}</span>
-              <small class="badge bg-light text-muted ms-2">Updated on: ${data.updated_on.slice(0, 10)}</small>
+            <div class="row-cols-1 p-1">
+              <div class="col">
+                <small class="text-muted">Updated on: ${data.updated_on.slice(0, 10)}</small>
+              </div>
+              <div class="col">
+                <span class="badge serve-app-type">${data.app_type}</span>
+              </div>
             </div>
           </div>
         </div>`;
