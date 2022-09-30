@@ -12,7 +12,7 @@ Proteins are involved in a myriad of biological processes and can perform multip
 
 The cellular organisation of proteins has, until recently, been largely unexplored on the global level. The work performed within the SubCellBarCode project [(Orre *et al.*, 2019)](https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)31005-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097276518310050%3Fshowall%3Dtrue) contributes knowledge of the cellular organisation by providing both a resource for protein subcellular localisation information, and an analysis pipeline/workflow for further large-scale exploration in additional cell types and conditions.
 
-[Orre *et al.* (2019)](https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)31005-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097276518310050%3Fshowall%3Dtrue) used cell fractionation together with quantitative mass spectrometry (MS) to study protein subcellular localisation. They then classified protein localisation on a global scale, providing a resource covering proteins mapping to almost 12.5k unique genes across 5 cell lines. They have recently progressed their work by developing an integrated workflow for spatial proteomics research [(Arslan & Pan *et al.*, 2022)](https://www.nature.com/articles/s41596-022-00699-2). This comprehensive workflow includes both the wet- and dry-lab steps. The wet-lab protocol encompasses the process from subcellular fractionation to MS sample preparation and analysis. The dry-lab protocol describes all subsequent computational steps required to make determinations about the subcellular locations of proteins. It includes quantitative MS-data analysis, classification based on machine learning, differential localisation analysis, and data visualisation. An overview of the method, and approximate timings is shown below.
+[Orre *et al.* (2019)](https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)31005-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097276518310050%3Fshowall%3Dtrue) used cell fractionation together with quantitative mass spectrometry (MS) to study protein subcellular localisation. They then classified protein localisation on a global scale, providing a resource covering proteins mapping to almost 12.5k unique genes across 5 cell lines. They have recently progressed their work by developing an integrated workflow for spatial proteomics research [(Arslan & Pan *et al.*, 2022)](https://www.nature.com/articles/s41596-022-00699-2). This comprehensive workflow includes both the wet- and dry-lab steps. The wet-lab protocol encompasses the process from subcellular fractionation to MS sample preparation and analysis. The dry-lab protocol describes all subsequent computational steps required to make determinations about the subcellular locations of proteins. It includes quantitative MS-data analysis, classification based on machine learning, differential localisation analysis, and data visualisation. An overview of the method and approximate timings is shown below.
 
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/subcellbarcode_method_overview.png" class="figure-img img-fluid w-75 d-none d-xl-inline">
@@ -38,7 +38,7 @@ There are 4 tools/apps on the web portal:
 
 * **HeatMap (fractionation profiles)** - Explore co-fractionation by clustering protein fractionation profiles.
 
-Each of the tools can be accessed at the bottom of the 'home' page or under the 'tools' subheader. The apps will open at the bottom of the page.
+Each of the tools can be accessed at the bottom of the 'Home' page or under the 'Tools' subheader. The apps will open at the bottom of the page.
 
 ### Data
 
@@ -58,11 +58,11 @@ The SubCellBarCode pipeline used in [Arslan & Pan *et al.* (2022)](https://www.n
 
 ## Available data
 
-The mass spectrometry (MS) proteomics data for the analysis of the HeLa cell line are available in the ProteomXchange Consortium via the jPOST partner repository (identifier: [PXD022533](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD022533)). 
+The mass spectrometry (MS) proteomics data for the analysis of the HeLa cell line are available in the ProtomeXchange Consortium via the jPOST partner repository (identifier: [PXD022533](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD022533)). 
 
 The MS proteomics data for the analysis of the original 5 cell lines (A431, MCF7, H322, HCC827, and U251) was deposited to the ProteomeXchange Consortium via the PRIDE partner repository (identifier: [PXD006895](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD006895)).
 
-Processed data from the SubCellBarCode project can be queried and downloaded from the [SubCellBarCode web portal](https://www.subcellbarcode.org/index.html). See the [web portal subsection above](/subcellbarcode/#data) for details.
+Processed data from the SubCellBarCode project can be queried and downloaded from the [SubCellBarCode web portal](https://www.subcellbarcode.org/index.html). See the [web portal data subsection above](/subcellbarcode/#data) for details.
 
 ## Additional resources
 
@@ -79,4 +79,4 @@ A contact form is available on the SubCellBarCode web portal. Click on the email
 </div>
 <br>
 
-Alternatively, it is possible to directly email [Lukas Orre](mailto:lukas.orre@ki.se) or [Janne Lehtiö](mailto:janne.lehtio@ki.se), both researchers involved with the project, with any questions.
+Alternatively, it is possible to directly email [Lukas Orre](mailto:lukas.orre@ki.se) or [Janne Lehtiö](mailto:janne.lehtio@ki.se), both researchers involved in the project, with any questions.
