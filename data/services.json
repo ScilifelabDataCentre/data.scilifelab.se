@@ -4,6 +4,23 @@
       "researchers"
     ],
     "type": [
+      "database",
+      "tool",
+      "portal"
+    ],
+    "name": "SubCellBarCode",
+    "description": "A collection of resources (including methodologies, tools, and data) centred around deducing and exploring the subcellular localisation of proteins.",
+    "url": "/subcellbarcode/",
+    "logo_location": "/img/service_logos/subcellbarcode2.png",
+    "maintained_by": "SubCellBarCode Team",
+    "maintained_by_url": "https://www.subcellbarcode.org/about.html",
+    "support_website": "https://www.subcellbarcode.org/index.html"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "portal",
       "helpdesk"
     ],
