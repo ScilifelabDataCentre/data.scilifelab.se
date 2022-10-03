@@ -5,7 +5,7 @@ summary: New pipeline called FoldDock uses AlphaFold2 to provide accurate predic
 banner: /highlights/bryantetal.png
 banner_large: /highlights/bryantetal_large.png
 banner_caption: "This is an example of a large complex (20S proteasome) built from predictions of individual dimers and then combined together to form the entire complex. This image is courtesy of Arne Elofsson"
-tags: [Highlight, AlphaFold2, Protein structures]
+tags: [Highlight, AlphaFold2, Protein structures, Proteins]
 authors: [Katarina Öjefors Stark]
 images: ["/highlights/bryantetal.png"]
 ---
