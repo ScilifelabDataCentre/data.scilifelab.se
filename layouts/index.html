@@ -4,9 +4,16 @@
   <div class="row mt-4">
     <div class="col-md-8 py-2 pe-3">
       {{ with .Site.GetPage "section" "services" }}
-      <h3><a href="{{ .RelPermalink }}">Tools & Databases <i class="bi bi-arrow-right-square"></i></a></h3>
+      <div class="row mb-2">
+        <div class="col">
+          <h3><a href="{{ .RelPermalink }}">Services</a></h3>
+        </div>
+        <div class="col mt-2 fs-6 text-end">
+          <a href="{{ .RelPermalink }}">See all services <i class="bi bi-arrow-right-square-fill"></i></a>
+        </div>
+      </div>
       <div class="row g-2 cont-links">
-        {{ range .Site.Data.services }}
+        {{ range first 6 .Site.Data.services }}
         {{ if in .target "researchers" }}
         <div class="col-6 col-lg-4">
           <div class="p-3 border rounded h-100">
@@ -27,16 +34,18 @@
         {{ end }}
         {{ end }}
       </div>
-      <div class="row mt-3">
-        <div class="col fs-6 text-end">
-          <a href="{{ .RelPermalink }}">See all tools & databases <i class="bi bi-arrow-right-square-fill"></i></a>
-        </div>
-      </div>
       {{ end }}
     </div>
     <div class="col-md-4 ms-auto py-2 ps-3">
       {{ with .Site.GetPage "section" "news" }}
-      <h3><a href="{{ .RelPermalink }}">What's new? <i class="bi bi-arrow-right-square"></i></a></h3>
+      <div class="row mb-1">
+        <div class="col">
+          <h3><a href="{{ .RelPermalink }}">What's new?</a></h3>
+        </div>
+        <div class="col mt-2 fs-6 text-end">
+          <a href="{{ .RelPermalink }}">See all news <i class="bi bi-arrow-right-square-fill"></i></a>
+        </div>
+      </div>
       <div class="row small mb-2">
         <div class="col">
           {{ range first 3 .RegularPages }}
@@ -53,11 +62,6 @@
           {{ end }}
         </div>
       </div>
-      <div class="row mt-3">
-        <div class="col fs-6 text-end">
-          <a href="{{ .RelPermalink }}">See all news items <i class="bi bi-arrow-right-square-fill"></i></a>
-        </div>
-      </div>
       {{ end }}
     </div>
   </div>
@@ -65,27 +69,28 @@
 
 <section>
   {{ with .Site.GetPage "section" "highlights" }}
-  <div class="row mt-4 mb-1 mb-md-0">
+  <div class="row mt-4 mb-2">
     <div class="col">
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</i></a></h3>
+    </div>
+    <div class="col mt-2 fs-6 text-end">
+      <a href="{{ .RelPermalink }}">See all highlights <i class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
   {{ $latest_highlights := first 4 (where .RegularPages "Section" "highlights") }}
   {{ .Scratch.Set "highlights_list" $latest_highlights }}
   {{ partial "highlights_cards.html" . }}
-  <div class="row mt-3">
-    <div class="col fs-6 text-end">
-      <a href="{{ .RelPermalink }}">See all data highlights <i class="bi bi-arrow-right-square-fill"></i></a>
-    </div>
-  </div>
   {{ end }}
 </section>
 
 <section>
   {{ with .Site.GetPage "section" "events" }}
-  <div class="row mt-4 mb-1 mb-md-0">
+  <div class="row mt-5 mb-2">
     <div class="col">
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }} <i class="bi bi-arrow-right-square"></i></a></h3>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</i></a></h3>
+    </div>
+    <div class="col mt-2 fs-6 text-end">
+      <a href="{{ .RelPermalink }}">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
@@ -112,63 +117,132 @@
     </div>
     {{ end }}
   </div>
-  <div class="row mt-3">
-    <div class="col fs-6 text-end">
-      <a href="{{ .RelPermalink }}">See all data events & training opportunities <i
-          class="bi bi-arrow-right-square-fill"></i></a>
-    </div>
-  </div>
   {{ end }}
 </section>
 
 <section>
-  <div class="row mt-4 mb-1 mb-md-0">
-    <div class="col">
-      <h3>Recently published items in the SciLifeLab Data Repository</h3>
+    <div class="row mt-5 mb-2">
+      <div class="col-8">
+        <h3>Recently published items in the SciLifeLab Data Repository</h3>
+      </div>
+      <div class="col-4 mt-2 fs-6 text-end">
+         <small class="text-muted">(external site) </small>
+         <a href="https://scilifelab.figshare.com" target="_blank">See all items 
+             <i class="bi bi-arrow-right-square-fill"></i></a>
+      </div>
     </div>
-  </div>
-  <div id="recent-data-items" class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3"></div>
-  <div class="row mt-3">
-    <div class="col fs-6 text-end">
-      <a href="https://scilifelab.figshare.com" target="_blank">See all items in the Scilifelab Data Repository <i
-          class="bi bi-arrow-right-square-fill"></i></a>
-    </div>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      function addDataItems(dataArray) {
-        var dataItemsHTML = "";
-        for (const data of dataArray) {
-          dataItemsHTML += `
-                  <div class="col">
-                    <div class="p-2 border rounded h-100">
-                      <div class="p-1">
-                      <a href="${data.url_public_html}" target="_blank">
-                        ${data.title}
-                      </a>
-                      </div>
-                      <div class="p-1">
-                        <span class="badge data-item-type">${data.defined_type_name}</span>
-                        <small class="badge bg-light text-muted ms-3">Published on: ${data.timeline.posted.slice(0, 10)}</small>
-                      </div>
-                    </div>
-                  </div>
-              `;
-        };
-        var dataRow = document.getElementById('recent-data-items');
-        dataRow.innerHTML = dataItemsHTML;
-      };
+  <div id="recent-data-items" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
+  <p class="mt-2 pt-1">If you would like further information about SciLifeLab data repository or experience issues with 
+      the items above, please email <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se
+    </a>. If you have questions about a specific item, contact information is available on the item's page.
+  </p>
+</section>
 
-      //Make the request to get recent items from scilifelab figshare
+<section>
+  <div class="row mt-5 mb-2">
+    <div class="col-8">
+      <h3>Apps recently deployed on SciLifeLab Serve</h3>
+    </div>
+    <div class="col-4 mt-2 fs-6 text-end">
+       <small class="text-muted">(external site) </small>
+       <a href="https://scilifelab.figshare.com" target="_blank">See all public apps 
+           <i class="bi bi-arrow-right-square-fill"></i></a>
+    </div>
+  </div>
+  <div id="recent-serve-apps" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
+  <p class="mt-2 pt-1">If you would like further information about SciLifeLab Serve or experience issues with the apps 
+    above, please email <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se
+    </a>. If you have questions about a specific app, go to the <a href="https://serve.scilifelab.se/apps"
+      target="_blank">apps page on SciLifeLab Serve
+    </a> and click on the 'Details' button of the to find contact information for the owner of the app.
+  </p>
+</section>
+
+<script>
+  /* Functions to fetch and load recent items from desired Scilifelan services */
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    // Takes a URL and calls the callback function pass the data fetched
+    function getDataFromUrl(url, callback) {
       var req = new XMLHttpRequest();
       req.overrideMimeType("application/json");
-      req.open("GET", "https://api.figshare.com/v2/articles?institution=803&page_size=8&order=published_date&order_direction=desc", true);
+      req.open("GET", url, true);
       req.onload = function () {
-        addDataItems(JSON.parse(req.responseText));
+        callback(JSON.parse(req.responseText));
       };
       req.send(null);
-    });
-  </script>
-</section>
+    }
+
+    // Creates html entry for each item fetch from Scilifelab Data Repository
+    function addDataItems(dataArray) {
+      var dataItemsHTML = "";
+      for (const data of dataArray) {
+        if (data.defined_type_name == "presentation") { data.defined_type_name = "talk" }
+        dataItemsHTML += `
+        <div class="col">
+          <div class="p-2 border rounded h-100">
+            <div class="p-1">
+              <a href="${data.url_public_html}" target="_blank">
+                  ${data.title}
+              </a>
+            </div>
+            <div class="row-cols-1 p-1">
+              <div class="col">
+                <small class="text-muted">Published on: ${data.timeline.posted.slice(0, 10)}</small>
+              </div>
+              <div class="col">
+                <span class="badge data-item-type">${data.defined_type_name}</span>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      };
+      var dataRow = document.getElementById('recent-data-items');
+      dataRow.innerHTML = dataItemsHTML;
+    };
+
+    getDataFromUrl(
+      decodeURIComponent("https%3A%2F%2Fapi.figshare.com%2Fv2%2Farticles%3Finstitution%3D803%26page_size%3D8%26" +
+        "order%3Dpublished_date%26order_direction%3Ddesc"),
+      addDataItems
+    );
+
+    // Creates html entry for each app fetched from Scilifelab Serve
+    function addServeApps(dataArray) {
+      var dataItemsHTML = "";
+      for (const data of dataArray.data) {
+        dataItemsHTML += `
+        <div class="col">
+          <div class="p-2 border rounded h-100">
+            <div class="p-1">
+              <a href="${data.table_field.url}" target="_blank">
+                ${data.name}
+              </a>
+            </div>
+            <div class="p-1">
+                <small>${data.description}</small> 
+            </div>
+            <div class="row-cols-1 p-1">
+              <div class="col">
+                <small class="text-muted">Updated on: ${data.updated_on.slice(0, 10)}</small>
+              </div>
+              <div class="col">
+                <span class="badge serve-app-type">${data.app_type}</span>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      };
+      var dataRow = document.getElementById('recent-serve-apps');
+      dataRow.innerHTML = dataItemsHTML;
+    };
+
+    getDataFromUrl(
+      decodeURIComponent("https%3A%2F%2Fserve.scilifelab.se%2Fapi%2Flist-apps"),
+      addServeApps
+    );
+
+  });
+</script>
 
 {{ end }}
