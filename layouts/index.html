@@ -1,12 +1,13 @@
 {{ define "main" }}
 
 <section>
-  <div class="row mt-4">
+  <div class="row mt-4 pt-2">
     <div class="col-md-8 py-2 pe-3">
+      <!-- Services list -->
       {{ with .Site.GetPage "section" "services" }}
       <div class="row mb-2">
         <div class="col">
-          <h3><a href="{{ .RelPermalink }}">Services</a></h3>
+          <h3><a class="title-link" href="{{ .RelPermalink }}">Services</a></h3>
         </div>
         <div class="col mt-2 fs-6 text-end">
           <a href="{{ .RelPermalink }}">See all services <i class="bi bi-arrow-right-square-fill"></i></a>
@@ -36,17 +37,19 @@
       </div>
       {{ end }}
     </div>
+    
     <div class="col-md-4 ms-auto py-2 ps-3">
+      <!-- News updates -->
       {{ with .Site.GetPage "section" "news" }}
       <div class="row mb-1">
         <div class="col">
-          <h3><a href="{{ .RelPermalink }}">What's new?</a></h3>
+          <h3><a class="title-link" href="{{ .RelPermalink }}">What's new?</a></h3>
         </div>
         <div class="col mt-2 fs-6 text-end">
           <a href="{{ .RelPermalink }}">See all news <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
       </div>
-      <div class="row small mb-2">
+      <div class="row small">
         <div class="col">
           {{ range first 3 .RegularPages }}
           <div class="row">
@@ -68,26 +71,48 @@
 </section>
 
 <section>
-  {{ with .Site.GetPage "section" "highlights" }}
-  <div class="row mt-4 mb-2">
-    <div class="col">
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</i></a></h3>
+  <div class="row mt-4">
+    <div class="col-md-8 py-2 pe-3">
+      <!-- Data Higlights -->
+      {{ with .Site.GetPage "section" "highlights" }}
+      <div class="row pb-2">
+        <div class="col-6 col-lg-4">
+          <h3><a class="title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        </div>
+        <div class="col mt-2 fs-6 text-end">
+          <a href="{{ .RelPermalink }}">See all highlights <i class="bi bi-arrow-right-square-fill"></i></a>
+        </div>
+      </div>
+      {{ $latest_highlights := first 3 (where .RegularPages "Section" "highlights") }}
+      {{ .Scratch.Set "highlights_list" $latest_highlights }}
+      {{ partial "highlights_cards.html" . }}
+      {{ end }}
     </div>
-    <div class="col mt-2 fs-6 text-end">
-      <a href="{{ .RelPermalink }}">See all highlights <i class="bi bi-arrow-right-square-fill"></i></a>
+
+    <div class="col-md-4 ms-auto py-2 ps-3">
+      <!-- About section -->
+      <div class="row mb-1">
+        <div class="col">
+          <h3><a class="title-link" href="/about">About this portal</a></h3>
+        </div>
+        <div class="col-4 mt-2 fs-6 text-end">
+          <a href="/about">Read more <i class="bi bi-arrow-right-square-fill"></i></a>
+        </div>
+      <div class="row">
+        <div class="col">
+          {{ .Content }}
+        </div>
+      </div>
     </div>
   </div>
-  {{ $latest_highlights := first 4 (where .RegularPages "Section" "highlights") }}
-  {{ .Scratch.Set "highlights_list" $latest_highlights }}
-  {{ partial "highlights_cards.html" . }}
-  {{ end }}
 </section>
 
+<!-- Training and events -->
 <section>
   {{ with .Site.GetPage "section" "events" }}
-  <div class="row mt-5 mb-2">
+  <div class="row mt-4 mb-2">
     <div class="col">
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</i></a></h3>
+      <h3><a class="title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     </div>
     <div class="col mt-2 fs-6 text-end">
       <a href="{{ .RelPermalink }}">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
@@ -120,9 +145,10 @@
   {{ end }}
 </section>
 
+<!-- Recently published items in figshare-->
 <section>
-    <div class="row mt-5 mb-2">
-      <div class="col-8">
+    <div class="row mt-4 mb-2 pt-3">
+      <div class="col">
         <h3>Recently published items in the SciLifeLab Data Repository</h3>
       </div>
       <div class="col-4 mt-2 fs-6 text-end">
@@ -132,15 +158,16 @@
       </div>
     </div>
   <div id="recent-data-items" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
-  <p class="mt-2 pt-1">If you would like further information about SciLifeLab data repository or experience issues with 
+  <p class="mt-1 pt-2">If you would like further information about SciLifeLab data repository or experience issues with 
       the items above, please email <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se
     </a>. If you have questions about a specific item, contact information is available on the item's page.
   </p>
 </section>
 
+<!-- recently deployed apps in serve -->
 <section>
-  <div class="row mt-5 mb-2">
-    <div class="col-8">
+  <div class="row mt-4 mb-2 pt-2">
+    <div class="col">
       <h3>Apps recently deployed on SciLifeLab Serve</h3>
     </div>
     <div class="col-4 mt-2 fs-6 text-end">
@@ -150,7 +177,7 @@
     </div>
   </div>
   <div id="recent-serve-apps" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
-  <p class="mt-2 pt-1">If you would like further information about SciLifeLab Serve or experience issues with the apps 
+  <p class="mt-1 pt-2">If you would like further information about SciLifeLab Serve or experience issues with the apps 
     above, please email <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se
     </a>. If you have questions about a specific app, go to the <a href="https://serve.scilifelab.se/apps"
       target="_blank">apps page on SciLifeLab Serve

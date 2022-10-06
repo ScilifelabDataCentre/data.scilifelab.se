@@ -1,4 +1,8 @@
+{{ if eq (len (.Scratch.Get "highlights_list")) 3 }}
+<div class="row row-cols-2 row-cols-lg-3 g-2">
+{{ else }}
 <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+{{ end }}
   {{ range .Scratch.Get "highlights_list" }}
   <div class="col">
     <div class="border rounded h-100">

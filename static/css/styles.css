@@ -51,6 +51,10 @@ h5 a:hover {
   color: #045C64;
 }
 
+.title-link {
+    color: #17202A;
+}
+
 .header {
     background-position: center;
     background-repeat: no-repeat;
@@ -96,16 +100,13 @@ h5 a:hover {
 
 /* logo */
 
-.navbar-light .navbar-brand {
-    color: #79B1B7;
+.navbar .navbar-brand {
+    max-width: 35%;
 }
 
-.navbar-light .navbar-brand:hover {
-    color: #4C979F;
-    text-decoration: none;
-}
-
-.navbar-light .navbar-tagline {
+.navbar .navbar-brand img {
+    height: 70px;
+    max-width: 100%;
 }
 
 /* Nav links */
