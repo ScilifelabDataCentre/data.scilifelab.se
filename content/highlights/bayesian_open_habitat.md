@@ -1,7 +1,7 @@
 ---
 title: Bayesian deep learning model finds clues about the evolution of open habitats
-date: 2022-10-04
-summary: The study uses Bayesian deep-learning models trained using fossil evidence of mammal-plant interactions to explore the origin and expansion of open grassland in North America. The study used open data sources, and openly shares the code and functionalities produced. 
+date: 2022-10-06
+summary: The study uses a Bayesian deep-learning model trained using fossil evidence of mammal-plant interactions to explore the origin and expansion of open grassland in North America. The study used open data sources, and openly shares the code and functionalities produced. 
 banner: /highlights/still_transition_model.png
 banner_large: /img/misc/new_animated_vegetation_change_gif.gif
 banner_caption: "Animation showing changes in vegetation over time.<br>Courtesy Tobias Andermann, Uppsala University.<br><button class='btn btn-aqua' style='font-size:11px;padding:0.4px 5px 1.5px;' onclick=\"document.querySelector('figure > img').src='/img/misc/new_animated_vegetation_change_gif.gif'\">Replay animation</button>"
@@ -27,7 +27,7 @@ In summary, Andermann and colleagues used an entirely data-driven approach to ex
 
 In adherance with the open sharing of data and code, the researchers have shared the code for the BNN model, and also provided the main BNN functionalities as an open source Python package. This package can be used for any classification or regression task; it is not restricted to vegetation prediction.
 
-* All code used in this study, as well as a full data tutorial and installation instructions for training BNN models are available on the project’s [GitHub repository](https://github.com/tandermann/paleovegetation56).
+* All code used in this study, as well as a full data tutorial and installation instructions for training BNN models are available on the project’s [GitHub repository](https://github.com/tandermann/paleovegetation).
 
 * Main BNN functionalities can be loaded as a stand-alone and open-source Python package, which is available on [GitHub](https://github.com/dsilvestro/npBNN) (v0.1.12 is the most current). This enables the described BNN approach to be applied to any classification or regression task, not just the task of vegetation prediction.
 
