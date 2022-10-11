@@ -1,6 +1,6 @@
 ---
 title: GenErode pipeline can compare patterns of genomic erosion using genomic data from historical, ancient and modern samples
-date: 2022-10-07
+date: 2022-10-13
 summary: The GenErode pipeline is the first bioinformatics pipeline that can process and analyse ancient, historical, and modern sequencing data from the same species with the aim of generating comparable estimates of genomic erosion indices.
 banner: /highlights/GenErode.png
 banner_large: /highlights/GenErode.png
@@ -10,7 +10,7 @@ authors: [Katarina Öjefors Stark]
 images: ["/highlights/GenErode.png"]
 ---
 
-In recent centuries, many populations of wild animal species have been in severe decline due to human activities. This has led to reduced genetic diversity, increased inbreeding, and the accumulation of harmful mutations in these species. These so-called ‘genomic erosion’ processes increase the risk of species extinction. Multiple large-scale sequencing efforts have been initiated to generate reference genomes for all eukaryotic species. This will make genomics projects on endangered species more and more common. However, to date, genomic data has only had a very limited impact on the conservation of endangered species. There are several reasons for this, but two of the most important are that (1) the lack of standardised measures for genomic erosion has led to biases, and (2) that results need to be validated with empirical data.
+In recent centuries, many populations of wild animal species have been in severe decline due to human activities. This has led to reduced genetic diversity, increased inbreeding, and the accumulation of harmful mutations in these species. These so-called ‘genomic erosion’ processes increase the risk of species extinction. Multiple large-scale sequencing efforts have been initiated to generate reference genomes for all eukaryotic species. This will make genomics projects on endangered species more and more common. However, to date, genomic data has only had a very limited impact on the conservation of endangered species. There are several reasons for this, but two of the most important are (a) that the lack of standardised measures for genomic erosion has led to biases, and (b) that results need to be validated with empirical data.
 
 Genomic erosion indices are only weakly correlated with current population sizes, which makes it difficult to identify genomic erosion in endangered species. Researchers would need to compare data from historical or ancient samples from before the decline (e.g. from museum collections) with data from modern, present-day samples to directly quantify the genomic consequences of the decline. Another challenge is to make data analyses reproducible and thereby comparable. Finally, not all conservation practitioners and researchers have the bioinformatics and programming skills needed to analyse large-scale genomic datasets.
 
@@ -46,5 +46,3 @@ Kutschera, V. E., Kierczak, M., van der Valk, T., von Seth, J., Dussex, N., Lord
 #### Funding
 
 The project was funded by Carl Tryggers, European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement, the Swedish Research Council (2017-04647) and FORMAS (2015-676), the Swiss National Science Foundation, and the Knut and Alice Wallenberg Foundation as part of the National Bioinformatics Infrastructure Sweden at SciLifeLab.
-
-
