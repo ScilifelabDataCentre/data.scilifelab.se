@@ -4,7 +4,7 @@ date: 2022-10-13
 summary: The GenErode pipeline is the first bioinformatics pipeline that can process and analyse ancient, historical, and modern sequencing data from the same species with the aim of generating comparable estimates of genomic erosion indices.
 banner: /highlights/GenErode.png
 banner_large: /highlights/GenErode.png
-banner_caption: "Image courtesy of Verena Kutschera."
+banner_caption: "Image courtesy of David Díez-del-Molino."
 tags: [Highlight, GenErode, Genomic Erosion, Bioinformatics, Conservation]
 authors: [Katarina Öjefors Stark]
 images: ["/highlights/GenErode.png"]
@@ -20,7 +20,7 @@ In a recent publication in *BMC Bioinformatics*, Kutschera, Kierczak, van der Va
 
 In brief, **GenErode** maps sequencing data to a reference genome assembly. It then performs variant calling and runs different downstream analyses to estimate a number of genomic erosion indices. The data is processed according to the characteristics of each data type (ancient/historical, modern). Quality checks and filtering are performed in all data processing steps, and a report with run settings and results is produced for each pipeline run. The pipeline can also run optional steps, such as subsampling a proportion of reads to achieve a similar average depth across samples, or assessing the presence of non-endogenous reads in the data by mapping historical/ancient data to mitochondrial genomes from different species.
 
-Whilst the pipeline has been optimised for the analysis of re-sequencing data from vertebrates, it can instead be used for other organisms, such as haploid insects. Currently, **GenErode** can only be used for one ancient/historical and one modern sample, but it could easily be scaled up to dozens of samples. Until now, bioinformatics expertise has been a bottleneck in the conservation community. However, the proposed pipeline is user-friendly, no programming knowledge is required to run the pipeline, and all bioinformatics steps are well documented (making it accessible for users).
+Whilst the pipeline has been optimised for the analysis of re-sequencing data from vertebrates, it can instead be used for other organisms, such as haploid insects. The minimum sample size for GenErode is one ancient/historical and one modern sample, but it can easily be scaled up to dozens of samples. Until now, bioinformatics expertise has been a bottleneck in the conservation community. However, the proposed pipeline is user-friendly, no programming knowledge is required to run the pipeline, and all bioinformatics steps are well documented (making it accessible for users).
 
 To test the **GenErode** pipeline and verify it as a useful tool, the researchers used a test dataset from the Sumatran rhinoceros. This dataset contains a small proportion of whole genome re-sequencing data from three historical and three modern Sumatran rhinoceros samples. The original results based on the entire, genome-wide dataset can be found in a separate article (see [von Seth et al., 2021](https://doi.org/10.1038/s41467-021-22386-8) from the [Love Dalén group](https://www.su.se/nyheter/love-dal%C3%A9n-ny-professor-vid-zoologiska-institutionen-1.609473)).
 
