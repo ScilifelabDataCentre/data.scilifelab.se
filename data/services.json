@@ -128,8 +128,8 @@
     "type": [
       "tool"
     ],
-    "name": "SciLifeLab Data Delivery Service",
-    "description": "Cloud-based system for the delivery of data from SciLifeLab platforms to their users. It consists of a command line interface (CLI) and a currently minimal web interface.",
+    "name": "SciLifeLab Data Delivery System",
+    "description": "Cloud-based system for the delivery of data from SciLifeLab units to their users. It consists of a command line interface (CLI) and a currently minimal web interface.",
     "logo_location": "/img/service_logos/dds.png",
     "url": "https://delivery.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
@@ -144,7 +144,7 @@
       "tool"
     ],
     "name": "Order Portal",
-    "description": "A web based system for unit communication with prospective users. We can provide you with an instance configured according to your own specific requirements. Please contact datacentre@scilifelab.se for inquiries.",
+    "description": "A web-based system to enable communication between units and prospective users. We can provide you with an instance configured according to your own specific requirements.",
     "url": "https://orderportal.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
@@ -158,7 +158,7 @@
       "tool"
     ],
     "name": "Anubis",
-    "description": "Anubis is a web-based system to handle calls, proposal submission, reviews, decisions and grant dossiers. Please contact datacentre@scilifelab.se for inquiries.",
+    "description": "Anubis is a web-based system for handling calls, proposal submission, reviews, decisions, and grant dossiers.",
     "url": "https://anubis.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
