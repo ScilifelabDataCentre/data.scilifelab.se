@@ -1,18 +1,18 @@
 ---
 title: New study shows crossing the salt barrier has shaped the diversity of life
-date: 2022-10-19
+date: 2022-10-21
 summary: Study by Jamy *et al.* show that hundreds of transitions have occurred between marine and non-marine habitats over the course of two billion years of eukaryotic evolution. Code and data are shared openly.
+images: [/highlights/diversity_of_life_thumbnail.png]
 banner: /highlights/diversity_of_life_thumbnail.png
 banner_large: /highlights/diversity_of_life.png
-banner_caption: "Figure 1 from Jamy *et al.* (2022)."
-tags: [Highlight, Bayesian, Paleovegetation, Deep-learning]
-authors: [Katarina Öjefors Stark]
-images: [/highlights/still_transition_model.png]
+banner_caption: "Figure 1 from Jamy *et al.* (2022), Global eukaryotic 18S–28S phylogeny from environmental samples and the distribution of habitats."
+tags: [Highlight, Eukaryote, Evolution, Ecology and Environmental sequencing]
+authors: [Mahwash Jamy]
 ---
 
 Successfully colonising a new habitat is a key evolutionary event. Over the course of animal and plant diversification, transitions between marine and non-marine habitats have seldom occurred. This habitat boundary, called the “salt-barrier”, is one of the hardest barriers to cross due to the strong shift in salinity and osmotic pressure. However, most eukaryotic diversity is in fact microbial (with larger population sizes and dispersal capabilities) and there is debate on how frequently these microbes have achieved marine/non-marine cross colonisations. The role of the salt barrier in shaping eukaryotic diversity at a broad scale is thus unknown.
 
-A recent study published in *Nature Ecology & Evolution* has now used a combination of long-read and short-read metabarcoding data to investigate how habitat preference has evolved across the eukaryotic tree of life. The work involved Uppsala University researchers along with a team of international collaborators (*First author:* Mahwash Jamy, Uppsala University; *Corresponding author:* [Fabien Burki,](https://www.scilifelab.se/researchers/fabien-burki/) Uppsala University/SciLifeLab).
+A recent study published in *Nature Ecology & Evolution* has now used a combination of long-read and short-read metabarcoding data to investigate how habitat preference has evolved across the eukaryotic tree of life. The work involved Uppsala University researchers along with a team of international collaborators (*First author:* [Mahwash Jamy](https://www.katalog.uu.se/profile/?id=N16-660), Uppsala University; *Corresponding author:* [Fabien Burki,](https://www.scilifelab.se/researchers/fabien-burki/) Uppsala University/SciLifeLab).
 
 Jamy and colleagues first generated nearly 10 million long environmental reads (~4,500 bp spanning the ribosomal DNA operon) from 21 samples including Swedish freshwater lakes, permafrost thaw ponds, boreal and tropical forest soils, and oceans waters from the surface to the depths of the Mariana Trench. The long reads have increased phylogenetic signal, which (after clustering into ~17,000 taxonomically labeled OTUs) could be used to calculate phylogenetic trees spanning all major eukaryotic groups. Taxon sampling was further increased by incorporating publicly available short-read metabarcoding data (~234 million reads) from >1,500 samples globally (this dataset is available in a recently published article; see [Vaulot *et al.* (2022)](https://doi.org/10.1111/1755-0998.13674) and [metaPR2 database](https://shiny.metapr2.org/metapr2/)).
 
