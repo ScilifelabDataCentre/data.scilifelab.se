@@ -3,10 +3,13 @@
 {{ .Content }}
 
 <h3 id="for-researchers">Services for researchers</h3>
-<div class="mt-2"><p>These services are available free of charge to all life science researchers and communities in Sweden, regardless of SciLifeLab affiliation.</p></div>
+<div class="mt-2">
+  <p>These services are available free of charge to all life science researchers and communities in Sweden, regardless
+    of SciLifeLab affiliation.</p>
+</div>
 <div class="row g-2 mb-5 mt-2">
-{{ range .Site.Data.services }}
-{{ if in .target "researchers" }}
+  {{ range .Site.Data.services }}
+  {{ if in .target "researchers" }}
   <div class="col-md-6 col-lg-3">
     <div class="p-3 border rounded h-100">
       <div class="d-flex justify-content-between">
@@ -28,34 +31,39 @@
       </div>
       <div class="row mt-3">
         <div class="col">
-          <b>Maintained by:</b> {{ if .maintained_by_url}}<a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>{{ else }}{{ .maintained_by }}{{ end }}
+          <b>Maintained by:</b> {{ if .maintained_by_url}}<a
+            href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>{{ else }}{{ .maintained_by }}{{ end }}
         </div>
       </div>
       {{ if or (or .support_email .support_website) .support_github }}
       <div class="row">
         <div class="col">
-          <b>Support:</b> {{ if .support_email }}<a href="mailto:{{ .support_email }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+          <b>Support:</b> {{ if .support_email }}<a href="mailto:{{ .support_email }}"><i
+              class="bi bi-envelope-fill"></i></a> {{ end }}
           {{ if .support_website }}<a href="{{ .support_website }}"><i class="bi bi-globe"></i></a> {{ end }}
           {{ if .support_github }}<a href="{{ .support_github }}"><i class="bi bi-github"></i></a> {{ end }}
         </div>
       </div>
       {{ end }}
-  </div>
+    </div>
   </div>
   {{ end }}
-{{ end }}
-<div class="col-md-6 col-lg-3">
+  {{ end }}
+  <div class="col-md-6 col-lg-3">
     <div class="p-3 border rounded h-100 d-flex align-items-center">
       <div class="text-muted fst-italic">More services to be hosted in the future.</div>
-  </div>
+    </div>
   </div>
 </div>
 
-<h3 id="for-facilities">Services for data-producing facilities</h3>
-<div class="mt-2"><p>These services are offered to life science data-producing facilities in Sweden. Data-producing facilities can apply to receive a facility account or host their own instance.</p></div>
+<h3 id="for-facilities">Services for data-producing facilities/units</h3>
+<div class="mt-2">
+  <p>The services below are available to facilities/units producing life science data in Sweden. In some cases, the
+    services may only be available for SciLifeLab infrastructure units.</p>
+</div>
 <div class="row g-2 mb-5 mt-2">
-{{ range .Site.Data.services }}
-{{ if in .target "facilities" }}
+  {{ range .Site.Data.services }}
+  {{ if in .target "facilities" }}
   <div class="col-md-6 col-lg-3">
     <div class="p-3 border rounded h-100">
       <div class="d-flex justify-content-between">
@@ -77,24 +85,26 @@
       </div>
       <div class="row mt-3">
         <div class="col">
-          <b>Maintained by:</b> {{ if .maintained_by_url}}<a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>{{ else }}{{ .maintained_by }}{{ end }}
+          <b>Maintained by:</b> {{ if .maintained_by_url}}<a
+            href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>{{ else }}{{ .maintained_by }}{{ end }}
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <b>Contact:</b> {{ if .support_email }}<a href="mailto:{{ .support_email }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+          <b>Contact:</b> {{ if .support_email }}<a href="mailto:{{ .support_email }}"><i
+              class="bi bi-envelope-fill"></i></a> {{ end }}
           {{ if .support_website }}<a href="{{ .support_website }}"><i class="bi bi-globe"></i></a> {{ end }}
           {{ if .support_github }}<a href="{{ .support_github }}"><i class="bi bi-github"></i></a> {{ end }}
         </div>
       </div>
-  </div>
+    </div>
   </div>
   {{ end }}
-{{ end }}
-<div class="col-md-6 col-lg-3">
+  {{ end }}
+  <div class="col-md-6 col-lg-3">
     <div class="p-3 border rounded h-100 d-flex align-items-center">
       <div class="text-muted fst-italic">More services to be hosted in the future.</div>
-  </div>
+    </div>
   </div>
 </div>
 </div>
