@@ -13,22 +13,26 @@
           <a href="{{ .RelPermalink }}">See all services <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
       </div>
-      <div class="row g-2 cont-links">
+      <div class="row row-cols-2 row-cols-lg-3 g-2">
         {{ range first 6 .Site.Data.services }}
         {{ if in .target "researchers" }}
-        <div class="col-6 col-lg-4">
-          <div class="p-3 border rounded h-100">
-            <div class="d-flex justify-content-between">
-              <div>
-                {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable service-types"></i> {{ end }}
-                {{ if in .type "database" }}<i class="bi bi-server service-types"></i> {{ end }}
-                {{ if in .type "portal" }}<i class="bi bi-window service-types"></i> {{ end }}
+        <div class="col">
+          <div class="border rounded h-100">
+            <div class="border-bottom">
+              <img class="img-fluid rounded-top" style="width:236px;height:80px;"
+                src="{{ with .logo_location }}{{ . }}{{ else }}{{ "/img/logos/scilifelab-logo.svg" }}{{ end }}"
+                alt="{{ .name }}">
+            </div>
+            <div class="ps-2 mt-2">
+              <b><a target="_blank" href="{{ .url }}">{{ .name }}</a></b>
+            </div>
+              <div class="ps-2 mb-2">
+                <small class="text-muted">Type: 
+                {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable"></i> {{ end }}
+                {{ if in .type "database" }}<i class="bi bi-server"></i> {{ end }}
+                {{ if in .type "portal" }}<i class="bi bi-window"></i> {{ end }}
                 {{ if in .type "helpdesk" }}<i class="bi bi-person-workspace"></i> {{ end }}
-                <b><a target="_blank" href="{{ .url }}">{{ .name }}</a></b>
-              </div>
-              {{ if .logo_location }}<div class="w-50 mx-1">
-                <img class="img-fluid" src="{{ .logo_location}}" alt="{{ .name }}">
-              </div>{{ end }}
+                </small>
             </div>
           </div>
         </div>
