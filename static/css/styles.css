@@ -183,7 +183,7 @@ h5 a:hover {
     color: #A6A6A6;
 }
 
-/* Events */
+/* Badges */
 
 .event-date {
   background-color: #77577E;
@@ -212,4 +212,44 @@ h5 a:hover {
 
 .btn-details:hover {
     color: #3F3F3F;
+}
+
+.latest-news {
+    background-color:#77577E;
+    color:#FFF;
+    vertical-align:0.15em;
+}
+
+/* Serve app related styling */
+
+.app-description {
+    margin: 8px 0px 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.app-description div.collapse:not(.show) {
+    display: block;
+    height: 65px !important;
+    overflow: hidden;
+}
+
+.app-description div.collapsing {
+    min-height: 65px !important;
+}
+
+.app-description button {
+    font-size: 0.8em;
+    border: none;
+    padding: 0px;
+    background-color: #FFF;
+    color: #4C979F;
+}
+
+.app-description button.collapsed:after  {
+    content: '+ more description';
+}
+
+.app-description button:not(.collapsed):after {
+    content: '- less description';
 }

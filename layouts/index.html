@@ -50,10 +50,10 @@
         </div>
       </div>
       <div class="row small">
-        <div class="col">
+        <div id="news-items" class="col">
           {{ range first 3 .RegularPages }}
           <div class="row">
-            <div class="col small">
+            <div class="col small mb-1">
               {{ .Date | time.Format ":date_long" }}
             </div>
           </div>
@@ -76,7 +76,7 @@
       <!-- Data Higlights -->
       {{ with .Site.GetPage "section" "highlights" }}
       <div class="row pb-2">
-        <div class="col-6 col-lg-4">
+        <div class="col">
           <h3><a class="title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         </div>
         <div class="col mt-2 fs-6 text-end">
@@ -153,7 +153,7 @@
     </div>
     <div class="col-4 mt-2 fs-6 text-end">
       <small class="text-muted">(external site) </small>
-      <a href="https://scilifelab.figshare.com" target="_blank">See all items
+      <a href="https://figshare.scilifelab.se" target="_blank">See all items
         <i class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
@@ -172,7 +172,7 @@
     </div>
     <div class="col-4 mt-2 fs-6 text-end">
       <small class="text-muted">(external site) </small>
-      <a href="https://scilifelab.figshare.com" target="_blank">See all public apps
+      <a href="https://serve.scilifelab.se/apps" target="_blank">See all public apps
         <i class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
@@ -207,19 +207,17 @@
         if (data.defined_type_name == "presentation") { data.defined_type_name = "talk" }
         dataItemsHTML += `
         <div class="col">
-          <div class="p-2 border rounded h-100">
-            <div class="p-1">
+          <div class="p-3 border rounded h-100">
+            <div>
               <a href="${data.url_public_html}" target="_blank">
                   ${data.title}
               </a>
             </div>
-            <div class="row-cols-1 p-1">
-              <div class="col">
-                <small class="text-muted">Published on: ${data.timeline.posted.slice(0, 10)}</small>
-              </div>
-              <div class="col">
-                <span class="badge data-item-type">${data.defined_type_name}</span>
-              </div>
+            <div class="mt-2">
+              <small class="text-muted">Published on: ${data.timeline.posted.slice(0, 10)}</small>
+            </div>
+            <div>
+              <span class="badge data-item-type">${data.defined_type_name}</span>
             </div>
           </div>
         </div>`;
@@ -236,37 +234,51 @@
 
     // Creates html entry for each app fetched from Scilifelab Serve
     function addServeApps(dataArray) {
-      var dataItemsHTML = "";
+      var appsRowNode = document.getElementById('recent-serve-apps');
       for (const data of dataArray.data) {
-        dataItemsHTML += `
-        <div class="col">
-          <div class="p-2 border rounded h-100">
-            <div class="p-1">
-              <a href="${data.table_field.url}" target="_blank">
-                ${data.name}
-              </a>
-            </div>
-            <div class="p-1">
-                <small>${data.description}</small> 
-            </div>
-            <div class="row-cols-1 p-1">
-              <div class="col">
+        // Set description display based on length
+        if (data.description.length > 140) {
+            var descriptionDiv = `
+                <div id="app${data.id}" class="small collapse">${data.description}</div>
+                <button type="button" class="collapsed" data-bs-toggle="collapse" aria-expanded="false" 
+                   data-bs-target="#app${data.id}" aria-controls="app${data.id}"></button>`;
+        } else {
+            var descriptionDiv = `<div class="small">${data.description}</div>`;
+        };
+        var dataItemsHTML = `
+          <div class="col">
+            <div class="p-3 border rounded h-100">
+              <div>
+                <a href="${data.table_field.url}" target="_blank">${data.name}</a>
+              </div>
+              <div class="app-description">
+                ${descriptionDiv}
+              </div>
+              <div class="mt-2">
                 <small class="text-muted">Updated on: ${data.updated_on.slice(0, 10)}</small>
               </div>
-              <div class="col">
+              <div>
                 <span class="badge serve-app-type">${data.app_type}</span>
               </div>
             </div>
-          </div>
-        </div>`;
+          </div>`;
+        appsRowNode.insertAdjacentHTML("beforeend", dataItemsHTML);        
       };
-      var dataRow = document.getElementById('recent-serve-apps');
-      dataRow.innerHTML = dataItemsHTML;
     };
 
     getDataFromUrl(
       decodeURIComponent("https%3A%2F%2Fserve.scilifelab.se%2Fapi%2Flist-apps"),
       addServeApps
+    );
+    
+    // Add latest tag to very recent news
+    document.querySelectorAll("#news-items .col.small").forEach(
+        function (newsNode) {
+            var numDays = Math.floor((Date.now() - Date.parse(newsNode.innerText))/(1000*60*60*24));
+            if (numDays <= 7) {
+                newsNode.insertAdjacentHTML("beforeend", "<span class='badge latest-news pb-1'>New</span>");
+            }
+        }
     );
 
   });
