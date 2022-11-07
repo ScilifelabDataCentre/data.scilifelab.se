@@ -103,31 +103,35 @@
   </div>
 </section>
 
+{{ $open_jobs_and_funds := slice }}
+{{ range sort $.Site.Data.calls_and_jobs.items ".app_deadline" "asc" }}
+{{ if ge (.app_deadline | time.Format "20060102") (now | time.Format "20060102") }}
+{{ $open_jobs_and_funds = $open_jobs_and_funds | append . }}
+{{ end }}
+{{ end }}
+{{ if ge (len $open_jobs_and_funds) 1 }}
 <section>
-  <div class="row g-2 mb-5">
-    {{ $events := sort .RegularPages ".Params.app_deadline" "asc" }}
-    {{ range $ind, $cont := $events }}
+  <div class="row g-2 mt-3 mb-5">
+    {{ range $ind, $cont := $open_jobs_and_funds }}
 
     {{/* Potentially different colors of the calendar icon depending on the event type */}}
 
-    {{ if gt (.Params.app_deadline | time.Format "20060102") (now | time.Format "20060102") }}
     <div class="col-md-6 col-lg-4">
       <div class="p-3 border rounded h-100">
         <div class="d-flex justify-content-between">
           <div>
-            <span class="badge event-type mb-1">{{ .Params.type }}</span>
+            <span class="badge event-type mb-1">{{ .type }}</span>
             <h5><a class="" role="button" data-bs-toggle="modal"
-                data-bs-target="#descriptionModal{{ $ind }}">{{ .Title }}</a></h5>
-            <!-- <h5><a target="_blank" href="{{ .Params.event_url }}">{{ .Title }}</a></h5> -->
+                data-bs-target="#descriptionModal{{ $ind }}">{{ .title }}</a></h5>
           </div>
           <div class="px-2 m-2 d-flex flex-column rounded event-date">
-            <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .Params.app_deadline }}</div>
-            <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .Params.app_deadline }}</div>
+            <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .app_deadline }}</div>
+            <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .app_deadline }}</div>
           </div>
         </div>
-        {{ if .Params.employer }}<div class="row">
+        {{ if .employer }}<div class="row">
           <div class="col">
-            <b>Employer:</b> {{ .Params.employer }}
+            <b>Employer:</b> {{ .employer }}
           </div>
         </div>{{ end }}
         <div class="row mt-3">
@@ -141,42 +145,42 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="descriptionModalLabel">{{ .Title }}</h5>
+                    <h5 class="modal-title" id="descriptionModalLabel">{{ .title }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <div class="row">
                       <div class="col">
-                        <b>Listing type:</b> <span class="badge event-type mb-1">{{ .Params.type }}</span>
+                        <b>Listing type:</b> <span class="badge event-type mb-1">{{ .type }}</span>
                       </div>
                     </div>
                     <div class="row mt-1">
                       <div class="col">
                         <b>Deadline for applications:</b>
-                        {{ .Params.app_deadline | time.Format ":date_medium" }}{{ if .Params.time_start }}
-                        {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} -
-                        {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }}
-                        {{ .Params.time_end }}{{ end }}
+                        {{ .app_deadline | time.Format ":date_medium" }}{{ if .time_start }}
+                        {{ .time_start }}{{ end }}{{ if .date_end }} -
+                        {{ .date_end | time.Format ":date_medium" }}{{ end}}{{ if .time_end }}
+                        {{ .time_end }}{{ end }}
                       </div>
                     </div>
-                    {{ if .Params.employer }}<div class="row mt-1">
+                    {{ if .employer }}<div class="row mt-1">
                       <div class="col">
-                        <b>Employer:</b> {{ .Params.employer }}
+                        <b>Employer:</b> {{ .employer }}
                       </div>
                     </div>{{ end }}
-                    {{ if .Params.opening_date }}<div class="row mt-1">
+                    {{ if .opening_date }}<div class="row mt-1">
                       <div class="col">
-                        <b>Opening date:</b> {{ .Params.opening_date }}
+                        <b>Opening date:</b> {{ .opening_date }}
                       </div>
                     </div>{{ end }}
-                    {{ if .Params.description }}<div class="row mt-3">
+                    {{ if .description }}<div class="row mt-3">
                       <div class="col"><b>Brief description:</b><br>
-                        {{ .Params.description | markdownify }}
+                        {{ .description | markdownify }}
                       </div>
                     </div>{{ end }}
                     <div class="row mt-3">
                       <div class="col-md">
-                        <a target="_blank" href="{{ .Params.funding_url }}"><i class="bi bi-globe"></i> Listing
+                        <a target="_blank" href="{{ .funding_url }}"><i class="bi bi-globe"></i> Listing
                           webpage</a>
                       </div>
                     </div>
@@ -192,8 +196,8 @@
       </div>
     </div>
     {{ end }}
-    {{ end }}
   </div>
 </section>
+{{ end }}
 
 {{ end }}
