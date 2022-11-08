@@ -97,10 +97,10 @@
       <!-- About section -->
       <div class="row mb-1">
         <div class="col">
-          <h3><a class="title-link" href="/about">About this portal</a></h3>
+          <h3><a class="title-link" href="/about/">About this portal</a></h3>
         </div>
         <div class="col-4 mt-2 fs-6 text-end">
-          <a href="/about">Read more <i class="bi bi-arrow-right-square-fill"></i></a>
+          <a href="/about/">Read more <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
         <div class="row">
           <div class="col">
@@ -112,42 +112,42 @@
 </section>
 
 <!-- Training and events -->
+{{ $upcoming_events := slice }}
+{{ range sort $.Site.Data.events.items ".date_start" "asc" }}
+{{ if ge (.date_start | time.Format "20060102") (now | time.Format "20060102") }}
+  {{ $upcoming_events = $upcoming_events | append . }}
+{{ end }}
+{{ end }}
+{{ if ge (len $upcoming_events) 1 }}
 <section>
-  {{ with .Site.GetPage "section" "events" }}
   <div class="row mt-4 mb-2">
     <div class="col">
-      <h3><a class="title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <h3><a class="title-link" href="/events/">Events & Training</a></h3>
     </div>
     <div class="col mt-2 fs-6 text-end">
-      <a href="{{ .RelPermalink }}">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
+      <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
     </div>
   </div>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
-    {{ $upcoming_events := slice }}
-    {{ range sort .RegularPages ".Params.date_start" "asc" }}
-    {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
-    {{ $upcoming_events = $upcoming_events | append . }}
-    {{ end }}
-    {{ end}}
     {{ range first 4 $upcoming_events }}
     <div class="col">
       <div class="p-2 border rounded h-100">
         <div class="d-flex justify-content-between">
           <div>
-            <span class="badge event-type mb-1">{{ .Params.type }}</span>
-            <h6>{{ .Title }}</h6>
+            <span class="badge event-type mb-1">{{ .type }}</span>
+            <h6>{{ .title }}</h6>
           </div>
           <div class="px-2 m-2 d-flex flex-column event-date rounded">
-            <div class="px-1 fs-4 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
-            <div class="px-1 small mx-auto">{{ time.Format "January" .Params.date_start }}</div>
+            <div class="px-1 fs-4 mx-auto">{{ time.Format "2" .date_start }}</div>
+            <div class="px-1 small mx-auto">{{ time.Format "January" .date_start }}</div>
           </div>
         </div>
       </div>
     </div>
     {{ end }}
   </div>
-  {{ end }}
 </section>
+{{ end }}
 
 <!-- Recently published items in figshare-->
 <section>

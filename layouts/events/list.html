@@ -108,40 +108,46 @@
       </div>
   </section>
 
+  {{ $upcoming_events := slice }}
+  {{ range sort $.Site.Data.events.items ".date_start" "asc" }}
+  {{ if ge (.date_start | time.Format "20060102") (now | time.Format "20060102") }}
+    {{ $upcoming_events = $upcoming_events | append . }}
+  {{ end }}
+  {{ end }}
+  {{ if ge (len $upcoming_events) 1 }}
   <section>
-    <div class="row g-2 mb-5">
-      {{ $events := sort .RegularPages ".Params.date_start" "asc" }}
-      {{ range $ind, $cont := $events }}
+    <div class="row g-2 mt-3 mb-5">
+      {{ range $ind, $cont := $upcoming_events }}
 
       {{/* Potentially different colors of the calendar icon depending on the event type */}}
-
-      {{ if gt (.Params.date_start | time.Format "20060102") (now | time.Format "20060102") }}
       <div class="col-md-6 col-lg-4">
         <div class="p-3 border rounded h-100">
           <div class="d-flex justify-content-between">
             <div>
-              <span class="badge event-type mb-1">{{ .Params.type }}</span>
-              <h5><a class="" role="button" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">{{ .Title }}</a></h5>
-              <!-- <h5><a target="_blank" href="{{ .Params.event_url }}">{{ .Title }}</a></h5> -->
+              <span class="badge event-type mb-1">{{ .type }}</span>
+              <h5><a class="" role="button" data-bs-toggle="modal" data-bs-target="#descriptionModal{{ $ind }}">{{ .title }}</a></h5>
             </div>
             <div class="px-2 m-2 d-flex flex-column rounded event-date">
-              <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .Params.date_start }}</div>
-              <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .Params.date_start }}</div>
+              <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .date_start }}</div>
+              <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .date_start }}</div>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col">
-              <b>Date and time:</b> {{ .Params.date_start | time.Format ":date_medium" }}{{ if .Params.time_start }} {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} - {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }} {{ .Params.time_end }}{{ end }}
+              <b>Date and time:</b> {{ .date_start | time.Format ":date_medium" }}
+                                    {{ if .time_start }} {{ .time_start }}{{ end }}
+                                    {{ if .date_end }} - {{ .date_end | time.Format ":date_medium" }}{{ end}}
+                                    {{ if .time_end }} {{ .time_end }}{{ end }}
             </div>
           </div>
-          {{ if .Params.organisers }}<div class="row">
+          {{ if .organisers }}<div class="row">
             <div class="col">
-              <b>Organiser(s):</b> {{ .Params.organisers }}
+              <b>Organiser(s):</b> {{ .organisers }}
             </div>
           </div>{{ end }}
-          {{ if .Params.venue }}<div class="row">
+          {{ if .venue }}<div class="row">
             <div class="col">
-              <b>Venue:</b> {{ .Params.venue }}
+              <b>Venue:</b> {{ .venue }}
             </div>
           </div>{{ end }}
           <div class="row mt-3">
@@ -153,46 +159,49 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="descriptionModalLabel">{{ .Title }}</h5>
+                      <h5 class="modal-title" id="descriptionModalLabel">{{ .title }}</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <div class="row">
                         <div class="col">
-                          <b>Event type:</b> <span class="badge event-type mb-1">{{ .Params.type }}</span>
+                          <b>Event type:</b> <span class="badge event-type mb-1">{{ .type }}</span>
                         </div>
                       </div>
                       <div class="row mt-1">
                         <div class="col">
-                          <b>Date and time:</b> {{ .Params.date_start | time.Format ":date_medium" }}{{ if .Params.time_start }} {{ .Params.time_start }}{{ end }}{{ if .Params.date_end }} - {{ .Params.date_end | time.Format ":date_medium" }}{{ end}}{{ if .Params.time_end }} {{ .Params.time_end }}{{ end }}
+                          <b>Date and time:</b> {{ .date_start | time.Format ":date_medium" }}
+                                                {{ if .time_start }} {{ .time_start }}{{ end }}
+                                                {{ if .date_end }} - {{ .date_end | time.Format ":date_medium" }}{{ end}}
+                                                {{ if .time_end }} {{ .time_end }}{{ end }}
                         </div>
                       </div>
-                      {{ if .Params.registration_deadline }}<div class="row mt-1">
+                      {{ if .registration_deadline }}<div class="row mt-1">
                         <div class="col">
-                          <b>Registration deadline:</b> {{ .Params.registration_deadline | time.Format ":date_medium" }}
+                          <b>Registration deadline:</b> {{ .registration_deadline | time.Format ":date_medium" }}
                         </div>
                       </div>{{ end }}
-                      {{ if .Params.organisers }}<div class="row mt-1">
+                      {{ if .organisers }}<div class="row mt-1">
                         <div class="col">
-                          <b>Organiser(s):</b> {{ .Params.organisers }}
+                          <b>Organiser(s):</b> {{ .organisers }}
                         </div>
                       </div>{{ end }}
-                      {{ if .Params.venue }}<div class="row mt-1">
+                      {{ if .venue }}<div class="row mt-1">
                         <div class="col">
-                          <b>Venue:</b> {{ .Params.venue }}
+                          <b>Venue:</b> {{ .venue }}
                         </div>
                       </div>{{ end }}
-                      {{ if .Params.description }}<div class="row mt-3">
+                      {{ if .description }}<div class="row mt-3">
                         <div class="col"><b>Description:</b><br>
-                          {{ .Params.description | markdownify }}
+                          {{ .description | markdownify }}
                         </div>
                       </div>{{ end }}
                       <div class="row mt-3">
                         <div class="col-md">
-                          <a target="_blank" href="{{ .Params.event_url }}"><i class="bi bi-globe"></i> Event webpage</a>
+                          <a target="_blank" href="{{ .event_url }}"><i class="bi bi-globe"></i> Event webpage</a>
                         </div>
-                        {{ if .Params.registration_url }}<div class="col-md">
-                          <a target="_blank" href="{{ .Params.registration_url }}"><i class="bi bi-globe"></i> Registration</a>
+                        {{ if .registration_url }}<div class="col-md">
+                          <a target="_blank" href="{{ .registration_url }}"><i class="bi bi-globe"></i> Registration</a>
                         </div>{{ end }}
                       </div>
                     </div>
@@ -207,8 +216,12 @@
         </div>
       </div>
       {{ end }}
-      {{ end }}
     </div>
   </section>
+  {{ else }}
+  <div class="alert alert-secondary mt-4">We are currently unaware of any upcoming events or training opportunities relevant for data-driven 
+      life science. If you know of any relevant events or training opportunities that should be shown here, please recommend them to us using 
+      the "Submit an event" button above.</div>
+  {{ end }}
 
   {{ end }}
