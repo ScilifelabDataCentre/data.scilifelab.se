@@ -2,6 +2,14 @@
     "last_updated": "2022-11-07",
     "items": [
         {
+            "title": "PhD student in Computational Epidemics",
+            "type": "PhD position",
+            "app_deadline": "2022-12-16",
+            "employer": "Uppsala University",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=555466",
+            "description": "This PhD position is part of the eSSENCE-SciLifeLab graduate school in data-intensive science. The school addresses the challenge of data-intensive science both from the foundational methodological perspective and from the perspective of data-driven science applications. It is an arena where experts in computational science, data science and data engineering (systems and methodology) work closely together with researchers in (data-driven) sciences, industry and society to accelerate data-intensive scientific discovery."
+        },
+        {
             "title": "RED Postdoctoral Fellowships",
             "type": "Job",
             "app_deadline": "2022-12-19",
