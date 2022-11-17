@@ -19,20 +19,20 @@
         <div class="col">
           <div class="border rounded h-100">
             <div class="border-bottom">
-              <img class="img-fluid rounded-top" style="width:236px;height:80px;"
-                src="{{ with .logo_location }}{{ . }}{{ else }}{{ "/img/logos/scilifelab-logo.svg" }}{{ end }}"
+              <img class="img-fluid rounded-top"
+                src="{{ with .logo_location }}{{ . }}{{ else }}{{ "/img/service_logos/scilifelab_services_logo.png" }}{{ end }}"
                 alt="{{ .name }}">
             </div>
             <div class="ps-2 mt-2">
               <b><a target="_blank" href="{{ .url }}">{{ .name }}</a></b>
             </div>
-              <div class="ps-2 mb-2">
-                <small class="text-muted">Type: 
+            <div class="ps-2 mb-2">
+              <small class="text-muted">Type: 
                 {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable"></i> {{ end }}
                 {{ if in .type "database" }}<i class="bi bi-server"></i> {{ end }}
                 {{ if in .type "portal" }}<i class="bi bi-window"></i> {{ end }}
                 {{ if in .type "helpdesk" }}<i class="bi bi-person-workspace"></i> {{ end }}
-                </small>
+              </small>
             </div>
           </div>
         </div>
