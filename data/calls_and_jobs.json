@@ -1,6 +1,54 @@
 {
     "items": [
         {
+            "title": "Postdoc in the field of structural biology / structural bioinformatics",
+            "type": "Job",
+            "app_deadline": "2023-01-13",
+            "employer": "Linköping University",
+            "funding_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20513&rmlang=UK",
+            "description": "In this position, you will develop statistical and machine learning approaches to characterize and quantify flexibility in macromolecular atomic models determined by cryo-EM and crystallography experiments. Using Swedish & SciLifeLab national computing infrastructure, you will apply these methods at scale to structures in the PDB, to build a publicly-accessible open database and study experimental flexibility in relation to molecular function.<br><br>As postdoc, you will principally carry out research. A certain amount of teaching may be part of your duties, up to a maximum of 20% of working hours."
+        },
+        {
+            "title": "Postdoc in the field of structural biology / structural bioinformatics",
+            "type": "Job",
+            "app_deadline": "2023-01-13",
+            "employer": "Linköping University",
+            "funding_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20539&rmlang=UK",
+            "description": "In this position, you will use statistical and machine learning approaches to develop methods for improving modelling and refinement of heterogeneous regions of macromolecular atomic models derived from multi-dataset crystallography experiments. You will use these approaches to generate highly detailed models that enable quantitative structural studies of multi-state systems, such as protein-ligand complexes obtained from fragment-screening experiments. You will engage with national & international collaborators to apply these methods to time-resolved and multi-temperature experimental data sets.<br><br>As postdoc, you will principally carry out research. A certain amount of teaching may be part of your duties, up to a maximum of 20% of working hours."
+        },
+        {
+            "title": "PhD position in structural biology / structural bioinformatics",
+            "type": "Job",
+            "app_deadline": "2023-01-13",
+            "employer": "Linköping University",
+            "funding_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20567&rmlang=UK",
+            "description": "In this position, you will develop statistical and machine learning approaches to analyze and improve modelling of disordered regions of macromolecular atomic models derived from multi-dataset X-ray crystallography experiments. Working with both national and international experimental collaborators, you will apply these methods to study the role of flexibility and dynamics in relation to molecular recognition and function using data from time-resolved, multi-temperature and fragment screening crystallography experiments.<br><br>As a PhD student, you devote most of your time to doctoral studies and the research projects of which you are part. Your work may also include teaching or other departmental duties, up to a maximum of 20% of full-time."
+        },
+        {
+            "title": "Systemutvecklare vid UPPMAX",
+            "type": "Job",
+            "app_deadline": "2022-12-12",
+            "employer": "Uppsala University",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=564584",
+            "description": "Tjänsten är placerad vid UPPMAX och syftar främst till att designa och utveckla system och tjänster för forskare baserat på behov som identifieras i dialog med SciLifeLab Data Centre (DC), liksom specifika kopplingar och gränssnitt mellan UPPMAX och DCs system. Således kommer rollen att arbeta tätt ihop med både UPPMAX och DC. UPPMAX är en av de nationellt tillgängliga e-infrastrukturer som DDLS-programmet arbetar med för att stödja forskare inom livsvetenskaperna, där vi både har resurser med särskild betydelse för fältet och expertis att stödja landets forskare. Vi har en särskild roll för hantering av storskaliga känsliga data, varför informationssäkerhetsfrågorna måste ha en avgörande roll vid design av sådana lösningar.<br><br>I många fall finns underliggande tekniska lösningar eller kompetens kring att ta fram dem vid UPPMAX i dag. Målet för denna tjänst är att ta fram system som stöder processer och flöden på ett sätt som ökar den upplevda användbarheten och enhetligheten för våra forskare.<br><br>Arbetsuppgifterna inkluderar systemutveckling i projekt av olika karaktär och komplexitet, både i nya system och vidareutveckling av befintliga system. På UPPMAX får du den sällsynta kombinationen av att utveckla dina tekniska färdigheter med tillgång till omväxlande och utmanande teknologier samtidigt som du bidrar till att stärka framstående forskning från många olika ämnesområden. Det finns goda möjligheter till kompetensutveckling inom tjänsten både genom deltagande i internationella och nationella projekt och samarbeten, samt genom deltagande i konferenser, kurser och andra utbildningar."
+        },
+        {
+            "title": "Doctoral student in Spatial Proteomics",
+            "type": "PhD position",
+            "app_deadline": "2022-12-12",
+            "employer": "KTH Royal Institute of Technology",
+            "funding_url": "https://kth.varbi.com/en/what:job/jobID:562488/where:4/#.Y3IqC7w7h5A.linkedin",
+            "description": "We are looking for a PhD student to develop and apply antibody-based, multiplexed imaging tools to build high-dimensional protein maps of human tissues. The project focuses specifically on molecular and spatial analyses of human samples and tissues to identify pathophysiological mechanisms in Parkinson’s disease. This position includes work e.g. with tissue sample preparation and sectioning, antibody-based assays, highly-multiplexed microscopy, computational image analysis and statistics.<br><br>In this project you will learn, combine and apply cutting-edge tools in proteomics and spatial omics to contribute to the development of biomarkers in neurodegenerative diseases. You will collaborate with other research groups that develop complementary spatial omics methods (in situ sequencing, mass spectrometry-based metabolomics), and machine learning approaches to model spatial multi-omics data.<br><br>The starting date is open for discussion, though ideally, we would like the successful candidate to start as soon as possible. The placement for this PhD position will be at Science for Life Laboratory (http://www.scilifelab.se), a national centre for molecular biosciences with focus on health and environmental research."
+        },
+        {
+            "title": "Doctoral Student within biotechnology focusing on proteomics",
+            "type": "PhD position",
+            "app_deadline": "2022-11-21",
+            "employer": "KTH Royal Institute of Technology",
+            "funding_url": "https://kth.varbi.com/en/what:job/jobID:558861/type:job/where:1/apply:1",
+            "description": "The project concerns data-driven research on proteomics-based precision medicine and developing protein-based diagnostic computational tools.  The student will employ data-driven methods to integrate molecular and clinical data in order to facilitate translational research with an emphasis on diagnostic applications.<br><br>The primary role will be to conduct research within data-driven life science projects at Scilifelab. The primary goal of the Ph.D. student will be to examine proteomics datasets and construct AI models and/or other modeling methodologies in order to establish more precise and accurate protein quantification approaches. To enhance models for protein quantification in clinical samples, the PhD student will apply Data Independent Acquisition techniques in conjunction with stable isotope-labeled standards. Sample datasets from thousands of patients have been generated experimentally and are ready to be compiled and evaluated. Senior researchers from the division of Systems Biology, Department of Protein Science, will mentor the PhD student. The position includes teaching and other departmental responsibilities."
+        },
+        {
             "title": "PhD student in Computational Epidemics",
             "type": "PhD position",
             "app_deadline": "2022-12-16",
