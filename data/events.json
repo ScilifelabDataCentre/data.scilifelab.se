@@ -8,10 +8,10 @@
             "time_start": "15:00",
             "date_end": "2022-12-13",
             "time_end": "16:00",
-            "venue": "Navet E10:3309 or Zoom",
+            "venue": "Navet E10:2309 or Zoom",
             "organisers": "SciLifeLab Data Centre and NBIS",
-            "event_url": "https://www.scilifelab.se/event/data-management-drop-in/",
-            "description": "If you want to discuss your IT and research data management needs – join these monthly meetings organised by SciLifeLab Data Centre and NBIS! <br><br> The NEW Research Data Management Q&A drop-in sessions are held online and are open for all researchers affiliated with a Swedish university or institute. Discuss data sharing, data repositories, data management plans, compute and storage or other data-related issues with experts from SciLifeLab Data Centre and NBIS. <br><br> The drop-in sessions are held monthly (13th Sept, 11th Oct, 8th Nov and 13th Dec) on Zoom: https://uu-se.zoom.us/j/65454079763"
+            "event_url": "https://www.scilifelab.se/event/meet-a-data-steward/",
+            "description": "Join SciLifeLab Data Centre and NBIS for a 15 minute mini-lecture entitled “SciLifeLab Data Repository; supporting data publishing”. After the mini-lecture, there will be a 45 minute Q & A session on issues related to data management in general."
         },
         {
             "title": "DDLS Industry PhD Collaboration Dialogue – online",
