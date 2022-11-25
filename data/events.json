@@ -1,6 +1,45 @@
 {
-    "last_updated": "2022-11-07",
+    "last_updated": "2022-11-25",
     "items": [
+        {
+            "title": "Evolution in Sweden 2023",
+            "type": "Symposium",
+            "date_start": "2023-01-10",
+            "time_start": "10:00",
+            "date_end": "2023-01-12",
+            "time_end": "14:30",
+            "venue": "Friessalen",
+            "organisers": "DDLS",
+            "event_url": "https://www.scilifelab.se/event/evolution-in-sweden-2023/",
+            "registration_url": "https://www.lyyti.in/_3494",
+            "description": "Evolution in Sweden is a biannual meeting, which broadly gathers evolutionary biologists working in Sweden. The meeting was held in Uppsala 2014, Lund 2016, Stockholm 2018, and Gothenburg 2020. The host for 2023 is Evolutionary Biology Centre, at Uppsala University. The meeting is aimed to be a broad meeting on every aspect of evolutionary biology of all forms of life on Earth. However, please note that the meeting is restricted to scientists active in Swedish academic departments.<br><br>This year the Evolution in Sweden conference is organized together with the Evolution and Biodiversity research area from the Data-driven life science program (DDLS), part of a 12-year SEK 3.1 billion initiative from the Knut and Alice Wallenberg Foundation. We encourage researchers working with analysis of large data sets in the fields of evolution and biodiversity to attend."
+        },
+        {
+            "title": "Data-driven Epidemiology and biology of infections Research Area Symposium",
+            "type": "Symposium",
+            "date_start": "2022-12-07",
+            "time_start": "12:00",
+            "date_end": "2022-12-08",
+            "time_end": "12:00",
+            "venue": "Europasalen, Konferenscentrum Wallenberg, Gothenburg",
+            "organisers": "DDLS Research Area expert group",
+            "event_url": "https://www.scilifelab.se/event/data-driven-epidemiology-and-biology-of-infections-research-area-symposium/",
+            "registration_url": "https://www.lyyti.in/_7819",
+            "description": "Welcome to a symposia with the new DDLS Fellows and national as well as international researchers within the area of data-driven epidemiology and biology of infections.<br><br>We encourage personal participation to network with the new DDLS Fellows and other experts of the field however online participation is possible."
+        },
+        {
+            "title": "Data-Driven Precision Medicine and Diagnostics Research Area Symposium",
+            "type": "Symposium",
+            "date_start": "2022-12-12",
+            "time_start": "09:45",
+            "date_end": "2022-12-12",
+            "time_end": "18:30",
+            "venue": "Sune Bergström Aula, BioClinicum, New Karolinska University Hospital",
+            "organisers": "SciLifeLab",
+            "event_url": "https://www.scilifelab.se/event/data-driven-precision-medicine-and-diagnostics-research-area-symposium/",
+            "registration_url": "https://www.lyyti.fi/reg/_3431",
+            "description": "Welcome to the first in-person symposium in data-driven precision medicine and diagnostics (PMD) research area. Listen to the Data Driven Life Science (DDLS) fellows recruited in this research area and expand your network with international and national colleagues.<br><br>The data-driven precision medicine and diagnostics symposium on December 12, 2022, is the first in-person symposium in the research area of precision medicine and diagnostics of the DDLS program. This meeting brings together the community in precision medicine and diagnostics and researchers who implemented artificial intelligence and machine learning applications in their research in PMD to improve human health and diagnostics, introduces newly appointed DDLS fellows in the PMD research area, and provides opportunities for networking across the research community and the SciLifeLab infrastructures. We are excited to host three international keynote speakers and welcome the community to join us. Hopefully, this event will inspire you on the potentials of data-driven precision medicine and diagnostics in Sweden."
+        },
         {
             "title": "Meet a Data Steward & get Data Mangement Support",
             "type": "meeting",
@@ -8,10 +47,10 @@
             "time_start": "15:00",
             "date_end": "2022-12-13",
             "time_end": "16:00",
-            "venue": "Navet E10:3309 or Zoom",
+            "venue": "Navet E10:2309 or Zoom",
             "organisers": "SciLifeLab Data Centre and NBIS",
-            "event_url": "https://www.scilifelab.se/event/data-management-drop-in/",
-            "description": "If you want to discuss your IT and research data management needs – join these monthly meetings organised by SciLifeLab Data Centre and NBIS! <br><br> The NEW Research Data Management Q&A drop-in sessions are held online and are open for all researchers affiliated with a Swedish university or institute. Discuss data sharing, data repositories, data management plans, compute and storage or other data-related issues with experts from SciLifeLab Data Centre and NBIS. <br><br> The drop-in sessions are held monthly (13th Sept, 11th Oct, 8th Nov and 13th Dec) on Zoom: https://uu-se.zoom.us/j/65454079763"
+            "event_url": "https://www.scilifelab.se/event/meet-a-data-steward/",
+            "description": "Join SciLifeLab Data Centre and NBIS for a 15 minute mini-lecture entitled “SciLifeLab Data Repository; supporting data publishing”. After the mini-lecture, there will be a 45 minute Q & A session on issues related to data management in general."
         },
         {
             "title": "DDLS Industry PhD Collaboration Dialogue – online",
