@@ -1,6 +1,14 @@
 {
     "items": [
         {
+            "title": "Nomination of additional members to two of the four DDLS research area specific expert groups",
+            "type": "Nomination",
+            "app_deadline": "2022-12-01",
+            "employer": "SciLifeLab DDLS Program",
+            "funding_url": "https://www.scilifelab.se/data-driven/nominate",
+            "description": "The DDLS steering group openly invites DDLS partner organizations and the Swedish scientific community at large to nominate additional candidates to be considered to two of the four DDLS research area specific expert groups, namely Data Driven Cell and Molecular biology and Data Driven Epidemiology and Biology of infection."
+        },
+        {
             "title": "Postdoc in the field of structural biology / structural bioinformatics",
             "type": "Job",
             "app_deadline": "2023-01-13",
