@@ -238,7 +238,6 @@
     function addDataItems(dataArray) {
       var dataItemsHTML = "";
       for (const data of dataArray) {
-        if (data.defined_type_name == "presentation") { data.defined_type_name = "talk" }
         dataItemsHTML += `
         <div class="col">
           <div class="p-3 border rounded h-100">
