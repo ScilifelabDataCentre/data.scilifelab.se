@@ -1,6 +1,14 @@
 {
     "items": [
         {
+            "title": "Application expert in Medical imaging diagnostics AI at AIDA Data Hub",
+            "type": "Job",
+            "app_deadline": "2023-01-09",
+            "employer": "Linköping University",
+            "funding_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20721",
+            "description": "The Analytic Imaging Diagnostics Arena (AIDA) facilitates collaboration between national stakeholders in medical imaging diagnostics AI, to accelerate development and use of world leading AI tools. This requires advanced analyses and training of AI algorithms based on massive amounts of medical images and clinical data. The AIDA Data Hub provides services and policy support to the AIDA arena, to increase availability of data for ethical and legal research, and also provides resources for secure processing and sharing of massive amounts of sensitive personal medical imaging data for research.<br><br>The AIDA Data Hub is now planning to extend its service portfolio with application expertise in medical imaging diagnostics AI, to provide advanced support and training to researchers in the AIDA community. The primary focus is on projects with a clear connection to the broader SciLifeLab and DDLS aims, including precision medicine and multi-omics."
+        },
+        {
             "title": "Nomination of additional members to two of the four DDLS research area specific expert groups",
             "type": "Nomination",
             "app_deadline": "2022-12-01",
