@@ -32,14 +32,14 @@ blockquote {
 }
 
 a {
-    color: #4C979F;
+    color: #045C64;
     text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #4C979F;
+    color: #045C64;
     text-decoration: underline;
 }
 
@@ -47,12 +47,21 @@ h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #045C64;
 }
 
 .title-link {
-    color: #17202A;
+  color: #17202A;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+  color: #3F5873;
+}
+
+.vr-right {
+    border-right: 0.5px solid #A6A6A6;
 }
 
 .header {
@@ -124,15 +133,14 @@ h5 a:hover {
 
 /* Main menu */
 .navbar-light .navbar-nav .nav-main-menu {
-    color: #4C979F;
+    color: #045C64;
 }
 
 .navbar-light .navbar-nav .nav-main-menu:hover,
 .navbar-light .navbar-nav .nav-main-menu:focus,
-.navbar-light .navbar-nav .nav-main-menu:active,
 .navbar-light .navbar-nav .nav-main-menu.active {
     color: #045C64;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Background colors */
@@ -149,23 +157,16 @@ h5 a:hover {
   background-color: #3F3F3F;
 }
 
-/* Homepage */
-
-.cont-links a {
-  color: #491F53;
+.bg-highlight {
+  height: 100%;
+  background-color: rgba(229, 229, 229, 0.75);
+  border-radius: 5px;
 }
 
-.cont-links a:hover,
-.cont-links a:focus,
-.cont-links a:active {
-    color: #491F53;
-    text-decoration: underline;
-}
-
-/* Services */
-
-.service-types {
-  color: #491F53;
+.bg-service {
+  height: 100%;
+  background-color: rgba(210, 229, 231, 0.75);
+  border-radius: 5px;
 }
 
 /* Highlights */
@@ -243,7 +244,7 @@ h5 a:hover {
     border: none;
     padding: 0px;
     background-color: #FFF;
-    color: #4C979F;
+    color: #045C64;
 }
 
 .app-description button.collapsed:after  {

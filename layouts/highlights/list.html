@@ -72,12 +72,14 @@
 
 <section>
   <div>
-      <div class="row g-2 g-lg-3">
+      <div class="row g-3">
         {{ range .RegularPages }}
         <div class="col-md-4">
-          <div class="border rounded h-100">
-            <div class="border-bottom">
-              <img class="img-fluid rounded-top" src="{{ .Params.banner }}">
+          <div class="bg-highlight p-3">
+            <div>
+              <a href="{{ .Page.RelPermalink }}">
+                <img class="img-fluid rounded-top" src="{{ .Params.banner }}">
+              </a>
             </div>
             <div class="px-2 my-1 text-muted">
               {{ .Date | time.Format ":date_long" }}
