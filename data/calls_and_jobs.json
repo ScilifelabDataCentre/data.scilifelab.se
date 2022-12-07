@@ -1,6 +1,30 @@
 {
     "items": [
         {
+            "title": "Data Steward (Bioinformatician)",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Uppsala University",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573165",
+            "description": "You will work closely with and guide research groups regarding Data Management Plans, and how they shall structure and publish the research data that they generate. A large focus will be to establish and perform procedures for user support to researchers wanting to deposit data from evolutionary biology and biodiversity. An important part of the work is also to educate researchers in data management best practices. You are also expected to contribute to Research Data Management competence networking within Sweden."
+        },
+        {
+            "title": "Data Engineer",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Uppsala University",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573210",
+            "description": "The work will focus on development and maintenance of systems for processing and visualisation of biological data. DNA sequences is the most common data type in this area, but also distribution data and image data are common. Part of the work will be driven by needs in projects connected to Earth Biogenome Project, a consortium focusing on genome sequencing of all organisms in the world. The development of a genome portal for visualisation and browsing of these projects is one of the tasks."
+        },
+        {
+            "title": "1-2 System developers with operational responsibility (DevOps)",
+            "type": "Job",
+            "app_deadline": "2023-01-09",
+            "employer": "Uppsala University",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=572635",
+            "description": "With us, you will work with the agile development of software solutions and user interfaces unique to bioinformatics. Your work is creative, and part of the work is based on incoming requests from various research groups, where you develop many innovative proposals in collaboration with the researchers.<br><br>Here you work in close collaboration with other developers, both locally and internationally, where you plan together to develop and deliver your work. The Scrum team is responsible for the entire life cycle of applications, from planning and development, deployment using automation, to production and, later, possible decommissioning or migration. As we work on several projects, there are opportunities to use different languages ​​and environments, including Python and Go. Many of the projects we work on the border on 'data science', and there are good opportunities to develop within such technologies and tools (for example R). The work includes contributing to estimating time consumption, tests and documentation.<br><br>We offer a vibrant and dynamic environment with room for collaboration. Furthermore, we value the exchange of knowledge and provide time for professional development.<br><br>You will have the opportunity to participate in teaching by researchers in, e.g. programming. In addition, you will contribute to developing guidelines and frameworks for how NBIS best conducts development."
+        },
+        {
             "title": "Application expert in Medical imaging diagnostics AI at AIDA Data Hub",
             "type": "Job",
             "app_deadline": "2023-01-09",
