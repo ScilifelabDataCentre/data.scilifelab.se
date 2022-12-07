@@ -1,6 +1,22 @@
 {
     "items": [
         {
+            "title": "Data Engineer",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Karolinska Institute",
+            "funding_url": "https://ki.varbi.com/en/what:job/jobID:573006/type:job/where:4/apply:1",
+            "description": "The successful candidate will work at the Data Science Node for Precision Medicine and Diagnostics of the DDLS program, at Karolinska Institute (KI) and SciLifeLab Data Centre (DC). The four Data Science Nodes of the program, placed at four different universities, are responsible for bioinformatics support and the development of data services and tools for the four different scientific fields of the program. This DDLS node works specifically with precision medicine and diagnostics to coordinate needs for services and support, and to engage with research communities and users within the field on the national level. Each node is organized locally at its host university and is integrated in a strong environment for research and data within its field.<br><br>The node staff will be employed at Karolinska Institutet (KI) and placed at the Compliance & Data Office (CDO), part of the central Research Support Office, at the KI campus in northern Stockholm where SciLifeLab’s Stockholm site also is located. The CDO offers broad support on data management, health data, clinical studies, ethics and compliance to researchers and is now, through the DDLS program, developing more specific support for precision medicine. CDO also coordinates the Research Data Office (RDO), a virtual organisation where research support staff is joined by experts from the university library, the IT department, the archive and legal department – connected to RDO is also national data support expert and structures like the Swedish National Data service. KI also offers close collaboration with regional and local initiatives related to precision medicine, e.g. the collaborative Precision Medicine Centre Karolinska (PMCK) together with Karolinska University hospital and the university wide initiative Data Driven research at KI (DDKI)."
+        },
+        {
+            "title": "Data Steward",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Karolinska Institute",
+            "funding_url": "https://ki.varbi.com/what:job/jobID:572929/type:job/where:4/apply:1",
+            "description": "The successful candidate will work at the Data Science Node for Precision Medicine and Diagnostics of the DDLS program, at Karolinska Institute (KI) and SciLifeLab Data Centre (DC). The four Data Science Nodes of the program, placed at four different host universities, are responsible for bioinformatics support and the development of data services and tools for the four different scientific fields of the program. This DDLS node works specifically with precision medicine and diagnostics to coordinate needs for services and support, and to engage with research communities and users within the field on the national level. Each node is organized locally at its host university and is integrated in a strong environment for research and data within its field. The employment and placement are at KI and the work is led by SciLifeLab Data Centre.<br><br>The node staff will be employed at Karolinska Institutet (KI) and placed at the Compliance & Data Office (CDO), part of the central Research Support Office, at the KI campus in northern Stockholm where SciLifeLab’s Stockholm site also is located. The CDO offers broad support on data management, health data, clinical studies, ethics and compliance to researchers and is now, through the DDLS program, developing more specific support for precision medicine. CDO also coordinates the Research Data Office (RDO), a virtual organisation where research support staff is joined by experts from the university library, the IT department, the archive and legal department – connected to RDO is also national data support expert and structures like the Swedish National Data service. KI also offers close collaboration with regional and local initiatives related to precision medicine, e.g. the collaborative Precision Medicine Centre Karolinska (PMCK) together with Karolinska University hospital and the university wide initiative Data Driven research at KI (DDKI)."
+        },
+        {
             "title": "Data Steward (Bioinformatician)",
             "type": "Job",
             "app_deadline": "2023-01-16",
