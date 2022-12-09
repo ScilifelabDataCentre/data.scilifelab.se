@@ -1,6 +1,110 @@
 {
     "items": [
         {
+            "title": "Postdoktor (2 år) i datadriven livsvetenskap: visualisering av data inom precisionsmedicinsk forskning",
+            "type": "Job",
+            "app_deadline": "2022-12-23",
+            "employer": "Umeå Universitet",
+            "funding_url": "https://www.umu.se/jobba-hos-oss/lediga-jobb/postdoktor-2-ar-i-datadriven-livsvetenskap-visualisering-av-data-inom-precisionsmedicinsk-forskning_565809/",
+            "description": "För att främja biobanksanvändning och precisionsmedicinsk forskning har medicinska fakulteten vid Umeå universitet lanserat PREDICT, ett brett övergripande infrastrukturprojekt för att förstå sjukdomsförlopp, identifiera biomarkörer för tidig upptäckt av sjukdom och för att undersöka samsjukligheter. PREDICT är en precisionsmedicinplattform med etiskt godkännande för att hjälpa biobanksgivare med ett förnyat, modernt informerat samtycke för att koppla biobanksdata till journaler. Projektet kommer att gynna PREDICTs mål att bidra till förbättrad hälsa i vår befolkning.<br><br>Data som genereras från humana biobanksprover och journaler är känsliga personuppgifter. Hanteringen av känsliga personuppgifter regleras av den allmänna dataskyddsförordningen (GDPR), vilket gör det svårt att dela och återvinna biobanksdata. För optimal användning av biobanksdata syftar detta projekt till att utveckla maskininlärningsmetoder för dataanonymisering och utvärdering av anonymiserade biomedicinska data baserat på datakvalitet och risk för återidentifiering, vilket möjliggör datadelning och återvinning utan begränsningar av GDPR."
+        },
+        {
+            "title": "Permanent bioinformatics staff position with expertise in machine learning",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Uppsala University",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573747",
+            "description": "We are looking for a highly motivated scientist with a strong background and interest in machine learning applied to biological and genetics projects. The main responsibilities are to:<br><br><ul><li>Carry out advanced data analyses within nationally prioritized data-driven projects. The data used will be dependent on the project, and can include sequence data, image data, distribution data, and more.</li><li>Potentially develop tools and workflows for such analyses, and make these available to other researchers.</li><li>Educate other scientists in bioinformatics through collaboration within supported projects, teaching at advanced national courses and consultations.</li><li>Engage in the continuous development and improvement of the DDLS program and the SciLifeLab Bioinformatics platform at a national level."
+        },
+        {
+            "title": "System developer",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Swedish Museum of Natural History (data science node)",
+            "funding_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=A8BB065A-2515-44EE-8C86-F45B8CB92D22&locId=2",
+            "description": "We are now looking for a system developer to join the Data Science Node in Evolution and Biodiversity (DSN-EB). This opportunity would allow you to contribute your skills and experience towards enabling research on ecosystems and biodiversity, working on exciting development projects and cutting-edge research within your areas of expertise. This position is a unique opportunity to be part of the larger DDLS framework and to contribute towards establishing an internationally leading role for Sweden in developing data science excellence in biological research. Eventually this will accelerate the development of biological research capabilities in addressing pressing global issues, such as the global biodiversity crisis.<br><br>We believe in competence development and competence transfer and here you are offered the opportunity to build technical solutions in biodiversity informatics with Swedish and international colleagues in support of research. Key areas of research will include storage, processing, and availability of biodiversity data from DNA sequencing of natural populations, environmental samples (metagenomics and metabarcoding) and data from automated recording of image, sound, video or sensor data, and large-scale analysis using machine learning.<br><br>You will participate in SBDI development in coordination with developer teams. Your colleagues will include researchers, technicians, and a diversity of stakeholders from Sweden and abroad, sharing the mandate to improve infrastructure use and functionality."
+        },
+        {
+            "title": "System developer",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Swedish Museum of Natural History (data science node)",
+            "funding_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=9FCBE315-07CE-439F-8785-6DADEBAABB56&locId=2",
+            "description": "We are now looking for a system developer with special expertise in evolution and biodiversity informatics to join the Data Science Node in Evolution and Biodiversity (DSN-EB). This opportunity would allow you to contribute your skills and experience towards enabling research on ecosystems and biodiversity, working on exciting development projects and cutting-edge research within your areas of expertise. This position is a unique opportunity to be part of the larger DDLS framework and to contribute towards establishing an internationally leading role for Sweden in developing data science excellence in biological research. Eventually this will accelerate the development of biological research capabilities in addressing pressing global issues, such as the global biodiversity crisis.<br><br>We believe in competence development and competence transfer and here you are offered the opportunity to build technical solutions in biodiversity informatics with Swedish and international colleagues in support of research. Key areas of research will include storage, processing, and availability of biodiversity data from DNA sequencing of natural populations, environmental samples (metagenomics and metabarcoding) and data from automated recording of image, sound, video or sensor data, and large-scale analysis using machine learning.<br><br>You will participate in SBDI development in coordination with developer teams. Your colleagues will include researchers, technicians, and a diversity of stakeholders from Sweden and abroad, sharing the mandate to improve infrastructure use and functionality."
+        },
+        {
+            "title": "Bioinformatician",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Swedish Museum of Natural History (data science node)",
+            "funding_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=2F5CAF46-521B-4F8D-A82C-9DB47AAA39C3&locId=2",
+            "description": "We are now looking for a bioinformatician with expertise relevant for leading data-driven Swedish research projects in evolution and biodiversity to join the Data Science Node in Evolution and Biodiversity (DSN-EB). This will be one of two WABI (Wallenberg Advanced Bioinformatics Infrastructure) support experts attached to NBIS/SciLifeLab; the other will be placed at Department of Cell and Molecular Biology, UU.<br><br>This opportunity would allow you to contribute your skills and experience towards research on ecosystems and biodiversity, working on exciting projects and cutting-edge research within your areas of expertise. This position is a unique opportunity to be part of the larger DDLS framework and to contribute towards establishing an internationally leading role for Sweden in developing data science excellence in biological research. Eventually this will accelerate the development of biological research capabilities in addressing pressing global issues, such as the global biodiversity crisis.<br><br>We believe in competence development and competence transfer, and here you have the opportunity to enter a key position in data-driven research projects on evolution and biodiversity. Primary areas of research will include biodiversity data from DNA sequencing of natural populations, environmental samples (metagenomics and metabarcoding) and data from automated recording of image, sound, video or sensor data, as well as large-scale analysis using machine learning."
+        },
+        {
+            "title": "System developer",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Karolinska Institute (data science node)",
+            "funding_url": "https://ki.varbi.com/en/what:job/jobID:573071/type:job/where:4/apply:1",
+            "description": "KI and SciLifeLab Data Centre are looking for a motivated and knowledgeable System developer specialized towards precision medicine and diagnostics, with placement at KI’s Research Data Office (RDO) in Solna. As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field.<br><br>In our team, you will develop services to enable research projects for precision medicine and diagnostics, often in collaboration with health care partners. This requires technical solutions with a high level of security, data integrity and interoperability, which need to be developed in coordination with engineers and developers at other organizations. The datasets are often large and complex, which leads to high demands on both software and infrastructure. Solutions for meta data management and -standardization are of special importance, and integration with data from for example biobanks, clinical registries, clinical trials, large scale molecular data and other health data."
+        },
+        {
+            "title": "Bioinformatician with expertise in precision medicine (2 positions)",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Karolinska Institute (data science node)",
+            "funding_url": "https://ki.varbi.com/en/what:job/jobID:572802/type:job/where:4/apply:1",
+            "description": "The main responsibilities are to: <br><br> <ul><li>Perform advanced data analyses within nationally prioritised data-driven projects.</li><li>Potentially develop tools and workflows to aid such analyses, and for wider use by the scientific community.</li><li>Educate other scientists in bioinformatics through collaboration within supported projects, teaching at advanced national courses and consultations.</li><li>Engage in the continuous development and improvement of the DDLS program and the SciLifeLab Bioinformatics platform at a national level.</li></ul><br>Data analysis tasks could for example include classifying patients based on molecular profiles and health records to inform treatment decisions. The bioinformaticians will also support preclinical research, e.g. studies using model systems to increase the understanding of disease mechanisms through analysis of multi-omics data, images and/or drug-response profiles."
+        },
+        {
+            "title": "Data Engineer",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Karolinska Institute (data science node)",
+            "funding_url": "https://ki.varbi.com/en/what:job/jobID:573006/type:job/where:4/apply:1",
+            "description": "The successful candidate will work at the Data Science Node for Precision Medicine and Diagnostics of the DDLS program, at Karolinska Institute (KI) and SciLifeLab Data Centre (DC). The four Data Science Nodes of the program, placed at four different universities, are responsible for bioinformatics support and the development of data services and tools for the four different scientific fields of the program. This DDLS node works specifically with precision medicine and diagnostics to coordinate needs for services and support, and to engage with research communities and users within the field on the national level. Each node is organized locally at its host university and is integrated in a strong environment for research and data within its field.<br><br>The node staff will be employed at Karolinska Institutet (KI) and placed at the Compliance & Data Office (CDO), part of the central Research Support Office, at the KI campus in northern Stockholm where SciLifeLab’s Stockholm site also is located. The CDO offers broad support on data management, health data, clinical studies, ethics and compliance to researchers and is now, through the DDLS program, developing more specific support for precision medicine. CDO also coordinates the Research Data Office (RDO), a virtual organisation where research support staff is joined by experts from the university library, the IT department, the archive and legal department – connected to RDO is also national data support expert and structures like the Swedish National Data service. KI also offers close collaboration with regional and local initiatives related to precision medicine, e.g. the collaborative Precision Medicine Centre Karolinska (PMCK) together with Karolinska University hospital and the university wide initiative Data Driven research at KI (DDKI)."
+        },
+        {
+            "title": "Data Steward",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Karolinska Institute (data science node)",
+            "funding_url": "https://ki.varbi.com/what:job/jobID:572929/type:job/where:4/apply:1",
+            "description": "The successful candidate will work at the Data Science Node for Precision Medicine and Diagnostics of the DDLS program, at Karolinska Institute (KI) and SciLifeLab Data Centre (DC). The four Data Science Nodes of the program, placed at four different host universities, are responsible for bioinformatics support and the development of data services and tools for the four different scientific fields of the program. This DDLS node works specifically with precision medicine and diagnostics to coordinate needs for services and support, and to engage with research communities and users within the field on the national level. Each node is organized locally at its host university and is integrated in a strong environment for research and data within its field. The employment and placement are at KI and the work is led by SciLifeLab Data Centre.<br><br>The node staff will be employed at Karolinska Institutet (KI) and placed at the Compliance & Data Office (CDO), part of the central Research Support Office, at the KI campus in northern Stockholm where SciLifeLab’s Stockholm site also is located. The CDO offers broad support on data management, health data, clinical studies, ethics and compliance to researchers and is now, through the DDLS program, developing more specific support for precision medicine. CDO also coordinates the Research Data Office (RDO), a virtual organisation where research support staff is joined by experts from the university library, the IT department, the archive and legal department – connected to RDO is also national data support expert and structures like the Swedish National Data service. KI also offers close collaboration with regional and local initiatives related to precision medicine, e.g. the collaborative Precision Medicine Centre Karolinska (PMCK) together with Karolinska University hospital and the university wide initiative Data Driven research at KI (DDKI)."
+        },
+        {
+            "title": "Data Steward (Bioinformatician)",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Uppsala University (data science node)",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573165",
+            "description": "You will work closely with and guide research groups regarding Data Management Plans, and how they shall structure and publish the research data that they generate. A large focus will be to establish and perform procedures for user support to researchers wanting to deposit data from evolutionary biology and biodiversity. An important part of the work is also to educate researchers in data management best practices. You are also expected to contribute to Research Data Management competence networking within Sweden."
+        },
+        {
+            "title": "Data Engineer",
+            "type": "Job",
+            "app_deadline": "2023-01-16",
+            "employer": "Uppsala University (data science node)",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573210",
+            "description": "The work will focus on development and maintenance of systems for processing and visualisation of biological data. DNA sequences is the most common data type in this area, but also distribution data and image data are common. Part of the work will be driven by needs in projects connected to Earth Biogenome Project, a consortium focusing on genome sequencing of all organisms in the world. The development of a genome portal for visualisation and browsing of these projects is one of the tasks."
+        },
+        {
+            "title": "1-2 System developers with operational responsibility (DevOps)",
+            "type": "Job",
+            "app_deadline": "2023-01-09",
+            "employer": "Uppsala University (data science node)",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=572635",
+            "description": "With us, you will work with the agile development of software solutions and user interfaces unique to bioinformatics. Your work is creative, and part of the work is based on incoming requests from various research groups, where you develop many innovative proposals in collaboration with the researchers.<br><br>Here you work in close collaboration with other developers, both locally and internationally, where you plan together to develop and deliver your work. The Scrum team is responsible for the entire life cycle of applications, from planning and development, deployment using automation, to production and, later, possible decommissioning or migration. As we work on several projects, there are opportunities to use different languages ​​and environments, including Python and Go. Many of the projects we work on the border on 'data science', and there are good opportunities to develop within such technologies and tools (for example R). The work includes contributing to estimating time consumption, tests and documentation.<br><br>We offer a vibrant and dynamic environment with room for collaboration. Furthermore, we value the exchange of knowledge and provide time for professional development.<br><br>You will have the opportunity to participate in teaching by researchers in, e.g. programming. In addition, you will contribute to developing guidelines and frameworks for how NBIS best conducts development."
+        },
+        {
+            "title": "Application expert in Medical imaging diagnostics AI at AIDA Data Hub",
+            "type": "Job",
+            "app_deadline": "2023-01-09",
+            "employer": "Linköping University",
+            "funding_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20721",
+            "description": "The Analytic Imaging Diagnostics Arena (AIDA) facilitates collaboration between national stakeholders in medical imaging diagnostics AI, to accelerate development and use of world leading AI tools. This requires advanced analyses and training of AI algorithms based on massive amounts of medical images and clinical data. The AIDA Data Hub provides services and policy support to the AIDA arena, to increase availability of data for ethical and legal research, and also provides resources for secure processing and sharing of massive amounts of sensitive personal medical imaging data for research.<br><br>The AIDA Data Hub is now planning to extend its service portfolio with application expertise in medical imaging diagnostics AI, to provide advanced support and training to researchers in the AIDA community. The primary focus is on projects with a clear connection to the broader SciLifeLab and DDLS aims, including precision medicine and multi-omics."
+        },
+        {
             "title": "Nomination of additional members to two of the four DDLS research area specific expert groups",
             "type": "Nomination",
             "app_deadline": "2022-12-01",
@@ -73,20 +177,36 @@
             "description": "Three Research Environment and Development (RED) Postdoctoral Fellowship grants are open for applications in 2022. RED Postdoc Fellows will receive a 2-year contract (1 MSEK/yr) to work on self-designed research projects. Successful candidates will be matched to an existing research group and embedded in the unique interdisciplinary and collaborative research environment at SciLifeLab Campus Solna. <br><br> SciLifeLab is a research infrastructure in Sweden with unique technologies and broad expertise in molecular life sciences. Campus Solna is jointly operated by the Royal Institute of Technology (KTH), Karolinska Institutet (KI) and Stockholm University (SU), also known as Stockholm Trio. All activities at Campus Solna are aligned with its dual mission: hosting national research infrastructures, and being an internationally competitive research center. Technical innovations developed at Campus Solna, enhance SciLifeLab’s reputation at the forefront of molecular life sciences.  <br><br> As a RED Postdoc Fellow at Campus Solna SciLifeLab you will: <br><br> <ul> <li>Be part of an internationally recognized research community with access to cutting-edge technologies in molecular life sciences.</li> <li>Have the opportunity to work on an ambitious research project in conjunction with competent interdisciplinary experimentalists and bioinformaticians.</li> <li>Work in a supportive and collaborative research environment with a community that fosters scientific exchange and promotes scientific independence.</li> <li>Be employed by one of the Stockholm Trio universities.</li></ul>"
         },
         {
-            "title": "Masters thesis project opportunity",
+            "title": "Masters thesis project opportunities",
             "type": "Project opportunity",
-            "app_deadline": "2022-12-15",
+            "app_deadline": "2023-06-15",
             "employer": "Umeå University",
             "funding_url": "http://www.henlab.org/join-us/",
             "description": "Master thesis projects offered by Henriksson lab, Umeå University. **No specific deadline given for application**."
         },
         {
+            "title": "Various PhD positions in machine learning",
+            "type": "PhD position",
+            "app_deadline": "2023-03-15",
+            "employer": "Umeå University",
+            "funding_url": "http://www.henlab.org/join-us/",
+            "description": "**No specific deadline given for application**. Please check out the website for details."
+        },
+        {
+            "title": "Various postoc positions in machine learning",
+            "type": "Job",
+            "app_deadline": "2023-03-15",
+            "employer": "Umeå University",
+            "funding_url": "http://www.henlab.org/join-us/",
+            "description": "**No specific deadline given for application**. Please check out the website for details."
+        },
+        {
             "title": "Masters projects",
             "type": "Project opportunity",
-            "app_deadline": "2022-12-15",
+            "app_deadline": "2023-06-15",
             "employer": "Linköping University",
             "funding_url": "https://macromolecular.github.io/join",
-            "description": "*No official deadline, check listing webpage for updates.<br><br>* We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
+            "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
         },
         {
             "title": "Senior experts at data science excellence center in medical imaging",
