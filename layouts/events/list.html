@@ -14,7 +14,7 @@
       <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <form action="https://forms.dckube.scilifelab.se/api/v1/form/B6_setlwEffu0PMR/incoming" method="POST" accept-charset="utf-8">
+            <form action="https://forms.dckube.scilifelab.se/api/v1/form/B6_setlwEffu0PMR/incoming" class="needs-validation" novalidate method="POST" accept-charset="utf-8">
             <div class="modal-header">
               <h5 class="modal-title" id="suggestionModalLabel">Events & training suggestion</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -26,12 +26,12 @@
               </div>
                 <div class="mb-3">
                   <label for="event_title" class="form-label fw-bold">Event title:*</label>
-                  <input type="text" class="form-control" id="event_title" name="event_title">
+                  <input type="text" class="form-control" id="event_title" name="event_title" required>
                 </div>
                 <div class="mb-3">
                   <label for="event_type" class="form-label fw-bold">Event type:*</label>
-                  <select class="form-select" id="event_type" name="event_type">
-                    <option selected>---</option>
+                  <select class="form-select" id="event_type" name="event_type" required>
+                    <option hidden disabled selected value> </option>
                     <option value="conferece">Conference</option>
                     <option value="course">Course</option>
                     <option value="seminar">Seminar</option>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="event_start_date" class="form-label fw-bold">Event start date:*</label>
-                  <input type="date" class="form-control" id="event_start_date" name="event_start_date">
+                  <input type="date" class="form-control" id="event_start_date" name="event_start_date" required>
                 </div>
                 <div class="mb-3">
                   <label for="event_start_time" class="form-label fw-bold">Event start time:</label>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="event_info_url" class="form-label fw-bold">Event information webpage:*</label>
-                  <input type="url" class="form-control" id="event_info_url" name="event_info_url">
+                  <input type="url" class="form-control" id="event_info_url" name="event_info_url" required>
                   <div class="form-text">Enter URL starting with 'https://...'.</div>
                 </div>
                 <div class="mb-3">
@@ -223,5 +223,24 @@
       life science. If you know of any relevant events or training opportunities that should be shown here, please recommend them to us using 
       the "Submit an event" button above.</div>
   {{ end }}
+  
+  <script>
+    document.getElementById('originUrl').value = location.href;
+
+    var form = document.querySelector('.needs-validation');
+    form.addEventListener('submit', function(event){
+        if(form.checkValidity() === false) {
+          event.preventDefault();
+          alert("Please fill out all required fields.");
+          event.stopPropagation();
+          form.classList.add('was-validated')
+        }
+        var recaptcha = $("#g-recaptcha-response").val();
+        if (recaptcha === "") {
+            event.preventDefault();
+            alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
+        }
+    });
+  </script>
 
   {{ end }}

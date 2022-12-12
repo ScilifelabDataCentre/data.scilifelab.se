@@ -14,7 +14,7 @@
     <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <form action="https://forms.dckube.scilifelab.se/api/v1/form/RJKkxKh0w8dWjsJN/incoming" method="POST" accept-charset="utf-8">
+          <form action="https://forms.dckube.scilifelab.se/api/v1/form/RJKkxKh0w8dWjsJN/incoming" class="needs-validation" novalidate method="POST" accept-charset="utf-8">
           <div class="modal-header">
             <h5 class="modal-title" id="suggestionModalLabel">Data highlight suggestion</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -26,11 +26,11 @@
             </div>
               <div class="mb-3">
                 <label for="title" class="form-label fw-bold">Title of the open dataset, open-source tool, or research result based on open datasets and open sourece tools:*</label>
-                <input type="text" class="form-control" id="title" name="title">
+                <input type="text" class="form-control" id="title" name="title" required>
               </div>
               <div class="mb-3">
                 <label for="url" class="form-label fw-bold">URL or DOI under where we can find more information:*</label>
-                <input type="text" class="form-control" id="url" name="url">
+                <input type="text" class="form-control" id="url" name="url" required>
                 <div class="form-text">Enter URL starting with 'https://...' or DOI.</div>
               </div>
               <div class="mb-3">
@@ -97,5 +97,24 @@
       </div>
     </div>
 </section>
+
+<script>
+  document.getElementById('originUrl').value = location.href;
+
+  var form = document.querySelector('.needs-validation');
+  form.addEventListener('submit', function(event){
+      if(form.checkValidity() === false) {
+        event.preventDefault();
+        alert("Please fill out all required fields.");
+        event.stopPropagation();
+        form.classList.add('was-validated')
+      }
+      var recaptcha = $("#g-recaptcha-response").val();
+      if (recaptcha === "") {
+          event.preventDefault();
+          alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
+      }
+  });
+</script>
 
 {{ end }}
