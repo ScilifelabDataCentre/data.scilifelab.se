@@ -14,8 +14,8 @@
   <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form action="https://forms.dckube.scilifelab.se/api/v1/form/M5GfePAbHxkPdIph/incoming" method="POST"
-          accept-charset="utf-8">
+        <form action="https://forms.dckube.scilifelab.se/api/v1/form/M5GfePAbHxkPdIph/incoming" class="needs-validation"
+          novalidate method="POST" accept-charset="utf-8">
           <div class="modal-header">
             <h5 class="modal-title" id="suggestionModalLabel">Calls, jobs, PhD position, or masters
               project</h5>
@@ -24,8 +24,7 @@
           <div class="modal-body">
             <div class="">
               <p>We are happy to list any funding calls, job listings, PhD positions, or masters project opportunities
-                related to data
-                driven science in Sweden.</p>
+                related to data-driven life science in Sweden.</p>
               <p>If you know of an opportunity that has not been listed on this page, but
                 feel that it should be, please fill in the form below. Obligatory fields are marked with an
                 asterisk.
@@ -34,42 +33,43 @@
             </div>
             <div class="mb-3">
               <label for="funding_title" class="form-label fw-bold">Title:*</label>
-              <input type="text" class="form-control" id="funding_title" name="funding_title">
+              <input type="text" class="form-control" id="funding_title" name="funding_title" required>
             </div>
             <div class="mb-3">
               <label for="funding_type" class="form-label fw-bold">Type of listing:*</label>
-              <select class="form-select" id="funding_type" name="funding_type">
-                <option selected>---</option>
+              <select class="form-select" id="funding_type" name="funding_type" required>
+                <option hidden disabled selected value> </option>
                 <option value="funding_call">Funding call</option>
                 <option value="job_listing">Job listing</option>
                 <option value="phd">PhD position</option>
                 <option value="masters">Masters project</option>
+                <option value="masters">Other</option>
               </select>
             </div>
             <div class="mb-3">
               <label for="opening_date" class="form-label fw-bold">Opening date:</label>
               <input type="date" class="form-control" id="opening_date" name="opening_date">
-              <div class="form-text">Primarily used for when funding calls open but can be used for other types of
+              <div class="form-text">Primarily used to show when funding calls open but can be used for other types of
                 listing, where appropriate.</div>
             </div>
             <div class="mb-3">
               <label for="funding_deadline" class="form-label fw-bold">Application deadline:*</label>
-              <input type="date" class="form-control" id="funding_deadline" name="funding_deadline">
+              <input type="date" class="form-control" id="funding_deadline" name="funding_deadline" required>
               <div class="form-text">If no deadline applies, please write a date 1 year from today's date, or your best
-                estimate. Can also be used to state e.g. closing date for grant applications.</div>
+                estimate. This field can also be used to state e.g. closing date for grant applications.</div>
             </div>
             <div class="mb-3">
               <label for="employer" class="form-label fw-bold">Employer:*</label>
-              <input type="text" class="form-control" id="employer" name="employer">
+              <input type="text" class="form-control" id="employer" name="employer" required>
               <div class="form-text">Where is the position? List an employer</div>
             </div>
             <div class="mb-3">
               <label for="funding_url" class="form-label fw-bold">Webpage with advertisement:*</label>
-              <input type="url" class="form-control" id="funding_url" name="funding_url">
+              <input type="url" class="form-control" id="funding_url" name="funding_url" required>
               <div class="form-text">Enter URL starting with 'https://...'</div>
             </div>
             <div class="mb-3">
-              <label for="funding_description" class="form-label fw-bold">Additional relevent information:</label>
+              <label for="funding_description" class="form-label fw-bold">Additional relevant information:</label>
               <textarea class="form-control" id="funding_description" name="funding_description" rows="5"></textarea>
               <div class="form-text">Any additional information that you feel could be useful.</div>
             </div>
@@ -198,10 +198,31 @@
     {{ end }}
   </div>
 </section>
-  {{ else }}
-  <div class="alert alert-secondary mt-4">We are currently unaware of any upcoming jobs, project opportunities, or funding calls 
-      relevant for data-driven life science. If you know of any relevant jobs, project opportunities, or funding calls that 
-      should be shown here, please suggest them to us using the "Tell us about an open position/funding call" button above.</div>
-  {{ end }}
+{{ else }}
+<div class="alert alert-secondary mt-4">We are currently unaware of any upcoming jobs, project opportunities, or funding
+  calls
+  relevant for data-driven life science. If you know of any relevant jobs, project opportunities, or funding calls that
+  should be shown here, please suggest them to us using the "Tell us about an open position/funding call" button above.
+</div>
+{{ end }}
+
+<script>
+  document.getElementById('originUrl').value = location.href;
+
+  var form = document.querySelector('.needs-validation');
+  form.addEventListener('submit', function (event) {
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      alert("Please fill out all required fields.");
+      event.stopPropagation();
+      form.classList.add('was-validated')
+    }
+    var recaptcha = $("#g-recaptcha-response").val();
+    if (recaptcha === "") {
+      event.preventDefault();
+      alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
+    }
+  });
+</script>
 
 {{ end }}
