@@ -2,7 +2,9 @@
 
 <section>
   <div>
-    {{ .Content }} Please <i>click on the button below to suggest work that should be the subject of a Data Highlight</i>. You can suggest your own tool/data/research, or someone else’s, and the editorial team will get in touch with you as soon as possible to discuss your suggestion.</div>
+    {{ .Content }} Please <i>click on the button below to suggest work that should be the subject of a data
+      highlight</i>. You can suggest your own tool/data/research, or someone else’s, and the editorial team will get in
+    touch with you as soon as possible to discuss your suggestion.</div>
 </section>
 
 <section>
@@ -10,110 +12,121 @@
     <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
       Suggest a highlight
     </button>
-    </div>
-    <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <form action="https://forms.dckube.scilifelab.se/api/v1/form/RJKkxKh0w8dWjsJN/incoming" class="needs-validation" novalidate method="POST" accept-charset="utf-8">
+  </div>
+  <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="https://forms.dckube.scilifelab.se/api/v1/form/RJKkxKh0w8dWjsJN/incoming" class="needs-validation"
+          novalidate method="POST" accept-charset="utf-8">
           <div class="modal-header">
             <h5 class="modal-title" id="suggestionModalLabel">Data highlight suggestion</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="">
-              <p>We welcome suggestions for data highlights. You can suggest your own work or someone else's work which you believe would be interesting for the Swedish data-driven life science community. The editorial team of SciLifeLab Data Platform portal makes a decision on whether the suggested dataset, tool, or research result can be showcased in the data highlights section. Once the decision is made, the data highlight text can be written either by the editorial team of SciLifeLab Data Platform or by you (and potentially edited by the editorial team before publication).</p>
-              <p>Please fill out the form below to suggest a data highlight. We will get back to you with our decision and further steps shorly after we receive the suggestion.</p>
+              <p>We welcome suggestions for data highlights. Highlights on the SciLifeLab Data Platform focus on openly
+                shared data, open source tools, or work based on the use of open-source data/tools. You are welcome to
+                suggest your own work, or someone else's, as something of potential interest for the Swedish data-driven
+                life science community. The team behind the SciLifeLab Data Platform will make a decision on whether the
+                work can be showcased in the data highlights section. Highlights can be written by yourself or a member
+                of the Platform team. In either case, the team will work closely with you throuhgout the process.</p>
+              <p>Please fill out the form below to suggest a data highlight. We will get back to you with our decision
+                and further steps shortly after we receive the suggestion.</p>
             </div>
-              <div class="mb-3">
-                <label for="title" class="form-label fw-bold">Title of the open dataset, open-source tool, or research result based on open datasets and open sourece tools:*</label>
-                <input type="text" class="form-control" id="title" name="title" required>
+            <div class="mb-3">
+              <label for="title" class="form-label fw-bold">Title of the work:*</label>
+              <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="mb-3">
+              <label for="url" class="form-label fw-bold">URL or DOI with more information:*</label>
+              <input type="text" class="form-control" id="url" name="url" required>
+              <div class="form-text">Enter URL starting with 'https://...' or DOI.</div>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label fw-bold">Description:</label>
+              <textarea class="form-control" id="description" name="description" rows="5"></textarea>
+              <div class="form-text">Please describe why you think this dataset, tool, or result should be showcased as
+                a data highlight on the SciLifeLab Data Platform.</div>
+            </div>
+            <div class="mb-3 form-check fw-bold">
+              <input type="checkbox" class="form-check-input" id="i_am_an_author" name="i_am_an_author">
+              <label class="form-check-label" for="i_am_an_author">I am (one of) the author(s) of this work.</label>
+            </div>
+            <div class="mb-3 form-check fw-bold">
+              <input type="checkbox" class="form-check-input" id="would_like_to_write_text"
+                name="would_like_to_write_text">
+              <label class="form-check-label" for="would_like_to_write_text">I would like to write the text for this
+                data highlight myself.</label>
+            </div>
+            <div class="mb-3">
+              <label for="submitter_name" class="form-label fw-bold">Your name:</label>
+              <input type="text" class="form-control" id="submitter_name" name="submitter_name">
+              <div class="form-text">Enter your name if you agree to be contacted regarding this suggestion.</div>
+            </div>
+            <div class="mb-3">
+              <label for="submitter_email" class="form-label fw-bold">Your contact email:</label>
+              <input type="email" class="form-control" id="submitter_email" name="submitter_email">
+              <div class="form-text">Enter your email address if you agree to be contacted regarding this suggestion.
               </div>
-              <div class="mb-3">
-                <label for="url" class="form-label fw-bold">URL or DOI under where we can find more information:*</label>
-                <input type="text" class="form-control" id="url" name="url" required>
-                <div class="form-text">Enter URL starting with 'https://...' or DOI.</div>
-              </div>
-              <div class="mb-3">
-                <label for="description" class="form-label fw-bold">Description:</label>
-                <textarea class="form-control" id="description" name="description" rows="5"></textarea>
-                <div class="form-text">Please describe shorly why you think this dataset, tool, or result should be showcased as a data highlight on the SciLifeLab Data Platform.</div>
-              </div>
-              <div class="mb-3 form-check fw-bold">
-                <input type="checkbox" class="form-check-input" id="i_am_an_author" name="i_am_an_author">
-                <label class="form-check-label" for="i_am_an_author">I am (one of) the author(s) of this work.</label>
-              </div>
-              <div class="mb-3 form-check fw-bold">
-                <input type="checkbox" class="form-check-input" id="would_like_to_write_text" name="would_like_to_write_text">
-                <label class="form-check-label" for="would_like_to_write_text">I would like to write the text for this data highlight myself.</label>
-              </div>
-              <div class="mb-3">
-                <label for="submitter_name" class="form-label fw-bold">Your name:</label>
-                <input type="text" class="form-control" id="submitter_name" name="submitter_name">
-                <div class="form-text">Enter your name if you agree to be contacted regarding this suggestion.</div>
-              </div>
-              <div class="mb-3">
-                <label for="submitter_email" class="form-label fw-bold">Your contact email:</label>
-                <input type="email" class="form-control" id="submitter_email" name="submitter_email">
-                <div class="form-text">Enter your email address if you agree to be contacted regarding this suggestion.</div>
-              </div>
-              <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
-              <input type="url" id="originUrl" name="originUrl" value="" hidden />
-              <input type='hidden' name='origin' value='data_highlight_suggestion'>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
+            <input type="url" id="originUrl" name="originUrl" value="" hidden />
+            <input type='hidden' name='origin' value='data_highlight_suggestion'>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-aqua">Submit</button>
           </div>
         </form>
-        </div>
       </div>
     </div>
+  </div>
 </section>
 
 <section>
   <div>
-      <div class="row g-3">
-        {{ range .RegularPages }}
-        <div class="col-md-4">
-          <div class="bg-highlight p-3">
-            <div>
-              <a href="{{ .Page.RelPermalink }}">
-                <img class="img-fluid rounded-top" src="{{ .Params.banner }}">
-              </a>
-            </div>
-            <div class="px-2 my-1 text-muted">
-              {{ .Date | time.Format ":date_long" }}
-            </div>
-            <div class="px-2 mb-2">
-              <h5><a href="{{ .Page.RelPermalink }}">{{ .Title }}</a></h5>
-            </div>
-            <div class="px-2 mb-2">{{ .Summary }}</div>
-            <div class="px-2 mb-2">{{ range (.GetTerms "tags") }}
-                      <span class="badge highlight-tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
-                      {{ end }}</div>
+    <div class="row g-3">
+      {{ range .RegularPages }}
+      <div class="col-md-4">
+        <div class="bg-highlight p-3">
+          <div>
+            <a href="{{ .Page.RelPermalink }}">
+              <img class="img-fluid rounded-top" src="{{ .Params.banner }}">
+            </a>
           </div>
+          <div class="px-2 my-1 text-muted">
+            {{ .Date | time.Format ":date_long" }}
+          </div>
+          <div class="px-2 mb-2">
+            <h5><a href="{{ .Page.RelPermalink }}">{{ .Title }}</a></h5>
+          </div>
+          <div class="px-2 mb-2">{{ .Summary }}</div>
+          <div class="px-2 mb-2">{{ range (.GetTerms "tags") }}
+            <span class="badge highlight-tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+            {{ end }}</div>
         </div>
-        {{ end }}
       </div>
+      {{ end }}
     </div>
+  </div>
 </section>
 
 <script>
   document.getElementById('originUrl').value = location.href;
 
   var form = document.querySelector('.needs-validation');
-  form.addEventListener('submit', function(event){
-      if(form.checkValidity() === false) {
-        event.preventDefault();
-        alert("Please fill out all required fields.");
-        event.stopPropagation();
-        form.classList.add('was-validated')
-      }
-      var recaptcha = $("#g-recaptcha-response").val();
-      if (recaptcha === "") {
-          event.preventDefault();
-          alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
-      }
+  form.addEventListener('submit', function (event) {
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      alert("Please fill out all required fields.");
+      event.stopPropagation();
+      form.classList.add('was-validated')
+    }
+    var recaptcha = $("#g-recaptcha-response").val();
+    if (recaptcha === "") {
+      event.preventDefault();
+      alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
+    }
   });
 </script>
 
