@@ -1,6 +1,48 @@
 {
     "items": [
         {
+            "title": "The Swedish Bioinformatics Advisory Program",
+            "type": "Long term training",
+            "registration_deadline": "2022-12-21",
+            "organisers": "SciLifeLab",
+            "event_url": "https://www.scilifelab.se/training/the-swedish-bioinformatics-advisory-program",
+            "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSdZ2nARLk2Z67oWRZUq9R5wZyBwo-EnpVhGIbwlkAMO79t7mw/viewform",
+            "description": "PhD students are admitted to the Swedish Bioinformatics Advisory Program for a maximum of 2 years. During this time, the PhD student gets assigned a senior bioinformatician acting as a personal advisor, according to the limitations below:<br><br><ul><li>1 start-up meeting where the advisor visits the research group of the PhD student.</li><li>A 1-hour physical meeting or video conference per month (except July), where the PhD student and her/his supervisor are expected to attend.</li><li>2 grand meetings per year (1-2 days/meeting), where all PhD students currently enrolled in the program, as well as their PhD supervisors, meet with the advisors at SciLifeLab.</li></ul>"
+        },
+        {
+            "title": "NBIS workshop in Neural Nets and Deep Learning",
+            "type": "Workshop",
+            "date_start": "2023-03-20",
+            "date_end": "2023-03-24",
+            "venue": "Navet, SciLifeLab Uppsala",
+            "organisers": "NBIS",
+            "event_url": "https://uppsala.instructure.com/courses/75565",
+            "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSfcZ8OCHp4Fee12uspuLoO0p0ISOJU3Bnp7ToRZtyCYvV9Z-Q/viewform?usp=send_form",
+            "description": "This intense one-week workshop provides an introduction to the analysis of next generation sequencing data. The workshop is open to PhD students, post-docs, and other researchers affiliated to Swedish academia and healthcare. It is organised by the National Bioinformatics Infrastructure Sweden (NBIS) and National Genomics Infrastructure (NGI)."
+        },
+        {
+            "title": "Introduction to bioinformatics using NGS data",
+            "type": "Workshop",
+            "date_start": "2023-02-06",
+            "date_end": "2023-02-10",
+            "venue": "Uppsala, Lund, Umeå, online",
+            "organisers": "NBIS",
+            "event_url": "https://uppsala.instructure.com/courses/76870",
+            "registration_url": "https://nbis.typeform.com/to/Opw0vIlH",
+            "description": "This intense one-week workshop provides an introduction to the analysis of next generation sequencing data. The workshop is open to PhD students, post-docs, and other researchers affiliated to Swedish academia and healthcare. It is organised by the National Bioinformatics Infrastructure Sweden (NBIS) and National Genomics Infrastructure (NGI)."
+        },
+        {
+            "title": "Single cell RNAseq data analysis",
+            "type": "Course",
+            "date_start": "2023-01-30",
+            "date_end": "2023-02-03",
+            "venue": "Air&Fire, SciLifeLab Stockholm",
+            "organisers": "NBIS",
+            "event_url": "https://www.scilifelab.se/event/single-cell-rnaseq-data-analysis/",
+            "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLScdZxbA-13IuuYdMSQsLjLmNK-53DWsbZNMJbddZ4yKd6iDBA/viewform",
+            "description": "This workshop will introduce the best practice bioinformatics methods for processing and analyses of single cell RNA-seq data. The total course duration is 5 days, including the lectures and practical exercises that will be held on site in Stockholm."
+        },
+        {
             "title": "Evolution in Sweden 2023",
             "type": "Symposium",
             "date_start": "2023-01-10",
