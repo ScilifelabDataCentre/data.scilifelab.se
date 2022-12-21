@@ -1,6 +1,14 @@
 {
     "items": [
         {
+            "title": "1-3 Data Steward(s)",
+            "type": "Job",
+            "app_deadline": "2023-01-13",
+            "employer": "Uppsala University",
+            "funding_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=571939",
+            "description": "SciLifeLab Data Centre is looking for motivated and knowledgeable Data stewards, to join our Data management team. As a data steward, you are expected to participate in user support and development of data services, with a focus on research data management following the FAIR principles, metadata management and data curation, communication with users, and training activities.<br><br>You will be working with data from genomics, proteomics, chemical biology and other technologies, and in a responsive way support projects to continuously make available data, code, methods and results. You will also support projects with technical solutions, services and advice to maintain the highest possible quality in research data management, as well as support a collaborative and open way of working. Meta data management is of particular importance for this role, including information about sample preparation and biomaterial, experimental processing and production of raw data. Health data management, often in collaboration with clinical partners, is an important area and we are particularly looking for data stewards with interest and experience in this field.<br><br>As a data steward, you will work directly with data management through support to different projects and activities, but also by working with engineers and developers to develop data services for the field.."
+        },
+        {
             "title": "2 PhD students in Environmental Science focusing on nontarget mass spectrometry",
             "type": "PhD position",
             "app_deadline": "2023-02-11",
