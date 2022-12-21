@@ -1,6 +1,19 @@
 {
     "items": [
         {
+            "title": "User Experience (UX) Design to build intuitive web applications for life science research",
+            "type": "Webinar",
+            "date_start": "2023-01-10",
+            "time_start": "14:00",
+            "date_end": "2023-01-10",
+            "time_end": "15:00",
+            "venue": "Online event via Zoom",
+            "organisers": " SciLifeLab Data Centre and NBIS",
+            "event_url": "https://www.scilifelab.se/event/user-experience-ux-design-to-build-intuitive-web-applications-for-life-science-research/",
+            "registration_url": "https://uu-se.zoom.us/webinar/register/WN_4QpeAQk4QmCCx5cv7O6_Xw",
+            "description": "This online webinar will showcase the basic User Experience (UX) Design principles with lessons learned from adopting them to build web applications in a life science research environment. The event is organised and hosted by NBIS and SciLifeLab with an invited speaker and Senior UX Designer from the European Bioinformatics Institute (EMBL-EBI).<br><br>The webinar aims to highlight some of the basic principles of User Experience (UX) Design, to demonstrate how they provide value in the development process and to guide participants to resources for adopting UX Design practices in their own projects. While the intended audience is NBIS and SciLifeLab staff the registration is open to everyone interested in developing web applications and services for life science research. Registration is required to receive instructions and connection details for the event."
+        },
+        {
             "title": "The Swedish Bioinformatics Advisory Program",
             "type": "Long term training",
             "registration_deadline": "2022-12-21",
