@@ -1,6 +1,14 @@
 {
     "items": [
         {
+            "title": "Associate Researcher (Scientific Officer)",
+            "type": "Job",
+            "app_deadline": "2023-01-31",
+            "employer": "University of Gothenburg",
+            "funding_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=28563",
+            "description": "We are looking for an experienced Associate Researcher/Scientific Officer with strong interest in developing, implementing and adjusting feedback microscopy tools at the Centre for Cellular Imaging. This job position focuses on the automation of, for example, targeted microscopy, functional microscopy, and tracking of cells over time using both widefield and laser scanning microscopes. At this post you will also explore the implementation of smart microscopy tools in the field of electron microscopy - Transmission and Scanning. Image analysis pipelines will include machine learning and deep learning (Artificial Intelligence). The post holder will implement on-the-fly data processing and real time feedback into imaging workflows, which is particularly important for live imaging. Another important task will be the management of large data, here the post holder will explore the automated pre-processing of images before transfer to storage servers.<br><br>The successful candidate will work in the Centre for Cellular Imaging advanced microscopy facility and: 1) Develop smart microscopy workflows to service our scientific community; 2) Educate and train core facility users in the implementation of smart microscopy workflows. 3) Support our users by assisting and training in bioimage analysis. 4) Give advice on the design of imaging experiments. 5) Continuing professional development in the field of smart microscopy by attending courses and workshops, presenting work at scientific meetings, and keeping abreast of the relevant literature; 6) Participate in the organization and teaching of workshops for our broad scientific community and of practices/lectures for graduate and undergraduate courses."
+        },
+        {
             "title": "2 PhD students in Environmental Science focusing on nontarget mass spectrometry",
             "type": "PhD position",
             "app_deadline": "2023-02-11",
