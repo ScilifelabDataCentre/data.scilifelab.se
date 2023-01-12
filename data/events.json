@@ -1,6 +1,19 @@
 {
     "items": [
         {
+            "title": "WASP and DDLS networking event",
+            "type": "Webinar",
+            "date_start": "2023-01-27",
+            "time_start": "11:00",
+            "date_end": "2023-01-27",
+            "time_end": "14:00",
+            "venue": "Online event via Zoom (mingle onsite)",
+            "organisers": "SciLifeLab DDLS and WASP",
+            "event_url": "https://www.scilifelab.se/event/wasp-and-ddls-networking-event-january-2023/",
+            "registration_url": "https://www.lyyti.fi/reg/WASP_and_DDLS_event_January_2023",
+            "description": "This networking event welcomes everyone that wants to learn more about the second WASP-DDLS joint call for research projects. The event will start with an open Zoom meeting that will give an introduction to the new call and also highlight lessons learned from previous approved projects. The digital introduction will be followed by on-site network meetings at different university sites."
+        },
+        {
             "title": "User Experience (UX) Design to build intuitive web applications for life science research",
             "type": "Webinar",
             "date_start": "2023-01-10",
