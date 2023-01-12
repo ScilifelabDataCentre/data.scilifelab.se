@@ -1,6 +1,54 @@
 {
     "items": [
         {
+            "title": "Postdoctoral positions and fellowships",
+            "type": "Job",
+            "app_deadline": "2023-03-31",
+            "employer": "Umeå Universitet",
+            "funding_url": "https://billkerlab.org/join-us/",
+            "description": "A postdoc position has become available. The formal applications process will start shortly.  If you want to know more, get in touch or just send a CV and cover letter explaining your motivation to oliver.billker@umu.se<br><br><b>Please note that the deadline is approximate, the position witll be open until filled.</b><br><br>These are examples of the type of work we like to do. Don’t hesitate to get in touch with oliver.billker@umu.se to discuss. The lab would like to attract a broad set of interests and skills to at these questions and we like to collaborate across disciplines. There are opportunities to use traditional genetic and biochemical techniques, to apply machine learning approaches to reveal insights from large datasets, or to use our cutting edge facilities in cryoEM, single cell genomics and metabolimics to get at parasite vector interactions.<br><br><ol><li>Using our unique ability to carry out forward genetics screens (Bushell et al., 2017), we have now identified hundreds of fertility genes. From this, many opportunities have emerged to dissect the molecular mechanisms of reproduction and transmission of malaria parasites. You can delve into the details of fertilisation or meiosis, or you could devise secondary screens to stratify our hits further. Either way, you will be able to gain deep insights into how malaria transmission works and how it could be blocked. You will also contribute to our understanding how sex has evolved in the first eukaryote.</li><li>Mechanisms of post transcriptional regulation during Plasmodium sex determination. Our screen of sexual determination and development genes (Russell et al., 2023) has opened up fascinating questions of how gene regulation controls development in divergent eukaryote. There are some startling parallels with germ line determination in animals that we want to explore further.</li><li>Single Cell Biology of Malaria Transmission. We have established single cell genomics methods to study mosquito tissues and how they interact with malaria parasites (e.g. Raddi et al., 2020). This now opens up avenues to get at how malaria parasites infect cells of the midgut and the salivary gland, how they mature inside their vector and how the mosquitoes respond.</li></ol>"
+        },
+        {
+            "title": "PhD position",
+            "type": "PhD position",
+            "app_deadline": "2023-03-31",
+            "employer": "Umeå Universitet",
+            "funding_url": "https://billkerlab.org/join-us/",
+            "description": "Driven individuals who want to develop a PhD project in the broad research areas listed below are encouraged to send a CV and cover letter explaining their motivation to oliver.billker@umu.se.<br><br><b>Please note that the deadline is approximate, the position witll be open until filled.</b><br><br>These are examples of the type of work we like to do. Don’t hesitate to get in touch with oliver.billker@umu.se to discuss. The lab would like to attract a broad set of interests and skills to at these questions and we like to collaborate across disciplines. There are opportunities to use traditional genetic and biochemical techniques, to apply machine learning approaches to reveal insights from large datasets, or to use our cutting edge facilities in cryoEM, single cell genomics and metabolimics to get at parasite vector interactions.<br><br><ol><li>Using our unique ability to carry out forward genetics screens (Bushell et al., 2017), we have now identified hundreds of fertility genes. From this, many opportunities have emerged to dissect the molecular mechanisms of reproduction and transmission of malaria parasites. You can delve into the details of fertilisation or meiosis, or you could devise secondary screens to stratify our hits further. Either way, you will be able to gain deep insights into how malaria transmission works and how it could be blocked. You will also contribute to our understanding how sex has evolved in the first eukaryote.</li><li>Mechanisms of post transcriptional regulation during Plasmodium sex determination. Our screen of sexual determination and development genes (Russell et al., 2023) has opened up fascinating questions of how gene regulation controls development in divergent eukaryote. There are some startling parallels with germ line determination in animals that we want to explore further.</li><li>Single Cell Biology of Malaria Transmission. We have established single cell genomics methods to study mosquito tissues and how they interact with malaria parasites (e.g. Raddi et al., 2020). This now opens up avenues to get at how malaria parasites infect cells of the midgut and the salivary gland, how they mature inside their vector and how the mosquitoes respond.</li></ol>"
+        },
+        {
+            "title": "Postdoctoral position in RNA biology",
+            "type": "Job",
+            "app_deadline": "2023-01-30",
+            "employer": "Karolinska Institutet",
+            "funding_url": "http://pelechanolab.com/2023/01/11/postdoctoral-position-in-rna-biology/",
+            "description": "We have an open postdoctoral position in RNA biology. The available postdoctoral position concerns developing and applying novel genomic approaches to study RNA-protein interaction. The candidate will focus on investigation the dynamic interaction between the transcriptome and the proteome, and how the disruption of those interaction can be used to modulate gene expression and cellular phenotypes in health and disease.<br><br>The candidate is expected to contribute his/her own ideas to the common goal of understanding how RNA biology and proteostasis contributes to the appearance of divergent cellular phenotypes. The candidate will perform original research in genomics, and acquire the required experimental and computational skills necessary for the completion of the project. The candidate will use varied model organism, from budding yeast to human. The candidate will be responsible for integrating different kinds of biological information to answer relevant questions (i.e. genomics, proteomics, biochemical…). The successful candidate will take a strong lead in the experimental design, and collaborate with other team members. The candidate is expected to communicate the scientific results by writing up scientific papers and attending scientific meetings. The ideal candidate is also expected to participate in the general duties of the team and to effectively communicate with scientists of very diverse backgrounds in a highly interdisciplinary and international environment. Working language is English."
+        },
+        {
+            "title": "BSc and MSc thesis projects",
+            "type": "Project opportunity",
+            "app_deadline": "2023-03-31",
+            "employer": "University of Stockholm",
+            "funding_url": "https://sahlingroup.github.io/positions/",
+            "description": "Contact me for eventual Master's or Bachelors's projects within algorithms in Life Sciences and Bioinformatics. Please mention your academic background and include the courses you took and your grades. I expect you to have knowledge about programming and be highly motivated.<br><br><b>Please note that the deadline is approximate, the position will be open until filled.</b>"
+        },
+        {
+            "title": "Postdoc in Computational Biology",
+            "type": "Job",
+            "app_deadline": "2023-03-31",
+            "employer": "University of Stockholm",
+            "funding_url": "https://sahlingroup.github.io/positions/",
+            "description": "We are located in Stockholm at the Science for Life Laboratory. Our research interests broadly span algorithm development and analysis of sequence data. We have ongoing projects on method development for rapid sequence mapping and sequence similarity searches, and various computational problems in transcriptomic analysis, and collaborative projects in genome assembly. We also consider your project proposals if it aligns with the group's research programs.<br><br><b>Please note that the deadline is approximate, the position will be open until filled.</b>"
+        },
+        {
+            "title": "Associate Researcher (Scientific Officer)",
+            "type": "Job",
+            "app_deadline": "2023-01-31",
+            "employer": "University of Gothenburg",
+            "funding_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=28563",
+            "description": "We are looking for an experienced Associate Researcher/Scientific Officer with strong interest in developing, implementing and adjusting feedback microscopy tools at the Centre for Cellular Imaging. This job position focuses on the automation of, for example, targeted microscopy, functional microscopy, and tracking of cells over time using both widefield and laser scanning microscopes. At this post you will also explore the implementation of smart microscopy tools in the field of electron microscopy - Transmission and Scanning. Image analysis pipelines will include machine learning and deep learning (Artificial Intelligence). The post holder will implement on-the-fly data processing and real time feedback into imaging workflows, which is particularly important for live imaging. Another important task will be the management of large data, here the post holder will explore the automated pre-processing of images before transfer to storage servers.<br><br>The successful candidate will work in the Centre for Cellular Imaging advanced microscopy facility and: 1) Develop smart microscopy workflows to service our scientific community; 2) Educate and train core facility users in the implementation of smart microscopy workflows. 3) Support our users by assisting and training in bioimage analysis. 4) Give advice on the design of imaging experiments. 5) Continuing professional development in the field of smart microscopy by attending courses and workshops, presenting work at scientific meetings, and keeping abreast of the relevant literature; 6) Participate in the organization and teaching of workshops for our broad scientific community and of practices/lectures for graduate and undergraduate courses."
+        },
+        {
             "title": "2 PhD students in Environmental Science focusing on nontarget mass spectrometry",
             "type": "PhD position",
             "app_deadline": "2023-02-11",
