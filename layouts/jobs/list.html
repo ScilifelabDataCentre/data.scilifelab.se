@@ -8,7 +8,7 @@
 <section>
   <div class="my-2 text-start">
     <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
-      Tell us about an open position/funding call
+      Tell us about an open position
     </button>
   </div>
   <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
@@ -17,13 +17,13 @@
         <form action="https://forms.dckube.scilifelab.se/api/v1/form/M5GfePAbHxkPdIph/incoming" class="needs-validation"
           novalidate method="POST" accept-charset="utf-8">
           <div class="modal-header">
-            <h5 class="modal-title" id="suggestionModalLabel">Calls, jobs, PhD position, or masters
-              project</h5>
+            <h5 class="modal-title" id="suggestionModalLabel">Jobs, PhD positions, Postdoc positions or master's
+              projects</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="">
-              <p>We are happy to list any funding calls, job listings, PhD positions, or masters project opportunities
+              <p>We are happy to list any job listings, PhD positions, postdoc positions or masters project opportunities
                 related to data-driven life science in Sweden.</p>
               <p>If you know of an opportunity that has not been listed on this page, but
                 feel that it should be, please fill in the form below. Obligatory fields are marked with an
@@ -32,18 +32,18 @@
                 possible.</p>
             </div>
             <div class="mb-3">
-              <label for="funding_title" class="form-label fw-bold">Title:*</label>
-              <input type="text" class="form-control" id="funding_title" name="funding_title" required>
+              <label for="job_title" class="form-label fw-bold">Title:*</label>
+              <input type="text" class="form-control" id="job_title" name="job_title" required>
             </div>
             <div class="mb-3">
-              <label for="funding_type" class="form-label fw-bold">Type of listing:*</label>
-              <select class="form-select" id="funding_type" name="funding_type" required>
+              <label for="job_type" class="form-label fw-bold">Type of listing:*</label>
+              <select class="form-select" id="job_type" name="job_type" required>
                 <option hidden disabled selected value> </option>
-                <option value="funding_call">Funding call</option>
                 <option value="job_listing">Job listing</option>
                 <option value="phd">PhD position</option>
+                <option value="postdoc">Postdoc position</option>
                 <option value="masters">Masters project</option>
-                <option value="masters">Other</option>
+                <option value="other">Other</option>
               </select>
             </div>
             <div class="mb-3">
@@ -53,8 +53,8 @@
                 listing, where appropriate.</div>
             </div>
             <div class="mb-3">
-              <label for="funding_deadline" class="form-label fw-bold">Application deadline:*</label>
-              <input type="date" class="form-control" id="funding_deadline" name="funding_deadline" required>
+              <label for="job_deadline" class="form-label fw-bold">Application deadline:*</label>
+              <input type="date" class="form-control" id="job_deadline" name="job_deadline" required>
               <div class="form-text">If no deadline applies, please write a date 1 year from today's date, or your best
                 estimate. This field can also be used to state e.g. closing date for grant applications.</div>
             </div>
@@ -64,13 +64,13 @@
               <div class="form-text">Where is the position? List an employer</div>
             </div>
             <div class="mb-3">
-              <label for="funding_url" class="form-label fw-bold">Webpage with advertisement:*</label>
-              <input type="url" class="form-control" id="funding_url" name="funding_url" required>
+              <label for="job_url" class="form-label fw-bold">Webpage with advertisement:*</label>
+              <input type="url" class="form-control" id="job_url" name="job_url" required>
               <div class="form-text">Enter URL starting with 'https://...'</div>
             </div>
             <div class="mb-3">
-              <label for="funding_description" class="form-label fw-bold">Additional relevant information:</label>
-              <textarea class="form-control" id="funding_description" name="funding_description" rows="5"></textarea>
+              <label for="job_description" class="form-label fw-bold">Additional relevant information:</label>
+              <textarea class="form-control" id="job_description" name="job_description" rows="5"></textarea>
               <div class="form-text">Any additional information that you feel could be useful.</div>
             </div>
             <div class="mb-3 form-check fw-bold">
@@ -103,90 +103,121 @@
   </div>
 </section>
 
+{{ $job_type := slice }}
+{{ $employer := slice }}
 {{ $open_jobs_and_funds := slice }}
-{{ range sort $.Site.Data.calls_and_jobs.items ".app_deadline" "asc" }}
-{{ if ge (.app_deadline | time.Format "20060102") (now | time.Format "20060102") }}
-{{ $open_jobs_and_funds = $open_jobs_and_funds | append . }}
+{{ range sort $.Site.Data.jobs.items ".app_deadline" "asc" }}
+  {{ if ge (.app_deadline | time.Format "20060102") (now | time.Format "20060102") }}
+    {{ $open_jobs_and_funds = $open_jobs_and_funds | append . }}
+    {{ $job_type = $job_type | append .type }}
+    {{ $employer = $employer | append .employer }}
+  {{ end }}
 {{ end }}
-{{ end }}
+{{ $job_type = $job_type | uniq }}
+{{ $employer = $employer | uniq }}
+
 {{ if ge (len $open_jobs_and_funds) 1 }}
 <section>
-  <div class="row g-2 mt-3 mb-5">
-    {{ range $ind, $cont := $open_jobs_and_funds }}
-
-    {{/* Potentially different colors of the calendar icon depending on the event type */}}
-
-    <div class="col-md-6 col-lg-4">
-      <div class="p-3 border rounded h-100">
-        <div class="d-flex justify-content-between">
-          <div>
-            <span class="badge event-type mb-1">{{ .type }}</span>
-            <h5><a class="" role="button" data-bs-toggle="modal"
-                data-bs-target="#descriptionModal{{ $ind }}">{{ .title }}</a></h5>
-          </div>
-          <div class="px-2 m-2 d-flex flex-column rounded event-date">
-            <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .app_deadline }}</div>
-            <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .app_deadline }}</div>
-          </div>
+  <div class="row mt-3 mb-5">
+    <div class="col-lg-2" id="job-filters">
+      <h5>Type</h5>
+      {{ range sort $job_type }}
+        <div class="form-check">   
+          <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ delimit (split . " ") "-" | lower }}">
+          <label class="form-check-label" for="{{ . }}">{{ . }}</label>
         </div>
-        {{ if .employer }}<div class="row">
-          <div class="col">
-            <b>Employer:</b> {{ .employer }}
+      {{ end }}
+      
+      <h5 class="mt-3">Employer</h5>
+      {{ range sort $employer }}
+        <div class="form-check">   
+          <input class="form-check-input" type="checkbox" id="{{ . }}" name="employer" value="{{ delimit (split . " ") "-" | lower }}">
+          <label class="form-check-label" for="{{ . }}">{{ . }}</label>
+        </div>
+      {{ end }}
+    </div>
+    <div class="col-lg">
+      <div class="row g-2" id="jobs-container">
+      {{ range $ind, $cont := $open_jobs_and_funds }}
+
+      {{/* Add custom attributes for filtering purposes */}}
+      {{ $this_job_type := slice }}
+      {{ range .type }}{{ $this_job_type = $this_job_type | append (delimit (split . " ") "-" | lower) }} {{ end }}
+      {{ $this_job_type = delimit $this_job_type " " }}
+      {{ $this_employer := delimit (split .employer " ") "-" | lower }}
+      
+      <div class="col-md-6 col-lg-4" data-job-type="{{ $this_job_type }}" data-employer="{{ $this_employer }}">
+        <div class="p-3 border rounded h-100">
+          <div class="d-flex justify-content-between">
+            <div>
+              {{ range .type }}<span class="badge event-type mb-1 me-1">{{ . }}</span>{{ end }}
+              <h5><a class="" role="button" data-bs-toggle="modal"
+                  data-bs-target="#descriptionModal{{ $ind }}">{{ .title }}</a></h5>
+            </div>
+            <div class="px-2 m-2 d-flex flex-column rounded event-date">
+              <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .app_deadline }}</div>
+              <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .app_deadline }}</div>
+            </div>
           </div>
-        </div>{{ end }}
-        <div class="row mt-3">
-          <div class="col">
-            <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal"
-              data-bs-target="#descriptionModal{{ $ind }}">
-              See details
-            </button>
-            <div class="modal fade" id="descriptionModal{{ $ind }}" tabindex="-1"
-              aria-labelledby="descriptionModalLabel{{ $ind }}" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="descriptionModalLabel">{{ .title }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                      <div class="col">
-                        <b>Listing type:</b> <span class="badge event-type mb-1">{{ .type }}</span>
+          {{ if .employer }}<div class="row">
+            <div class="col">
+              <b>Employer:</b> {{ .employer }}
+            </div>
+          </div>{{ end }}
+          <div class="row mt-3">
+            <div class="col">
+              <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal"
+                data-bs-target="#descriptionModal{{ $ind }}">
+                See details
+              </button>
+              <div class="modal fade" id="descriptionModal{{ $ind }}" tabindex="-1"
+                aria-labelledby="descriptionModalLabel{{ $ind }}" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="descriptionModalLabel">{{ .title }}</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col">
+                          <b>Listing type:</b> {{ range .type }}<span class="badge event-type mb-1 me-1">{{ . }}</span>{{ end }}
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col">
+                          <b>Deadline for applications:</b>
+                          {{ .app_deadline | time.Format ":date_medium" }}{{ if .time_start }}
+                          {{ .time_start }}{{ end }}{{ if .date_end }} -
+                          {{ .date_end | time.Format ":date_medium" }}{{ end}}{{ if .time_end }}
+                          {{ .time_end }}{{ end }}
+                        </div>
+                      </div>
+                      {{ if .employer }}<div class="row mt-1">
+                        <div class="col">
+                          <b>Employer:</b> {{ .employer }}
+                        </div>
+                      </div>{{ end }}
+                      {{ if .opening_date }}<div class="row mt-1">
+                        <div class="col">
+                          <b>Opening date:</b> {{ .opening_date }}
+                        </div>
+                      </div>{{ end }}
+                      {{ if .description }}<div class="row mt-3">
+                        <div class="col"><b>Brief description:</b><br>
+                          {{ .description | markdownify }}
+                        </div>
+                      </div>{{ end }}
+                      <div class="row mt-3">
+                        <div class="col-md">
+                          <a target="_blank" href="{{ .job_url }}"><i class="bi bi-globe"></i> Listing
+                            webpage</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="row mt-1">
-                      <div class="col">
-                        <b>Deadline for applications:</b>
-                        {{ .app_deadline | time.Format ":date_medium" }}{{ if .time_start }}
-                        {{ .time_start }}{{ end }}{{ if .date_end }} -
-                        {{ .date_end | time.Format ":date_medium" }}{{ end}}{{ if .time_end }}
-                        {{ .time_end }}{{ end }}
-                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
-                    {{ if .employer }}<div class="row mt-1">
-                      <div class="col">
-                        <b>Employer:</b> {{ .employer }}
-                      </div>
-                    </div>{{ end }}
-                    {{ if .opening_date }}<div class="row mt-1">
-                      <div class="col">
-                        <b>Opening date:</b> {{ .opening_date }}
-                      </div>
-                    </div>{{ end }}
-                    {{ if .description }}<div class="row mt-3">
-                      <div class="col"><b>Brief description:</b><br>
-                        {{ .description | markdownify }}
-                      </div>
-                    </div>{{ end }}
-                    <div class="row mt-3">
-                      <div class="col-md">
-                        <a target="_blank" href="{{ .funding_url }}"><i class="bi bi-globe"></i> Listing
-                          webpage</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
@@ -194,8 +225,9 @@
           </div>
         </div>
       </div>
+      {{ end }}
+      </div>
     </div>
-    {{ end }}
   </div>
 </section>
 {{ else }}
@@ -207,8 +239,10 @@
 {{ end }}
 
 <script>
+  // set origin url in the form
   document.getElementById('originUrl').value = location.href;
-
+  
+  // Validate the form by checking mandatory fields and recaptcha
   var form = document.querySelector('.needs-validation');
   form.addEventListener('submit', function (event) {
     if (form.checkValidity() === false) {
@@ -223,6 +257,34 @@
       alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
     }
   });
+  
+  // Filter jobs based on selected criteria
+  $('div#job-filters input:checkbox').on('change', function(){
+    var job_type = $('input:checkbox[name="type"]:checked').map(function () {return this.value}).get();
+    var employer = $('input:checkbox[name="employer"]:checked').map(function () {return this.value}).get();
+    
+    if (!job_type.length && !employer.length) {
+      $('div#jobs-container div[data-job-type]').show();
+    } else {
+      $('div#jobs-container div[data-job-type]').hide();
+      job_type.forEach(function(jtype){
+        $(`div#jobs-container div[data-job-type*=${jtype}]`).each(function(){
+          if (!employer.length) {
+            this.style.display = '';
+          } else if (employer.includes(this.getAttribute('data-employer'))){
+            this.style.display = '';
+          }
+        });
+      });
+      employer.forEach(function(emp){
+        if (!job_type.length) {
+          $(`div#jobs-container div[data-employer*=${emp}]`).show();
+        }
+      });
+    }
+    
+  });
+  
 </script>
 
 {{ end }}
