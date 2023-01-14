@@ -226,6 +226,9 @@
         </div>
       </div>
       {{ end }}
+      <div id="no-filtered-jobs" style="display:none;">
+        <p class="text-center">No jobs found for selected criteria.</p>
+      </div>
       </div>
     </div>
   </div>
@@ -260,13 +263,19 @@
   
   // Filter jobs based on selected criteria
   $('div#job-filters input:checkbox').on('change', function(){
+    
+    // Collect and create a list with selected values
     var job_type = $('input:checkbox[name="type"]:checked').map(function () {return this.value}).get();
     var employer = $('input:checkbox[name="employer"]:checked').map(function () {return this.value}).get();
     
+    // Hide all displayed jobs and message
+    $('div#jobs-container div[data-job-type]').hide();
+    $('div#no-filtered-jobs').hide();
+    
+    // Show relavant jobs based on selected criteria
     if (!job_type.length && !employer.length) {
       $('div#jobs-container div[data-job-type]').show();
     } else {
-      $('div#jobs-container div[data-job-type]').hide();
       job_type.forEach(function(jtype){
         $(`div#jobs-container div[data-job-type*=${jtype}]`).each(function(){
           if (!employer.length) {
@@ -281,6 +290,12 @@
           $(`div#jobs-container div[data-employer*=${emp}]`).show();
         }
       });
+      
+      // Display a message if no jobs available for selected criteria
+      var visible_jobs = $('div#jobs-container div[data-job-type]').filter(":visible");
+      if (!visible_jobs.length) {
+        $('div#no-filtered-jobs').show();
+      }
     }
     
   });
