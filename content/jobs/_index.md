@@ -12,6 +12,9 @@ menu:
         name: Jobs
         identifier: jobs
         weight: 30
+aliases:
+    - /funding/
+    - /calls_and_jobs/
 ---
 
 ### Available positions within data-driven life science
