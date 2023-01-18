@@ -13,7 +13,6 @@ menu:
         identifier: jobs
         weight: 30
 aliases:
-    - /funding/
     - /calls_and_jobs/
 ---
 
