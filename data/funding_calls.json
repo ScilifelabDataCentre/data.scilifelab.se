@@ -1,0 +1,67 @@
+{
+    "ddls": [
+        {
+            "title": "WASP and DDLS joint call for research projects 2022",
+            "funder": "Knut and Alice Wallenberg Foundation (KAW)",
+            "deadline": "2023-03-31",
+            "url": "https://wasp-sweden.org/calls/wasp-and-ddls-joint-call-for-research-projects-2022/",
+            "description": "DDLS and WASP have a strong ambition to form solid collaborations by bridging the gap between the scientific disciplines of DDLS and WASP respectively. The Knut and Alice Wallenberg foundation has earmarked funding for such collaborations in their donations to both these programs. To amplify their collaboration, DDLS and WASP announce a second call for proposals for bridging research projects.<div class='mt-2'></div>The funded projects should span across the thematic profiles of DDLS and WASP, address fundamental research problems between the WASP and DDLS research areas and be of a visionary, high risk – high gain nature. The main objectives should go beyond just applying existing computational tools to biological problems or data-sets. Addressing the fundamental research challenges requires significant multidisciplinary activities such as conceptual, methodological and technological elements from both the life sciences and engineering fields with powerful research methodologies based on mathematics of artificial intelligence, machine learning, autonomous systems or software. It is therefore expected to apply new mathematics, modeling, or informatics to life science data in integrated projects. The projects must, as an integral part, contain both: i) Harvesting or making use of empirical data from experimental, clinical, or observational studies, and ii) Theoretical or computational method development from sciences such as mathematics, computer science, physics, and engineering.<div class='mt-2'></div>The funded projects should also continue the building of a collaborative community and a critical mass by making data, resources, and code available in accordance with the FAIR principles. Supported projects are also expected to create resources and technical capabilities that will be made available to others. Applications should thus specify how FAIR data sharing and open access publishing of data and code will be addressed and any exceptions stated at the time of application. All projects are required to establish a data management plan (DMP) at the start of the project.",
+            "applicant": "A project is led jointly by one faculty (main PI/co-PI) from WASP and one faculty from DDLS (main PI/co-PI).<br><br>For more information, visit the link below."
+        }
+    ],
+    "other_sources": [
+        {
+            "funder": "VR - Swedish Research Council",
+            "url": "https://www.vr.se/english.html"
+        },
+        {
+            "funder": "Knut and Alice Wallenberg Foundation",
+            "url": "https://kaw.wallenberg.org/en/funding-guide/calls"
+        },
+        {
+            "funder": "ISIDORe - Integrated Services for Infectious Disease Outbreak Research",
+            "url": "https://isidore-project.eu/"
+        },
+        {
+            "funder": "Formas - Swedish Research Council for Sustainable Development",
+            "url": "https://formas.se/en/start-page/archive/list-calls.html"
+        },
+        {
+            "funder": "Forte - Swedish research council for health, work life, and welfare",
+            "url": "https://forte.se/utlysning/"
+        },
+        {
+            "funder": "SIDA - The Swedish International Development Cooperation organization",
+            "url": "https://www.sida.se/en/for-partners/research-partners/research-calls-and-grants"
+        },
+        {
+            "funder": "SSMF Swedish Society for Medical Sciences",
+            "url": "https://www.ssmf.se/for-scientists/"
+        },
+
+        {
+            "funder": "Svenska Läkarsällskapet",
+            "url": "https://www.sls.se/vetenskap/sok-anslag/"
+        },
+        {
+            "funder": "NordForsk - Nordic Council’s research funding organization",
+            "url": "https://www.nordforsk.org/calls"
+        },
+        {
+            "funder": "Vinnova - Sweden’s innovation agency",
+            "url": "https://www.vinnova.se/sok-finansiering/hitta-finansiering/"
+        },
+        {
+            "funder": "Hjärt-Lungfonden",
+            "url": "https://www3.hjart-lungfonden.se/"
+        },
+        {
+            "funder": "Horizon Europe funding",
+            "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search;callCode=null;freeTextSearchKeyword=;matchWholeText=true;typeCodes=0,1,2,8;statusCodes=31094501,31094502,31094503;programmePeriod=null;programCcm2Id=null;programDivisionCode=null;focusAreaCode=null;destinationGroup=null;missionGroup=null;geographicalZonesCode=null;programmeDivisionProspect=null;startDateLte=null;startDateGte=null;crossCuttingPriorityCode=null;cpvCode=null;performanceOfDelivery=null;sortQuery=sortStatus;orderBy=asc;onlyTenders=false;topicListKey=topicSearchTablePageState"
+        },
+        {
+            "funder": "University of Cambridge",
+            "url": "https://www.infectiousdisease.cam.ac.uk/funding-calls-interest"
+        }
+    ]
+}

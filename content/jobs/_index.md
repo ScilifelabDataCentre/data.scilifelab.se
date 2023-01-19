@@ -11,7 +11,7 @@ menu:
     bottom_community:
         name: Jobs
         identifier: jobs
-        weight: 30
+        weight: 40
 aliases:
     - /calls_and_jobs/
 ---
