@@ -105,10 +105,10 @@
 
 {{ $job_type := slice }}
 {{ $employer := slice }}
-{{ $open_jobs_and_funds := slice }}
+{{ $open_jobs := slice }}
 {{ range sort $.Site.Data.jobs.items ".app_deadline" "asc" }}
   {{ if ge (.app_deadline | time.Format "20060102") (now | time.Format "20060102") }}
-    {{ $open_jobs_and_funds = $open_jobs_and_funds | append . }}
+    {{ $open_jobs = $open_jobs | append . }}
     {{ $job_type = $job_type | append .type }}
     {{ $employer = $employer | append .employer }}
   {{ end }}
@@ -116,7 +116,7 @@
 {{ $job_type = $job_type | uniq }}
 {{ $employer = $employer | uniq }}
 
-{{ if ge (len $open_jobs_and_funds) 1 }}
+{{ if ge (len $open_jobs) 1 }}
 <section>
   <div class="row mt-3 mb-5">
     <div class="col-lg-2" id="job-filters">
@@ -138,7 +138,7 @@
     </div>
     <div class="col-lg">
       <div class="row g-2" id="jobs-container">
-      {{ range $ind, $cont := $open_jobs_and_funds }}
+      {{ range $ind, $cont := $open_jobs }}
 
       {{/* Add custom attributes for filtering purposes */}}
       {{ $this_job_type := slice }}
@@ -234,10 +234,10 @@
   </div>
 </section>
 {{ else }}
-<div class="alert alert-secondary mt-4">We are currently unaware of any upcoming jobs, project opportunities, or funding
-  calls
-  relevant for data-driven life science. If you know of any relevant jobs, project opportunities, or funding calls that
-  should be shown here, please suggest them to us using the "Tell us about an open position/funding call" button above.
+<div class="alert alert-secondary mt-4">
+  We are currently unaware of any upcoming jobs or project opportunities relevant for data-driven 
+  life science. If you know of any relevant jobs or project opportunities that should be shown 
+  here, please suggest them to us using the "Tell us about an open position" button above.
 </div>
 {{ end }}
 
