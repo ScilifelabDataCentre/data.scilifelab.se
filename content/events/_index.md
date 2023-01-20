@@ -7,7 +7,7 @@ menu:
     navbar:
         identifier: events
         name: Events & Training
-        weight: 50
+        weight: 60
     bottom_community:
         name: Events & training
         identifier: events
