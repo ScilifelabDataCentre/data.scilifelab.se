@@ -2,7 +2,9 @@
     "items": [
         {
             "title": "Masters thesis project opportunities",
-            "type": ["Project opportunity"],
+            "type": [
+                "Project opportunity"
+            ],
             "app_deadline": "2023-06-15",
             "employer": "Umeå University",
             "job_url": "http://www.henlab.org/join-us/",
@@ -10,7 +12,9 @@
         },
         {
             "title": "Masters projects",
-            "type": ["Project opportunity"],
+            "type": [
+                "Project opportunity"
+            ],
             "app_deadline": "2023-06-15",
             "employer": "Linköping University",
             "job_url": "https://macromolecular.github.io/join",
@@ -18,7 +22,9 @@
         },
         {
             "title": "Postdoctoral positions and fellowships",
-            "type": ["Postdoc position"],
+            "type": [
+                "Postdoc position"
+            ],
             "app_deadline": "2023-03-31",
             "employer": "Umeå University",
             "job_url": "https://billkerlab.org/join-us/",
@@ -26,7 +32,9 @@
         },
         {
             "title": "PhD position",
-            "type": ["PhD position"],
+            "type": [
+                "PhD position"
+            ],
             "app_deadline": "2023-03-31",
             "employer": "Umeå University",
             "job_url": "https://billkerlab.org/join-us/",
@@ -34,7 +42,9 @@
         },
         {
             "title": "BSc and MSc thesis projects",
-            "type": ["Project opportunity"],
+            "type": [
+                "Project opportunity"
+            ],
             "app_deadline": "2023-03-31",
             "employer": "Stockholm University",
             "job_url": "https://sahlingroup.github.io/positions/",
@@ -42,7 +52,9 @@
         },
         {
             "title": "Postdoc in Computational Biology",
-            "type": ["Postdoc position"],
+            "type": [
+                "Postdoc position"
+            ],
             "app_deadline": "2023-03-31",
             "employer": "Stockholm University",
             "job_url": "https://sahlingroup.github.io/positions/",
@@ -50,7 +62,9 @@
         },
         {
             "title": "Various PhD positions in machine learning",
-            "type": ["PhD position"],
+            "type": [
+                "PhD position"
+            ],
             "app_deadline": "2023-03-15",
             "employer": "Umeå University",
             "job_url": "http://www.henlab.org/join-us/",
@@ -58,7 +72,9 @@
         },
         {
             "title": "Various postoc positions in machine learning",
-            "type": ["Job"],
+            "type": [
+                "Job"
+            ],
             "app_deadline": "2023-03-15",
             "employer": "Umeå University",
             "job_url": "http://www.henlab.org/join-us/",
@@ -66,7 +82,9 @@
         },
         {
             "title": "2 PhD students in Environmental Science focusing on nontarget mass spectrometry",
-            "type": ["PhD position"],
+            "type": [
+                "PhD position"
+            ],
             "app_deadline": "2023-02-11",
             "employer": "Stockholm University",
             "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs/phd-student-positions-1.507588?rmpage=job&rmjob=19723&rmlang=UK",
@@ -74,7 +92,9 @@
         },
         {
             "title": "Associate Researcher (Scientific Officer)",
-            "type": ["Job"],
+            "type": [
+                "Job"
+            ],
             "app_deadline": "2023-01-31",
             "employer": "University of Gothenburg",
             "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=28563",
@@ -82,7 +102,9 @@
         },
         {
             "title": "PhD position in medical science within bioinformatic, computational methods",
-            "type": ["PhD position"],
+            "type": [
+                "PhD position"
+            ],
             "app_deadline": "2023-01-31",
             "employer": "Umeå University",
             "job_url": "https://www.umu.se/en/work-with-us/open-positions/phd-position-in-medical-science-within-bioinformatic-computational-methods_563786/",
@@ -90,7 +112,9 @@
         },
         {
             "title": "Doctoral student in medical science towards bioinformatics, global spread",
-            "type": ["PhD position"],
+            "type": [
+                "PhD position"
+            ],
             "app_deadline": "2023-01-31",
             "employer": "Umeå University",
             "job_url": "https://www.umu.se/en/work-with-us/open-positions/doctoral-student-in-medical-science-towards-bioinformatics-global-spread_563766/",
@@ -98,7 +122,9 @@
         },
         {
             "title": "Postdoctoral position in data-driven pathogen epidemiology",
-            "type": ["Postdoc position"],
+            "type": [
+                "Postdoc position"
+            ],
             "app_deadline": "2023-01-31",
             "employer": "Umeå University",
             "job_url": "https://www.umu.se/en/work-with-us/open-positions/postdoctoral-position-in-data-driven-pathogen-epidemiology_580521/",
@@ -106,7 +132,9 @@
         },
         {
             "title": "Assistant Professor in Genomics of adaptation to climate change",
-            "type": ["Job"],
+            "type": [
+                "Job"
+            ],
             "app_deadline": "2023-01-31",
             "employer": "Uppsala University",
             "job_url": "https://uu.varbi.com/what:job/jobID:541995/?lang=en",
@@ -114,7 +142,9 @@
         },
         {
             "title": "Postdoctoral position in RNA biology",
-            "type": ["Postdoc position"],
+            "type": [
+                "Postdoc position"
+            ],
             "app_deadline": "2023-01-30",
             "employer": "Karolinska Institute",
             "job_url": "http://pelechanolab.com/2023/01/11/postdoctoral-position-in-rna-biology/",
@@ -122,7 +152,9 @@
         },
         {
             "title": "1–2 application experts at NBIS",
-            "type": ["Job"],
+            "type": [
+                "Job"
+            ],
             "app_deadline": "2023-01-27",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=577097",
@@ -130,7 +162,10 @@
         },
         {
             "title": "System Developer",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-20",
             "employer": "Chalmers University of Technology",
             "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11275&rmlang=UK",
@@ -138,7 +173,10 @@
         },
         {
             "title": "Data Steward",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-20",
             "employer": "Chalmers University of Technology",
             "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11274&rmlang=UK",
@@ -146,7 +184,10 @@
         },
         {
             "title": "Data Engineer",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-20",
             "employer": "Chalmers University of Technology",
             "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11273&rmlang=UK",
@@ -154,7 +195,9 @@
         },
         {
             "title": "Systems developer at NGI-Uppsala, SNP&SEQ Technology Platform",
-            "type": ["Job"],
+            "type": [
+                "Job"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=577299",
@@ -162,7 +205,10 @@
         },
         {
             "title": "Permanent bioinformatics staff position with expertise in machine learning",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573747",
@@ -170,7 +216,10 @@
         },
         {
             "title": "System developer",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Swedish Museum of Natural History",
             "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=A8BB065A-2515-44EE-8C86-F45B8CB92D22&locId=2",
@@ -178,7 +227,10 @@
         },
         {
             "title": "System developer",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Swedish Museum of Natural History",
             "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=9FCBE315-07CE-439F-8785-6DADEBAABB56&locId=2",
@@ -186,7 +238,10 @@
         },
         {
             "title": "Bioinformatician",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Stockholm University",
             "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs?rmpage=job&rmjob=19544&rmlang=UK",
@@ -194,7 +249,10 @@
         },
         {
             "title": "Bioinformatician",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Swedish Museum of Natural History",
             "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=2F5CAF46-521B-4F8D-A82C-9DB47AAA39C3&locId=2",
@@ -202,7 +260,10 @@
         },
         {
             "title": "System developer",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Karolinska Institute",
             "job_url": "https://ki.varbi.com/en/what:job/jobID:573071/type:job/where:4/apply:1",
@@ -210,7 +271,10 @@
         },
         {
             "title": "Bioinformatician with expertise in precision medicine (2 positions)",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Karolinska Institute",
             "job_url": "https://ki.varbi.com/en/what:job/jobID:572802/type:job/where:4/apply:1",
@@ -218,7 +282,10 @@
         },
         {
             "title": "Data Engineer",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Karolinska Institute",
             "job_url": "https://ki.varbi.com/en/what:job/jobID:573006/type:job/where:4/apply:1",
@@ -226,7 +293,10 @@
         },
         {
             "title": "Data Steward",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Karolinska Institute",
             "job_url": "https://ki.varbi.com/what:job/jobID:572929/type:job/where:4/apply:1",
@@ -234,7 +304,10 @@
         },
         {
             "title": "Data Steward (Bioinformatician)",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573165",
@@ -242,7 +315,10 @@
         },
         {
             "title": "Data Engineer",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-16",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573210",
@@ -250,7 +326,10 @@
         },
         {
             "title": "Two specialist positions",
-            "type": ["Job", "Data science node"],
+            "type": [
+                "Job",
+                "Data science node"
+            ],
             "app_deadline": "2023-01-15",
             "employer": "Chalmers University of Technology",
             "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11229&rmlang=UK",
@@ -258,15 +337,19 @@
         },
         {
             "title": "Systemutvecklare /DevOps (datatjänster) 1-3 st",
-            "type": ["Job"],
-            "app_deadline": "2023-01-13",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-01-27",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=577697",
             "description": "SciLifeLab Data Centre söker 1-3 motiverade och kunniga systemutvecklare. Vi kommer inom den nya nationella dataplattformen för SciLifeLab och DDLS-programmet bygga upp tjänster för serviceenheter och forskargrupper inom life science. Arbetet kommer att inbegripa både nyutveckling, existerande mjukvarukomponenter och kommersiella system.<br><br>Du kommer att ha möjlighet att arbeta i agila utvecklingsprojekt för t.ex:<br><br><ul><li>System för forskningsdata från t.ex. genomik, proteomik, mikroskopi, och kemisk biologi, särskilt integration mot våra dataportaler för pandemiberedskap och data-driven livsvetenskap.</li><li>Tjänster för hantering av hälsodata i samverkan med aktörer inom sjukvården eller klinisk forskning.</li><li>System och verktyg för metadatahantering, t.ex. information om provberedning, experimentell bearbetning och produktion av mätdata.</li><li>Tjänster för distribuerade lagrings- och beräkningssystem kopplade till metadata för studier och prov.</li><li>Verktyg och tekniska utvecklingsmiljöer för träning av teknisk personal.</li><br><br>I uppgifterna ingår även utformning och testning av system tillsammans med användare och dataingenjörer. Du kommer att arbeta i ett team med forskare, ingenjörer, data stewards och systemutvecklare, mitt i SciLifeLabs nationella forskningsinfrastruktur. Arbetet inkluderar samarbeten mellan SciLifeLab och nationella centra för e-infrastruktur, t.ex. Berzelius vid Nationellt Superdatorcentrum."
         },
         {
             "title": "1-3 Data Steward(s)",
-            "type": ["Job"],
+            "type": [
+                "Job"
+            ],
             "app_deadline": "2023-01-13",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=571939",
@@ -274,7 +357,9 @@
         },
         {
             "title": "Postdoc in the field of structural biology / structural bioinformatics",
-            "type": ["Postdoc position"],
+            "type": [
+                "Postdoc position"
+            ],
             "app_deadline": "2023-01-13",
             "employer": "Linköping University",
             "job_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20513&rmlang=UK",
@@ -282,7 +367,9 @@
         },
         {
             "title": "Postdoc in the field of structural biology / structural bioinformatics",
-            "type": ["Postdoc position"],
+            "type": [
+                "Postdoc position"
+            ],
             "app_deadline": "2023-01-13",
             "employer": "Linköping University",
             "job_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20539&rmlang=UK",
@@ -290,7 +377,9 @@
         },
         {
             "title": "PhD position in structural biology / structural bioinformatics",
-            "type": ["PhD position"],
+            "type": [
+                "PhD position"
+            ],
             "app_deadline": "2023-01-13",
             "employer": "Linköping University",
             "job_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20567&rmlang=UK",
