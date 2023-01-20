@@ -21,8 +21,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- Local CSS -->
   <link rel="stylesheet" href="/css/styles.css">
+  
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
-  {{ if or (eq .Page.Section "contact") (eq .Page.RelPermalink "/events/") (eq .Page.RelPermalink "/highlights/") (eq .Page.RelPermalink "/calls_and_jobs/") }}
+  {{ if or (eq .Page.Section "contact") (eq .Page.RelPermalink "/events/") (eq .Page.RelPermalink "/highlights/") (eq .Page.RelPermalink "/jobs/") }}
   <!-- reCAPTCHA for contact page -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   {{ end }}
