@@ -142,7 +142,7 @@
               {{ $banner_date := cond (isset . "date_start") .date_start .registration_deadline }}
               <div class="px-2 fs-3 mx-auto">{{ time.Format "2" $banner_date }}</div>
               <div class="px-2 mx-auto">{{ time.Format "January" $banner_date }}</div>
-              {{ if .registration_deadline }}
+              {{ if and (not .date_start) (.registration_deadline) }}
                 <div class="px-2 mx-auto">(deadline)</div>
               {{ end }}
             </div>

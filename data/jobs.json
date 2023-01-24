@@ -81,6 +81,26 @@
             "description": "**No specific deadline given for application**. Please check out the website for details."
         },
         {
+            "title": "Postdoctoral fellow in Machine Learning",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-03-01",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=586749",
+            "description": "Research on fundamental models and methods in machine learning and their applications within medicine. The position is part of an ERC Advanced Grant focused on developing decision support for the emergency room. The work will be done in close collaboration with our medical partner Professor Johan Sundström who leads the <a href='https://www.uu.se/en/research/projects/awi/'>Anders Wiklöf Institute for Heart Research</a>. We already share offices and our groups have collaborated for quite some time.<br><br>The postdoctoral position will intensify our work on developing and analyzing methods in machine learning and their application within medicine. We will continue our work on extracting knowledge from large-scale ECG data sets, and we will utilize large databases with electronic health records and patient-reported data and three-dimensional symptom drawings. The aim is to be able to investigate the use of these models for decision support and the position can also include work on decision algorithms. Technical keywords for the position include: probabilistic models, decision making algorithms, deep learning, Bayesian inference and precision medicine. The position might also include teaching."
+        },
+        {
+            "title": "Postdoctoral position",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-02-13",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=584942",
+            "description": "The unit for Molecular Tools and Functional Genomics, now recruiting a postdoc, is active at the international forefront of research to develop advanced technologies for biomedical investigations at levels of DNA, RNA and protein. Several of their earlier techniques have enjoyed broad uptake world-wide and have been successfully commercialized by licensees and by companies with a total industrial workforce of around 900, founded by present or earlier members of the lab. The present postdoctoral position is funded by a so-called proof of concept grant from the Swedish Research Council for infection diagnostics. The effective workplace of the successful applicant will be Uppsala Biomedical Center, but the project will be conducted in close collaboration with the company Rarity https://raritybioscience.com, previously spun out from the lab, and so far focusing on molecular follow-up of cancer patients. The company is located one floor below the research lab."
+        },
+        {
             "title": "2 PhD students in Environmental Science focusing on nontarget mass spectrometry",
             "type": [
                 "PhD position"
@@ -89,6 +109,16 @@
             "employer": "Stockholm University",
             "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs/phd-student-positions-1.507588?rmpage=job&rmjob=19723&rmlang=UK",
             "description": "These two doctoral projects involve optimisation and application of analytical methods and data processing workflows based on nontarget mass spectrometry of air samples collected globally (funded by FORMAS) or in human biofluids (funded by VR and SciLifeLab). Research will include optimization of sample preparation steps, and the development of data processing strategies using open science tools for identification of unknown molecules in complex samples, with emphasis on quality control at all stages. The projects can make use of GC- and LC-Orbitrap technology available at ScilifeLab in the Exposomics group. The research positions are funded for 4 years and you will work as part of a bigger team involving international research scientists to understand the sources of environmental chemical exposures."
+        },
+        {
+            "title": "Tillämpningsexpert inom UPPMAX",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-02-06",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=587925",
+            "description": "Specifika arbetsuppgifter för tillämpningsexperter är personberoende. Den här rollen riktar sig dock mot granskning av projektansökningar, skriptning-  och programmeringsuppgifter för internt bruk, samt dokumentering.<br><br>Allmänna arbetsuppgifter för tillämpningsexpertgruppen inkluderar avancerat användarstöd, installation av programvara och databasresurser, underhåll och utveckling av den digitala forskningsmiljön vid UPPMAX och andra SNIC-centra, undervisning av användargrupper inom relevanta ämnen, skriptning av verktyg för externt eller internt bruk, utredningsarbeten, samt granskning av projektansökningar och effektivitetsanalys av pågående projekt."
         },
         {
             "title": "Associate Researcher (Scientific Officer)",
