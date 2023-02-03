@@ -14,4 +14,4 @@ menu:
         weight: 20
 ---
 
-This section presents a communuity-sourced list of upcoming conferences, webinars, workshops, and training opportunities in Sweden related to specifically data-driven life science. We encourange our readers to submit events to this page. All times in Sweden/Stockholm timezone (CET/CEST). If you have any questions about the specific events and training, please get in touch with organizers of that particular event or training.
+This section includes a list of upcoming conferences, webinars, workshops, and training opportunities for Swedish researchers working in the area of data-driven life science. If you know of an appropriate event that is not listed here, please suggest it using the form below. All times are given in Central European Time (CET/CEST). Questions about individual events should be directed to the organisers of that event.
