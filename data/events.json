@@ -25,6 +25,16 @@
             "description": "National course open for PhD students, postdocs, researchers and other employees within all Swedish universities. The course is geared towards life scientists wanting to take the first steps towards a more systematic and reproducible approach to analysing and managing research data. Due to limited space the course can accommodate a maximum of 25 participants. If we receive more applications, participants will be selected based on several criteria. Selection criteria include correct entry requirements, motivation to attend the course as well as gender and geographical balance.<br><br><b>Fee:</b> 1500 SEK paid by invoice to NBIS. This includes lunches, coffee and snacks. Please note that NBIS cannot invoice individuals."
         },
         {
+            "title": "Regional Mass Spectrometry Imaging Spring Workshop",
+            "type": "Workshop",
+            "date_start": "2023-03-27",
+            "date_end": "2023-03-29",
+            "venue": "Uppsala Konsert & Kongress",
+            "organisers": "Spatial Mass Spectrometry, SciLifeLab",
+            "event_url": "https://www.apotekarsocieteten.se/produkt/regional-mass-spectrometry-imaging-spring-workshop/?lang=en",
+            "description": "The scientific program will aim to reflect cutting edge innovations and current developments in mass spectrometry imaging (MSI), alongside new applications in various areas. The goal for this workshop is to promote and educate academic, industry and government scientists on the latest applications and innovations in MSI applied to biomedical, biological and data science research areas.<br><br>A three-day scientific agenda with oral presentations, workshop discussions, and poster presentations covering the latest developments and applications of MSI by leading and upcoming scientists from academic, government, and industry labs."
+        },
+        {
             "title": "Data-driven life science and the RDA: Leveraging global data communities in regional initiatives and cross-border infrastructures",
             "type": "Workshop",
             "date_start": "2023-03-24",
