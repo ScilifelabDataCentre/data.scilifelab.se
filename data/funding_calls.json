@@ -1,6 +1,21 @@
 {
     "ddls": [
         {
+            "title": "CBCS Large Projects Call Spring 2023",
+            "funder": "The Chemical Biology Consortium Sweden (CBCS) SciLifeLab Infrastructure unit",
+            "deadline": "2023-04-14",
+            "url": "https://anubis.scilifelab.se/call/CBCSLP23S",
+            "description": "The Chemical Biology Consortium Sweden (CBCS) is a national research infrastructure in Sweden funded by the Swedish Research Council, Science for Life Laboratory, and the host universities. We provide world-leading expertise in the field of chemical biology to academic groups across Sweden in a collaborative project model. Our mission is to explore complex biology through the development and application of small molecule tools. To do this we provide support in assay development, small molecule screening, enabling chemistry, as well as access to small-molecule libraries. Additionally, we have recently expanded our services to include disease and compound profiling using Cell Painting, support for functional precision medicine projects, screening of infectious pathogens in biosafety level 2 and 3 laboratories, and automated patch clamp profiling/screening.<br><br>We are looking for projects in these areas to support starting August 2023. All applications are ranked by our external project review committee based on scientific potential and feasibility. Prioritized projects receive subsidized support. We require a demonstration of technical feasibility thus we require that you contact CBCS well in advance of the final deadline. See www.cbcs.se for your nearest point of contact."
+        },
+        {
+            "title": "Access CBGE’s technologies at significantly reduced cost",
+            "funder": "Chemical Biology and Genome Engineering (CBGE) SciLifeLab Platform",
+            "deadline": "2023-02-20",
+            "url": "https://www.scilifelab.se/news/call-for-proposals-access-cbges-technologies-at-significantly-reduced-cost/?utm_campaign=nyhetsbrev&utm_medium=email&utm_source=apsis",
+            "description": "The call is aimed at the identification of platform pipeline projects (PPPs), which will benefit from the synergies between the CBGE units’ complementary technologies. CBGE’s services are particularly well suited for probing the cellular effects of small compounds (target discovery, mechanism-of-action elucidation, target deconvolution, binding site mapping, …). However, any project that would benefit from services provided by at least two platform units will be considered.",
+            "applicant": "All research group leaders at any Swedish university are eligible to apply."
+        },
+        {
             "title": "WASP and DDLS joint call for research projects 2022",
             "funder": "Knut and Alice Wallenberg Foundation (KAW)",
             "deadline": "2023-03-31",
@@ -38,7 +53,6 @@
             "funder": "SSMF Swedish Society for Medical Sciences",
             "url": "https://www.ssmf.se/for-scientists/"
         },
-
         {
             "funder": "Svenska Läkarsällskapet",
             "url": "https://www.sls.se/vetenskap/sok-anslag/"
