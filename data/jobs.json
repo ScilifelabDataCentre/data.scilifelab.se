@@ -81,6 +81,56 @@
             "description": "**No specific deadline given for application**. Please check out the website for details."
         },
         {
+            "title": "PhD student in Neuro-Symbolic Synthesis and Reinforcement Learning",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-02-28",
+            "employer": "Chalmers University",
+            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11271",
+            "description": "In this project we study a new approach to synthesis of efficient communication schemes in multi-agent systems, trained via reinforcement learning. We combine symbolic methods with machine learning, in what is referred to as a neuro-symbolic system, where a neural network learns to produce programs in a symbolic language to solve a task at hand. We believe this combination of neural and symbolic methods will be an important next step in the development of AI beyond todays capabilities.<br><br>This project is a collaboration between researchers at the division of Data Science and AI at Chalmers and the Center for Linguistic Theory and Studies in Probability (CLASP) at Gothenburg University."
+        },
+        {
+            "title": "PhD student in Machine Learning: Causality & Generalization",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-03-01",
+            "employer": "Chalmers University",
+            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11396",
+            "description": "Machine learning is now an essential tool for scientists and engineers. It is used in diverse applications to predict outcomes from inputs by training models to minimize prediction error in training data. As widespread adoption reaches beyond research and the development of such systems, guarantees for accuracy, reliability and safety become critical. State-of-the-art models which achieve top accuracy on benchmark tasks routinely fail to generalize to new examples even in strongly related problem domains. In this project, we will study the intersection of causal inference and machine learning using auxiliary information to improve the sample-efficiency and domain generalization of learning algorithms.<br><br>Generalization in machine learning refers to a trained system performing well on previously unseen examples. When analyzing and developing learning algorithms, unseen examples are often assumed to follow the same distribution as training examples. However, real data often follows different patterns: 1) The distribution of testing (in-deployment) examples often differs from those collected for training, 2) We often have access to different information or variables at training time than we do when the trained system is deployed, 3) The number of samples is rarely as large as we would like it to be. One example of this is classification of medical images using deep neural networks, where training sets are often limited in size but rich in annotations which are not available when the trained system is used.<br><br>In this project, we will develop sample-efficient learning algorithms which makes the best possible use of small numbers of training examples by exploiting auxiliary information and causal analysis. We will apply these algorithms in, among other tasks, medical image classification."
+        },
+        {
+            "title": "PhD student in Natural Language Processing",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-02-28",
+            "employer": "Chalmers University",
+            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11196",
+            "description": "Methods developed in artificial intelligence (AI) and machine learning (ML) are increasingly being applied as a research tool in the humanities and social sciences. In contrast to statistical approaches traditionally applied in these fields, AI/ML methods allow researchers to work with more complex models and to integrate unstructured types of data (e.g. text, images, signals) more seamlessly. However, while these new approaches open up new research avenues, it is critical to understand their applicability and limitations.<br><br>The topic of the PhD project will be in the design, validation, and application of AI methods for problems in the social sciences. The main emphasis will be on methods in natural language processing (NLP) to compute representations of text, but other modalities including vision will potentially be considered as well. Specifically, the research in the project will be based on recent advances in causal inference methods that can utilize high-dimensional representations computed by AI methods. In the project, the PhD student will develop methods to integrate such representations, investigate theoretically and empirically how the representations affect the quality of estimates, and explore the opportunities and limitations of these methods. In collaboration with researchers in the project, the new methods will be applied in order to investigate research questions in social and political science.<br><br>The project is funded by WASP-HS (The Wallenberg AI, Autonomous Systems and Software Program – Humanities and Society), via the programme NetX: Networking Excellence Projects in the Humanities and Social Sciences for the Study of Consequences and Challenges of Artificial Intelligence and Autonomous Systems."
+        },
+        {
+            "title": "PhD student position in AI-driven biomolecular engineering (multi-target therapeutic modalities)",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-02-28",
+            "employer": "Chalmers University",
+            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11326",
+            "description": "It is estimated that ~75% of the human proteome lacks deep binding sites and is considered “undruggable” by traditional small molecule inhibitors. Nonetheless, these so-called undruggable targets are implicated in a wide range of diseases, including cancer, autoimmune diseases, and cardio-metabolomic diseases, motivating the development of therapeutic modalities beyond small molecule inhibitors. Deep generative models (DGMs) are poised to transform our approach to biomolecular engineering by designing molecules with desired properties from scratch so as to minimize experimental screening. Nonetheless, they have seen limited application to multi-target therapeutic modalities, where methods such as DGMs can aid medicinal chemists in the design and selection of drug candidates. DGMs not only enable scientists to delegate error-prone decisions to computers via the use of predictive and generative computational models, but also have the added advantage that they can learn from datasets of billions of molecules in minutes and be regularly updated with new data.<br><br>In this project, the candidate will focus on the development of novel AI tools, particularly deep generative models, for the controlled design of multi-target therapeutic modalities. To this end, the candidate will have the opportunity to work with a range of biomolecular datasets, as well as to build on the latest developments in machine learning. While the focus of this project is on deep learning and method development, the ideal candidate will also have a keen interest in molecular biology."
+        },
+        {
+            "title": "PhD student position in AI-driven biomolecular engineering (phenotype-guided design)",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-02-28",
+            "employer": "Chalmers University",
+            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11322",
+            "description": "It is estimated that ~75% of the human proteome lacks deep binding sites and is considered “undruggable” by traditional small molecule inhibitors. Nonetheless, these so-called undruggable targets are implicated in a wide range of diseases, including cancer, autoimmune diseases, and cardio-metabolomic diseases, motivating the development of therapeutic modalities beyond small molecule inhibitors. Deep generative models (DGMs) are poised to transform our approach to biomolecular engineering by designing molecules with desired properties from scratch so as to minimize experimental screening. Nonetheless, they have seen limited integration of high content assay data. DGMs not only enable scientists to delegate error-prone decisions to computers via the use of predictive and generative computational models, but also have the added advantage that they can learn from datasets of billions of molecules in minutes and be regularly updated with new data.<br><br>In this project, the candidate will focus on the development of novel AI tools, particularly deep generative models, for the controlled design of therapeutic modalities based on phenotypic profiles. The goal is to develop ML-based de novo design tools which enable researchers to reverse engineer novel bioactive molecules given a desired phenotype. To this end, the candidate will have the opportunity to work with a range of -omics datasets and high-content screening data, as well as to build on the latest developments in machine learning. While the focus of this project is on deep learning and method development, the ideal candidate will also have a keen interest in molecular biology."
+        },
+        {
             "title": "Postdoctoral fellow in Machine Learning",
             "type": [
                 "Postdoc position"
