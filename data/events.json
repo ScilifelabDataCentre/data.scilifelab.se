@@ -118,6 +118,17 @@
             "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
         },
         {
+            "title": "Networking Meeting Between the Wallenberg Programs WASP-HS and Data-Driven Life Science (DDLS)",
+            "type": "Meeting",
+            "date_start": "2023-03-06",
+            "time_start": "14:00",
+            "time_end": "15:30",
+            "venue": "Zoom (online)",
+            "organisers": "DDLS Support Team",
+            "event_url": "https://www.scilifelab.se/event/networking-meeting-between-the-wallenberg-programs-wasp-hs-and-data-driven-life-science-ddls/",
+            "description": "The purpose of this on-line meeting is to explore opportunities for joint and multidisciplinary research ventures between researchers working within data-driven life science and researchers from the humanities and social sciences working on Artificial Intelligence and Autonomous Systems. The meeting is divided in two parts, one with focus on information, where an upcoming call for seed-money for cross-program research collaborations will be announced and one part with focus on networking."
+        },
+        {
             "title": "NBIS Weekly Bioinformatics Drop-in",
             "type": "Support session",
             "date_start": "2023-02-28",
@@ -128,6 +139,18 @@
             "organisers": "NBIS",
             "event_url": "https://nbis.se/events/",
             "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
+            "title": "FAIRPoints-FAIRPoints ‘Ask me Anything’ (AMA)",
+            "type": "Meeting",
+            "date_start": "2023-02-21",
+            "time_start": "11:00",
+            "time_end": "12:30",
+            "venue": "Online event via Zoom",
+            "organisers": "FAIRPoints",
+            "event_url": "https://www.scilifelab.se/event/fairpoints-fairpoints-ask-me-anything-ama-2/",
+            "registration_url": "https://us06web.zoom.us/meeting/register/tZMvceCqqDooEtOPE_mH74puIdD2Ajo4qB3v",
+            "description": "The theme of this session is “FAIRPoints ‘Ask Me Anything’ on Software and Workflows.” We will be discussing the FAIRification of software and workflows and how it looks like, the available tools/infrastructures that support this process, why FAIRification is important and how it is applicable to researchers. Speakers include Carole Goble and Paula Martinez.<br><br>The events will bring together speakers from the RDA Groups and speakers from a related EOSC service to describe how their work aligns, how it connects to the research community, and how it benefits the research community in a way that is directly related to the implementation of FAIR and Open research practices. The events are beginner-friendly, laid-back, and easy to follow, with moderators driving the discussion, posing questions to our speakers, and inviting audience questions. Finally a selection of questions will be gathered and turned into Google Educational Q&A flashcards (https://schema.org/QAPage) for future reference."
         },
         {
             "title": "NBIS Weekly Bioinformatics Drop-in",
