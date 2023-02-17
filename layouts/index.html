@@ -114,77 +114,85 @@
 {{ end }}
 {{ if ge (len $upcoming_events) 1 }}
 <section>
-  <div class="row mt-4 pt-2 mb-2">
-    <div class="col">
-      <h3><a class="title-link" href="/events/">Events & Training</a></h3>
+  <div class="mb-4">
+    <div class="row mt-4 pt-2 mb-2">
+      <div class="col">
+        <h3><a class="title-link" href="/events/">Events & Training</a></h3>
+      </div>
+      <div class="col mt-2 fs-6 text-end">
+        <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
+      </div>
     </div>
-    <div class="col mt-2 fs-6 text-end">
-      <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
-    </div>
-  </div>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
-    {{ range first 4 $upcoming_events }}
-    <div class="col">
-      <div class="p-2 border rounded h-100">
-        <div class="d-flex justify-content-between">
-          <div>
-            <span class="badge event-type mb-1">{{ .type }}</span>
-            <h6>{{ .title }}</h6>
-          </div>
-          {{ $banner_date := cond (isset . "date_start") .date_start .registration_deadline }}
-          <div class="px-2 pb-1 m-2 d-flex flex-column event-date rounded">
-            <div class="px-1 fs-4 mx-auto">{{ time.Format "2" $banner_date }}</div>
-            <div class="px-1 small mx-auto">{{ time.Format "January" $banner_date }}</div>
-            {{ if and (not .date_start) (.registration_deadline) }}
-              <div class="px-2 small mx-auto">(deadline)</div>
-            {{ end }}
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
+      {{ range first 4 $upcoming_events }}
+      <div class="col">
+        <div class="p-2 border rounded h-100">
+          <div class="d-flex justify-content-between">
+            <div>
+              <span class="badge event-type mb-1">{{ .type }}</span>
+              <h6>{{ .title }}</h6>
+            </div>
+            {{ $banner_date := cond (isset . "date_start") .date_start .registration_deadline }}
+            <div class="px-2 pb-1 m-2 d-flex flex-column event-date rounded">
+              <div class="px-1 fs-4 mx-auto">{{ time.Format "2" $banner_date }}</div>
+              <div class="px-1 small mx-auto">{{ time.Format "January" $banner_date }}</div>
+              {{ if and (not .date_start) (.registration_deadline) }}
+                <div class="px-2 small mx-auto">(deadline)</div>
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
 </section>
 {{ end }}
 
 <!-- Recently published items in figshare-->
-<section>
-  <div class="row mt-4 mb-2 pt-3">
-    <div class="col">
-      <h3>Recently published items in the SciLifeLab Data Repository</h3>
+<section style="background-image: url('/img/illustrations/bg_figshare.png'); opacity: 0.8;">
+  <div class="p-3 p-lg-4 my-4">
+    <div class="row mb-3">
+      <div class="col text-white">
+        <h3>Recently published items in the SciLifeLab Data Repository</h3>
+      </div>
+      <div class="col-3 mt-2 fs-6 text-end">
+        <small class="text-small text-white">(external site) </small>
+        <a href="https://figshare.scilifelab.se" target="_blank" class="text-white">See all items
+          <i class="bi bi-arrow-right-square-fill text-white"></i></a>
+      </div>
     </div>
-    <div class="col-4 mt-2 fs-6 text-end">
-      <small class="text-muted">(external site) </small>
-      <a href="https://figshare.scilifelab.se" target="_blank">See all items
-        <i class="bi bi-arrow-right-square-fill"></i></a>
-    </div>
+    <div id="recent-data-items" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 pb-4"></div>
+    <p class="text-white">If you would like further information about SciLifeLab data repository or experience issues
+      with the items above, please email <a class="text-white" style="text-decoration: underline;" 
+      href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>. If you have questions about a specific item,
+      contact information is available on the item's page.
+    </p>
   </div>
-  <div id="recent-data-items" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
-  <p class="mt-1 pt-2">If you would like further information about SciLifeLab data repository or experience issues with
-    the items above, please email <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se
-    </a>. If you have questions about a specific item, contact information is available on the item's page.
-  </p>
 </section>
 
 <!-- recently deployed apps in serve -->
-<section>
-  <div class="row mt-4 mb-2 pt-2">
-    <div class="col">
-      <h3>Apps recently deployed on SciLifeLab Serve</h3>
+<section style="background-image: url('/img/illustrations/bg_serve.png'); opacity: 0.8;">
+  <div class="p-3 p-lg-4 my-4">
+    <div class="row mb-3">
+      <div class="col text-white">
+        <h3>Apps recently deployed on SciLifeLab Serve</h3>
+      </div>
+      <div class="col-4 mt-2 fs-6 text-end">
+        <small class="text-small text-white">(external site) </small>
+        <a href="https://serve.scilifelab.se/apps" target="_blank" class="text-white">See all public apps
+          <i class="bi bi-arrow-right-square-fill text-white"></i></a>
+      </div>
     </div>
-    <div class="col-4 mt-2 fs-6 text-end">
-      <small class="text-muted">(external site) </small>
-      <a href="https://serve.scilifelab.se/apps" target="_blank">See all public apps
-        <i class="bi bi-arrow-right-square-fill"></i></a>
-    </div>
+    <div id="recent-serve-apps" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 pb-4"></div>
+    <p class="text-white">If you would like further information about SciLifeLab Serve or experience issues with the
+      apps above, please email <a class="text-white" style="text-decoration: underline;" 
+      href="mailto:serve@scilifelab.se">serve@scilifelab.se</a>. If you have questions about a specific app, go to
+      the <a class="text-white" style="text-decoration: underline;"  href="https://serve.scilifelab.se/apps"
+      target="_blank">apps page on SciLifeLab Serve</a> and click on the 'Details' button of the to find contact
+      information for the owner of the app.
+    </p>
   </div>
-  <div id="recent-serve-apps" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
-  <p class="mt-1 pt-2">If you would like further information about SciLifeLab Serve or experience issues with the apps
-    above, please email <a href="mailto:serve@scilifelab.se">serve@scilifelab.se
-    </a>. If you have questions about a specific app, go to the <a href="https://serve.scilifelab.se/apps"
-      target="_blank">apps page on SciLifeLab Serve
-    </a> and click on the 'Details' button of the to find contact information for the owner of the app.
-  </p>
 </section>
 
 <script>
@@ -208,7 +216,7 @@
       for (const data of dataArray) {
         dataItemsHTML += `
         <div class="col">
-          <div class="p-3 border rounded h-100">
+          <div class="p-3 border rounded bg-white h-100">
             <div>
               <a href="${data.url_public_html}" target="_blank">
                   ${data.title}
@@ -248,7 +256,7 @@
         };
         var dataItemsHTML = `
           <div class="col">
-            <div class="p-3 border rounded h-100">
+            <div class="p-3 border rounded bg-white h-100">
               <div>
                 <a href="${data.table_field.url}" target="_blank">${data.name}</a>
               </div>
