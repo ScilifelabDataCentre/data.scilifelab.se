@@ -61,6 +61,16 @@
             "description": "We are located in Stockholm at the Science for Life Laboratory. Our research interests broadly span algorithm development and analysis of sequence data. We have ongoing projects on method development for rapid sequence mapping and sequence similarity searches, and various computational problems in transcriptomic analysis, and collaborative projects in genome assembly. We also consider your project proposals if it aligns with the group's research programs.<br><br><b>Please note that the deadline is approximate, the position will be open until filled.</b>"
         },
         {
+            "title": "Bioinformaticians (1-2) with training and community building focus",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-03-20",
+            "employer": "Stockholm University",
+            "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs?rmpage=job&rmjob=20090&rmlang=UK",
+            "description": "Working at the Training Hub, you will be part of the core of Sweden’s life science infrastructure and get the opportunity to actively shape how lifelong learning and training from a research infrastructure integrates and enables the Swedish life science research community. You will work in a small core team of training experts and connect to a wider ecosystem of researchers and staff scientists across the platforms and SciLifeLab sites. Training and lifelong learning is rapidly growing and the impact of training from a Research Infrastructure is more and more evident. The major task now is to build a national framework for life science lifelong learning which includes the technical infrastructure of the training platform and the people infrastructure of the community. We look forward to having you onboard on this journey."
+        },
+        {
             "title": "Various PhD positions in machine learning",
             "type": [
                 "PhD position"
