@@ -1,11 +1,11 @@
 ---
 title: Discovery of sex determination genes in a malaria parasite that are essential for mosquito transmission.
 date: 2023-02-24
-summary: 
+summary: Russell et al (2023) shows the discovery of sex determination genes in a the malaria parasite Plasmodium berghei  that are essential for mosquito transmission. Data and code shared openly.
 banner: /highlights/mosquito_transmission_small.jpeg
 banner_large: /highlights/mosquito_transmission.jpeg
 banner_caption: Small mitoribosomal subunit intermediates complexed with auxiliary factors, revealing a sequential mechanism of assembly (Credit; Verena Resch).
-tags: [Highlight]
+tags: [Highlight, Malaria, Plasmodium, Sex determination, Transmission, Single cell analysis]
 authors: [Katarina Öjefors Stark]
 images: ["/highlights/mosquito_transmission_small.jpeg"]
 ---
