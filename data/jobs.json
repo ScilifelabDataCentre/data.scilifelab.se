@@ -61,6 +61,70 @@
             "description": "We are located in Stockholm at the Science for Life Laboratory. Our research interests broadly span algorithm development and analysis of sequence data. We have ongoing projects on method development for rapid sequence mapping and sequence similarity searches, and various computational problems in transcriptomic analysis, and collaborative projects in genome assembly. We also consider your project proposals if it aligns with the group's research programs.<br><br><b>Please note that the deadline is approximate, the position will be open until filled.</b>"
         },
         {
+            "title": "Three PhD positions in interdisciplinary mathematics",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-03-24",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596823",
+            "description": "A PhD student should mainly focus on her/his own graduate education, which comprises four years of study. The position can also include other departmental duties (up to 20%), in which case the position is extended accordingly. The PhD student will work with an interdisciplinary research project, with at least two advisors representing different scientific areas.<br><br>The PhD students are expected to engage actively in the activities of CIM, such as seminars and workshops.They will be required to take at least 30hp (6 months full time study) PhD courses in mathematics, modelling, statistics, scientific computing and similar, offered by e.g. Department of Mathematics and Department of Information Technology."
+        },
+        {
+            "title": "Bioinformaticians with training and community building focus ( 1-2 temporary employment)",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-03-20",
+            "employer": "Stockholm University",
+            "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs?rmpage=job&rmjob=20090&rmlang=UK",
+            "description": "The position is placed at Stockholm University at the Department of Biophysics and Biochemistry. The successful candidate(s) will be working at the SciLifeLab Training Hub which was launched in January 2023 and is a core entity within SciLifeLab with responsibilities to establish services, support and resources in technology- and data-driven life science training.<br><br>Our assignment is national and the vision is to enable SciLifeLab to deliver high-quality, openly available and FAIR training activities to the life science community. The Training Hub will provide the support, training, services and resources and will work in close collaboration with major national and international organisations and research infrastructures for this to be a reality."
+        },
+        {
+            "title": "Bioinformatician with expertise in Biology of Infections",
+            "type": [
+                "Job",
+                "Data Science Node"
+            ],
+            "app_deadline": "2023-03-15",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/en/?jobtoken=185efa7dd6f13cbe1660cd02f120ca204ac92d015",
+            "description": "The DDLS program is now establishing a national Data Science Node in “Epidemiology and Biology of Infections” at Umeå university with a national responsibility to develop national data services and advanced data analytics support t. The Data Science Node staff will be well integrated with the local research community, but also connected to the SciLifeLab National Infrastructures, in particular the Bioinformatics Infrastructure  (National Bioinformatics Infrastructure Sweden, NBIS), with over 100 experts, providing advanced bioinformatics support, infrastructure and training to the Swedish life science research community and participating in international collaborations. We are now looking for outstanding candidates with competences in analysis of large-scale, high-throughput genomic data, and related molecular and clinical data analysis, to provide advanced bioinformatics support to selected data-driven Swedish research projects of scientific excellence. Your work will include data analysis and scientific deduction at an internationally competitive level, as well as being a driver of bioinformatics postgraduate training.<br><br>We are looking for a bioinformatician, desribed at the University as a senior research assistant, with experience of large-scale molecular research projects in immunology, pathogen-host interaction systems, or other relevant studies related to biology of infections. Technical competences of particular interest are single-cell and spatial omics data analysis, multi omics integration, and genomics and metagenomics of microorganisms."
+        },
+        {
+            "title": "Research Engineer - System Developer, IT",
+            "type": [
+                "Job",
+                "Data Science Node"
+            ],
+            "app_deadline": "2023-03-15",
+            "employer": "Umeå University",
+            "job_url": "https://www.umu.se/en/work-with-us/open-positions/research-engineer---system-developer-it_584907/",
+            "description": "This employment is for one of three positions as research engineer within the DDLS Data Science Node at Umeå University. This specific position is as a system developer, with the aim to deliver state-of-the-art tools and environments for the management, processing, analysis, visualization, and storage of data in the context of a national infrastructure for data-driven research.<br><br>As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field."
+        },
+        {
+            "title": "Research Engineer - Data Engineer",
+            "type": [
+                "Job",
+                "Data Science Node"
+            ],
+            "app_deadline": "2023-03-15",
+            "employer": "Umeå University",
+            "job_url": "https://www.umu.se/en/work-with-us/open-positions/research-engineer---data-engineer_584901/",
+            "description": "This employment is for one of three positions as research engineer within the DDLS Data Science Node at Umeå University. This specific position is for a data engineer who, in collaboration with the other two research engineers, will be involved in the technical development of services and workflows in the context of a national infrastructure for data-driven research. As a data engineer, you are expected to participate in technical development of data services, where you will apply excellence in e.g., software engineering, compute- and storage infrastructure, interfaces, cloud technology, visualization or databases in tools and services designed to strengthen the research field."
+        },
+        {
+            "title": "Research Engineer - Data Steward",
+            "type": [
+                "Job",
+                "Data Science Node"
+            ],
+            "app_deadline": "2023-03-15",
+            "employer": "Umeå University",
+            "job_url": "https://www.umu.se/en/work-with-us/open-positions/research-engineer---data-steward_584820/",
+            "description": "This employment is for one of three positions as research engineer within the DDLS Data Science Node at Umeå University. This specific position is for a data steward, with the aim to collaborate with and guide Swedish researchers in all aspects related to the management, sharing, distribution, publishing, and archival of data in the context of a national infrastructure for data-driven research. You are expected to participate in user support and development of data services."
+        },
+        {
             "title": "Various PhD positions in machine learning",
             "type": [
                 "PhD position"
@@ -81,14 +145,24 @@
             "description": "**No specific deadline given for application**. Please check out the website for details."
         },
         {
-            "title": "PhD student in Neuro-Symbolic Synthesis and Reinforcement Learning",
+            "title": "Lab Manager to Cancer proteomics Mass Spectrometry Lab",
             "type": [
-                "PhD position"
+                "Job"
             ],
-            "app_deadline": "2023-02-28",
-            "employer": "Chalmers University",
-            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11271",
-            "description": "In this project we study a new approach to synthesis of efficient communication schemes in multi-agent systems, trained via reinforcement learning. We combine symbolic methods with machine learning, in what is referred to as a neuro-symbolic system, where a neural network learns to produce programs in a symbolic language to solve a task at hand. We believe this combination of neural and symbolic methods will be an important next step in the development of AI beyond todays capabilities.<br><br>This project is a collaboration between researchers at the division of Data Science and AI at Chalmers and the Center for Linguistic Theory and Studies in Probability (CLASP) at Gothenburg University."
+            "app_deadline": "2023-03-09",
+            "employer": "Karolinska Institute",
+            "job_url": "https://ki.varbi.com/what:job/jobID:598481/type:job/where:1/apply:1",
+            "description": "A Lab Manager position is available in the Cancer proteomics Mass spectrometry research and Core Facility lab, headed by Professor Janne Lehtiö at Science for Life Laboratory (SciLifeLab). Karolinska Institutet is one of the four founding universities for SciLifeLab, which is a national infrastructure and research center for technology driven life sciences. The Lehtiö group is a translational group of scientists with a drive to improve human proteome analysis by developing new methods that can be applied to improve personalized cancer treatment. The research group is also closely associated with the our Clinical Proteomics Mass Spectrometry facility that provides fee-for-service sample analysis as well as support to plan and perform larger in-depth proteomics project. The employment is a permanent position with a trial period of 6 months. We offer a very stimulating and diverse work in a team of very motivated co-workers with expertise in cutting-edge technology."
+        },
+        {
+                "title": "Doktorand till doktorsexamen vid avdelningen Bioinformatik vid IFM",
+                "type": [
+                    "PhD position"
+                ],
+                "app_deadline": "2023-03-06",
+                "employer": "Linköpings universitet",
+                "job_url": "https://liu.se/jobba-pa-liu/lediga-jobb/21139",
+                "description": "I projektet kommer du att utveckla statistiska och maskininlärningsmetoder för att karakterisera och kvantifiera flexibilitet i makromolekylära atommodeller bestämt av kryo-EM och kristallografiexperiment. Med hjälp av nationell superdatorinfrastruktur kommer du att tillämpa dessa metoder i stor skala på strukturer i PDB:en, för att bygga en allmänt tillgänglig öppen databas och studera experimentell flexibilitet i relation till molekylär funktion.<br><br>Som doktorand ägnar du dig åt din forskarutbildning och forskningsprojekt där du ingår. I ditt arbete kan även ingå att undervisa eller att delta i andra institutionsuppdrag, upp till 20% av heltid."
         },
         {
             "title": "PhD student in Machine Learning: Causality & Generalization",
@@ -99,6 +173,16 @@
             "employer": "Chalmers University",
             "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11396",
             "description": "Machine learning is now an essential tool for scientists and engineers. It is used in diverse applications to predict outcomes from inputs by training models to minimize prediction error in training data. As widespread adoption reaches beyond research and the development of such systems, guarantees for accuracy, reliability and safety become critical. State-of-the-art models which achieve top accuracy on benchmark tasks routinely fail to generalize to new examples even in strongly related problem domains. In this project, we will study the intersection of causal inference and machine learning using auxiliary information to improve the sample-efficiency and domain generalization of learning algorithms.<br><br>Generalization in machine learning refers to a trained system performing well on previously unseen examples. When analyzing and developing learning algorithms, unseen examples are often assumed to follow the same distribution as training examples. However, real data often follows different patterns: 1) The distribution of testing (in-deployment) examples often differs from those collected for training, 2) We often have access to different information or variables at training time than we do when the trained system is deployed, 3) The number of samples is rarely as large as we would like it to be. One example of this is classification of medical images using deep neural networks, where training sets are often limited in size but rich in annotations which are not available when the trained system is used.<br><br>In this project, we will develop sample-efficient learning algorithms which makes the best possible use of small numbers of training examples by exploiting auxiliary information and causal analysis. We will apply these algorithms in, among other tasks, medical image classification."
+        },
+        {
+            "title": "PhD student in Neuro-Symbolic Synthesis and Reinforcement Learning",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-02-28",
+            "employer": "Chalmers University",
+            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11271",
+            "description": "In this project we study a new approach to synthesis of efficient communication schemes in multi-agent systems, trained via reinforcement learning. We combine symbolic methods with machine learning, in what is referred to as a neuro-symbolic system, where a neural network learns to produce programs in a symbolic language to solve a task at hand. We believe this combination of neural and symbolic methods will be an important next step in the development of AI beyond todays capabilities.<br><br>This project is a collaboration between researchers at the division of Data Science and AI at Chalmers and the Center for Linguistic Theory and Studies in Probability (CLASP) at Gothenburg University."
         },
         {
             "title": "PhD student in Natural Language Processing",
