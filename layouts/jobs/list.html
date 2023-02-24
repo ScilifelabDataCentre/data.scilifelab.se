@@ -154,9 +154,11 @@
               <h5><a class="" role="button" data-bs-toggle="modal"
                   data-bs-target="#descriptionModal{{ $ind }}">{{ .title }}</a></h5>
             </div>
-            <div class="px-2 m-2 d-flex flex-column rounded event-date">
-              <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .app_deadline }}</div>
-              <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .app_deadline }}</div>
+            <div>
+              <div class="px-2 m-2 d-flex flex-column rounded event-date">
+                <div class="px-2 fs-3 mx-auto">{{ time.Format "2" .app_deadline }}</div>
+                <div class="pb-1 px-2 mx-auto">{{ time.Format "January" .app_deadline }}</div>
+              </div>
             </div>
           </div>
           {{ if .employer }}<div class="row">
@@ -210,6 +212,7 @@
                       </div>{{ end }}
                       <div class="row mt-3">
                         <div class="col-md">
+                          <p>For more information, visit the link below.</p>
                           <a target="_blank" href="{{ .job_url }}"><i class="bi bi-globe"></i> Listing
                             webpage</a>
                         </div>
