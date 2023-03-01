@@ -18,21 +18,16 @@
         {{ if in .target "researchers" }}
         <div class="col">
           <div class="bg-service">
-            <div class="pt-3 px-2">
+            <div {{ if .thumbnail_border }}class="p-1"{{ end }} >
               <a target="_blank" href="{{ .url }}"><img class="img-fluid"
-                src="{{ with .logo_location }}{{ . }}{{ else }}{{ "/img/service_logos/scilifelab_services_logo.png" }}{{ end }}"
+                src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                 alt="{{ .name }}"></a>
             </div>
-            <div class="ps-2 mt-2">
+            <div class="p-2 bg-service-title">
               <b><a target="_blank" href="{{ .url }}">{{ .name }}</a></b>
             </div>
-            <div class="ps-2 mb-2">
-              <small>Category: 
-                {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable"></i> {{ end }}
-                {{ if in .type "database" }}<i class="bi bi-server"></i> {{ end }}
-                {{ if in .type "portal" }}<i class="bi bi-window"></i> {{ end }}
-                {{ if in .type "helpdesk" }}<i class="bi bi-person-workspace"></i> {{ end }}
-              </small>
+            <div class="p-2">
+              {{ .description }}
             </div>
           </div>
         </div>

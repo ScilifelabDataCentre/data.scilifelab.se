@@ -165,8 +165,11 @@ h5 a:hover {
 
 .bg-service {
   height: 100%;
-  background-color: rgba(210, 229, 231, 0.75);
-  border-radius: 5px;
+  background-color: #A6CBCF;
+}
+
+.bg-service-title {
+  background-color: #D2E5E7;
 }
 
 /* Highlights */

@@ -4,42 +4,11 @@
       "researchers"
     ],
     "type": [
-      "database",
-      "tool",
-      "portal"
-    ],
-    "name": "SubCellBarCode",
-    "description": "A collection of resources (including methodologies, tools, and data) centred around deducing and exploring the subcellular localisation of proteins.",
-    "url": "/subcellbarcode/",
-    "logo_location": "/img/service_logos/subcellbarcode.png",
-    "maintained_by": "SubCellBarCode Team",
-    "maintained_by_url": "https://www.subcellbarcode.org/about.html",
-    "support_website": "https://www.subcellbarcode.org/index.html"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
-      "tool"
-    ],
-    "name": "SciLifeLab Data Stewardship Wizard",
-    "description": "Tool to aid the creation of research data management plans. Allows to create a data management plan by answering a number of multiple-choice questions.",
-    "url": "https://dsw.scilifelab.se/",
-    "logo_location": "/img/service_logos/dsw.png",
-    "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "datacentre@scilifelab.se"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
       "portal"
     ],
     "name": "The Swedish COVID-19 & Pandemic Preparedness Data Portal",
     "description": "Portal devoted to data and resources relevant to COVID-19 and pandemic preparedness research in Sweden.",
-    "logo_location": "/img/service_logos/pandemic_preparedness.png",
+    "thumbnail": "/img/service_thumbnails/portal.jpg",
     "url": "https://covid19dataportal.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
@@ -51,16 +20,14 @@
       "researchers"
     ],
     "type": [
-      "portal",
-      "helpdesk"
+      "tool"
     ],
-    "name": "SciLifeLab RDM Guidelines Portal",
-    "description": "A web portal that contains information relevant for the management of life science research data in Sweden. Guidance is given for each phase of the data life cycle, and users can also receive direct support from the associated Helpdesk.",
-    "url": "https://data-guidelines.scilifelab.se",
+    "name": "SciLifeLab Data Stewardship Wizard",
+    "description": "Tool to aid the creation of research data management plans. Allows to create a data management plan by answering a number of multiple-choice questions.",
+    "thumbnail": "/img/service_thumbnails/dsw.jpg",
+    "url": "https://dsw.scilifelab.se/",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/",
-    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines"
+    "support_email": "datacentre@scilifelab.se"
   },
   {
     "target": [
@@ -72,11 +39,43 @@
     ],
     "name": "SciLifeLab Data Repository",
     "description": "Repository for publishing any kind of research-related data, e.g. documents, figures, or presentations. Powered by Figshare.",
+    "thumbnail": "/img/service_thumbnails/figshare.jpg",
     "url": "https://scilifelab.figshare.com/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se",
     "support_website": "https://scilifelab.se/data/repository"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "helpdesk"
+    ],
+    "name": "SciLifeLab Data Management helpdesk",
+    "description": "Researchers at Swedish academic institutions working in life sciences can get support with research data management (RDM) questions: RDM plans, reproducibility, FAIR, human data publication, etc.",
+    "thumbnail": "/img/service_thumbnails/helpdesk.jpg",
+    "url": "mailto:data-management@scilifelab.se",
+    "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "support_email": "data-management@scilifelab.se "
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "portal",
+      "helpdesk"
+    ],
+    "name": "SciLifeLab RDM Guidelines Portal",
+    "description": "A web portal that contains information relevant for the management of life science research data in Sweden. Guidance is given for each phase of the data life cycle, and users can also receive direct support from the associated Helpdesk.",
+    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "url": "https://data-guidelines.scilifelab.se",
+    "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "support_email": "data-management@scilifelab.se",
+    "support_website": "https://data-guidelines.scilifelab.se/contact/",
+    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines"
   },
   {
     "target": [
@@ -98,6 +97,24 @@
       "researchers"
     ],
     "type": [
+      "database",
+      "tool",
+      "portal"
+    ],
+    "name": "SubCellBarCode",
+    "description": "A collection of resources (including methodologies, tools, and data) centred around deducing and exploring the subcellular localisation of proteins.",
+    "thumbnail": "/img/service_thumbnails/subcell.jpg",
+    "thumbnail_border": true,
+    "url": "/subcellbarcode/",
+    "maintained_by": "SubCellBarCode Team",
+    "maintained_by_url": "https://www.subcellbarcode.org/about.html",
+    "support_website": "https://www.subcellbarcode.org/index.html"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "database"
     ],
     "name": "SweFreq",
@@ -108,19 +125,6 @@
   },
   {
     "target": [
-      "researchers"
-    ],
-    "type": [
-      "helpdesk"
-    ],
-    "name": "SciLifeLab Data Management helpdesk",
-    "description": "Researchers at Swedish academic institutions working in life sciences can get support with research data management (RDM) questions: RDM plans, reproducibility, FAIR, human data publication, etc.",
-    "url": "mailto:data-management@scilifelab.se",
-    "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "data-management@scilifelab.se "
-  },
-  {
-    "target": [
       "facilities"
     ],
     "type": [
@@ -128,6 +132,7 @@
     ],
     "name": "SciLifeLab Data Delivery System",
     "description": "Cloud-based system for the delivery of data from SciLifeLab units to their users. It consists of a command line interface (CLI) and a currently minimal web interface.",
+    "thumbnail": "/img/service_thumbnails/dds.jpg",
     "url": "https://delivery.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
