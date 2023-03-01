@@ -72,13 +72,13 @@
         <div id="news-items" class="col">
           {{ range first 4 .RegularPages }}
           <div class="row">
-            <div class="col small mb-1">
+            <div class="col mb-1 news-date">
               {{ .Date | time.Format ":date_long" }}
             </div>
           </div>
-          <div class="row">
+          <div class="row mb-1">
             <div class="col">
-              <h6><a href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a></h6>
+              <h6 style="line-height:1.3rem;"><a href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a></h6>
             </div>
           </div>
           {{ end }}
@@ -150,7 +150,7 @@
 {{ end }}
 
 <!-- Recently published items in figshare-->
-<section style="background-image: url('/img/illustrations/bg_figshare.png'); opacity: 0.8;">
+<section style="background-image: url('/img/illustrations/bg_figshare.png');">
   <div class="p-3 p-lg-4 my-4">
     <div class="row mb-3">
       <div class="col text-white">
@@ -172,7 +172,7 @@
 </section>
 
 <!-- recently deployed apps in serve -->
-<section style="background-image: url('/img/illustrations/bg_serve.png'); opacity: 0.8;">
+<section style="background-image: url('/img/illustrations/bg_serve.png');">
   <div class="p-3 p-lg-4 my-4">
     <div class="row mb-3">
       <div class="col text-white">
@@ -281,11 +281,11 @@
     );
     
     // Add latest tag to very recent news
-    document.querySelectorAll("#news-items .col.small").forEach(
+    document.querySelectorAll("#news-items .col.news-date").forEach(
         function (newsNode) {
             var numDays = Math.floor((Date.now() - Date.parse(newsNode.innerText))/(1000*60*60*24));
             if (numDays <= 7) {
-                newsNode.insertAdjacentHTML("beforeend", "<span class='badge latest-news pb-1'>New</span>");
+                newsNode.insertAdjacentHTML("beforeend", "<span class='badge latest-news pb-1 ms-1'>New</span>");
             }
         }
     );
