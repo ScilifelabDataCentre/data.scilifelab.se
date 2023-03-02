@@ -12,6 +12,30 @@
             "registration_url": "https://www.scilifelab.se/event/ddls-annual-conference-2023/",
             "description": "The DDLS program will arrange the 3rd DDLS Annual Conference, highlighting Data-driven life science research and its future. All scientists interested in data-driven research are welcome to join the 2-day lunch-to-lunch Conference."
         },
+
+        {
+            "title": "RaukR, Advanced R for Bioinformatics workshop",
+            "type": "Workshop",
+            "date_start": "2023-06-11",
+            "date_end": "2023-06-22",
+            "registration_deadline": "2023-04-14",
+            "venue": "Visby",
+            "organisers": "NBIS",
+            "event_url": "https://nbisweden.github.io/workshop-RaukR-2306/",
+            "registration_url": "https://nbis.typeform.com/RaukR2023",
+            "description": "Join us this June in beautiful and historic Visby to improve your R skills and have a nice time!<br><br>In Life Science and Bioinformatics, R is increasingly being used to transform and analyse data, perform statistical analysis and produce publication-ready visualisations. This workshop will focus on advanced R functionality, to increase the participants skillset and understanding of what is possible to do today.<br><br>You are very welcome to apply or see the website for more information. Please, help us spread the word to interested participants!"
+        },
+        {
+            "title": "EMBL-SciLifeLab Data Science workshop",
+            "type": "Workshop",
+            "date_start": "2023-05-15",
+            "date_end": "2023-05-16",
+            "registration_deadline": "",
+            "venue": "Eva von Bahr, Uppsala University",
+            "organisers": "SciLifeLab and EMBL",
+            "event_url": "https://www.scilifelab.se/event/embl-scilifelab-data-science-workshop/",
+            "description": "We would like to cordially invite members of the SciLifeLab and EMBL Communities to this workshop! This event will bring together researchers, scientific and technical staff at the EMBL and SciLifeLab, to make new acquaintances and collaborations and to learn and be inspired by each other.<br><br>The workshop program starts at 09:00 on May 15 and ends after lunch on May 16.<br><br>The workshop will be a hybrid event enabling participation to the wider community at all EMBL and SciLifeLab sites.<br><br>Looking forward to meeting you in Uppsala in May!"
+        },
         {
             "title": "Introduction to Biostatistics and Machine Learning",
             "type": "Course",
@@ -25,6 +49,18 @@
             "description": "National course open for PhD students, postdocs, researchers and other employees in need of biostatistical skills within all Swedish universities. The course is geared towards life scientists wanting to be able to understand and use basic statistical and machine learning methods. It would also suit those already applying biostatistical methods but have never got a chance to reflect on and truly grasp the basic statistical concepts, such as the commonly misinterpreted p-value.<br><br>Due to limited space the course can accommodate maximum of 25 participants. If we receive more applications, participants will be selected based on several criteria. Selection criteria include correct entry requirements, motivation to attend the course as well as gender and geographical balance.NBIS prioritises academic participants (students, staff, affiliated researchers) in Sweden. We can accept participants from industry and/or outside Sweden if we have seats available and the requirements criteria are met.<br><br><b>Fee:</b> 1500 SEK paid by invoice to NBIS. This includes lunches, coffee and snacks. Please note that NBIS cannot invoice individuals."
         },
         {
+            "title": "Three Decades of Genomics:  From PCR to Precision Medicine",
+            "type": "Symposium",
+            "date_start": "2023-04-24",
+            "date_end": "2023-04-25",
+            "registration_deadline": "2023-04-12",
+            "venue": "BMC, The Svedberg Lecture Hall (B8)",
+            "organisers": "NGI (Uppsala), SNP&SEQ Technology platform",
+            "event_url": "https://www.scilifelab.se/event/three-decades-of-genomics-from-pcr-to-precision-medicine/",
+            "registration_url": "https://www.lyyti.fi/reg/Three_Decades_of_Genomics",
+            "description": "Professor emeritus Ann-Christine Syvänen moved from Helsinki, Finland to Uppsala in 1998. In 2001 she was appointed professor in Molecular Medicine at the Department of Medical Sciences at Uppsala University. After 20 years as a research group leader and director of the SNP&SEQ Technology Platform, followed by five years as senior professor at Uppsala University, she retired in 2022. This open symposium brings together her former colleagues from Finland, as well as coworkers and former students in Uppsala to celebrate the progress in Human Genomics during the past three decades and future prospects for Genomics in Precision Medicine."
+        },
+        {
             "title": "Introduction to Data Management Practices",
             "type": "Course",
             "date_start": "2023-04-18",
@@ -35,6 +71,18 @@
             "event_url": "https://uppsala.instructure.com/courses/78709",
             "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSezMsYRvJ0F-GKFKL1cPG6TjxsbtksutOjUTxgcyyL_WXhTXA/viewform",
             "description": "National course open for PhD students, postdocs, researchers and other employees within all Swedish universities. The course is geared towards life scientists wanting to take the first steps towards a more systematic and reproducible approach to analysing and managing research data. Due to limited space the course can accommodate a maximum of 25 participants. If we receive more applications, participants will be selected based on several criteria. Selection criteria include correct entry requirements, motivation to attend the course as well as gender and geographical balance.<br><br><b>Fee:</b> 1500 SEK paid by invoice to NBIS. This includes lunches, coffee and snacks. Please note that NBIS cannot invoice individuals."
+        },
+        {
+            "title": "Workshop on Data Visualization in R - Lund",
+            "type": "Workshop",
+            "date_start": "2023-04-17",
+            "date_end": "2023-04-19",
+            "registration_deadline": "2023-03-31",
+            "venue": "Retina D227, Biologihuset, Lund",
+            "organisers": "NBIS",
+            "event_url": "https://uppsala.instructure.com/courses/46547",
+            "registration_url": "https://forms.gle/D2GFZJUVBE5FswjD7",
+            "description": "This course aims to help researchers to visualize their data in different ways using R. This course will teach how to produce publication grade figures using R. A part of this course is also about making interactive plots that the researchers can view and share in a web-server to make interactive visualizations of their data."
         },
         {
             "title": "Regional Mass Spectrometry Imaging Spring Workshop",
@@ -58,6 +106,16 @@
             "event_url": "https://www.scilifelab.se/event/ddls_rda2023/",
             "registration_url": "https://www.lyyti.fi/reg/ddls_rda",
             "description": "This workshop will showcase how to leverage the Research Data Alliance (RDA) to support life science research today and what role the RDA and international data infrastructures can play in the transition to an increasingly data-driven research practice. It is organised by ELIXIR, NBIS and the Science for Life Laboratory (SciLifeLab) and includes speakers on life science data & interoperability, stakeholder engagement, and liaison strategies with the RDA.<br><br>The workshop aims to promote and refine strategies for liaising with global communities and in particular the RDA to develop and adopt solutions for data-driven life science research. The intended audience is research communities, regional research infrastructures and cross-border infrastructure collaborations. However, registration is open to everyone who is involved in furthering shared principles and standards for life science research data. To accommodate a dynamic and diverse group of participants, the workshop is hosted as a hybrid event, accepting participants on-site in Gothenburg, Sweden or online via Zoom."
+        },
+        {
+            "title": "Sharing, showcasing and understanding the impact of non-traditional research outputs",
+            "type": "Webinar",
+            "date_start": "2023-03-21",
+            "time_start": "11:00",
+            "venue": "Online",
+            "organisers": "Digital Science",
+            "event_url": "https://www.digital-science.com/events/non-traditional-research-outputs/?utm_source=pardot&utm_medium=email&utm_campaign=webinars_23&utm_term=figshare",
+            "description": "Research outputs are no longer just academic papers and datasets. Arts performances, conceptual designs, music scores, costumes, models and all other non-traditional research outputs can and should be shared, showcased and tracked. Join us for this webinar on non-traditional research outputs with Figshare and Altmetric."
         },
         {
             "title": "NBIS workshop on Neural Nets and Deep Learning",
