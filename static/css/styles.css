@@ -257,3 +257,8 @@ h5 a:hover {
 .app-description button:not(.collapsed):after {
     content: '- less description';
 }
+
+/* Support block for the homepage */
+.support {
+  background-color: #491F53!important;
+}
