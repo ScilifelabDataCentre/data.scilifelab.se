@@ -7,7 +7,7 @@
       "portal"
     ],
     "name": "The Swedish COVID-19 & Pandemic Preparedness Data Portal",
-    "description": "A web portal for resources related to pandemic preparedness research",
+    "description": "A web portal for resources related to pandemic preparedness research in Sweden",
     "thumbnail": "/img/service_thumbnails/portal.jpg",
     "url": "https://covid19dataportal.se/",
     "maintained_by": "SciLifeLab Data Centre",
@@ -20,28 +20,28 @@
       "researchers"
     ],
     "type": [
-      "tool"
+      "helpdesk"
     ],
-    "name": "SciLifeLab Data Stewardship Wizard",
-    "description": "A tool to help in creating data management plans (DMPs)",
-    "thumbnail": "/img/service_thumbnails/dsw.jpg",
-    "url": "https://dsw.scilifelab.se/",
+    "name": "SciLifeLab Data Management Helpdesk",
+    "description": "Helpdesk for researchers in Sweden to get help with research data management questions",
+    "thumbnail": "/img/service_thumbnails/helpdesk.jpg",
+    "url": "mailto:data-management@scilifelab.se",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "data-management@scilifelab.se "
   },
   {
     "target": [
       "researchers"
     ],
     "type": [
-      "helpdesk"
+      "tool"
     ],
-    "name": "SciLifeLab Data Management helpdesk",
-    "description": "Helpdesk for researchers in Sweden to get help with research data management questions",
-    "thumbnail": "/img/service_thumbnails/helpdesk.jpg",
-    "url": "mailto:data-management@scilifelab.se",
+    "name": "SciLifeLab Data Stewardship Wizard",
+    "description": "A tool that aids researchers in creating data management plans (DMPs) using multiple choice questions",
+    "thumbnail": "/img/service_thumbnails/dsw.jpg",
+    "url": "https://dsw.scilifelab.se/",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "data-management@scilifelab.se "
+    "support_email": "datacentre@scilifelab.se"
   },
   {
     "target": [
