@@ -61,6 +61,26 @@
             "description": "We are located in Stockholm at the Science for Life Laboratory. Our research interests broadly span algorithm development and analysis of sequence data. We have ongoing projects on method development for rapid sequence mapping and sequence similarity searches, and various computational problems in transcriptomic analysis, and collaborative projects in genome assembly. We also consider your project proposals if it aligns with the group's research programs.<br><br><b>Please note that the deadline is approximate, the position will be open until filled.</b>"
         },
         {
+            "title": "Three PhD positions in interdisciplinary mathematics",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-03-24",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596823",
+            "description": "The Centre for Interdisciplinary Mathematics (CIM) at Uppsala University conducts interdisciplinary research connecting the mathematical sciences and other areas of science and industry. CIM offers training and expertise in mathematical modeling and computer simulation, and hosts a Graduate school since 2011.<br><br>We are now looking for three PhD students who will join CIM’s Graduate school and work on proposed research projects. The available PhD projects can be found on CIM's web page: https://www.math.uu.se/research/cim/announced-projects/"
+        },
+        {
+            "title": "Postdoctoral position in register epidemiology",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-03-24",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596082",
+            "description": "The Post-doctoral fellow will be employed within the research group of Dr. Åsa Johansson (https://www.igp.uu.se/research/genomics-neurobiology/asa-johansson/). The specific post-doc project will focus on the effect of obesity and exogenous hormones on cardiometabolic diseases and cancer, primarily stroke and female-specific cancers. The primary task is to analyze data from the national Swedish registers, with exposures from the prescribed drug register and medical birth register, and disease outcomes from the cancer register, the patient register, the cause of death register, as well as the quality registers. The duties include planning and conducting data analysis, compiling results, and writing and presenting scientific works. Some teaching and supervision can be included in the duties."
+        },
+        {
             "title": "Bioinformaticians (1-2) with training and community building focus",
             "type": [
                 "Job"
@@ -71,14 +91,24 @@
             "description": "Working at the Training Hub, you will be part of the core of Sweden’s life science infrastructure and get the opportunity to actively shape how lifelong learning and training from a research infrastructure integrates and enables the Swedish life science research community. You will work in a small core team of training experts and connect to a wider ecosystem of researchers and staff scientists across the platforms and SciLifeLab sites. Training and lifelong learning is rapidly growing and the impact of training from a Research Infrastructure is more and more evident. The major task now is to build a national framework for life science lifelong learning which includes the technical infrastructure of the training platform and the people infrastructure of the community. We look forward to having you onboard on this journey."
         },
         {
-            "title": "Three PhD positions in interdisciplinary mathematics",
+            "title": "Bioinformatician with expertise in Biology of Infections",
             "type": [
-                "PhD position"
+                "Job"
             ],
-            "app_deadline": "2023-03-24",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596823",
-            "description": "The Centre for Interdisciplinary Mathematics (CIM) at Uppsala University conducts interdisciplinary research connecting the mathematical sciences and other areas of science and industry. CIM offers training and expertise in mathematical modeling and computer simulation, and hosts a Graduate school since 2011.<br><br>We are now looking for three PhD students who will join CIM’s Graduate school and work on proposed research projects. The available PhD projects can be found on CIM's web page: https://www.math.uu.se/research/cim/announced-projects/"
+            "app_deadline": "2023-03-17",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/what:job/jobID:600494/type:job/where:1/apply:1",
+            "description": "We are now looking for outstanding candidates with competences in analysis of large-scale, high-throughput genomic data, and related molecular and clinical data analysis, to provide advanced bioinformatics support to selected data-driven Swedish research projects of scientific excellence. Your work will include data analysis and scientific deduction at an internationally competitive level, as well as being a driver of bioinformatics postgraduate training. <br><br>We are looking for a bioinformatician with experience of large-scale molecular research projects in immunology, pathogen-host interaction systems, or other relevant studies related to biology of infections. Technical competences of particular interest are single-cell and spatial omics data analysis, multi omics integration, and genomics and metagenomics of microorganisms."
+        },
+        {
+            "title": "Project Coordinator for TEF-HEALTH",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-03-16",
+            "employer": "Karolinska Institute",
+            "job_url": "https://ki.varbi.com/en/what:job/jobID:600003/",
+            "description": "We are seeking an experienced and highly motivated project coordinator to help the project leads to coordinate and enable all activities within the TEF-Health project. These activities include helping the project leads to manage and report on work packages, develop strategies, sustainable business-models and navigate the stakeholder landscape. Working within the project, you will support and proactively reach out to engage a growing user community from the life science industry and healthcare sectors.<br><br>You will be part of a new team, building a new function, developing this based on and integrated with the successful existing structures at KI, CIR, and SciLifeLab."
         },
         {
             "title": "Bioinformatician with expertise in Biology of Infections",
@@ -155,12 +185,22 @@
             "description": "A Lab Manager position is available in the Cancer proteomics Mass spectrometry research and Core Facility lab, headed by Professor Janne Lehtiö at Science for Life Laboratory (SciLifeLab). Karolinska Institutet is one of the four founding universities for SciLifeLab, which is a national infrastructure and research center for technology driven life sciences. The Lehtiö group is a translational group of scientists with a drive to improve human proteome analysis by developing new methods that can be applied to improve personalized cancer treatment. The research group is also closely associated with the our Clinical Proteomics Mass Spectrometry facility that provides fee-for-service sample analysis as well as support to plan and perform larger in-depth proteomics project. The employment is a permanent position with a trial period of 6 months. We offer a very stimulating and diverse work in a team of very motivated co-workers with expertise in cutting-edge technology."
         },
         {
+            "title": "Bioinformatiker",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-03-07",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=597029",
+            "description": "Personen kommer arbeta med analys av longread-sekvenseringsdata från PacBio och Oxford Nanopore. Främst gäller det bioinformatiska analyser inklusive alignment, variantanalys, assembly och identifiering av kliniskt relevanta varianter. Nya analysverktyg behöver sättas upp, t ex Deep Variant, för variantanalys. Den anställde kommer också vara med och sätta upp metoden 'adaptive sampling' på labbet, men främst med ansvar för datahantering och dataanalys. I projektet kommer patientprover analyseras för att identifiera sjukdomsorsakande variation"
+        },
+        {
             "title": "Doktorand till doktorsexamen vid avdelningen Bioinformatik vid IFM",
             "type": [
                 "PhD position"
             ],
             "app_deadline": "2023-03-06",
-            "employer": "Linköpings universitet",
+            "employer": "Linköping University",
             "job_url": "https://liu.se/jobba-pa-liu/lediga-jobb/21139",
             "description": "I projektet kommer du att utveckla statistiska och maskininlärningsmetoder för att karakterisera och kvantifiera flexibilitet i makromolekylära atommodeller bestämt av kryo-EM och kristallografiexperiment. Med hjälp av nationell superdatorinfrastruktur kommer du att tillämpa dessa metoder i stor skala på strukturer i PDB:en, för att bygga en allmänt tillgänglig öppen databas och studera experimentell flexibilitet i relation till molekylär funktion.<br><br>Som doktorand ägnar du dig åt din forskarutbildning och forskningsprojekt där du ingår. I ditt arbete kan även ingå att undervisa eller att delta i andra institutionsuppdrag, upp till 20% av heltid."
         },

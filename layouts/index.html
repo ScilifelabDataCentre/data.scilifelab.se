@@ -18,21 +18,16 @@
         {{ if in .target "researchers" }}
         <div class="col">
           <div class="bg-service">
-            <div class="pt-3 px-2">
+            <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_blank" href="{{ .url }}"><img class="img-fluid"
-                src="{{ with .logo_location }}{{ . }}{{ else }}{{ "/img/service_logos/scilifelab_services_logo.png" }}{{ end }}"
-                alt="{{ .name }}"></a>
+                  src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+                  alt="{{ .name }}"></a>
             </div>
-            <div class="ps-2 mt-2">
+            <div class="p-2 bg-service-title">
               <b><a target="_blank" href="{{ .url }}">{{ .name }}</a></b>
             </div>
-            <div class="ps-2 mb-2">
-              <small>Category: 
-                {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable"></i> {{ end }}
-                {{ if in .type "database" }}<i class="bi bi-server"></i> {{ end }}
-                {{ if in .type "portal" }}<i class="bi bi-window"></i> {{ end }}
-                {{ if in .type "helpdesk" }}<i class="bi bi-person-workspace"></i> {{ end }}
-              </small>
+            <div class="p-2">
+              {{ .description }}
             </div>
           </div>
         </div>
@@ -40,7 +35,7 @@
         {{ end }}
       </div>
       {{ end }}
-      
+
       <!-- Data Higlights -->
       {{ with .Site.GetPage "section" "highlights" }}
       <div class="row pb-2 mt-4 pt-2">
@@ -72,24 +67,25 @@
         <div id="news-items" class="col">
           {{ range first 4 .RegularPages }}
           <div class="row">
-            <div class="col small mb-1">
+            <div class="col mb-1 news-date">
               {{ .Date | time.Format ":date_long" }}
             </div>
           </div>
-          <div class="row">
+          <div class="row mb-1">
             <div class="col">
-              <h6><a href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a></h6>
+              <h6 style="line-height:1.3rem;"><a
+                  href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a></h6>
             </div>
           </div>
           {{ end }}
         </div>
       </div>
       {{ end }}
-      
+
       <!-- About section -->
       <div class="row mt-3 mb-1">
         <div class="col">
-          <h3><a class="title-link" href="/about/">About this portal</a></h3>
+          <h3><a class="title-link" href="/about/">About this platform</a></h3>
         </div>
         <div class="col-4 mt-2 fs-6 text-end">
           <a href="/about/">Read more <i class="bi bi-arrow-right-square-fill"></i></a>
@@ -97,6 +93,27 @@
         <div class="row">
           <div class="col">
             {{ .Content }}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Get featured box -->
+      <div class="row mt-3 mb-1">
+        <div class="col">
+          <div class="card-body pb-4 px-0 pt-0">
+            <div class="card-body  support rounded pt-1">
+              <h3><a style="color:white;margin-left:10px">Get your work featured!</a></h3>
+              <p class="card-text" style="color:white;margin-left:10px">
+                The platform offers hosting for services, and promotes resources and work relevant to data-driven life
+                science research
+                in Sweden. We also promote relevant jobs, calls, and events/training. Get in touch with us about
+                adding content relevant to you!</p>
+              <div class="row">
+                <h5><b><a style="color:white;margin-left:10px" href="/contact/">Click here to get in touch <i
+                        class="bi bi-arrow-right-circle-fill"></i></a></b></h5><br>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -109,7 +126,7 @@
 {{ range sort $.Site.Data.events.items ".date_start" "asc" }}
 {{ $banner_date := cond (isset . "date_start") .date_start .registration_deadline }}
 {{ if ge ($banner_date | time.Format "20060102") (now | time.Format "20060102") }}
-  {{ $upcoming_events = $upcoming_events | append . }}
+{{ $upcoming_events = $upcoming_events | append . }}
 {{ end }}
 {{ end }}
 {{ if ge (len $upcoming_events) 1 }}
@@ -137,7 +154,7 @@
               <div class="px-1 fs-4 mx-auto">{{ time.Format "2" $banner_date }}</div>
               <div class="px-1 small mx-auto">{{ time.Format "January" $banner_date }}</div>
               {{ if and (not .date_start) (.registration_deadline) }}
-                <div class="px-2 small mx-auto">(deadline)</div>
+              <div class="px-2 small mx-auto">(deadline)</div>
               {{ end }}
             </div>
           </div>
@@ -150,7 +167,7 @@
 {{ end }}
 
 <!-- Recently published items in figshare-->
-<section style="background-image: url('/img/illustrations/bg_figshare.png'); opacity: 0.8;">
+<section style="background-image: url('/img/illustrations/bg_figshare.png');">
   <div class="p-3 p-lg-4 my-4">
     <div class="row mb-3">
       <div class="col text-white">
@@ -164,15 +181,16 @@
     </div>
     <div id="recent-data-items" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 pb-4"></div>
     <p class="text-white">If you would like further information about SciLifeLab data repository or experience issues
-      with the items above, please email <a class="text-white" style="text-decoration: underline;" 
-      href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>. If you have questions about a specific item,
+      with the items above, please email <a class="text-white" style="text-decoration: underline;"
+        href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>. If you have questions about a specific
+      item,
       contact information is available on the item's page.
     </p>
   </div>
 </section>
 
 <!-- recently deployed apps in serve -->
-<section style="background-image: url('/img/illustrations/bg_serve.png'); opacity: 0.8;">
+<section style="background-image: url('/img/illustrations/bg_serve.png');">
   <div class="p-3 p-lg-4 my-4">
     <div class="row mb-3">
       <div class="col text-white">
@@ -186,10 +204,10 @@
     </div>
     <div id="recent-serve-apps" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 pb-4"></div>
     <p class="text-white">If you would like further information about SciLifeLab Serve or experience issues with the
-      apps above, please email <a class="text-white" style="text-decoration: underline;" 
-      href="mailto:serve@scilifelab.se">serve@scilifelab.se</a>. If you have questions about a specific app, go to
-      the <a class="text-white" style="text-decoration: underline;"  href="https://serve.scilifelab.se/apps"
-      target="_blank">apps page on SciLifeLab Serve</a> and click on the 'Details' button of the to find contact
+      apps above, please email <a class="text-white" style="text-decoration: underline;"
+        href="mailto:serve@scilifelab.se">serve@scilifelab.se</a>. If you have questions about a specific app, go to
+      the <a class="text-white" style="text-decoration: underline;" href="https://serve.scilifelab.se/apps"
+        target="_blank">apps page on SciLifeLab Serve</a> and click on the 'Details' button of the to find contact
       information for the owner of the app.
     </p>
   </div>
@@ -247,12 +265,12 @@
       for (const data of dataArray.data) {
         // Set description display based on length
         if (data.description.length > 140) {
-            var descriptionDiv = `
+          var descriptionDiv = `
                 <div id="app${data.id}" class="small collapse">${data.description}</div>
                 <button type="button" class="collapsed" data-bs-toggle="collapse" aria-expanded="false" 
                    data-bs-target="#app${data.id}" aria-controls="app${data.id}"></button>`;
         } else {
-            var descriptionDiv = `<div class="small">${data.description}</div>`;
+          var descriptionDiv = `<div class="small">${data.description}</div>`;
         };
         var dataItemsHTML = `
           <div class="col">
@@ -271,7 +289,7 @@
               </div>
             </div>
           </div>`;
-        appsRowNode.insertAdjacentHTML("beforeend", dataItemsHTML);        
+        appsRowNode.insertAdjacentHTML("beforeend", dataItemsHTML);
       };
     };
 
@@ -279,15 +297,15 @@
       decodeURIComponent("https%3A%2F%2Fserve.scilifelab.se%2Fapi%2Flist-apps"),
       addServeApps
     );
-    
+
     // Add latest tag to very recent news
-    document.querySelectorAll("#news-items .col.small").forEach(
-        function (newsNode) {
-            var numDays = Math.floor((Date.now() - Date.parse(newsNode.innerText))/(1000*60*60*24));
-            if (numDays <= 7) {
-                newsNode.insertAdjacentHTML("beforeend", "<span class='badge latest-news pb-1'>New</span>");
-            }
+    document.querySelectorAll("#news-items .col.news-date").forEach(
+      function (newsNode) {
+        var numDays = Math.floor((Date.now() - Date.parse(newsNode.innerText)) / (1000 * 60 * 60 * 24));
+        if (numDays <= 7) {
+          newsNode.insertAdjacentHTML("beforeend", "<span class='badge latest-news pb-1 ms-1'>New</span>");
         }
+      }
     );
 
   });

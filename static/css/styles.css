@@ -165,8 +165,11 @@ h5 a:hover {
 
 .bg-service {
   height: 100%;
-  background-color: rgba(210, 229, 231, 0.75);
-  border-radius: 5px;
+  background-color: #A6CBCF;
+}
+
+.bg-service-title {
+  background-color: #D2E5E7;
 }
 
 /* Highlights */
@@ -197,12 +200,12 @@ h5 a:hover {
 }
 
 .data-item-type{
-  background-color: #16A085;
+  background-color: #045C64;
   color: white;
 }
 
 .serve-app-type{
-  background-color: #A48FA9;
+  background-color: #491F53;
   color: white;
 }
 
@@ -253,4 +256,9 @@ h5 a:hover {
 
 .app-description button:not(.collapsed):after {
     content: '- less description';
+}
+
+/* Support block for the homepage */
+.support {
+  background-color: #491F53!important;
 }

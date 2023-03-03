@@ -18,57 +18,39 @@
              cases, the services may only be available for SciLifeLab infrastructure units.</p>
         </div>
     {{ end }}
-    <div class="row g-3 mb-5 mt-2">
+    <div class="row g-3 mb-5">
       {{ range $services }}
       {{ if in .target $target }}
-      <div class="col-md-6 col-lg-3">
-        <div class="bg-service p-3">
-          <div class="row">
-            <div class="col">
-              <a href="{{ .url }}" target="_blank">
-                <img class="img-fluid rounded-top mb-1"
-                  src="{{ with .logo_location }}{{ . }}{{ else }}{{ "/img/service_logos/scilifelab_services_logo.png" }}{{ end }}"
-                  alt="{{ .name }}">
-              </a>
-            </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="bg-service">
+          <div {{ if .thumbnail_border }}class="p-1"{{ end }} >
+            <a target="_blank" href="{{ .url }}"><img class="img-fluid"
+               src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+               alt="{{ .name }}"></a>
           </div>
-          <div class="row mt-2">
-            <div class="col">
-              <h5><a href="{{ .url }}" target="_blank">{{ .name }}</a></h5>
-            </div>
+          <div class="p-2 bg-service-title">
+            <h5><a href="{{ .url }}" target="_blank">{{ .name }}</a></h5>
           </div>
-          <div class="row">
-            <div class="col">
-              {{ .description }}
-            </div>
+          <div class="p-2">
+            {{ .description }}
           </div>
-          <div class="row mt-3">
-            <div class="col">
-              <b>Category:</b> 
-              {{ if in .type "tool" }}<i class="bi bi-wrench-adjustable"></i> {{ end }}
-              {{ if in .type "database" }}<i class="bi bi-server"></i> {{ end }}
-              {{ if in .type "portal" }}<i class="bi bi-window"></i> {{ end }}
-              {{ if in .type "helpdesk" }}<i class="bi bi-person-workspace"></i> {{ end }}
-            </div>
+          <div class="px-2">
+            <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
           </div>
-          <div class="row">
-            <div class="col">
-              <b>Maintained by:</b> 
-              {{ if .maintained_by_url}}
-                <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
-              {{ else }}
-                {{ .maintained_by }}
-              {{ end }}
-            </div>
+          <div class="px-2">
+            <b>Maintained by:</b> 
+            {{ if .maintained_by_url}}
+              <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
+            {{ else }}
+              {{ .maintained_by }}
+            {{ end }}
           </div>
           {{ if or (or .support_email .support_website) .support_github }}
-          <div class="row">
-            <div class="col">
-              <b>Support:</b> 
-              {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-              {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-              {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
-            </div>
+          <div class="px-2 mb-2">
+            <b>Support:</b> 
+            {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+            {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+            {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
           </div>
           {{ end }}
         </div>
