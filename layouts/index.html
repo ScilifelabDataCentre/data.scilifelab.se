@@ -254,7 +254,7 @@
     };
 
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fapi.figshare.com%2Fv2%2Farticles%3Finstitution%3D803%26page_size%3D8%26" +
+      decodeURIComponent("https%3A%2F%2Fapi.figshare.com%2Fv2%2Farticles%3Finstitution%3D803%26page_size%3D4%26" +
         "order%3Dpublished_date%26order_direction%3Ddesc"),
       addDataItems
     );
@@ -262,7 +262,7 @@
     // Creates html entry for each app fetched from Scilifelab Serve
     function addServeApps(dataArray) {
       var appsRowNode = document.getElementById('recent-serve-apps');
-      for (const data of dataArray.data) {
+      for (const data of dataArray.data.slice(0,4)) {
         // Set description display based on length
         if (data.description.length > 140) {
           var descriptionDiv = `
