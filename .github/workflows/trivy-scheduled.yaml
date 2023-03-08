@@ -6,11 +6,14 @@
 # This runs on scheduled time (09:00 and 13:00)for the develop image
 # ------------------------------------------------------------------
 
-name: Trivy - develop image
+name: Trivy - scheduled scan
 
 on:
+  workflow_dispatch:
+    branches:
+      - develop
   schedule:
-    - cron: '0 9,13 * * *'
+    - cron: '15 8,12 * * *'
 
 jobs:
   scan:
