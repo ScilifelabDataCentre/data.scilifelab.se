@@ -14,6 +14,6 @@ menu:
         weight: 30
 ---
 
-This section highlights open funding calls for data-driven life science involving SciLifeLab. At the bottom of the page, we provide links to other potential sources of funding for data-driven life science research in Sweden. 
+This section highlights open funding calls for data-driven life science involving SciLifeLab. At the bottom of the page, we also provide links to other potential sources of funding for data-driven life science research in Sweden. 
 
-If you know of an appropriate funding stream that is not listed, please click the button below and fill in the short form.
+If you know of a relevant source of funding that is not listed here, please click on the button below and fill in the short form to inform us.

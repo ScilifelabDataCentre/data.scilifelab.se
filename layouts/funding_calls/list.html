@@ -10,7 +10,7 @@
 <section>
   <div class="my-3 text-start">
     <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
-      Tell us about a funding call
+      Tell us about a funding source
     </button>
   </div>
   <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
@@ -19,14 +19,15 @@
         <form action="https://forms.dckube.scilifelab.se/api/v1/form/zFbsta5_P7R-3V2u/incoming" class="needs-validation"
           novalidate method="POST" accept-charset="utf-8">
           <div class="modal-header">
-            <h5 class="modal-title" id="suggestionModalLabel">Funding call suggestion</h5>
+            <h5 class="modal-title" id="suggestionModalLabel">Suggestion for funding source</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="">
-              <p>We welcome suggestions for open funding call related to data-driven life science. Please fill out at
-                 least all obligatory fields (marked with an asterisk) below. The editorial team behind the SciLifeLab
-                 Data Platform will then evaluate the suggestion and add relevant calls as soon as possible.</p>
+              <p>We welcome suggestions for potential sources of funding for data-driven life science in Sweden. Please
+                fill out at
+                least the obligatory fields below (obligatory fields are marked with an asterisk). We will add relevant
+                sources as soon as possible.</p>
             </div>
             <div class="row mb-3">
               <div class="col">
@@ -39,36 +40,18 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="call_title" class="form-label fw-bold">Funding title:*</label>
-              <input type="text" class="form-control" id="call_title" name="call_title" required>
-            </div>
-            <div class="mb-3">
               <label for="funder" class="form-label fw-bold">Funder:*</label>
               <input type="text" class="form-control" id="funder" name="funder" required>
               <div class="form-text">For example, "Swedish Research Council", "KAW", etc.</div>
             </div>
-            <div class="row mb-3">
-              <div class="col">
-                <label for="call_opendate" class="form-label fw-bold">Funding opendate:</label>
-                <input type="date" class="form-control" id="call_opendate" name="call_opendate">
-              </div>
-              <div class="col">
-                <label for="call_deadline" class="form-label fw-bold">Funding deadline:*</label>
-                <input type="date" class="form-control" id="call_deadline" name="call_deadline" required>
-              </div>
-            </div>
             <div class="mb-3">
-              <label for="call_url" class="form-label fw-bold">Funding webpage:*</label>
+              <label for="call_url" class="form-label fw-bold">Link to funding source:*</label>
               <input type="url" class="form-control" id="call_url" name="call_url" required>
               <div class="form-text">Enter URL starting with 'https://...'.</div>
             </div>
             <div class="mb-3">
-              <label for="applicant" class="form-label fw-bold">Applicant:</label>
-              <input type="text" class="form-control" id="applicant" name="applicant">
-              <div class="form-text">For example, if the funding is targeted for specific field, university, etc</div>
-            </div>
-            <div class="mb-3">
-              <label for="call_description" class="form-label fw-bold">Funding description:</label>
+              <label for="call_description" class="form-label fw-bold">Description of why the funder is relevant to
+                data-driven life science:</label>
               <textarea class="form-control" id="call_description" name="call_description" rows="5"></textarea>
             </div>
             <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
