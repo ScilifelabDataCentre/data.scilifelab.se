@@ -12,7 +12,27 @@
             "registration_url": "https://www.scilifelab.se/event/ddls-annual-conference-2023/",
             "description": "The DDLS program will arrange the 3rd DDLS Annual Conference, highlighting Data-driven life science research and its future. All scientists interested in data-driven research are welcome to join the 2-day lunch-to-lunch Conference."
         },
-
+        {
+            "title": "SciLifeLab Science Summit 2023",
+            "type": "Conference",
+            "date_start": "2023-09-20",
+            "time_start": "09:00",
+            "time_end": "17:00",
+            "venue": "Aula Magna, Stockholm University",
+            "organisers": "SciLifeLab",
+            "event_url": "https://www.scilifelab.se/event/scilifelab-science-summit-2023/",
+            "description": "In this SciLifeLab Summit, we have gathered several leading researchers, who use genomics to learn about the diversity of life!"
+        },
+        {
+            "title": "EBSA Congress 2023",
+            "type": "Conference",
+            "date_start": "2023-07-31",
+            "date_end": "2023-08-04",
+            "venue": "Aula Magna, Stockholm University",
+            "organisers": "EBSA",
+            "event_url": "https://mkon.nu/ebsa",
+            "description": "An EBSA congress in Sweden is timely. In 1986, the first EBSA Workshop was hosted by the Swedish Biophysical Society and Professor Anders Ehrenberg, the first president of EBSA. In 2023, after a series of great EBSA meetings around Europe, the Swedish Society for Biochemistry, Biophysics and Molecular Biology (SFBBM) is again, jointly with EBSA and Protein Society, proud to host the 14th EBSA congress at Stockholm University, supported by the Swedish National Committee for Molecular Biosciences (of the Royal Swedish Academy of Sciences). In this meeting, we are honored to also collaborate with the Biophysical Society, IUPAB and SciLifeLab."
+        },
         {
             "title": "RaukR, Advanced R for Bioinformatics workshop",
             "type": "Workshop",
@@ -35,6 +55,18 @@
             "organisers": "SciLifeLab and EMBL",
             "event_url": "https://www.scilifelab.se/event/embl-scilifelab-data-science-workshop/",
             "description": "We would like to cordially invite members of the SciLifeLab and EMBL Communities to this workshop! This event will bring together researchers, scientific and technical staff at the EMBL and SciLifeLab, to make new acquaintances and collaborations and to learn and be inspired by each other.<br><br>The workshop program starts at 09:00 on May 15 and ends after lunch on May 16.<br><br>The workshop will be a hybrid event enabling participation to the wider community at all EMBL and SciLifeLab sites.<br><br>Looking forward to meeting you in Uppsala in May!"
+        },
+        {
+            "title": "Tools for Reproducible Research",
+            "type": "Course",
+            "date_start": "2023-04-24",
+            "date_end": "2023-04-28",
+            "registration_deadline": "2023-03-31",
+            "venue": "Online event via Zoom",
+            "organisers": "NBIS",
+            "event_url": "https://uppsala.instructure.com/courses/82575",
+            "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSfV_15s0x3KKj9uNw61_Q2N45Glmdvkm4LjFqhwYmL_IBc9xA/viewform",
+            "description": "One of the key principles of proper scientific procedure is the act of repeating an experiment or analysis and being able to reach similar conclusions. Published research based on computational analysis (e.g. bioinformatics or computational biology) have often suffered from incomplete method descriptions (e.g. list of used software versions); unavailable raw data; and incomplete, undocumented and/or unavailable code. This essentially prevents any possibility of reproducing the results of such studies. The term “reproducible research” has been used to describe the idea that a scientific publication should be distributed along with all the raw data and metadata used in the study, all the code and/or computational notebooks needed to produce results from the raw data, and the computational environment or a complete description thereof."
         },
         {
             "title": "Introduction to Biostatistics and Machine Learning",
@@ -61,6 +93,19 @@
             "description": "Professor emeritus Ann-Christine Syvänen moved from Helsinki, Finland to Uppsala in 1998. In 2001 she was appointed professor in Molecular Medicine at the Department of Medical Sciences at Uppsala University. After 20 years as a research group leader and director of the SNP&SEQ Technology Platform, followed by five years as senior professor at Uppsala University, she retired in 2022. This open symposium brings together her former colleagues from Finland, as well as coworkers and former students in Uppsala to celebrate the progress in Human Genomics during the past three decades and future prospects for Genomics in Precision Medicine."
         },
         {
+            "title": "KI SciLifeLab Symposium",
+            "type": "Symposium",
+            "date_start": "2023-04-18",
+            "time_start": "08:00",
+            "time_end": "17:00",
+            "registration_deadline": "2023-04-06",
+            "venue": "Nobel Forum, Solna",
+            "organisers": "Karolinska Institutet",
+            "event_url": "https://www.scilifelab.se/event/ki-scilifelab-symposium/",
+            "registration_url": "https://survey.ki.se/KISciLifeLabSymposium2023",
+            "description": "We welcome all KI researchers based at or affiliated with SciLifeLab to the second annual symposium which includes workshops, discussions and great opportunities to mingle!"
+        },
+        {
             "title": "Introduction to Data Management Practices",
             "type": "Course",
             "date_start": "2023-04-18",
@@ -71,6 +116,18 @@
             "event_url": "https://uppsala.instructure.com/courses/78709",
             "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSezMsYRvJ0F-GKFKL1cPG6TjxsbtksutOjUTxgcyyL_WXhTXA/viewform",
             "description": "National course open for PhD students, postdocs, researchers and other employees within all Swedish universities. The course is geared towards life scientists wanting to take the first steps towards a more systematic and reproducible approach to analysing and managing research data. Due to limited space the course can accommodate a maximum of 25 participants. If we receive more applications, participants will be selected based on several criteria. Selection criteria include correct entry requirements, motivation to attend the course as well as gender and geographical balance.<br><br><b>Fee:</b> 1500 SEK paid by invoice to NBIS. This includes lunches, coffee and snacks. Please note that NBIS cannot invoice individuals."
+        },
+        {
+            "title": "SciLifeLab Day Gothenburg",
+            "type": "Conference",
+            "date_start": "2023-04-17",
+            "time_start": "09:00",
+            "time_end": "17:00",
+            "venue": "Conference Centre Wallenberg",
+            "organisers": "SciLifeLab Gothenburg",
+            "event_url": "https://www.scilifelab.se/event/scilifelab-day-gothenburg/",
+            "registration_url": "https://www.lyyti.fi/reg/SciLifeLab_Day_Gothenburg",
+            "description": "The Gothenburg Site of SciLifeLab is happy to welcome the research community in Gothenburg and beyond to this kick-off. Meet with the established site, researchers, local and national infrastructures; interact with the SciLifeLab capabilities, Precision Medicine, Pandemic Laboratory Preparedness and Planetary Biology; learn about the Data Centre services and the Data Driven Life Science program and much more."
         },
         {
             "title": "Workshop on Data Visualization in R - Lund",
