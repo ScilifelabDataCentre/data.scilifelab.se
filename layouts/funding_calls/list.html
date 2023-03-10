@@ -6,6 +6,69 @@
   </div>
 </section>
 
+<!-- Funding suggestion form code begings here -->
+<section>
+  <div class="my-3 text-start">
+    <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
+      Tell us about a funding source
+    </button>
+  </div>
+  <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form action="https://forms.dckube.scilifelab.se/api/v1/form/zFbsta5_P7R-3V2u/incoming" class="needs-validation"
+          novalidate method="POST" accept-charset="utf-8">
+          <div class="modal-header">
+            <h5 class="modal-title" id="suggestionModalLabel">Suggestion for funding source</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <p>We welcome suggestions for potential sources of funding for data-driven life science in Sweden. Please
+                fill out at
+                least the obligatory fields below (obligatory fields are marked with an asterisk). We will add relevant
+                sources as soon as possible.</p>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="submitter_name" class="form-label fw-bold">Your name:*</label>
+                <input type="text" class="form-control" id="submitter_name" name="submitter_name" required>
+              </div>
+              <div class="col">
+                <label for="submitter_email" class="form-label fw-bold">Your contact email*:</label>
+                <input type="email" class="form-control" id="submitter_email" name="submitter_email" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="funder" class="form-label fw-bold">Funder:*</label>
+              <input type="text" class="form-control" id="funder" name="funder" required>
+              <div class="form-text">For example, "Swedish Research Council", "KAW", etc.</div>
+            </div>
+            <div class="mb-3">
+              <label for="call_url" class="form-label fw-bold">Link to funding source:*</label>
+              <input type="url" class="form-control" id="call_url" name="call_url" required>
+              <div class="form-text">Enter URL starting with 'https://...'.</div>
+            </div>
+            <div class="mb-3">
+              <label for="call_description" class="form-label fw-bold">Description of why the funder is relevant to
+                data-driven life science:</label>
+              <textarea class="form-control" id="call_description" name="call_description" rows="5"></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
+            <input type="url" id="originUrl" name="originUrl" value="" hidden />
+            <input type='hidden' name='origin' value='funding_call_suggestion'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-aqua">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Funding suggestion form code ends here -->
+
 <!-- SciLifeLab funding related code begins here -->
 
 <h4>Funding from SciLifeLab</h4>
@@ -127,5 +190,24 @@
   </div>
 </section>
 {{ end }}
+
+<script>
+  document.getElementById('originUrl').value = location.href;
+
+  var form = document.querySelector('.needs-validation');
+  form.addEventListener('submit', function (event) {
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      alert("Please fill out all required fields.");
+      event.stopPropagation();
+      form.classList.add('was-validated')
+    }
+    var recaptcha = $("#g-recaptcha-response").val();
+    if (recaptcha === "") {
+      event.preventDefault();
+      alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
+    }
+  });
+</script>
 
 {{ end }}
