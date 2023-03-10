@@ -105,6 +105,7 @@ h5 a:hover {
 
 .btn-aqua:hover {
     color: #3F3F3F;
+    background-color: #4C979F;
 }
 
 /* logo */
@@ -261,4 +262,9 @@ h5 a:hover {
 /* Support block for the homepage */
 .support {
   background-color: #491F53!important;
+  padding: 12px;
+}
+
+.support > * {
+  color: white;
 }

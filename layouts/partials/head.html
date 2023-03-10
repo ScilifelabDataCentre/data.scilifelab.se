@@ -24,8 +24,8 @@
   
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-
-  {{ if or (eq .Page.Section "contact") (eq .Page.RelPermalink "/events/") (eq .Page.RelPermalink "/highlights/") (eq .Page.RelPermalink "/jobs/") }}
+  {{ $recaptcha_pages := slice "contact" "events" "highlights" "jobs" "funding_calls" }}
+  {{ if in $recaptcha_pages .Page.Section }}
   <!-- reCAPTCHA for contact page -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   {{ end }}
