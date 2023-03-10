@@ -186,6 +186,19 @@
             "description": "This intense one-week workshop provides an introduction to the analysis of next generation sequencing data. The workshop is open to PhD students, post-docs, and other researchers affiliated to Swedish academia and healthcare. It is organised by the National Bioinformatics Infrastructure Sweden (NBIS) and National Genomics Infrastructure (NGI)."
         },
         {
+            "title": "ENLIGHT Workshop Connecting Digital Research Infrastructures with European Infrastructures - Experiences and Lessons Learned",
+            "type": "Workshop",
+            "date_start": "2023-03-15",
+            "time_start": "09:00",
+            "time_end": "12:00",
+            "registration_deadline": "2023-03-11",
+            "venue": "Zoom",
+            "organisers": "ENLIGHT",
+            "event_url": "https://enlight-eu.org/university-about-us/news-events/710-enlight-workshop-2-on-connecting-digital-research-infrastructures-with-european-infrastructures-experiences-and-lessons-learned-15-march-2023",
+            "registration_url": "https://doit.medfarm.uu.se/bin/kurt3/kurt/87824",
+            "description": "The workshop will explain, in some depth, the steps, regulations, workload, challenges, needs and possibilities regarding the connection of digital research infrastructures with European infrastructures (such as disciplinary research infrastructures or the European Open Science Cloud) by looking at selected examples."
+        },
+        {
             "title": "Meet a Data Steward & get Data Management support",
             "type": "Support session",
             "date_start": "2023-03-14",
