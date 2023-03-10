@@ -21,7 +21,7 @@
             "venue": "Aula Magna, Stockholm University",
             "organisers": "SciLifeLab",
             "event_url": "https://www.scilifelab.se/event/scilifelab-science-summit-2023/",
-            "description": "In this SciLifeLab Summit, we have gathered several leading researchers, who use genomics to learn about the diversity of life!"
+            "description": "In this SciLifeLab Summit, which is centred on biodiversity and evolution for 2023, we have gathered several leading researchers who use genomics to learn about the diversity of life!"
         },
         {
             "title": "EBSA Congress 2023",
@@ -96,7 +96,7 @@
             "title": "KI SciLifeLab Symposium",
             "type": "Symposium",
             "date_start": "2023-04-18",
-            "time_start": "08:00",
+            "time_start": "09:00",
             "time_end": "17:00",
             "registration_deadline": "2023-04-06",
             "venue": "Nobel Forum, Solna",
