@@ -94,6 +94,18 @@
             "description": "This session we will be joined by Ann-Charlotte Sonnhamer from the Data Centre, who will talk about risk assessment procedures and what to take into consideration when assessing tools.<br><br>After Ann-Charlottes presentation we will have an open discussion on what RDM tools are being considered at the different sites, what the Data Centre can offer and how we can promote the use of tools by the Data Centre."
         },
         {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-04-25",
+            "time_start": "14:00",
+            "date_end": "2023-04-25",
+            "time_end": "15:00",
+            "venue": "Zoom",
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
             "title": "Tools for Reproducible Research",
             "type": "Course",
             "date_start": "2023-04-24",
@@ -155,6 +167,18 @@
             "description": "National course open for PhD students, postdocs, researchers and other employees within all Swedish universities. The course is geared towards life scientists wanting to take the first steps towards a more systematic and reproducible approach to analysing and managing research data. Due to limited space the course can accommodate a maximum of 25 participants. If we receive more applications, participants will be selected based on several criteria. Selection criteria include correct entry requirements, motivation to attend the course as well as gender and geographical balance.<br><br><b>Fee:</b> 1500 SEK paid by invoice to NBIS. This includes lunches, coffee and snacks. Please note that NBIS cannot invoice individuals."
         },
         {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-04-18",
+            "time_start": "14:00",
+            "date_end": "2023-04-18",
+            "time_end": "15:00",
+            "venue": "Zoom",
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
             "title": "SciLifeLab Day Gothenburg",
             "type": "Conference",
             "date_start": "2023-04-17",
@@ -167,7 +191,7 @@
             "description": "The Gothenburg Site of SciLifeLab is happy to welcome the research community in Gothenburg and beyond to this kick-off. Meet with the established site, researchers, local and national infrastructures; interact with the SciLifeLab capabilities, Precision Medicine, Pandemic Laboratory Preparedness and Planetary Biology; learn about the Data Centre services and the Data Driven Life Science program and much more."
         },
         {
-            "title": "Workshop on Data Visualization in R - Lund",
+            "title": "Workshop on Data Visualization in R",
             "type": "Workshop",
             "date_start": "2023-04-17",
             "date_end": "2023-04-19",
@@ -177,6 +201,42 @@
             "event_url": "https://uppsala.instructure.com/courses/46547",
             "registration_url": "https://forms.gle/D2GFZJUVBE5FswjD7",
             "description": "This course aims to help researchers to visualize their data in different ways using R. This course will teach how to produce publication grade figures using R. A part of this course is also about making interactive plots that the researchers can view and share in a web-server to make interactive visualizations of their data."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-04-11",
+            "time_start": "14:00",
+            "date_end": "2023-04-11",
+            "time_end": "15:00",
+            "venue": "Zoom",
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-04-04",
+            "time_start": "14:00",
+            "date_end": "2023-04-04",
+            "time_end": "15:00",
+            "venue": "Zoom",
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-03-28",
+            "time_start": "14:00",
+            "date_end": "2023-03-28",
+            "time_end": "15:00",
+            "venue": "Zoom",
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
         },
         {
             "title": "Regional Mass Spectrometry Imaging Spring Workshop",
