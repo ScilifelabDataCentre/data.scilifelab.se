@@ -46,6 +46,30 @@
             "description": "Join us this June in beautiful and historic Visby to improve your R skills and have a nice time!<br><br>In Life Science and Bioinformatics, R is increasingly being used to transform and analyse data, perform statistical analysis and produce publication-ready visualisations. This workshop will focus on advanced R functionality, to increase the participants skillset and understanding of what is possible to do today.<br><br>You are very welcome to apply or see the website for more information. Please, help us spread the word to interested participants!"
         },
         {
+            "title": "Hackathon on Cloud-Based and AI-Powered BioImage Analysis",
+            "type": "Hackathon",
+            "date_start": "2023-06-05",
+            "date_end": "2023-06-09",
+            "registration_deadline": "2023-04-15",
+            "venue": "Stockholm",
+            "organisers": "AI4Life consortium",
+            "event_url": "https://www.scilifelab.se/event/hackathon-on-cloud-based-and-ai-powered-bioimage-analysis/",
+            "registration_url": "https://forms.gle/gSgQx5y776wQdrEC7",
+            "description": "We are proud to announce the upcoming hackathon (a.k.a. codefest) event, “Cloud-Based and AI-Powered BioImage Analysis” on June 5th-9th, 2023, at SciLifeLab, Solna. As leading partners in the AI4Life consortium, which is funded through the Horizon Europe Research Infrastructure Grant, SciLifeLab and KTH are organizing this event to bring together the computational and life science communities, shaping the future of Data-Driven Life Sciences!<br><br>In the AI4Life consortium, we focus on building web and cloud infrastructure aimed at addressing the challenges of building and deploying AI tools for bioimage analysis and making them more scalable and easily accessible from the BioImage Model Zoo.<br><br>For the hackathon, we are inviting international experts and hackers on AI-based image analysis and web & cloud infrastructure to lead discussions and form interest groups to hack on related topics. It will feature discussions on our current status and plans in building web and cloud infrastructure for running models in the BioImage Model Zoo, as well as the opportunity to form interest groups to hack on related topics in breakout sessions during the week."
+        },
+        {
+            "title": "RDMkit Contentathon",
+            "type": "Contentathon",
+            "date_start": "2023-05-22",
+            "date_end": "2023-05-24",
+            "registration_deadline": "2023-05-07",
+            "venue": "Ghent, Belgium",
+            "organisers": "RDMkit",
+            "event_url": "https://docs.google.com/document/d/1ddwFXIyRpDdvpZ3rUvV408kQnTCD3Qsxmi5cUl5AwKY/edit#",
+            "registration_url": "https://www.eventbrite.be/e/rdmkit-contentathon-may-2023-tickets-550843105557",
+            "description": "The contentathon is a great opportunity to add best practices and guidelines on how to manage life sciences data, software and other research outputs in RDMkit https://rdmkit.elixir-europe.org/ Despite the encouragement to join in person (only 30 spots available!), it is also possible to join remotely."
+        },
+        {
             "title": "EMBL-SciLifeLab Data Science workshop",
             "type": "Workshop",
             "date_start": "2023-05-15",
@@ -55,6 +79,19 @@
             "organisers": "SciLifeLab and EMBL",
             "event_url": "https://www.scilifelab.se/event/embl-scilifelab-data-science-workshop/",
             "description": "We would like to cordially invite members of the SciLifeLab and EMBL Communities to this workshop! This event will bring together researchers, scientific and technical staff at the EMBL and SciLifeLab, to make new acquaintances and collaborations and to learn and be inspired by each other.<br><br>The workshop program starts at 09:00 on May 15 and ends after lunch on May 16.<br><br>The workshop will be a hybrid event enabling participation to the wider community at all EMBL and SciLifeLab sites.<br><br>Looking forward to meeting you in Uppsala in May!"
+        },
+        {
+            "title": "RDM Training and Tools working group",
+            "type": "Webinar",
+            "date_start": "2023-04-27",
+            "time_start": "10:00",
+            "date_end": "2023-04-27",
+            "time_end": "12:00",
+            "venue": "Online event via Zoom",
+            "organisers": "SciLifeLab Data Centre",
+            "event_url": "https://www.lyyti.fi/reg/ttwg8",
+            "registration_url": "https://www.lyyti.fi/reg/ttwg8",
+            "description": "This session we will be joined by Ann-Charlotte Sonnhamer from the Data Centre, who will talk about risk assessment procedures and what to take into consideration when assessing tools.<br><br>After Ann-Charlottes presentation we will have an open discussion on what RDM tools are being considered at the different sites, what the Data Centre can offer and how we can promote the use of tools by the Data Centre."
         },
         {
             "title": "Tools for Reproducible Research",
