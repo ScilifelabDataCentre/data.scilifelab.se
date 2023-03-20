@@ -85,7 +85,6 @@
             "type": "Webinar",
             "date_start": "2023-04-27",
             "time_start": "10:00",
-            "date_end": "2023-04-27",
             "time_end": "12:00",
             "venue": "Online event via Zoom",
             "organisers": "SciLifeLab Data Centre",
