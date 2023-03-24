@@ -55,7 +55,7 @@
             "organisers": "CryoNet",
             "event_url": "https://www.scilifelab.se/event/1stfirst-cryonet-course-on-advanced-single-particle-cryo-em-analysis/",
             "registration_url": "https://www.lyyti.fi/reg/cryoNET_course",
-            "description": "Aim of the course is to provide training in cryo-EM image processing including the latest developments of the field. Participants will receive hands-on training in state-of-the-art techniques for single particle cryo-EM image processing, model building and validation from a range of international specialist guest lecturers. The course also includes theoretical talks and discussions on the use of cryo-EM to address difficult biological questions, which can help the participants address their own research problems."
+            "description": "The aim of the course is to provide training in cryo-EM image processing including the latest developments of the field. Participants will receive hands-on training in state-of-the-art techniques for single particle cryo-EM image processing, model building and validation from a range of international specialist guest lecturers. The course also includes theoretical talks and discussions on the use of cryo-EM to address difficult biological questions, which can help the participants address their own research problems."
         },
         {
             "title": "Hackathon on Cloud-Based and AI-Powered BioImage Analysis",
