@@ -21,6 +21,16 @@
             "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
         },
         {
+            "title": "Systemutvecklare vid UPPMAX",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-13",
+            "employer": "Uppsala University",
+            "job_url": "https://uu.varbi.com/what:job/jobID:607591/type:job/where:1/apply:1",
+            "description": "Tjänsten är placerad vid UPPMAX och syftar främst till att designa och utveckla system och tjänster för forskare baserat på behov som identifieras i dialog med SciLifeLab Data Centre (DC), liksom specifika kopplingar och gränssnitt mellan UPPMAX och DCs system. Således kommer rollen att arbeta tätt ihop med både UPPMAX och DC. UPPMAX är en av de nationellt tillgängliga e-infrastrukturer som DDLS-programmet arbetar med för att stödja forskare inom livsvetenskaperna, där vi både har resurser med särskild betydelse för fältet och expertis att stödja landets forskare. Vi har en särskild roll för hantering av storskaliga känsliga data, varför informationssäkerhetsfrågorna måste ha en avgörande roll vid design av sådana lösningar."
+        },
+        {
             "title": "Imaging of Bacterial Gut Infections in Human Enteroid and Colonoid Models",
             "type": [
                 "Postdoc position"
@@ -29,6 +39,36 @@
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=601988",
             "description": "The Sellin research group (www.sellinlab.se) at IMBIM, Uppsala University and SciLifeLab, studies how gut pathogens, such as Salmonella, Shigella, and Campylobacter species, interact with the mammalian intestinal mucosa and cause disease.<br><br>The advertised post-doctoral project builds up the groups recent development of human intestinal epithelial organoid models (enteroids and colonoids) and imaging tools to follow bacterial infections in real time at high temporal and spatial resolution"
+        },
+        {
+            "title": "Postdoctoral Researchers in Metagenomics",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-03-31",
+            "employer": "The Swedish Museum of Natural History",
+            "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?guidextsoftware=1eaa0a67-d4bf-4817-ad5c-ddd366ce4192&currentpage=1&orderbycol=ApplicationEndDate&orderbydir=ascending&guid=F8F0BEB7-15EA-48B3-9678-799C607CADE1&locid=2",
+            "description": "The postdocs will primary focus on the computational analyses of metagenomic DNA data obtained from complex samples (including snow, water, sediments, insect-traps and dental calculus). The aim is to develop computational tools that can identify species presence, as well as infer population genetic statistics from minute amounts of DNA. A wide variety of environmental samples and metagenomic sequence data is already present at the Centre for Paleogenetics, and the research projects will be adjusted according to the candidates main research interests. In addition, the postdocs will be encouraged to expand their research profile by developing their own new projects, applying for third-party funding and supervising students."
+        },
+        {
+            "title": "Postdoctoral position in biodiversity assessments using environmental DNA",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-03-31",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=606464",
+            "description": "The focus of this postdoc position will be to apply and further develop existing environmental DNA (eDNA) sampling and processing techniques, with the aim to comprehensively capture the biodiversity at a given site. Initially this work will be focused on one or several specific taxonomic groups (e.g., different groups of fungi, insects), but eventually will be extended to represent biodiversity across the whole tree of life. This work will take place in collaboration with other research groups specialized in eDNA, both based at Uppsala University (e.g., the Rosling Group) as well as at other national and international institutions.<br><br>Some of the specific tasks for this position will likely include: <ul><li>Testing combinations of different eDNA sampling techniques in the field</li><li>Applying lab-protocols to extract and amplify genetic markers for multiple organism groups from eDNA samples</li><li>Bioinformatic processing of eDNA sequence data</li><li>Cataloging and storing eDNA data on the SBDI ASV portal</li></ul>"
+        },
+        {
+            "title": "Postdoctoral position in register epidemiology",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-03-31",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596082",
+            "description": "The Post-doctoral fellow will be employed within the research group of Dr. Åsa Johansson. The specific post-doc project will focus on the effect of obesity and exogenous hormones on cardiometabolic diseases and cancer, primarily stroke and female-specific cancers. The primary task is to analyze data from the national Swedish registers, with exposures from the prescribed drug register and medical birth register, and disease outcomes from the cancer register, the patient register, the cause of death register, as well as the quality registers. The duties include planning and conducting data analysis, compiling results, and writing and presenting scientific works. Some teaching and supervision can be included in the duties."
         },
         {
             "title": "Postdoctoral positions and fellowships",
