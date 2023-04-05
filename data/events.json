@@ -19,6 +19,9 @@
             "time_start": "09:00",
             "time_end": "17:00",
             "venue": "Aula Magna, Stockholm University",
+            "location": [
+                "Stockholm"
+            ],
             "organisers": "SciLifeLab",
             "event_url": "https://www.scilifelab.se/event/scilifelab-science-summit-2023/",
             "description": "In this SciLifeLab Summit, which is centred on biodiversity and evolution for 2023, we have gathered several leading researchers who use genomics to learn about the diversity of life!"
@@ -29,9 +32,13 @@
             "date_start": "2023-07-31",
             "date_end": "2023-08-04",
             "venue": "Aula Magna, Stockholm University",
+            "location": [
+                "Stockholm"
+            ],
             "organisers": "EBSA",
             "event_url": "https://mkon.nu/ebsa",
-            "description": "An EBSA congress in Sweden is timely. In 1986, the first EBSA Workshop was hosted by the Swedish Biophysical Society and Professor Anders Ehrenberg, the first president of EBSA. In 2023, after a series of great EBSA meetings around Europe, the Swedish Society for Biochemistry, Biophysics and Molecular Biology (SFBBM) is again, jointly with EBSA and Protein Society, proud to host the 14th EBSA congress at Stockholm University, supported by the Swedish National Committee for Molecular Biosciences (of the Royal Swedish Academy of Sciences). In this meeting, we are honored to also collaborate with the Biophysical Society, IUPAB and SciLifeLab."
+            "description": "An EBSA congress in Sweden is timely. In 1986, the first EBSA Workshop was hosted by the Swedish Biophysical Society and Professor Anders Ehrenberg, the first president of EBSA. In 2023, after a series of great EBSA meetings around Europe, the Swedish Society for Biochemistry, Biophysics and Molecular Biology (SFBBM) is again, jointly with EBSA and Protein Society, proud to host the 14th EBSA congress at Stockholm University, supported by the Swedish National Committee for Molecular Biosciences (of the Royal Swedish Academy of Sciences). In this meeting, we are honored to also collaborate with the Biophysical Society, IUPAB and SciLifeLab.",
+            "registration_url": "https://mkon.nu/ebsa/registration_form"
         },
         {
             "title": "RaukR, Advanced R for Bioinformatics workshop",
@@ -40,10 +47,26 @@
             "date_end": "2023-06-22",
             "registration_deadline": "2023-04-14",
             "venue": "Visby",
+            "location": [
+                "Visby"
+            ],
             "organisers": "NBIS",
             "event_url": "https://nbisweden.github.io/workshop-RaukR-2306/",
             "registration_url": "https://nbis.typeform.com/RaukR2023",
             "description": "Join us this June in beautiful and historic Visby to improve your R skills and have a nice time!<br><br>In Life Science and Bioinformatics, R is increasingly being used to transform and analyse data, perform statistical analysis and produce publication-ready visualisations. This workshop will focus on advanced R functionality, to increase the participants skillset and understanding of what is possible to do today.<br><br>You are very welcome to apply or see the website for more information. Please, help us spread the word to interested participants!"
+        },
+        {
+            "title": "Karolinska Institutet Medical Ethics Conference",
+            "type": "Conference",
+            "date_start": "2023-06-07",
+            "date_end": "2023-06-08",
+            "venue": "Karolinska Institute, Solna",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "Karolinska Institute",
+            "event_url": "https://news.ki.se/calendar/karolinska-institutet-medical-ethics-conference-2023",
+            "description": "Welcome to KIMEC2023, aimed at bringing together researchers in Medical Ethics in Sweden and abroad. The conference is free of charge and will take place at Karolinska Institutet on the 7th to 8th of June, 2023."
         },
         {
             "title": "1st cryoNET course on advanced single particle cryo-EM analysis",
@@ -52,6 +75,9 @@
             "date_end": "2023-06-09",
             "registration_deadline": "2023-04-13",
             "venue": "Aarhus University, Denmark",
+            "location": [
+                "Denmark"
+            ],
             "organisers": "CryoNet",
             "event_url": "https://www.scilifelab.se/event/1stfirst-cryonet-course-on-advanced-single-particle-cryo-em-analysis/",
             "registration_url": "https://www.lyyti.fi/reg/cryoNET_course",
@@ -64,10 +90,44 @@
             "date_end": "2023-06-09",
             "registration_deadline": "2023-04-15",
             "venue": "Stockholm",
+            "location": [
+                "Stockholm"
+            ],
             "organisers": "AI4Life consortium",
             "event_url": "https://www.scilifelab.se/event/hackathon-on-cloud-based-and-ai-powered-bioimage-analysis/",
             "registration_url": "https://forms.gle/gSgQx5y776wQdrEC7",
             "description": "We are proud to announce the upcoming hackathon (a.k.a. codefest) event, “Cloud-Based and AI-Powered BioImage Analysis” on June 5th-9th, 2023, at SciLifeLab, Solna. As leading partners in the AI4Life consortium, which is funded through the Horizon Europe Research Infrastructure Grant, SciLifeLab and KTH are organizing this event to bring together the computational and life science communities, shaping the future of Data-Driven Life Sciences!<br><br>In the AI4Life consortium, we focus on building web and cloud infrastructure aimed at addressing the challenges of building and deploying AI tools for bioimage analysis and making them more scalable and easily accessible from the BioImage Model Zoo.<br><br>For the hackathon, we are inviting international experts and hackers on AI-based image analysis and web & cloud infrastructure to lead discussions and form interest groups to hack on related topics. It will feature discussions on our current status and plans in building web and cloud infrastructure for running models in the BioImage Model Zoo, as well as the opportunity to form interest groups to hack on related topics in breakout sessions during the week."
+        },
+        {
+            "title": "WASP4ALL: Building the future Cyber Security landscape",
+            "type": "Conference",
+            "date_start": "2023-06-01",
+            "time_start": "10:00",
+            "time_end": "15:30",
+            "venue": "World Trade Center, Stockholm and Virtual",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "WASP",
+            "event_url": "https://wasp-sweden.org/event/wasp4all-2023-building-the-future-cyber-security-landscape/",
+            "registration_url": "https://www.lyyti.fi/reg/WASP4ALL_2023",
+            "registration_deadline": "2023-05-08",
+            "description": "WASP4ALL 2023 seeks to engage the Swedish academic and industrial research community around the importance of Cyber Security research in the context of AI, autonomous systems and software. The overall aims are to create awareness of industrial and societal needs, identify and discuss research challenges for the future and to showcase existing research in Sweden. The conference is open for researchers and research leaders from academia and industry with or without prior connection to WASP, that are interested in current Cyber Security research and the interplay between academia and industry."
+        },
+        {
+            "title": "CRISPR as a research tool in cancer and regenerative medicine",
+            "type": "Symposium",
+            "date_start": "2023-05-25",
+            "date_end": "2023-05-26",
+            "venue": "Andreas Vesalius Lecture Hall, Karolinska Institutet",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "CRISPR Functional Genomics",
+            "event_url": "https://www.scilifelab.se/event/crispr-as-a-research-tool-scilifelab-international-symposium/",
+            "registration_url": "https://reg.akademikonferens.se/app/attendee/new_registration.asp?PROJECTID=19691&CLEAR=yes&REGLINEID=112874&EDIT=off&REGLINENO=3&REGLINEPAGENO=1",
+            "registration_deadline": "2023-04-17",
+            "description": "This two-day event will bring together leading international experts in the field of CRISPR technology and CRISPR applications in basic research in cancer and regenerative medicine. Attendees will have the opportunity to gain a deeper understanding of the potential and limitations of CRISPR as a research tool, both in precision genome engineering and in massively parallel, functional genomics applications and unbiased screens."
         },
         {
             "title": "RDMkit Contentathon",
@@ -76,6 +136,9 @@
             "date_end": "2023-05-24",
             "registration_deadline": "2023-05-07",
             "venue": "Ghent, Belgium",
+            "location": [
+                "Belgium"
+            ],
             "organisers": "RDMkit",
             "event_url": "https://docs.google.com/document/d/1ddwFXIyRpDdvpZ3rUvV408kQnTCD3Qsxmi5cUl5AwKY/edit#",
             "registration_url": "https://www.eventbrite.be/e/rdmkit-contentathon-may-2023-tickets-550843105557",
@@ -88,9 +151,43 @@
             "date_end": "2023-05-16",
             "registration_deadline": "",
             "venue": "Eva von Bahr, Uppsala University",
+            "location": [
+                "Uppsala"
+            ],
             "organisers": "SciLifeLab and EMBL",
             "event_url": "https://www.scilifelab.se/event/embl-scilifelab-data-science-workshop/",
             "description": "We would like to cordially invite members of the SciLifeLab and EMBL Communities to this workshop! This event will bring together researchers, scientific and technical staff at the EMBL and SciLifeLab, to make new acquaintances and collaborations and to learn and be inspired by each other.<br><br>The workshop program starts at 09:00 on May 15 and ends after lunch on May 16.<br><br>The workshop will be a hybrid event enabling participation to the wider community at all EMBL and SciLifeLab sites.<br><br>Looking forward to meeting you in Uppsala in May!"
+        },
+        {
+            "title": "The future of AI – Ethical and political challenges",
+            "type": "Lecture",
+            "date_start": "2023-05-02",
+            "time_start": "16:15",
+            "time_end": "17:30",
+            "venue": "The Humanities Theatre, Thunbergsvägen 3, Uppsala",
+            "location": [
+                "Uppsala"
+            ],
+            "organisers": "Department of Informatics and Media & Department of Business Studies",
+            "event_url": "https://www.uu.se/en/support/alumni-network/events/event-detail/?eventId=78090",
+            "registration_deadline": "2023-04-27",
+            "description": "From text generators to self-driving cars, artificial intelligence (AI) is shaping our societies. What are the ethical and political challenges faced by the use and development of these technologies? Who is responsible when something goes wrong? Will many of us lose our jobs? And is AI bad for democracy? Can AI save the planet?<br><br>In this talk, Mark Coeckelbergh draws on his recent work on the ethics and politics of AI to give us an overview and a vision about the future of AI and digital technologies, that is, of our common future.<br><br><b>Please register</b> for participation by email to magnus.strand@fek.uu.se, no later than 27 April 2023."
+        },
+        {
+            "title": "Workshop in biostatistics & bioinformatics",
+            "type": "Workshop",
+            "date_start": "2023-04-28",
+            "time_start": "13:00",
+            "time_end": "18:00",
+            "venue": "Neo, Blickagången 16, room: Gene & DNA",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "Karolinska Institutet",
+            "event_url": "https://news.ki.se/calendar/workshop-in-biostatistics-bioinformatics",
+            "registration_url": "https://forms.office.com/pages/responsepage.aspx?id=8e73v0vPMk--PaHdoEPAXQKnroo7b2JIsOTwoDhbyWlUM0U2TFpNQjRCWU41OTFRVTI0RTEyQTlaNC4u",
+            "registration_deadline": "2023-04-21",
+            "description": "Centre for bioinformatics and biostatistics arranges a workshop in biostatistics and bioinformatics. The workshop will be separated into two groups, one about bioinformatics and another one about biostatistics. <br><br><ul><li>The bioinformatics workshop will cover 'Scientific data: plan for handling and depositing'.</li><li>The biostatistics workshop will cover 'Statistical power: analysis and inference'.</li></ul>"
         },
         {
             "title": "RDM Training and Tools working group",
@@ -99,6 +196,9 @@
             "time_start": "10:00",
             "time_end": "12:00",
             "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
             "organisers": "SciLifeLab Data Centre",
             "event_url": "https://www.lyyti.fi/reg/ttwg8",
             "registration_url": "https://www.lyyti.fi/reg/ttwg8",
@@ -110,7 +210,10 @@
             "date_start": "2023-04-25",
             "time_start": "14:00",
             "time_end": "15:00",
-            "venue": "Zoom",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
             "organisers": "NBIS",
             "event_url": "https://nbis.se/events/",
             "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
@@ -122,6 +225,9 @@
             "date_end": "2023-04-28",
             "registration_deadline": "2023-03-31",
             "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
             "organisers": "NBIS",
             "event_url": "https://uppsala.instructure.com/courses/82575",
             "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSfV_15s0x3KKj9uNw61_Q2N45Glmdvkm4LjFqhwYmL_IBc9xA/viewform",
@@ -134,6 +240,9 @@
             "date_end": "2023-04-28",
             "registration_deadline": "2023-04-24",
             "venue": "Navet, SciLifeLab, Uppsala",
+            "location": [
+                "Uppsala"
+            ],
             "organisers": "NBIS",
             "event_url": "https://uppsala.instructure.com/courses/74597",
             "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLScTNapdU6hm6cWB2CsDWHsC2KouhSbsW4zDvE4jjUggo6AGtg/viewform",
@@ -146,10 +255,44 @@
             "date_end": "2023-04-25",
             "registration_deadline": "2023-04-12",
             "venue": "BMC, The Svedberg Lecture Hall (B8)",
+            "location": [
+                "Uppsala"
+            ],
             "organisers": "NGI (Uppsala), SNP&SEQ Technology platform",
             "event_url": "https://www.scilifelab.se/event/three-decades-of-genomics-from-pcr-to-precision-medicine/",
             "registration_url": "https://www.lyyti.fi/reg/Three_Decades_of_Genomics",
             "description": "Professor emeritus Ann-Christine Syvänen moved from Helsinki, Finland to Uppsala in 1998. In 2001 she was appointed professor in Molecular Medicine at the Department of Medical Sciences at Uppsala University. After 20 years as a research group leader and director of the SNP&SEQ Technology Platform, followed by five years as senior professor at Uppsala University, she retired in 2022. This open symposium brings together her former colleagues from Finland, as well as coworkers and former students in Uppsala to celebrate the progress in Human Genomics during the past three decades and future prospects for Genomics in Precision Medicine."
+        },
+        {
+            "title": "Strategies and tactics for protecting digital IP such as AI Applications",
+            "type": "Seminar",
+            "date_start": "2023-04-19",
+            "time_start": "09:30",
+            "time_end": "11:00",
+            "venue": "Nobels Vag 12B, Solna and Online",
+            "location": [
+                "Stockholm",
+                "Online"
+            ],
+            "organisers": "MedTechLabs",
+            "event_url": "https://www.medtechlabs.se/kalender/kalender/strategies-and-tactics-for-protecting-digital-ip-such-as-ai-applications-1.1240975",
+            "registration_url": "https://www.kth.se/form/641aca48fb06ea3cb9257ddc",
+            "description": "Focusing on life science technologies, we analyse and present strategies for scientists to accelerate their ability to find and protect digital inventions. The Seminar will include tactics and practical tips on patenting or other ways to extract business opportunities from science related to digital technologies. It will have a focus on digital life sciences but can be beneficial for digital applications in any technical field."
+        },
+        {
+            "title": "Meet a Data Steward & get Data Management support",
+            "type": "Support session",
+            "date_start": "2023-04-18",
+            "time_start": "15:00",
+            "time_end": "16:00",
+            "venue": "Navet E10:2309, BMC, Uppsala and Online via Zoom",
+            "location": [
+                "Uppsala",
+                "Online"
+            ],
+            "organisers": "SciLifeLab Data Centre, NBIS",
+            "event_url": "https://www.scilifelab.se/event/meet-a-data-steward/",
+            "description": "Join SciLifeLab Data Centre and NBIS for a 15 min mini-lecture: “What does FAIR mean to you?” Join us to listen to Sara El-Gebali, project lead for metadata and curation at SciLifeLab Data Centre, RDA Domain Ambassador for life science and founder of FAIRPoints, explain how FAIR data does not always mean open. After the mini-lecture there is time for a general Q & A for 45 minutes. Join us on Zoom or on-site at BMC, Uppsala in E10:2309."
         },
         {
             "title": "KI SciLifeLab Symposium",
@@ -159,6 +302,9 @@
             "time_end": "17:00",
             "registration_deadline": "2023-04-06",
             "venue": "Nobel Forum, Solna",
+            "location": [
+                "Stockholm"
+            ],
             "organisers": "Karolinska Institutet",
             "event_url": "https://www.scilifelab.se/event/ki-scilifelab-symposium/",
             "registration_url": "https://survey.ki.se/KISciLifeLabSymposium2023",
@@ -171,6 +317,9 @@
             "date_end": "2023-04-20",
             "registration_deadline": "2023-03-10",
             "venue": "Navet, SciLifeLab, Uppsala",
+            "location": [
+                "Uppsala"
+            ],
             "organisers": "NBIS",
             "event_url": "https://uppsala.instructure.com/courses/78709",
             "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSezMsYRvJ0F-GKFKL1cPG6TjxsbtksutOjUTxgcyyL_WXhTXA/viewform",
@@ -182,7 +331,10 @@
             "date_start": "2023-04-18",
             "time_start": "14:00",
             "time_end": "15:00",
-            "venue": "Zoom",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
             "organisers": "NBIS",
             "event_url": "https://nbis.se/events/",
             "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
@@ -194,6 +346,9 @@
             "time_start": "09:00",
             "time_end": "17:00",
             "venue": "Conference Centre Wallenberg",
+            "location": [
+                "Gothenburg"
+            ],
             "organisers": "SciLifeLab Gothenburg",
             "event_url": "https://www.scilifelab.se/event/scilifelab-day-gothenburg/",
             "registration_url": "https://www.lyyti.fi/reg/SciLifeLab_Day_Gothenburg",
@@ -206,10 +361,28 @@
             "date_end": "2023-04-19",
             "registration_deadline": "2023-03-31",
             "venue": "Retina D227, Biologihuset, Lund",
+            "location": [
+                "Lund"
+            ],
             "organisers": "NBIS",
             "event_url": "https://uppsala.instructure.com/courses/46547",
             "registration_url": "https://forms.gle/D2GFZJUVBE5FswjD7",
             "description": "This course aims to help researchers to visualize their data in different ways using R. This course will teach how to produce publication grade figures using R. A part of this course is also about making interactive plots that the researchers can view and share in a web-server to make interactive visualizations of their data."
+        },
+        {
+            "title": "Antibiotic resistance – joint actions towards sustainable solutions",
+            "type": "Symposium",
+            "date_start": "2023-04-13",
+            "time_start": "13:00",
+            "time_end": "17:00",
+            "venue": "Universitetshuset, sal IX, Uppsala University",
+            "location": [
+                "Uppsala"
+            ],
+            "organisers": "Uppsala University, Uppsala Antibiotic Center and the Göran Gustafsson Foundations",
+            "event_url": "https://www.uu.se/en/support/alumni-network/events/event-detail/?eventId=76628",
+            "registration_url": "https://doit.medfarm.uu.se/bin/kurt3/kurt/85487",
+            "description": "Welcome to a symposium on antibiotic resistance together with the 2023 Göran Gus­tafs­son lecture in medi­cine. Every year, Uppsala University, together with the The Göran Gustafsson Foundation, invites an inter­national­ly renowned research­er in medicine to give a lecture. This year’s lecture and symposium is given in collaboration with Uppsala University’s Uppsala Antibiotic Center."
         },
         {
             "title": "NBIS Weekly Bioinformatics Drop-in",
@@ -217,7 +390,10 @@
             "date_start": "2023-04-11",
             "time_start": "14:00",
             "time_end": "15:00",
-            "venue": "Zoom",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
             "organisers": "NBIS",
             "event_url": "https://nbis.se/events/",
             "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
@@ -228,270 +404,13 @@
             "date_start": "2023-04-04",
             "time_start": "14:00",
             "time_end": "15:00",
-            "venue": "Zoom",
-            "organisers": "NBIS",
-            "event_url": "https://nbis.se/events/",
-            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
-        },
-        {
-            "title": "NBIS Weekly Bioinformatics Drop-in",
-            "type": "Support session",
-            "date_start": "2023-03-28",
-            "time_start": "14:00",
-            "time_end": "15:00",
-            "venue": "Zoom",
-            "organisers": "NBIS",
-            "event_url": "https://nbis.se/events/",
-            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
-        },
-        {
-            "title": "Regional Mass Spectrometry Imaging Spring Workshop",
-            "type": "Workshop",
-            "date_start": "2023-03-27",
-            "date_end": "2023-03-29",
-            "venue": "Uppsala Konsert & Kongress",
-            "organisers": "Spatial Mass Spectrometry, SciLifeLab",
-            "event_url": "https://www.apotekarsocieteten.se/produkt/regional-mass-spectrometry-imaging-spring-workshop/?lang=en",
-            "description": "The scientific program will aim to reflect cutting edge innovations and current developments in mass spectrometry imaging (MSI), alongside new applications in various areas. The goal for this workshop is to promote and educate academic, industry and government scientists on the latest applications and innovations in MSI applied to biomedical, biological and data science research areas.<br><br>A three-day scientific agenda with oral presentations, workshop discussions, and poster presentations covering the latest developments and applications of MSI by leading and upcoming scientists from academic, government, and industry labs."
-        },
-        {
-            "title": "Data-driven life science and the RDA: Leveraging global data communities in regional initiatives and cross-border infrastructures",
-            "type": "Workshop",
-            "date_start": "2023-03-24",
-            "time_start": "09:00",
-            "date_end": "2023-03-24",
-            "time_end": "13:00",
-            "venue": "Lindholmen Conference Center",
-            "organisers": "ELIXIR and SciLifeLab",
-            "event_url": "https://www.scilifelab.se/event/ddls_rda2023/",
-            "registration_url": "https://www.lyyti.fi/reg/ddls_rda",
-            "description": "This workshop will showcase how to leverage the Research Data Alliance (RDA) to support life science research today and what role the RDA and international data infrastructures can play in the transition to an increasingly data-driven research practice. It is organised by ELIXIR, NBIS and the Science for Life Laboratory (SciLifeLab) and includes speakers on life science data & interoperability, stakeholder engagement, and liaison strategies with the RDA.<br><br>The workshop aims to promote and refine strategies for liaising with global communities and in particular the RDA to develop and adopt solutions for data-driven life science research. The intended audience is research communities, regional research infrastructures and cross-border infrastructure collaborations. However, registration is open to everyone who is involved in furthering shared principles and standards for life science research data. To accommodate a dynamic and diverse group of participants, the workshop is hosted as a hybrid event, accepting participants on-site in Gothenburg, Sweden or online via Zoom."
-        },
-        {
-            "title": "Sharing, showcasing and understanding the impact of non-traditional research outputs",
-            "type": "Webinar",
-            "date_start": "2023-03-21",
-            "time_start": "11:00",
-            "venue": "Online",
-            "organisers": "Digital Science",
-            "event_url": "https://www.digital-science.com/events/non-traditional-research-outputs/?utm_source=pardot&utm_medium=email&utm_campaign=webinars_23&utm_term=figshare",
-            "description": "Research outputs are no longer just academic papers and datasets. Arts performances, conceptual designs, music scores, costumes, models and all other non-traditional research outputs can and should be shared, showcased and tracked. Join us for this webinar on non-traditional research outputs with Figshare and Altmetric."
-        },
-        {
-            "title": "NBIS workshop on Neural Nets and Deep Learning",
-            "type": "Workshop",
-            "date_start": "2023-03-20",
-            "date_end": "2023-03-24",
-            "venue": "Navet, SciLifeLab Uppsala",
-            "organisers": "NBIS",
-            "event_url": "https://uppsala.instructure.com/courses/75565",
-            "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLSfcZ8OCHp4Fee12uspuLoO0p0ISOJU3Bnp7ToRZtyCYvV9Z-Q/viewform?usp=send_form",
-            "description": "This intense one-week workshop provides an introduction to the analysis of next generation sequencing data. The workshop is open to PhD students, post-docs, and other researchers affiliated to Swedish academia and healthcare. It is organised by the National Bioinformatics Infrastructure Sweden (NBIS) and National Genomics Infrastructure (NGI)."
-        },
-        {
-            "title": "ENLIGHT Workshop Connecting Digital Research Infrastructures with European Infrastructures - Experiences and Lessons Learned",
-            "type": "Workshop",
-            "date_start": "2023-03-15",
-            "time_start": "09:00",
-            "time_end": "12:00",
-            "registration_deadline": "2023-03-11",
-            "venue": "Zoom",
-            "organisers": "ENLIGHT",
-            "event_url": "https://enlight-eu.org/university-about-us/news-events/710-enlight-workshop-2-on-connecting-digital-research-infrastructures-with-european-infrastructures-experiences-and-lessons-learned-15-march-2023",
-            "registration_url": "https://doit.medfarm.uu.se/bin/kurt3/kurt/87824",
-            "description": "The workshop will explain, in some depth, the steps, regulations, workload, challenges, needs and possibilities regarding the connection of digital research infrastructures with European infrastructures (such as disciplinary research infrastructures or the European Open Science Cloud) by looking at selected examples."
-        },
-        {
-            "title": "Meet a Data Steward & get Data Management support",
-            "type": "Support session",
-            "date_start": "2023-03-14",
-            "time_start": "15:00",
-            "date_end": "2023-03-14",
-            "time_end": "16:00",
-            "venue": "Uppsala Navet E10:2309 & Online via Zoom",
-            "organisers": "SciLifeLab Data Centre and NBIS",
-            "event_url": "https://www.scilifelab.se/event/meet-a-data-steward/",
-            "description": "Join SciLifeLab Data Centre and NBIS for a 15 min mini-lecture: “Want to know which services for researchers and infrastructure SciLifeLab Data Centre offers? Join us for a session about SciLifeLab Data Platform, SciLifeLab Data Repository, Storage, Compute and more. After the mini-lecture there is time for a general Q & A for 45 minutes. Join us on Zoom or on-site at BMC, Uppsala in E10:2309.<br><br>The NEW “Meet a data steward” sessions are held both at BMC Uppsala and online and are open for all researchers affiliated with a Swedish university or institute. Each event starts with a 15 minutes mini-lecture, and 45 minutes of free Q & A.  Here you can bring your own research question, discuss data sharing, data repositories, data management plans, compute and storage or other data-related issues with data stewards and other experts from SciLifeLab Data Centre and NBIS."
-        },
-        {
-            "title": "NBIS Weekly Bioinformatics Drop-in",
-            "type": "Support session",
-            "date_start": "2023-03-14",
-            "time_start": "14:00",
-            "date_end": "2023-03-14",
-            "time_end": "15:00",
-            "venue": "Zoom",
-            "organisers": "NBIS",
-            "event_url": "https://nbis.se/events/",
-            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
-        },
-        {
-            "title": "RNAseq data analysis",
-            "type": "Course",
-            "date_start": "2023-03-13",
-            "date_end": "2023-03-16",
-            "venue": "Online",
-            "organisers": "NBIS",
-            "event_url": "https://uppsala.instructure.com/courses/77082",
-            "registration_url": "https://uppsala.instructure.com/courses/77082",
-            "description": "This workshop will introduce the best practice bioinformatics methods for processing and analyses of RNA-seq data via a series of online lectures and computer practicals."
-        },
-        {
-            "title": "NBIS Weekly Bioinformatics Drop-in",
-            "type": "Support session",
-            "date_start": "2023-03-07",
-            "time_start": "14:00",
-            "date_end": "2023-03-07",
-            "time_end": "15:00",
-            "venue": "Zoom",
-            "organisers": "NBIS",
-            "event_url": "https://nbis.se/events/",
-            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
-        },
-        {
-            "title": "Networking Meeting Between the Wallenberg Programs WASP-HS and Data-Driven Life Science (DDLS)",
-            "type": "Meeting",
-            "date_start": "2023-03-06",
-            "time_start": "14:00",
-            "time_end": "15:30",
-            "venue": "Zoom (online)",
-            "organisers": "DDLS Support Team",
-            "event_url": "https://www.scilifelab.se/event/networking-meeting-between-the-wallenberg-programs-wasp-hs-and-data-driven-life-science-ddls/",
-            "description": "The purpose of this on-line meeting is to explore opportunities for joint and multidisciplinary research ventures between researchers working within data-driven life science and researchers from the humanities and social sciences working on Artificial Intelligence and Autonomous Systems. The meeting is divided in two parts, one with focus on information, where an upcoming call for seed-money for cross-program research collaborations will be announced and one part with focus on networking."
-        },
-        {
-            "title": "NBIS Weekly Bioinformatics Drop-in",
-            "type": "Support session",
-            "date_start": "2023-02-28",
-            "time_start": "14:00",
-            "date_end": "2023-02-28",
-            "time_end": "15:00",
-            "venue": "Zoom",
-            "organisers": "NBIS",
-            "event_url": "https://nbis.se/events/",
-            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
-        },
-        {
-            "title": "FAIRPoints-FAIRPoints ‘Ask me Anything’ (AMA)",
-            "type": "Meeting",
-            "date_start": "2023-02-21",
-            "time_start": "11:00",
-            "time_end": "12:30",
             "venue": "Online event via Zoom",
-            "organisers": "FAIRPoints",
-            "event_url": "https://www.scilifelab.se/event/fairpoints-fairpoints-ask-me-anything-ama-2/",
-            "registration_url": "https://us06web.zoom.us/meeting/register/tZMvceCqqDooEtOPE_mH74puIdD2Ajo4qB3v",
-            "description": "The theme of this session is “FAIRPoints ‘Ask Me Anything’ on Software and Workflows.” We will be discussing the FAIRification of software and workflows and how it looks like, the available tools/infrastructures that support this process, why FAIRification is important and how it is applicable to researchers. Speakers include Carole Goble and Paula Martinez.<br><br>The events will bring together speakers from the RDA Groups and speakers from a related EOSC service to describe how their work aligns, how it connects to the research community, and how it benefits the research community in a way that is directly related to the implementation of FAIR and Open research practices. The events are beginner-friendly, laid-back, and easy to follow, with moderators driving the discussion, posing questions to our speakers, and inviting audience questions. Finally a selection of questions will be gathered and turned into Google Educational Q&A flashcards (https://schema.org/QAPage) for future reference."
-        },
-        {
-            "title": "NBIS Weekly Bioinformatics Drop-in",
-            "type": "Support session",
-            "date_start": "2023-02-21",
-            "time_start": "14:00",
-            "date_end": "2023-02-21",
-            "time_end": "15:00",
-            "venue": "Zoom",
+            "location": [
+                "Online"
+            ],
             "organisers": "NBIS",
             "event_url": "https://nbis.se/events/",
             "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
-        },
-        {
-            "title": "NBIS Weekly Bioinformatics Drop-in",
-            "type": "Support session",
-            "date_start": "2023-02-14",
-            "time_start": "14:00",
-            "date_end": "2023-02-14",
-            "time_end": "15:00",
-            "venue": "Zoom",
-            "organisers": "NBIS",
-            "event_url": "https://nbis.se/events/",
-            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
-        },
-        {
-            "title": "Meet a Data Steward & get Data Management support (Uppsala/online)",
-            "type": "Support session",
-            "date_start": "2023-02-07",
-            "time_start": "15:00",
-            "date_end": "2023-02-07",
-            "time_end": "16:00",
-            "venue": "Navet E10:2309 & Online via Zoom",
-            "organisers": "SciLifeLab Data Centre and NBIS",
-            "event_url": "https://www.scilifelab.se/event/meet-a-data-steward/",
-            "description": "Join SciLifeLab Data Centre and NBIS for a 15 min mini-lecture: Need to setup a DMP? Join us for a session about DMPs and the SciLifeLab Data Stewardship Wizard tool. After the mini-lecture there is time for a general Q & A for 45 minutes. Join us on Zoom or on-site at BMC, Uppsala in E10:2309.<br><br>The NEW 'Meet a data steward sessions' are held both at BMC, Uppsala and online and are open for all researchers affiliated with a Swedish university or institute. Each event starts with a 15 minutes mini-lecture, and 45 minutes of free Q & A.  Here you can bring your own research question, discuss data sharing, data repositories, data management plans, compute and storage or other data-related issues with data stewards and other experts from SciLifeLab Data Centre and NBIS."
-        },
-        {
-            "title": "Introduction to bioinformatics using NGS data",
-            "type": "Workshop",
-            "date_start": "2023-02-06",
-            "date_end": "2023-02-10",
-            "venue": "Uppsala, Lund, Umeå, online",
-            "organisers": "NBIS",
-            "event_url": "https://uppsala.instructure.com/courses/76870",
-            "registration_url": "https://nbis.typeform.com/to/Opw0vIlH",
-            "description": "This intense one-week workshop provides an introduction to the analysis of next generation sequencing data. The workshop is open to PhD students, post-docs, and other researchers affiliated to Swedish academia and healthcare. It is organised by the National Bioinformatics Infrastructure Sweden (NBIS) and National Genomics Infrastructure (NGI)."
-        },
-        {
-            "title": "Single cell RNAseq data analysis",
-            "type": "Course",
-            "date_start": "2023-01-30",
-            "date_end": "2023-02-03",
-            "venue": "Air&Fire, SciLifeLab Stockholm",
-            "organisers": "NBIS",
-            "event_url": "https://www.scilifelab.se/event/single-cell-rnaseq-data-analysis/",
-            "registration_url": "https://docs.google.com/forms/d/e/1FAIpQLScdZxbA-13IuuYdMSQsLjLmNK-53DWsbZNMJbddZ4yKd6iDBA/viewform",
-            "description": "This workshop will introduce the best practice bioinformatics methods for processing and analyses of single cell RNA-seq data. The total course duration is 5 days, including the lectures and practical exercises that will be held on site in Stockholm."
-        },
-        {
-            "title": "WASP and DDLS networking event",
-            "type": "Webinar",
-            "date_start": "2023-01-27",
-            "time_start": "11:00",
-            "date_end": "2023-01-27",
-            "time_end": "14:00",
-            "venue": "Online event via Zoom (mingle onsite)",
-            "organisers": "SciLifeLab DDLS and WASP",
-            "event_url": "https://www.scilifelab.se/event/wasp-and-ddls-networking-event-january-2023/",
-            "registration_url": "https://www.lyyti.fi/reg/WASP_and_DDLS_event_January_2023",
-            "description": "This networking event welcomes everyone that wants to learn more about the second WASP-DDLS joint call for research projects. The event will start with an open Zoom meeting that will give an introduction to the new call and also highlight lessons learned from previous approved projects. The digital introduction will be followed by on-site network meetings at different university sites."
-        },
-        {
-            "title": "FAIRPoints-FAIRPoints ‘Ask me Anything’ (AMA)",
-            "type": "Meeting",
-            "date_start": "2023-01-26",
-            "time_start": "11:00",
-            "date_end": "2023-01-26",
-            "time_end": "13:00",
-            "venue": "Online event via Zoom",
-            "organisers": "FAIRPoints",
-            "event_url": "https://www.scilifelab.se/event/fairpoints-fairpoints-ask-me-anything-ama/",
-            "registration_url": "https://www.lyyti.fi/reg/fairpoints_ama",
-            "description": "The theme of this session is 'FAIRPoints ‘Ask Me Anything’ on Identifiers.' We will be discussing the different types of identifiers available, their importance in creating FAIR Digital Objects, and how they can be applied and integrated into research practices. Speakers include Maggie Hellström, Peter Wittenberg, Matthew Buys, and moderated by Natasha Simons, Nabil Ksibi, Patricia Herterich.<br><br>The events will bring together speakers from the RDA Groups and speakers from a related EOSC service to describe how their work aligns, how it connects to the research community, and how it benefits the research community in a way that is directly related to the implementation of FAIR and Open research practices. The events are beginner-friendly, laid-back, and easy to follow, with moderators driving the discussion, posing questions to our speakers, and inviting audience questions. Finally a selection of questions will be gathered and turned into Google Educational Q&A flashcards (https://schema.org/QAPage) for future reference."
-        },
-        {
-            "title": "Evolution in Sweden 2023",
-            "type": "Symposium",
-            "date_start": "2023-01-10",
-            "time_start": "10:00",
-            "date_end": "2023-01-12",
-            "time_end": "14:30",
-            "venue": "Friessalen",
-            "organisers": "DDLS",
-            "event_url": "https://www.scilifelab.se/event/evolution-in-sweden-2023/",
-            "registration_url": "https://www.lyyti.in/_3494",
-            "description": "Evolution in Sweden is a biannual meeting, which broadly gathers evolutionary biologists working in Sweden. The meeting was held in Uppsala 2014, Lund 2016, Stockholm 2018, and Gothenburg 2020. The host for 2023 is Evolutionary Biology Centre, at Uppsala University. The meeting is aimed to be a broad meeting on every aspect of evolutionary biology of all forms of life on Earth. However, please note that the meeting is restricted to scientists active in Swedish academic departments.<br><br>This year the Evolution in Sweden conference is organized together with the Evolution and Biodiversity research area from the Data-driven life science program (DDLS), part of a 12-year SEK 3.1 billion initiative from the Knut and Alice Wallenberg Foundation. We encourage researchers working with analysis of large data sets in the fields of evolution and biodiversity to attend."
-        },
-        {
-            "title": "User Experience (UX) Design to build intuitive web applications for life science research",
-            "type": "Webinar",
-            "date_start": "2023-01-10",
-            "time_start": "14:00",
-            "date_end": "2023-01-10",
-            "time_end": "15:00",
-            "venue": "Online event via Zoom",
-            "organisers": "SciLifeLab Data Centre and NBIS",
-            "event_url": "https://www.scilifelab.se/event/user-experience-ux-design-to-build-intuitive-web-applications-for-life-science-research/",
-            "registration_url": "https://uu-se.zoom.us/webinar/register/WN_4QpeAQk4QmCCx5cv7O6_Xw",
-            "description": "This online webinar will showcase the basic User Experience (UX) Design principles with lessons learned from adopting them to build web applications in a life science research environment. The event is organised and hosted by NBIS and SciLifeLab with an invited speaker and Senior UX Designer from the European Bioinformatics Institute (EMBL-EBI).<br><br>The webinar aims to highlight some of the basic principles of User Experience (UX) Design, to demonstrate how they provide value in the development process and to guide participants to resources for adopting UX Design practices in their own projects. While the intended audience is NBIS and SciLifeLab staff the registration is open to everyone interested in developing web applications and services for life science research. Registration is required to receive instructions and connection details for the event."
         }
     ]
 }
