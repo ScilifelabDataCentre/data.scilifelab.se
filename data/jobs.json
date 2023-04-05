@@ -21,7 +21,7 @@
             "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
         },
         {
-            "title": "Postdoctoral position (2 years) in Metabolomics",
+            "title": "Postdoctoral position in Metabolomics",
             "type": [
                 "Postdoc position"
             ],
@@ -68,7 +68,7 @@
             "app_deadline": "2023-04-27",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=603737",
-            "description": "The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage."
+            "description": "Professor Mia Phillipson's research group consists of about 15 people. The group's research is mainly focusing on revealing novel functions of immune cells, and to find means to control and regulate these functions during e.g. organ development, regulation of homeostasis, tissue regeneration, blood vessel formation and inflammation using intravital imaging, functional studies and multiomics approaches. Among the most important discoveries of the Phillipson group are the alternative roles of immune cells in restoration of blood perfusion following ischemic injury and transplantation, as well as during wound healing. Following their discoveries of how to regulate these immune cell functions, a spin-off company (Ilya Pharma) was founded to develop immunotherapies accelerating healing of wounds in skin and mucosa now in clinical phase 2.<br><br>The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage. "
         },
         {
             "title": "Bibliotekarie inriktning publicering och öppen vetenskap",
@@ -140,7 +140,6 @@
             "job_url": "https://ki.varbi.com/en/what:job/jobID:612837/",
             "description": "You will develop and lead projects that aim to build novel phylogenetic models and methods, and also (optionally) work on the application of diffusion denoising models to new problems. You will contribute to various ongoing projects in the lab."
         },
-
         {
             "title": "Laboratory assistant",
             "type": [
@@ -189,7 +188,7 @@
             "app_deadline": "2023-04-11",
             "employer": "Gothenburg University",
             "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=6&lang=SE&validator=3038fcf1516ea1184a6da70a891f87da&ref=https%3A%2F%2Farbetsformedlingen.se%2Fplatsbanken%2F&job_id=29696",
-            "description": "Anställningen är placerad vid Forsknings- och innovationskontoret, som har 35 medarbetare organiserade i tre övergripande ansvarsområden - forskningsstöd, affärsjuridik samt innovation & nyttiggörande. Visionen för Forsknings- och innovationskontoret är att leverera forskningsstöd i världsklass och att vara ett föredöme och en inspirationskälla för andra stödverksamheter. Vid Forsknings- och innovationskontoret  ges såväl operativt som strategiskt stöd till främst forskare och ledningsfunktioner i olika frågor. Anställningsplaceringen möjliggör interaktion med forskningsrådgivare, innovationsrådgivare och jurister. Forsknings- och innovationskontoret är en enhet inom Gemensamma förvaltningen på Göteborgs universitet."
+            "description": "Forskningskoordinatorns uppdrag är att ge stöd till forskarna inom WCMTM och föreståndaren genom att bidra till att: <ul><li>Stödja de rekryterade forskarna i deras arbete med att utveckla sin forskning vid Göteborgs universitet.</li><li>Koordinera centrats aktiviteter med övriga WCMM i Lund, Linköping och Umeå.</li><li>Samordna arbetet inom WCMTM med DDLS och SciLifeLab.</li><li>Koordinera samarbetet med ingående partners Västra Götalandsregionen och AstraZeneca.</li></ul>Rollen omfattar alltifrån framtagande av dokumentation, rapportskrivande, planering och koordinering av mötes- och seminarieprogram, spridning och presentation av information. Kort sagt att driva centrumets aktiviteter enligt plan.<br><br>Du kommer att ingå i ett kansli med flera stödfunktioner – som är placerad vid Forsknings -och innovationskontoret där gruppmedlemmarna avlastar och stödjer varandra och gemensamt bidrar till en kreativ och inbjudande arbetsmiljö.<br><br>Även andra arbetsuppgifter kan förekomma och anställningen innehåll och förutsättningar kan komma att förändras över tiden."
         }
     ]
 }
