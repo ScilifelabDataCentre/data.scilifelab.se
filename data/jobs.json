@@ -21,6 +21,147 @@
             "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
         },
         {
+            "title": "Postdoctoral position (2 years) in Metabolomics",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-05-12",
+            "employer": "Umeå University",
+            "job_url": "https://www.umu.se/en/work-with-us/open-positions/postdoctoral-position-2-years-in-metabolomics_611177/",
+            "description": "A great opportunity for a postdoctoral candidate seeking to work in a strong research environment with excellent analytical resources and with a very high degree of independence! We are now recruiting a postdoctoral scientist to the Swedish metabolomic Centre (SMC) that supports researchers active at Swedish universities with mass spectrometry-based analysis of metabolites and lipids in biological tissues and fluids and aims to be a leading knowledge center in metabolomics and related areas. At the metabolomics platform, specialized personnel work and the platform has mass spectrometry equipment such as GC -TOFMS, LC-QTOFMS and LC-TQMSMS. Starting date 2023-09-01 or according to agreement."
+        },
+        {
+            "title": "Postdoctoral position in Statistical Design of Experiments/Statistical Sampling",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-05-02",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=607267",
+            "description": "The project involves fundamental research on statistical design of experiments incorporating fairness constraints. The goal of the project is to build algorithms to generate both – one-shot and sequential design of experiments that result in balanced sampling properties, with fairness and equal opportunities aspects taken into account. The developed approaches will be used for designing microbiome studies. As a proof-of-concept, we will leverage available large-scale datasets such as the SCAPIS or SIMPLER cohorts from which to extract balanced and fair case-control cohorts. The position may also involve teaching activities (up to 20%) and opportunities for supervising students in second-cycle education."
+        },
+        {
+            "title": "1-3 System developers/DevOps",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-28",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=612618",
+            "description": "SciLifeLab Data Centre is looking for motivated and knowledgeable System developers to join our team. Within the new national data platform for SciLifeLab and the DDLS program, we build services for service units and research groups within life science. As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field. The work will include both new development, existing software components and commercial systems."
+        },
+        {
+            "title": "1-3 Data stewards",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-28",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=614051",
+            "description": "SciLifeLab Data Centre is looking for motivated and knowledgeable Data stewards, to join our Data management team. As a data steward, you are expected to participate in user support and development of data services, with a focus on research data management following the FAIR principles, metadata management and data curation, communication with users, and training activities."
+        },
+        {
+            "title": "Bioinformatician",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-27",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=603737",
+            "description": "The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage."
+        },
+        {
+            "title": "Bibliotekarie inriktning publicering och öppen vetenskap",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-17",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/jobb/detaljsida/?positionId=612086",
+            "description": "Vi söker dig som vill vara med och vidareutveckla bibliotekets utåtriktade arbete med publicering och öppen vetenskap. Du kommer att samarbeta med kollegor inom biblioteket som arbetar med publiceringsfrågor, forskningsdata, bibliometri och ett kontaktskapande forskarstöd. Du har ett stort intresse för frågor om öppen vetenskap och drivs av en vilja att hjälpa forskare att tillgängliggöra sin forskning."
+        },
+        {
+            "title": "Forskningsassistent inom strukturbestämning och analys",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-17",
+            "employer": "Linköping University",
+            "job_url": "https://www.scilifelab.se/career/forskningsassistent-inom-strukturbestamning-och-analys/",
+            "description": "Du kommer att utveckla en beräkningsplattform för experimentell makromolekylär strukturbestämning och analys. Du kommer att arbeta med att utveckla en databas och python API för att hantera utskick av uppgifter och ge en överblick över dataflöden genom olika jobb. Du kommer att utveckla en webbaserad frontend för att hantera arbetsflöden, tillhandahålla visuella sammanfattningar av uppgiftsutdata och bygga instrumentpaneler för att ge olika vyer av databasen. Sökande med kunskap om maskininlärning och statistik kommer att designa nya uppgifter för att förhöra och visualisera data."
+        },
+        {
+            "title": "System Developer",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-16",
+            "employer": "Karolinska Institute",
+            "job_url": "https://ki.varbi.com/what:job/jobID:610078/type:job/where:1/apply:1",
+            "description": "KI and SciLifeLab Data Centre are looking for a motivated and knowledgeable System developer specialized towards precision medicine and diagnostics, with placement at KI’s Research Data Office (RDO) in Solna. As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field."
+        },
+        {
+            "title": "Postdoc in Robotics and AI-powered Microscopy Imaging",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-14",
+            "employer": "KTH",
+            "job_url": "https://kth.varbi.com/what:job/jobID:609903/type:job/where:1/apply:1",
+            "description": "The aim of the project is to build a smart microscopy imaging farm for massive production of image data. It consists of multiple microscopes and fluidic systems, robotic arms, liquid handling robots and automatic incubators. The farm will be used for performing automated widefield/fluorescence imaging, long-term live cell imaging, tracking, spatial-omics and multiplexing imaging. With the AI-powered control software, data are analyzed in real-time, augmented views are added on the fly. By generating feedback control signals to control the microscope, the software will automatically change field-of-views, illumination power and other experimental conditions in order to optimize the phototoxicity and capture rare events in live cells."
+        },
+        {
+            "title": "Postdoctoral fellow in cancer genomics and bioinformatics",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-14",
+            "employer": "Gothenburg University",
+            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=29632",
+            "description": "In this project, you will develop computational methods and workflows to analyze genetic variants in whole-exome and whole-genome sequencing data. You will also work with multi-omic data integration. The workflows will be implemented in high-performance computing platform. You will work closely with PhD students and other postdocs, and international collaborators."
+        },
+        {
+            "title": "Postdoctoral position in molecular precision medicine",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-14",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=606817",
+            "description": "The main task of the postdoctoral research project is to develop and implement sequencing technologies in research projects where clinical patient samples are analyzed. The work may include analysis of single cells, development of methods for analysis of cell-free DNA/RNA in so-called 'liquid biopsies', as well as implementation of large-scale proteomics analyses. There is a good opportunity to propose and pursue the candidate’s own ideas, as long as they fit within the group's general research program."
+        },
+        {
+            "title": "Postdoc in Computational Protein Evolution",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-13",
+            "employer": "Karolinska Institute",
+            "job_url": "https://ki.varbi.com/en/what:job/jobID:612837/",
+            "description": "You will develop and lead projects that aim to build novel phylogenetic models and methods, and also (optionally) work on the application of diffusion denoising models to new problems. You will contribute to various ongoing projects in the lab."
+        },
+
+        {
+            "title": "Laboratory assistant",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-13",
+            "employer": "Karolinska Institute",
+            "job_url": "https://ki.varbi.com/en/what:job/jobID:612963/",
+            "description": "You will play a leading role in lab administration, including purchasing, budgeting, drafting ethics applications, document preparation, etc. Where needed, you will also support research in the lab with some of the following:<br><br><ul><li>Standard molecular biology, such as cloning, PCR, etc.</li><li>Protein expression in mammalian cells, managing cell lines, etc.</li><li>Protein purification (affinity and SEC).</li><li>Various assays.</li><li>Optionally, small animal handling, immunizations.</li></ul>"
+        },
+        {
+            "title": "Postdoc in Antiviral Antibodies",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-13",
+            "employer": "Karolinska Institute",
+            "job_url": "https://ki.varbi.com/en/what:job/jobID:612846/",
+            "description": "You will develop and lead projects at the intersection of virology, immunology, and protein design. You will contribute to ongoing lab projects with:<br><br><ul><li>Standard molecular biology, such as cloning, PCR, etc.</li><li>Protein expression in mammalian cells, managing cell lines, etc.</li><li>Protein purification (affinity and SEC).</li><li>Various assays.</li><li>Optionally, small animal handling, immunizations.</li></ul>"
+        },
+        {
             "title": "Systemutvecklare vid UPPMAX",
             "type": [
                 "Job"
@@ -41,703 +182,14 @@
             "description": "The Sellin research group (www.sellinlab.se) at IMBIM, Uppsala University and SciLifeLab, studies how gut pathogens, such as Salmonella, Shigella, and Campylobacter species, interact with the mammalian intestinal mucosa and cause disease.<br><br>The advertised post-doctoral project builds up the groups recent development of human intestinal epithelial organoid models (enteroids and colonoids) and imaging tools to follow bacterial infections in real time at high temporal and spatial resolution"
         },
         {
-            "title": "Postdoctoral Researchers in Metagenomics",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "The Swedish Museum of Natural History",
-            "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?guidextsoftware=1eaa0a67-d4bf-4817-ad5c-ddd366ce4192&currentpage=1&orderbycol=ApplicationEndDate&orderbydir=ascending&guid=F8F0BEB7-15EA-48B3-9678-799C607CADE1&locid=2",
-            "description": "The postdocs will primary focus on the computational analyses of metagenomic DNA data obtained from complex samples (including snow, water, sediments, insect-traps and dental calculus). The aim is to develop computational tools that can identify species presence, as well as infer population genetic statistics from minute amounts of DNA. A wide variety of environmental samples and metagenomic sequence data is already present at the Centre for Paleogenetics, and the research projects will be adjusted according to the candidates main research interests. In addition, the postdocs will be encouraged to expand their research profile by developing their own new projects, applying for third-party funding and supervising students."
-        },
-        {
-            "title": "Postdoctoral position in biodiversity assessments using environmental DNA",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=606464",
-            "description": "The focus of this postdoc position will be to apply and further develop existing environmental DNA (eDNA) sampling and processing techniques, with the aim to comprehensively capture the biodiversity at a given site. Initially this work will be focused on one or several specific taxonomic groups (e.g., different groups of fungi, insects), but eventually will be extended to represent biodiversity across the whole tree of life. This work will take place in collaboration with other research groups specialized in eDNA, both based at Uppsala University (e.g., the Rosling Group) as well as at other national and international institutions.<br><br>Some of the specific tasks for this position will likely include: <ul><li>Testing combinations of different eDNA sampling techniques in the field</li><li>Applying lab-protocols to extract and amplify genetic markers for multiple organism groups from eDNA samples</li><li>Bioinformatic processing of eDNA sequence data</li><li>Cataloging and storing eDNA data on the SBDI ASV portal</li></ul>"
-        },
-        {
-            "title": "Postdoctoral position in register epidemiology",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596082",
-            "description": "The Post-doctoral fellow will be employed within the research group of Dr. Åsa Johansson. The specific post-doc project will focus on the effect of obesity and exogenous hormones on cardiometabolic diseases and cancer, primarily stroke and female-specific cancers. The primary task is to analyze data from the national Swedish registers, with exposures from the prescribed drug register and medical birth register, and disease outcomes from the cancer register, the patient register, the cause of death register, as well as the quality registers. The duties include planning and conducting data analysis, compiling results, and writing and presenting scientific works. Some teaching and supervision can be included in the duties."
-        },
-        {
-            "title": "Postdoctoral positions and fellowships",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Umeå University",
-            "job_url": "https://billkerlab.org/join-us/",
-            "description": "A postdoc position has become available. The formal applications process will start shortly.  If you want to know more, get in touch or just send a CV and cover letter explaining your motivation to oliver.billker@umu.se<br><br><b>Please note that the deadline is approximate, the position witll be open until filled.</b><br><br>These are examples of the type of work we like to do. Don’t hesitate to get in touch with oliver.billker@umu.se to discuss. The lab would like to attract a broad set of interests and skills to at these questions and we like to collaborate across disciplines. There are opportunities to use traditional genetic and biochemical techniques, to apply machine learning approaches to reveal insights from large datasets, or to use our cutting edge facilities in cryoEM, single cell genomics and metabolimics to get at parasite vector interactions.<br><br><ol><li>Using our unique ability to carry out forward genetics screens (Bushell et al., 2017), we have now identified hundreds of fertility genes. From this, many opportunities have emerged to dissect the molecular mechanisms of reproduction and transmission of malaria parasites. You can delve into the details of fertilisation or meiosis, or you could devise secondary screens to stratify our hits further. Either way, you will be able to gain deep insights into how malaria transmission works and how it could be blocked. You will also contribute to our understanding how sex has evolved in the first eukaryote.</li><li>Mechanisms of post transcriptional regulation during Plasmodium sex determination. Our screen of sexual determination and development genes (Russell et al., 2023) has opened up fascinating questions of how gene regulation controls development in divergent eukaryote. There are some startling parallels with germ line determination in animals that we want to explore further.</li><li>Single Cell Biology of Malaria Transmission. We have established single cell genomics methods to study mosquito tissues and how they interact with malaria parasites (e.g. Raddi et al., 2020). This now opens up avenues to get at how malaria parasites infect cells of the midgut and the salivary gland, how they mature inside their vector and how the mosquitoes respond.</li></ol>"
-        },
-        {
-            "title": "PhD position",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Umeå University",
-            "job_url": "https://billkerlab.org/join-us/",
-            "description": "Driven individuals who want to develop a PhD project in the broad research areas listed below are encouraged to send a CV and cover letter explaining their motivation to oliver.billker@umu.se.<br><br><b>Please note that the deadline is approximate, the position witll be open until filled.</b><br><br>These are examples of the type of work we like to do. Don’t hesitate to get in touch with oliver.billker@umu.se to discuss. The lab would like to attract a broad set of interests and skills to at these questions and we like to collaborate across disciplines. There are opportunities to use traditional genetic and biochemical techniques, to apply machine learning approaches to reveal insights from large datasets, or to use our cutting edge facilities in cryoEM, single cell genomics and metabolimics to get at parasite vector interactions.<br><br><ol><li>Using our unique ability to carry out forward genetics screens (Bushell et al., 2017), we have now identified hundreds of fertility genes. From this, many opportunities have emerged to dissect the molecular mechanisms of reproduction and transmission of malaria parasites. You can delve into the details of fertilisation or meiosis, or you could devise secondary screens to stratify our hits further. Either way, you will be able to gain deep insights into how malaria transmission works and how it could be blocked. You will also contribute to our understanding how sex has evolved in the first eukaryote.</li><li>Mechanisms of post transcriptional regulation during Plasmodium sex determination. Our screen of sexual determination and development genes (Russell et al., 2023) has opened up fascinating questions of how gene regulation controls development in divergent eukaryote. There are some startling parallels with germ line determination in animals that we want to explore further.</li><li>Single Cell Biology of Malaria Transmission. We have established single cell genomics methods to study mosquito tissues and how they interact with malaria parasites (e.g. Raddi et al., 2020). This now opens up avenues to get at how malaria parasites infect cells of the midgut and the salivary gland, how they mature inside their vector and how the mosquitoes respond.</li></ol>"
-        },
-        {
-            "title": "BSc and MSc thesis projects",
-            "type": [
-                "Project opportunity"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Stockholm University",
-            "job_url": "https://sahlingroup.github.io/positions/",
-            "description": "Contact me for eventual Master's or Bachelors's projects within algorithms in Life Sciences and Bioinformatics. Please mention your academic background and include the courses you took and your grades. I expect you to have knowledge about programming and be highly motivated.<br><br><b>Please note that the deadline is approximate, the position will be open until filled.</b>"
-        },
-        {
-            "title": "Postdoc in Computational Biology",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Stockholm University",
-            "job_url": "https://sahlingroup.github.io/positions/",
-            "description": "We are located in Stockholm at the Science for Life Laboratory. Our research interests broadly span algorithm development and analysis of sequence data. We have ongoing projects on method development for rapid sequence mapping and sequence similarity searches, and various computational problems in transcriptomic analysis, and collaborative projects in genome assembly. We also consider your project proposals if it aligns with the group's research programs.<br><br><b>Please note that the deadline is approximate, the position will be open until filled.</b>"
-        },
-        {
-            "title": "Research Engineer - System Developer, IT",
-            "type": [
-                "Job",
-                "Data Science Node"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Umeå University",
-            "job_url": "https://www.umu.se/en/work-with-us/open-positions/research-engineer---system-developer-it_584907/",
-            "description": "This employment is for one of three positions as research engineer within the DDLS Data Science Node for epidemiology and biology of infection at Umeå University. This specific position is as a system developer, with the aim to deliver state-of-the-art tools and environments for the management, processing, analysis, visualization, and storage of data in the context of a national infrastructure for data-driven research.<br><br>As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field."
-        },
-        {
-            "title": "Research Engineer - Data Engineer",
-            "type": [
-                "Job",
-                "Data Science Node"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Umeå University",
-            "job_url": "https://www.umu.se/en/work-with-us/open-positions/research-engineer---data-engineer_584901/",
-            "description": "This employment is for one of three positions as research engineer within the DDLS Data Science Node for epidemiology and biology of infection at Umeå University. This specific position is for a data engineer who, in collaboration with the other two research engineers, will be involved in the technical development of services and workflows in the context of a national infrastructure for data-driven research. As a data engineer, you are expected to participate in technical development of data services, where you will apply excellence in e.g., software engineering, compute- and storage infrastructure, interfaces, cloud technology, visualization or databases in tools and services designed to strengthen the research field."
-        },
-        {
-            "title": "Research Engineer - Data Steward",
-            "type": [
-                "Job",
-                "Data Science Node"
-            ],
-            "app_deadline": "2023-03-31",
-            "employer": "Umeå University",
-            "job_url": "https://www.umu.se/en/work-with-us/open-positions/research-engineer---data-steward_584820/",
-            "description": "This employment is for one of three positions as research engineer within the DDLS Data Science Node for epidemiology and biology of infections at Umeå University. This specific position is for a data steward, with the aim to collaborate with and guide Swedish researchers in all aspects related to the management, sharing, distribution, publishing, and archival of data in the context of a national infrastructure for data-driven research. You are expected to participate in user support and development of data services."
-        },
-        {
-            "title": "Assistant professor in Machine Learning in Computational Biology",
+            "title": "Forskningskoordinator för WCMTM",
             "type": [
                 "Job"
             ],
-            "app_deadline": "2023-03-30",
-            "employer": "KTH Royal Institute of Technology",
-            "job_url": "https://kth.varbi.com/what:job/jobID:590805/type:job/where:1/apply:1",
-            "description": "The duties include conducting research and supervising doctoral students in their research in the subject area. In addition, they involve establishing societal and academic collaborations nationally and internationally, specifically in the area of biomedical research. This can for example be collaboration with groups at SciLifeLab in relevant subject areas.<br><br>The duties include course responsibility, including supervision, developing courses, and teaching in the courses at the subject area's basic, advanced, and postgraduate levels. This includes teaching in the department´s courses in machine learning, deep learning, and AI."
-        },
-        {
-            "title": "Three PhD positions in interdisciplinary mathematics",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-03-24",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596823",
-            "description": "The Centre for Interdisciplinary Mathematics (CIM) at Uppsala University conducts interdisciplinary research connecting the mathematical sciences and other areas of science and industry. CIM offers training and expertise in mathematical modeling and computer simulation, and hosts a Graduate school since 2011.<br><br>We are now looking for three PhD students who will join CIM’s Graduate school and work on proposed research projects. The available PhD projects can be found on CIM's web page: https://www.math.uu.se/research/cim/announced-projects/"
-        },
-        {
-            "title": "Postdoctoral position in register epidemiology",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-03-24",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=596082",
-            "description": "The Post-doctoral fellow will be employed within the research group of Dr. Åsa Johansson (https://www.igp.uu.se/research/genomics-neurobiology/asa-johansson/). The specific post-doc project will focus on the effect of obesity and exogenous hormones on cardiometabolic diseases and cancer, primarily stroke and female-specific cancers. The primary task is to analyze data from the national Swedish registers, with exposures from the prescribed drug register and medical birth register, and disease outcomes from the cancer register, the patient register, the cause of death register, as well as the quality registers. The duties include planning and conducting data analysis, compiling results, and writing and presenting scientific works. Some teaching and supervision can be included in the duties."
-        },
-        {
-            "title": "Senior Machine Learning Scientist with expertise in Biology of Infections",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-23",
-            "employer": "Umeå University",
-            "job_url": "https://umu.varbi.com/what:job/jobID:602275/type:job/where:1/apply:1",
-            "description": "We are now looking for outstanding candidates with expertise in AI, machine learning and statistical methods applied in a biological context related to infection biology with the aim to increase our understanding of the emergence, prevalence and spread of infectious disease. As a senior research engineer within applied machine learning, you will apply, adapt and develop machine learning approaches to provide data analysis support to data-driven Swedish research projects of scientific excellence as well as being a driver of advanced data analytics postgraduate training on a national level."
-        },
-        {
-            "title": "Associate Researcher, Core Facilities",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-23",
-            "employer": "University of Gothenburg",
-            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=29489",
-            "description": "In this position large part of the work is lab-based with a focus on deep sequencing, including routine service to researchers, development of new methods as well as their implementation to be offered as service. The work is carried out independently or together with other group members and requires flexibility and ability to adapt to the different tasks. It is also important to be able to carry out experiments based on the researchers’ scientific demands in a time-efficient and quality-conscious manner."
-        },
-        {
-            "title": "Bioinformaticians (1-2) with training and community building focus",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-20",
-            "employer": "Stockholm University",
-            "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs?rmpage=job&rmjob=20090&rmlang=UK",
-            "description": "Working at the Training Hub, you will be part of the core of Sweden’s life science infrastructure and get the opportunity to actively shape how lifelong learning and training from a research infrastructure integrates and enables the Swedish life science research community. You will work in a small core team of training experts and connect to a wider ecosystem of researchers and staff scientists across the platforms and SciLifeLab sites. Training and lifelong learning is rapidly growing and the impact of training from a Research Infrastructure is more and more evident. The major task now is to build a national framework for life science lifelong learning which includes the technical infrastructure of the training platform and the people infrastructure of the community. We look forward to having you onboard on this journey."
-        },
-        {
-            "title": "Bioinformatician with expertise in Biology of Infections",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-17",
-            "employer": "Umeå University",
-            "job_url": "https://umu.varbi.com/what:job/jobID:600494/type:job/where:1/apply:1",
-            "description": "We are now looking for outstanding candidates with competences in analysis of large-scale, high-throughput genomic data, and related molecular and clinical data analysis, to provide advanced bioinformatics support to selected data-driven Swedish research projects of scientific excellence. Your work will include data analysis and scientific deduction at an internationally competitive level, as well as being a driver of bioinformatics postgraduate training. <br><br>We are looking for a bioinformatician with experience of large-scale molecular research projects in immunology, pathogen-host interaction systems, or other relevant studies related to biology of infections. Technical competences of particular interest are single-cell and spatial omics data analysis, multi omics integration, and genomics and metagenomics of microorganisms."
-        },
-        {
-            "title": "Project Coordinator for TEF-HEALTH",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-16",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/en/what:job/jobID:600003/",
-            "description": "We are seeking an experienced and highly motivated project coordinator to help the project leads to coordinate and enable all activities within the TEF-Health project. These activities include helping the project leads to manage and report on work packages, develop strategies, sustainable business-models and navigate the stakeholder landscape. Working within the project, you will support and proactively reach out to engage a growing user community from the life science industry and healthcare sectors.<br><br>You will be part of a new team, building a new function, developing this based on and integrated with the successful existing structures at KI, CIR, and SciLifeLab."
-        },
-        {
-            "title": "Bioinformatician with expertise in Biology of Infections",
-            "type": [
-                "Job",
-                "Data Science Node"
-            ],
-            "app_deadline": "2023-03-15",
-            "employer": "Umeå University",
-            "job_url": "https://umu.varbi.com/en/?jobtoken=185efa7dd6f13cbe1660cd02f120ca204ac92d015",
-            "description": "The DDLS program is now establishing a national Data Science Node in “Epidemiology and Biology of Infections” at Umeå university with a national responsibility to develop national data services and advanced data analytics support t. The Data Science Node staff will be well integrated with the local research community, but also connected to the SciLifeLab National Infrastructures, in particular the Bioinformatics Infrastructure  (National Bioinformatics Infrastructure Sweden, NBIS), with over 100 experts, providing advanced bioinformatics support, infrastructure and training to the Swedish life science research community and participating in international collaborations. We are now looking for outstanding candidates with competences in analysis of large-scale, high-throughput genomic data, and related molecular and clinical data analysis, to provide advanced bioinformatics support to selected data-driven Swedish research projects of scientific excellence. Your work will include data analysis and scientific deduction at an internationally competitive level, as well as being a driver of bioinformatics postgraduate training.<br><br>We are looking for a bioinformatician, desribed at the University as a senior research assistant, with experience of large-scale molecular research projects in immunology, pathogen-host interaction systems, or other relevant studies related to biology of infections. Technical competences of particular interest are single-cell and spatial omics data analysis, multi omics integration, and genomics and metagenomics of microorganisms."
-        },
-        {
-            "title": "Various PhD positions in machine learning",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-03-15",
-            "employer": "Umeå University",
-            "job_url": "http://www.henlab.org/join-us/",
-            "description": "**No specific deadline given for application**. Please check out the website for details."
-        },
-        {
-            "title": "Various postdoc positions in machine learning",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-15",
-            "employer": "Umeå University",
-            "job_url": "http://www.henlab.org/join-us/",
-            "description": "**No specific deadline given for application**. Please check out the website for details."
-        },
-        {
-            "title": "Lab Manager to Cancer proteomics Mass Spectrometry Lab",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-09",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/what:job/jobID:598481/type:job/where:1/apply:1",
-            "description": "A Lab Manager position is available in the Cancer proteomics Mass spectrometry research and Core Facility lab, headed by Professor Janne Lehtiö at Science for Life Laboratory (SciLifeLab). Karolinska Institutet is one of the four founding universities for SciLifeLab, which is a national infrastructure and research center for technology driven life sciences. The Lehtiö group is a translational group of scientists with a drive to improve human proteome analysis by developing new methods that can be applied to improve personalized cancer treatment. The research group is also closely associated with the our Clinical Proteomics Mass Spectrometry facility that provides fee-for-service sample analysis as well as support to plan and perform larger in-depth proteomics project. The employment is a permanent position with a trial period of 6 months. We offer a very stimulating and diverse work in a team of very motivated co-workers with expertise in cutting-edge technology."
-        },
-        {
-            "title": "Bioinformatiker",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-03-07",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=597029",
-            "description": "Personen kommer arbeta med analys av longread-sekvenseringsdata från PacBio och Oxford Nanopore. Främst gäller det bioinformatiska analyser inklusive alignment, variantanalys, assembly och identifiering av kliniskt relevanta varianter. Nya analysverktyg behöver sättas upp, t ex Deep Variant, för variantanalys. Den anställde kommer också vara med och sätta upp metoden 'adaptive sampling' på labbet, men främst med ansvar för datahantering och dataanalys. I projektet kommer patientprover analyseras för att identifiera sjukdomsorsakande variation"
-        },
-        {
-            "title": "Doktorand till doktorsexamen vid avdelningen Bioinformatik vid IFM",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-03-06",
-            "employer": "Linköping University",
-            "job_url": "https://liu.se/jobba-pa-liu/lediga-jobb/21139",
-            "description": "I projektet kommer du att utveckla statistiska och maskininlärningsmetoder för att karakterisera och kvantifiera flexibilitet i makromolekylära atommodeller bestämt av kryo-EM och kristallografiexperiment. Med hjälp av nationell superdatorinfrastruktur kommer du att tillämpa dessa metoder i stor skala på strukturer i PDB:en, för att bygga en allmänt tillgänglig öppen databas och studera experimentell flexibilitet i relation till molekylär funktion.<br><br>Som doktorand ägnar du dig åt din forskarutbildning och forskningsprojekt där du ingår. I ditt arbete kan även ingå att undervisa eller att delta i andra institutionsuppdrag, upp till 20% av heltid."
-        },
-        {
-            "title": "PhD student in Machine Learning: Causality & Generalization",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-03-01",
-            "employer": "Chalmers University",
-            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11396",
-            "description": "Machine learning is now an essential tool for scientists and engineers. It is used in diverse applications to predict outcomes from inputs by training models to minimize prediction error in training data. As widespread adoption reaches beyond research and the development of such systems, guarantees for accuracy, reliability and safety become critical. State-of-the-art models which achieve top accuracy on benchmark tasks routinely fail to generalize to new examples even in strongly related problem domains. In this project, we will study the intersection of causal inference and machine learning using auxiliary information to improve the sample-efficiency and domain generalization of learning algorithms.<br><br>Generalization in machine learning refers to a trained system performing well on previously unseen examples. When analyzing and developing learning algorithms, unseen examples are often assumed to follow the same distribution as training examples. However, real data often follows different patterns: 1) The distribution of testing (in-deployment) examples often differs from those collected for training, 2) We often have access to different information or variables at training time than we do when the trained system is deployed, 3) The number of samples is rarely as large as we would like it to be. One example of this is classification of medical images using deep neural networks, where training sets are often limited in size but rich in annotations which are not available when the trained system is used.<br><br>In this project, we will develop sample-efficient learning algorithms which makes the best possible use of small numbers of training examples by exploiting auxiliary information and causal analysis. We will apply these algorithms in, among other tasks, medical image classification."
-        },
-        {
-            "title": "PhD student in Neuro-Symbolic Synthesis and Reinforcement Learning",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-02-28",
-            "employer": "Chalmers University",
-            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11271",
-            "description": "In this project we study a new approach to synthesis of efficient communication schemes in multi-agent systems, trained via reinforcement learning. We combine symbolic methods with machine learning, in what is referred to as a neuro-symbolic system, where a neural network learns to produce programs in a symbolic language to solve a task at hand. We believe this combination of neural and symbolic methods will be an important next step in the development of AI beyond todays capabilities.<br><br>This project is a collaboration between researchers at the division of Data Science and AI at Chalmers and the Center for Linguistic Theory and Studies in Probability (CLASP) at Gothenburg University."
-        },
-        {
-            "title": "PhD student in Natural Language Processing",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-02-28",
-            "employer": "Chalmers University",
-            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11196",
-            "description": "Methods developed in artificial intelligence (AI) and machine learning (ML) are increasingly being applied as a research tool in the humanities and social sciences. In contrast to statistical approaches traditionally applied in these fields, AI/ML methods allow researchers to work with more complex models and to integrate unstructured types of data (e.g. text, images, signals) more seamlessly. However, while these new approaches open up new research avenues, it is critical to understand their applicability and limitations.<br><br>The topic of the PhD project will be in the design, validation, and application of AI methods for problems in the social sciences. The main emphasis will be on methods in natural language processing (NLP) to compute representations of text, but other modalities including vision will potentially be considered as well. Specifically, the research in the project will be based on recent advances in causal inference methods that can utilize high-dimensional representations computed by AI methods. In the project, the PhD student will develop methods to integrate such representations, investigate theoretically and empirically how the representations affect the quality of estimates, and explore the opportunities and limitations of these methods. In collaboration with researchers in the project, the new methods will be applied in order to investigate research questions in social and political science.<br><br>The project is funded by WASP-HS (The Wallenberg AI, Autonomous Systems and Software Program – Humanities and Society), via the programme NetX: Networking Excellence Projects in the Humanities and Social Sciences for the Study of Consequences and Challenges of Artificial Intelligence and Autonomous Systems."
-        },
-        {
-            "title": "PhD student position in AI-driven biomolecular engineering (multi-target therapeutic modalities)",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-02-28",
-            "employer": "Chalmers University",
-            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11326",
-            "description": "It is estimated that ~75% of the human proteome lacks deep binding sites and is considered “undruggable” by traditional small molecule inhibitors. Nonetheless, these so-called undruggable targets are implicated in a wide range of diseases, including cancer, autoimmune diseases, and cardio-metabolomic diseases, motivating the development of therapeutic modalities beyond small molecule inhibitors. Deep generative models (DGMs) are poised to transform our approach to biomolecular engineering by designing molecules with desired properties from scratch so as to minimize experimental screening. Nonetheless, they have seen limited application to multi-target therapeutic modalities, where methods such as DGMs can aid medicinal chemists in the design and selection of drug candidates. DGMs not only enable scientists to delegate error-prone decisions to computers via the use of predictive and generative computational models, but also have the added advantage that they can learn from datasets of billions of molecules in minutes and be regularly updated with new data.<br><br>In this project, the candidate will focus on the development of novel AI tools, particularly deep generative models, for the controlled design of multi-target therapeutic modalities. To this end, the candidate will have the opportunity to work with a range of biomolecular datasets, as well as to build on the latest developments in machine learning. While the focus of this project is on deep learning and method development, the ideal candidate will also have a keen interest in molecular biology."
-        },
-        {
-            "title": "PhD student position in AI-driven biomolecular engineering (phenotype-guided design)",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-02-28",
-            "employer": "Chalmers University",
-            "job_url": "https://web103.reachmee.com/ext/I003/304/job?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c&job_id=11322",
-            "description": "It is estimated that ~75% of the human proteome lacks deep binding sites and is considered “undruggable” by traditional small molecule inhibitors. Nonetheless, these so-called undruggable targets are implicated in a wide range of diseases, including cancer, autoimmune diseases, and cardio-metabolomic diseases, motivating the development of therapeutic modalities beyond small molecule inhibitors. Deep generative models (DGMs) are poised to transform our approach to biomolecular engineering by designing molecules with desired properties from scratch so as to minimize experimental screening. Nonetheless, they have seen limited integration of high content assay data. DGMs not only enable scientists to delegate error-prone decisions to computers via the use of predictive and generative computational models, but also have the added advantage that they can learn from datasets of billions of molecules in minutes and be regularly updated with new data.<br><br>In this project, the candidate will focus on the development of novel AI tools, particularly deep generative models, for the controlled design of therapeutic modalities based on phenotypic profiles. The goal is to develop ML-based de novo design tools which enable researchers to reverse engineer novel bioactive molecules given a desired phenotype. To this end, the candidate will have the opportunity to work with a range of -omics datasets and high-content screening data, as well as to build on the latest developments in machine learning. While the focus of this project is on deep learning and method development, the ideal candidate will also have a keen interest in molecular biology."
-        },
-        {
-            "title": "Postdoctoral fellow in Machine Learning",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-03-01",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=586749",
-            "description": "Research on fundamental models and methods in machine learning and their applications within medicine. The position is part of an ERC Advanced Grant focused on developing decision support for the emergency room. The work will be done in close collaboration with our medical partner Professor Johan Sundström who leads the <a href='https://www.uu.se/en/research/projects/awi/'>Anders Wiklöf Institute for Heart Research</a>. We already share offices and our groups have collaborated for quite some time.<br><br>The postdoctoral position will intensify our work on developing and analyzing methods in machine learning and their application within medicine. We will continue our work on extracting knowledge from large-scale ECG data sets, and we will utilize large databases with electronic health records and patient-reported data and three-dimensional symptom drawings. The aim is to be able to investigate the use of these models for decision support and the position can also include work on decision algorithms. Technical keywords for the position include: probabilistic models, decision making algorithms, deep learning, Bayesian inference and precision medicine. The position might also include teaching."
-        },
-        {
-            "title": "PhD position in Cell Biology and Computational Microscopy Imaging",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-02-20",
-            "employer": "KTH Royal Institute of Technology",
-            "job_url": "https://aicell.io/recruiting/phd-1-wasp-ddls-biology/",
-            "description": "The Science for Life Laboratory (SciLifeLab) is a national center for molecular biosciences with focus on health and environmental research. The combination of the highly interdisciplinary expertise and research projects at the department is unique in Sweden and also at an international level. This expertise ranges across cell biology, biochemistry, biophysics and theory. Recently, the SciLifeLab and Wallenberg National Program started the Data-Driven Life Science (DDLS) program in order to accelerate life science research through innovations in AI and data science.<br><br>The AICell Lab (https://aicell.io) in the department of Applied Physics at KTH and SciLifeLab is a new research group funded by the DDLS Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now opening a position for a doctoral student in biological physics with a focus on cell biology, automation and AI-augmented microscopy imaging.<br><br>For more information visit the job page by following the link below."
-        },
-        {
-            "title": "PhD student in the area of Pharmacometrics - Global health",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-02-22",
-            "employer": "Uppsala University",
-            "job_url": "https://uu.varbi.com/en/what:job/jobID:585698/",
-            "description": "A doctoral position with a focus on the optimization of antiparasitic therapy for leishmaniasis is available in the research area of ​​pharmacometrics, within the theme global health and neglected tropical diseases, at the Department of Pharmacy.<br><br>The overall aim is to develop precision medicine tools to improve the treatment of neglected tropical diseases such as the parasitic disease leishmaniasis. Within the project, model-based methods will be developed to optimize and individualize current and future oral combination therapies for the parasitic disease leishmaniasis, adapted to the largely pediatric patient population. Innovative sets of biomarkers to monitor treatment response will be identified to enable more effective personalized therapy of neglected tropical parasitic diseases.<br><br>The project involves data-driven pharmacometric modelling and simulation techniques in combination with systems pharmacology, machine learning, and pharmacokinetic and pharmacodynamic data collected in clinical trials. The precision medicine tools developed in this project will lead to shorter and more effective oral dosing regimens for parasitic diseases such as leishmaniasis and provide new ways to identify patients at risk for relapse of disease."
-        },
-        {
-            "title": "Postdoc in AI-powered Automated Microscopy Imaging Systems",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-02-22",
-            "employer": "KTH Royal Institute of Technology",
-            "job_url": "https://aicell.io/recruiting/postdoc-1-ddls-enginering/",
-            "description": "The Science for Life Laboratory (SciLifeLab) is a national center for molecular biosciences with focus on health and environmental research. The combination of the highly interdisciplinary expertise and research projects at the department is unique in Sweden and also at an international level. This expertise ranges across cell biology, biochemistry, biophysics and theory. Recently, the SciLifeLab and Wallenberg National Program started the Data-Driven Life Science (DDLS) program in order to accelerate life science research through innovations in AI and data science.<br><br>The AICell Lab (https://aicell.io) in the department of Applied Physics at KTH and SciLifeLab is a new research group funded by the DDLS Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now seeking a postdoctoral researcher to develop AI-powered automated microscopy imaging systems.<br><br>The aim of the project is to build a smart microscopy imaging farm for massive production of image data. It consists of multiple microscopes and fluidic systems, robotic arms, liquid handling robots and automatic incubators. The farm will be used for performing automated widefield/fluorescence imaging, long-term live cell imaging, tracking,  spatial-omics and multiplexing imaging. With the AI-powered control software, data are analyzed in real-time, augmented views are added on the fly. By generating feedback control signals to control the microscope, the software will automatically change field-of-views, illumination power and other experimental conditions in order to optimize the phototoxicity and capture rare events in live cells.<br><br>The candidate is expected to develop an integrated system with microscopes, fluidic control, robotic arms, as well as the control software. The project is a collaboration with our collaborator in the WASP program and built on top of our prior work (e.g. squid, ImJoy) from us or our collaborators at Stanford University."
-        },
-        {
-            "title": "Postdoc in AI-powered Whole-cell Modeling",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-02-22",
-            "employer": "KTH Royal Institute of Technology",
-            "job_url": "https://aicell.io/recruiting/postdoc-2-ddls-ai/",
-            "description": "The Science for Life Laboratory (SciLifeLab) is a national center for molecular biosciences with focus on health and environmental research. The combination of the highly interdisciplinary expertise and research projects at the department is unique in Sweden and also at an international level. This expertise ranges across cell biology, biochemistry, biophysics and theory. Recently, the SciLifeLab and Wallenberg National Program started the Data-Driven Life Science (DDLS) program in order to accelerate life science research through innovations in AI and data science.<br><br>The AICell Lab (https://aicell.io) in the department of Applied Physics at KTH and SciLifeLab is a new research group funded by the DDLS Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now seeking two postdoctoral researchers to build AI systems for spatial multi-omics data analysis and whole-cell modeling.<br><br>Whole-cell modeling enables a holistic and quantitative view of cell biology and allows performing in-silico experimentation which has a great potential in revolutionizing system biology, synthetic biology, medicine and other applications in life science. However, modeling the entire cell is an extremely complex task and is heavily limited by our understanding of the biological systems. As a newly formed research group, we would like to take the grand challenge of modeling the human cell through recent advances in multi-omics data generation and artificial intelligence. Our aim is to use recent deep learning techniques such as convolutional neural networks, transformers, AlphaFold and diffusion models to analysis existing multi-omics dataset, combining them with massive amount of newly generated live cell, multiplexed images, to model cellular behavior through generative and predictive models.<br><br>The candidates are expected to 1) develop machine learning models and tools for smart microscopy and image analysis 2) integrate multi-omics dataset 3) perform generative modeling and 4) create large-scale differentiable models to do spatial cell simulations. The project will be carried out on top of existing work and collaborate closely with PhDs and postdocs in the group."
-        },
-        {
-            "title": "Postdoc in Cell Biology and Computational Microscopy Imaging",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-02-22",
-            "employer": "KTH Royal Institute of Technology",
-            "job_url": "https://aicell.io/recruiting/postdoc-1-wasp-ddls-biology/",
-            "description": "The Science for Life Laboratory (SciLifeLab) is a national center for molecular biosciences with focus on health and environmental research. The combination of the highly interdisciplinary expertise and research projects at the department is unique in Sweden and also at an international level. This expertise ranges across cell biology, biochemistry, biophysics and theory. Recently, the SciLifeLab and Wallenberg National Program started the Data-Driven Life Science (DDLS) program in order to accelerate life science research through innovations in AI and data science.<br><br>The AICell Lab (https://aicell.io) in the department of Applied Physics at KTH and SciLifeLab is a new research group funded by the DDLS Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now looking for highly motivated candidates to fill a 2-year postdoc position under the WASP-DDLS collaboration.<br><br>The aim of the project is to develop an AI-powered self-driving microscopy system for studying cellular response under genetic and environmental stressors. The project will also be supported by the WASP-DDLS collaboration, and closely collaborate with the Jaldén group at KTH. The Jaldén group has rich experience in computer vision and automatic control systems. The work will also be supported by the Lundberg group under the Human Protein Atlas, which is a unique world-leading effort to map all the human proteins in cells, tissues, and organs in the human body. By joining the force with the Jaldén group and Lundberg group, we would like to develop an AI-powered imaging system to continuously monitor, actively acquire and track human cells under different cellular and environmental stressors. The data will be used to train large-scale AI models to study cellular responses and make predictions for cell fate.<br><br>You will be responsible for actively and effectively designing, implementing, and optimizing  wet lab experiments for the self-driving microscope, including cell culture, sample preparation and microscopy imaging. Importantly, you will also actively work with other researchers in the group to develop and optimize protocols for the automated imaging system and AI models. Besides wet lab skills, you will get the opportunity to elaborate on your computational skills, e.g., by writing Python scripts to control the imaging farm, train AI models and develop automated data analysis workflows. In later stages of the project you will also design and conduct additional, custom validation experiments, which may involve different molecular biology techniques."
-        },
-        {
-            "title": "Postdoc in Scalable AI Systems for BioImage Analysis",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-02-22",
-            "employer": "KTH Royal Institute of Technology",
-            "job_url": "https://aicell.io/recruiting/postdoc-1-ai4life/",
-            "description": "The Science for Life Laboratory (SciLifeLab) is a national center for molecular biosciences with focus on health and environmental research. The combination of the highly interdisciplinary expertise and research projects at the department is unique in Sweden and also at an international level. This expertise ranges across cell biology, biochemistry, biophysics and theory. Recently, the SciLifeLab and Wallenberg National Program started the Data-Driven Life Science (DDLS) program in order to accelerate life science research through innovations in AI and data science.<br><br>The AICell Lab in the department of Applied Physics at KTH and SciLifeLab is a new research group funded by the DDLS Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now seeking a highly motivated postdoctoral researcher to work on the AI4Life project. AI4Life is a Horizon Europe-funded project that brings together the computational and life science communities. Its goal is to empower life science researchers to harness the full potential of AI for bioimage analysis – and in particular microscopy image analysis, by providing services, and developing standards aimed at both developers and users.<br><br>The postdoc will work with other AI4Life consortium partners to build scalable AI tools and computing infrastructure for bioimage analysis. There are two aims in the project: 1) Creating web services and computing platforms for sharing AI models, making them more accessible and usable; 2) Building scalable bioimage analysis methods and tools for powering next-generation augmented microscopy. This includes creating tools for collaborative and interactive annotation, model training, real-time inference and generating feedback signal for microscope control.<br><br>The candidates are expected to collaborate with other AI4Life partners and develop scalable AI methods, tools and platforms on top of our prior work such as the BioImage Model Zoo and ImJoy."
-        },
-        {
-            "title": "Postdoctoral position",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-02-13",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=584942",
-            "description": "The unit for Molecular Tools and Functional Genomics, now recruiting a postdoc, is active at the international forefront of research to develop advanced technologies for biomedical investigations at levels of DNA, RNA and protein. Several of their earlier techniques have enjoyed broad uptake world-wide and have been successfully commercialized by licensees and by companies with a total industrial workforce of around 900, founded by present or earlier members of the lab. The present postdoctoral position is funded by a so-called proof of concept grant from the Swedish Research Council for infection diagnostics. The effective workplace of the successful applicant will be Uppsala Biomedical Center, but the project will be conducted in close collaboration with the company Rarity https://raritybioscience.com, previously spun out from the lab, and so far focusing on molecular follow-up of cancer patients. The company is located one floor below the research lab."
-        },
-        {
-            "title": "Postdoctoral position in data-driven infection biology",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-02-12",
-            "employer": "Umeå University",
-            "job_url": "https://umu.varbi.com/en/what:job/jobID:582823/",
-            "description": "A fully funded, two-year postdoc position is immediately available in the Department of Clinical Microbiology at Umeå University. The position is open to computational scientists with an interest in microbial (meta)genomic data analysis.<br><br>Microbes produce a wide array of secondary metabolites (SMs), which allow them to interact with their environment, as well as with each other. The postdoctoral project proposed here will involve developing (meta)genome mining approaches, which can be used to identify novel microbial SMs involved in microbe-host and/or microbe-microbe interactions. The tools developed here will be applied to large amounts of microbial (meta)genomic data, with the goal of identifying microbial SMs responsible for host disease phenotypes (e.g., microbiome-associated cancers) or SMs with novel antimicrobial activities."
-        },
-        {
-            "title": "2 PhD students in Environmental Science focusing on nontarget mass spectrometry",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-02-11",
-            "employer": "Stockholm University",
-            "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs/phd-student-positions-1.507588?rmpage=job&rmjob=19723&rmlang=UK",
-            "description": "These two doctoral projects involve optimisation and application of analytical methods and data processing workflows based on nontarget mass spectrometry of air samples collected globally (funded by FORMAS) or in human biofluids (funded by VR and SciLifeLab). Research will include optimization of sample preparation steps, and the development of data processing strategies using open science tools for identification of unknown molecules in complex samples, with emphasis on quality control at all stages. The projects can make use of GC- and LC-Orbitrap technology available at ScilifeLab in the Exposomics group. The research positions are funded for 4 years and you will work as part of a bigger team involving international research scientists to understand the sources of environmental chemical exposures."
-        },
-        {
-            "title": "Tillämpnings- expert inom UPPMAX",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-02-06",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=587925",
-            "description": "Specifika arbetsuppgifter för tillämpningsexperter är personberoende. Den här rollen riktar sig dock mot granskning av projektansökningar, skriptning-  och programmeringsuppgifter för internt bruk, samt dokumentering.<br><br>Allmänna arbetsuppgifter för tillämpningsexpertgruppen inkluderar avancerat användarstöd, installation av programvara och databasresurser, underhåll och utveckling av den digitala forskningsmiljön vid UPPMAX och andra SNIC-centra, undervisning av användargrupper inom relevanta ämnen, skriptning av verktyg för externt eller internt bruk, utredningsarbeten, samt granskning av projektansökningar och effektivitetsanalys av pågående projekt."
-        },
-        {
-            "title": "Associate Researcher (Scientific Officer)",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-01-31",
-            "employer": "University of Gothenburg",
-            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=28563",
-            "description": "We are looking for an experienced Associate Researcher/Scientific Officer with strong interest in developing, implementing and adjusting feedback microscopy tools at the Centre for Cellular Imaging. This job position focuses on the automation of, for example, targeted microscopy, functional microscopy, and tracking of cells over time using both widefield and laser scanning microscopes. At this post you will also explore the implementation of smart microscopy tools in the field of electron microscopy - Transmission and Scanning. Image analysis pipelines will include machine learning and deep learning (Artificial Intelligence). The post holder will implement on-the-fly data processing and real time feedback into imaging workflows, which is particularly important for live imaging. Another important task will be the management of large data, here the post holder will explore the automated pre-processing of images before transfer to storage servers.<br><br>The successful candidate will work in the Centre for Cellular Imaging advanced microscopy facility and: 1) Develop smart microscopy workflows to service our scientific community; 2) Educate and train core facility users in the implementation of smart microscopy workflows. 3) Support our users by assisting and training in bioimage analysis. 4) Give advice on the design of imaging experiments. 5) Continuing professional development in the field of smart microscopy by attending courses and workshops, presenting work at scientific meetings, and keeping abreast of the relevant literature; 6) Participate in the organization and teaching of workshops for our broad scientific community and of practices/lectures for graduate and undergraduate courses."
-        },
-        {
-            "title": "PhD position in medical science within bioinformatic, computational methods",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-01-31",
-            "employer": "Umeå University",
-            "job_url": "https://www.umu.se/en/work-with-us/open-positions/phd-position-in-medical-science-within-bioinformatic-computational-methods_563786/",
-            "description": "Secondary metabolites (SMs) produced by microbes have critically important roles in human health, including as essential therapeutics (e.g., antimicrobials, anticancer agents). (Meta)genomic data derived from microbes thus offers tremendous potential as a reservoir for novel SMs; however, accurate, scalable in silico methods are necessary to leverage such data for SM discovery. Here, the PhD student will develop and apply bioinformatic tools, which can facilitate the discovery of novel SMs from millions of microbial (meta)genomes available in public databases.<br><br>You who are admitted to doctoral studies at the Faculty of Medicine will be part of the faculty-wide doctoral education programme. The doctoral programme comprises 25 credits and is offered in two study variants: 25 credits spread over 8 terms (a total of 4 years) or over 12 terms (a total of 6 years), starting each autumn and spring semester.<br><br>Eligibility requirements:<br><ul><li>You must have at least 240 higher education credits (hc), of which at least 60 hc are at an advanced level, in natural sciences, life sciences, or engineering.</li><li>Applicants must be skilled in both oral and written communication in English, able to work independently as well as in collaboration with others, and be highly motivated</li></ul>"
-        },
-        {
-            "title": "Doctoral student in medical science towards bioinformatics, global spread",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-01-31",
-            "employer": "Umeå University",
-            "job_url": "https://www.umu.se/en/work-with-us/open-positions/doctoral-student-in-medical-science-towards-bioinformatics-global-spread_563766/",
-            "description": "Tracking the global spread of bacterial pathogens using whole-genome sequencing data. The movement of humans, animals, and commodities can contribute to the global dissemination of bacterial pathogens. High-resolution technologies, such as whole-genome sequencing (WGS), are thus being used increasingly to monitor the global spread of bacterial pathogens. Here, the PhD student will develop and apply bioinformatic approaches, which can leverage bacterial WGS data to gain insight into pathogen virulence potential, evolution, dissemination, transmission dynamics, and antimicrobial resistance acquisition.<br><br>You who are admitted to doctoral studies at the Faculty of Medicine will be part of the faculty-wide doctoral education programme. The doctoral programme comprises 25 credits and is offered in two study variants: 25 credits spread over 8 terms (a total of 4 years) or over 12 terms (a total of 6 years), starting each autumn and spring semester.<br><br>Eligibility and Qualifications:<br><ul><li>You must have at least 240 higher education credits (hc), of which at least 60 hc are at an advanced level, in natural sciences, or life sciences, or engineering.</li><li>Applicants must be skilled in both oral and written communication in English, able to work independently as well as in collaboration with others, and be highly motivated.</li></ul>"
-        },
-        {
-            "title": "Postdoctoral position in data-driven pathogen epidemiology",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-01-31",
-            "employer": "Umeå University",
-            "job_url": "https://www.umu.se/en/work-with-us/open-positions/postdoctoral-position-in-data-driven-pathogen-epidemiology_580521/",
-            "description": "Antimikrobiell resistens är ett av de största hoten mot mänskligheten i dag, och det finns en oro för att användning av antimikrobiella medel i djurmiljöer kan bidra till uppkomsten och spridningen av bakteriella patogener för antimikrobiell resistens längs livsmedelskedjan. Här kommer postdoktorn att utveckla och tillämpa bioinformatiska metoder, som kan fråga data om helgenomsekvensering (WGS) härledda från livsmedelsburna zoonotiska patogener (t.ex. Salmonella enterica, Escherichia coli) för att övervaka spridningen av AMR-patogener mellan boskap, livsmedel och människor<br><br>Valbarhet<br>Behörig att anställas som postdoktor är den som har avlagt doktorsexamen eller utländsk examen och som bedöms motsvara en datadriven epidemiologi som postdoktor. Detta behörighetskrav ska vara uppfyllt senast vid den tidpunkt då anställningsbeslutet fattas.<br><br>Sökande måste:<br>Ha en doktorsexamen, helst i bioinformatik, beräkningsbiologi, (bio) statistik, (tillämpad) matematik, datavetenskap eller ett relaterat område; Sökande uppmuntras också att ansöka.Ha goda kunskaper i U från andra områden med starka programmerings- / kodningskunskaper (se nedan) NIX-skalskript, plus ett annat relevant språk (t.ex. Python, R).<br><br>Ha goda kunskaper i engelska i tal och skrift.Var bekväm med att arbeta i en mångsidig, inkluderande, tvärvetenskaplig och mycket samarbetsinriktad miljö."
-        },
-        {
-            "title": "Assistant Professor in Genomics of adaptation to climate change",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-01-31",
-            "employer": "Uppsala University",
-            "job_url": "https://uu.varbi.com/what:job/jobID:541995/?lang=en",
-            "description": "In the face of the current global biodiversity crisis, we urgently need accurate predictions of how organisms and ecosystems respond to climatic change. Insights into the genomics of adaptation to climate change forms part of the foundation for making such predictions. For example, there are several knowledge gaps in predicting the potential for temperature tolerance to evolve, including interpretation of signatures left by natural selection on thermal adaptation in the genome, detection of which metabolic pathways are involved, revealing how interactions among genetic loci affect climate adaptation and how eco-evo dynamics affect higher level processes such as carbon cycles at the ecosystem level. By using amenable study systems, next generation sequencing methods and other omics methods, experiments and appropriate modelling, such gaps in knowledge can be filled. We search for an assistant professor with research experience within this field, that can capitalize on the breath of expertice at the department to develop their research profile at the department of Ecology and Genetics.<br><br>The position is funded by SciLifeLab and comes with a generous start up package that will allow for the recruitment of a team.<br><br><b>Duties</b><br><br><ul><li>Research, teaching, and administration. Teaching duties include course responsibility and course administration and supervision of second- and third-cycle students.</li><li>Follow developments within the subject area and the development of society in general that is important for the work at the university.</li></ul>"
-        },
-        {
-            "title": "Postdoctoral position in RNA biology",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-01-30",
-            "employer": "Karolinska Institute",
-            "job_url": "http://pelechanolab.com/2023/01/11/postdoctoral-position-in-rna-biology/",
-            "description": "We have an open postdoctoral position in RNA biology. The available postdoctoral position concerns developing and applying novel genomic approaches to study RNA-protein interaction. The candidate will focus on investigation the dynamic interaction between the transcriptome and the proteome, and how the disruption of those interaction can be used to modulate gene expression and cellular phenotypes in health and disease.<br><br>The candidate is expected to contribute his/her own ideas to the common goal of understanding how RNA biology and proteostasis contributes to the appearance of divergent cellular phenotypes. The candidate will perform original research in genomics, and acquire the required experimental and computational skills necessary for the completion of the project. The candidate will use varied model organism, from budding yeast to human. The candidate will be responsible for integrating different kinds of biological information to answer relevant questions (i.e. genomics, proteomics, biochemical…). The successful candidate will take a strong lead in the experimental design, and collaborate with other team members. The candidate is expected to communicate the scientific results by writing up scientific papers and attending scientific meetings. The ideal candidate is also expected to participate in the general duties of the team and to effectively communicate with scientists of very diverse backgrounds in a highly interdisciplinary and international environment. Working language is English."
-        },
-        {
-            "title": "1–2 application experts at NBIS",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-01-27",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=577097",
-            "description": "This position is placed at NBIS Compute and Storage. This is a group of 4-5 bioinformaticians and other experts tasked with supporting life science researchers in the use of large-scale compute and storage systems. Primarily, these are the systems at UPPMAX, but other systems as well, such as clouds and dedicated GPU or large-memory. The unit has over 1000 annual users nationally in a wide range of research areas. The environment that has been built is unique and makes world-class research possible.<br><br>General tasks include advanced user support, installation of software and database resources, maintenance and development of the digital research environment, training of user groups on relevant topics, scripting of tools for internal or external use, and evaluation of project proposals and ongoing projects.<br><br>This position is intended to strengthen the group's competence in bioinformatics, especially concerning human data, as well as analysis of optical or electronic microscopy images."
-        },
-        {
-            "title": "System Developer",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-20",
-            "employer": "Chalmers University of Technology",
-            "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11275&rmlang=UK",
-            "description": "The announced employment is one of three DDLS Data Science Node employments that will be placed at Chalmers e-Commons. The work towards the national data services and support functions within cell and molecular biology is led by SciLifeLab Data Centre (DC), which is a central unit within SciLifeLab with responsibility for IT- and data management issues, serving the SciLifeLab and the Data Driven Life Science (DDLS) research program. DC has a national assignment and, for example, operate the Swedish national Covid-19 research data portal. DC also works with issues about FAIR data and open science in close collaboration with major national and international partners. you will be at the core of Sweden’s top infrastructure for life sciences and have the opportunity to actively shape how state-of-the-art IT and data science are integrated in Swedish life science research, and help to maximize the scientific impact of the large amount of research data generated at SciLifeLab. You will work in a team with researchers, data engineers, data stewards and system developers in a rapidly growing, dynamic and progressive team with a leading role in Swedish data driven life science.<br><br>The successful candidate will join and contribute to a vibrant and welcoming community of data science and bioinformatics researchers within DDLS, SciLifeLab and Chalmers, including strong national and international collaborations.<br><br>Chalmers e-Commons is working actively with consolidating the notion of Digital Research Engineers as partners for bridging the gap between advanced e-infrastructure resources and the needs of research to solve increasingly more complex problems. Here, Chalmers e-Commons is participating actively the international development and work with e.g. merits and career planning."
-        },
-        {
-            "title": "Data Steward",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-20",
-            "employer": "Chalmers University of Technology",
-            "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11274&rmlang=UK",
-            "description": "The announced employment is one of three DDLS Data Science Node employments that will be placed at Chalmers e-Commons. The work towards the national data services and support functions within cell and molecular biology is led by SciLifeLab Data Centre (DC), which is a central unit within SciLifeLab with responsibility for IT- and data management issues, serving the SciLifeLab and the Data Driven Life Science (DDLS) research program. DC has a national assignment and, for example, operate the Swedish national Covid-19 research data portal. DC also works with issues about FAIR data and open science in close collaboration with major national and international partners. you will be at the core of Sweden’s top infrastructure for life sciences and have the opportunity to actively shape how state-of-the-art IT and data science are integrated in Swedish life science research, and help to maximize the scientific impact of the large amount of research data generated at SciLifeLab. You will work in a team with researchers, data engineers, data stewards and system developers in a rapidly growing, dynamic and progressive team with a leading role in Swedish data driven life science.<br><br>The successful candidate will join and contribute to a vibrant and welcoming community of data science and bioinformatics researchers within DDLS, SciLifeLab and Chalmers, including strong national and international collaborations.<br><br>Chalmers e-Commons is working actively with consolidating the notion of Digital Research Engineers as partners for bridging the gap between advanced e-infrastructure resources and the needs of research to solve increasingly more complex problems. Here, Chalmers e-Commons is participating actively the international development and work with e.g. merits and career planning."
-        },
-        {
-            "title": "Data Engineer",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-20",
-            "employer": "Chalmers University of Technology",
-            "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11273&rmlang=UK",
-            "description": "The announced employment is one of three DDLS Data Science Node employments that will be placed at Chalmers e-Commons. The work towards the national data services and support functions within cell and molecular biology is led by SciLifeLab Data Centre (DC), which is a central unit within SciLifeLab with responsibility for IT- and data management issues, serving the SciLifeLab and the Data Driven Life Science (DDLS) research program. DC has a national assignment and, for example, operate the Swedish national Covid-19 research data portal. DC also works with issues about FAIR data and open science in close collaboration with major national and international partners. you will be at the core of Sweden’s top infrastructure for life sciences and have the opportunity to actively shape how state-of-the-art IT and data science are integrated in Swedish life science research, and help to maximize the scientific impact of the large amount of research data generated at SciLifeLab. You will work in a team with researchers, data engineers, data stewards and system developers in a rapidly growing, dynamic and progressive team with a leading role in Swedish data driven life science.<br><br>The successful candidate will join and contribute to a vibrant and welcoming community of data science and bioinformatics researchers within DDLS, SciLifeLab and Chalmers, including strong national and international collaborations.<br><br>Chalmers e-Commons is working actively with consolidating the notion of Digital Research Engineers as partners for bridging the gap between advanced e-infrastructure resources and the needs of research to solve increasingly more complex problems. Here, Chalmers e-Commons is participating actively the international development and work with e.g. merits and career planning."
-        },
-        {
-            "title": "Systems developer at NGI-Uppsala, SNP&SEQ Technology Platform",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=577299",
-            "description": "We are seeking a systems developer to join our Systems group in expanding our data processing pipelines and Laboratory Information Management System (LIMS). Because of the sensitive nature of the data we handle there is a strong focus on information security, automation and traceability. As such we work according to the European quality standard ISO/IEC 17025 and are accredited by SWEDAC as a testing laboratory for genotyping and sequencing. We continuously strive to improve our development procedures and keep up with the state of the art in terms of CI/CD, version control and documentation.<br><br><li>Design and develop systems for processing and analyzing data in the petabyte range.</li><li>Create smart integrations with our Laboratory Information Management System (LIMS)</li><li>Provide user support for these systems at the SNP&SEQ technology platform.</li><li>Develop and improve existing DevOps solutions based on e.g. Ansible and GitLab.</li><li>Establish, maintain and validate our internal documentation.</li><li>Cooperate with staff at the Uppsala University IT Department, UPPMAX and other SciLifeLab units."
-        },
-        {
-            "title": "Permanent bioinformatics staff position with expertise in machine learning",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573747",
-            "description": "We are looking for a highly motivated scientist with a strong background and interest in machine learning applied to biological and genetics projects. The main responsibilities are to:<br><br><ul><li>Carry out advanced data analyses within nationally prioritized data-driven projects. The data used will be dependent on the project, and can include sequence data, image data, distribution data, and more.</li><li>Potentially develop tools and workflows for such analyses, and make these available to other researchers.</li><li>Educate other scientists in bioinformatics through collaboration within supported projects, teaching at advanced national courses and consultations.</li><li>Engage in the continuous development and improvement of the DDLS program and the SciLifeLab Bioinformatics platform at a national level."
-        },
-        {
-            "title": "System developer",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Swedish Museum of Natural History",
-            "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=A8BB065A-2515-44EE-8C86-F45B8CB92D22&locId=2",
-            "description": "We are now looking for a system developer to join the Data Science Node in Evolution and Biodiversity (DSN-EB). This opportunity would allow you to contribute your skills and experience towards enabling research on ecosystems and biodiversity, working on exciting development projects and cutting-edge research within your areas of expertise. This position is a unique opportunity to be part of the larger DDLS framework and to contribute towards establishing an internationally leading role for Sweden in developing data science excellence in biological research. Eventually this will accelerate the development of biological research capabilities in addressing pressing global issues, such as the global biodiversity crisis.<br><br>We believe in competence development and competence transfer and here you are offered the opportunity to build technical solutions in biodiversity informatics with Swedish and international colleagues in support of research. Key areas of research will include storage, processing, and availability of biodiversity data from DNA sequencing of natural populations, environmental samples (metagenomics and metabarcoding) and data from automated recording of image, sound, video or sensor data, and large-scale analysis using machine learning.<br><br>You will participate in SBDI development in coordination with developer teams. Your colleagues will include researchers, technicians, and a diversity of stakeholders from Sweden and abroad, sharing the mandate to improve infrastructure use and functionality."
-        },
-        {
-            "title": "System developer",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Swedish Museum of Natural History",
-            "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=9FCBE315-07CE-439F-8785-6DADEBAABB56&locId=2",
-            "description": "We are now looking for a system developer with special expertise in evolution and biodiversity informatics to join the Data Science Node in Evolution and Biodiversity (DSN-EB). This opportunity would allow you to contribute your skills and experience towards enabling research on ecosystems and biodiversity, working on exciting development projects and cutting-edge research within your areas of expertise. This position is a unique opportunity to be part of the larger DDLS framework and to contribute towards establishing an internationally leading role for Sweden in developing data science excellence in biological research. Eventually this will accelerate the development of biological research capabilities in addressing pressing global issues, such as the global biodiversity crisis.<br><br>We believe in competence development and competence transfer and here you are offered the opportunity to build technical solutions in biodiversity informatics with Swedish and international colleagues in support of research. Key areas of research will include storage, processing, and availability of biodiversity data from DNA sequencing of natural populations, environmental samples (metagenomics and metabarcoding) and data from automated recording of image, sound, video or sensor data, and large-scale analysis using machine learning.<br><br>You will participate in SBDI development in coordination with developer teams. Your colleagues will include researchers, technicians, and a diversity of stakeholders from Sweden and abroad, sharing the mandate to improve infrastructure use and functionality."
-        },
-        {
-            "title": "Bioinformatician",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Stockholm University",
-            "job_url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs?rmpage=job&rmjob=19544&rmlang=UK",
-            "description": "You will get the opportunity to work in a vibrant research environment and with a range of interesting projects in collaboration with different research groups. We are a strong and collaborative team of bioinformatics experts and this, in conjunction with the broad competence within NBIS, the Cryo-EM unit and the larger SciLifeLab community, creates an excellent forum to maintain cutting-edge expertise and acquire new skills. In addition to direct involvement in research projects, the work includes teaching on advanced national courses and potentially method and data resource development in close collaboration with the SciLifeLab Data Centre and with the emerging DDLS Data Science Nodes. <br><br> The position is placed at SciLifeLab Stockholm, which is situated at the research campus of Karolinska Institutet in northern Stockholm. <br><br> Main responsibilities are:<br><ul><li>Carry out advanced data analyses within nationally prioritized projects</li><li>Potentially develop tools and workflows for such analyses</li><li>Educate other scientists in bioinformatics through collaboration within supported projects, teaching at advanced national courses, and consultations</li><li>Take part in the continuous development and improvement of the SciLifeLab Bioinformatics Platform, the Cryo-EM unit, and the DDLS program at a national level.</li></ul>"
-        },
-        {
-            "title": "Bioinformatician",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Swedish Museum of Natural History",
-            "job_url": "https://recruit.visma.com/External/OJCustomer3/AssignmentView.aspx?GuidExtSoftware=a5786420-7e37-474f-a559-74aee65669fe&guid=2F5CAF46-521B-4F8D-A82C-9DB47AAA39C3&locId=2",
-            "description": "We are now looking for a bioinformatician with expertise relevant for leading data-driven Swedish research projects in evolution and biodiversity to join the Data Science Node in Evolution and Biodiversity (DSN-EB). This will be one of two WABI (Wallenberg Advanced Bioinformatics Infrastructure) support experts attached to NBIS/SciLifeLab; the other will be placed at Department of Cell and Molecular Biology, UU.<br><br>This opportunity would allow you to contribute your skills and experience towards research on ecosystems and biodiversity, working on exciting projects and cutting-edge research within your areas of expertise. This position is a unique opportunity to be part of the larger DDLS framework and to contribute towards establishing an internationally leading role for Sweden in developing data science excellence in biological research. Eventually this will accelerate the development of biological research capabilities in addressing pressing global issues, such as the global biodiversity crisis.<br><br>We believe in competence development and competence transfer, and here you have the opportunity to enter a key position in data-driven research projects on evolution and biodiversity. Primary areas of research will include biodiversity data from DNA sequencing of natural populations, environmental samples (metagenomics and metabarcoding) and data from automated recording of image, sound, video or sensor data, as well as large-scale analysis using machine learning."
-        },
-        {
-            "title": "System developer",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/en/what:job/jobID:573071/type:job/where:4/apply:1",
-            "description": "KI and SciLifeLab Data Centre are looking for a motivated and knowledgeable System developer specialized towards precision medicine and diagnostics, with placement at KI’s Research Data Office (RDO) in Solna. As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field.<br><br>In our team, you will develop services to enable research projects for precision medicine and diagnostics, often in collaboration with health care partners. This requires technical solutions with a high level of security, data integrity and interoperability, which need to be developed in coordination with engineers and developers at other organizations. The datasets are often large and complex, which leads to high demands on both software and infrastructure. Solutions for meta data management and -standardization are of special importance, and integration with data from for example biobanks, clinical registries, clinical trials, large scale molecular data and other health data."
-        },
-        {
-            "title": "Bioinformatician with expertise in precision medicine (2 positions)",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/en/what:job/jobID:572802/type:job/where:4/apply:1",
-            "description": "The main responsibilities are to: <br><br> <ul><li>Perform advanced data analyses within nationally prioritised data-driven projects.</li><li>Potentially develop tools and workflows to aid such analyses, and for wider use by the scientific community.</li><li>Educate other scientists in bioinformatics through collaboration within supported projects, teaching at advanced national courses and consultations.</li><li>Engage in the continuous development and improvement of the DDLS program and the SciLifeLab Bioinformatics platform at a national level.</li></ul><br>Data analysis tasks could for example include classifying patients based on molecular profiles and health records to inform treatment decisions. The bioinformaticians will also support preclinical research, e.g. studies using model systems to increase the understanding of disease mechanisms through analysis of multi-omics data, images and/or drug-response profiles."
-        },
-        {
-            "title": "Data Engineer",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/en/what:job/jobID:573006/type:job/where:4/apply:1",
-            "description": "The successful candidate will work at the Data Science Node for Precision Medicine and Diagnostics of the DDLS program, at Karolinska Institute (KI) and SciLifeLab Data Centre (DC). The four Data Science Nodes of the program, placed at four different universities, are responsible for bioinformatics support and the development of data services and tools for the four different scientific fields of the program. This DDLS node works specifically with precision medicine and diagnostics to coordinate needs for services and support, and to engage with research communities and users within the field on the national level. Each node is organized locally at its host university and is integrated in a strong environment for research and data within its field.<br><br>The node staff will be employed at Karolinska Institutet (KI) and placed at the Compliance & Data Office (CDO), part of the central Research Support Office, at the KI campus in northern Stockholm where SciLifeLab’s Stockholm site also is located. The CDO offers broad support on data management, health data, clinical studies, ethics and compliance to researchers and is now, through the DDLS program, developing more specific support for precision medicine. CDO also coordinates the Research Data Office (RDO), a virtual organisation where research support staff is joined by experts from the university library, the IT department, the archive and legal department – connected to RDO is also national data support expert and structures like the Swedish National Data service. KI also offers close collaboration with regional and local initiatives related to precision medicine, e.g. the collaborative Precision Medicine Centre Karolinska (PMCK) together with Karolinska University hospital and the university wide initiative Data Driven research at KI (DDKI)."
-        },
-        {
-            "title": "Data Steward",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/what:job/jobID:572929/type:job/where:4/apply:1",
-            "description": "The successful candidate will work at the Data Science Node for Precision Medicine and Diagnostics of the DDLS program, at Karolinska Institute (KI) and SciLifeLab Data Centre (DC). The four Data Science Nodes of the program, placed at four different host universities, are responsible for bioinformatics support and the development of data services and tools for the four different scientific fields of the program. This DDLS node works specifically with precision medicine and diagnostics to coordinate needs for services and support, and to engage with research communities and users within the field on the national level. Each node is organized locally at its host university and is integrated in a strong environment for research and data within its field. The employment and placement are at KI and the work is led by SciLifeLab Data Centre.<br><br>The node staff will be employed at Karolinska Institutet (KI) and placed at the Compliance & Data Office (CDO), part of the central Research Support Office, at the KI campus in northern Stockholm where SciLifeLab’s Stockholm site also is located. The CDO offers broad support on data management, health data, clinical studies, ethics and compliance to researchers and is now, through the DDLS program, developing more specific support for precision medicine. CDO also coordinates the Research Data Office (RDO), a virtual organisation where research support staff is joined by experts from the university library, the IT department, the archive and legal department – connected to RDO is also national data support expert and structures like the Swedish National Data service. KI also offers close collaboration with regional and local initiatives related to precision medicine, e.g. the collaborative Precision Medicine Centre Karolinska (PMCK) together with Karolinska University hospital and the university wide initiative Data Driven research at KI (DDKI)."
-        },
-        {
-            "title": "Data Steward (Bioinformatician)",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573165",
-            "description": "You will work closely with and guide research groups regarding Data Management Plans, and how they shall structure and publish the research data that they generate. A large focus will be to establish and perform procedures for user support to researchers wanting to deposit data from evolutionary biology and biodiversity. An important part of the work is also to educate researchers in data management best practices. You are also expected to contribute to Research Data Management competence networking within Sweden."
-        },
-        {
-            "title": "Data Engineer",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-16",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=573210",
-            "description": "The work will focus on development and maintenance of systems for processing and visualisation of biological data. DNA sequences is the most common data type in this area, but also distribution data and image data are common. Part of the work will be driven by needs in projects connected to Earth Biogenome Project, a consortium focusing on genome sequencing of all organisms in the world. The development of a genome portal for visualisation and browsing of these projects is one of the tasks."
-        },
-        {
-            "title": "Two specialist positions",
-            "type": [
-                "Job",
-                "Data science node"
-            ],
-            "app_deadline": "2023-01-15",
-            "employer": "Chalmers University of Technology",
-            "job_url": "https://www.chalmers.se/en/about-chalmers/Working-at-Chalmers/Vacancies/Pages/default.aspx?rmpage=job&rmjob=11229&rmlang=UK",
-            "description": "The DDLS program is now establishing a national “data science node” in “Cell and Molecular Biology” at Chalmers University of Technology with a national responsibility to develop national data services and to provide bioinformatics support. The bioinformatics support staff will be integrated with the SciLifeLab bioinformatics platform (NBIS), a unique national infrastructure with over 100 employees, providing support, infrastructure and training to the Swedish life science research community and participating in international collaborations. We are now looking for outstanding candidates with competence in computational biology, to provide advanced bioinformatics support for scientifically excellent data-driven Swedish research projects in Cell and Molecular Biology. The successful candidate will join and contribute to a vibrant and welcoming community of bioinformatics and data science researchers within NBIS, SciLifeLab and Chalmers, with national and international collaborations.<br><br>The SciLifeLab and Wallenberg National Program for Data-Driven Life Science (DDLS) is a 12-year initiative that focuses on data-driven research, within fields essential for improving people’s lives, detecting and treating diseases, protecting biodiversity and creating sustainability. The program will train and recruit the next generation of data-driven life scientists and create strong and globally competitive computational and data science capabilities in Swedish life science. The program aims to strengthen national collaborations between universities, bridge the research communities of life and data sciences, and create partnerships with industry, healthcare and other national and international actors.<br><br>As a national hub for molecular biosciences in Sweden, SciLifeLab develops and maintains unique research infrastructure, services and data resources for life science. The overall aim of SciLifeLab is to facilitate cutting-edge, multi-disciplinary life science research and promote its translation to the benefit of society. About 200 research groups, 1500 researchers and 40 national infrastructure units are associated with SciLifeLab, with two main centers located in Stockholm and Uppsala, but with national SciLifeLab units at all major Swedish universities.<br><br>Major responsibilities:<br><ul><li>Carry out advanced data analyses within nationally prioritized data-driven cell and molecular biology projects</li><li>Develop tools and workflows for such analyses</li><li>Educate other scientists in bioinformatics through collaboration within supported projects, teaching at advanced national courses and consultations</li><li>Engage in the continuous development and improvement of the DDLS program and the SciLifeLab Bioinformatics platform at a national level.</li></ul>"
-        },
-        {
-            "title": "Systemutvecklare /DevOps (datatjänster) 1-3 st",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-01-27",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=577697",
-            "description": "SciLifeLab Data Centre söker 1-3 motiverade och kunniga systemutvecklare. Vi kommer inom den nya nationella dataplattformen för SciLifeLab och DDLS-programmet bygga upp tjänster för serviceenheter och forskargrupper inom life science. Arbetet kommer att inbegripa både nyutveckling, existerande mjukvarukomponenter och kommersiella system.<br><br>Du kommer att ha möjlighet att arbeta i agila utvecklingsprojekt för t.ex:<br><br><ul><li>System för forskningsdata från t.ex. genomik, proteomik, mikroskopi, och kemisk biologi, särskilt integration mot våra dataportaler för pandemiberedskap och data-driven livsvetenskap.</li><li>Tjänster för hantering av hälsodata i samverkan med aktörer inom sjukvården eller klinisk forskning.</li><li>System och verktyg för metadatahantering, t.ex. information om provberedning, experimentell bearbetning och produktion av mätdata.</li><li>Tjänster för distribuerade lagrings- och beräkningssystem kopplade till metadata för studier och prov.</li><li>Verktyg och tekniska utvecklingsmiljöer för träning av teknisk personal.</li><br><br>I uppgifterna ingår även utformning och testning av system tillsammans med användare och dataingenjörer. Du kommer att arbeta i ett team med forskare, ingenjörer, data stewards och systemutvecklare, mitt i SciLifeLabs nationella forskningsinfrastruktur. Arbetet inkluderar samarbeten mellan SciLifeLab och nationella centra för e-infrastruktur, t.ex. Berzelius vid Nationellt Superdatorcentrum."
-        },
-        {
-            "title": "1-3 Data Steward(s)",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-01-13",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=571939",
-            "description": "SciLifeLab Data Centre is looking for motivated and knowledgeable Data stewards, to join our Data management team. As a data steward, you are expected to participate in user support and development of data services, with a focus on research data management following the FAIR principles, metadata management and data curation, communication with users, and training activities.<br><br>You will be working with data from genomics, proteomics, chemical biology and other technologies, and in a responsive way support projects to continuously make available data, code, methods and results. You will also support projects with technical solutions, services and advice to maintain the highest possible quality in research data management, as well as support a collaborative and open way of working. Meta data management is of particular importance for this role, including information about sample preparation and biomaterial, experimental processing and production of raw data. Health data management, often in collaboration with clinical partners, is an important area and we are particularly looking for data stewards with interest and experience in this field.<br><br>As a data steward, you will work directly with data management through support to different projects and activities, but also by working with engineers and developers to develop data services for the field.."
-        },
-        {
-            "title": "Postdoc in the field of structural biology / structural bioinformatics",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-01-13",
-            "employer": "Linköping University",
-            "job_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20513&rmlang=UK",
-            "description": "In this position, you will develop statistical and machine learning approaches to characterize and quantify flexibility in macromolecular atomic models determined by cryo-EM and crystallography experiments. Using Swedish & SciLifeLab national computing infrastructure, you will apply these methods at scale to structures in the PDB, to build a publicly-accessible open database and study experimental flexibility in relation to molecular function.<br><br>As postdoc, you will principally carry out research. A certain amount of teaching may be part of your duties, up to a maximum of 20% of working hours."
-        },
-        {
-            "title": "Postdoc in the field of structural biology / structural bioinformatics",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-01-13",
-            "employer": "Linköping University",
-            "job_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20539&rmlang=UK",
-            "description": "In this position, you will use statistical and machine learning approaches to develop methods for improving modelling and refinement of heterogeneous regions of macromolecular atomic models derived from multi-dataset crystallography experiments. You will use these approaches to generate highly detailed models that enable quantitative structural studies of multi-state systems, such as protein-ligand complexes obtained from fragment-screening experiments. You will engage with national & international collaborators to apply these methods to time-resolved and multi-temperature experimental data sets.<br><br>As postdoc, you will principally carry out research. A certain amount of teaching may be part of your duties, up to a maximum of 20% of working hours."
-        },
-        {
-            "title": "PhD position in structural biology / structural bioinformatics",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-01-13",
-            "employer": "Linköping University",
-            "job_url": "https://liu.se/en/work-at-liu/vacancies?rmpage=job&rmjob=20567&rmlang=UK",
-            "description": "In this position, you will develop statistical and machine learning approaches to analyze and improve modelling of disordered regions of macromolecular atomic models derived from multi-dataset X-ray crystallography experiments. Working with both national and international experimental collaborators, you will apply these methods to study the role of flexibility and dynamics in relation to molecular recognition and function using data from time-resolved, multi-temperature and fragment screening crystallography experiments.<br><br>As a PhD student, you devote most of your time to doctoral studies and the research projects of which you are part. Your work may also include teaching or other departmental duties, up to a maximum of 20% of full-time."
+            "app_deadline": "2023-04-11",
+            "employer": "Gothenburg University",
+            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=6&lang=SE&validator=3038fcf1516ea1184a6da70a891f87da&ref=https%3A%2F%2Farbetsformedlingen.se%2Fplatsbanken%2F&job_id=29696",
+            "description": "Anställningen är placerad vid Forsknings- och innovationskontoret, som har 35 medarbetare organiserade i tre övergripande ansvarsområden - forskningsstöd, affärsjuridik samt innovation & nyttiggörande. Visionen för Forsknings- och innovationskontoret är att leverera forskningsstöd i världsklass och att vara ett föredöme och en inspirationskälla för andra stödverksamheter. Vid Forsknings- och innovationskontoret  ges såväl operativt som strategiskt stöd till främst forskare och ledningsfunktioner i olika frågor. Anställningsplaceringen möjliggör interaktion med forskningsrådgivare, innovationsrådgivare och jurister. Forsknings- och innovationskontoret är en enhet inom Gemensamma förvaltningen på Göteborgs universitet."
         }
     ]
 }

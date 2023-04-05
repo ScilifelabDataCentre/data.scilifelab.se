@@ -146,7 +146,7 @@
       {{ $this_job_type = delimit $this_job_type " " }}
       {{ $this_employer := delimit (split .employer " ") "-" | lower }}
       
-      <div class="col-md-6 col-lg-4" data-job-type="{{ $this_job_type }}" data-employer="{{ $this_employer }}">
+      <div class="col-md-6 col-lg-4 job" data-job-type="{{ $this_job_type }}" data-employer="{{ $this_employer }}">
         <div class="p-3 border rounded h-100">
           <div class="d-flex justify-content-between">
             <div>
@@ -272,12 +272,12 @@
     var employer = $('input:checkbox[name="employer"]:checked').map(function () {return this.value}).get();
     
     // Hide all displayed jobs and message
-    $('div#jobs-container div[data-job-type]').hide();
+    $('div#jobs-container div.job').hide();
     $('div#no-filtered-jobs').hide();
     
     // Show relavant jobs based on selected criteria
     if (!job_type.length && !employer.length) {
-      $('div#jobs-container div[data-job-type]').show();
+      $('div#jobs-container div.job').show();
     } else {
       job_type.forEach(function(jtype){
         $(`div#jobs-container div[data-job-type*=${jtype}]`).each(function(){
@@ -295,7 +295,7 @@
       });
       
       // Display a message if no jobs available for selected criteria
-      var visible_jobs = $('div#jobs-container div[data-job-type]').filter(":visible");
+      var visible_jobs = $('div#jobs-container div.job').filter(":visible");
       if (!visible_jobs.length) {
         $('div#no-filtered-jobs').show();
       }
