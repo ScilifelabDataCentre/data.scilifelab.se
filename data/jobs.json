@@ -41,6 +41,16 @@
             "description": "The project involves fundamental research on statistical design of experiments incorporating fairness constraints. The goal of the project is to build algorithms to generate both – one-shot and sequential design of experiments that result in balanced sampling properties, with fairness and equal opportunities aspects taken into account. The developed approaches will be used for designing microbiome studies. As a proof-of-concept, we will leverage available large-scale datasets such as the SCAPIS or SIMPLER cohorts from which to extract balanced and fair case-control cohorts. The position may also involve teaching activities (up to 20%) and opportunities for supervising students in second-cycle education."
         },
         {
+            "title": "Research Advisor (Research Data manager), Core Facilities",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-05-02",
+            "employer": "Gothenburg University",
+            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=29891",
+            "description": "BDC will now, with the financial support by SciLifeLab, expand its group with a research advisor with a focus on handling research data. The position will be shared between BDC and Gothenburg’s SciLifeLab site and thereby support activities from various disciplines including the recently established SciLifeLab and Wallenberg National Program for Data-Driven Life Science (DDLS) (https://www.scilifelab.se/data-driven/about/). More than 400 group leaders, PhD students and postdocs will be part of the DDLS program, and they are expected to become advanced users of the services provided by the site."
+        },
+        {
             "title": "1-3 System developers/DevOps",
             "type": [
                 "Job"
@@ -69,6 +79,36 @@
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=603737",
             "description": "Professor Mia Phillipson's research group consists of about 15 people. The group's research is mainly focusing on revealing novel functions of immune cells, and to find means to control and regulate these functions during e.g. organ development, regulation of homeostasis, tissue regeneration, blood vessel formation and inflammation using intravital imaging, functional studies and multiomics approaches. Among the most important discoveries of the Phillipson group are the alternative roles of immune cells in restoration of blood perfusion following ischemic injury and transplantation, as well as during wound healing. Following their discoveries of how to regulate these immune cell functions, a spin-off company (Ilya Pharma) was founded to develop immunotherapies accelerating healing of wounds in skin and mucosa now in clinical phase 2.<br><br>The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage. "
+        },
+        {
+            "title": "Forskningsingenjör, SciLifeLab Affinity Proteomics Uppsala",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-27",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=616402",
+            "description": "Vi söker nu en till två forskningsingenjörer som i första hand kommer vara en del av teamet som jobbar med Olink Explore metoden. Metoden baseras på proximity extensions assay (PEA) och det laborativa arbetet är till stor del automatiserat med pipetteringsrobotar, men även manuellt laborativt arbete förekommer. För att blir en självständig operatör så krävs en godkänd internutbildning.<br><br>Beroende på den sökandes profil och provinströmning kan det även bli aktuellt med arbete med andra metoder som ingår i verksamheten, i första hand PCR baserade PEA metoder (Olink Target, Flex, Focus) och metoder baserade på elektrochemiluminescence (ECL, Meso Scale).<br><br>En noggrann dokumentation av det dagliga arbetet är en viktig del av arbetsuppgifterna."
+        },
+        {
+            "title": "1-2 postdoctoral positions in data-driven infection biology",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-23",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/what:job/jobID:615582/type:job/where:1/apply:1",
+            "description": "Microbes produce a wide array of secondary metabolites (SMs), which allow them to interact with their environment, as well as with each other. The postdoctoral project proposed here will involve developing (meta)genome mining approaches, which can be used to identify novel microbial SMs involved in microbe-host and/or microbe-microbe interactions. The tools developed here will be applied to large amounts of microbial (meta)genomic data, with the goal of identifying microbial SMs responsible for host disease phenotypes (e.g., microbiome-associated cancers) or SMs with novel antimicrobial activities."
+        },
+        {
+            "title": "PhD position in medical science within bioinformatic, computational methods",
+            "type": [
+                "Phd position"
+            ],
+            "app_deadline": "2023-04-23",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/what:job/jobID:615694/type:job/where:1/apply:1",
+            "description": "Secondary metabolites (SMs) produced by microbes have critically important roles in human health, including as essential therapeutics (e.g., antimicrobials, anticancer agents). (Meta)genomic data derived from microbes thus offers tremendous potential as a reservoir for novel SMs; however, accurate, scalable in silico methods are necessary to leverage such data for SM discovery. Here, the PhD student will develop and apply bioinformatic tools, which can facilitate the discovery of novel SMs from millions of microbial (meta)genomes available in public databases."
         },
         {
             "title": "Bibliotekarie inriktning publicering och öppen vetenskap",
