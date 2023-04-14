@@ -189,7 +189,6 @@
             "registration_deadline": "2023-04-21",
             "description": "Centre for bioinformatics and biostatistics arranges a workshop in biostatistics and bioinformatics. The workshop will be separated into two groups, one about bioinformatics and another one about biostatistics. <br><br><ul><li>The bioinformatics workshop will cover 'Scientific data: plan for handling and depositing'.</li><li>The biostatistics workshop will cover 'Statistical power: analysis and inference'.</li></ul>"
         },
-
         {
             "title": "Nordic Precision Medicine Forum",
             "type": "Conference",
@@ -202,9 +201,8 @@
             "organisers": "SciLifeLab Precision Medicine Capability",
             "event_url": "https://www.scilifelab.se/event/nordic-precision-medicine-forum-2/",
             "registration_url": "https://www.precisionmedicineforum.com/our-conferences/nordic23/register/",
-            "description": "As Precision Medicine initiatives around the world gather pace, the Nordic countries are in an enviable position when it comes to joining all the dots. The link between digital health, omics technologies, artificial intelligence and data means that yet more collaboration is required to ensure the success of precision medicine. As demonstrated by organisations such as SciLifeLab, the collaborative efforts of healthcare, research, industry and patient organisations is really starting to bear fruit."
+            "description": "As Precision Medicine initiatives around the world gather pace, the Nordic countries are in an enviable position when it comes to joining all the dots. The link between digital health, omics technologies, artificial intelligence and data means that yet more collaboration is required to ensure the success of precision medicine. As demonstrated by organisations such as SciLifeLab, the collaborative efforts of healthcare, research, industry and patient organisations is really starting to bear fruit.<br><br>The lines between the different disciplines involved in precision medicine are often blurred, so to bring all of the people together we have created three unique meetings which allow our attendees to move freely between different areas of interest.<br><br>Through a combination of keynotes, presentations, panel discussions, breakouts and networking opportunities, you will have access to those who are shaping the digital health revolutions across the region, under one roof, over two days.<br><br>Placing all the experts from the Precision Medicine ecosystem in one place at one time allows for the very essence of what many say is the key to precision medicine – collaboration"
         },
-
         {
             "title": "Matchmaking Event: Data Science and Medical/Clinical/Healthcare Research Project Call 2024",
             "type": "Matchmaking Event",
@@ -309,7 +307,7 @@
             ],
             "organisers": "Linköping University and collaborators",
             "event_url": "https://liu.se/en/research/bme-conference-2023",
-            "registration_url" : "https://forms.office.com/Pages/ResponsePage.aspx?id=7Bg_kSZ_X0yoFnhP6aWO3bgNVIMWQXVCjYSuJyirVDNURFQyTFdBR1FVUlNFSDVSVEhaWDhCQkdWRi4u",
+            "registration_url": "https://forms.office.com/Pages/ResponsePage.aspx?id=7Bg_kSZ_X0yoFnhP6aWO3bgNVIMWQXVCjYSuJyirVDNURFQyTFdBR1FVUlNFSDVSVEhaWDhCQkdWRi4u",
             "description": "BME@LiU 2023 is a conference day filled with activities to highlight the research conducted at LiU in the field of biomedical engineering. The ambition is to make BME@LiU a meeting place for all who are active in the field, in order to create collaboration and discussion."
         },
         {

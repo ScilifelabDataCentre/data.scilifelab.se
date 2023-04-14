@@ -88,17 +88,17 @@
             "app_deadline": "2023-04-27",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=616402",
-            "description": "Vi söker nu en till två forskningsingenjörer som i första hand kommer vara en del av teamet som jobbar med Olink Explore metoden. Metoden baseras på proximity extensions assay (PEA) och det laborativa arbetet är till stor del automatiserat med pipetteringsrobotar, men även manuellt laborativt arbete förekommer. För att blir en självständig operatör så krävs en godkänd internutbildning."
+            "description": "Vi söker nu en till två forskningsingenjörer som i första hand kommer vara en del av teamet som jobbar med Olink Explore metoden. Metoden baseras på proximity extensions assay (PEA) och det laborativa arbetet är till stor del automatiserat med pipetteringsrobotar, men även manuellt laborativt arbete förekommer. För att blir en självständig operatör så krävs en godkänd internutbildning.<br><br>Beroende på den sökandes profil och provinströmning kan det även bli aktuellt med arbete med andra metoder som ingår i verksamheten, i första hand PCR baserade PEA metoder (Olink Target, Flex, Focus) och metoder baserade på elektrochemiluminescence (ECL, Meso Scale).<br><br>En noggrann dokumentation av det dagliga arbetet är en viktig del av arbetsuppgifterna."
         },
         {
-            "title": "Postdoctoral position in data-driven infection biology",
+            "title": "1-2 postdoctoral positions in data-driven infection biology",
             "type": [
                 "Postdoc position"
             ],
             "app_deadline": "2023-04-23",
             "employer": "Umeå University",
             "job_url": "https://umu.varbi.com/what:job/jobID:615582/type:job/where:1/apply:1",
-            "description": "A fully funded, two-year postdoc position is immediately available in the Department of Clinical Microbiology at Umeå University. The position is open to computational scientists with an interest in microbial (meta)genomic data analysis. The project is about Data-driven discovery of novel microbial secondary metabolites involved in host-microbe and/or microbe-microbe interactions."
+            "description": "Microbes produce a wide array of secondary metabolites (SMs), which allow them to interact with their environment, as well as with each other. The postdoctoral project proposed here will involve developing (meta)genome mining approaches, which can be used to identify novel microbial SMs involved in microbe-host and/or microbe-microbe interactions. The tools developed here will be applied to large amounts of microbial (meta)genomic data, with the goal of identifying microbial SMs responsible for host disease phenotypes (e.g., microbiome-associated cancers) or SMs with novel antimicrobial activities."
         },
         {
             "title": "PhD position in medical science within bioinformatic, computational methods",
@@ -108,7 +108,7 @@
             "app_deadline": "2023-04-23",
             "employer": "Umeå University",
             "job_url": "https://umu.varbi.com/what:job/jobID:615694/type:job/where:1/apply:1",
-            "description": "The project involves developing computational methods, which can facilitate the discovery of novel secondary metabolites from microbial (meta)genomes. You will be part of a research group that collaborates with other leading researchers. Our goal is to obtain new, ground-breaking knowledge that enables development in the field of bioinformatics."
+            "description": "Secondary metabolites (SMs) produced by microbes have critically important roles in human health, including as essential therapeutics (e.g., antimicrobials, anticancer agents). (Meta)genomic data derived from microbes thus offers tremendous potential as a reservoir for novel SMs; however, accurate, scalable in silico methods are necessary to leverage such data for SM discovery. Here, the PhD student will develop and apply bioinformatic tools, which can facilitate the discovery of novel SMs from millions of microbial (meta)genomes available in public databases."
         },
         {
             "title": "Bibliotekarie inriktning publicering och öppen vetenskap",
