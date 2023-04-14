@@ -189,6 +189,38 @@
             "registration_deadline": "2023-04-21",
             "description": "Centre for bioinformatics and biostatistics arranges a workshop in biostatistics and bioinformatics. The workshop will be separated into two groups, one about bioinformatics and another one about biostatistics. <br><br><ul><li>The bioinformatics workshop will cover 'Scientific data: plan for handling and depositing'.</li><li>The biostatistics workshop will cover 'Statistical power: analysis and inference'.</li></ul>"
         },
+
+        {
+            "title": "Nordic Precision Medicine Forum",
+            "type": "Conference",
+            "date_start": "2023-04-27",
+            "date_end": "2023-04-28",
+            "venue": "München Bryggeriet, Stockholm",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "SciLifeLab Precision Medicine Capability",
+            "event_url": "https://www.scilifelab.se/event/nordic-precision-medicine-forum-2/",
+            "registration_url": "https://www.precisionmedicineforum.com/our-conferences/nordic23/register/",
+            "description": "As Precision Medicine initiatives around the world gather pace, the Nordic countries are in an enviable position when it comes to joining all the dots. The link between digital health, omics technologies, artificial intelligence and data means that yet more collaboration is required to ensure the success of precision medicine. As demonstrated by organisations such as SciLifeLab, the collaborative efforts of healthcare, research, industry and patient organisations is really starting to bear fruit."
+        },
+
+        {
+            "title": "Matchmaking Event: Data Science and Medical/Clinical/Healthcare Research Project Call 2024",
+            "type": "Matchmaking Event",
+            "date_start": "2023-04-27",
+            "time_start": "15:00",
+            "time_end": "17:00",
+            "registration_deadline": "2023-04-22",
+            "venue": "Air&Fire, SciLifeLab Stockholm",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "KTH Life Science Platform and KTH Digitalization Platform",
+            "event_url": "https://www.kth.se/en/forskning/forskningsplattformar/digitalisering/kalender/matchmaking-event-data-science-and-medical-clinical-healthcare-research-call-2024-1.1230839?date=2023-04-27",
+            "registration_url": "https://www.kth.se/form/matchmaking?l=en",
+            "description": "Welcome to a matchmaking in SciLifeLab between Data Science and Medical/Clinical/Healthcare research at Karolinska Institutet, KTH and Region Stockholm, related to the Health, Medicine and Technology (HMT) Project Call 2024 (opens on 13 April). Following the success of the event last year we invite you to participate in another matchmaking event to find research partners for the upcoming call. A key requirement to apply is that one partner is from KTH and one from Region Stockholm."
+        },
         {
             "title": "RDM Training and Tools working group",
             "type": "Webinar",
@@ -264,6 +296,23 @@
             "description": "Professor emeritus Ann-Christine Syvänen moved from Helsinki, Finland to Uppsala in 1998. In 2001 she was appointed professor in Molecular Medicine at the Department of Medical Sciences at Uppsala University. After 20 years as a research group leader and director of the SNP&SEQ Technology Platform, followed by five years as senior professor at Uppsala University, she retired in 2022. This open symposium brings together her former colleagues from Finland, as well as coworkers and former students in Uppsala to celebrate the progress in Human Genomics during the past three decades and future prospects for Genomics in Precision Medicine."
         },
         {
+            "title": "BME@LiU 2023",
+            "type": "Conference",
+            "date_start": "2023-04-20",
+            "time_start": "08:30",
+            "time_end": "17:30",
+            "registration_deadline": "2023-04-11",
+            "venue": "Norra Entrén, Campus US, Linköping and via Zoom",
+            "location": [
+                "Linköping",
+                "Online"
+            ],
+            "organisers": "Linköping University and collaborators",
+            "event_url": "https://liu.se/en/research/bme-conference-2023",
+            "registration_url" : "https://forms.office.com/Pages/ResponsePage.aspx?id=7Bg_kSZ_X0yoFnhP6aWO3bgNVIMWQXVCjYSuJyirVDNURFQyTFdBR1FVUlNFSDVSVEhaWDhCQkdWRi4u",
+            "description": "BME@LiU 2023 is a conference day filled with activities to highlight the research conducted at LiU in the field of biomedical engineering. The ambition is to make BME@LiU a meeting place for all who are active in the field, in order to create collaboration and discussion."
+        },
+        {
             "title": "Strategies and tactics for protecting digital IP such as AI Applications",
             "type": "Seminar",
             "date_start": "2023-04-19",
@@ -278,6 +327,23 @@
             "event_url": "https://www.medtechlabs.se/kalender/kalender/strategies-and-tactics-for-protecting-digital-ip-such-as-ai-applications-1.1240975",
             "registration_url": "https://www.kth.se/form/641aca48fb06ea3cb9257ddc",
             "description": "Focusing on life science technologies, we analyse and present strategies for scientists to accelerate their ability to find and protect digital inventions. The Seminar will include tactics and practical tips on patenting or other ways to extract business opportunities from science related to digital technologies. It will have a focus on digital life sciences but can be beneficial for digital applications in any technical field."
+        },
+        {
+            "title": "BICU and Biomolecule Characterization Unit",
+            "type": "Seminar",
+            "date_start": "2023-04-18",
+            "time_start": "12:00",
+            "time_end": "13:00",
+            "registration_deadline": "2023-04-17",
+            "venue": "Glasburen Seminar Room, Umeå University",
+            "location": [
+                "Umeå",
+                "Online"
+            ],
+            "organisers": "SciLifeLab Umeå",
+            "event_url": "https://www.scilifelab.se/event/bicu-and-biomolecule-characterization-unit/",
+            "registration_url": "https://www.umu.se/en/chemical-biological-centre/kbc_events/registration-form-infrastructure-seminar/",
+            "description": "In the frame of the “SciLifeLab Site Umeå / KBC Infrastructure Seminar Series”, the seminars will be organised every second Tuesday during spring 2023. The seminars will be held in a hybrid format IRL in Glasburen, KBC, and online via Zoom."
         },
         {
             "title": "Meet a Data Steward & get Data Management support",

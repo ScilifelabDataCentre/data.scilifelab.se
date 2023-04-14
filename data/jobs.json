@@ -41,6 +41,16 @@
             "description": "The project involves fundamental research on statistical design of experiments incorporating fairness constraints. The goal of the project is to build algorithms to generate both – one-shot and sequential design of experiments that result in balanced sampling properties, with fairness and equal opportunities aspects taken into account. The developed approaches will be used for designing microbiome studies. As a proof-of-concept, we will leverage available large-scale datasets such as the SCAPIS or SIMPLER cohorts from which to extract balanced and fair case-control cohorts. The position may also involve teaching activities (up to 20%) and opportunities for supervising students in second-cycle education."
         },
         {
+            "title": "Research Advisor (Research Data manager), Core Facilities",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-05-02",
+            "employer": "Gothenburg University",
+            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=29891",
+            "description": "BDC will now, with the financial support by SciLifeLab, expand its group with a research advisor with a focus on handling research data. The position will be shared between BDC and Gothenburg’s SciLifeLab site and thereby support activities from various disciplines including the recently established SciLifeLab and Wallenberg National Program for Data-Driven Life Science (DDLS) (https://www.scilifelab.se/data-driven/about/). More than 400 group leaders, PhD students and postdocs will be part of the DDLS program, and they are expected to become advanced users of the services provided by the site."
+        },
+        {
             "title": "1-3 System developers/DevOps",
             "type": [
                 "Job"
@@ -69,6 +79,36 @@
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=603737",
             "description": "Professor Mia Phillipson's research group consists of about 15 people. The group's research is mainly focusing on revealing novel functions of immune cells, and to find means to control and regulate these functions during e.g. organ development, regulation of homeostasis, tissue regeneration, blood vessel formation and inflammation using intravital imaging, functional studies and multiomics approaches. Among the most important discoveries of the Phillipson group are the alternative roles of immune cells in restoration of blood perfusion following ischemic injury and transplantation, as well as during wound healing. Following their discoveries of how to regulate these immune cell functions, a spin-off company (Ilya Pharma) was founded to develop immunotherapies accelerating healing of wounds in skin and mucosa now in clinical phase 2.<br><br>The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage. "
+        },
+        {
+            "title": "Forskningsingenjör, SciLifeLab Affinity Proteomics Uppsala",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-04-27",
+            "employer": "Uppsala University",
+            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=616402",
+            "description": "Vi söker nu en till två forskningsingenjörer som i första hand kommer vara en del av teamet som jobbar med Olink Explore metoden. Metoden baseras på proximity extensions assay (PEA) och det laborativa arbetet är till stor del automatiserat med pipetteringsrobotar, men även manuellt laborativt arbete förekommer. För att blir en självständig operatör så krävs en godkänd internutbildning."
+        },
+        {
+            "title": "Postdoctoral position in data-driven infection biology",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-23",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/what:job/jobID:615582/type:job/where:1/apply:1",
+            "description": "A fully funded, two-year postdoc position is immediately available in the Department of Clinical Microbiology at Umeå University. The position is open to computational scientists with an interest in microbial (meta)genomic data analysis. The project is about Data-driven discovery of novel microbial secondary metabolites involved in host-microbe and/or microbe-microbe interactions."
+        },
+        {
+            "title": "PhD position in medical science within bioinformatic, computational methods",
+            "type": [
+                "Phd position"
+            ],
+            "app_deadline": "2023-04-23",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/what:job/jobID:615694/type:job/where:1/apply:1",
+            "description": "The project involves developing computational methods, which can facilitate the discovery of novel secondary metabolites from microbial (meta)genomes. You will be part of a research group that collaborates with other leading researchers. Our goal is to obtain new, ground-breaking knowledge that enables development in the field of bioinformatics."
         },
         {
             "title": "Bibliotekarie inriktning publicering och öppen vetenskap",
