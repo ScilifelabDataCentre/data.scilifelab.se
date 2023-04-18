@@ -71,6 +71,26 @@
             "description": "SciLifeLab Data Centre is looking for motivated and knowledgeable Data stewards, to join our Data management team. As a data steward, you are expected to participate in user support and development of data services, with a focus on research data management following the FAIR principles, metadata management and data curation, communication with users, and training activities."
         },
         {
+            "title": "Postdoc in Robotics and AI-powered Microscopy Imaging",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-04-28",
+            "employer": "KTH",
+            "job_url": "https://aicell.io/recruiting/postdoc-1-ddls-robotics/",
+            "description": "The aim of the project is to build a smart microscopy imaging farm for massive production of image data. It consists of multiple microscopes and fluidic systems, robotic arms, liquid handling robots and automatic incubators. The farm will be used for performing automated widefield/fluorescence imaging, long-term live cell imaging, tracking,  spatial-omics and multiplexing imaging. With the AI-powered control software, data are analyzed in real-time, augmented views are added on the fly. By generating feedback control signals to control the microscope, the software will automatically change field-of-views, illumination power and other experimental conditions in order to optimize the phototoxicity and capture rare events in live cells.<br><br>The candidate is expected to develop an integrated system with microscopes, fluidic control, robotic arms, as well as the control software. The project is a collaboration with our collaborator in the WASP program and built on top of our prior work (e.g. squid, ImJoy) from us or our collaborators at Stanford University."
+        },
+        {
+            "title": "Doctoral Student in Robotics and AI for Automated Microscopy Imaging",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-04-27",
+            "employer": "KTH",
+            "job_url": "https://aicell.io/recruiting/phd-1-robotics-microscopy/",
+            "description": "The AICell Lab (https://aicell.io) in the department of Applied Physics at KTH and Science for Life Laboratory is a new research group funded by the Data-driven Life Science Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now opening a position for a doctoral student in biological physics with a focus on robotics and AI-powered microscopy imaging.<br><br>You will actively contribute to the design and implementation of an automated microscopy imaging farm, encompassing hardware integration, optics optimization, robotics engineering, and automation systems development. Additionally, you will be involved in developing cutting-edge AI models for data analysis, designing real-time feedback control systems for active data acquisition, and working on data-driven whole-cell modeling initiatives to advance our research objectives."
+        },
+        {
             "title": "Bioinformatician",
             "type": [
                 "Job"
@@ -78,7 +98,7 @@
             "app_deadline": "2023-04-27",
             "employer": "Uppsala University",
             "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=603737",
-            "description": "Professor Mia Phillipson's research group consists of about 15 people. The group's research is mainly focusing on revealing novel functions of immune cells, and to find means to control and regulate these functions during e.g. organ development, regulation of homeostasis, tissue regeneration, blood vessel formation and inflammation using intravital imaging, functional studies and multiomics approaches. Among the most important discoveries of the Phillipson group are the alternative roles of immune cells in restoration of blood perfusion following ischemic injury and transplantation, as well as during wound healing. Following their discoveries of how to regulate these immune cell functions, a spin-off company (Ilya Pharma) was founded to develop immunotherapies accelerating healing of wounds in skin and mucosa now in clinical phase 2.<br><br>The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage. "
+            "description": "Professor Mia Phillipson's research group consists of about 15 people. The group's research is mainly focusing on revealing novel functions of immune cells, and to find means to control and regulate these functions during e.g. organ development, regulation of homeostasis, tissue regeneration, blood vessel formation and inflammation using intravital imaging, functional studies and multiomics approaches. Among the most important discoveries of the Phillipson group are the alternative roles of immune cells in restoration of blood perfusion following ischemic injury and transplantation, as well as during wound healing. Following their discoveries of how to regulate these immune cell functions, a spin-off company (Ilya Pharma) was founded to develop immunotherapies accelerating healing of wounds in skin and mucosa now in clinical phase 2.<br><br>The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage."
         },
         {
             "title": "Forskningsingenjör, SciLifeLab Affinity Proteomics Uppsala",
@@ -103,7 +123,7 @@
         {
             "title": "PhD position in medical science within bioinformatic, computational methods",
             "type": [
-                "Phd position"
+                "PhD position"
             ],
             "app_deadline": "2023-04-23",
             "employer": "Umeå University",

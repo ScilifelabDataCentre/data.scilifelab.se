@@ -115,6 +115,22 @@
             "description": "WASP4ALL 2023 seeks to engage the Swedish academic and industrial research community around the importance of Cyber Security research in the context of AI, autonomous systems and software. The overall aims are to create awareness of industrial and societal needs, identify and discuss research challenges for the future and to showcase existing research in Sweden. The conference is open for researchers and research leaders from academia and industry with or without prior connection to WASP, that are interested in current Cyber Security research and the interplay between academia and industry."
         },
         {
+            "title": "SciLifeLab Data Platform Launch",
+            "type": "Webinar",
+            "date_start": "2023-05-26",
+            "time_start": "11:00",
+            "time_end": "12:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "SciLifeLab Data Centre",
+            "event_url": "https://www.scilifelab.se/event/scilifelab-data-platform-launch/",
+            "registration_url": "https://www.lyyti.fi/reg/data_platform_launch",
+            "registration_deadline": "2023-05-26",
+            "description": "Join SciLifeLab Data Centre for the official launch of the SciLifeLab Data Platform. At this launch event, we will demonstrate how the data platform supports DDLS, the services we offer, and how you can get access to hosting resources. In addition, a number of our users will present their user cases, followed by a summary."
+        },
+        {
             "title": "CRISPR as a research tool in cancer and regenerative medicine",
             "type": "Symposium",
             "date_start": "2023-05-25",
