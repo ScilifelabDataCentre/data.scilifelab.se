@@ -28,6 +28,7 @@ Previous research has indicated that heteroresistance, a phenomenon where parts 
 >"This is a new concept that we call antibiotic perseverance," explains Gerrit Brandis, a researcher in the group. "Perseverance describes how a small group of bacteria capable of sustaining growth can accumulate mutations after being exposed to antibiotics. If they are lucky, and the patient unlucky, one of these mutations will allow them to tolerate the antibiotic.”
 
 In summary, studies of bacteria on the single-cell level have revealed new information about a small sub-population of bacteria that survives in the presence of antibiotic concentrations that would normally kill them. Brandis, Larsson and Elf concluded that so called antibiotic perseverance is a common phenomenon and that it may also potentially have effect on the development of antibiotic resistance across pathogenic bacteria.
+<br><br>
 
 #### Data
 
