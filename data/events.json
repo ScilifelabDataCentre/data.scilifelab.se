@@ -7,10 +7,56 @@
             "date_end": "2023-11-16",
             "registration_deadline": "2023-11-15",
             "venue": "TBC",
+            "location": [
+                "Stockholm"
+            ],
             "organisers": "DDLS",
             "event_url": "https://www.scilifelab.se/event/ddls-annual-conference-2023/",
             "registration_url": "https://www.scilifelab.se/event/ddls-annual-conference-2023/",
             "description": "The DDLS program will arrange the 3rd DDLS Annual Conference, highlighting Data-driven life science research and its future. All scientists interested in data-driven research are welcome to join the 2-day lunch-to-lunch Conference."
+        },
+        {
+            "title": "Cryo-EM sample preparation and data collection",
+            "type": "Course",
+            "date_start": "2023-10-17",
+            "date_end": "2023-10-19",
+            "venue": "KBC Building Umeå",
+            "location": [
+                "Umeå"
+            ],
+            "organisers": "SciLifeLab Umeå",
+            "event_url": "https://www.scilifelab.se/event/cryo-em-sample-preparation-and-data-collection-2/",
+            "registration_url": "https://www.umu.se/en/research/infrastructure/medicinska-fakulteten/u/umea-centre-for-electron-microscopy-ucem/courses-workshops-and-training/registration_form_cryoem_course/",
+            "registration_deadline": "2023-09-29",
+            "description": "The purpose of the course is to prepare and train Cryo-EM facility users in sample preparation methods, introduce users to the image data acquisition workflow, expand knowledge about cryo-EM methods among researchers and show that everyone can learn how to use cryo-EM for structure and cell biology.<br><br>The course is open for facility users or potential facility users, such as PhD students, postdocs, and researchers within the life sciences who are curious and will profit from cryo-EM skills. Swedish and international course participants are welcome. To attend, the course participants must have experience in basic electron microscopy and be familiar with structure or cell biology."
+        },
+        {
+            "title": "SciLifeLab Day Linköping",
+            "type": "Conference",
+            "date_start": "2023-10-10",
+            "time_start": "08:00",
+            "time_end": "17:00",
+            "venue": "SciLifeLab, Linköping",
+            "location": [
+                "Linköping"
+            ],
+            "organisers": "SciLifeLab Linköping",
+            "event_url": "https://www.scilifelab.se/event/scilifelab-day-linkoping/",
+            "description": "SciLifeLab has launched four new sites across Sweden in 2022. The sites, located in Gothenburg, Linköping, Lund, and Umeå, will be crucial in promoting scientific research and research infrastructure nationally, while also strengthening the collaboration between all Swedish universities.<br><br>The expansion of SciLifeLab’s network will provide researchers across Sweden with state-of-the-art research infrastructure and technology, enabling them to perform cutting-edge research in areas such as genomics, proteomics, and bioinformatics. This will not only help to advance scientific knowledge but also contribute to the development of innovative solutions to pressing societal challenges."
+        },
+        {
+            "title": "SciLifeLab Day Lund",
+            "type": "Conference",
+            "date_start": "2023-09-28",
+            "time_start": "08:00",
+            "time_end": "17:00",
+            "venue": "SciLifeLab, Lund",
+            "location": [
+                "Lund"
+            ],
+            "organisers": "SciLifeLab Lund",
+            "event_url": "https://www.scilifelab.se/event/scilifelab-day-lund/",
+            "description": "SciLifeLab has launched four new sites across Sweden in 2022. The sites, located in Gothenburg, Linköping, Lund, and Umeå, will be crucial in promoting scientific research and research infrastructure nationally, while also strengthening the collaboration between all Swedish universities.<br><br>The expansion of SciLifeLab’s network will provide researchers across Sweden with state-of-the-art research infrastructure and technology, enabling them to perform cutting-edge research in areas such as genomics, proteomics, and bioinformatics. This will not only help to advance scientific knowledge but also contribute to the development of innovative solutions to pressing societal challenges."
         },
         {
             "title": "SciLifeLab Science Summit 2023",
@@ -25,6 +71,34 @@
             "organisers": "SciLifeLab",
             "event_url": "https://www.scilifelab.se/event/scilifelab-science-summit-2023/",
             "description": "In this SciLifeLab Summit, which is centred on biodiversity and evolution for 2023, we have gathered several leading researchers who use genomics to learn about the diversity of life!"
+        },
+        {
+            "title": "SciLifeLab Day Umeå",
+            "type": "Conference",
+            "date_start": "2023-09-11",
+            "time_start": "08:00",
+            "time_end": "17:00",
+            "venue": "SciLifeLab, Umeå",
+            "location": [
+                "Umeå"
+            ],
+            "organisers": "SciLifeLab Umeå",
+            "event_url": "https://www.scilifelab.se/event/scilifelab-day-umea/",
+            "description": "SciLifeLab has launched four new sites across Sweden in 2022. The sites, located in Gothenburg, Linköping, Lund, and Umeå, will be crucial in promoting scientific research and research infrastructure nationally, while also strengthening the collaboration between all Swedish universities.<br><br>The expansion of SciLifeLab’s network will provide researchers across Sweden with state-of-the-art research infrastructure and technology, enabling them to perform cutting-edge research in areas such as genomics, proteomics, and bioinformatics. This will not only help to advance scientific knowledge but also contribute to the development of innovative solutions to pressing societal challenges."
+        },
+        {
+            "title": "DDLS Precision Medicine and Diagnostics Symposium 2023",
+            "type": "Symposium",
+            "date_start": "2023-09-06",
+            "time_start": "08:00",
+            "time_end": "17:00",
+            "venue": "Martin H:son Holmdahlsalen, Akademiska sjukhuset, Uppsala",
+            "location": [
+                "Uppsala"
+            ],
+            "organisers": "DDLS Research Area expert group",
+            "event_url": "https://www.scilifelab.se/event/ddls-pmd-minisymposium-2023/",
+            "description": "The DDLS Precision Medicine and Diagnostics expert group is organizing a Precision Medicine and Diagnostics research area Symposium in Uppsala on September 6, 2023. More information will follow."
         },
         {
             "title": "EBSA Congress 2023",
@@ -82,6 +156,20 @@
             "event_url": "https://www.scilifelab.se/event/1stfirst-cryonet-course-on-advanced-single-particle-cryo-em-analysis/",
             "registration_url": "https://www.lyyti.fi/reg/cryoNET_course",
             "description": "The aim of the course is to provide training in cryo-EM image processing including the latest developments of the field. Participants will receive hands-on training in state-of-the-art techniques for single particle cryo-EM image processing, model building and validation from a range of international specialist guest lecturers. The course also includes theoretical talks and discussions on the use of cryo-EM to address difficult biological questions, which can help the participants address their own research problems."
+        },
+        {
+            "title": "Nordic FAIR data stewardship workshop 2023",
+            "type": "Workshop",
+            "date_start": "2023-06-06",
+            "time_end": "2023-06-09",
+            "venue": "Ole-Johan Dahls hus, University of Oslo",
+            "location": [
+                "Oslo"
+            ],
+            "organisers": "NEIC",
+            "event_url": "https://www.deltager.no/event/nordic_fair_data_stewardship_workshop_2023#init",
+            "registration_deadline": "2023-06-05",
+            "description": "It is with great pleasure and enthusiasm that we announce the first workshop on FAIR data stewardship in the Nordics, hosted by NeIC. The full event runs over 4 days, the two first of which is a course on advanced data stewardship skills (data modelling and FAIR ontologies). The second half is in the format of a workshop where participants are invited to share their experiences working as data stewards, data curators or other data management professionals."
         },
         {
             "title": "Hackathon on Cloud-Based and AI-Powered BioImage Analysis",
@@ -173,6 +261,49 @@
             "organisers": "SciLifeLab and EMBL",
             "event_url": "https://www.scilifelab.se/event/embl-scilifelab-data-science-workshop/",
             "description": "We would like to cordially invite members of the SciLifeLab and EMBL Communities to this workshop! This event will bring together researchers, scientific and technical staff at the EMBL and SciLifeLab, to make new acquaintances and collaborations and to learn and be inspired by each other.<br><br>The workshop program starts at 09:00 on May 15 and ends after lunch on May 16.<br><br>The workshop will be a hybrid event enabling participation to the wider community at all EMBL and SciLifeLab sites.<br><br>Looking forward to meeting you in Uppsala in May!"
+        },
+        {
+            "title": "Rspace Demo",
+            "type": "Webinar",
+            "date_start": "2023-05-11",
+            "time_start": "15:00",
+            "time_end": "17:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "SciLifeLab Data Centre",
+            "event_url": "https://www.scilifelab.se/event/rspace-demo/",
+            "registration_url": "https://www.lyyti.fi/reg/rspace",
+            "description": "Rspace is a state-of-the-art electronic lab notebook designed to help scientists and researchers manage their research data more efficiently. With its powerful features and intuitive interface, Rspace makes it easy to collaborate with team members, organize data, and streamline your research workflows.<br><br>During the demo, you’ll get an in-depth look at Rspace’s features and capabilities, and learn how it can help you accelerate your research projects. You’ll also have the opportunity to ask questions and get expert advice from the team of Rspace specialists."
+        },
+        {
+            "title": "European Chemical Biology Symposium",
+            "type": "Symposium",
+            "date_start": "2023-05-09",
+            "date_end": "2023-05-11",
+            "venue": "AstraZeneca, Mölndal",
+            "location": [
+                "Gothenburg"
+            ],
+            "organisers": "CBCS",
+            "event_url": "https://www.eu-openscreen.eu/ecbs2023/programme.html",
+            "registration_url": "https://www.eu-openscreen.eu/ecbs2023/registration-and-abstract-submission.html",
+            "description": "The free event will combine ELRIG’s inaugural meeting on Therapeutic OLIGOs with the 8th European Chemical Biology Symposium (ECBS) and will be held in Gothenburg, Sweden from May 9–11. Over the three days, academia, industry, and the vendor community will discuss recent advancements in two ultra-exciting areas of drug discovery and biological research: therapeutic oligonucleotides and chemical biology."
+        },
+        {
+            "title": "The Svedberg seminar – Global mapping of protein subcellular location offers a new era of comparative and evolutionary cell biology.",
+            "type": "Seminar",
+            "date_start": "2023-05-08",
+            "time_start": "15:15",
+            "time_end": "16:15",
+            "venue": "BMC Room C8:301, Uppsala",
+            "location": [
+                "Uppsala"
+            ],
+            "organisers": "The Svedberg Seminar Series",
+            "event_url": "https://www.scilifelab.se/event/the-svedberg-seminar-global-mapping-of-protein-subcellular-location/",
+            "description": "Ross Waller completed a PhD in 2000 at the University of Melbourne working on the newly discovered remnant plastid in apicomplexan parasites Plasmodium and Toxoplasma. He undertook postdoctoral training from 2000-3 as a Peter Doherty Fellow working on Leishmania cell biology (University of Melbourne), and then from 2003-5 as a Canadian Institutes of Health Research working on molecular evolution in diverse eukaryotes at the University of British Columbia. In 2005 be joined the faculty of the School of Botany, University of Melbourne, and in 2013 relocated his laboratory to the Department of Biochemistry, University of Cambridge."
         },
         {
             "title": "The future of AI – Ethical and political challenges",
