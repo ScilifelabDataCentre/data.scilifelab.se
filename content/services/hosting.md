@@ -1,43 +1,36 @@
 ---
-title: Hosting a service
+title: Hosting a service on the SciLifeLab Data Platform
 toc: true
-menu:
-    bottom_services:
-        name: Hosting a service
-        identifier: hosting
-        weight: 20
 ---
 
-## About the hosting environment
+## Accessing SciLifeLab hosting services
 
-The technical environment of the SciLifeLab Data Platform hosts web-based computational tools and databases related to data-driven life science research. This will include compute-intensive software and large-volume datasets.
+Hosting for data-centric tools and databases that provide value to the wider life science research community in Sweden is now available via the SciLifeLab Data Platform’s technical environment. Multiple types of tools can be hosted, including those related to the exploration, annotation, analysis, visualisation, sharing, or aggregation of data. We welcome applications for hosting from researchers, research groups, research communities, and research infrastructures alike. For information on the requirements that tools and databases must meet in order to be hosted, please refer to the ‘Hosting requirements for tools and databases’ subsection below.
 
-The hosting environment is hosted on a three-node Kubernetes cluster (hardware located at KTH IT) with connected on-prem (from KTH IT) and cloud (SUNET) storage, which is managed by the [SciLifeLab Data Centre](https://scilifelab.se/data). User-oriented services offered on the SciLifeLab Data Platform are available to any researcher in Sweden, regardless of whether they are affiliated with SciLifeLab. Services targeted towards data-producing facilities are available to SciLifeLab infrastructure units, but we welcome enquiries from others.
+We are deeply committed to the provenance and ownership rights of researchers, research communities, and their affiliated institutions. As such, we do not expect credit for the provision of hosting services. The tools and databases will be made available at the national and, where appropriate, international level, and will be promoted on the web interface of the SciLifeLab Data Platform and elsewhere.
+ 
+### Hosting requirements for tools and databases
 
-The platform will initially integrate services developed by the SciLifeLab Data Centre and their partners. A number of external pathfinder projects will be also identified for the purpose of technology development, and presented on the platform. We are currently setting up a process by which others may apply for services to be hosted on the SciLifeLab Data Platform, so that these services can be made available both nationally and internationally. Individual research groups, organisations, and communities developing such tools will be welcomed to apply. Please note that will need to prioritize between services that could be hosted; we intend to put in place a transparent and independent way to select these services.
+- Hosted content should have value to the wider life science research community in Sweden; the hosting resources cannot to used for computation or storage that benefits only individual projects/research groups.
+- Any code related to the hosted content should be published under [an open source licence](https://opensource.org/osd/). All data/outputs should be as open and FAIR as possible.
+- Hosted content must be actively supported and maintained. Two or more points of contact must be assigned for communication with SciLifeLab Data Centre about any technical issues. There should also be a dedicated point of contact for user support.
+- The project should be provided as a container image that adheres to Open Container Initiative (OCI) specifications, and hosted in a public repository (e.g. Dockerhub or [http://ghcr.io](http://ghcr.io)). The source code of the project along with the Dockerfile should also be hosted in a public git repository. The maintainer must provide documentation on how to set up the correct environment for the image(s). The maintainer is responsible for updating the image(s) with e.g. security updates.
+- To help us to secure continued funding for the hosting service, the Data Centre will ask for summary statistics about usage of the hosted service, such as number of users, downloads, page visitors or what may be most relevant, and potentially geographical distribution of users and whether Scilifelab infrastructure units are being served.
 
-## Vision & mission
+### Additional requirements for software
 
-This platform aims to boost the number of services available for data-driven life science research in Sweden. Special attention will be paid to **enabling compute-intensive and large data volume services**, which are unlikely to be made available elsewhere.
+- The software should preferably be possible to run using an arbitrary user. Containers using a root account will not be accepted.
+- The maintainer should set up regular security scanning (e.g. Trivy) of their images. The maintainers are expected to fix any detected security issues and publish new images as soon as possible after detection.
+ 
+### Responsibilities of SciLifeLab Data Centre
 
-Our vision for the SciLifeLab Data Platform is to create an environment in which users (researchers, bioinformaticians, software engineers, healthcare professionals, industry partners, etc.), can easily locate, access, and use life science data (from research projects, from data-producing infrastructures, from data sharing platforms, etc.), and e-Infrastructure (specifically, national computing and storage infrastructures for research).
+- Hosting is provided free of charge to users within our available resources, funded by the SciLifeLab & Wallenberg National Program for Data-Driven Life Science.
+- Hosting is provided on the best effort basis; we will endeavour to resolve any issues as quickly as possible, but cannot specify a given timeline for resolution.
+- Hosting is provided for a period of one year at a time. The period will be extended annually, given that resources are available and that the requirements for hosting are still met.
+- We cannot provide development support (although we are happy to answer any questions related to meeting the hosting requirements and/or our hosting infrastructure).
+- Where appropriate, we can provide a <domain>.data.scilifelab.se URL. Another URL can be used, but you must purchase/obtain it yourself.
+- We cannot host sensitive data on this cluster.
+- We may remove any services discovered to have security issues without prior notice until such issues are resolved. In the event that there is a database associated with the service, the backups will still be available. 
 
-We will strive to forge strong connections with Swedish e-infrastructure, and with providers of international toolsets and databases, such as those maintained by the [European Bioinformatics Institute (EMBL-EBI)](https://www.ebi.ac.uk/). Our efforts will be guided by consultations and collaborations with the research community and the efforts of Swedish universities. We will work both within fields of research that represent our priority areas and life sciences in general.
-
-**Open science** and **open source** values are at the core of the SciLifeLab Data Platform. The development and integration of each tool hosted on the platform will be driven by community input. Any data hosted is expected to meet a minimum level of **FAIR**ness, and to be as open as possible but as closed as necessary, in line with privacy, legal, and ethical concerns. External tools and databases adhering to these principles are welcome to get in touch with the SciLifeLab Data Centre to discuss the possibility of hosting and/or collaboration. We especially welcome local initiatives that want to broaden their userbase to the national level, as well as community-driven projects.
-
-<figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-75 d-none d-xl-inline">
-  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-100 d-xl-none">
-  <figcaption class="figure-caption">We see the SciLifeLab Data Platform as the environment for hosting services connecting users, life science data, and e-Infrastructure.</figcaption>
-</figure>
-
-## Application to host a service
-
-In the near future, we will enable others to apply for web-based tools and databases to be hosted on the SciLifeLab Data Platform. Research groups, research communities, and organisations based in Sweden will all be welcome to apply. Please note that the resources made available on the hosting cluster cannot be used for completing processing or providing storage for a given project. Instead, each tool/database hosted should have value to the wider research community. Please email [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) to discuss potential collaborations, and/or the possibility of us hosting a tool/database.
-
-<div class="card">
-  <div class="card-body">
-    <i class="bi bi-info-square"></i> More information coming soon.
-  </div>
-</div>
+### Application and evaluation process
+To apply for hosting at the SciLifeLab Data Platform please [fill out this application form](/hosting_files/hosting_application_form.docx). The applications are evaluated by the SciLifeLab Data Centre management group on a rolling basis. You can expect to receive a response to your application within 3-4 weeks.

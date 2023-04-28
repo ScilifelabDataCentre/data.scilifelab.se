@@ -1,20 +1,22 @@
 ---
-title: Service catalogue
-description: Overview of tools & datasets available through the SciLifeLab Data Platform.
+title: Services
+description: Overview of the tools, datasets, and other resources available via this Platform.
 cascade:
   header_image: /img/illustrations/circos_cropped.png
 menu:
     navbar:
         name: Services
         identifier: services
-        weight: 20
+        weight: 10
     bottom_services:
-        name: Overview of services
-        identifier: overview
+        name: Services
+        identifier: services
         weight: 10
 ---
 
-The SciLifeLab Data Platform includes an environment for hosting web-based tools and databases related to data-driven life science that require large-scale compute and storage resources. The hosting environment is [maintained by the SciLifeLab Data Centre](/about/). See this page for the [technical set-up of the environment and our vision for it](./hosting/); researchers, research communities, and organisations in Sweden are welcome to apply for a tool/database to be hosted on the platform.
+The SciLifeLab Data Platform includes a technical environment for hosting tools and databases that can be deployed or accessed via the web. The hosting resources are [managed by the SciLifeLab Data Centre](/about/). Individual researchers, research groups, and research organisations are enouraged to [learn more and apply for hosting](./hosting/).
+
+Below, you will find information about [resources related to hosting](#for-researchers) and [for data-producing facilities](#for-facilities) that are either hosted or linked via the SciLifeLab Data Platform.
 
 <ul>
   <li><a href="#for-researchers">Services for researchers <i class="bi bi-arrow-down-square-fill"></i></a></li>
