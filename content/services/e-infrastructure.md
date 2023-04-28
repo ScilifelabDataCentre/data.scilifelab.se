@@ -15,7 +15,7 @@ Universities often have their own compute resources that they will make availabl
 
 ### National Academic Infrastructure for Supercomputing in Sweden (NAISS)
 
-[NAISS](https://www.naiss.se/) (previously known as Swedish National Infrastructure for Computing, SNIC) provides resources primarily for simulation and analysis. The resources can be broadly divided into two types; (1) those intended for general high performance compute (HPC) applications, and (2) those designed to handle sensitive data.
+[NAISS](https://www.naiss.se/) (successor to Swedish National Infrastructure for Computing, SNIC) provides resources primarily for simulation and analysis. The resources can be broadly divided into two types; (1) those intended for general high performance compute (HPC) applications, and (2) those designed to handle sensitive data.
 
 Different NAISS resources are likely to be of interest for different fields or types of application. For example, *NAISS SENS* and *Rackham*, which have rich program stacks oriented towards life sciences, are likely to be of particular interest for bioinformatics. The difference between these two systems is that NAIS SENS is designed to handle sentive data (e.g. human genetic data), whilst Rackham is not. By contrast, those with workloads similar to those associated with traditional HPC, particularly those able to benefit from AMD GPUs, should instead consider making use of *Dardel*.
 
@@ -53,7 +53,7 @@ As described with [LUMI above](#lumi), portions of EuroHPC resources are allocat
 
 ### SciLifeLab Data Platform
 
-SciLifeLab Data Platform provides auxiliary resources, including small Kubernetes clusters, via the technical environment of the SciLifeLab Data Platform. The SciLifeLab Data Platform enables hosting for tools, databases, and other types of service that can be deployed on the web, as well as some computer processing e.g. for models. The exact cluster used will depend on the information classification for the service in question, and how data is intended to flow.
+Scilifelab provides e-infrastructure services complementing those available from national e-infrastructures, and with a focus on resources for FAIR data sharing. This includes compute- and storage resources for hosted services adhering to principles of FAIR and Open Science
 
 Applications are welcomed from individual researchers, research groups, and organisations. To learn more about the SciLifeLab Data Platform, and to apply, please see our [hosting page](/services/hosting/).
 

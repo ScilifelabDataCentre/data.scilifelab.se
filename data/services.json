@@ -7,7 +7,7 @@
     "type": [
       "Compute resources"
     ],
-    "name": "Accessing compute resources in Sweden",
+    "name": "Compute resources in Sweden",
     "description": "Information about the compute resources (e.g. for hosting, analysis) available in Sweden, as well as how to apply.",
     "url": "/services/e-infrastructure/",
     "thumbnail": "/img/service_thumbnails/e_infrastructure.png",
@@ -23,7 +23,7 @@
     "type": [
       "Compute resources"
     ],
-    "name": "Access hosting via the SciLifeLab Data Platform",
+    "name": "Hosting on the SciLifeLab Data Platform",
     "description": "Details about how researchers, research groups, and organisations can apply for hosting via the Platform.",
     "url": "/services/hosting/",
     "thumbnail": "/img/service_thumbnails/hosting_DC.jpg",
