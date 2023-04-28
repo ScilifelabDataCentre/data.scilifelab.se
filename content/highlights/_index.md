@@ -7,7 +7,7 @@ menu:
     navbar:
         identifier: highlights
         name: Data Highlights
-        weight: 30
+        weight: 20
     bottom_community:
         name: Data highlights
         identifier: highlights

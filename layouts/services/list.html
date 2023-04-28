@@ -5,64 +5,59 @@
 {{ $services := .Site.Data.services }}
 {{ $targets := slice "researchers" "facilities"}}
 {{ range $target := $targets }}
-    {{ if eq $target "researchers" }}
-        <h3 id="for-researchers">Services for researchers</h3>
-        <div class="mt-2">
-          <p>These services are available free of charge to all life science researchers and communities in Sweden, 
-             regardless of SciLifeLab affiliation.</p>
-        </div>
-    {{ else if eq $target "facilities" }}
-        <h3 id="for-facilities">Services for data-producing facilities/units</h3>
-        <div class="mt-2">
-          <p>The services below are available to facilities/units producing life science data in Sweden. In some 
-             cases, the services may only be available for SciLifeLab infrastructure units.</p>
-        </div>
-    {{ end }}
-    <div class="row g-3 mb-5">
-      {{ range $services }}
-      {{ if in .target $target }}
-      <div class="col-md-6 col-lg-4">
-        <div class="bg-service">
-          <div {{ if .thumbnail_border }}class="p-1"{{ end }} >
-            <a target="_blank" href="{{ .url }}"><img class="img-fluid"
-               src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
-               alt="{{ .name }}"></a>
-          </div>
-          <div class="p-2 bg-service-title">
-            <h5><a href="{{ .url }}" target="_blank">{{ .name }}</a></h5>
-          </div>
-          <div class="p-2">
-            {{ .description }}
-          </div>
-          <div class="px-2">
-            <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
-          </div>
-          <div class="px-2">
-            <b>Maintained by:</b> 
-            {{ if .maintained_by_url}}
-              <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
-            {{ else }}
-              {{ .maintained_by }}
-            {{ end }}
-          </div>
-          {{ if or (or .support_email .support_website) .support_github }}
-          <div class="px-2 mb-2">
-            <b>Support:</b> 
-            {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-            {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-            {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
-          </div>
-          {{ end }}
-        </div>
+{{ if eq $target "researchers" }}
+<h3 id="for-researchers">Services for researchers</h3>
+<div class="mt-2">
+  <p>These services are available free of charge to all life science researchers and communities in Sweden,
+    regardless of SciLifeLab affiliation.</p>
+</div>
+{{ else if eq $target "facilities" }}
+<h3 id="for-facilities">Services for data-producing facilities/units</h3>
+<div class="mt-2">
+  <p>The services below are available to facilities/units producing life science data in Sweden. In some
+    cases, the services may only be available for SciLifeLab infrastructure units.</p>
+</div>
+{{ end }}
+<div class="row g-3 mb-5">
+  {{ range $services }}
+  {{ if in .target $target }}
+  <div class="col-md-6 col-lg-4">
+    <div class="bg-service">
+      <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+        <a target="_self" href="{{ .url }}"><img class="img-fluid"
+            src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+            alt="{{ .name }}"></a>
+      </div>
+      <div class="p-2 bg-service-title">
+        <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+      </div>
+      <div class="p-2">
+        {{ .description }}
+      </div>
+      <div class="px-2">
+        <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+      </div>
+      <div class="px-2">
+        <b>Maintained by:</b>
+        {{ if .maintained_by_url}}
+        <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
+        {{ else }}
+        {{ .maintained_by }}
+        {{ end }}
+      </div>
+      {{ if or (or .support_email .support_website) .support_github }}
+      <div class="px-2 mb-2">
+        <b>Support:</b>
+        {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+        {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+        {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
       </div>
       {{ end }}
-      {{ end }}
-      <div class="col-md-6 col-lg-3">
-        <div class="p-3 border rounded h-100 d-flex align-items-center">
-          <div class="text-muted fst-italic">More services to be hosted in the future.</div>
-        </div>
-      </div>
     </div>
+  </div>
+  {{ end }}
+  {{ end }}
+</div>
 {{ end }}
 
 {{ end }}
