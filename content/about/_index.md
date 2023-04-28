@@ -20,19 +20,29 @@ Swedish life science research has an excellent reputation globally. Sweden has f
 
 ## About the SciLifeLab Data Platform
 
-In order for the Swedish life science research community to generate cutting-edge data-driven research. it will need access to appropriate services, tools, and support. The *SciLifeLab Data Platform* comprises both a **[technical hosting environment](/services/hosting/)** for data-centric tools and databases, and a **website**. Both elements work together with the aim of supporting and accelerating data-driven life science research in Sweden. The platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). However, the SciLifeLab Data Platform aims to serve all life science researchers and data-producing facilities in Sweden. This means that you do not need to be part of the DDLS to have your tools/databases hosted, or to contribute to the website content.
+In order for the Swedish life science research community to generate cutting-edge data-driven research, it will need access to appropriate services, tools, and support. The *SciLifeLab Data Platform* comprises both a **[technical hosting environment](/services/hosting/)** for data-centric tools and databases, and a **website**. Both elements work together with the aim of supporting and accelerating data-driven life science research in Sweden. The platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). However, the SciLifeLab Data Platform aims to serve all life science researchers and data-producing facilities in Sweden. This means that you do not need to be part of the DDLS to have your tools/databases hosted, or to contribute to the website content.
 
 The services hosted on the SciLifeLab Data Platform adhere to the values of [Open Science](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), [Transparent research](https://www.ucl.ac.uk/research/strategy-and-policy/research-transparency), and [FAIR (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18), as well as good data management practices throughout the data lifecycle.
 
 The SciLifeLab Data Platform was built and is maintained by the [SciLifeLab Data Centre](https://scilifelab.se/data) and our partners. We welcome any questions on any element of the platform. Please get in touch with us by emailing [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) or by sending us a message using our [contact form](/contact/).
 
+### Vision & mission
+
+This platform aims to boost the number of services available for data-driven life science research in Sweden. Our vision is to create an envronment in which our users can easily locate, access, and use life science resources (including data, tools, and e-infrastructure).
+
+<figure class="my-3 figure w-100 text-center">
+  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-75 d-none d-xl-inline">
+  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-100 d-xl-none">
+  <figcaption class="figure-caption">We see the SciLifeLab Data Platform as the environment for hosting services connecting users, life science data, and e-Infrastructure.</figcaption>
+</figure>
+
 ### Hosting environment
 
-The SciLifeLab Data Platform technical environment is dedicated to hosting web-based computational tools and databases related to data-driven life science research. This will include compute-intensive software and large-volume datasets. User-oriented services offered as part of the SciLifeLab Data Platform are available to any individual affiliated with a Swedish institution. No affiliation to SciLifeLab is necessary. Services oriented at data-producing facilities are available to SciLifeLab infrastructure units, but enquiries from others are welcome.
+The SciLifeLab Data Platform technical environment is dedicated to hosting web-based computational tools and databases related to data-driven life science research. This includes compute-intensive software and large-volume datasets. User-oriented services offered as part of the SciLifeLab Data Platform are available to any individual affiliated with a Swedish institution. No affiliation to SciLifeLab is necessary. 
 
-The platform will initially focus on integrating services already in development by the SciLifeLab Data Centre and partners. A number of external pathfinder projects will also be identified for the purpose of technology development. We aim to formulate a set of specific requirements and an application procedure for tools/databases to be hosted on the SciLifeLab Data Platform. Individual research groups, organisations, and communities interested in making their tools/data available on a national or international level will be welcome to apply.
+The platform initially focussed on integrating services already in development by SciLifeLab Data Centre and partners. Individual researchers, research groups, organisations, and communities interested in making their tools/data available on a national or international level are welcome to apply for hosting. In some cases, especially the services targetted at data-producing units, there may be some restrictions on who can access the resources.
 
-<a href="/services/hosting/"><b>Find out more about the hosting environment, vision & mission, and applications related to hosting <i class="bi bi-arrow-right-square-fill"></i></b></a>
+<a href="/services/hosting/"><b>Find out more about applying for hosting <i class="bi bi-arrow-right-square-fill"></i></b></a>
 
 ### Website
 
