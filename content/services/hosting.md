@@ -11,10 +11,10 @@ We are deeply committed to the provenance and ownership rights of researchers, r
  
 ### Hosting requirements for tools and databases
 
-- Hosted content should have value to the wider life science research community in Sweden; the hosting resources cannot to used for computation or storage that benefits individual projects/research groups.
-- Any code related to the hosted content should be published under an open source licence. All data/outputs should be as open and FAIR as possible.
-- Hosted content must be actively supported and maintained. A point of contact must be assigned for communication with SciLifeLab Data Centre about any technical issues. There should also be a dedicated point of contact for user support.
-- The content to be hosted should be provided as a container image that adheres to Open Container Initiative (OCI) specifications, and should be hosted in a public repository (e.g. Dockerhub or [http://ghcr.io](http://ghcr.io)). The maintainer must provide documentation on how to set up the correct environment for the image(s). The maintainer is responsible for updating the image(s) with e.g. security updates.
+- Hosted content should have value to the wider life science research community in Sweden; the hosting resources cannot to used for computation or storage that benefits only individual projects/research groups.
+- Any code related to the hosted content should be published under [an open source licence](https://opensource.org/osd/). All data/outputs should be as open and FAIR as possible.
+- Hosted content must be actively supported and maintained. Two or more points of contact must be assigned for communication with SciLifeLab Data Centre about any technical issues. There should also be a dedicated point of contact for user support.
+- The project should be provided as a container image that adheres to Open Container Initiative (OCI) specifications, and hosted in a public repository (e.g. Dockerhub or [http://ghcr.io](http://ghcr.io)). The source code of the project along with the Dockerfile should also be hosted in a public git repository. The maintainer must provide documentation on how to set up the correct environment for the image(s). The maintainer is responsible for updating the image(s) with e.g. security updates.
 - To help us to secure continued funding for the hosting service, the Data Centre will ask for summary statistics about usage of the hosted service, such as number of users, downloads, page visitors or what may be most relevant, and potentially geographical distribution of users and whether Scilifelab infrastructure units are being served.
 
 ### Additional requirements for software
