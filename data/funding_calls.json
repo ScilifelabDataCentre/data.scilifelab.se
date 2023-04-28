@@ -95,6 +95,11 @@
             "url": "https://www.vinnova.se/en/apply-for-funding/find-the-right-funding/"
         },
         {
+            "funder": "Swedish Foundation for Strategic Research",
+            "logo": "/img/funders_logo/ssf.png",
+            "url": "https://strategiska.se/en/call-for-proposals/"
+        },
+        {
             "funder": "Svenska Läkarsällskapet",
             "logo": "/img/funders_logo/sls.png",
             "url": "https://www.sls.se/vetenskap/sok-anslag/"
