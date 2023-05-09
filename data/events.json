@@ -249,6 +249,23 @@
             "description": "The contentathon is a great opportunity to add best practices and guidelines on how to manage life sciences data, software and other research outputs in RDMkit https://rdmkit.elixir-europe.org/ Despite the encouragement to join in person (only 30 spots available!), it is also possible to join remotely."
         },
         {
+            "title": "NBIS and CASP – feeling lost in data? We are here to help",
+            "type": "Support session",
+            "date_start": "2023-05-16",
+            "time_start": "12:00",
+            "time_end": "13:00",
+            "venue": "Glasburen Seminar Room, Umeå",
+            "location": [
+                "Umeå",
+                "Online"
+            ],
+            "organisers": "SciLifeLab Umeå",
+            "event_url": "https://www.scilifelab.se/event/nbis-and-casp-feeling-lost-in-data-we-are-here-to-help/",
+            "registration_url": "https://www.umu.se/en/chemical-biological-centre/kbc_events/registration-form-infrastructure-seminar2/",
+            "registration_deadline": "2023-05-15",
+            "description": "In the frame of the “SciLifeLab Site Umeå / KBC Infrastructure Seminar Series”, the seminars will be organised every second Tuesday during spring 2023. The seminars will be held in a hybrid format IRL in Glasburen, KBC, and online via Zoom."
+        },
+        {
             "title": "EMBL-SciLifeLab Data Science workshop",
             "type": "Workshop",
             "date_start": "2023-05-15",
