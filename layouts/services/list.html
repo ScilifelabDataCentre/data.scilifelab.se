@@ -6,22 +6,42 @@
 {{ $targets := slice "researchers" "facilities"}}
 {{ range $target := $targets }}
 {{ if eq $target "researchers" }}
-<h3 id="for-researchers">Services for researchers</h3>
+<div class="row">
+  <div class="col">
+    <h3 id="for-researchers">Services for researchers</h3>
+  </div>
+  <div class="col-3 text-end">
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-service-area="researchers_services">
+    </div>
+  </div>
+</div>
 <div class="mt-2">
   <p>These services are available free of charge to all life science researchers and communities in Sweden,
     regardless of SciLifeLab affiliation.</p>
 </div>
 {{ else if eq $target "facilities" }}
-<h3 id="for-facilities">Services for data-producing facilities/units</h3>
+<div class="row">
+  <div class="col">
+    <h3 id="for-facilities">Services for data-producing facilities/units</h3>
+  </div>
+  <div class="col-3 text-end">
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-service-area="facilities_services">
+    </div>
+  </div>
+</div>
 <div class="mt-2">
   <p>The services below are available to facilities/units producing life science data in Sweden. In some
     cases, the services may only be available for SciLifeLab infrastructure units.</p>
 </div>
 {{ end }}
-<div class="row g-3 mb-5">
+<div id="{{ $target }}_services" class="row g-3 mb-5">
   {{ range $services }}
   {{ if in .target $target }}
-  <div class="col-md-6 col-lg-4">
+  <div class="col-md-6 col-lg-4 service" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
     <div class="bg-service">
       <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
         <a target="_self" href="{{ .url }}"><img class="img-fluid"
@@ -57,7 +77,39 @@
   </div>
   {{ end }}
   {{ end }}
+  <div id="no-filtered-service" style="display:none;">
+    <p class="text-center">No services have the given keyword, please try to use another.</p>
+  </div>
 </div>
 {{ end }}
+
+<script>
+  
+  // Function to filter the service based on search text
+  $("input[type=text]").on("input", function(){
+    
+    // Get the text entered and service category 
+    var searchText = $(this).val().toLowerCase();
+    var searchArea = this.getAttribute('data-service-area');
+    
+    // Hide all services before filtering
+    $(`div#${searchArea} div.service`).hide();
+    $(`div#${searchArea} div#no-filtered-service`).hide();
+    
+    // If text empty show all services
+    if (searchText == ''){
+      $(`div#${searchArea} div.service`).show();
+    } else {
+      $(`div#${searchArea} div[data-search-tags*='${searchText}']`).show();
+      
+      // Display a message if no services available for given keyword
+      var visible_services = $(`div#${searchArea} div.service`).filter(":visible");
+      if (!visible_services.length) {
+        $(`div#${searchArea} div#no-filtered-service`).show();
+      }
+    }
+  });
+
+</script>
 
 {{ end }}
