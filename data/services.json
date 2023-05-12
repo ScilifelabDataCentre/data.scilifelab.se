@@ -7,6 +7,14 @@
     "type": [
       "Compute resources"
     ],
+    "search_tags": [
+      "Compute resource",
+      "E-infrastructure",
+      "Compute hosting",
+      "SciLifeLab",
+      "Data Centre",
+      "Hosting"
+    ],
     "name": "Compute resources in Sweden",
     "description": "Information about the compute resources (e.g. for hosting, analysis) available in Sweden, as well as how to apply.",
     "url": "/services/e-infrastructure/",
@@ -23,6 +31,13 @@
     "type": [
       "Compute resources"
     ],
+    "search_tags": [
+      "Compute resources",
+      "Hosting",
+      "E-infrastructure",
+      "SciLifeLab",
+      "Data Centre"
+    ],
     "name": "Hosting on the SciLifeLab Data Platform",
     "description": "Details about how researchers, research groups, and organisations can apply for hosting via the Platform.",
     "url": "/services/hosting/",
@@ -37,6 +52,13 @@
     ],
     "type": [
       "portal"
+    ],
+    "search_tags": [
+      "Pandemic preparedness portal",
+      "COVID-19",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
     ],
     "name": "The Swedish COVID-19 & Pandemic Preparedness Data Portal",
     "description": "A web portal for resources related to pandemic preparedness research in Sweden",
@@ -54,6 +76,15 @@
     "type": [
       "helpdesk"
     ],
+    "search_tags": [
+      "Helpdesk",
+      "RDM",
+      "Research data management",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
+    ],
     "name": "SciLifeLab Data Management Helpdesk",
     "description": "Helpdesk for researchers in Sweden to get help with research data management questions",
     "thumbnail": "/img/service_thumbnails/helpdesk.jpg",
@@ -67,6 +98,16 @@
     ],
     "type": [
       "tool"
+    ],
+    "search_tags": [
+      "DSW",
+      "Data Stewardship Wizard",
+      "Data Management Plans",
+      "DMPs",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
     ],
     "name": "SciLifeLab Data Stewardship Wizard",
     "description": "A tool that aids researchers in creating data management plans (DMPs) using multiple choice questions",
@@ -82,6 +123,14 @@
     "type": [
       "database",
       "tool"
+    ],
+    "search_tags": [
+      "Data submission",
+      "Data repository",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
     ],
     "name": "SciLifeLab Data Repository",
     "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
@@ -100,6 +149,16 @@
       "portal",
       "helpdesk"
     ],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Helpdesk",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre"
+    ],
     "name": "SciLifeLab RDM Guidelines Portal",
     "description": "A portal containing information on research data management in Sweden",
     "thumbnail": "/img/service_thumbnails/rdm.jpg",
@@ -115,6 +174,20 @@
     ],
     "type": [
       "tool"
+    ],
+    "search_tags": [
+      "SciLifeLab Serve",
+      "AI",
+      "Artificial intelligence",
+      "Apps",
+      "DASH",
+      "R-Shiny",
+      "Hosting",
+      "Data sharing",
+      "Machine learning",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre"
     ],
     "name": "SciLifeLab Serve",
     "description": "Tool allowing to host and share R Shiny and Dash apps, as well as trained machine learning models",
@@ -133,6 +206,15 @@
       "tool",
       "portal"
     ],
+    "search_tags": [
+      "SubCellBarCode",
+      "Subcellular localisations",
+      "Proteins",
+      "Proteomics",
+      "Database",
+      "Tool",
+      "Portal"
+    ],
     "name": "SubCellBarCode",
     "description": "A collection of resources centred around the subcellular localisation of proteins",
     "thumbnail": "/img/service_thumbnails/subcell.jpg",
@@ -149,10 +231,16 @@
     "type": [
       "database"
     ],
+    "search_tags": [
+      "SweFreq",
+      "Genomics",
+      "Genetics",
+      "Database",
+      "Portal"
+    ],
     "name": "SweFreq",
     "url": "https://swefreq.nbis.se/",
     "description": "A website developed to make genomic datasets more findable and accessible",
-    "url": "https://swefreq.nbis.se/",
     "maintained_by": "SciLifeLab Data Centre"
   },
   {
@@ -161,6 +249,14 @@
     ],
     "type": [
       "tool"
+    ],
+    "search_tags": [
+      "DDS",
+      "Data delivery",
+      "Sensitive data",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
     ],
     "name": "SciLifeLab Data Delivery System",
     "description": "Cloud-based system for the delivery of data from SciLifeLab units to their users",
@@ -177,6 +273,13 @@
     "type": [
       "tool"
     ],
+    "search_tags": [
+      "Order Portal",
+      "Communication",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
+    ],
     "name": "Order Portal",
     "description": "A configurable web-based system enabling communication between units and prospective users",
     "url": "https://orderportal.scilifelab.se/",
@@ -190,6 +293,13 @@
     ],
     "type": [
       "tool"
+    ],
+    "search_tags": [
+      "Anubis",
+      "Funding calls",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
     ],
     "name": "Anubis",
     "description": "A web-based system for handling calls, proposal submission, reviews, decisions, and grant dossiers.",

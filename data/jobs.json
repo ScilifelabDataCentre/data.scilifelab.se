@@ -41,6 +41,16 @@
             "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
         },
         {
+            "title": "Postdoctoral fellow in Bioinformatics and Antibiotic resistance",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-06-07",
+            "employer": "Gothenburg University",
+            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=30255",
+            "description": "Most of the resistance genes that cause problems in the clinic today seem to originate from harmless, environmental bacteria. Our group studies the driving forces behind this development, particularly the effects of low levels of antibiotics and antibacterial biocides in wastewaters from hospitals, municipalities and industries (see Larsson’s website). In some sub-projects, we study the evolutionary relationship between resistance genes in environmental bacteria and pathogens, and search for new forms of resistance in different environments using both bioinformatic methods as well different large-scale functional screens. We also study how analyses of resistant bacteria in sewage can inform predictions of the local, clinical resistance situation. A better knowledge about all these processes and drives will be valuable to be assess and respond to threats to our health. We are now looking for a postdoctoral fellow who is interested in taking on the task to experimentally explore the environmental dimensions of antibiotic resistance."
+        },
+        {
             "title": "Postdoctoral Fellowship: autophagy in viral infection",
             "type": [
                 "Postdoc position"
@@ -49,6 +59,56 @@
             "employer": "Umeå University",
             "job_url": "https://www.researchgate.net/job/993223_Postdoctoral_Fellowship_autophagy_in_viral_infection",
             "description": "Positive-sense RNA viruses (+ssRNA viruses) are a large group of human pathogens including coronaviruses. Autophagy is an evolutionarily conserved catabolic process to eliminate or recycle dysfunctional cellular organelles or unused proteins. The project focuses on the involvement of autophagy in +ssRNA virus infection.<br><br>The project will combine expertise from both labs, using novel cell biology methods combined with high-end proteomics and cryo-electron tomography to understand how the autophagy machinery is used for the replication or restriction of a diverse set of positive-sense RNA viruses."
+        },
+        {
+            "title": "PhD Position in Structural Bioinformatics",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-05-26",
+            "employer": "Linköping University",
+            "job_url": "https://liu.se/en/work-at-liu/vacancies/21950",
+            "description": "We are focused on understanding biomolecular structures, their dynamics, and ensembles at the molecular level. As part of our team, you will develop computational approaches to analyze and predict protein structures, incorporating experimental data to enhance our models. A key component of this project is utilizing AI, particularly AlphaFold, to optimize and enhance our structural predictions and understand the dynamic nature of biomolecules."
+        },
+        {
+            "title": "Senior Research Engineer as Electron Microscopy Facility Manager",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-05-22",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/en/what:job/jobID:616024/type:job/where:1/apply:1",
+            "description": "As a senior research engineer, you will provide researchers with expert advice in the planning and execution of electron microscopy (EM) analysis. We are a large group of senior research engineers who together maintain end develop research infrastructure. For this position, we are looking for a person to take the main responsibility for sample preparation, operation and maintenance of scanning electron microscopy SEM and image analysis. Mainly for project in the research areas of chemistry and physics, but many of the projects supported at the facility originate from medical and biology research. You will be involved in teaching shorter methodology courses in EM and image analysis at doctoral level. You will also administer user support, as well as act as a contact person for the facility's users and collaborations between microscopy facilities in Sweden and internationally. The work is planned together with researchers and UCEM staff and is carried out independently or together with collaborators, students and researchers at other department or external entities."
+        },
+        {
+            "title": "Senior Research Engineer in Image Analysis",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-05-22",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/en/what:job/jobID:616019/type:job/where:1/apply:1",
+            "description": "As a senior research engineer, you will provide researchers with expert advice in the planning and execution of electron microscopy (EM) data processing and image analysis, mainly in medical and biological research areas. The tasks include installation, operation and maintenance and development of software, computer systems and servers as well as assisting researchers in planning data collection and image analysis. The work will also involve programming and method development. You will be involved in teaching shorter methodology courses in EM and image analysis at doctoral level. You will also administer user support, as well as act as a contact person for the facility's users and collaborations between microscopy facilities in Sweden and internationally. The work is planned together with researchers and UCEM staff and is carried out independently or together with collaborators and facility users."
+        },
+        {
+            "title": "Senior research engineer for electron diffraction and cryo-EM",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-05-22",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/en/what:job/jobID:616013/type:job/where:1/apply:1",
+            "description": "As a senior research engineer, you will provide researchers with expertise in the planning and performance of electron microscopy (EM), cryo-EM, electron diffraction (MicroED) and image analysis, mainly in biological and biochemical research areas. You will be involved in teaching shorter methodology, -courses at postgraduate level and provide user training EM methods. Work assignments include, operation and maintenance of instruments and computer systems, as well as assisting researchers in preparation of EM samples, data collection, and image analysis. You will also act as a coordinator for ongoing facility projects and collaborations between partner microscopy facilities in Sweden and internationally. The work is planned together with the facility's other staff and is carried out independently or together with collaborators and facility users."
+        },
+        {
+            "title": "Postdoctoral Research on Metabolic Fluorescence Imaging",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-05-19",
+            "employer": "Umeå University",
+            "job_url": "https://umu.varbi.com/en/?jobtoken=14392f544a7ce16b4a03f49042d358d7e9f662ef3",
+            "description": "Lagerlöf Lab is a diverse group of people with a background in molecular biology, biochemistry, neuronal circuit mapping and clinical psychiatry. We integrate these techniques to reveal how appetite is encoded by the brain. Our overall aim is to identify fundamental mechanisms of food intake that can be harnessed to treat conditions associated with unhealthy eating habits such as anorexia nervosa and obesity. The goal of this project is to develop a novel biosensor to image in the brain how specific metabolic signaling pathways affect food intake. Every member in our lab is supported to lead their own project. We believe in fostering an environment where everyone enjoys the freedom, courage and ability to answer the big questions in neuroscience."
         },
         {
             "title": "Postdoctoral fellowship Research on Appetite",
@@ -149,206 +209,6 @@
             "employer": "Gothenburg University",
             "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=29891",
             "description": "BDC will now, with the financial support by SciLifeLab, expand its group with a research advisor with a focus on handling research data. The position will be shared between BDC and Gothenburg’s SciLifeLab site and thereby support activities from various disciplines including the recently established SciLifeLab and Wallenberg National Program for Data-Driven Life Science (DDLS) (https://www.scilifelab.se/data-driven/about/). More than 400 group leaders, PhD students and postdocs will be part of the DDLS program, and they are expected to become advanced users of the services provided by the site."
-        },
-        {
-            "title": "1-3 System developers/DevOps",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-28",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=612618",
-            "description": "SciLifeLab Data Centre is looking for motivated and knowledgeable System developers to join our team. Within the new national data platform for SciLifeLab and the DDLS program, we build services for service units and research groups within life science. As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field. The work will include both new development, existing software components and commercial systems."
-        },
-        {
-            "title": "1-3 Data stewards",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-28",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=614051",
-            "description": "SciLifeLab Data Centre is looking for motivated and knowledgeable Data stewards, to join our Data management team. As a data steward, you are expected to participate in user support and development of data services, with a focus on research data management following the FAIR principles, metadata management and data curation, communication with users, and training activities."
-        },
-        {
-            "title": "Postdoc in Robotics and AI-powered Microscopy Imaging",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-28",
-            "employer": "KTH",
-            "job_url": "https://aicell.io/recruiting/postdoc-1-ddls-robotics/",
-            "description": "The aim of the project is to build a smart microscopy imaging farm for massive production of image data. It consists of multiple microscopes and fluidic systems, robotic arms, liquid handling robots and automatic incubators. The farm will be used for performing automated widefield/fluorescence imaging, long-term live cell imaging, tracking,  spatial-omics and multiplexing imaging. With the AI-powered control software, data are analyzed in real-time, augmented views are added on the fly. By generating feedback control signals to control the microscope, the software will automatically change field-of-views, illumination power and other experimental conditions in order to optimize the phototoxicity and capture rare events in live cells.<br><br>The candidate is expected to develop an integrated system with microscopes, fluidic control, robotic arms, as well as the control software. The project is a collaboration with our collaborator in the WASP program and built on top of our prior work (e.g. squid, ImJoy) from us or our collaborators at Stanford University."
-        },
-        {
-            "title": "Doctoral Student in Robotics and AI for Automated Microscopy Imaging",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-04-27",
-            "employer": "KTH",
-            "job_url": "https://aicell.io/recruiting/phd-1-robotics-microscopy/",
-            "description": "The AICell Lab (https://aicell.io) in the department of Applied Physics at KTH and Science for Life Laboratory is a new research group funded by the Data-driven Life Science Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now opening a position for a doctoral student in biological physics with a focus on robotics and AI-powered microscopy imaging.<br><br>You will actively contribute to the design and implementation of an automated microscopy imaging farm, encompassing hardware integration, optics optimization, robotics engineering, and automation systems development. Additionally, you will be involved in developing cutting-edge AI models for data analysis, designing real-time feedback control systems for active data acquisition, and working on data-driven whole-cell modeling initiatives to advance our research objectives."
-        },
-        {
-            "title": "Bioinformatician",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-27",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=603737",
-            "description": "Professor Mia Phillipson's research group consists of about 15 people. The group's research is mainly focusing on revealing novel functions of immune cells, and to find means to control and regulate these functions during e.g. organ development, regulation of homeostasis, tissue regeneration, blood vessel formation and inflammation using intravital imaging, functional studies and multiomics approaches. Among the most important discoveries of the Phillipson group are the alternative roles of immune cells in restoration of blood perfusion following ischemic injury and transplantation, as well as during wound healing. Following their discoveries of how to regulate these immune cell functions, a spin-off company (Ilya Pharma) was founded to develop immunotherapies accelerating healing of wounds in skin and mucosa now in clinical phase 2.<br><br>The Phillipson lab is now looking for an experienced bioinformatician for analysing data coming from the lab, mainly single cell RNA-seq data but also bulk RNA-seq and metagenomics data. This person will also work on data mining of public databases. In addition, interest / competence in the development of software for image analysis is an advantage."
-        },
-        {
-            "title": "Forskningsingenjör, SciLifeLab Affinity Proteomics Uppsala",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-27",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=616402",
-            "description": "Vi söker nu en till två forskningsingenjörer som i första hand kommer vara en del av teamet som jobbar med Olink Explore metoden. Metoden baseras på proximity extensions assay (PEA) och det laborativa arbetet är till stor del automatiserat med pipetteringsrobotar, men även manuellt laborativt arbete förekommer. För att blir en självständig operatör så krävs en godkänd internutbildning.<br><br>Beroende på den sökandes profil och provinströmning kan det även bli aktuellt med arbete med andra metoder som ingår i verksamheten, i första hand PCR baserade PEA metoder (Olink Target, Flex, Focus) och metoder baserade på elektrochemiluminescence (ECL, Meso Scale).<br><br>En noggrann dokumentation av det dagliga arbetet är en viktig del av arbetsuppgifterna."
-        },
-        {
-            "title": "1-2 postdoctoral positions in data-driven infection biology",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-23",
-            "employer": "Umeå University",
-            "job_url": "https://umu.varbi.com/what:job/jobID:615582/type:job/where:1/apply:1",
-            "description": "Microbes produce a wide array of secondary metabolites (SMs), which allow them to interact with their environment, as well as with each other. The postdoctoral project proposed here will involve developing (meta)genome mining approaches, which can be used to identify novel microbial SMs involved in microbe-host and/or microbe-microbe interactions. The tools developed here will be applied to large amounts of microbial (meta)genomic data, with the goal of identifying microbial SMs responsible for host disease phenotypes (e.g., microbiome-associated cancers) or SMs with novel antimicrobial activities."
-        },
-        {
-            "title": "PhD position in medical science within bioinformatic, computational methods",
-            "type": [
-                "PhD position"
-            ],
-            "app_deadline": "2023-04-23",
-            "employer": "Umeå University",
-            "job_url": "https://umu.varbi.com/what:job/jobID:615694/type:job/where:1/apply:1",
-            "description": "Secondary metabolites (SMs) produced by microbes have critically important roles in human health, including as essential therapeutics (e.g., antimicrobials, anticancer agents). (Meta)genomic data derived from microbes thus offers tremendous potential as a reservoir for novel SMs; however, accurate, scalable in silico methods are necessary to leverage such data for SM discovery. Here, the PhD student will develop and apply bioinformatic tools, which can facilitate the discovery of novel SMs from millions of microbial (meta)genomes available in public databases."
-        },
-        {
-            "title": "Bibliotekarie inriktning publicering och öppen vetenskap",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-17",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/jobb/detaljsida/?positionId=612086",
-            "description": "Vi söker dig som vill vara med och vidareutveckla bibliotekets utåtriktade arbete med publicering och öppen vetenskap. Du kommer att samarbeta med kollegor inom biblioteket som arbetar med publiceringsfrågor, forskningsdata, bibliometri och ett kontaktskapande forskarstöd. Du har ett stort intresse för frågor om öppen vetenskap och drivs av en vilja att hjälpa forskare att tillgängliggöra sin forskning."
-        },
-        {
-            "title": "Forskningsassistent inom strukturbestämning och analys",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-17",
-            "employer": "Linköping University",
-            "job_url": "https://www.scilifelab.se/career/forskningsassistent-inom-strukturbestamning-och-analys/",
-            "description": "Du kommer att utveckla en beräkningsplattform för experimentell makromolekylär strukturbestämning och analys. Du kommer att arbeta med att utveckla en databas och python API för att hantera utskick av uppgifter och ge en överblick över dataflöden genom olika jobb. Du kommer att utveckla en webbaserad frontend för att hantera arbetsflöden, tillhandahålla visuella sammanfattningar av uppgiftsutdata och bygga instrumentpaneler för att ge olika vyer av databasen. Sökande med kunskap om maskininlärning och statistik kommer att designa nya uppgifter för att förhöra och visualisera data."
-        },
-        {
-            "title": "System Developer",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-16",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/what:job/jobID:610078/type:job/where:1/apply:1",
-            "description": "KI and SciLifeLab Data Centre are looking for a motivated and knowledgeable System developer specialized towards precision medicine and diagnostics, with placement at KI’s Research Data Office (RDO) in Solna. As a system developer, you are expected to participate in technical development of data services, with a focus on software engineering with methods for DevOps, to strengthen the research field."
-        },
-        {
-            "title": "Postdoc in Robotics and AI-powered Microscopy Imaging",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-14",
-            "employer": "KTH",
-            "job_url": "https://kth.varbi.com/what:job/jobID:609903/type:job/where:1/apply:1",
-            "description": "The aim of the project is to build a smart microscopy imaging farm for massive production of image data. It consists of multiple microscopes and fluidic systems, robotic arms, liquid handling robots and automatic incubators. The farm will be used for performing automated widefield/fluorescence imaging, long-term live cell imaging, tracking, spatial-omics and multiplexing imaging. With the AI-powered control software, data are analyzed in real-time, augmented views are added on the fly. By generating feedback control signals to control the microscope, the software will automatically change field-of-views, illumination power and other experimental conditions in order to optimize the phototoxicity and capture rare events in live cells."
-        },
-        {
-            "title": "Postdoctoral fellow in cancer genomics and bioinformatics",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-14",
-            "employer": "Gothenburg University",
-            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=7&lang=UK&validator=9b89bead79bb7258ad55c8d75228e5b7&job_id=29632",
-            "description": "In this project, you will develop computational methods and workflows to analyze genetic variants in whole-exome and whole-genome sequencing data. You will also work with multi-omic data integration. The workflows will be implemented in high-performance computing platform. You will work closely with PhD students and other postdocs, and international collaborators."
-        },
-        {
-            "title": "Postdoctoral position in molecular precision medicine",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-14",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=606817",
-            "description": "The main task of the postdoctoral research project is to develop and implement sequencing technologies in research projects where clinical patient samples are analyzed. The work may include analysis of single cells, development of methods for analysis of cell-free DNA/RNA in so-called 'liquid biopsies', as well as implementation of large-scale proteomics analyses. There is a good opportunity to propose and pursue the candidate’s own ideas, as long as they fit within the group's general research program."
-        },
-        {
-            "title": "Postdoc in Computational Protein Evolution",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-13",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/en/what:job/jobID:612837/",
-            "description": "You will develop and lead projects that aim to build novel phylogenetic models and methods, and also (optionally) work on the application of diffusion denoising models to new problems. You will contribute to various ongoing projects in the lab."
-        },
-        {
-            "title": "Laboratory assistant",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-13",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/en/what:job/jobID:612963/",
-            "description": "You will play a leading role in lab administration, including purchasing, budgeting, drafting ethics applications, document preparation, etc. Where needed, you will also support research in the lab with some of the following:<br><br><ul><li>Standard molecular biology, such as cloning, PCR, etc.</li><li>Protein expression in mammalian cells, managing cell lines, etc.</li><li>Protein purification (affinity and SEC).</li><li>Various assays.</li><li>Optionally, small animal handling, immunizations.</li></ul>"
-        },
-        {
-            "title": "Postdoc in Antiviral Antibodies",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-13",
-            "employer": "Karolinska Institute",
-            "job_url": "https://ki.varbi.com/en/what:job/jobID:612846/",
-            "description": "You will develop and lead projects at the intersection of virology, immunology, and protein design. You will contribute to ongoing lab projects with:<br><br><ul><li>Standard molecular biology, such as cloning, PCR, etc.</li><li>Protein expression in mammalian cells, managing cell lines, etc.</li><li>Protein purification (affinity and SEC).</li><li>Various assays.</li><li>Optionally, small animal handling, immunizations.</li></ul>"
-        },
-        {
-            "title": "Systemutvecklare vid UPPMAX",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-13",
-            "employer": "Uppsala University",
-            "job_url": "https://uu.varbi.com/what:job/jobID:607591/type:job/where:1/apply:1",
-            "description": "Tjänsten är placerad vid UPPMAX och syftar främst till att designa och utveckla system och tjänster för forskare baserat på behov som identifieras i dialog med SciLifeLab Data Centre (DC), liksom specifika kopplingar och gränssnitt mellan UPPMAX och DCs system. Således kommer rollen att arbeta tätt ihop med både UPPMAX och DC. UPPMAX är en av de nationellt tillgängliga e-infrastrukturer som DDLS-programmet arbetar med för att stödja forskare inom livsvetenskaperna, där vi både har resurser med särskild betydelse för fältet och expertis att stödja landets forskare. Vi har en särskild roll för hantering av storskaliga känsliga data, varför informationssäkerhetsfrågorna måste ha en avgörande roll vid design av sådana lösningar."
-        },
-        {
-            "title": "Imaging of Bacterial Gut Infections in Human Enteroid and Colonoid Models",
-            "type": [
-                "Postdoc position"
-            ],
-            "app_deadline": "2023-04-12",
-            "employer": "Uppsala University",
-            "job_url": "https://www.uu.se/en/about-uu/join-us/details/?positionId=601988",
-            "description": "The Sellin research group (www.sellinlab.se) at IMBIM, Uppsala University and SciLifeLab, studies how gut pathogens, such as Salmonella, Shigella, and Campylobacter species, interact with the mammalian intestinal mucosa and cause disease.<br><br>The advertised post-doctoral project builds up the groups recent development of human intestinal epithelial organoid models (enteroids and colonoids) and imaging tools to follow bacterial infections in real time at high temporal and spatial resolution"
-        },
-        {
-            "title": "Forskningskoordinator för WCMTM",
-            "type": [
-                "Job"
-            ],
-            "app_deadline": "2023-04-11",
-            "employer": "Gothenburg University",
-            "job_url": "https://web103.reachmee.com/ext/I005/1035/job?site=6&lang=SE&validator=3038fcf1516ea1184a6da70a891f87da&ref=https%3A%2F%2Farbetsformedlingen.se%2Fplatsbanken%2F&job_id=29696",
-            "description": "Forskningskoordinatorns uppdrag är att ge stöd till forskarna inom WCMTM och föreståndaren genom att bidra till att: <ul><li>Stödja de rekryterade forskarna i deras arbete med att utveckla sin forskning vid Göteborgs universitet.</li><li>Koordinera centrats aktiviteter med övriga WCMM i Lund, Linköping och Umeå.</li><li>Samordna arbetet inom WCMTM med DDLS och SciLifeLab.</li><li>Koordinera samarbetet med ingående partners Västra Götalandsregionen och AstraZeneca.</li></ul>Rollen omfattar alltifrån framtagande av dokumentation, rapportskrivande, planering och koordinering av mötes- och seminarieprogram, spridning och presentation av information. Kort sagt att driva centrumets aktiviteter enligt plan.<br><br>Du kommer att ingå i ett kansli med flera stödfunktioner – som är placerad vid Forsknings -och innovationskontoret där gruppmedlemmarna avlastar och stödjer varandra och gemensamt bidrar till en kreativ och inbjudande arbetsmiljö.<br><br>Även andra arbetsuppgifter kan förekomma och anställningen innehåll och förutsättningar kan komma att förändras över tiden."
         }
     ]
 }
