@@ -5,14 +5,15 @@
       "facilities"
     ],
     "type": [
-      "Compute resources",
+      "Compute resources"
+    ],
+    "search_tags": [
+      "Compute resource",
       "E-infrastructure",
       "Compute hosting",
       "SciLifeLab",
-      "Data Centre"
-    ],
-    "search_tags": [
-      "Compute resource"
+      "Data Centre",
+      "Hosting"
     ],
     "name": "Compute resources in Sweden",
     "description": "Information about the compute resources (e.g. for hosting, analysis) available in Sweden, as well as how to apply.",
@@ -28,10 +29,11 @@
       "facilities"
     ],
     "type": [
-      "Compute hosting"
+      "Compute resources"
     ],
     "search_tags": [
-      "Compute hosting",
+      "Compute resources",
+      "Hosting",
       "E-infrastructure",
       "SciLifeLab",
       "Data Centre"
@@ -239,7 +241,6 @@
     "name": "SweFreq",
     "url": "https://swefreq.nbis.se/",
     "description": "A website developed to make genomic datasets more findable and accessible",
-    "url": "https://swefreq.nbis.se/",
     "maintained_by": "SciLifeLab Data Centre"
   },
   {
