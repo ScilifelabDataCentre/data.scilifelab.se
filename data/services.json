@@ -307,5 +307,119 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Database",
+      "Portal",
+      "Tool"
+    ],
+    "search_tags": [
+      "NBIS",
+      "Database",
+      "Portal",
+      "Tool"
+    ],
+    "name": "Human Protein Atlas",
+    "description": "The Human Protein Atlas aims to map all the human proteins in cells, tissues, and organs using an integration of various omics and imaging technologies",
+    "url": "https://www.proteinatlas.org/",
+    "thumbnail": "/img/service_thumbnails/hpa.jpg",
+    "maintained_by": "The Human Protein Atlas",
+    "maintained_by_url": "https://www.proteinatlas.org/about/organization",
+    "support_email": "contact@proteinatlas.org"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Database",
+      "Portal",
+      "Tool"
+    ],
+    "search_tags": [
+      "NBIS",
+      "Database",
+      "Portal",
+      "Tool"
+    ],
+    "name": "Metabolic Atlas",
+    "description": "Metabolic Atlas is a web platform integrating open-source genome scale metabolic models (GEMs) for easy browsing and analysis.",
+    "url": "https://metabolicatlas.org/",
+    "thumbnail": "/img/service_thumbnails/metatlas.jpg",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "http://www.nbis.se/",
+    "support_email": "contact@metabolicatlas.org"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Database",
+      "Portal",
+      "Tool"
+    ],
+    "search_tags": [
+      "NBIS",
+      "Database",
+      "Portal",
+      "Tool"
+    ],
+    "name": "TissUUmaps",
+    "description": "TissUUmaps is a browser-based tool for fast visualization and exploration of millions of data points overlaying a tissue sample.",
+    "url": "https://tissuumaps.github.io/",
+    "thumbnail": "/img/service_thumbnails/tissuumaps.jpg",
+    "maintained_by": "TissUUmaps",
+    "maintained_by_url": "https://tissuumaps.github.io/about_us/",
+    "support_email": "carolina.wahlby@it.uu.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Compute resources",
+      "Database",
+      "Helpdesk"
+    ],
+    "search_tags": [
+      "NBIS",
+      "Database",
+      "Compute resources",
+      "Helpdesk"
+    ],
+    "name": "AIDA Data Hub",
+    "description": "Data Sharing, Policy Support, and Services for researchers in Swedish medical imaging AI.",
+    "url": "https://datahub.aida.scilifelab.se/",
+    "thumbnail": "/img/service_thumbnails/aida.jpg",
+    "maintained_by": "AIDA Data Hub",
+    "maintained_by_url": "https://datahub.aida.scilifelab.se/about/",
+    "support_email": "aida-data-director@medtech4health.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Database",
+      "Tool"
+    ],
+    "search_tags": [
+      "NBIS",
+      "Database",
+      "Tool"
+    ],
+    "name": "Human Developmental Cell Atlas",
+    "description": "A molecular atlas of human prenatal development, describing every cell type in detail and showing their spatial and temporal distributions in three dimensions.",
+    "url": "https://hdca-sweden.scilifelab.se/",
+    "thumbnail": "/img/service_thumbnails/hdca.jpg",
+    "thumbnail_border": true,
+    "maintained_by": "Human Developmental Cell Atlas",
+    "maintained_by_url": "https://hdca-sweden.scilifelab.se/",
+    "support_email": "hdca-sweden@scilifelab.se"
   }
 ]
