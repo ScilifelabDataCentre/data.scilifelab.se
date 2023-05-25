@@ -16,6 +16,19 @@
             "description": "The DDLS program will arrange the 3rd DDLS Annual Conference, highlighting Data-driven life science research and its future. All scientists interested in data-driven research are welcome to join the 2-day lunch-to-lunch Conference."
         },
         {
+            "title": "21st Swedish Bioinformatics Workshop 2023 in Stockholm",
+            "type": "Workshop",
+            "date_start": "2023-11-06",
+            "date_end": "2023-11-07",
+            "venue": "Sune Bergström Aula, BioClinicum, New Karolinska University Hospital",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "Swedish Bioinformatics Workshop 2023",
+            "event_url": "https://www.scilifelab.se/event/swedish-bioinformatics-workshop-2023/",
+            "description": "We’re pleased to invite you to the 21st Swedish Bioinformatics Workshop (SBW) that will take place in Stockholm on November 6th – 7th. SBW is an annual event that is hosted by different universities across Sweden. This year, the event will take place at Karolinska Sjukhuset Solna at the Sune Bergström’s Aula.<br><br>As is tradition, SBW will be a chance for PhD students and postdocs as well as all researchers working with bioinformatics or computational biology to present their work, discuss the latest developments in the field, and improve their bioinformatic skills through different workshops. In addition, the program includes lectures from invited speakers, participant presentations, and poster sessions. This year we are also pleased to welcome participants from all the Nordic countries to join us in Stockholm!<br><br>Registration is free of charge for PhD students and post docs. More information regarding the event will be updated on the website: sbw2023.eu. There you can also register your email address for updates. If you have any questions, feel free to reach out to sbw2023@gmail.com."
+        },
+        {
             "title": "Cryo-EM sample preparation and data collection",
             "type": "Course",
             "date_start": "2023-10-17",

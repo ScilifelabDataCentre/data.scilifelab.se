@@ -1,6 +1,14 @@
 {
     "ddls": [
         {
+            "title": "Event call 2024 open",
+            "funder": "SciLifeLab",
+            "deadline": "2023-09-29",
+            "url": "https://www.scilifelab.se/call-for-scilifelab-event-support-2024/",
+            "description": "The overall mission for SciLifeLab is to enable life science research in Sweden beyond what is possible for an individual researcher, an individual university, or an individual research discipline.<br><br>Therefore, SciLifeLab aims to support events within the scope of our fields of research, open to participants from all over Sweden. We aim to encourage collaboration among and between SciLifeLab infrastructure and researchers, as well as with external organizations, and increase awareness of SciLifeLab to the broader research community in Sweden and abroad.",
+            "applicant": "A SciLifeLab infrastructure platform/unit or a SciLifeLab group leader must be the organizer or a visible co-organizer."
+        },
+        {
             "title": "WASP and DDLS joint call for research visits 2023",
             "funder": "Knut and Alice Wallenberg Foundation (KAW)",
             "deadline": "2023-05-24",
