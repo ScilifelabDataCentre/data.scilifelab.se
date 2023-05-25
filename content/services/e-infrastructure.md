@@ -41,7 +41,11 @@ Whilst portions of LUMI are allocated for specific countries, [as with other Eur
 
 ### AIDA Data Hub 
 
-[AIDA](https://medtech4health.se/aida/) is a national collaboration arena in Swedish medical imaging diagnostics AI, engaging around 50 partners approximately equally from academia, industry, and healthcare. [AIDA Data Hub](https://datahub.aida.scilifelab.se/) provides AIDA with data infrastructure services, such as the [AIDA DGX-2 Service](https://datahub.aida.scilifelab.se/services/#dgx-2), which provides GPU compute resources for AI training secure enough for use with sensitive personal medical imaging data for research. The service is offered to AIDA partners free of charge. All Swedish organisations active in medical imaging diagnostics or AI can [become part of AIDA](https://datahub.aida.scilifelab.se/about/aida/#join), either by receiving funding through AIDA, by paying a small yearly membership fee, or by contributing to AIDA by other means, such as sharing prioritised FAIR medical imaging data for OpenScience through the AIDA Data Hub. For enquiries please contact [aida@nbis.se](mailto:aida@nbis.se).
+[AIDA](https://medtech4health.se/aida/) is a national collaboration arena in Swedish medical imaging diagnostics AI, engaging around 50 partners approximately equally from academia, industry, and healthcare. [AIDA Data Hub](https://datahub.aida.scilifelab.se/) provides AIDA with data infrastructure services, such as the [AIDA DGX-2 Service](https://datahub.aida.scilifelab.se/services/#dgx-2), which provides GPU compute resources for AI training secure enough for use with sensitive personal medical imaging data for research.
+
+The AIDA Data Hub services are offered to AIDA partners free of charge. All Swedish organisations active in medical imaging diagnostics or AI can [become part of AIDA](https://datahub.aida.scilifelab.se/about/aida/#join), either by receiving funding through AIDA, by paying a small yearly membership fee, or by contributing to AIDA by other means, such as sharing prioritised FAIR medical imaging data for OpenScience through the AIDA Data Hub.
+
+For enquiries please contact [aida@nbis.se](mailto:aida@nbis.se).
 
 ### EuroHPC
 

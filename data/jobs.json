@@ -41,6 +41,16 @@
             "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
         },
         {
+            "title": "Data Steward with focus on human data management",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-06-14",
+            "employer": "Uppsala University",
+            "job_url": "https://www.jobb.uu.se/details/?positionId=626652",
+            "description": "NBIS is looking for a motivated and knowledgeable Data steward, to join our Data management team. We are looking for a person who wants to enable Life Science research in Sweden that is beyond what is achievable for individual researchers, a single university, or a single research area. As a Data Steward you will work closely with, and guide research groups regarding Data Management Plans, and support researchers with metadata management and data curation for data publishing. A large focus will be to establish and perform procedures for user support to researchers wanting to deposit human genetic data. An important part of the work is also to educate researchers in data management best practices. You are also expected to contribute to Data Management capability development in international projects on management of genomic data and medical informatics where NBIS is active, as well as to Research Data Management competence networking within Sweden."
+        },
+        {
             "title": "Postdoctoral fellow in Bioinformatics and Antibiotic resistance",
             "type": [
                 "Postdoc position"
