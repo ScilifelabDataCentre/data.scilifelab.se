@@ -302,7 +302,8 @@
     "thumbnail": "/img/service_thumbnails/tissuumaps.jpg",
     "maintained_by": "TissUUmaps",
     "maintained_by_url": "https://tissuumaps.github.io/about_us/",
-    "support_email": "carolina.wahlby@it.uu.se"
+    "support_email": "biif@scilifelab.se",
+    "support_github": "https://github.com/TissUUmaps/TissUUmaps"
   },
   {
     "target": [
