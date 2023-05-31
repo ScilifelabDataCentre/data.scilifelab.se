@@ -1,12 +1,20 @@
 {
     "ddls": [
         {
+            "title": "Proof of Concept Grant in Life Science",
+            "funder": "Knut and Alice Wallenberg Foundation and SciLifeLab",
+            "deadline": "2023-08-17",
+            "url": "https://www.scilifelab.se/proof-of-concept-grant-in-life-science/",
+            "description": "The Proof of Concept grant is not meant as a translational academic research grant, but as a specific goal-oriented project to develop an academic discovery towards an innovation and a product. Hence, translational research without a clear product-oriented thinking or a defined goal at the end of the two year period is not something that can be supported. The Proof of Concept grant is tied to the Wallenberg Launch Pad (WALP) mechanism that provides support for academic scientists to develop innovations that make an impact in society.",
+            "applicant": "Eligible to apply are those who have or have had grants from the Wallenberg foundations (e.g. Wallenberg Academy Fellow, Wallenberg Scholar, Wallenberg Clinical Scholar or KAW project funding,) or are part of Wallenberg Center for Molecular Medicine, the Data Driven Life Science program or SciLifeLab (including Fellows, group leaders, and infrastructure platform personnel)."
+        },
+        {
             "title": "Event call 2024 open",
             "funder": "SciLifeLab",
             "deadline": "2023-09-29",
             "url": "https://www.scilifelab.se/call-for-scilifelab-event-support-2024/",
             "description": "The overall mission for SciLifeLab is to enable life science research in Sweden beyond what is possible for an individual researcher, an individual university, or an individual research discipline.<br><br>Therefore, SciLifeLab aims to support events within the scope of our fields of research, open to participants from all over Sweden. We aim to encourage collaboration among and between SciLifeLab infrastructure and researchers, as well as with external organizations, and increase awareness of SciLifeLab to the broader research community in Sweden and abroad.",
-            "applicant": "A SciLifeLab infrastructure platform/unit or a SciLifeLab group leader must be the organizer or a visible co-organizer."
+            "applicant": "A SciLifeLab infrastructure platform/unit or a SciLifeLab group leader must be the organizer or a visible co-organiser."
         },
         {
             "title": "WASP and DDLS joint call for research visits 2023",
