@@ -1,14 +1,114 @@
 {
     "items": [
         {
+            "title": "Resolving microbial genomes in complex communities at the single-cell level",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-09-21",
+            "employer": "Umeå University",
+            "job_url": "http://www.henlab.org/postdoc-resolving-microbial-genomes-in-complex-communities-at-the-single-cell-level/",
+            "description": "A fundamental question in microbiome research involves determining which organisms are part of a given microbial community. Despite major breakthroughs in shotgun metagenomic sequencing (SMS) and bioinformatic analysis methods, determining “who is there” in a microbial community remains extremely challenging: de novo assembly of sequencing reads generated via SMS typically results in a collection of contigs that cannot be grouped into strain-level genomes. Here, the postdoc will develop a high-throughput method, which can reconstruct whole microbial genomes from microbiome samples at the single-cell level. Following prototyping, the method will be used to characterize clinical oral microbiome samples collected from a cohort of Swedish patients, with the goal of understanding why some humans develop chronic oral infections, while others do not."
+        },
+        {
+            "title": "Masters projects",
+            "type": [
+                "Project opportunity"
+            ],
+            "app_deadline": "2023-08-15",
+            "employer": "Linköping University",
+            "job_url": "https://macromolecular.github.io/join",
+            "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
+        },
+        {
             "title": "Masters thesis project opportunities",
             "type": [
                 "Project opportunity"
             ],
-            "app_deadline": "2023-06-15",
+            "app_deadline": "2023-08-15",
             "employer": "Umeå University",
             "job_url": "http://www.henlab.org/join-us/",
             "description": "Master thesis projects offered by Henriksson lab, Umeå University. **No specific deadline given for application**."
+        },
+        {
+            "title": "Research Infrastructure Specialist in Precision Medicine",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-08-04",
+            "employer": "Karolinska Institutet",
+            "job_url": "https://www.scilifelab.se/career/research-infrastructure-specialist-in-precision-medicine/",
+            "description": "We are looking for a high-profile and dedicated technology expert to increase access to SciLifeLab’s technology platforms for clinical research. Your mission will be to establish new operational processes to link our technology platforms towards clinical research projects and trials. This will need an understanding of clinical needs and realities and an ability to work in close interaction with health care. Your mission is to enable sample and data flows to the technology platforms including data center to ensure high quality molecular data generation to deliver within needed timeframes. The tasks also include national and international collaboration with many stakeholders and specifically with CIR (Centre for Imaging Research) and RISE (Research Institutes of Sweden). With SciLifeLab these form the partners of the Swedish node of the large European TEF Health initiative. Through this project, the mission will be to establish access to the physical testing facility to be offered to academia and SMEs also internationally."
+        },
+        {
+            "title": "Researcher - Mapping bacterial-viral interactions in the human microbiota",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-07-10",
+            "employer": "Uppsala University",
+            "job_url": "https://www.scilifelab.se/career/researcher-mapping-bacterial-viral-interactions-in-the-human-microbiota/",
+            "description": "The Human Molecular Ecology lab, at IMBIM, Uppsala University, and SciLifeLab, led by associate senior lecturer Luisa W. Hugerth, is seeking a thorough and engaged researcher fellow. The group studies the human microbiome, both as an outcome of our life history and as an exposure affecting health and disease. Most of our work is focused on obstetrics and gynecology, including the effects of the microbiome on circulating sex hormones. Our work is primarily bioinformatic, using both cohorts collected in collaboration with clinical partners and freely available data. The ability to remain updated, compare and select methods in the fast-moving field of metagenomics is therefore crucial.<br><br>We’re looking for a candidate with experience working with viruses in complex samples. A lot of metagenomic data and associated patient-level data is already available from previous large cohorts, but the non-bacterial components are typically neglected. The successful candidate will use state-of-the-art protocols for re-exploring previously published data with a focus on its viral components."
+        },
+        {
+            "title": "Postdoc Fellow - Mapping bacterial-viral interactions in the human microbiota",
+            "type": [
+                "Postdoc position"
+            ],
+            "app_deadline": "2023-07-10",
+            "employer": "Uppsala University",
+            "job_url": "https://www.scilifelab.se/career/153246/",
+            "description": "The Human Molecular Ecology lab, at IMBIM, Uppsala University, and SciLifeLab, led by associate senior lecturer Luisa W. Hugerth, is seeking a thorough and engaged postdoctoral fellow. The group studies the human microbiome, both as an outcome of our life history and as an exposure affecting health and disease. Most of our work is focused on obstetrics and gynecology, including the effects of the microbiome on circulating sex hormones. Our work is primarily bioinformatic, using both cohorts collected in collaboration with clinical partners and freely available data. The ability to remain updated, compare and select methods in the fast-moving field of metagenomics is therefore crucial.<br><br>We’re looking for a candidate with experience working with viruses in complex samples. A lot of metagenomic data and associated patient-level data is already available from previous large cohorts, but the non-bacterial components are typically neglected. The successful candidate will use state-of-the-art protocols for re-exploring previously published data with a focus on its viral components."
+        },
+        {
+            "title": "Researcher (MS specialist), Core Facilities",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-06-30",
+            "employer": "Gothenburg University",
+            "job_url": "https://www.scilifelab.se/career/researcher-ms-specialist-core-facilities-2/",
+            "description": "A key focus of the position will be in planning and designing proteomic and MS experiments together with platform users and to share your expertise with the team in the facility. You will be an MS specialist in multiple projects applied to different biological materials and research questions. The bioinformatic/statistic component of the proteomic pipeline is an important part of the work, to be able to assist the users in proper integration of the proteomics data into biology and medicine. The position also requires survey and implementation of new technological approaches such as “single cell proteomics”, protocols and software related to proteomics and MS."
+        },
+        {
+            "title": "System developer for precision medicine to Karolinska Institutet",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-06-16",
+            "employer": "Karolinska Institutet",
+            "job_url": "https://www.scilifelab.se/career/system-developer-for-precision-medicine-to-karolinska-institutet/",
+            "description": "We are looking for a motivated and knowledgeable Data engineer specialized towards precision medicine and diagnostics, with placement in Solna. As a data engineer, you are expected to participate in technical development of data services, where you will apply excellence in e.g., software engineering, compute- and storage infrastructure, interfaces, cloud technology, visualization or databases in tools and services designed to strengthen the research field.<br><br>In our team, you will develop services to enable research projects for precision medicine and diagnostics, often in collaboration with health care partners both nationally and internationally through the Swedish node of the TEF-Health project. This requires technical solutions with a high level of security, data integrity and interoperability, which need to be developed in coordination with engineers and developers at other organizations. The datasets are often large and complex, which leads to high demands on both software and infrastructure. Solutions for meta data management and -standardization are of special importance, and integration with data from for example biobanks, clinical registries, clinical trials, large scale molecular data and other health data."
+        },
+        {
+            "title": "Research Advisor, Core Facilities",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-06-16",
+            "employer": "Gothenburg University",
+            "job_url": "https://www.scilifelab.se/career/research-advisor-core-facilities/",
+            "description": "OligoNova Hub is a national research infrastructure that provides academic researchers in Sweden with support and capabilities to transform ideas and discoveries into new oligonucleotide therapies.<br><br>The Hub is located within the vibrant biotech cluster at the AstraZeneca BioVentureHub in Mölndal. OligoNova Hub is organized within the Core Facilities at the University of Gothenburg (www.cf.gu.se), and is also part of the Science for Life Laboratory Drug Discovery and Development platform (https://www.scilifelab.se/units/ddd-platform/ ), a national resource comprising 50+ scientists with complementary expertise in drug discovery.<br><br>OligoNova Hub is now planning to strengthen the organization with an ambitious research advisor (project coordinator), preferably with industrial experience in drug development."
+        },
+        {
+            "title": "PhD student Kamali-Moghaddam’s laboratory",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-06-16",
+            "employer": "Uppsala University",
+            "job_url": "https://www.scilifelab.se/career/phd-student-kamali-moghaddams-laboratory/",
+            "description": "A PhD student position is available for highly motivated individuals with interest in molecular tools at the laboratory of Kamali-Moghaddam at Uppsala University, Department of Immunology, Genetics and Pathology. Research in the lab focuses on development of molecular tools and application of those in medicine and biology. The focus will be put on development of tools for detection and characterization of exosomes, and tools for multiplex protein analysis."
+        },
+        {
+            "title": "Doctoral student in Medical Science – Cancer genomics and bioinformatics",
+            "type": [
+                "PhD position"
+            ],
+            "app_deadline": "2023-06-15",
+            "employer": "Gothenburg University",
+            "job_url": "https://www.scilifelab.se/career/doctoral-student-in-medical-science-cancer-genomics-and-bioinformatics/",
+            "description": "Clonal hematopoiesis (CH) is an early stage of blood cancer development, where a large fraction of blood cells originates from a single hematopoietic stem cell lineage. CH can be detected in DNA sequencing data from blood cells of healthy individuals based on somatic genetic variants. CH carries an increased risk of leukemia and age-related diseases. Recently, we distinguished two groups of clonal hematopoiesis and stratified risk of developing distinct types of blood cancers (Niroula et al., Nature Medicine 2021). In this PhD project, we aim to identify new genetic variants underlying CH and identify regulators of CH development. The findings will be used for predicting the risk of developing blood cancer. This data-driven project will involve large-scale analysis of next-generation sequencing (NGS) data. As a PhD student, you will develop computational workflows to analyze NGS data. You will work in an interdisciplinary data-driven life science (DDLS) research team. You will be affiliated to the national DDLS program."
         },
         {
             "title": "Postdoctoral position for a Microbiologist",
@@ -31,14 +131,14 @@
             "description": "The Cava lab at the Laboratory for Molecular Infection Medicine Sweden (MIMS) and the Department of Molecular Biology (Umeå University) studies a major “Achilles heels” of bacteria - the cell wall - both to provide answers to fundamental scientific questions and to improve our options to combat long-standing and emerging infectious diseases. The goal of this project is to improve the inventory of players in cell wall biogenesis and regulation, characterize their function and interplay, and evolve our work into quantitative studies and computational modelling. This research program has potential in the development of novel antimicrobial strategies to combat multidrug-resistant bacterial pathogens."
         },
         {
-            "title": "Masters projects",
+            "title": "Bioinformatican",
             "type": [
-                "Project opportunity"
+                "Job"
             ],
-            "app_deadline": "2023-06-15",
-            "employer": "Linköping University",
-            "job_url": "https://macromolecular.github.io/join",
-            "description": "*No official deadline, check listing webpage for updates.<br><br>*We welcome contact from Master’s students that are interested in doing projects within the group. We do not advertise specific Master’s projects, but we will always have several available, linked to our various research themes. If you have specific research interests, let us know and we will try to tailor the project to you."
+            "app_deadline": "2023-06-13",
+            "employer": "Stockholm University",
+            "job_url": "https://www.scilifelab.se/career/153233/",
+            "description": "We are looking for a bioinformatician to join our production team. The candidate will work with quality control of data, running analysis pipelines and delivery of sequence data. Additionally, there will be tasks involving the development and maintenance of informatics solutions that handle the production’s internal data flow. The time spent on different tasks will depend heavily on the applicant’s experience. We attach great importance to the applicant’s personal qualities, such as good collaborative ability, ability to work independently, good organizational ability and accuracy. A positive attitude towards colleagues is a prerequisite."
         },
         {
             "title": "Data Steward with focus on human data management",
@@ -49,6 +149,16 @@
             "employer": "Uppsala University",
             "job_url": "https://www.jobb.uu.se/details/?positionId=626652",
             "description": "NBIS is looking for a motivated and knowledgeable Data steward, to join our Data management team. We are looking for a person who wants to enable Life Science research in Sweden that is beyond what is achievable for individual researchers, a single university, or a single research area. As a Data Steward you will work closely with, and guide research groups regarding Data Management Plans, and support researchers with metadata management and data curation for data publishing. A large focus will be to establish and perform procedures for user support to researchers wanting to deposit human genetic data. An important part of the work is also to educate researchers in data management best practices. You are also expected to contribute to Data Management capability development in international projects on management of genomic data and medical informatics where NBIS is active, as well as to Research Data Management competence networking within Sweden."
+        },
+        {
+            "title": "Research engineer in the department of Mass spectrometry",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-06-12",
+            "employer": "Lund University",
+            "job_url": "https://www.scilifelab.se/career/research-engineer-in-the-department-of-mass-spectrometry/",
+            "description": "We are looking for a research engineer that will be a part of our team. The main work will be sample preparation for structural proteomics, i.e. wet lab work and mass spectrometry, followed by data analysis and visualization of data for users of the infrastructure.<br><br>We envision that you will start with the easiest assignments and then as you learn and become more experienced, progress to increasingly difficult/qualified work."
         },
         {
             "title": "Postdoctoral fellow in Bioinformatics and Antibiotic resistance",
