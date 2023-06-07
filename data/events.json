@@ -1,6 +1,19 @@
 {
     "items": [
         {
+            "title": "Nordic Proteomics Meeting NPS 2023",
+            "type": "Conference",
+            "date_start": "2023-11-15",
+            "date_end": "2023-11-17",
+            "venue": "Scandic Star, Lund",
+            "location": [
+                "Lund"
+            ],
+            "organisers": "The Swedish Proteomics Society",
+            "event_url": "https://mkon.nu/nps",
+            "description": "The meeting will provide an overarching view of state-of-the-art proteomics in the Nordic countries focusing on proteomics in health, disease and biology, and includes sessions on structural proteomics, proteogenomics, clinical proteomics, precision medicine, spatial proteomics, computational proteomics and bioinformatics as well as cellular and molecular biology. Our aim is to encourage participants from academia, industry, national research societies and instrument vendors with expertise in biology, healthcare and protein science including proteomics to interact and create new collaborations between multiple disciplines and participating countries."
+        },
+        {
             "title": "DDLS Annual Conference 2023",
             "type": "Conference",
             "date_start": "2023-11-15",
