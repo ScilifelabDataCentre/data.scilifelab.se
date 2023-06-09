@@ -1,6 +1,19 @@
 {
     "items": [
         {
+            "title": "Nordic Proteomics Meeting NPS 2023",
+            "type": "Conference",
+            "date_start": "2023-11-15",
+            "date_end": "2023-11-17",
+            "venue": "Scandic Star, Lund",
+            "location": [
+                "Lund"
+            ],
+            "organisers": "The Swedish Proteomics Society",
+            "event_url": "https://mkon.nu/nps",
+            "description": "The meeting will provide an overarching view of state-of-the-art proteomics in the Nordic countries focusing on proteomics in health, disease and biology, and includes sessions on structural proteomics, proteogenomics, clinical proteomics, precision medicine, spatial proteomics, computational proteomics and bioinformatics as well as cellular and molecular biology. Our aim is to encourage participants from academia, industry, national research societies and instrument vendors with expertise in biology, healthcare and protein science including proteomics to interact and create new collaborations between multiple disciplines and participating countries."
+        },
+        {
             "title": "DDLS Annual Conference 2023",
             "type": "Conference",
             "date_start": "2023-11-15",
@@ -128,6 +141,76 @@
             "registration_url": "https://mkon.nu/ebsa/registration_form"
         },
         {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-07-18",
+            "time_start": "14:00",
+            "time_end": "15:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-07-11",
+            "time_start": "14:00",
+            "time_end": "15:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-07-04",
+            "time_start": "14:00",
+            "time_end": "15:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-06-27",
+            "time_start": "14:00",
+            "time_end": "15:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-06-20",
+            "time_start": "14:00",
+            "time_end": "15:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
+        },
+        {
             "title": "Precision Medicine: The Bridge from Research to Healthcare",
             "type": "Workshop",
             "date_start": "2023-06-19",
@@ -140,6 +223,20 @@
             "event_url": "https://nshg-pm2023.org/",
             "registration_url": "https://nshg-pm2023.org/registration-and-fees/",
             "description": "The Nordic Society of Human Genetics and Precision Medicine and the Institute of Genomics at the University of Tartu are joining forces for a very special workshop that will bring together the brightest minds from research, clinical practice, and innovation sectors to brainstorm the future of precision medicine. The workshop will feature the latest research findings, as well as targeted workshops for researchers and clinicians, with joint sessions to allow for cross-pollination.<br><br>Among the topics to be discussed are implementation of polygenic risk scores and pharmacogenomics in the clinic, machine learning, Mendelian randomization, as well as sessions on comorbidities and environmental interactions."
+        },
+        {
+            "title": "NBIS Weekly Bioinformatics Drop-in",
+            "type": "Support session",
+            "date_start": "2023-06-13",
+            "time_start": "14:00",
+            "time_end": "15:00",
+            "venue": "Online event via Zoom",
+            "location": [
+                "Online"
+            ],
+            "organisers": "NBIS",
+            "event_url": "https://nbis.se/events/",
+            "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
         },
         {
             "title": "RaukR, Advanced R for Bioinformatics workshop",
