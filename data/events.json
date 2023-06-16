@@ -183,6 +183,20 @@
             "description": "Bioinformatics Drop-in is available weekly to anyone in the Swedish research community wanting to discuss bioinformatics questions with experts from NBIS."
         },
         {
+            "title": "ISIDORe Joint Webinar",
+            "type": "Webinar",
+            "date_start": "2023-06-27",
+            "time_start": "14:00",
+            "time_end": "15:00",
+            "venue": "Online event",
+            "location": [
+                "Online"
+            ],
+            "organisers": "Infravec",
+            "event_url": "https://docs.google.com/forms/d/e/1FAIpQLSfSblsP9lZIpsxM23Eg5qYhrVmjV8fOQzpRdKW-kny8TIt9NA/viewform",
+            "description": "Learn about the ISIDORe Epidemic Preparedness and Response Programme. A joint webinar between Infravec (Research infrastructures for control of vector-borne diseases), ERINHA (European Research Infrastructure on Highly Pathogenic Agents), and VetBioNet (Veterinary Biocontained Research Facility Network)."
+        },
+        {
             "title": "NBIS Weekly Bioinformatics Drop-in",
             "type": "Support session",
             "date_start": "2023-06-27",

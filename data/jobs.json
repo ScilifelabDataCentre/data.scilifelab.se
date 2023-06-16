@@ -71,6 +71,16 @@
             "description": "A key focus of the position will be in planning and designing proteomic and MS experiments together with platform users and to share your expertise with the team in the facility. You will be an MS specialist in multiple projects applied to different biological materials and research questions. The bioinformatic/statistic component of the proteomic pipeline is an important part of the work, to be able to assist the users in proper integration of the proteomics data into biology and medicine. The position also requires survey and implementation of new technological approaches such as “single cell proteomics”, protocols and software related to proteomics and MS."
         },
         {
+            "title": "Research Engineer for AI-driven Web and Cloud Software Development",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-06-19",
+            "employer": "KTH",
+            "job_url": "https://kth.varbi.com/what:job/jobID:622405/",
+            "description": "The AICell Lab in the department of Applied Physics at KTH and Science for Life Laboratory is a new research group funded by the Data-driven Life Science Fellows program. The group, led by Wei Ouyang, focuses on building AI systems for data-driven cell and molecular biology. To expand the team, we are now opening a position for a research engineer who will work on software development for AI-powered data management and lab automation. The research engineer will be responsible for building web-based user interfaces, computational backends, and managing container-based computing clusters. You will have the opportunity to work on exciting projects such as the AI-powered automated imaging farm, which involves robotic and imaging hardware control, experiment planning, and real-time AI-powered data analysis. You will collaborate with teams from Stanford University and develop AI platforms based on our existing open source projects such as ImJoy, ImageJ.JS and BioEngine. Additionally, they will work with international consortia such as the EU-supported research infrastructure project AI4Life for building the Bioimage Model Zoo and creating cloud-based AI computing infrastructure for deploying AI to research institutions and used by the masses."
+        },
+        {
             "title": "System developer for precision medicine to Karolinska Institutet",
             "type": [
                 "Job"
