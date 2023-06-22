@@ -1,6 +1,14 @@
 {
     "ddls": [
         {
+            "title": "SciLifeLab Science Summit – Proposal for topic 2024",
+            "funder": "SciLifeLab",
+            "deadline": "2023-11-20",
+            "url": "https://www.scilifelab.se/scilifelab-science-summit-proposal-for-topic-2024/",
+            "description": "The SciLifeLab Science Summit is a one-day symposium, each year with a new topic. The Science Summit aims to create awareness about SciLifeLab research and researchers, promote collaborations within life science in Sweden, and be a day for the SciLifeLab community to meet and interact.",
+            "applicant": "SciLifeLab Group Leaders, Platform Directors and Head of Units."
+        },
+        {
             "title": "Proof of Concept Grant in Life Science",
             "funder": "Knut and Alice Wallenberg Foundation and SciLifeLab",
             "deadline": "2023-08-17",

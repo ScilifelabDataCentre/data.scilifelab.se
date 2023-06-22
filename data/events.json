@@ -42,6 +42,20 @@
             "description": "We’re pleased to invite you to the 21st Swedish Bioinformatics Workshop (SBW) that will take place in Stockholm on November 6th – 7th. SBW is an annual event that is hosted by different universities across Sweden. This year, the event will take place at Karolinska Sjukhuset Solna at the Sune Bergström’s Aula.<br><br>As is tradition, SBW will be a chance for PhD students and postdocs as well as all researchers working with bioinformatics or computational biology to present their work, discuss the latest developments in the field, and improve their bioinformatic skills through different workshops. In addition, the program includes lectures from invited speakers, participant presentations, and poster sessions. This year we are also pleased to welcome participants from all the Nordic countries to join us in Stockholm!<br><br>Registration is free of charge for PhD students and post docs. More information regarding the event will be updated on the website: sbw2023.eu. There you can also register your email address for updates. If you have any questions, feel free to reach out to sbw2023@gmail.com."
         },
         {
+            "title": "DDLS Epidemiology and Biology of infection symposium",
+            "type": "Symposium",
+            "date_start": "2023-10-25",
+            "time_start": "09:00",
+            "time_end": "17:00",
+            "venue": "Axel Wenner-Gren salen",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "DDLS research area expert group",
+            "event_url": "https://www.scilifelab.se/event/epidemiology-and-biology-of-infection-research-area-symposium/",
+            "description": "Save-the-date! Back to back with the National Infection Biology (NIB) Meeting, on October 25, the DDLS research area will arrange a symposium on October 25, Wenner-Gren center, Stockholm."
+        },
+        {
             "title": "Cryo-EM sample preparation and data collection",
             "type": "Course",
             "date_start": "2023-10-17",
@@ -85,6 +99,21 @@
             "description": "SciLifeLab has launched four new sites across Sweden in 2022. The sites, located in Gothenburg, Linköping, Lund, and Umeå, will be crucial in promoting scientific research and research infrastructure nationally, while also strengthening the collaboration between all Swedish universities.<br><br>The expansion of SciLifeLab’s network will provide researchers across Sweden with state-of-the-art research infrastructure and technology, enabling them to perform cutting-edge research in areas such as genomics, proteomics, and bioinformatics. This will not only help to advance scientific knowledge but also contribute to the development of innovative solutions to pressing societal challenges."
         },
         {
+            "title": "Computational Methods in Evolution and Biodiversity",
+            "type": "Conference",
+            "date_start": "2023-09-21",
+            "time_start": "09:00",
+            "time_end": "17:00",
+            "venue": "Vivi Täckholmsalen (Q-salen), NPQ-huset, Stockholm University",
+            "location": [
+                "Stockholm"
+            ],
+            "organisers": "DDLS research area expert group",
+            "event_url": "https://www.scilifelab.se/event/computational-methods-in-evolution-and-biodiversity/",
+            "description": "This symposium and workshop will showcase the latest computational methods for analysing big data in evolution and biodiversity and provide an opportunity for participants to gain hands-on experience in these methods. Two keynote speakers will discuss a) new advances in using image recognition to analyse biodiversity and b) population genomics approaches to understand the effects of climate adaptation on genetic diversity. In addition, there will be three parallel computer workshops focused on the application of computational and machine learning methods to genome variation and biodiversity data. Participants should bring their own computers to join these workshops. This symposium is organised by the DDLS Evolution and Biodiversity expert group in conjunction with the SciLifeLab summit on Genomics of Biodiversity and Evolution.",
+            "registration_url": "https://www.lyyti.in/_3772"
+        },
+        {
             "title": "SciLifeLab Science Summit 2023",
             "type": "Conference",
             "date_start": "2023-09-20",
@@ -97,6 +126,17 @@
             "organisers": "SciLifeLab",
             "event_url": "https://www.scilifelab.se/event/scilifelab-science-summit-2023/",
             "description": "In this SciLifeLab Summit, which is centred on biodiversity and evolution for 2023, we have gathered several leading researchers who use genomics to learn about the diversity of life!"
+        },
+        {
+            "title": "Meet a Data Steward & get Data Management support",
+            "type": "Support session",
+            "date_start": "2023-09-19",
+            "time_start": "15:00",
+            "time_end": "16:00",
+            "venue": "Uppsala Navet E10:2309 & Online via Zoom",
+            "organisers": "SciLifeLab Data Centre and NBIS",
+            "event_url": "https://www.scilifelab.se/event/meet-a-data-steward/",
+            "description": "Join SciLifeLab Data Centre and NBIS for a new series of “Meet a Data Steward” starting Sept 19. The meeting will start with a 15 min mini-lecture: “Tools for Reproducible Research ” with Erik Fasterius, who is a Bioinformatician at National Bioinformatics Infrastructure Sweden (NBIS). After the mini-lecture there is time for a general Q & A for 45 minutes."
         },
         {
             "title": "SciLifeLab Day Umeå",
@@ -113,7 +153,7 @@
             "description": "SciLifeLab has launched four new sites across Sweden in 2022. The sites, located in Gothenburg, Linköping, Lund, and Umeå, will be crucial in promoting scientific research and research infrastructure nationally, while also strengthening the collaboration between all Swedish universities.<br><br>The expansion of SciLifeLab’s network will provide researchers across Sweden with state-of-the-art research infrastructure and technology, enabling them to perform cutting-edge research in areas such as genomics, proteomics, and bioinformatics. This will not only help to advance scientific knowledge but also contribute to the development of innovative solutions to pressing societal challenges."
         },
         {
-            "title": "DDLS Precision Medicine and Diagnostics Symposium 2023",
+            "title": "Emerging data-driven approaches to cancer",
             "type": "Symposium",
             "date_start": "2023-09-06",
             "time_start": "08:00",
@@ -124,7 +164,8 @@
             ],
             "organisers": "DDLS Research Area expert group",
             "event_url": "https://www.scilifelab.se/event/ddls-pmd-minisymposium-2023/",
-            "description": "The DDLS Precision Medicine and Diagnostics expert group is organizing a Precision Medicine and Diagnostics research area Symposium in Uppsala on September 6, 2023. More information will follow."
+            "description": "This meeting brings together the community in precision medicine and diagnostics and researchers who implemented artificial intelligence and machine learning applications in their research in PMD to improve human health and diagnostics, introduces newly appointed DDLS fellows in the PMD research area, and provides opportunities for networking across the research community and the SciLifeLab infrastructures. Thematically, this meeting will focus on emerging approaches to cancer research, ranging from both cutting-edge basic science to promising translational developments of AI.",
+            "registration_url": "https://www.lyyti.in/_4917"
         },
         {
             "title": "EBSA Congress 2023",
