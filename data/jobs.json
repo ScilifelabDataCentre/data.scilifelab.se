@@ -11,6 +11,26 @@
             "description": "A fundamental question in microbiome research involves determining which organisms are part of a given microbial community. Despite major breakthroughs in shotgun metagenomic sequencing (SMS) and bioinformatic analysis methods, determining “who is there” in a microbial community remains extremely challenging: de novo assembly of sequencing reads generated via SMS typically results in a collection of contigs that cannot be grouped into strain-level genomes. Here, the postdoc will develop a high-throughput method, which can reconstruct whole microbial genomes from microbiome samples at the single-cell level. Following prototyping, the method will be used to characterize clinical oral microbiome samples collected from a cohort of Swedish patients, with the goal of understanding why some humans develop chronic oral infections, while others do not."
         },
         {
+            "title": "Project leader, Services and Support",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-08-25",
+            "employer": "Uppsala University",
+            "job_url": "https://www.jobb.uu.se/details/?positionId=640220",
+            "description": "SciLifeLab Data Centre is looking for a motivated and knowledgeable Project Leader to work with activities focusing on maintenance and support of our data services. In your work as a project leader, you will work directly with services that support research data management, but also, for example, coordinating and planning processes for user support for data services in production, or with planning processes for the transition from development projects to maintenance. The work may also include leading and managing projects and activities in teams with engineers and developers in the development of data services for the area. You will work within the operational area in Data Centre for Services and Support. You are expected to share the group's vision of developing unique and high quality research data services and support for Swedish life science, driven by scientific needs, with a strength in IT and service management, and with open science and FAIR at the centre."
+        },
+        {
+            "title": "AI-coordinator",
+            "type": [
+                "Job"
+            ],
+            "app_deadline": "2023-08-25",
+            "employer": "Uppsala University",
+            "job_url": "https://www.scilifelab.se/career/ai-coordinator/",
+            "description": "As an AI coordinator at the SciLifeLab Data Centre, you will coordinate AI-related projects and initiatives. You will work closely with researchers, technical teams, and administrative staff to plan and implement AI strategies and initiatives. You stay up-to-date with the latest trends and technologies in AI/ML and assist in strategic discussions with both theory and prototyping. Your tasks will include, but are not limited to: monitoring and coordinating AI development projects; evaluation of technologies, frameworks and methods; developing and implementing AI strategies in line with overarching goals; creating project plans and timelines; communicating with stakeholders at all levels, including explaining AI concepts and techniques to non-technical stakeholders. AI is becoming an increasingly important part of scientific research and is a priority area within the new national data platform for SciLifeLab and the DDLS program. An important component of the work is to interact with researchers to understand and articulate needs and to stay updated on trends and frameworks in AI/machine learning. You will work in a team with researchers, engineers, data stewards and system developers, in the middle of SciLifeLab’s national research infrastructure. The work includes collaborations between SciLifeLab and national centers for e-infrastructure, such as Berzelius at the National Supercomputer Center in Linköping."
+        },
+        {
             "title": "Masters projects",
             "type": [
                 "Project opportunity"
