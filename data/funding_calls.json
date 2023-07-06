@@ -17,12 +17,34 @@
             "applicant": "Eligible to apply are those who have or have had grants from the Wallenberg foundations (e.g. Wallenberg Academy Fellow, Wallenberg Scholar, Wallenberg Clinical Scholar or KAW project funding,) or are part of Wallenberg Center for Molecular Medicine, the Data Driven Life Science program or SciLifeLab (including Fellows, group leaders, and infrastructure platform personnel)."
         },
         {
+            "title": "CBCS Large Projects Call Fall 2023",
+            "funder": "The Chemical Biology Consortium Sweden (CBCS) SciLifeLab Infrastructure unit",
+            "deadline": "2023-09-18",
+            "url": "https://anubis.scilifelab.se/call/CBCSLP23F",
+            "description": "The deadline for the next call for large projects with CBCS is on September 18, 2023. Contact any CBCS coworker well in advance if you are interested in applying or want to discuss project possibilities. We are happy to support and assist you in the pre-project and application phases!"
+        },
+        {
+            "title": "Instrument call 2023 for infrastructure units",
+            "funder": "SciLifeLab",
+            "deadline": "2023-09-18",
+            "url": "https://anubis.scilifelab.se/call/IC2023",
+            "description": "This call is open only for the infrastructure units of SciLifeLab.",
+            "applicant": "This call is open only for the infrastructure units of SciLifeLab."
+        },
+        {
             "title": "Event call 2024 open",
             "funder": "SciLifeLab",
             "deadline": "2023-09-29",
-            "url": "https://www.scilifelab.se/call-for-scilifelab-event-support-2024/",
+            "url": "https://anubis.scilifelab.se/call/DDD_Project_Call_summer_2023",
             "description": "The overall mission for SciLifeLab is to enable life science research in Sweden beyond what is possible for an individual researcher, an individual university, or an individual research discipline.<br><br>Therefore, SciLifeLab aims to support events within the scope of our fields of research, open to participants from all over Sweden. We aim to encourage collaboration among and between SciLifeLab infrastructure and researchers, as well as with external organizations, and increase awareness of SciLifeLab to the broader research community in Sweden and abroad.",
             "applicant": "A SciLifeLab infrastructure platform/unit or a SciLifeLab group leader must be the organizer or a visible co-organiser."
+        },
+        {
+            "title": "Call for new drug discovery pilot projects at SciLifeLab DDD with special emphasis on biologics and antibiotics",
+            "funder": "Drug Discovery and Development Platform (DDD) at SciLifeLab",
+            "deadline": "2023-08-24",
+            "url": "https://anubis.scilifelab.se/call/DDD_Project_Call_summer_2023",
+            "description": "The DDD platform at SciLifeLab supports academic drug discovery project with expertise and technical capabilities. We have, for example, platforms to develop small molecule drugs, therapeutic antibodies, oligonucleotide therapeutics, proximity-inducing agents such as bispecific antibodies and PROTACs.<br><br>In this call, the Drug Discovery and Development Platform (DDD) at SciLifeLab is looking for new pilot project proposals for drug discovery. All therapeutic modalities outlined above are of interest. Of special interest are new project ideas for (multispecific) biologics, and in collaboration with ENABLE2 https://www.ilk.uu.se/enable2/, small molecule projects for discovery of new antibiotics.<br><br>Note that small projects for selections in phage display libraries for antibodies, selections in DNA encoded chemical libraries for small molecules or limited screening for antisense or siRNA molecules can be considered.<br><br>A description of new modalities in drug discovery research can be found here: https://pubs.acs.org/doi/10.1021/acsmedchemlett.9b00582<br><br>If you have questions about the call please contact DDD by email (dddprojectproposal@scilifelab.se). This call is open for scientists with a doctoral degree at a Swedish university or higher institution. English should be used when filling out this application. You are responsible for ensuring that the application is complete. Incomplete applications will not be processed."
         },
         {
             "title": "WASP and DDLS joint call for research visits 2023",
