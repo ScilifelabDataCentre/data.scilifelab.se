@@ -261,26 +261,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
       addOtherFundings
     );
 
-  });
-</script>
 
-<script>
-  document.getElementById('originUrl').value = location.href;
+    // Funding Source suggestion form relted function
+    // set origin url in the form
+    document.getElementById('originUrl').value = location.href;
 
-  var form = document.querySelector('.needs-validation');
-  form.addEventListener('submit', function (event) {
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      alert("Please fill out all required fields.");
-      event.stopPropagation();
-      form.classList.add('was-validated')
-    }
-    var recaptcha = $("#g-recaptcha-response").val();
-    if (recaptcha === "") {
-      event.preventDefault();
-      alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
-    }
-  });
+    // Validate the form by checking mandatory fields and recaptcha
+    var form = document.querySelector('.needs-validation');
+    form.addEventListener('submit', function (event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        alert("Please fill out all required fields.");
+        event.stopPropagation();
+        form.classList.add('was-validated')
+      }
+      var recaptcha = $("#g-recaptcha-response").val();
+      if (recaptcha === "") {
+        event.preventDefault();
+        alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
+      }
+    });
+
+  }); // Document "DOMContentLoaded" trigger ends here
+
 </script>
 
 {{ end }}
