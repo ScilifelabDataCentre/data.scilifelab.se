@@ -1,5 +1,5 @@
 ---
-title: Home
+title: SciLifeLab Data Platform
 ---
 
 The *SciLifeLab Data Platform* is a technical environment offering data-centric tools and databases as well as an overarching website with the goal to support and accelerate data-driven life science research in Sweden. The services hosted on the Platform are available to all life science researchers in Sweden. The platform is maintained by the SciLifeLab Data Centre.
