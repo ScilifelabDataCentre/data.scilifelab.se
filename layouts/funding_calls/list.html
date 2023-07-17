@@ -77,6 +77,31 @@
   <!-- The fundings and calls content will be filled by JS function below -->
 </section>
 
+<!-- Code for other funding sources starts here -->
+{{/* Get list of other funding sources */}}
+{{ $other_funding_sources := $.Site.Data.funding_calls.other_sources }}
+{{ if ge (len $other_funding_sources) 1 }}
+<section>
+  <h4>Other potential sources of funding</h4>
+  <div class="mt-3 mb-4">
+    Below is a list of other sources of funding that may include calls relevant to data-driven life science.
+    <div class="row g-2 mt-3 mb-4">
+      {{ range $other_funding_sources }}
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 border rounded h-100">
+          <div class="row">
+            <div class="col-auto"><img src="{{ .logo }}" height="50" width="50"></div>
+            <div class="col ps-0"><h5><a target="_blank" href="{{ .url }}">{{ .funder }}</a></h5></div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- Code for other funding sources ends here -->
+
 <script>
 // Functions need to be run when the DOM is ready
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -88,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       req.open("GET", url, true);
       // The function call for fetching data and display
       req.onload = function () {
-        load_callback(JSON.parse(req.responseText).ddls);
+        load_callback(JSON.parse(req.responseText).items);
       };
       req.send(null);
     };
@@ -220,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Call the function to fetch, parse and display jobs
     getDataFromUrl(
       decodeURIComponent("https://blobserver.dc.scilifelab.se/blob/data_platform_funding_calls.json"),
-      addFundingsCalls,
+      addFundingsCalls
     );
 
 
@@ -247,31 +272,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }); // Document "DOMContentLoaded" trigger ends here
 
 </script>
-
-
-
-<!-- Code for other funding sources starts here -->
-{{/* Get list of other funding sources */}}
-{{ $other_funding_sources := $.Site.Data.funding_calls.other_sources }}
-{{ if ge (len $other_funding_sources) 1 }}
-<section>
-  <h4>Other potential sources of funding</h4>
-  <div class="mt-3 mb-4">
-    Below is a list of other sources of funding that may include calls relevant to data-driven life science.
-    <div class="row g-2 mt-3 mb-4">
-      {{ range $other_funding_sources }}
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 border rounded h-100">
-          <div class="row">
-            <div class="col-auto"><img src="{{ .logo }}" height="50" width="50"></div>
-            <div class="col ps-0"><h5><a target="_blank" href="{{ .url }}">{{ .funder }}</a></h5></div>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
 
 {{ end }}
