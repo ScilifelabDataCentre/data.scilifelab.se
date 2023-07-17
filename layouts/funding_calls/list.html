@@ -77,32 +77,18 @@
   <!-- The fundings and calls content will be filled by JS function below -->
 </section>
 
-<section>
-  <h4>Other potential sources of funding</h4>
-  <div class="mt-3 mb-4">
-    Below is a list of other sources of funding that may include calls relevant to data-driven life science.
-    <div class="row g-2 mt-3 mb-4" id="other-fundings-calls-section">
-      <!-- The other fundings and calls content will be filled by JS function below -->
-    </div>
-  </div>
-</section>
-
 <script>
 // Functions need to be run when the DOM is ready
 document.addEventListener("DOMContentLoaded", function (event) {
     
     // Takes a URL and calls the callback function pass the data fetched
-    function getDataFromUrl(url, load_callback, loadend_callback) {
+    function getDataFromUrl(url, load_callback) {
       var req = new XMLHttpRequest();
       req.overrideMimeType("application/json");
       req.open("GET", url, true);
       // The function call for fetching data and display
       req.onload = function () {
         load_callback(JSON.parse(req.responseText).ddls);
-      };
-      // The function call for adding filtering
-      req.onloadend = function () {
-        loadend_callback(JSON.parse(req.responseText).other_sources);
       };
       req.send(null);
     };
@@ -222,9 +208,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         blockHTML += `</div>`;
       } else {
         var blockHTML = `<div class="alert alert-secondary mt-4">
-                          We are currently unaware of any upcoming fundings or calls opportunities relevant for data-driven 
-                          life science. If you know of any relevant fundings or calls opportunities that should be shown 
-                          here, please suggest them to us using the "Tell us about an open funding source" button above.
+                            There are currently no open funding calls from SciLifeLab related to data-driven life science.
                         </div>`
       }
       
@@ -232,33 +216,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
       dynamicSection.innerHTML = blockHTML;
     };
 
-    // Code for other funding sources starts here
-    function addOtherFundings(dataOthers) {
-      
-      if(dataOthers.length !== 0) {
-        var blockHTML = '';
-        dataOthers.forEach((item, ind) => {
-          blockHTML += `
-          <div class="col-md-6 col-lg-4">
-            <div class="p-3 border rounded h-100">
-              <div class="row">
-                <div class="col-auto"><img src="${item.logo}" height="50" width="50"></div>
-                <div class="col ps-0"><h5><a target="_blank" href="${ item.url}">${item.funder}</a></h5></div>
-              </div>
-            </div>
-          </div>`;
-        });
-      }
-
-      var othersSection = document.getElementById('other-fundings-calls-section');
-      othersSection.innerHTML = blockHTML;
-    }
 
     // Call the function to fetch, parse and display jobs
     getDataFromUrl(
       decodeURIComponent("https://blobserver.dc.scilifelab.se/blob/data_platform_funding_calls.json"),
       addFundingsCalls,
-      addOtherFundings
     );
 
 
@@ -285,5 +247,31 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }); // Document "DOMContentLoaded" trigger ends here
 
 </script>
+
+
+
+<!-- Code for other funding sources starts here -->
+{{/* Get list of other funding sources */}}
+{{ $other_funding_sources := $.Site.Data.funding_calls.other_sources }}
+{{ if ge (len $other_funding_sources) 1 }}
+<section>
+  <h4>Other potential sources of funding</h4>
+  <div class="mt-3 mb-4">
+    Below is a list of other sources of funding that may include calls relevant to data-driven life science.
+    <div class="row g-2 mt-3 mb-4">
+      {{ range $other_funding_sources }}
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 border rounded h-100">
+          <div class="row">
+            <div class="col-auto"><img src="{{ .logo }}" height="50" width="50"></div>
+            <div class="col ps-0"><h5><a target="_blank" href="{{ .url }}">{{ .funder }}</a></h5></div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 
 {{ end }}
