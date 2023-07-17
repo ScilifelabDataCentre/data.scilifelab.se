@@ -128,7 +128,7 @@ h5 a:hover {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:active, {
+.navbar-light .navbar-nav .nav-link:active {
     text-decoration: none;
 }
 
@@ -164,12 +164,12 @@ h5 a:hover {
   border-radius: 5px;
 }
 
-.bg-service {
+.bg-service, .bg-resource {
   height: 100%;
   background-color: #A6CBCF;
 }
 
-.bg-service-title {
+.bg-service-title, .bg-resource-title {
   background-color: #D2E5E7;
 }
 
