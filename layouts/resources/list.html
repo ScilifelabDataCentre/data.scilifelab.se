@@ -3,12 +3,9 @@
 {{ .Content }}
 
 {{ $resources := .Site.Data.resources }}
-{{ $targets := slice "researchers" "facilities"}}
-{{ range $target := $targets }}
-{{ if eq $target "researchers" }}
 <div class="row">
   <div class="col">
-    <h3 id="for-researchers">Resources for researchers</h3>
+    <h3 id="for-researchers">Resources</h3>
   </div>
   <div class="col-3 text-end">
     <div class="input-group">
@@ -21,26 +18,8 @@
   <p>These resources are available free of charge to all life science researchers and communities in Sweden,
     regardless of SciLifeLab affiliation.</p>
 </div>
-{{ else if eq $target "facilities" }}
-<div class="row">
-  <div class="col">
-    <h3 id="for-facilities">Resources for data-producing facilities/units</h3>
-  </div>
-  <div class="col-3 text-end">
-    <div class="input-group">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-resource-area="facilities_resources">
-    </div>
-  </div>
-</div>
-<div class="mt-2">
-  <p>The resources below are available to facilities/units producing life science data in Sweden. In some
-    cases, the resources may only be available for SciLifeLab infrastructure units.</p>
-</div>
-{{ end }}
-<div id="{{ $target }}_resources" class="row g-3 mb-5">
+<div id="researchers_resources" class="row g-3 mb-5">
   {{ range $resources }}
-  {{ if in .target $target }}
   <div class="col-md-6 col-lg-4 resource" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
     <div class="bg-resource">
       <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
@@ -75,8 +54,6 @@
       {{ end }}
     </div>
   </div>
-  {{ end }}
-  {{ end }}
   <div id="no-filtered-resource" style="display:none;">
     <p class="text-center">No resources have the given keyword, please try to use another.</p>
   </div>

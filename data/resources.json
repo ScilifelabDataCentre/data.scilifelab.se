@@ -1,8 +1,7 @@
 [
   {
     "target": [
-      "researchers",
-      "facilities"
+      "researchers"
     ],
     "type": [
       "Compute resources"
