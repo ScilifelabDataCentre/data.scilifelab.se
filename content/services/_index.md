@@ -1,6 +1,6 @@
 ---
 title: Services
-description: Overview of the tools, datasets, and other resources available via this Platform.
+description: Overview of the tools and datasets available via this Platform.
 cascade:
   header_image: /img/illustrations/circos_cropped.png
 menu:
