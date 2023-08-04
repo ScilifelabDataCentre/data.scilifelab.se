@@ -26,6 +26,28 @@
   },
   {
     "target": [
+      "researchers", "facilities"
+    ],
+    "type": [
+      "Compute resources"
+    ],
+    "search_tags": [
+      "Compute resources",
+      "Hosting",
+      "E-infrastructure",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "Hosting on the SciLifeLab Data Platform",
+    "description": "Details about how researchers, research groups, and organisations can apply for hosting via the Platform.",
+    "url": "/services/hosting/",
+    "thumbnail": "/img/resource_thumbnails/hosting_DC.jpg",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "target": [
       "researchers"
     ],
     "type": [
@@ -134,30 +156,6 @@
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se",
     "support_website": "https://serve.scilifelab.se/user_guide"
-  },
-  {
-    "target": [
-      "researchers",
-      "facilities"
-    ],
-    "type": [
-      "Compute resources"
-    ],
-    "search_tags": [
-      "Compute resource",
-      "E-infrastructure",
-      "Compute hosting",
-      "SciLifeLab",
-      "Data Centre",
-      "Hosting"
-    ],
-    "name": "Compute resources in Sweden",
-    "description": "Information about the compute resources (e.g. for hosting, analysis) available in Sweden, as well as how to apply.",
-    "url": "/services/e-infrastructure/",
-    "thumbnail": "/img/service_thumbnails/e_infrastructure.png",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "datacentre@scilifelab.se"
   },
   {
     "target": [
