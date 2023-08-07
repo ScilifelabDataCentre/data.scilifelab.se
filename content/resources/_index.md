@@ -14,6 +14,7 @@ menu:
         weight: 20
 ---
 
-The SciLifeLab Data Platform includes a technical environment for hosting tools and databases that can be deployed or accessed via the web. The hosting resources are [managed by the SciLifeLab Data Centre](/about/). Individual researchers, research groups, and research organisations are enouraged to [learn more and apply for hosting](./hosting/).
+This page details the resources available for researchers. We define resources as information on computing, storage, and other relevant information that could be useful to those working in data-driven life science in Sweden. The resources section differs because it is for information, rather than a specific [service](https://data.scilifelab.se/services/) itself. Use the search function at the top of the section below to identify resources that may be relevant to you.
 
-Below, you will find information about resources related to hosting that are either hosted or linked via the SciLifeLab Data Platform.
+In the coming months, we will also add information about storage resources available in Sweden and how researchers can maximize their Altmetrics score. If you have any suggestions for other information that could be useful for data-driven life science in Sweden or if you require further support in the areas considered in this section, please [get in touch](/contact/).
+
