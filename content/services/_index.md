@@ -22,7 +22,7 @@ We have classified the services by 'Type' to make it easier to understand what t
 
 If you know of a relevant service that should be listed below, but is missing, please [get in touch](/contact/) and the team will assess your suggestion ASAP.
 
-We also have a [resources](/resources/) section that offers information that could be useful to those working in data-driven life acience (e.g. what compute resources are available in Sweden generally).
+We also have a [resources](/resources/) section that offers information that could be useful to those working in data-driven life science (e.g. what compute resources are available in Sweden generally).
 
 <ul>
   <li><a href="#for-researchers">Services for researchers <i class="bi bi-arrow-down-square-fill"></i></a></li>
