@@ -269,3 +269,13 @@ h5 a:hover {
 .support > * {
   color: white;
 }
+
+/* Used for links in the banner header section */
+.banner-title-link {
+  color: white;
+}
+
+.banner-title-link:hover {
+  text-decoration: underline;
+  color: white;
+}
