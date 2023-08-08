@@ -7,7 +7,7 @@ menu:
     navbar:
         identifier: jobs
         name: Jobs
-        weight: 30
+        weight: 40
     bottom_community:
         name: Jobs
         identifier: jobs
