@@ -1,9 +1,11 @@
 ---
 title: Accessing compute resources (e-infrastructure)
 toc: true
+aliases:
+  - /services/e-infrastructure/
 ---
 
-## Compute resources available for researchers in Sweden 
+## Compute resources available for researchers in Sweden
 
 Compute resources (otherwise known as e-infrastructure, or e-infra) are defined as resources that can be used for simulation, analysis, support, hosting, and storage. Different compute resources are intended for different purposes. For example, some resources are intended for performing simulation (users apply for 'compute time' to use the resource), whilst others are intended mostly for hosting.
 
@@ -17,11 +19,11 @@ Universities often have their own compute resources that they will make availabl
 
 [NAISS](https://www.naiss.se/) (successor to Swedish National Infrastructure for Computing, SNIC) provides resources primarily for simulation and analysis. The resources can be broadly divided into two types; (1) those intended for general high performance compute (HPC) applications, and (2) those designed to handle sensitive data.
 
-Different NAISS resources are likely to be of interest for different fields or types of application. For example, *NAISS SENS* and *Rackham*, which have rich program stacks oriented towards life sciences, are likely to be of particular interest for bioinformatics. The difference between these two systems is that NAIS SENS is designed to handle sentive data (e.g. human genetic data), whilst Rackham is not. By contrast, those with workloads similar to those associated with traditional HPC, particularly those able to benefit from AMD GPUs, should instead consider making use of *Dardel*.
+Different NAISS resources are likely to be of interest for different fields or types of application. For example, _NAISS SENS_ and _Rackham_, which have rich program stacks oriented towards life sciences, are likely to be of particular interest for bioinformatics. The difference between these two systems is that NAIS SENS is designed to handle sentive data (e.g. human genetic data), whilst Rackham is not. By contrast, those with workloads similar to those associated with traditional HPC, particularly those able to benefit from AMD GPUs, should instead consider making use of _Dardel_.
 
-NAISS also provides a cloud system (*the Swedish Science Cloud*), as well as a GPU cluster (*Alvis*), which is dedicated to projects based on artificial intelligence (AI) or machine learning (ML). Both the *Swedish Science Cloud* and *Alvis* are equipped with NVIDIA GPUs.
+NAISS also provides a cloud system (_the Swedish Science Cloud_), as well as a GPU cluster (_Alvis_), which is dedicated to projects based on artificial intelligence (AI) or machine learning (ML). Both the _Swedish Science Cloud_ and _Alvis_ are equipped with NVIDIA GPUs.
 
-Finally, NAISS also has *Tetralith*, which is a general computational resource with NVIDIA T4 GPUs in addition to a large CPU partition.
+Finally, NAISS also has _Tetralith_, which is a general computational resource with NVIDIA T4 GPUs in addition to a large CPU partition.
 
 Applications to use the NAISS resources listed here should be submitted through the SUPR Portal. Please see our section on [applying for resources via SUPR](#applying-for-resources-via-the-supr-portal) below for information on how to apply.
 
@@ -31,15 +33,15 @@ Applications to use the NAISS resources listed here should be submitted through 
 
 Applications to use Berzelius should be submitted through the SUPR Portal. Please see our section on [applying for resources via SUPR](#applying-for-resources-via-the-supr-portal) below for information on how to apply.
 
-### LUMI 
+### LUMI
 
-[LUMI](https://www.lumi-supercomputer.eu/) is a EuroHPC resource partially dedicated to Swedish researchers. LUMI is similar to *Dardel* (provided by [NAISS](#national-academic-infrastructure-for-supercomputing-in-sweden-naiss), see above), though LUMI is larger overall. If you need to share data with researchers in other countries cooperating in LUMI, it is a good choice.
+[LUMI](https://www.lumi-supercomputer.eu/) is a EuroHPC resource partially dedicated to Swedish researchers. LUMI is similar to _Dardel_ (provided by [NAISS](#national-academic-infrastructure-for-supercomputing-in-sweden-naiss), see above), though LUMI is larger overall. If you need to share data with researchers in other countries cooperating in LUMI, it is a good choice.
 
 Applications to use the portion of LUMI allocated to Sweden should be submitted via the SUPR Portal. Please see our section on [applying for resources via SUPR](#applying-for-resources-via-the-supr-portal) below for information on how to apply for the portion of resources intended for researchers based in Sweden.
 
 Whilst portions of LUMI are allocated for specific countries, [as with other EuroHPC resources](#eurohpc) (see below), there is also a portion allocated for use by researchers in Europe in general. We encourage researchers to apply to use this portion too, and applications can be made via the [European PRACE Portal](https://prace-ri.eu/hpc-access/eurohpc-access/)).
 
-### AIDA Data Hub 
+### AIDA Data Hub
 
 [AIDA](https://medtech4health.se/aida/) is a national collaboration arena in Swedish medical imaging diagnostics AI, engaging around 50 partners approximately equally from academia, industry, and healthcare. [AIDA Data Hub](https://datahub.aida.scilifelab.se/) provides AIDA with data infrastructure services, such as the [AIDA DGX-2 Service](https://datahub.aida.scilifelab.se/services/#dgx-2), which provides GPU compute resources for AI training secure enough for use with sensitive personal medical imaging data for research.
 
