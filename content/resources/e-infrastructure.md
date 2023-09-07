@@ -9,7 +9,9 @@ aliases:
 
 Compute resources (otherwise known as e-infrastructure, or e-infra) are defined as resources that can be used for simulation, analysis, support, hosting, and storage. Different compute resources are intended for different purposes. For example, some resources are intended for performing simulation (users apply for 'compute time' to use the resource), whilst others are intended mostly for hosting.
 
-This page is intended as a guide for researchers based in Sweden on the compute resources available to them, the services the resources provide, and how to apply for access to them. If you are aware of available resources that are not listed here, please [get in touch](/contact/).
+This page is intended as a guide for researchers based in Sweden on the compute resources related to hosting, simulation, and analysis that are available to them. It contains information about the services the resources provide, and how to apply for access to them. If you are aware of available resources that are not listed here, please [get in touch](/contact/).
+
+Whilst storage associated with the compute resources is mentioned on this page, we do not go into detail here. Please see our [storage resources page](/resources/storage/) for more information on the storage resources available in Sweden and how to apply for them.
 
 ### Resources at your University
 

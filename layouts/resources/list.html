@@ -3,21 +3,19 @@
 {{ .Content }}
 
 {{ $resources := .Site.Data.resources }}
-<div class="row">
+<div class="row mb-2">
   <div class="col">
     <h3 id="for-researchers">Resources</h3>
   </div>
   <div class="col-3 text-end">
     <div class="input-group">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-resource-area="researchers_resources">
+      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-resource-area="resources_container">
     </div>
   </div>
 </div>
-<div class="mt-2">
-  <p></p>
-</div>
-<div id="researchers_resources" class="row g-3 mb-5">
+
+<div id="resources_container" class="row g-3 mb-5">
   {{ range $resources }}
   <div class="col-md-6 col-lg-4 resource" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
     <div class="bg-resource">
@@ -36,28 +34,28 @@
         <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
       </div>
       <div class="px-2">
-        <b>Maintained by:</b>
-        {{ if .maintained_by_url}}
-        <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
+        <b>Created by:</b>
+        {{ if .created_by_url}}
+          <a href="{{ .created_by_url}}">{{ .created_by }}</a>
         {{ else }}
-        {{ .maintained_by }}
+          {{ .created_by }}
         {{ end }}
       </div>
       {{ if or (or .support_email .support_website) .support_github }}
-      <div class="px-2 mb-2">
-        <b>Support:</b>
-        {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-        {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-        {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
-      </div>
+        <div class="px-2 mb-2">
+          <b>Support:</b>
+          {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+          {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+          {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
+        </div>
       {{ end }}
     </div>
   </div>
+  {{ end }}
   <div id="no-filtered-resource" style="display:none;">
     <p class="text-center">No resources have the given keyword, please try to use another.</p>
   </div>
 </div>
-{{ end }}
 
 <script>
   
