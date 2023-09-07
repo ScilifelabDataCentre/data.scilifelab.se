@@ -38,8 +38,8 @@
       "SciLifeLab",
       "Data Centre"
     ],
-    "name": "Hosting on the SciLifeLab Data Platform",
-    "description": "Details about how researchers, research groups, and organisations can apply for hosting via the Platform.",
+    "name": "Hosting on the Data Platform",
+    "description": "Details about how researchers, research groups, and organisations can apply for hosting via the SciLifeLab Platform.",
     "url": "/services/hosting/",
     "thumbnail": "/img/resource_thumbnails/hosting_DC.jpg",
     "maintained_by": "SciLifeLab Data Centre",
@@ -54,16 +54,17 @@
       "portal"
     ],
     "search_tags": [
+      "Pathogens portal",
       "Pandemic preparedness portal",
       "COVID-19",
       "SciLifeLab",
       "Data Centre",
       "Tool"
     ],
-    "name": "The Swedish COVID-19 & Pandemic Preparedness Data Portal",
-    "description": "A web portal for resources related to pandemic preparedness research in Sweden",
+    "name": "Swedish Pathogens Portal",
+    "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
     "thumbnail": "/img/service_thumbnails/portal.jpg",
-    "url": "https://covid19dataportal.se/",
+    "url": "https://pathogens.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se",
