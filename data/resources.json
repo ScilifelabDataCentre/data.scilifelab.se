@@ -12,7 +12,7 @@
       "Hosting"
     ],
     "name": "Compute resources in Sweden",
-    "description": "Information about the compute resources (e.g. for hosting, analysis) available in Sweden, as well as how to apply.",
+    "description": "Information about the compute resources (primarily for hosting and analysis) available in Sweden, as well as how to apply.",
     "url": "/resources/e-infrastructure/",
     "thumbnail": "/img/service_thumbnails/e_infrastructure.png",
     "created_by": "SciLifeLab Data Centre",
@@ -29,7 +29,7 @@
       "Data Centre"
     ],
     "name": "Storage resources in Sweden",
-    "description": "Information about the Storage resources available in Sweden for researchers, as well as how to apply.",
+    "description": "Information about the storage resources available in Sweden for researchers, as well as how to apply.",
     "url": "/resources/storage/",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",

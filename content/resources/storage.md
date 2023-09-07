@@ -7,7 +7,7 @@ toc: true
 
 This page is intended to inform researchers in Sweden about the storage resources available to them and how to apply for access. If you are aware of resources not listed here, please [get in touch](/contact/).
 
-Information about [compute resources available to researchers based in Sweden](/services/e-infrastructure/) is available separately on this site.
+Information about [compute resources available to researchers based in Sweden](/services/e-infrastructure/) is available separately on this site. On that page, we focus more on resources related to analysis and hosting.
 
 ### Resources at your University
 
@@ -57,7 +57,7 @@ In order to make an application, users must first register as a new user by sele
   <figcaption class="figure-caption">A screenshot fron the SUPR login page.</figcaption>
 </figure>
 
-After registering, you have to apply for a project. To do this, select 'Rounds', then 'Storage Rounds', and then choose an option most applicable to you. 
+After registering, you have to apply for a project. To do this, select 'Rounds', then 'Storage Rounds', and then choose an option most applicable to you.
 
 Your application will then be evaluated. Smaller projects are evaluated on a technical basis, whilst larger projects also include a scientific evaluation.
 
