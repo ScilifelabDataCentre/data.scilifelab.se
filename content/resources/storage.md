@@ -9,6 +9,8 @@ This page is intended to inform researchers in Sweden about the storage resource
 
 Information about [compute resources available to researchers based in Sweden](/services/e-infrastructure/) is available separately on this site. On that page, we focus more on resources related to analysis and hosting.
 
+Individuals representing multiple compute and storage resources held an event on the 8th September 2023 in order to provide more information to the community. The recording of this event is available on [Youtube](https://www.youtube.com/watch?v=SJoT5FYBomY) and the [SciLifeLab Data Repository](https://doi.org/10.17044/scilifelab.24106152.v2).
+
 ### Resources at your University
 
 Most of the resources described on this page are national and do not require that individuals have a given affiliation in order to make use of the resources. However, this is not true for resources available at a given university. Universities often have storage resources that are available for use by their researchers. It is possible that the easiest way for you to gain access to storage resources is by applying to access those at your university. The IT department of your university should be able to provide information about the resources available and how to access them. Below are links to information about the storage resources at some universities (please note that these external links are maintained at the discretion of the information provider):
