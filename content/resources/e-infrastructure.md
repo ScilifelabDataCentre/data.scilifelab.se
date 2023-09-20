@@ -13,6 +13,8 @@ This page is intended as a guide for researchers based in Sweden on the compute 
 
 Whilst storage associated with the compute resources is mentioned on this page, we do not go into detail here. Please see our [storage resources page](/resources/storage/) for more information on the storage resources available in Sweden and how to apply for them.
 
+Individuals representing multiple compute and storage resources held an event on the 8th September 2023 in order to provide more information to the community. The recording of this event is available on [Youtube](https://www.youtube.com/watch?v=SJoT5FYBomY) and the [SciLifeLab Data Repository](https://doi.org/10.17044/scilifelab.24106152.v2).
+
 ### Resources at your University
 
 Universities often have their own compute resources that they will make available for use by their own researchers. This may be the easiest way for you to obtain access to compute resources. Please contact the university IT department to learn what they can offer and how to access the compute resources.

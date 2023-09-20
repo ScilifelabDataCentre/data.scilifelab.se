@@ -149,14 +149,6 @@
 </section>
 
 <!-- Training and events -->
-{{ $upcoming_events := slice }}
-{{ range sort $.Site.Data.events.items ".date_start" "asc" }}
-{{ $banner_date := cond (isset . "date_start") .date_start .registration_deadline }}
-{{ if ge ($banner_date | time.Format "20060102") (now | time.Format "20060102") }}
-{{ $upcoming_events = $upcoming_events | append . }}
-{{ end }}
-{{ end }}
-{{ if ge (len $upcoming_events) 1 }}
 <section>
   <div class="mb-4">
     <div class="row mt-4 pt-2 mb-2">
@@ -167,31 +159,9 @@
         <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
-      {{ range first 4 $upcoming_events }}
-      <div class="col">
-        <div class="p-2 border rounded h-100">
-          <div class="d-flex justify-content-between">
-            <div>
-              <span class="badge event-type mb-1">{{ .type }}</span>
-              <h6>{{ .title }}</h6>
-            </div>
-            {{ $banner_date := cond (isset . "date_start") .date_start .registration_deadline }}
-            <div class="px-2 pb-1 m-2 d-flex flex-column event-date rounded">
-              <div class="px-1 fs-4 mx-auto">{{ time.Format "2" $banner_date }}</div>
-              <div class="px-1 small mx-auto">{{ time.Format "January" $banner_date }}</div>
-              {{ if and (not .date_start) (.registration_deadline) }}
-              <div class="px-2 small mx-auto">(deadline)</div>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
+    <div id="recent-events" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
   </div>
 </section>
-{{ end }}
 
 <!-- Recently published items in figshare-->
 <section style="background-image: url('/img/illustrations/bg_figshare.png');">
@@ -254,6 +224,51 @@
       };
       req.send(null);
     }
+    
+    // Creates html entry for latest events
+    function addEvents(data){
+      var dataArray = data.items, eventList = [], eventsHTML = "";;
+      dataArray.forEach((event) => {
+        event.banner_date = event.date_start || event.registration_deadline;
+        if (typeof event.banner_date !== 'undefined'){
+          var dateString = event.banner_date + (event.time_start ? ' ' + event.time_start : '');
+          var [h, m] = event.time_start ? event.time_start.split(":") : [0, 0];
+          if (new Date(dateString) >= new Date().setHours(h, m)){
+            eventList.push(event);
+          };
+        };
+      });
+      eventList = eventList.sort((a,b) => (a.banner_date > b.banner_date) ? 1 : (a.banner_date < b.banner_date) ? -1 : 0);
+      var eventsToShow = eventList.slice(0, 4);
+      if (eventsToShow.length == 0){
+        eventsHTML += `<div class="w-100 p-3 mx-2 border rounded text-center">No upcoming events to show</div>`;
+      } else {
+        eventsToShow.forEach((event) => {
+          var event_date = new Date(event.banner_date);
+          eventsHTML += `<div class="col">
+                            <div class="p-2 border rounded h-100">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <span class="badge event-type mb-1">${event.type}</span>
+                                  <h6>${event.title}</h6>
+                                </div>
+                                <div class="px-2 pb-1 m-2 d-flex flex-column event-date rounded">
+                                  <div class="px-1 fs-4 mx-auto">${event_date.getDate()}</div>
+                                  <div class="px-1 small mx-auto">${event_date.toLocaleString('default', {'month': 'long'})}</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>`;
+        });
+      };
+      var eventRow = document.getElementById('recent-events');
+      eventRow.innerHTML = eventsHTML;
+    }
+    
+    getDataFromUrl(
+      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_events.json"),
+      addEvents
+    );
 
     // Creates html entry for each item fetch from Scilifelab Data Repository
     function addDataItems(dataArray) {
