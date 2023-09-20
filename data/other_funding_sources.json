@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "funder": "VR - Swedish Research Council",
+            "logo": "/img/funders_logo/vr.png",
+            "url": "https://www.vr.se/english/applying-for-funding/calls-and-decisions.html"
+        },
+        {
+            "funder": "Knut and Alice Wallenberg Foundation",
+            "logo": "/img/funders_logo/kaw.png",
+            "url": "https://kaw.wallenberg.org/en/funding-guide/calls"
+        },
+        {
+            "funder": "ISIDORe - Integrated Services for Infectious Disease Outbreak Research",
+            "logo": "/img/funders_logo/isidore.png",
+            "url": "https://isidore-project.eu/calls/"
+        },
+        {
+            "funder": "Formas - Swedish Research Council for Sustainable Development",
+            "logo": "/img/funders_logo/formas.png",
+            "url": "https://formas.se/en/start-page/archive/list-calls.html"
+        },
+        {
+            "funder": "Forte - Swedish research council for health, work life, and welfare",
+            "logo": "/img/funders_logo/forte.png",
+            "url": "https://forte.se/en/proposal/"
+        },
+        {
+            "funder": "SIDA - The Swedish International Development Cooperation Agency",
+            "logo": "/img/funders_logo/sida.png",
+            "url": "https://www.sida.se/en/for-partners/research-partners/research-calls-and-grants"
+        },
+        {
+            "funder": "SSMF Swedish Society for Medical Sciences",
+            "logo": "/img/funders_logo/ssmf.png",
+            "url": "https://www.ssmf.se/for-scientists/"
+        },
+        {
+            "funder": "NordForsk - Nordic Council’s research funding organization",
+            "logo": "/img/funders_logo/nord.png",
+            "url": "https://www.nordforsk.org/calls"
+        },
+        {
+            "funder": "Vinnova - Sweden’s innovation agency",
+            "logo": "/img/funders_logo/vinnova.png",
+            "url": "https://www.vinnova.se/en/apply-for-funding/find-the-right-funding/"
+        },
+        {
+            "funder": "Swedish Foundation for Strategic Research",
+            "logo": "/img/funders_logo/ssf.png",
+            "url": "https://strategiska.se/en/call-for-proposals/"
+        },
+        {
+            "funder": "Svenska Läkarsällskapet",
+            "logo": "/img/funders_logo/sls.png",
+            "url": "https://www.sls.se/vetenskap/sok-anslag/"
+        },
+        {
+            "funder": "Hjärt-Lungfonden",
+            "logo": "/img/funders_logo/hjart.png",
+            "url": "https://www3.hjart-lungfonden.se/"
+        },
+        {
+            "funder": "Horizon Europe funding",
+            "logo": "/img/funders_logo/eu.png",
+            "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search;callCode=null;freeTextSearchKeyword=;matchWholeText=true;typeCodes=0,1,2,8;statusCodes=31094501,31094502,31094503;programmePeriod=null;programCcm2Id=null;programDivisionCode=null;focusAreaCode=null;destinationGroup=null;missionGroup=null;geographicalZonesCode=null;programmeDivisionProspect=null;startDateLte=null;startDateGte=null;crossCuttingPriorityCode=null;cpvCode=null;performanceOfDelivery=null;sortQuery=sortStatus;orderBy=asc;onlyTenders=false;topicListKey=topicSearchTablePageState"
+        },
+        {
+            "funder": "University of Cambridge",
+            "logo": "/img/funders_logo/cambridge.png",
+            "url": "https://www.infectiousdisease.cam.ac.uk/funding-calls-interest"
+        }
+    ]
+}
