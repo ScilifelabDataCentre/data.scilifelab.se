@@ -34,5 +34,28 @@
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": [
+      "Alternative metrics"
+    ],
+    "search_tags": [
+      "impact",
+      "research impact",
+      "bibliometrics",
+      "impact assessment",
+      "Altmetrics",
+      "plumx",
+      "impactstory",
+      "Alternative metrics",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "Alternative metrics for impact",
+    "description": "Information about alternative metrics, including what they are, their importance to your research, and how to maximise your scores.",
+    "url": "/resources/altmetrics",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
   }
 ]

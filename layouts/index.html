@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="row row-cols-2 row-cols-lg-3 g-2 pb-2">
-        {{ range first 6 .Site.Data.services }}
+        {{ range first 3 .Site.Data.services }}
         {{ if in .target "researchers" }}
         <div class="col">
           <div class="bg-service">
@@ -37,7 +37,6 @@
       {{ end }}
 
       <!-- Resources list -->
-      <!-- Comment out until at least 3 resources are available, also change the services to 3 cards only in the same PR
       {{ with .Site.GetPage "section" "resources" }}
       <div class="row pb-2 mt-4 pt-2">
         <div class="col">
@@ -67,7 +66,7 @@
         {{ end }}
       </div>
       {{ end }}
-    -->
+   
 
       <!-- Data Higlights -->
       {{ with .Site.GetPage "section" "highlights" }}
