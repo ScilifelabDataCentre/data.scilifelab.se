@@ -177,15 +177,22 @@ h5 a:hover {
   border-radius: 5px;
 }
 
-.bg-service,
-.bg-resource {
+.bg-service {
   height: 100%;
   background-color: #a6cbcf;
 }
 
-.bg-service-title,
-.bg-resource-title {
+.bg-service-title {
   background-color: #d2e5e7;
+}
+
+.bg-resource {
+  height: 100%;
+  background-color: #82aeb2;
+}
+
+.bg-resource-title {
+  background-color: #c0d6d8;
 }
 
 /* Highlights */
