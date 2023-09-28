@@ -4,7 +4,9 @@ title: Alternative metrics for research impact
 
 ## Alternative metrics for research impact
 
-This resource is intended to help you to understand what altmetrics are, why they are important, how to make use of them, and to provide some advice on how to maximise your score. Click on the tabs below to go directly to the subject most of interest to you. There is no need to navigate through the information in a particular order. If you have any comments on this resource, or would like support with using alternative materics (altmetrics), please [reach out to us](/contact/).
+This resource is intended to help you to understand what altmetrics are, why they are important, how to make use of them, and to provide some advice on how to maximise your score. Click on the tabs below to go directly to the subject most of interest to you. There is no need to navigate through the information in a particular order. If you have any comments on this resource, or would like support with using alternative materics (altmetrics), click the button below.
+
+<a href="/contact/" class="btn btn-aqua">Click for support</a>
 
 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -115,6 +117,8 @@ Some factors to consider when choosing a platform for tracking research metrics:
 ### Platforms used for altmetrics
 
 <br>
+
+<!-- <img src="/img/resources_logos/altmetrics.png" style="width:300px; float:right; margin: 0px 5px 5px 0px; border:0px;" />  CONSIDER IMAGES LATER!-->
 
 #### Altmetric.com
 
