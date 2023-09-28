@@ -26,6 +26,7 @@ This resource is intended to help you to understand what altmetrics are, why the
 
 ### What are alternative metrics?
 
+<br>
 Traditionally, the impact of research has largely been measured using citations. However, citations and peer-reviewed publications represent only one aspect of research impact. Further, datasets, tools, software, videos and websites produced as part of the research may be just as important, but these do not contribute to the score in traditional metrics for research impact.
 
 Alternative metrics, often called altmetrics, are measures of how well research is disseminated in society. Specifically, alternative metrics consider factors like social media mentions, blog discussions, media coverage, and patents. They are not a replacement to traditional metrics, rather an addition to them.
@@ -43,8 +44,12 @@ Below is a wordcloud showing all of the types of sources monitored by PlumX, ple
   <img src="/img/misc/plumx_cloud.png" class="figure-img img-fluid w-100 d-xl-none">
   <figcaption class="figure-caption">Word cloud created using <a href="https://wordart.com/">wordart.com</a>. Words are not weighted. Based largely on the 67 “PlumX artifacts”, i.e. the sources tracked by PlumX.</figcaption>
 </figure>
+<br>
+<br>
 
 #### References used to create this resource
+
+<br>
 
 Materials from several other resources and guides were used to compile this resource:
 
@@ -63,6 +68,8 @@ Materials from several other resources and guides were used to compile this reso
 
 ### Why use alternative metrics?
 
+<br>
+
 - **Quicker measurement:** It takes 2 years for traditional metrics to be considered reliable indicators. With alternative metrics, it takes just 3 months, so you can know more about the attention that your research is getting in a relatively short space of time. This can be particularly important for scientific domains characterised by slower growth rates, emerging areas of research, and for early-career researchers and principal investigators (PIs) who might not have accumulated a substantial number of citations yet.
 
 - **Communication:** You can use alternative metrics to evaluate how you could communicate your research more effectively. For example, you can see if you are getting less attention on one type of platform and concentrate more effort there. You can also use alternative metrics to show that you have communicated very effectively; adding alternative metrics to your CV has become increasingly common.
@@ -72,8 +79,11 @@ Materials from several other resources and guides were used to compile this reso
 - **Societal impact:** Alternative metrics enable researchers to understand how their research is spread in society, and how it might be used outside of academia. This includes interest and use by the general public, government, policymakers, and industry.
 
 - **Reporting:** Alternative metrics are being included in the reporting by institutions/organisations (e.g. SciLifelab). For institutions/organisations, it can be important to show that their research is being rapidly disseminated in society. For example, to show that they are making a difference in emerging or relatively slow-growing areas of research.
+  <br><br>
 
 ### Points to be aware of when using altmetric data
+
+<br>
 
 - **Tracking issues:** Altmetric data providers rely on stable, persistent identifiers to effectively trace scholarly outputs; however, not all outputs have these identifiers. Additionally, certain identifiers, like the digital object identifier (DOI), are relatively new.
 
@@ -90,6 +100,8 @@ Materials from several other resources and guides were used to compile this reso
 
 ### How to use alternative metrics?
 
+<br>
+
 There are differences between the major platforms for measuring alternative metrics in terms of the types of metrics they provide and their approach to tracking impact. To make the most out of your altmetric score, it is important to be aware of these differences and how they affect the score.
 
 Some factors to consider when choosing a platform for tracking research metrics:
@@ -98,7 +110,11 @@ Some factors to consider when choosing a platform for tracking research metrics:
 - **Data sources:** Consider the data sources used by each platform. For example, [altmetric.com](https://www.altmetric.com) tracks mentions on social media, news articles, and blogs, while [PlumX](https://plumanalytics.com) integrates with other data sources, such as grant and patent data.
 - **User interface:** Consider the user interface and how easy it is to use each platform. You may want to try out different platforms to see which one you find most intuitive and user-friendly.
 
+<br>
+
 ### Platforms used for altmetrics
+
+<br>
 
 #### Altmetric.com
 
@@ -125,25 +141,27 @@ Some factors to consider when choosing a platform for tracking research metrics:
 
 ### Maximise your score
 
+<br>
+
 By working actively with alternative metrics as a tool, researchers can enhance their understanding of their research field and contribute to raising awareness within their domain.
 
-- **Discover what is being measured:** Not all activities are tracked by alternative metrics providers, meaning that not all actions will influence your score. Refer to our [more in-depth info] section to determine which activities are monitored, aiding you in identifying actions that could potentially boost your score.
+- **Discover what is being measured:** Not all activities are tracked by alternative metrics providers, meaning that not all actions will influence your score. Refer to the providers in the 'How to use altmetrics' tab to determine which activities are monitored, aiding you in identifying actions that could potentially boost your score.
 
 - **Game the system:** It's crucial to not only consider what is being measured, but also how scores are computed. This knowledge can be leveraged to your advantage, maximising the impact of your efforts. For instance, original tweets tend to contribute more to your score compared to retweets, and only one tweet from each account counts. Consequently, having multiple individuals create original tweets about your work is more effective. Additional information about the calculation of scores can be found on the web pages of the different altmetric score providers.
 
-- **Get a persistent identifier:** Alternative metric scores are typically linked to unique identifiers, like DOI, PMID, and ISBN. These identifiers can be obtained in many different ways, for example, by uploading your work to PubMed or uploading your data to certain repositories (e.g. SciLifeLab Data Repository).
+- **Get a persistent identifier:** Alternative metric scores are typically linked to unique identifiers, like DOI, PMID, and ISBN. These identifiers can be obtained in many different ways, for example, by uploading your work to PubMed or uploading your data to certain repositories (e.g. [SciLifeLab Data Repository](https://figshare.scilifelab.se)).
 
-- **Make your resources easily shareable:** Research outputs extend beyond publications. They could also include, for example, data and promotional materials, like videos, presentation slides, and posters. By making these resources easily shareable and trackable by alternative metrics providers (e.g. by obtaining a unique identifier, like a DOI), you can significantly increase the dissemination of your work with minimal effort. A straightforward way to achieve this is by uploading these additional outputs to a general repository (e.g the SciLifeLab Data Repository) and subsequently promoting them in social media.
+- **Make your resources easily shareable:** Research outputs extend beyond publications. They could also include, for example, data and promotional materials, like videos, presentation slides, and posters. By making these resources easily shareable and trackable by alternative metrics providers (e.g. by obtaining a unique identifier, like a DOI), you can significantly increase the dissemination of your work with minimal effort. A straightforward way to achieve this is by uploading these additional outputs to a general repository (e.g [SciLifeLab Data Repository](https://figshare.scilifelab.se)) and subsequently promoting them in social media.
 
-- **Write lay summaries:** One effective strategy to garner more attention is by providing a lay or popular science summary of your work. A convenient approach could involve collaborating with the SciLifeLab Data Platform to transform your work into a data highlight. These highlights can either be authored by the SciLifeLab Data Platform team or by you/your team.
+- **Write lay summaries:** One effective strategy to garner more attention is by providing a lay or popular science summary of your work. A convenient approach could involve collaborating with the [SciLifeLab Data Platform](https://data.scilifelab.se) to transform your work into a data highlight. These highlights can either be authored by the SciLifeLab Data Platform team or by you/your team.
 
-- **Embrace open access:** Sharing your work becomes more seamless when it's openly accessible. Aligning with FAIR and open science principles while publishing will likely optimise your alternative metrics score. For detailed practices, you can refer to resources like the SciLifeLab Research Data Management Guidelines.
+- **Embrace open access:** Sharing your work becomes more seamless when it's openly accessible. Aligning with FAIR and open science principles while publishing will likely optimise your alternative metrics score. For detailed practices, you can refer to resources like the [SciLifeLab Research Data Management Guidelines](https://data-guidelines.scilifelab.se).
 
 - **Engage your communications department:** Communications departments are often eager to disseminate your research, so reaching out to them for research promotion is recommended.
 
 - **Strategically place your work on websites:** Alternative metrics providers generally scan page content and not headers or footers. Therefore, it's vital to ensure that the links to your work are placed within the actual content of pages.
 
-- **Register for ORCID & Mendeley:** ORCID simplifies work collation and attribution, whilst Mendeley facilitates sharing with fellow researchers and is directly monitored by alternative metrics providers.
+- **Register for ORCID & Mendeley:** [ORCID](https://orcid.org) simplifies work collation and attribution, whilst [Mendeley](https://www.mendeley.com) facilitates sharing with fellow researchers and is directly monitored by alternative metrics providers.
 
 - **Get talking:** Actively participating in conferences to discuss your research and bringing along your easily shareable resources can be highly beneficial in improving your alternative metrics score, as you increase your audience and, therefore, the attention that your work receives.
 
