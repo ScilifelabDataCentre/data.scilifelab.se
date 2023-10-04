@@ -1,5 +1,6 @@
 ---
 title: Hosting a service on the SciLifeLab Data Platform
+images: [/img/resource_thumbnails/hosting_DC.jpg]
 toc: true
 ---
 

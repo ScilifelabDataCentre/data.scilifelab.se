@@ -1,5 +1,6 @@
 ---
 title: Accessing storage resources
+images: [/img/resource_thumbnails/scilifelab.jpg]
 toc: true
 ---
 

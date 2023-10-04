@@ -1,58 +1,54 @@
+<!-- Banner and page title -->
 {{ if .IsHome }}
-<header class="header" style="background-image: url('/img/illustrations/circle_zoomed.png'); color: white; ">
-  <div class="container">
-    <div class="py-2 my-1">
-      {{ with .Site.GetPage "section" "resources" }}
-      <h2><a class="banner-title-link" href="{{ .RelPermalink }}">Check out our latest resource and data highlight!</a></h2>
-      {{ end }}
+  <header class="header" style="background-image: url('/img/illustrations/circle_zoomed.png'); color: white; ">
+    <div class="container">
+      <div class="py-2 my-1">
+        {{ with .Site.GetPage "section" "resources" }}
+        <h2><a class="banner-title-link" href="{{ .RelPermalink }}">Check out our latest resource and data highlight!</a></h2>
+        {{ end }}
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 {{ else }}
-{{/* Tags and authors sections need to behave as highlights section, hence the big exception below. */}}
-{{ if or (eq .Section "tags") (eq .Section "authors") }}
-{{ with .Site.GetPage "section" "highlights" }}
-<header class="header"
-  style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/bubble_matrix.png{{ end }}');">
-  <div class="container">
-    <h2>{{ .FirstSection.Title }}</h2>
-    {{ .FirstSection.Params.description }}
-  </div>
-</header>
-{{ end }}
-{{ else }}
-<header class="header"
-  style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/bubble_matrix.png{{ end }}');">
-  <div class="container">
-    <h2>{{ .FirstSection.Title }}</h2>
-    {{ .FirstSection.Params.description }}
-  </div>
-</header>
-{{ end }}
-{{ if .Parent }}
-<nav class="breadcrumbs pt-1 bg-light" aria-label="breadcrumb">
-  <div class="container">
-    <ol class="breadcrumb">
-      {{ if .Parent.Parent }}
-      {{ if .Parent.Parent.Parent }}
-      {{ if .Parent.Parent.Parent.Parent }}
-      <li class="breadcrumb-item"><a
-          href="{{ .Parent.Parent.Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Parent.Parent.Title }}</a></li>
+  <header class="header"
+    style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/bubble_matrix.png{{ end }}');">
+    <div class="container">
+      {{ $banner_page := . }}
+      {{ if or (eq .Section "highlights") (eq .Section "tags") (eq .Section "authors") }}
+          {{ $banner_page = .Site.GetPage "section" "highlights" }}
+      {{ else if not $banner_page.Title }}
+          {{ $banner_page = .FirstSection }}
       {{ end }}
-      <li class="breadcrumb-item"><a
-          href="{{ .Parent.Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Parent.Title }}</a></li>
-      {{ end }}
-      <li class="breadcrumb-item"><a href="{{ .Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Title }}</a></li>
-      {{ end }}
-      {{ if or (eq .Section "tags") (eq .Section "authors") }}
-      <li class="breadcrumb-item"><a href="/highlights/">Data highlights</a>
-      <li class="breadcrumb-item">{{ .Parent.Title }}</li>
-      {{ else }}
-      <li class="breadcrumb-item"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
-      {{ end }}
-      <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
-    </ol>
-  </div>
-</nav>
-{{ end }}
+      <h2>{{ $banner_page.Title }}</h2>
+      {{ $banner_page.Params.description }}
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  {{ if .Parent }}
+  <nav class="breadcrumbs pt-1 bg-light" aria-label="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        {{ if .Parent.Parent }}
+        {{ if .Parent.Parent.Parent }}
+        {{ if .Parent.Parent.Parent.Parent }}
+        <li class="breadcrumb-item"><a
+            href="{{ .Parent.Parent.Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Parent.Parent.Title }}</a></li>
+        {{ end }}
+        <li class="breadcrumb-item"><a
+            href="{{ .Parent.Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Parent.Title }}</a></li>
+        {{ end }}
+        <li class="breadcrumb-item"><a href="{{ .Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Title }}</a></li>
+        {{ end }}
+        {{ if or (eq .Section "tags") (eq .Section "authors") }}
+        <li class="breadcrumb-item"><a href="/highlights/">Data highlights</a>
+        <li class="breadcrumb-item">{{ .Parent.Title }}</li>
+        {{ else }}
+        <li class="breadcrumb-item"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
+        {{ end }}
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      </ol>
+    </div>
+  </nav>
+  {{ end }}
 {{ end }}

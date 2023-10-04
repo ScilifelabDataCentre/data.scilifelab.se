@@ -396,7 +396,7 @@
     "description": "A collection of resources centred around the subcellular localisation of proteins",
     "thumbnail": "/img/service_thumbnails/subcell.jpg",
     "thumbnail_border": true,
-    "url": "/subcellbarcode/",
+    "url": "/services/subcellbarcode/",
     "maintained_by": "SubCellBarCode Team",
     "maintained_by_url": "https://www.subcellbarcode.org/about.html",
     "support_website": "https://www.subcellbarcode.org/index.html"

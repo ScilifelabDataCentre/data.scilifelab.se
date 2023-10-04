@@ -87,27 +87,21 @@
     <div class="col-md-4 ms-auto py-2 ps-3">
       <!-- News updates -->
       {{ with .Site.GetPage "section" "news" }}
-      <div class="row mb-1">
-        <div class="col">
+      <div class="bg-news">
+        <div class="d-flex justify-content-between align-items-center mb-1">
           <h3><a class="title-link" href="{{ .RelPermalink }}">What's new?</a></h3>
-        </div>
-        <div class="col mt-2 fs-6 text-end">
           <a href="{{ .RelPermalink }}">See all news <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
-      </div>
-      <div class="row small">
-        <div id="news-items" class="col">
-          {{ range first 4 .RegularPages }}
-          <div class="row">
-            <div class="col mb-1 news-date">
+        <div id="news-items">
+          {{ range $index, $news := first 4 .RegularPages }}
+          <div>
+            <span class="news-date small">
               {{ .Date | time.Format ":date_long" }}
-            </div>
-          </div>
-          <div class="row mb-1">
-            <div class="col">
-              <h6 style="line-height:1.3rem;"><a
-                  href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a></h6>
-            </div>
+            </span>
+            <h6 class="mt-1" style="line-height:1.3rem;">
+              <a href="{{ .FirstSection.RelPermalink }}#{{ .Date.Format "20060102" }}">{{ .Title }}</a>
+            </h6>
+            {{ if ne $index 3}} <hr class="mx-4 my-3"> {{ end }}
           </div>
           {{ end }}
         </div>
@@ -115,32 +109,24 @@
       {{ end }}
 
       <!-- About section -->
-      <div class="row mt-3 mb-1">
-        <div class="col">
+      <div class="border rounded my-4">
+        <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-about-title">
           <h3><a class="title-link" href="/about/">About this platform</a></h3>
-        </div>
-        <div class="col-4 mt-2 fs-6 text-end">
           <a href="/about/">Read more <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
-        <div class="row">
-          <div class="col">
-            {{ .Content }}
-          </div>
+        <div class="px-3 pt-2">
+          {{ .Content }}
         </div>
       </div>
 
       <!-- Get featured box -->
-      <div class="row mt-3 mb-1">
-        <div class="col">
-          <div class="support rounded">
-            <h3>Get your work featured!</h3>
-            <p>The platform offers hosting for services, and promotes resources and work relevant to data-driven life
-              science research in Sweden. We also promote relevant jobs, calls, and events/training. Get in touch with
-              us about adding content relevant to you!</p>
-            <h5><a style="color:white;" href="/contact/">Click here to get in touch
-                <i class="bi bi-arrow-right-circle-fill"></i></a></h5>
-          </div>
-        </div>
+      <div class="support rounded">
+        <h3>Get your work featured!</h3>
+        <p>The platform offers hosting for services, and promotes resources and work relevant to data-driven life
+          science research in Sweden. We also promote relevant jobs, calls, and events/training. Get in touch with
+          us about adding content relevant to you!</p>
+        <h5><a style="color:white;" href="/contact/">Click here to get in touch
+            <i class="bi bi-arrow-right-circle-fill"></i></a></h5>
       </div>
 
     </div>
@@ -340,7 +326,7 @@
     );
 
     // Add latest tag to very recent news
-    document.querySelectorAll("#news-items .col.news-date").forEach(
+    document.querySelectorAll("#news-items .news-date").forEach(
       function (newsNode) {
         var numDays = Math.floor((Date.now() - Date.parse(newsNode.innerText)) / (1000 * 60 * 60 * 24));
         if (numDays <= 7) {
