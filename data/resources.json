@@ -14,7 +14,7 @@
     "name": "Compute resources in Sweden",
     "description": "Information about the compute resources (primarily for hosting and analysis) available in Sweden, as well as how to apply.",
     "url": "/resources/e-infrastructure/",
-    "thumbnail": "/img/service_thumbnails/e_infrastructure.png",
+    "thumbnail": "/img/resource_thumbnails/e_infrastructure.png",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"

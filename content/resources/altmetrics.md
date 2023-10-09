@@ -1,5 +1,6 @@
 ---
 title: Alternative metrics for research impact
+images: [/img/resource_thumbnails/plumx_cloud.png]
 ---
 
 ## Alternative metrics for research impact

@@ -12,6 +12,10 @@ menu:
 toc: True
 ---
 
+<div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
+  This page is also available in <a href="/sv/">Swedish</a>.
+</div>
+
 ## Data-driven life science research
 
 Life science, the science of all things living, is becoming increasingly data-driven. The amount and complexity of research data produced by the field has grown rapidly in recent years. Today, a substantial amount of life science data is shared openly within the global research community. These data can be, and has been, used to fuel further discoveries in multiple fields, including healthcare practices, drug discovery, veterinary medicine, plant research, biotechnology, and food science.
