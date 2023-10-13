@@ -9,6 +9,10 @@ menu:
         weight: 30
 ---
 
+<div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
+  Denna sida är även tillgänglig på <a href="/about/">Engelska</a>.
+</div>
+
 ## Datadriven life science
 
 Life science, vetenskapen om allt levande, blir allt mer datadriven. Mängden och komplexitet av forskningsdata producerat inom life science-området har vuxit snabbt under de senaste åren. Idag delas en betydande mängd life science-data öppet inom det globala forskarsamhället. Dessa data kan ha betydelse för utveckling och forskning inom området och kan driva ytterligare upptäckter inom flera områden med betydelse för mänsklig livskvalitet och hälsa, som precisionsmedicin, diagnostik, utveckling av nya läkemedel, veterinärmedicin, växtforskning, bioteknik, evolution, biodiversitet och livsmedelsvetenskap.

@@ -100,13 +100,11 @@ h5 a:hover {
 }
 
 .nav-tabs a.nav-link {
-  /* color: #295986; */
   color: #045c64;
   font-weight: 500;
 }
 
 .nav-tabs .nav-link {
-  /* color: #295986; */
   color: #045c64;
   font-weight: 500;
 }
@@ -177,6 +175,12 @@ h5 a:hover {
   border-radius: 5px;
 }
 
+.bg-news {
+  padding: 12px 16px;
+  background-color: rgba(229, 229, 229, 0.6);
+  border-radius: 3px;
+}
+
 .bg-service {
   height: 100%;
   background-color: #a6cbcf;
@@ -193,6 +197,10 @@ h5 a:hover {
 
 .bg-resource-title {
   background-color: #c0d6d8;
+}
+
+.bg-about-title {
+  background-color: rgba(73, 31, 83, 0.15);
 }
 
 /* Highlights */

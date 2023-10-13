@@ -3,6 +3,7 @@ title: Accessing compute resources (e-infrastructure)
 toc: true
 aliases:
   - /services/e-infrastructure/
+images: [/img/resource_thumbnails/e_infrastructure.png]
 ---
 
 ## Compute resources available for researchers in Sweden
