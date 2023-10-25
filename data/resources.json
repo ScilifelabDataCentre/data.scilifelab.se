@@ -14,7 +14,7 @@
     "name": "Compute resources in Sweden",
     "description": "Information about the compute resources (primarily for hosting and analysis) available in Sweden, as well as how to apply.",
     "url": "/resources/e-infrastructure/",
-    "thumbnail": "/img/resource_thumbnails/e_infrastructure.png",
+    "thumbnail": "/img/resource_thumbnails/compute_3.jpg",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
@@ -31,6 +31,7 @@
     "name": "Storage resources in Sweden",
     "description": "Information about the storage resources available in Sweden for researchers, as well as how to apply.",
     "url": "/resources/storage/",
+    "thumbnail": "/img/resource_thumbnails/compute_2.jpg",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
@@ -55,6 +56,7 @@
     "description": "Information about alternative metrics, including what they are, their importance to your research, and how to maximise your scores.",
     "url": "/resources/altmetrics",
     "thumbnail": "/img/resource_thumbnails/plumx_cloud.png",
+    "thumbnail_border": true,
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
