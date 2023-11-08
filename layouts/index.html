@@ -13,7 +13,7 @@
           <a href="{{ .RelPermalink }}">See all services <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
       </div>
-      <div class="row row-cols-2 row-cols-lg-3 g-2 pb-2">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
         {{ range first 3 .Site.Data.services }}
         {{ if in .target "researchers" }}
         <div class="col">
@@ -46,7 +46,7 @@
           <a href="{{ .RelPermalink }}">See all resources <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
       </div>
-      <div class="row row-cols-2 row-cols-lg-3 g-2 pb-2">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
         {{ range first 3 .Site.Data.resources }}
         <div class="col">
           <div class="bg-resource">
@@ -155,7 +155,7 @@
       <div class="col text-white">
         <h3>Recently published items in the SciLifeLab Data Repository</h3>
       </div>
-      <div class="col-3 mt-2 fs-6 text-end">
+      <div class="col-4 col-lg-3 mt-2 fs-6 text-end d-none d-md-block">
         <small class="text-small text-white">(external site) </small>
         <a href="https://figshare.scilifelab.se" target="_blank" class="text-white">See all items
           <i class="bi bi-arrow-right-square-fill text-white"></i></a>
@@ -168,7 +168,11 @@
       item,
       contact information is available on the item's page.
     </p>
-  </div>
+    <div class="d-md-none">
+      <small class="text-small text-white">(external site) </small>
+      <a href="https://figshare.scilifelab.se" target="_blank" class="text-white">See all items
+        <i class="bi bi-arrow-right-square-fill text-white"></i></a>
+    </div>
 </section>
 
 <!-- recently deployed apps in serve -->
@@ -178,9 +182,9 @@
       <div class="col text-white">
         <h3>Apps recently deployed on SciLifeLab Serve</h3>
       </div>
-      <div class="col-4 mt-2 fs-6 text-end">
+      <div class="col-4 mt-2 fs-6 text-end d-none d-md-block">
         <small class="text-small text-white">(external site) </small>
-        <a href="https://serve.scilifelab.se/apps" target="_blank" class="text-white">See all public apps
+        <a href="https://serve.scilifelab.se/apps" target="_blank" class="text-white">See public apps
           <i class="bi bi-arrow-right-square-fill text-white"></i></a>
       </div>
     </div>
@@ -192,6 +196,11 @@
         target="_blank">apps page on SciLifeLab Serve</a> and click on the 'Details' button of the to find contact
       information for the owner of the app.
     </p>
+    <div class="d-md-none">
+      <small class="text-small text-white">(external site) </small>
+      <a href="https://serve.scilifelab.se/apps" target="_blank" class="text-white">See public apps
+        <i class="bi bi-arrow-right-square-fill text-white"></i></a>
+    </div>
   </div>
 </section>
 
@@ -251,7 +260,8 @@
     }
     
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_events.json"),
+      // decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_events.json"),
+      decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Fdevelop%2Fdata%2Fdata_platform_events.json"),
       addEvents
     );
 

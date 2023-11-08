@@ -121,13 +121,24 @@ h5 a:hover {
 
 /* logo */
 
-.navbar .navbar-brand {
-  max-width: 35%;
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    max-width: 340px;
+  }
+  
+  .logo span {
+    font-size: 0.95rem;
+  }
 }
 
-.navbar .navbar-brand img {
-  height: 70px;
-  max-width: 100%;
+@media all and (max-width: 460px) {
+  .logo {
+    width: 75%;
+  }
+  
+  .logo span {
+    display: none;
+  }
 }
 
 /* Nav links */
