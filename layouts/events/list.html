@@ -208,7 +208,7 @@
           });
         };
         eventsHTML += `</div>
-                       <div class="col-lg">
+                       <div class="col-lg mt-2 mt-lg-0">
                          <div class="row g-2" id="events-container">`;
         eventList.forEach((event, ind) => {
           var this_event_local, this_event_category, this_event_level;
@@ -416,7 +416,8 @@
     
     // Call the function to fetch, parse and display events
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_events.json"),
+      // decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_events.json"),
+      decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Fdevelop%2Fdata%2Fdata_platform_events.json"),
       addEvents,
       enableFiltering
     );
