@@ -186,10 +186,8 @@ h5 a:hover {
   border-radius: 5px;
 }
 
-.bg-news {
-  padding: 12px 16px;
+.bg-home-news-title {
   background-color: rgba(229, 229, 229, 0.6);
-  border-radius: 3px;
 }
 
 .bg-service {
@@ -210,8 +208,8 @@ h5 a:hover {
   background-color: #c0d6d8;
 }
 
-.bg-about-title {
-  background-color: rgba(73, 31, 83, 0.15);
+.bg-home-events-title {
+  background-color: rgba(73, 31, 83, 0.1);
 }
 
 /* Highlights */

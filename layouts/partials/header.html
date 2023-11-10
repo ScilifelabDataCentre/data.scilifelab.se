@@ -3,9 +3,7 @@
   <header class="header" style="background-image: url('/img/illustrations/circle_zoomed.png'); color: white; ">
     <div class="container">
       <div class="py-2 my-1">
-        {{ with .Site.GetPage "section" "resources" }}
-        <h2><a class="banner-title-link" href="{{ .RelPermalink }}">Check out our latest resource and data highlight!</a></h2>
-        {{ end }}
+        <h2><a class="banner-title-link" href="/resources/">Check out our latest resource and data highlight!</a></h2>
       </div>
     </div>
   </header>
@@ -19,13 +17,20 @@
       {{ else if not $banner_page.Title }}
           {{ $banner_page = .FirstSection }}
       {{ end }}
-      <h2>{{ $banner_page.Title }}</h2>
-      {{ $banner_page.Params.description }}
+      {{ if $banner_page.Params.description }}
+        <h2>{{ $banner_page.Title }}</h2>
+        {{ $banner_page.Params.description }}
+      {{ else }}
+        <div class="py-2 my-1">
+          <h2>{{ $banner_page.Title }}</h2>
+        </div>
+      {{ end }}
     </div>
   </header>
+{{ end }}
 
-  <!-- Breadcrumbs -->
-  {{ if .Parent }}
+<!-- Breadcrumbs -->
+{{ if .Parent }}
   <nav class="breadcrumbs pt-1 bg-light" aria-label="breadcrumb">
     <div class="container">
       <ol class="breadcrumb">
@@ -50,5 +55,4 @@
       </ol>
     </div>
   </nav>
-  {{ end }}
 {{ end }}
