@@ -2,12 +2,12 @@
 title: Unravelling the assembly of the mitoribosome
 date: 2022-07-07
 summary: Recent publication shows how scientists at SciLifeLab use cryo-EM to reveal the sequential steps involved in mitoribosome assembly. Data has been made publicly available.
-banner: /highlights/mitoribosome_assembly_small.png
-banner_large: /highlights/mitoribosome_assembly.png
+banner: /highlights/mitoribosome_assembly_small.jpeg
+banner_large: /highlights/mitoribosome_assembly.jpeg
 banner_caption: Small mitoribosomal subunit intermediates complexed with auxiliary factors, revealing a sequential mechanism of assembly (Credit; Verena Resch).
 tags: [Highlight, Cryo-EM, Mitoribosomes, Nanoparticles, Protein structures]
 authors: [Alexey Amunts]
-images: ["/highlights/mitoribosome_assembly_small.png"]
+images: ["/highlights/mitoribosome_assembly_small.jpeg"]
 ---
 
 Mitochondrial ribosomes (mitoribosomes) are nanoparticles essential for the synthesis and maintenance of bioenergetic proteins. These proteins produce more than 90% of the energy in our bodies. The structure of the mitoribosome, first resolved eight years ago, consists of over 80 different components and thus requires assembly factors to help putting the complex machinery together. Despite recent advances in understanding the structure and function of the mitoribosome, there is still a lack of information on how the individual mitoribosomal components assemble, and crucially how this links to their function in translation of the genetic material into competent macromolecular machines. This missing information is critical since defects in the assembly of the mitoribosome are associated with a widespread metabolic disorders particularly linked to age-related diseases that are associated with decline in mitochondrial function and biogenesis.
