@@ -167,7 +167,7 @@
                       </div>`;
         });
         jobsHTML += `</div>
-                    <div class="col-lg">
+                    <div class="col-lg mt-2 mt-lg-0">
                       <div class="row g-2" id="jobs-container">`;
         jobsList.forEach((job, ind) => {
           var this_job_type = job.type.map(jt => jt.replaceAll(" ", "-").toLowerCase()).join(" ");
@@ -307,7 +307,8 @@
     
     // Call the function to fetch, parse and display jobs
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_jobs.json"),
+      // decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_jobs.json"),
+      decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Fdevelop%2Fdata%2Fdata_platform_jobs.json"),
       addJobs,
       enableFiltering
     );
