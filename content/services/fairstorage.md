@@ -17,15 +17,15 @@ The allocation of resources and application process are both managed by [SciLife
 
 ## Documents and guidelines
 
-Below you will find all of the documents and guidelines related to FAIR Storage.
+Below you will find all of the documents and guidelines related to FAIR Storage. In order to get started, refer to the 'Guidelines for applicants and administrators of SciLifeLab FAIR Storage' in the general documents section.
 
 ### General documents
 
-- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf)
+- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf). _**Start by reading this document** in order to use FAIR Storage._
+
+- [SciLifeLab data policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf).
 
 ### Data Centre documents
-
-- [SciLifeLab data policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf)
 
 - [Guidelines related to the review of use of SciLifeLab FAIR Storage resources](/fair_storage/scilifelab_fairstorage_review_guidelines.pdf)
 
