@@ -35,8 +35,8 @@ The SciLifeLab Data Platform was built and is maintained by the [SciLifeLab Data
 This platform aims to boost the number of services available for data-driven life science research in Sweden. Our vision is to create an envronment in which our users can easily locate, access, and use life science resources (including data, tools, and e-infrastructure).
 
 <figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-75 d-none d-xl-inline">
-  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-100 d-xl-none">
+  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-75 d-none d-xl-inline" alt="Schematic representation of the Scilifelab Data Platform, relating Users, Data to E-infrastructure">
+  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-100 d-xl-none" alt="Schematic representation of the Scilifelab Data Platform, relating Users, Data to E-infrastructure" >
   <figcaption class="figure-caption">We see the SciLifeLab Data Platform as the environment for hosting services connecting users, life science data, and e-Infrastructure.</figcaption>
 </figure>
 
@@ -83,6 +83,6 @@ The SciLifeLab Data Platform is funded by the [SciLifeLab & Wallenberg National 
 Eleven Swedish organisations are also participating in the DDLS, alongside SciLifeLab and the Knut and Alice Wallenberg Foundation. The organisations involved are shown below:
 
 <figure class="my-2 figure w-100 text-center">
-  <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-75 d-none d-xl-inline">
-  <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-100 d-xl-none">
+  <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-75 d-none d-xl-inline" alt="Logos for Scilifelab, Knut and Alice Wallenberg Foundation, Chalmers, Göteborgs Universitet, Karolinska institutet, Kungliga Tekniska Högskolan, Linköpins Universitet, Lunds Universitet, Naturhistoriska Riksmuseet, Sveriges LantbruksUniversitet, Stockholms Universitet, Umeå Universitet, Uppsala Universitet">
+  <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-100 d-xl-none" alt="Logos for Scilifelab, Knut and Alice Wallenberg Foundation, Chalmers, Göteborgs Universitet, Karolinska institutet, Kungliga Tekniska Högskolan, Linköpins Universitet, L    unds Universitet, Naturhistoriska Riksmuseet, Sveriges LantbruksUniversitet, Stockholms Universitet, Umeå Universitet, Uppsala Universitet">
 </figure>
