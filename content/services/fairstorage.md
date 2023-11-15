@@ -4,41 +4,43 @@ toc: true
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
-This page is under construction. Not all documents are available at the moment.
+This page is currently under construction. More documents will be added in due course.
 </div>
 
 ## About SciLifeLab FAIR Storage
 
-In order to support data-driven life science research, SciLifeLab offers storage resources for data sharing in accordence with the FAIR principles for any project that advance scientific knowledge and discovery within the field of Swedish data-driven life science.
+SciLifeLab offers storage resources to support data-driven life science, they are collectively referred to as 'SciLifeLab FAIR Storage'.
 
-On this page is gathered all documents that describe and guides regarding these resource. All information that is needed to apply for SciLifeLab FAIR storage can be found here.
+SciLifeLab FAIR Storage resources are intended to support data sharing in accordance with the FAIR principles. They are available for any project that advances knowledge and discovery within the field of Swedish data-driven life science. On this page, you will find all of the information that you could need to access and use SciLifeLab FAIR Storage.
 
-Data Centre is responsible for allocating these resources and for the application process. As part of our aim to be transparent, Data Centre also publish internal steering documents on this site.
+The allocation of resources and application process are both managed by [SciLifeLab Data Centre](https://www.scilifelab.se/data/). All steering documents related to SciLifeLab FAIR Storage will also be published on this page.
 
-## Documents and guides
+## Documents and guidelines
 
-Following documents contain information and guidlines about different aspects.
+Below you will find all of the documents and guidelines related to FAIR Storage.
 
 ### General documents
 
-- [Application and administration guidelines]()
+- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf)
 
 ### Data Centre documents
 
-- [Review guidelines]()
+- [SciLifeLab data policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf)
+
+- [Guidelines related to the review of use of SciLifeLab FAIR Storage resources](/fair_storage/scilifelab_fairstorage_review_guidelines.pdf)
 
 ### Support documents
 
-- [User agreement]()
+- [SciLifeLab FAIR Storage user agreement](/fair_storage/scilifelab_fairstorage_user_agreement.pdf)
 
-- Intended use and allocation (to be published)
+- Intended use and allocation (_to be published_)
 
-- Approval process (to be published)
+- Approval process (_to be published_)
 
-- Deletion of project storage (to be published)
+- Deletion of project storage (_to be published_)
 
-- Applying for an UPPMAX account (to be published)
+- Applying for an UPPMAX account (_to be published_)
 
 ## Other information
 
-https://supr.naiss.se/ - Forms for project proposal and applications
+For forms related to project proposals and applications, see the [SUPR Platform](https://supr.naiss.se/).

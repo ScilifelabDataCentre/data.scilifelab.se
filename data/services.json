@@ -51,7 +51,7 @@
       "researchers"
     ],
     "type": [
-      "FAIR storage resources"
+      "Storage resources"
     ],
     "search_tags": [
       "FAIR Storage",
@@ -60,8 +60,9 @@
       "Data Centre"
   ],
     "name": "FAIR storage",
-    "description": "Details about how researchers, research groups, and organisations can apply for stoage on the SciLifeLab FAIR storage resources.",
+    "description": "Details about how researchers, research groups, and organisations can store their data using SciLifeLab FAIR Storage resources.",
     "url": "/services/fairstorage/",
+    "thumbnail": "/img/service_thumbnails/storage.jpg",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "FAIRstorage@scilifelab.se"
