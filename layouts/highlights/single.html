@@ -9,7 +9,7 @@
 <div class="text-muted mb-2">Published on: {{ .Date | time.Format ":date_long" }}. Written by: {{ range (.GetTerms "authors") }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>
 
 <figure class="figure float-start me-3 w-50">
-  <img src="{{ if (isset .Params "banner_large") }}{{ .Params.banner_large }}{{ else }}{{ .Params.banner }}{{ end }}" alt="{{ .Title }}" class="img-thumbnail">
+    <img src="{{ if (isset .Params "banner_large") }}{{ .Params.banner_large }}{{ else }}{{ .Params.banner }}{{ end }}" alt=" {{ if (isset .Params "banner_alt") }} {{ .Params.banner_alt }} {{ else }}  {{.Title }}{{ end  }}" class="img-thumbnail">
   <figcaption class="figure-caption mt-1"><i>{{ .Params.banner_caption | markdownify }}</i></figcaption>
 </figure>
 
