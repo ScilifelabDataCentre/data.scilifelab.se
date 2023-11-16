@@ -5,7 +5,7 @@
         <h6>Operational support</h6>
         <ul class="list-unstyled text-small">
           {{ range .Site.Menus.bottom_support }}
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+           <li class="mb-1"><a class="footer-link text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li> 
           {{ end }}
         </ul>
       </div>
@@ -13,7 +13,7 @@
         <h6>Community</h6>
         <ul class="list-unstyled text-small">
           {{ range .Site.Menus.bottom_community }}
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+           <li class="mb-1"><a class="footer-link text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>
@@ -21,7 +21,7 @@
         <h6>About</h6>
         <ul class="list-unstyled text-small">
           {{ range .Site.Menus.bottom_about }}
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
+           <li class="mb-1"><a class="footer-link text-decoration-none" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         <div class="d-flex">

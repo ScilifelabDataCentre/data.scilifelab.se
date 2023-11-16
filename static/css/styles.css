@@ -36,6 +36,11 @@ a {
   text-decoration: none;
 }
 
+a.footer-link {
+  color: #3f3f3f 
+  text-decoration: none;
+}
+
 a:hover,
 a:focus,
 a:active {
@@ -165,6 +170,9 @@ h5 a:hover {
   color: #045c64;
   text-decoration: underline;
 }
+
+
+
 
 /* Background colors */
 
