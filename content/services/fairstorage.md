@@ -25,7 +25,7 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 ### General documents
 
-- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf). _**Start by reading this document** in order to use FAIR Storage._
+- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf).<br>(_**Start by reading this document** in order to use FAIR Storage_)
 
 - [SciLifeLab data policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf).
 
