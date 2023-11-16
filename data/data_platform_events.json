@@ -282,6 +282,36 @@
             "description": "In our 1st workshop of the series, 'Why Mappings Matter and how to make them FAIR?', we introduced participants to the motivation behind doing the mappings and how they could benefit even more by making mappings FAIR including methodologies, formats, tools, and requirements for FAIR mappings and examples.<br><br>A follow up series of workshops aims at investigating existing and established and popular mapping methodologies and processes used by communities from their creation to their maintenance. From these different methodologies and processes, we should be able to determine a common process that could be shared with communities willing to start with their mapping process. One final objective is to write a FAIR cookbook recipes to share openly these methodologies. In our second workshop, we will identify common components in the mapping process from the various communities which we will focus on those in the subsequent workshops."
         },
         {
+            "title": "SciLifeLab FAIR Storage – how to apply for storage resources",
+            "type": "webinar",
+            "date_start": "2023-11-30",
+            "time_start": "10:00",
+            "time_end": "11:30",
+            "venue": "Online",
+            "location": [
+                "Online"
+            ],
+            "category": ["Research data management"],
+            "organisers": "SciLifeLab Data Centre and NBIS",
+            "event_url": "https://www.scilifelab.se/event/fairstorage/",
+            "description": "In order to support data-driven life science research, SciLifeLab offers storage resources for data sharing in accordance with the FAIR principles for projects that advance scientific knowledge and discovery within the field of Swedish data-driven life science. SciLifeLab Data Centre is responsible for allocating these resources and for the application process. The applications to use FAIRstorage is now open through the Swedish User and Project Repository (SUPR) Portal (call open Nov 16 -Dec 31). Following the recent launch of FAIRstorage, this is an event where the FAIRstorage applications process, along with Research Data Management resources needed for the application, will be presented. The target group for this call is researchers, research groups, and organisations."
+        },
+        {
+            "title": "SciLifeLab Data Platform- how we support data-driven life science research",
+            "type": "webinar",
+            "date_start": "2023-11-21",
+            "time_start": "15:00",
+            "time_end": "16:00",
+            "venue": "Online",
+            "location": [
+                "Online"
+            ],
+            "category": ["Research data management"],
+            "organisers": "SciLifeLab Data Centre and NBIS",
+            "event_url": "https://www.scilifelab.se/event/data-platform-how-we-support-data-driven-life-science/",
+            "description": "The SciLifeLab Data Management seminar series next event is focused on the SciLifeLab Data Platform which is a hub for data-driven life science research. The SciLifeLab Data Platform aims to act as a ‘one-stop shop’ for data-driven life science in Sweden. It includes services (e.g. tools and databases), materials related to community building (e.g. jobs and events pages), and resources aimed at promoting data-driven life science research (e.g. data highlights). Presentations from the Liane Hughes, SciLifeLab Data Centre Platform team lead and DevOps from the SciLifeLab Serve team, will give you an overview of about the services, resources, and community building of the Platform, suggestions on how you can contribute, as well as a quick guide to hosting your data on the Platform. "
+        },
+        {
             "title": "Tools for reproducible research course",
             "type": "Course",
             "date_start": "2023-11-20",
