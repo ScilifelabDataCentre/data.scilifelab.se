@@ -4,6 +4,10 @@ toc: true
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
+Please join the <b>event showing how to apply for FAIR Storage resources on November 30th 10:00 – 11:30</b>. For more details, and to register, please check out <a href="https://www.scilifelab.se/event/fairstorage/">the FAIR Storage event page</a>
+</div>
+
+<div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
 This page is currently under construction. More documents will be added in due course.
 </div>
 
@@ -21,7 +25,7 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 ### General documents
 
-- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf). _**Start by reading this document** in order to use FAIR Storage._
+- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf).<br>(_**Start by reading this document** in order to use FAIR Storage_)
 
 - [SciLifeLab data policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf).
 
@@ -43,4 +47,4 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 ## Other information
 
-For forms related to project proposals and applications, see the [SUPR Platform](https://supr.naiss.se/).
+For forms related to project proposals and applications, see the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/).
