@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <section>
-  <div class="row mt-4 pt-2">
+  <div class="row mt-2 pt-2">
     <div class="col-md-8 py-2 pe-3 vr-right">
       <!-- Services list -->
       {{ with .Site.GetPage "section" "services" }}
@@ -52,7 +52,7 @@
           <div class="bg-resource">
             <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
-                  src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+                  src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
             <div class="p-2 bg-resource-title">
@@ -87,14 +87,14 @@
     <div class="col-md-4 ms-auto py-2 ps-3">
       <!-- News updates -->
       {{ with .Site.GetPage "section" "news" }}
-      <div class="bg-news">
-        <div class="d-flex justify-content-between align-items-center mb-1">
-          <h3><a class="title-link" href="{{ .RelPermalink }}">What's new?</a></h3>
+      <div class="border rounded mb-4 pb-2">
+        <div class="d-flex justify-content-between align-items-center px-3 py-2 mb-2 bg-home-news-title">
+          <h4>What's new?</h4>
           <a href="{{ .RelPermalink }}">See all news <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
         <div id="news-items">
           {{ range $index, $news := first 4 .RegularPages }}
-          <div>
+          <div class="px-3">
             <span class="news-date small">
               {{ .Date | time.Format ":date_long" }}
             </span>
@@ -108,16 +108,10 @@
       </div>
       {{ end }}
 
-      <!-- About section -->
-      <div class="border rounded my-4">
-        <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-about-title">
-          <h3><a class="title-link" href="/about/">About this platform</a></h3>
-          <a href="/about/">Read more <i class="bi bi-arrow-right-square-fill"></i></a>
-        </div>
-        <div class="px-3 pt-2">
-          {{ .Content }}
-        </div>
-      </div>
+      <!-- Upcoming Events -->
+      <section id="upcoming-events">
+        <!-- The events content will filled by JS function below -->
+      </section>
 
       <!-- Get featured box -->
       <div class="support rounded">
@@ -130,21 +124,6 @@
       </div>
 
     </div>
-  </div>
-</section>
-
-<!-- Training and events -->
-<section>
-  <div class="mb-4">
-    <div class="row mt-4 pt-2 mb-2">
-      <div class="col">
-        <h3><a class="title-link" href="/events/">Events & Training</a></h3>
-      </div>
-      <div class="col mt-2 fs-6 text-end">
-        <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
-      </div>
-    </div>
-    <div id="recent-events" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3"></div>
   </div>
 </section>
 
@@ -164,7 +143,7 @@
     <div id="recent-data-items" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 pb-4"></div>
     <p class="text-white">If you would like further information about SciLifeLab data repository or experience issues
       with the items above, please email <a class="text-white" style="text-decoration: underline;"
-        href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>. If you have questions about a specific
+        href="mailto:figshare@scilifelab.se">figshare@scilifelab.se</a>. If you have questions about a specific
       item,
       contact information is available on the item's page.
     </p>
@@ -233,35 +212,34 @@
         };
       });
       eventList = eventList.sort((a,b) => (a.banner_date > b.banner_date) ? 1 : (a.banner_date < b.banner_date) ? -1 : 0);
-      var eventsToShow = eventList.slice(0, 4);
-      if (eventsToShow.length == 0){
-        eventsHTML += `<div class="w-100 p-3 mx-2 border rounded text-center">No upcoming events to show</div>`;
-      } else {
-        eventsToShow.forEach((event) => {
-          var event_date = new Date(event.banner_date);
-          eventsHTML += `<div class="col">
-                            <div class="p-2 border rounded h-100">
-                              <div class="d-flex justify-content-between">
-                                <div>
-                                  <span class="badge event-type mb-1">${event.type}</span>
-                                  <h6>${event.title}</h6>
-                                </div>
-                                <div class="px-2 pb-1 m-2 d-flex flex-column event-date rounded">
-                                  <div class="px-1 fs-4 mx-auto">${event_date.getDate()}</div>
-                                  <div class="px-1 small mx-auto">${event_date.toLocaleString('default', {'month': 'long'})}</div>
-                                </div>
-                              </div>
+      var eventsToShow = eventList.slice(0, 3);
+      if (eventsToShow.length > 0){
+        var eventsHTML = `<div class="border rounded my-4 pb-2">
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2 mb-1 bg-home-events-title">
+                              <h4 class="mb-1">Upcoming Events</h4>
+                              <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
                             </div>
-                          </div>`;
-        });
-      };
-      var eventRow = document.getElementById('recent-events');
+                            <div>`;
+        eventsToShow.forEach((event, ind) => {
+          var event_date = new Date(event.banner_date);
+          eventsHTML += `<div class="d-flex justify-content-between align-items-center px-3 py-2">
+                          <a class="" role="button" href="/events/" target="_blank">${event.title}</a>
+                          <div class="px-2 py-1 d-flex flex-column rounded event-date mw-100">
+                            <div class="px-2 fs-6 mx-auto">${event_date.getDate().toString().padStart(2, '0')}</div>
+                            <div class="pb-1 px-2 fs-6 mx-auto">${event_date.toLocaleString('en-US', { 'month': 'short' })}</div>
+                          </div>
+                         </div>
+                        ${ind < (eventsToShow.length - 1) ? '<div class="px-4 py-1"><hr class="my-2"></div>' : ''}`;
+        }); // for each events iteration to create html ends here
+        eventsHTML += `</div>
+                    </div>`;
+      var eventRow = document.getElementById('upcoming-events');
       eventRow.innerHTML = eventsHTML;
+      };
     }
     
     getDataFromUrl(
-      // decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_events.json"),
-      decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Fdevelop%2Fdata%2Fdata_platform_events.json"),
+      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_events.json"),
       addEvents
     );
 

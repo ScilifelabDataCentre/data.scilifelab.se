@@ -41,10 +41,31 @@
     "name": "Hosting on the Data Platform",
     "description": "Details about how researchers, research groups, and organisations can apply for hosting via the SciLifeLab Platform.",
     "url": "/services/hosting/",
-    "thumbnail": "/img/resource_thumbnails/hosting_DC.jpg",
+    "thumbnail": "/img/service_thumbnails/hosting_DC.jpg",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "data-platform@scilifelab.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Storage resources"
+    ],
+    "search_tags": [
+      "FAIR Storage",
+      "SUPR",
+      "SciLifeLab",
+      "Data Centre"
+  ],
+    "name": "FAIR storage",
+    "description": "Details about how researchers, research groups, and organisations can store their data using SciLifeLab FAIR Storage resources.",
+    "url": "/services/fairstorage/",
+    "thumbnail": "/img/service_thumbnails/storage.jpg",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "FAIRstorage@scilifelab.se"
   },
   {
     "target": [
@@ -67,7 +88,7 @@
     "url": "https://pathogens.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "datacentre@scilifelab.se",
+    "support_email": "pathogens@scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
     "support_status": "https://status.dc.scilifelab.se/793602036"
   },
@@ -157,7 +178,7 @@
     "url": "https://serve.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "datacentre@scilifelab.se",
+    "support_email": "serve@scilifelab.se",
     "support_website": "https://serve.scilifelab.se/user_guide"
   },
   {
@@ -181,7 +202,7 @@
     "url": "https://delivery.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "datacentre@scilifelab.se",
+    "support_email": "delivery@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793448467"
   },
   {
@@ -371,7 +392,7 @@
     "thumbnail": "/img/service_thumbnails/dsw.jpg",
     "url": "https://dsw.scilifelab.se/",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "datacentre@scilifelab.se",
+    "support_email": "data-management@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602047"
   },
   {

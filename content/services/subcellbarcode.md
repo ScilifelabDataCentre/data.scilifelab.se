@@ -1,8 +1,6 @@
 ---
 title: "SubCellBarCode"
 description: Data, code, and tools centred around deducing and exploring the subcellular localisation of proteins
-cascade:
-  header_image: /img/illustrations/circos_cropped.png
 aliases:
   - /subcellbarcode/
 images: [/img/service_thumbnails/subcell.jpg]
