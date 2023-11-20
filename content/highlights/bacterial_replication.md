@@ -5,6 +5,7 @@ summary: This study by Knöppel, Broström et al is a large effort to elucidate 
 banner: /highlights/ELF_banner.png
 banner_large: /highlights/ELF_large.png
 banner_caption: Image courtesy Johan Elf lab
+banner_alt: Artistic representation of Bacterial replication
 tags:
   [
     DNA,
