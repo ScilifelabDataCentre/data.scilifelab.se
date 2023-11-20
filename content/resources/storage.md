@@ -42,7 +42,7 @@ Applications to use the NAISS resources should be submitted through the [Swedish
 
 ### SciLifeLab Data Platform
 
-SciLifeLab will provide access to storage resources at multiple locations across Sweden. These resources are funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS Program)](https://www.scilifelab.se/data-driven/). In some cases, these resources will be associated with [computing resources that are also part of the platform](/services/e-infrastructure/#scilifelab-data-platform). Initially, the storage resources will be relatively basic, akin to Swestore ([a NAISS resource, see above](#national-academic-infrastructure-for-supercomputing-in-sweden-naiss)), the intention is to evolve them over time. Applications to use these resources should be submitted through the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/). Instructions for how to do this are provided in the [Applying for resources via the SUPR Portal](#applying-for-resources-via-the-supr-portal) section below.
+SciLifeLab will provide access to storage resources at multiple locations across Sweden. These resources are funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS Program)](https://www.scilifelab.se/data-driven/). For information about the storage resources that are currently available, please see the [SciLifeLab FAIR Storage page](/services/fairstorage/). On that page, we provide all of the documents and guidelines you'd need to apply for and use this service.
 
 ### The European Open Science Cloud
 
