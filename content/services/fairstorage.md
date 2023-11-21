@@ -1,6 +1,8 @@
 ---
 title: SciLifeLab FAIR storage
 toc: true
+aliases:
+  - /services/FAIRstorage/
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
@@ -25,25 +27,27 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 ### General documents
 
-- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf).<br>(_**Start by reading this document** in order to use FAIR Storage_)
+- [SciLifeLab FAIR Storage Guidelines for Applicants and Administrators](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf).<br>(_**Start by reading this document** in order to use FAIR Storage_)
 
-- [SciLifeLab data policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf).
+- [SciLifeLab Data Policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf).
 
 ### Data Centre documents
 
-- [Guidelines related to the review of use of SciLifeLab FAIR Storage resources](/fair_storage/scilifelab_fairstorage_review_guidelines.pdf)
+- [SciLifeLab FAIR Storage Guidelines for Review](/fair_storage/scilifelab_fairstorage_review_guidelines.pdf)
 
 ### Support documents
 
-- [SciLifeLab FAIR Storage user agreement](/fair_storage/scilifelab_fairstorage_user_agreement.pdf)
+- [Applying for an Account on UPPMAX](/fair_storage/Applying_for_an_account_on_Uppmax.pdf)
+
+- [SciLifeLab FAIR Storage Approval Process](/fair_storage/SciLifeLab_FAIR_Storage_approval_process.pdf)
+
+- [SciLifeLab FAIR Storage Approval Process Flowchart](/fair_storage/Approval_process_flowchart.pdf)
+
+- [SciLifeLab FAIR Storage User Agreement](/fair_storage/scilifelab_fairstorage_user_agreement.pdf)
 
 - Intended use and allocation (_to be published_)
 
-- Approval process (_to be published_)
-
 - Deletion of project storage (_to be published_)
-
-- Applying for an UPPMAX account (_to be published_)
 
 ## Other information
 
