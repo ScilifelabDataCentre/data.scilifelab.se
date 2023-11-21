@@ -68,10 +68,10 @@
       {{ if or (or .support_email .support_website) .support_github }}
       <div class="px-2 mb-2">
         <b>Support:</b>
-        {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-        {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-        {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
-        {{ with .support_status }}<a href="{{ . }}"><i class="bi bi-hdd-rack"></i></a> {{ end }}
+        {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+        {{ with .support_website }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+        {{ with .support_github }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
+        {{ with .support_status }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-hdd-rack"></i></a> {{ end }}
       </div>
       {{ end }}
     </div>

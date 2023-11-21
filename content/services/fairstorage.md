@@ -49,6 +49,27 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 - Deletion of project storage (_to be published_)
 
+=======
+- [Guidelines for applicants and administrators of SciLifeLab FAIR Storage](/fair_storage/fair_storage_guidelines_applicants_administrators.pdf).<br>(_**Start by reading this document** in order to use FAIR Storage_)
+
+- [SciLifeLab data policy](https://www.scilifelab.se/wp-content/uploads/2022/06/SciLifeLab-data-policy.pdf).
+
+### Data Centre documents
+
+- [Guidelines related to the review of use of SciLifeLab FAIR Storage resources](/fair_storage/scilifelab_fairstorage_review_guidelines.pdf)
+
+### Support documents
+
+- [SciLifeLab FAIR Storage user agreement](/fair_storage/scilifelab_fairstorage_user_agreement.pdf)
+
+- Intended use and allocation (_to be published_)
+
+- Approval process (_to be published_)
+
+- Deletion of project storage (_to be published_)
+
+- Applying for an UPPMAX account (_to be published_)
+
 ## Other information
 
 For forms related to project proposals and applications, see the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/).
