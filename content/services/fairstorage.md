@@ -1,6 +1,8 @@
 ---
 title: SciLifeLab FAIR storage
 toc: true
+aliases:
+  - /services/FAIRstorage/
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
