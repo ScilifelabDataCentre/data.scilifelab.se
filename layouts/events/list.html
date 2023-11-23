@@ -179,9 +179,10 @@
                         </div>`
       } else {
         var eventsHTML = `<div class="row mt-3 mb-5">
-                          <div class="col-lg-2" id="events-filters">`;
+                          <div class="col-lg-2 pe-lg-0" id="events-filters">`;
         if (local.length > 0){
-          eventsHTML += `<h5>Location</h5>`;
+          eventsHTML += `<div class="bg-light p-3" style="position: sticky; top: 15px;">
+                          <h5>Location</h5>`;
           local.forEach((lc) => {
             eventsHTML += `<div class="form-check">   
                             <input class="form-check-input" type="checkbox" id="${lc}" name="location" value="${lc.replaceAll(" ", "-").toLowerCase()}">
@@ -208,6 +209,7 @@
           });
         };
         eventsHTML += `</div>
+                      </div>
                        <div class="col-lg mt-2 mt-lg-0">
                          <div class="row g-2" id="events-container">`;
         eventList.forEach((event, ind) => {
@@ -410,6 +412,11 @@
             $('div#no-filtered-events').show();
           };
         };
+
+        // Bring the events section top to the veiwport if it isn't
+        var tab_top = document.querySelector("section#events-section").getBoundingClientRect().top;
+        if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 60); }
+
       }); // Checkbox "on change" trigger ends here
     
     }; // function "enableFiltering" ends here
