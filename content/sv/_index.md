@@ -62,5 +62,4 @@ SciLifeLab Data Platform finansieras av [SciLifeLab & Wallenberg National Progra
 <figure class="my-2 figure w-100 text-center">
   <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-75 d-none d-xl-inline" alt="Logos for Scilifelab, Knut and Alice Wallenberg Foundation, Chalmers, Göteborgs Universitet, Karolinska institutet, Kungliga Tekniska Högskolan, Linköpins Universitet, Lunds Universitet, Naturhistoriska Riksmuseet, Sveriges LantbruksUniversitet, Stockholms Universitet, Umeå Universitet, Uppsala Universitet">
   <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-100 d-xl-none" alt="Logos for Scilifelab, Knut and Alice Wallenberg Foundation, Chalmers, Göteborgs Universitet, Karolinska institutet, Kungliga Tekniska Högskolan, Linköpins Universitet, Lunds Universitet, Naturhistoriska Riksmuseet, Sveriges LantbruksUniversitet, Stockholms Universitet, Umeå Universitet, Uppsala Universitet">
->>>>>>> Stashed changes
 </figure>
