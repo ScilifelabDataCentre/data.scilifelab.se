@@ -2,115 +2,175 @@
 
 {{ .Content }}
 
-{{ $services := .Site.Data.services }}
-{{ $targets := slice "researchers" "facilities"}}
-{{ range $target := $targets }}
-{{ if eq $target "researchers" }}
-<div class="row">
-  <div class="col">
-    <h3 id="for-researchers">Services for researchers</h3>
-  </div>
-  <div class="col-sm col-lg-3 text-end">
-    <div class="input-group">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-service-area="researchers_services">
-    </div>
-  </div>
-</div>
-<div class="mt-2">
-  <p>These services are available free of charge to all life science researchers and communities in Sweden,
-    regardless of SciLifeLab affiliation.</p>
-</div>
-{{ else if eq $target "facilities" }}
-<div class="row">
-  <div class="col">
-    <h3 id="for-facilities">Services for data-producing facilities/units</h3>
-  </div>
-  <div class="col-sm col-lg-3 text-end">
-    <div class="input-group">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-service-area="facilities_services">
-    </div>
-  </div>
-</div>
-<div class="mt-2">
-  <p>The services below are available to facilities/units producing life science data in Sweden. In some
-    cases, the services may only be available for SciLifeLab infrastructure units.</p>
-</div>
+{{/* Compile list of the services in Hugo */}}
+{{ $r_slist := slice }}
+{{ $r_stype := slice }}
+{{ $f_slist := slice }}
+{{ $f_stype := slice }}
+{{ $r_smain := slice }}
+{{ $f_smain := slice }}
+{{ range .Site.Data.services }}
+    {{ if in .target "researchers" }}
+      {{ $r_slist = $r_slist | append . }}
+      {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
+      {{ $r_smain = $r_smain | append (apply (split .maintained_by ", ") "lower" ".") }}
+    {{ end }}
+    {{ if in .target "facilities" }}
+      {{ $f_slist = $f_slist | append . }}
+      {{ $f_stype = $f_stype | append (apply .type "lower" ".") }}
+      {{ $f_smain = $f_smain | append (lower .maintained_by) }}
+    {{ end }}
 {{ end }}
-<div id="{{ $target }}_services" class="row g-3 mb-5">
-  {{ range $services }}
-  {{ if in .target $target }}
-  <div class="col-md-6 col-lg-4 service" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
-    <div class="bg-service">
-      <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
-        <a target="_self" href="{{ .url }}"><img class="img-fluid"
-            src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
-            alt="{{ .name }}"></a>
+{{ $r_stype = $r_stype | uniq }}
+{{ $r_smain = $r_smain | uniq }}
+{{ $f_stype = $f_stype | uniq }}
+{{ $f_smain = $f_smain | uniq }}
+{{ $services := dict "researchers" (dict "slist" $r_slist "stype" $r_stype "smain" $r_smain) 
+                     "facilities" (dict "slist" $f_slist "stype" $f_stype "smain" $f_smain) }}
+
+<!-- Tab list -->
+<ul class="nav nav-tabs nav-justified services-tab-list mb-3">
+  <li class="nav-item">
+    <a class="nav-link active" href="#services-researchers" data-bs-toggle="tab" role="tab">
+      Services for researchers
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#services-facilities" data-bs-toggle="tab" role="tab">
+      Services for data-producing facilities
+    </a>
+  </li>
+</ul>
+
+<!-- Tab content -->
+<div class="tab-content">
+  {{ $targets := slice "researchers" "facilities"}}
+  {{ range $target := $targets }}
+  {{ $target_slist := index (index $services $target) "slist" }}
+  {{ $target_stype := index (index $services $target) "stype" }}
+  {{ $target_smain := index (index $services $target) "smain" }}
+  <div class="tab-pane fade {{ if eq $target "researchers" }}show active{{ end }}"
+       id="services-{{ $target }}" role="tabpanel">
+    <div class="row">
+      <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
+        <div class="bg-light p-3" style="position: sticky; top: 15px;">
+          <h5>Search</h5>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
+          </div>
+          {{ if ge (len $target_stype) 1 }}
+          <div class="mt-3">
+            <h5>Type</h5>
+            {{ range sort $target_stype }}
+            <div class="form-check">   
+              <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ . | urlize }}">
+              <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
       </div>
-      <div class="p-2 bg-service-title">
-        <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+      <div class="col-lg">
+        <div id="{{ $target }}_services" class="row g-3 mb-5">
+          {{ range $target_slist }}
+          <div class="col-md-6 col-lg-4 service" data-stype="{{ delimit (apply .type "urlize" ".") " " }}"
+               {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
+            <div class="bg-service">
+              <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+                <a target="_self" href="{{ .url }}"><img class="img-fluid"
+                    src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+                    alt="{{ .name }}"></a>
+              </div>
+              <div class="p-2 bg-service-title">
+                <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+              </div>
+              <div class="p-2">
+                {{ .description }}
+              </div>
+              <div class="px-2">
+                <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+              </div>
+              <div class="px-2">
+                <b>Maintained by:</b>
+                {{ if .maintained_by_url}}
+                <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
+                {{ else }}
+                {{ .maintained_by }}
+                {{ end }}
+              </div>
+              {{ if or (or .support_email .support_website) .support_github }}
+              <div class="px-2 mb-2">
+                <b>Support:</b>
+                {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+                {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+                {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
+                {{ with .support_status }}<a href="{{ . }}"><i class="bi bi-hdd-rack"></i></a> {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+          <div id="no-filtered-service" style="display:none;">
+            <p class="text-center">No services have the given keyword, please try to use another.</p>
+          </div>
+        </div>
       </div>
-      <div class="p-2">
-        {{ .description }}
-      </div>
-      <div class="px-2">
-        <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
-      </div>
-      <div class="px-2">
-        <b>Maintained by:</b>
-        {{ if .maintained_by_url}}
-        <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
-        {{ else }}
-        {{ .maintained_by }}
-        {{ end }}
-      </div>
-      {{ if or (or .support_email .support_website) .support_github }}
-      <div class="px-2 mb-2">
-        <b>Support:</b>
-        {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-        {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-        {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
-        {{ with .support_status }}<a href="{{ . }}"><i class="bi bi-hdd-rack"></i></a> {{ end }}
-      </div>
-      {{ end }}
     </div>
   </div>
   {{ end }}
-  {{ end }}
-  <div id="no-filtered-service" style="display:none;">
-    <p class="text-center">No services have the given keyword, please try to use another.</p>
-  </div>
 </div>
-{{ end }}
 
 <script>
-  
-  // Function to filter the service based on search text
-  $("input[type=text]").on("input", function(){
-    
-    // Get the text entered and service category 
-    var searchText = $(this).val().toLowerCase();
-    var searchArea = this.getAttribute('data-service-area');
-    
-    // Hide all services before filtering
-    $(`div#${searchArea} div.service`).hide();
-    $(`div#${searchArea} div#no-filtered-service`).hide();
-    
-    // If text empty show all services
-    if (searchText == ''){
-      $(`div#${searchArea} div.service`).show();
-    } else {
-      $(`div#${searchArea} div[data-search-tags*='${searchText}']`).show();
-      
-      // Display a message if no services available for given keyword
-      var visible_services = $(`div#${searchArea} div.service`).filter(":visible");
-      if (!visible_services.length) {
-        $(`div#${searchArea} div#no-filtered-service`).show();
-      }
-    }
-  });
+  // Function to search and filter the service based on selected input
+  function searchAndFilter (){
+    // Get all the imputs
+    var selected_filters = new Object();
+    var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value}).get();
+    if (selected_type.length){ selected_filters['data-stype'] = selected_type };
+    var search_text = $("div.tab-pane.active input[type=text]").val().toLowerCase();
+    if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
 
+    // Hide all services before filtering
+    $(`div.tab-pane.active div.service`).hide();
+    $(`div.tab-pane.active div#no-filtered-service`).hide();
+
+    // Show relavant services based on selected criteria
+    if (!Object.keys(selected_filters).length) {
+      $("div.tab-pane.active div.service").show();
+    } else {
+      var all_selected_services = [];
+      // Iterate over all selected criteria and collect the services
+      for (var [filter_name, filter_list] of Object.entries(selected_filters)) {
+        var s_services = new Set;
+        filter_list.forEach(function (filter_value) {
+          $(`div.tab-pane.active div.service[${filter_name}*=${filter_value}]`).each(function () { s_services.add(this); });
+        });
+        all_selected_services.push(s_services);
+      };
+      // When multiple criteria selectd it should act as AND not OR
+      selected_services = all_selected_services.reduce(function (x, y) {
+        var z = new Set;
+        x.forEach(v => y.has(v) && z.add(v));
+        return z;
+      });
+      // Set display for event with selected criteria
+      if (selected_services.size) {
+        selected_services.forEach(function (sService) { sService.style.display = ''; })
+      } else {
+        // Display a message if no events available for selected criteria
+        $('div.tab-pane.active div#no-filtered-service').show();
+      };
+    };
+
+    // Bring the tab top to the veiwport if it isn't
+    var tab_top = document.querySelector("ul.services-tab-list").getBoundingClientRect().top;
+    if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 15); }
+  }
+
+  // Call the search function on inputs
+  $('input:checkbox').on('change', searchAndFilter);
+  $("input[type=text]").on("input", searchAndFilter);
 </script>
 
 {{ end }}
