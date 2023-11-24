@@ -133,7 +133,7 @@
       dataArray.forEach((job) => {
         if (new Date(job.app_deadline) >= new Date().setHours(0,0,0,0)){
           jobsList.push(job);
-          job.type.forEach((jt) => {if(!jobTypes.includes(jt)){jobTypes.push(jt)}});
+          job.type.forEach((jt) => {if(!jobTypes.includes(jt.toLowerCase())){jobTypes.push(jt.toLowerCase())}});
           if(!employer.includes(job.employer)){employer.push(job.employer);}
         }
       });
@@ -151,12 +151,13 @@
                         </div>`
       } else {
         var jobsHTML = `<div class="row mt-3 mb-5">
-                          <div class="col-lg-2" id="job-filters">
+                          <div class="col-lg-2 pe-lg-0" id="job-filters">
+                            <div class="bg-light p-3" style="position: sticky; top: 15px;">
                             <h5>Type</h5>`;
         jobTypes.forEach((jt) => {
           jobsHTML += `<div class="form-check">   
                         <input class="form-check-input" type="checkbox" id="${jt}" name="type" value="${jt.replaceAll(" ", "-").toLowerCase()}">
-                        <label class="form-check-label" for="${jt}">${jt}</label>
+                        <label class="form-check-label" for="${jt}">${jt.charAt(0).toUpperCase() + jt.slice(1)}</label>
                       </div>`;
         });
         jobsHTML += `<h5 class="mt-3">Employer</h5>`;
@@ -167,6 +168,7 @@
                       </div>`;
         });
         jobsHTML += `</div>
+                    </div>
                     <div class="col-lg mt-2 mt-lg-0">
                       <div class="row g-2" id="jobs-container">`;
         jobsList.forEach((job, ind) => {
@@ -301,7 +303,11 @@
             $('div#no-filtered-jobs').show();
           }
         }
-    
+
+        // Bring the jobs section top to the veiwport if it isn't
+        var tab_top = document.querySelector("section#jobs-section").getBoundingClientRect().top;
+        if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 60); }
+
       }); // Checkbox on "change" trigger ends here
     };
     

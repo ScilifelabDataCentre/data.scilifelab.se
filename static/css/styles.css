@@ -110,38 +110,6 @@ h5 a:hover {
   font-weight: 500;
 }
 
-.btn-aqua {
-  color: #fff;
-  background-color: #4c979f;
-}
-
-.btn-aqua:hover {
-  color: #3f3f3f;
-  background-color: #4c979f;
-}
-
-/* logo */
-
-@media all and (min-width: 992px) and (max-width: 1199px) {
-  .logo {
-    max-width: 340px;
-  }
-  
-  .logo span {
-    font-size: 0.95rem;
-  }
-}
-
-@media all and (max-width: 460px) {
-  .logo {
-    width: 75%;
-  }
-  
-  .logo span {
-    display: none;
-  }
-}
-
 /* Nav links */
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -165,6 +133,39 @@ h5 a:hover {
 .navbar-light .navbar-nav .nav-main-menu.active {
   color: #045c64;
   text-decoration: underline;
+}
+
+/* Nav tab on services page */
+
+.services-tab-list a.nav-link {
+  text-decoration: none;
+}
+
+.services-tab-list a.nav-link.active {
+  font-weight: 600;
+}
+
+
+/* logo */
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    max-width: 340px;
+  }
+  
+  .logo span {
+    font-size: 0.95rem;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .logo {
+    width: 75%;
+  }
+  
+  .logo span {
+    display: none;
+  }
 }
 
 /* Background colors */
@@ -226,6 +227,18 @@ h5 a:hover {
 
 .highlight-tag a:hover {
   color: #a6a6a6;
+}
+
+/* Buttons */
+
+.btn-aqua {
+  color: #fff;
+  background-color: #4c979f;
+}
+
+.btn-aqua:hover {
+  color: #3f3f3f;
+  background-color: #4c979f;
 }
 
 /* Badges */
