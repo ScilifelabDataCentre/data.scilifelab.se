@@ -52,3 +52,4 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 ## Other information
 
 Applications to access FAIR Storage should be made through the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/), which also contains all of the forms related to project proposals and applications. You'll find the round for FAIR Storage as SciLifeLab _[annum]_ in the section for _Compute Rounds_ under _Centre Local Compute_.
+
