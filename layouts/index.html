@@ -277,11 +277,15 @@
     // Creates html entry for each app fetched from Scilifelab Serve
     function addServeApps(dataArray) {
       var appsRowNode = document.getElementById('recent-serve-apps');
-      for (const data of dataArray.data.slice(0, 4)) {
+      var appNum = 1;
+      for (const data of dataArray.data) {
+        // Move on to next app if description is missing and
+        if (appNum > 4) {
+          break;
+        } else if (data.description == null) {
+          continue;
+        };
         // Set description display based on length
-        if (data.description == null) {
-        continue;
-      }
         if (data.description.length > 140) {
           var descriptionDiv = `
                 <div id="app${data.id}" class="small collapse">${data.description}</div>
@@ -308,6 +312,7 @@
             </div>
           </div>`;
         appsRowNode.insertAdjacentHTML("beforeend", dataItemsHTML);
+        appNum += 1;
       };
     };
 
