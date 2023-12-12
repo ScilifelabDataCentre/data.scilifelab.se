@@ -440,5 +440,85 @@
     "url": "https://swefreq.nbis.se/",
     "description": "A website developed to make genomic datasets more findable and accessible",
     "maintained_by": "SciLifeLab Data Centre"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "community"
+    ],
+    "search_tags": [
+      "nf-core",
+      "bioinformatics",
+      "data analysis",
+      "best-practice",
+      "nextflow",
+      "pipelines",
+      "workflows",
+      "reproducible",
+      "reproducibility",
+      "open-source",
+      "open-science",
+      "genomics",
+      "sequencing",
+      "proteomics",
+      "transcriptomics"
+    ],
+    "name": "nf-core",
+    "description": "A community effort to collect a curated set of analysis pipelines and modules built using Nextflow.",
+    "thumbnail": "/img/service_thumbnails/nf-core.png",
+    "thumbnail_border": true,
+    "url": "https://nf-co.re",
+    "maintained_by": "nf-core community",
+    "maintained_by_url": "https://nf-co.re/contributors",
+    "support_slack": "https://nf-co.re/join/slack"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "sequencing",
+      "preprocessing",
+      "adapter trimming",
+      "primer trimming",
+      "quality trimming",
+      "demultiplexing",
+      "NBIS"
+    ],
+    "name": "Cutadapt",
+    "description": "Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.",
+    "thumbnail": "/img/service_thumbnails/cutadapt-logo.png",
+    "thumbnail_border": true,
+    "url": "https://cutadapt.readthedocs.io/",
+    "maintained_by": "NBIS",
+    "support_github": "https://github.com/marcelm/cutadapt/"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "sequencing",
+      "illumina",
+      "bcl2fastq",
+      "demultiplexing",
+      "NGI"
+    ],
+    "name": "CheckQC",
+    "description": "CheckQC is a program designed to check a set of quality criteria against an Illumina runfolder.",
+    "thumbnail": "/img/service_thumbnails/NGI_logo.jpg/",
+    "thumbnail_border": true,
+    "url": "http://checkqc.readthedocs.io/en/latest/",
+    "maintained_by": "SNP & SEQ Technology Platform, NGI",
+    "support_github": "https://github.com/Molmed/checkQC"
   }
 ]

@@ -14,7 +14,7 @@ menu:
     weight: 10
 ---
 
-This page details the services available for **researchers** and **data-producing facilities**. We define services as tools, databases, and support functions (e.g. hosting services) that are available in the area of data-driven life science. Use the search function at the top of each section below to identify services that may be relevant for you.
+This page details the services available for **researchers** and **data-producing facilities**. We define services as tools, databases, and support functions (e.g. hosting services) useful in data-driven life science. Use the search function to identify services that may be relevant for you.
 
 Some of the services listed here are hosted by [Scilifelab Data Centre](https://data.scilifelab.se/about/). The **status and uptime** of all such services can be viewed on the [Service status page](https://status.dc.scilifelab.se). To check on the status and uptime of a particular service, click on the <i class="bi-hdd-rack"></i> icon under 'Support' for that service.
 
