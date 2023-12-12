@@ -36,7 +36,7 @@
       <div class="px-2">
         <b>Created by:</b>
         {{ if .created_by_url}}
-          <a href="{{ .created_by_url}}">{{ .created_by }}</a>
+          <a href="{{ .created_by_url}}" aria-label = "{{ .created_by_url }}" >{{ .created_by }}</a>
         {{ else }}
           {{ .created_by }}
         {{ end }}
@@ -44,9 +44,9 @@
       {{ if or (or .support_email .support_website) .support_github }}
         <div class="px-2 mb-2">
           <b>Support:</b>
-          {{ with .support_email }}<a href="mailto:{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-          {{ with .support_website }}<a href="{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-          {{ with .support_github }}<a href="{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
+          {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+          {{ with .support_website }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+          {{ with .support_github }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
         </div>
       {{ end }}
     </div>

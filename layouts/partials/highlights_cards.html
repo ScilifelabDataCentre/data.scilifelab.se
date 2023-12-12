@@ -8,8 +8,7 @@
       <div class="bg-highlight">
       <div class="pt-3 px-2">
         <a href="{{ .Page.RelPermalink }}">
-            <img class="img-fluid rounded-top" src="{{ .Params.banner }}"
-                 alt="{{ if (isset .Params "banner_alt") }} {{ .Params.banner_alt }} {{ else }} {{.Title }} {{ end }}">
+            <img class="img-fluid rounded-top" src="{{ .Params.banner }}" alt="{{ if (isset .Params "banner_alt") }} {{ .Params.banner_alt }} {{ else }} {{.Title }}{{ end }}">
         </a>
       </div>
       <div class="mt-1 px-2">
