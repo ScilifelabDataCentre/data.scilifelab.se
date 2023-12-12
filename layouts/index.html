@@ -279,6 +279,9 @@
       var appsRowNode = document.getElementById('recent-serve-apps');
       for (const data of dataArray.data.slice(0, 4)) {
         // Set description display based on length
+        if (data.description == null) {
+        continue;
+      }
         if (data.description.length > 140) {
           var descriptionDiv = `
                 <div id="app${data.id}" class="small collapse">${data.description}</div>
@@ -309,7 +312,7 @@
     };
 
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fserve.scilifelab.se%2Fapi%2Flist-apps"),
+      decodeURIComponent("https%3A%2F%2Fserve.scilifelab.se%2Fopenapi%2Fv1%2Fpublic-apps"),
       addServeApps
     );
 
