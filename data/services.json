@@ -515,7 +515,7 @@
     ],
     "name": "CheckQC",
     "description": "CheckQC is a program designed to check a set of quality criteria against an Illumina runfolder.",
-    "thumbnail": "/img/service_thumbnails/NGI_logo.jpg/",
+    "thumbnail": "/img/service_thumbnails/NGI_logo.jpg",
     "thumbnail_border": true,
     "url": "http://checkqc.readthedocs.io/en/latest/",
     "maintained_by": "SNP & SEQ Technology Platform, NGI",
