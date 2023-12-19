@@ -51,7 +51,7 @@
         {{ else }}
         <li class="breadcrumb-item"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
         {{ end }}
-        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+        <li class="breadcrumb-item active" aria-current="page"><span style="color: #4a5055;">{{ .Title }}</span></li>
       </ol>
     </div>
   </nav>
