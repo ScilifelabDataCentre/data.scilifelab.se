@@ -146,6 +146,8 @@ h5 a:hover {
 }
 
 
+
+
 /* logo */
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
@@ -194,11 +196,11 @@ h5 a:hover {
 
 .bg-service {
   height: 100%;
-  background-color: #a6cbcf;
+  background-color: #d2e5e7;
 }
 
 .bg-service-title {
-  background-color: #d2e5e7;
+  background-color: #a6cbcf;
 }
 
 .bg-resource {
