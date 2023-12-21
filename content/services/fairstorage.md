@@ -45,9 +45,9 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 - [SciLifeLab FAIR Storage User Agreement](/fair_storage/scilifelab_fairstorage_user_agreement.pdf)
 
-- Intended use and allocation (_to be published_)
+- [SciLifeLab Guidelines for the Deletion of Project Storage](/fair_storage/SciLifeLab_Guidelines_for_Deletion_of_Project_Storage.pdf)
 
-- Deletion of project storage (_to be published_)
+- Intended use and allocation (_to be published_)
 
 ## Other information
 
