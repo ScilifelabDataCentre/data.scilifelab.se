@@ -392,6 +392,7 @@
     "thumbnail": "/img/service_thumbnails/dsw.jpg",
     "url": "https://dsw.scilifelab.se/",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "data-management@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602047"
   },
@@ -548,7 +549,7 @@
     "url": "https://github.com/Clinical-Genomics/chanjo",
     "maintained_by": "Clinical Genomics Stockholm",
     "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
-    "support_website": "https://github.com/Clinical-Genomics/chanjo"
+    "support_github": "https://github.com/Clinical-Genomics/chanjo"
   },
   {
     "target": [
