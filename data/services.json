@@ -581,5 +581,31 @@
     "maintained_by": "nf-core community",
     "maintained_by_url": "https://nf-co.re/contributors",
     "support_slack": "https://nf-co.re/join/slack"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "annotate",
+      "genetic",
+      "inheritance",
+      "genmod",
+      "VCF files",
+      "arbitrary pedigrees",
+      "patterns of inheritance",
+      "variant files"
+    ],
+    "name": "GENMOD",
+    "description": "GENMOD is a simple to use command line tool for annotating and analysing genomic variations in the VCF file format.",
+    "thumbnail": "/img/service_thumbnails/genmod-logo.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/genmod",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_website": "https://github.com/Clinical-Genomics/genmod"
   }
 ]
