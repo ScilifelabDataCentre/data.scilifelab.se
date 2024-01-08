@@ -17,13 +17,13 @@
         {{ range first 3 .Site.Data.services }}
         {{ if in .target "researchers" }}
         <div class="col">
-          <div class="bg-service">
+          <div class="bg-resource-and-service">
             <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
-            <div class="p-2 bg-service-title">
+            <div class="p-2 bg-resource-and-service-title">
               <b><a target="_self" href="{{ .url }}">{{ .name }}</a></b>
             </div>
             <div class="p-2">
@@ -49,13 +49,13 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
         {{ range first 3 .Site.Data.resources }}
         <div class="col">
-          <div class="bg-resource">
+          <div class="bg-resource-and-service">
             <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
-            <div class="p-2 bg-resource-title">
+            <div class="p-2 bg-resource-and-service-title">
               <b><a target="_self" href="{{ .url }}">{{ .name }}</a></b>
             </div>
             <div class="p-2">
