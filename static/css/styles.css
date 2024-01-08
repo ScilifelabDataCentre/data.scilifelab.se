@@ -234,8 +234,7 @@ h5 a:hover {
 /* Buttons */
 
 .btn-aqua {
-  color: #fff;
-  background-color: #4c979f;
+  background-color: #79B1B7;
 }
 
 .btn-aqua:hover {
@@ -251,7 +250,8 @@ h5 a:hover {
 }
 
 .event-type {
-  background-color: #a48fa9;
+  background-color: #77577E;
+  #background-color: #a48fa9;
   color: white;
 }
 
@@ -266,8 +266,9 @@ h5 a:hover {
 }
 
 .btn-details {
-  color: #fff;
-  background-color: #4c979f;
+  #color: #fff;
+  #background-color: #4c979f;
+  background-color: #79B1B7;
 }
 
 .btn-details:hover {
