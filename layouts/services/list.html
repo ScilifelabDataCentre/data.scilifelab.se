@@ -56,7 +56,8 @@
         <div class="bg-light p-3" style="position: sticky; top: 15px;">
           <h5>Search</h5>
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
+            <input type="text" id="Search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
+            <label class ="form-control-label" for="Search" aria-labelledby="Search"> 
           </div>
           {{ if ge (len $target_stype) 1 }}
           <div class="mt-3">
