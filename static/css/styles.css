@@ -194,24 +194,22 @@ h5 a:hover {
   background-color: rgba(229, 229, 229, 0.6);
 }
 
-.bg-service {
-  height: 100%;
-  background-color: #d2e5e7;
-}
-
-.bg-service-title {
-  background-color: #a6cbcf;
-}
-
-.bg-resource {
+.bg-resource-and-service {
   height: 100%;
   background-color: #c0d6d8;
 }
 
-.bg-resource-title {
-  background-color: #a6cbcf;
+.bg-resource-and-service-title {
+  background-color: #43858B;
+  #background-color: #a6cbcf;
 }
 
+.bg-resource-and-service-title a {
+  color: #fff;
+}
+.bg-resource-and-service-title a:hover{
+  color: #fff;
+}
 .bg-home-events-title {
   background-color: rgba(73, 31, 83, 0.1);
 }
