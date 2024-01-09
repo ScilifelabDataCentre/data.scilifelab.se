@@ -24,8 +24,10 @@
       </div>
     </div>
     <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
-    <input type="url" id="originUrl" name="originUrl" value="" hidden />
-    <input type='hidden' name='origin' value='general_contact'>
+    <label id="g-recaptcha" for="url">
+    <input type="url" id="originUrl" name="originUrl" value="" hidden aria-labelledby="g-recaptcha" />
+    <label id="general_contact" for="url">
+    <input type='hidden' name='origin' value='general_contact' hidden aria-labelledby="general_contact">
     <button type="submit" class="btn btn-aqua mt-2">Send</button>
   </form>
 </div>
@@ -47,6 +49,9 @@
       alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
     }
   });
-</script>
 
+  window.addEventListener("load", function () {
+    $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
+  });
+</script>
 {{ end }}

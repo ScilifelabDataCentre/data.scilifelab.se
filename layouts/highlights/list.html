@@ -61,13 +61,13 @@
                 a data highlight on the SciLifeLab Data Platform.</div>
             </div>
             <div class="mb-3 form-check fw-bold">
-              <input type="checkbox" class="form-check-input" id="i_am_an_author" name="i_am_an_author">
               <label class="form-check-label" for="i_am_an_author">I am (one of) the author(s) of this work.</label>
+              <input type="checkbox" class="form-check-input" id="i_am_an_author" name="i_am_an_author">
             </div>
             <div class="mb-3 form-check fw-bold">
+              <label class="form-check-label" for="would_like_to_write_text">I would like to write the text for this
               <input type="checkbox" class="form-check-input" id="would_like_to_write_text"
                 name="would_like_to_write_text">
-              <label class="form-check-label" for="would_like_to_write_text">I would like to write the text for this
                 data highlight myself.</label>
             </div>
             <div class="mb-3">
@@ -82,8 +82,8 @@
               </div>
             </div>
             <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
-            <input type="url" id="originUrl" name="originUrl" value="" hidden />
-            <input type='hidden' name='origin' value='data_highlight_suggestion'>
+            <input type="hidden" id="originUrl" name="originUrl" value="">
+            <input type="hidden" name="origin" value="data_highlight_suggestion">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -150,6 +150,9 @@
       event.preventDefault();
       alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
     }
+      window.addEventListener("load", function () {
+        $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
+
   });
   
   // Function to filter the service based on search text

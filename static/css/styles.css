@@ -146,6 +146,8 @@ h5 a:hover {
 }
 
 
+
+
 /* logo */
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
@@ -192,24 +194,22 @@ h5 a:hover {
   background-color: rgba(229, 229, 229, 0.6);
 }
 
-.bg-service {
+.bg-resource-and-service {
   height: 100%;
-  background-color: #a6cbcf;
-}
-
-.bg-service-title {
-  background-color: #d2e5e7;
-}
-
-.bg-resource {
-  height: 100%;
-  background-color: #82aeb2;
-}
-
-.bg-resource-title {
   background-color: #c0d6d8;
 }
 
+.bg-resource-and-service-title {
+  background-color: #43858B;
+  #background-color: #a6cbcf;
+}
+
+.bg-resource-and-service-title a {
+  color: #fff;
+}
+.bg-resource-and-service-title a:hover{
+  color: #fff;
+}
 .bg-home-events-title {
   background-color: rgba(73, 31, 83, 0.1);
 }
@@ -232,8 +232,7 @@ h5 a:hover {
 /* Buttons */
 
 .btn-aqua {
-  color: #fff;
-  background-color: #4c979f;
+  background-color: #79B1B7;
 }
 
 .btn-aqua:hover {
@@ -249,7 +248,8 @@ h5 a:hover {
 }
 
 .event-type {
-  background-color: #a48fa9;
+  background-color: #77577E;
+  #background-color: #a48fa9;
   color: white;
 }
 
@@ -264,8 +264,9 @@ h5 a:hover {
 }
 
 .btn-details {
-  color: #fff;
-  background-color: #4c979f;
+  #color: #fff;
+  #background-color: #4c979f;
+  background-color: #79B1B7;
 }
 
 .btn-details:hover {
