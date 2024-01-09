@@ -10,7 +10,7 @@ An event showing <b>how to apply for FAIR Storage resources</b> was held on 30th
 </div>
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
-<b>Apply for the 2023 Round now to get access to FAIR Storage</b>. The round is open until 31st December 2023, a new round will open in 2024.
+<b>Apply for the 2024 Round now to get access to FAIR Storage</b>. The round is open until 31st December 2024, and applications can be made at any time.
 </div>
 
 ## About SciLifeLab FAIR Storage
@@ -51,7 +51,7 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 ## Other information
 
-Applications to access FAIR Storage should be made through the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/), which also contains all of the forms related to project proposals and applications. You'll find the round for FAIR Storage as SciLifeLab _[annum]_ in the section for _Compute Rounds_ under _Centre Local Compute_.
+Applications to access FAIR Storage should be made through the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/), which also contains all of the forms related to project proposals and applications. You'll find the round for FAIR Storage as SciLifeLab _[annum]_ in the section for _Storage Rounds_ under _Centre Local Compute_.
 
 The recording of an event held on 30th November 2023 to discuss how to apply for SciLifeLab FAIR Storage Resources is available on [YouTube](https://youtu.be/Oh0-9i3tvag).
 

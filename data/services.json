@@ -607,5 +607,36 @@
     "maintained_by": "Clinical Genomics Stockholm",
     "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
     "support_website": "https://github.com/Clinical-Genomics/genmod"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "python",
+      "bioinformatics",
+      "multiqc",
+      "bioinformatics",
+      "pypi",
+      "biconda",
+      "aggregate",
+      "analysis",
+      "quality-control",
+      "reporting",
+      "data-visualization",
+      "vizualisation",
+      "visualization"
+    ],
+    "name": "MultiQC",
+    "description": "Aggregate results from bioinformatics analyses across many samples into a single report.",
+    "thumbnail": "/img/service_thumbnails/MultiQC_logo.png",
+    "thumbnail_border": true,
+    "url": "https://multiqc.info",
+    "maintained_by": "Seqera",
+    "maintained_by_url": "https://seqera.io",
+    "support_website": "https://community.seqera.io/c/multiqc/6"
   }
 ]
