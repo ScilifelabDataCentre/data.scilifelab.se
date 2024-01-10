@@ -6,11 +6,7 @@ aliases:
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
-An event showing <b>how to apply for FAIR Storage resources</b> was held on 30th November 2023. A recording of it is available on <a href="https://youtu.be/Oh0-9i3tvag">YouTube</a>
-</div>
-
-<div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
-<b>Apply for the 2023 Round now to get access to FAIR Storage</b>. The round is open until 31st December 2023, a new round will open in 2024.
+<b>Apply for the 2024 Round now to get access to FAIR Storage</b>. The round is open until 31st December 2024, and applications can be made at any time.
 </div>
 
 ## About SciLifeLab FAIR Storage
@@ -45,15 +41,15 @@ Below you will find all of the documents and guidelines related to FAIR Storage.
 
 - [SciLifeLab FAIR Storage User Agreement](/fair_storage/scilifelab_fairstorage_user_agreement.pdf)
 
-- Intended use and allocation (_to be published_)
+- [SciLifeLab Guidelines for the Deletion of Project Storage](/fair_storage/SciLifeLab_Guidelines_for_Deletion_of_Project_Storage.pdf)
 
-- Deletion of project storage (_to be published_)
+- Intended use and allocation (_to be published_)
 
 ## Other information
 
-Applications to access FAIR Storage should be made through the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/), which also contains all of the forms related to project proposals and applications. You'll find the round for FAIR Storage as SciLifeLab _[annum]_ in the section for _Compute Rounds_ under _Centre Local Compute_.
+Applications to access FAIR Storage should be made through the [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/), which also contains all of the forms related to project proposals and applications. You'll find the round for FAIR Storage as SciLifeLab _[annum]_ in the section for _Storage Rounds_ under _Centre Local Compute_.
 
-The recording of an event held on 30th November 2023 to discuss how to apply for SciLifeLab FAIR Storage Resources is available on [YouTube](https://youtu.be/Oh0-9i3tvag).
+The recording of an event held on 30th November 2023 to discuss how to apply for SciLifeLab FAIR Storage Resources is available on [YouTube](https://youtu.be/Oh0-9i3tvag). Please note that, as of 2024, there are some changes to the instructions detailed in the video. In particular, all future rounds will be located under _Storage Rounds_, rather than _Compute Rounds_.
 
 ## Contact
 

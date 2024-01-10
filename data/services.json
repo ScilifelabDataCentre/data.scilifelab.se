@@ -392,6 +392,7 @@
     "thumbnail": "/img/service_thumbnails/dsw.jpg",
     "url": "https://dsw.scilifelab.se/",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "data-management@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602047"
   },
@@ -497,6 +498,7 @@
     "thumbnail_border": true,
     "url": "https://cutadapt.readthedocs.io/",
     "maintained_by": "NBIS",
+    "maintained_by_url": "http://www.nbis.se/",
     "support_github": "https://github.com/marcelm/cutadapt/"
   },
   {
@@ -519,6 +521,122 @@
     "thumbnail_border": true,
     "url": "http://checkqc.readthedocs.io/en/latest/",
     "maintained_by": "SNP & SEQ Technology Platform, NGI",
+    "maintained_by_url": "https://www.snpseq.medsci.uu.se",
     "support_github": "https://github.com/Molmed/checkQC"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "clinical",
+      "sequencing",
+      "coverage data",
+      "chanjo",
+      "clinical genomics",
+      "Tool",
+      "BED-file",
+      "sample",
+      "Sambamba tool"
+    ],
+    "name": "Chanjo",
+    "description": "Chanjo is a sequencing coverage assessment tool useful in clinical and other sequencing contexts.",
+    "thumbnail": "/img/service_thumbnails/chanjo.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/chanjo",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/chanjo"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "pipeline",
+      "germline",
+      "somatic",
+      "variants",
+      "WGS sequencing",
+      "whole genome sequencing",
+      "sequencing",
+      "sarek",
+      "nf-core",
+      "pre-processing",
+      "next generation sequencing",
+      "NGS",
+      "Nextflow"
+    ],
+    "name": "nf-core/Sarek",
+    "description": "nf-core/sarek is a workflow designed to detect variants on whole genome or targeted sequencing data.",
+    "thumbnail": "/img/service_thumbnails/nf-core-sarek_logo.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/nf-core/sarek",
+    "maintained_by": "nf-core community",
+    "maintained_by_url": "https://nf-co.re/contributors",
+    "support_slack": "https://nf-co.re/join/slack"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "annotate",
+      "genetic",
+      "inheritance",
+      "genmod",
+      "VCF files",
+      "arbitrary pedigrees",
+      "patterns of inheritance",
+      "variant files"
+    ],
+    "name": "GENMOD",
+    "description": "GENMOD is a simple to use command line tool for annotating and analysing genomic variations in the VCF file format.",
+    "thumbnail": "/img/service_thumbnails/genmod-logo.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/genmod",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_website": "https://github.com/Clinical-Genomics/genmod"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "python",
+      "bioinformatics",
+      "multiqc",
+      "bioinformatics",
+      "pypi",
+      "biconda",
+      "aggregate",
+      "analysis",
+      "quality-control",
+      "reporting",
+      "data-visualization",
+      "vizualisation",
+      "visualization"
+    ],
+    "name": "MultiQC",
+    "description": "Aggregate results from bioinformatics analyses across many samples into a single report.",
+    "thumbnail": "/img/service_thumbnails/MultiQC_logo.png",
+    "thumbnail_border": true,
+    "url": "https://multiqc.info",
+    "maintained_by": "Seqera",
+    "maintained_by_url": "https://seqera.io",
+    "support_website": "https://community.seqera.io/c/multiqc/6"
   }
 ]
