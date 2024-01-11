@@ -3,8 +3,6 @@
 <section>
   <div class="row mt-2 pt-2">
     <div class="col-md-8 py-2 pe-3 vr-right">
-      <div style="color: white;" class="bg-success border rounded py-2 px-4 my-3 fst-italic"> <i class="bi bi-snow2"></i> <i class="bi bi-snow2"></i>
-        SciLifeLab Data Centre wish everyone a Merry Christmas and a Happy New Year! <i class="bi bi-snow2"></i> <i class="bi bi-snow2"></i><br> The team will be away from 20th December until 2nd January, and will respond to any questions/requests as soon as possible.</div>
       <!-- Services list -->
       {{ with .Site.GetPage "section" "services" }}
       <div class="row mb-2">
@@ -19,13 +17,13 @@
         {{ range first 3 .Site.Data.services }}
         {{ if in .target "researchers" }}
         <div class="col">
-          <div class="bg-service">
+          <div class="bg-resource-and-service">
             <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
-            <div class="p-2 bg-service-title">
+            <div class="p-2 bg-resource-and-service-title">
               <b><a target="_self" href="{{ .url }}">{{ .name }}</a></b>
             </div>
             <div class="p-2">
@@ -51,13 +49,13 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
         {{ range first 3 .Site.Data.resources }}
         <div class="col">
-          <div class="bg-resource">
+          <div class="bg-resource-and-service">
             <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
-            <div class="p-2 bg-resource-title">
+            <div class="p-2 bg-resource-and-service-title">
               <b><a target="_self" href="{{ .url }}">{{ .name }}</a></b>
             </div>
             <div class="p-2">
@@ -130,7 +128,7 @@
 </section>
 
 <!-- Recently published items in figshare-->
-<section style="background-image: url('/img/illustrations/bg_figshare.png');">
+<section style="background-image: url('/img/illustrations/bg_figshare.png');background-color: #396e74;">
   <div class="p-3 p-lg-4 my-4">
     <div class="row mb-3">
       <div class="col text-white">
@@ -157,7 +155,7 @@
 </section>
 
 <!-- recently deployed apps in serve -->
-<section style="background-image: url('/img/illustrations/bg_serve.png');">
+<section style="background-image: url('/img/illustrations/bg_serve.png');background-color: #491f53;">
   <div class="p-3 p-lg-4 my-4">
     <div class="row mb-3">
       <div class="col text-white">
