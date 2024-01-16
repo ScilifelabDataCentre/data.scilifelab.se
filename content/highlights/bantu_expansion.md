@@ -2,18 +2,20 @@
 title: New DNA research into Bantu-speaking populations' expansion provides a resource for future studies
 date: 2024-01-11
 summary: This study by Cesar A. Fortes-Lima, Concetta Burgarella, Rickard Hammarén et al is a comprehensive investigation of the genetic legacy of the Bantu expansion of the genomes of Bantu speaking populations today. The authors make avilable both genotyping information for 1,763 African individuals as well as Whole genomes for 12 Late Iron Age individuals.
-banner: highlights/BSP_banner_small.png
-banner_large: highlights/BSP_banner_large.png
+banner: /highlights/BSP_banner_small.png
+banner_large: /highlights/BSP_banner_large.png
 banner_caption: Image courtesy Fortes-Lima et al 2023
-banner_alt: Figure 1 from Fortes-Lima et al 2023 showing sampling locations and 3 dimensinality reduction methods applied to the genetic variaiton of the data in the study
+banner_alt: Figure 1 from Fortes-Lima et al 2023 showing sampling locations and 3 dimensinality reduction methods applied to the genetic variation of the data in the study
 tags:
   [
     Highlight,
     aDNA,
     human evolution,
+    Evolution,
     Bantu expansion,
-    gentics,
-    spatial analysis
+    Gentics,
+    Spatial analysis,
+    Bioinformatics
   ]
 authors: [Katarina Öjefors Stark & Rickard Hammarén]
 images: [/highlights/BSP_banner_large.png]
@@ -40,10 +42,7 @@ The results showed that Late Iron Age aDNA individuals found in South Africa sho
 In summary, Fortes-Lima, Burgarella, Hammarén, and colleagues show that the genetic history of Bantu-speaking people is complex and suggests a serial-founder migration model. These results shows that genetic diversity amongst BSPs declined with distance from western Africa, with current-day Zambia and the Democratic Republic of Congo as possible crossroads of interaction. This challenges previous models of the expansion of Bantu-speaking populations based on single disciplinary studies. In addition, the researchers propose the use of the new genetic dataset "AfricanNeo" as an important resource for a wide range of disciplines from medicine, health, and science to humanities. The dataset could, for example, be used for studying human genetic variation and human health in African and African-descendant populations.
 
 #### Article
-**The genetic legacy of the expansion of Bantu-speaking peoples in Africa**
-. Cesar A. Fortes-Lima, Concetta Burgarella, Rickard Hammarén, Anders Eriksson, Mário Vicente, Cecile Jolly, Armando Semo, Hilde Gunnink, Sara Pacchiarotti, Leon Mundeke, Igor Matonda, Joseph Koni Muluwa, Peter Coutros, Terry S. Nyambe, Cirhuza Justin Cikomola, Vinet Coetzee, Minique de Castro, Peter Ebbesen, Joris Delanghe, Mark Stoneking, Larry Barham, Marlize Lombard, Anja Meyer, Maryna Steyn, Helena Malmström, Jorge Rocha, Himla Soodyall, Brigitte Pakendorf, Koen Bostoen, and Carina M. Schlebusch. 2023. doi: [10.1038/s41586-023-06770-6](
-https://www.nature.com/articles/s41586-023-06770-6).
-
+Fortes-Lima, C.A., Burgarella, C., Hammarén, R. et al. The genetic legacy of the expansion of Bantu-speaking peoples in Africa. Nature (2023). [https://doi.org/10.1038/s41586-023-06770-6](https://doi.org/10.1038/s41586-023-06770-6)
 
 #### Funders
 
