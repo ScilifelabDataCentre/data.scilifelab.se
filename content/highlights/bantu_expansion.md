@@ -1,6 +1,6 @@
 ---
 title: New DNA research into Bantu-speaking populations' expansion provides a resource for future studies
-date: 2024-01-11
+date: 2024-01-19
 summary: This study by Cesar A. Fortes-Lima, Concetta Burgarella, Rickard Hammarén et al is a comprehensive investigation of the genetic legacy of the Bantu expansion of the genomes of Bantu speaking populations today. The authors make avilable both genotyping information for 1,763 African individuals and whole genomes for 12 Late Iron Age individuals.
 banner: /highlights/BSP_banner_small.png
 banner_large: /highlights/BSP_banner_large.png
