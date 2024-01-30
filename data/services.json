@@ -638,5 +638,51 @@
     "maintained_by": "Seqera",
     "maintained_by_url": "https://seqera.io",
     "support_website": "https://community.seqera.io/c/multiqc/6"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "database"
+    ],
+    "search_tags": [
+      "COViMAPP",
+      "COVID-19",
+      "meta-analysis",
+      "metaanalysis",
+      "plasma",
+      "blood",
+      "serum",
+      "mass spectrometry",
+      "protein",
+      "proteome",
+      "proteomics",
+      "high-resolution isoelectric focusing",
+      "HiRIEF",
+      "liquid chromatography tandem mass spectrometry",
+      "LC-MS/MS",
+      "SARS-CoV-2",
+      "corona virus",
+      "coronavirus",
+      "infection",
+      "coronavirus disease",
+      "circulating",
+      "host response",
+      "organ damage",
+      "biomarkers",
+      "proximity extension assays",
+      "Olink",
+      "SomaScan"
+    ],
+    "name": "COViMAPP",
+    "description": "A meta-analysis resource showing changes in plasma proteins that occur during COVID-19.",
+    "thumbnail": "/img/service_thumbnails/covimapp_logo.png",
+    "thumbnail_border": true,
+    "url": "https://covimapp.serve.scilifelab.se",
+    "maintained_by": "CoViMAPP team",
+    "maintained_by_url": "https://covimapp.serve.scilifelab.se",
+    "support_website": "https://serve.scilifelab.se/home/",
+    "support_email": "haris.babacic@scilifelab.se"
   }
 ]
