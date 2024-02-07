@@ -6,7 +6,7 @@ menu:
     bottom_about:
         name: På svenska
         identifier: svenska
-        weight: 30
+        weight: 40
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
