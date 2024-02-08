@@ -1,52 +1,53 @@
 ---
-title: Citation Information
+title: How to cite the Platform
 menu:
-    navbar_top:
-        name: Cite-us
-        identifier: citation
-        weight: 30
-    bottom_about:
-        name: Cite us
-        identifier: citation
-        weight: 30
+  navbar_top:
+    name: Cite us
+    identifier: citation
+    weight: 30
+  bottom_about:
+    name: Cite us
+    identifier: citation
+    weight: 30
+toc: true
 ---
 
-### How to cite and credit the Platform
+In line with the principles of _FAIR_ and _Open Science_, we encourage the reuse of material made available on the SciLifeLab Data Platform. On this page, you will find information about how to cite the platform when reusing/referencing the content. Please note that the information on the platform is updated continuously, therefore it is important to refer to specific versions (or to provide access dates) within citations.
 
-***If you are working in research***
+## Research community
 
-In the interest of adhering to *Open Science* and *FAIR principles* , the Platform encourages the research community to reuse material available on the Scilifelab Data Platform. If you use material from the Platform here is how to cite the material. Please note that the Platform content e.g. data, graph, or other material. is updating over time. Citation is important as if allows for metric and altmetic data to be collected.
+In this section, you'll find instructions on how to cite the platform website, or underlying code, in reearch publications.
 
-**Research Resource Identifier of Scilifelab Data Platform**
+### Citing website content
 
-The Resource Identification for Platform was created in support of the <a target="_blank" href="https://www.rrids.org/">Resource Identification Initiative</a>. It aims to promote research resource identification, discovery, and reuse. Research Resource Identifiers (**RRIDs**) are persistent and unique identifiers for referencing a research resource, the RRID for the Scilifelab Data Platform is **SCR_024865**. The first three letters *SCR* means this is a tool. We recommend that researchers wishing to cite the Scilifelab Data Platform to use the above mentioned RRID. This will facilitate reuse and allow others to easily find the *Summary Report* for the Scilifelab Data Platform and information about proper citation of the Platform as a tool.
+##### Research Resource Identifier for the SciLifeLab data Platform
 
-*Adding the RRID for the Scilifelab Data Platform it will allow for metric and altmetic data to be collected.*
+The Resource Identification Portal was created in support of the <a target="_blank" href="https://www.rrids.org/">Resource Identification Initiative</a>. It aims to promote the identification, discovery, and reuse of research resources. Research Resource Identifiers (**RRIDs**) are persistent and unique identifiers for referencing a research resource.
 
-**APA format in the reference list and in-text citation**
+The RRID for the SciLifeLab Data Platform is **SCR_024865**.
 
-SciLifeLab Data Centre (2024). Scilifelab Data Platform. Retrieved 2024-15-01 from <https://data.scilifelab.se/>, RRID:SCR_024865
+By citing the platform using the RRID, you will facilitate further reuse of the platform, enable us to track any that activity, and allow others to easily find the _Summary Report_ for usage of the SciLifeLab Data Platform.
 
-APA in-text citation: The data was made available on the Scilifelab Data Platform (RRID:SCR_024865) (2024)  
+##### APA format
 
-For certain parts of the Platform, e.g. the Data Highlights you may find an author mentioned. To cite these: Öjefors Stark. (2022, Dec 19). Cryo-electron tomography allows new knowledge about poliovirus replication and assembly sites in situ. Scilifelab Data Platform. Retrieved 2024-15-01 from Scilifelab Data Platform (RRID:SCR_024865).
+**In-text citation**: The data was made available on the Scilifelab Data Platform (RRID: SCR_024865) (year)
 
-#### How to access the code used for the Scilifelab Data Platform
+**Reference list** SciLifeLab Data Centre (year). Scilifelab Data Platform, version (version number) from <https://data.scilifelab.se>, RRID:SCR_024865.
 
-From the start, the Platform has been operated by the <a target="_blank" href="https://scilifelab.se/data">SciLifeLab Data Centre</a> and partners. However, it has received considerable input from the community. Indeed, many people have contributed in building the initial site, and to content throughout. An overview of some of the contributors that have been instrumental to establishing and advancing the Platform can be found on GitHub.All code data, visualtions, graphs, and content is free to reuse under MIT license. The source code for Scilifelab Data Platform can be found at <a target="_blank" href="https://github.com/ScilifelabDataCentre/data.scilifelab.se">Github</a>.
+You will find the version of the platform at the bottom of the footer on any page, or on our <a target="_blank" href="https://github.com/ScilifelabDataCentre/data.scilifelab.se">Github repository</a> under 'releases'.
 
-##### How to cite the code used for the Data Platform
+If you are aiming to cite particular pages of the platform in particular (e.g. the Data Highlights), you may find that an author is mentioned and a date is given. In this case, you should include the appropriate date and author instead, but must still include the RRID.
 
-**APA format**
+### Citing underlying code
 
-SciLifeLab Data Centre, 2024, data.scilifelab.se. Retrieved  January 15, 2024 from https://github.com/ScilifelabDataCentre/data.scilifelab.se
+From the start, the Platform has been operated by the <a target="_blank" href="https://scilifelab.se/data">SciLifeLab Data Centre</a> and partners. All of the source code used on the website is available on GitHub. The code used to produce the website is available in our <a target="_blank" href="https://github.com/ScilifelabDataCentre/data.scilifelab.se">Github repository</a>. All of the code that we have produced is available for reuse under an MIT licence.
 
-#### References
+##### APA format
 
-These are international references related to the Data Platform.
-Harrison PW, Lopez R, Rahman N et al. The Scilifelab Data Platform: accelerating SARS-CoV-2 and COVID-19 research through rapid open access data sharing. Nucleic Acids Res. 2021 Jul 2;49(W1):W619-W623.
-DOI: [10.1093/nar/gkab417](https.//doi.org/10.1093/nar/gkab417).
+SciLifeLab Data Centre (year) data.scilifelab.se, version: (version number), DOI: (insert version DOI shown on the badge in the README.md file of our <a target="_blank" href="https://github.com/ScilifelabDataCentre/data.scilifelab.se">Github repository</a>)). An example of the bedge is below:
 
-**If you are working as a journalist**
+[![DOI](https://zenodo.org/badge/474059254.svg)](https://zenodo.org/doi/10.5281/zenodo.10628655)
 
-You are welcome to, free of charge, use images, content or material from the **Scilifelab Data Platform** for articles, blogs, social media etc. Please refer to the Platform as **Scilifelab Data Platform** and link to our webpage https://data.scilifelab.se when you use content from the Platform.
+## Journalists
+
+Journalists are welcome to reuse images, content, or other material from the **SScilifelab Data Platform** for articles, blogs, social media etc., provided that the platform is acknowledged. Please refer to the platform as the **Scilifelab Data Platform** and link to our webpage <https://data.scilifelab.se> when you use content from the platform. You may also include our RRID: **SCR_024865** (see above for information on RRIDs).
