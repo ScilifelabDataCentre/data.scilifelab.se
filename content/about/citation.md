@@ -44,7 +44,7 @@ From the start, the Platform has been operated by the <a target="_blank" href="h
 
 ##### APA format
 
-SciLifeLab Data Centre (year) data.scilifelab.se, version: (version number), DOI: (insert version DOI shown on the badge in the README.md file of our <a target="_blank" href="https://github.com/ScilifelabDataCentre/data.scilifelab.se">Github repository</a>)). An example of the bedge is below:
+SciLifeLab Data Centre (year) data.scilifelab.se, version: (version number), DOI: (insert version DOI shown on the badge in the README.md file of our <a target="_blank" href="https://github.com/ScilifelabDataCentre/data.scilifelab.se">Github repository</a>). An example of the bedge is below:
 
 [![DOI](https://zenodo.org/badge/474059254.svg)](https://zenodo.org/doi/10.5281/zenodo.10628655)
 
