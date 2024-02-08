@@ -4,7 +4,7 @@ menu:
   navbar_top:
     name: Contact
     identifier: contact
-    weight: 90
+    weight: 20
   bottom_about:
     name: Contact form
     identifier: contact
