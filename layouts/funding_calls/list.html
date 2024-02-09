@@ -88,7 +88,7 @@
     <div class="row g-2 mt-3 mb-4">
       {{ range $other_funding_sources }}
       <div class="col-md-6 col-lg-4">
-        <div class="p-3 border rounded h-100">
+        <div class="card-box">
           <div class="row">
             <div class="col-auto"><img src="{{ .logo }}" alt="{{ .alt }}"  height="50" width="50"></div>
             <div class="col ps-0"><h5><a target="_blank" href="{{ .url }}">{{ .funder }}</a></h5></div>
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           dataList.forEach((item, ind) => {
             blockHTML += `
             <div class="col-md-6 col-lg-4">
-              <div class="p-3 border rounded h-100">`;
+              <div class="card-box">`;
 
                 blockHTML += `
                 <div class="d-flex justify-content-between">

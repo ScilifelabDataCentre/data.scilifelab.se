@@ -170,6 +170,15 @@ h5 a:hover {
   }
 }
 
+/* Box outline and shadow */
+.card-box {
+  height: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  border: 0.75px solid #a6a6a6;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+}
+
 /* Background colors */
 
 .bg-light-gray {
@@ -201,7 +210,6 @@ h5 a:hover {
 
 .bg-resource-and-service-title {
   background-color: #43858B;
-  #background-color: #a6cbcf;
 }
 
 .bg-resource-and-service-title a {
@@ -249,7 +257,6 @@ h5 a:hover {
 
 .event-type {
   background-color: #77577E;
-  #background-color: #a48fa9;
   color: white;
 }
 
@@ -264,8 +271,6 @@ h5 a:hover {
 }
 
 .btn-details {
-  #color: #fff;
-  #background-color: #4c979f;
   background-color: #79B1B7;
 }
 
