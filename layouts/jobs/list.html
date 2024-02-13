@@ -176,7 +176,7 @@
           var this_employer = job.employer.replaceAll(" ", "-").toLowerCase();
           var job_date = new Date(job.app_deadline);
           jobsHTML += `<div class="col-md-6 col-lg-4 job" data-job-type="${this_job_type}" data-employer="${this_employer}">
-                        <div class="p-3 border rounded h-100">
+                        <div class="card-box">
                           <div class="d-flex justify-content-between">
                             <div>`;
           job.type.forEach((jt) => {
