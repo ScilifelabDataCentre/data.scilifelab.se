@@ -4,6 +4,10 @@ images: [/img/service_thumbnails/hosting_DC.jpg]
 toc: true
 ---
 
+<div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
+<b>This service is not currently open for applications. An announcement will be made when a new application period is open.<br><br>If you are seeking hosting for data science applications such as those built on Shiny, Dash, Flask, Gradio, Streamlit, and other similar frameworks, please see <a href="https://serve.scilifelab.se">SciLifeLab Serve</a>, which is open continuously without a need to apply.</b>
+</div>
+
 ## Accessing SciLifeLab hosting services
 
 Hosting for data-centric tools and databases that provide value to the wider life science research community in Sweden is now available via the SciLifeLab Data Platform’s technical environment. Multiple types of tools can be hosted, including those related to the exploration, annotation, analysis, visualisation, sharing, or aggregation of data. We welcome applications for hosting from researchers, research groups, research communities, and research infrastructures alike. For information on the requirements that tools and databases must meet in order to be hosted, please refer to the ‘Hosting requirements for tools and databases’ subsection below.
@@ -35,4 +39,6 @@ We are deeply committed to the provenance and ownership rights of researchers, r
 
 ### Application and evaluation process
 
-To apply for hosting at the SciLifeLab Data Platform please [fill out this application form](/hosting_files/hosting_application_form.docx). The applications are evaluated by the SciLifeLab Data Centre management group on a rolling basis. You can expect to receive a response to your application within 3-4 weeks.
+When a round is open for applications, a form will be made available for potential users to fill in. Applications will be evaluated by SciLifeLab Data Centre management group.
+
+<!-- To apply for hosting at the SciLifeLab Data Platform please [fill out this application form](/hosting_files/hosting_application_form.docx). The applications are evaluated by the SciLifeLab Data Centre management group on a rolling basis. You can expect to receive a response to your application within 3-4 weeks. -->
