@@ -7,10 +7,10 @@ This is the source code for the SciLifeLab Data Platform website:
 
 - [Introduction](#introduction)
 - [Development](#development)
-    - [Step 1: Access the code](#step-1-access-the-code)
-    - [Step 2a: Edit the files (online)](#step-2a-edit-the-files-online)
-    - [Step 2b: Edit the files (locally)](#step-2b-edit-the-files-locally)
-    - [Step 3: Make a pull request](#step-3-make-a-pull-request)
+  - [Step 1: Access the code](#step-1-access-the-code)
+  - [Step 2a: Edit the files (online)](#step-2a-edit-the-files-online)
+  - [Step 2b: Edit the files (locally)](#step-2b-edit-the-files-locally)
+  - [Step 3: Make a pull request](#step-3-make-a-pull-request)
 - [How to get help](#how-to-get-help)
 - [Credits](#credits)
 
@@ -19,6 +19,10 @@ This is the source code for the SciLifeLab Data Platform website:
 This website is maintained by the [SciLifeLab Data Centre](https://scilifelab.se/data/) ([GitHub organisation](https://github.com/ScilifelabDataCentre)).
 
 The site is built using the [Hugo](https://gohugo.io/) static web site generator, [Bootstrap 5](https://getbootstrap.com/) for styling and [Bootstrap icons](https://icons.getbootstrap.com/).
+
+## Cite this code
+
+<a href="https://zenodo.org/doi/10.5281/zenodo.10628655"><img src="https://zenodo.org/badge/474059254.svg" alt="DOI"></a>
 
 ## Development and contributions
 

@@ -26,25 +26,32 @@
   },
   {
     "target": [
-      "researchers", "facilities"
+      "researchers"
     ],
     "type": [
-      "Compute resources"
+      "tool"
     ],
     "search_tags": [
-      "Compute resources",
+      "SciLifeLab Serve",
+      "AI",
+      "Artificial intelligence",
+      "Apps",
+      "DASH",
+      "R-Shiny",
       "Hosting",
-      "E-infrastructure",
+      "Data sharing",
+      "Machine learning",
+      "NBIS",
       "SciLifeLab",
       "Data Centre"
     ],
-    "name": "Hosting on the Data Platform",
-    "description": "Details about how researchers, research groups, and organisations can apply for hosting via the SciLifeLab Platform.",
-    "url": "/services/hosting/",
-    "thumbnail": "/img/service_thumbnails/hosting_DC.jpg",
+    "name": "SciLifeLab Serve",
+    "description": "Platform for sharing machine learning models and data science applications, such as Shiny and Dash apps.",
+    "url": "https://serve.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "data-platform@scilifelab.se"
+    "support_email": "serve@scilifelab.se",
+    "support_website": "https://serve.scilifelab.se/user_guide"
   },
   {
     "target": [
@@ -151,35 +158,6 @@
     "maintained_by": "NBIS",
     "maintained_by_url": "http://www.nbis.se/",
     "support_email": "contact@metabolicatlas.org"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
-      "tool"
-    ],
-    "search_tags": [
-      "SciLifeLab Serve",
-      "AI",
-      "Artificial intelligence",
-      "Apps",
-      "DASH",
-      "R-Shiny",
-      "Hosting",
-      "Data sharing",
-      "Machine learning",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre"
-    ],
-    "name": "SciLifeLab Serve",
-    "description": "Tool allowing to host and share R Shiny and Dash apps, as well as trained machine learning models",
-    "url": "https://serve.scilifelab.se/",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "serve@scilifelab.se",
-    "support_website": "https://serve.scilifelab.se/user_guide"
   },
   {
     "target": [
@@ -684,5 +662,27 @@
     "maintained_by_url": "https://covimapp.serve.scilifelab.se",
     "support_website": "https://serve.scilifelab.se/home/",
     "support_email": "haris.babacic@scilifelab.se"
+  },
+  {
+    "target": [
+      "researchers", "facilities"
+    ],
+    "type": [
+      "Compute resources"
+    ],
+    "search_tags": [
+      "Compute resources",
+      "Hosting",
+      "E-infrastructure",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "Hosting on the Data Platform",
+    "description": "Details about how researchers, research groups, and organisations can apply for hosting via the SciLifeLab Platform.",
+    "url": "/services/hosting/",
+    "thumbnail": "/img/service_thumbnails/hosting_DC.jpg",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "data-platform@scilifelab.se"
   }
 ]
