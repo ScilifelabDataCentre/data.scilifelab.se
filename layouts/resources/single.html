@@ -1,0 +1,160 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+{{/* Compile list of the repositories in Hugo */}}
+{{ $r_slist := slice }}
+{{ $r_stype := slice }}
+{{ $r_sddls := slice }}
+{{ $r_smain := slice }}
+{{ range .Site.Data.repositories }}
+    {{ if in .target "researchers" }}
+      {{ $r_slist = $r_slist | append . }}
+      {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
+      {{ $r_sddls = $r_sddls | append (apply .ddls "lower" ".") }}
+      {{ $r_smain = $r_smain | append (apply (split .maintained_by ", ") "lower" ".") }}
+    {{ end }}
+{{ end }}
+{{ $r_stype = $r_stype | uniq }}
+{{ $r_sddls = $r_sddls | uniq }}
+{{ $r_smain = $r_smain | uniq }}
+{{ $repositories := dict "researchers" (dict "slist" $r_slist "stype" $r_stype "sddls" $r_sddls "smain" $r_smain) }}
+
+<!-- Repository content -->
+<div class="repository-content">
+  {{ $targets := slice "researchers"}}
+  {{ range $target := $targets }}
+  {{ $target_slist := index (index $repositories $target) "slist" }}
+  {{ $target_stype := index (index $repositories $target) "stype" }}
+  {{ $target_sddls := index (index $repositories $target) "sddls" }}
+  {{ $target_smain := index (index $repositories $target) "smain" }}
+  
+  <div class="row">
+    <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
+      <div class="bg-light p-3" style="position: sticky; top: 15px;">
+        <h5>Search</h5>
+        <div class="input-group">
+          <input type="text" id="Search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
+          <label class ="form-control-label" for="Search" aria-labelledby="Search"> 
+        </div>
+        {{ if ge (len $target_stype) 1 }}
+        <div class="mt-3">
+          <h5>Type</h5>
+          {{ range sort $target_stype }}
+          <div class="form-check">   
+            <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ . | urlize }}">
+            <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ if ge (len $target_sddls) 1 }}
+        <div class="mt-3">
+          <h5>DDLS area</h5>
+          {{ range sort $target_sddls }}
+          <div class="form-check">   
+            <input class="form-check-input" type="checkbox" id="{{ . }}" name="ddls" value="{{ . | urlize }}">
+            <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="col-lg">
+      <div id="{{ $target }}_services" class="row g-3 mb-5">
+        {{ range $target_slist }}
+        <div class="col-md-6 col-lg-4 service" data-stype="{{ delimit (apply .type "urlize" ".") " " }}" 
+            data-sddls="{{ delimit (apply .ddls "urlize" ".") ":" }}"
+            {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
+          <div class="bg-resource-and-service">
+            <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+              <a target="_self" href="{{ .url }}"><img class="img-fluid"
+                  src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+                  alt="{{ .name }}"></a>
+            </div>
+            <div class="p-2 bg-resource-and-service-title">
+              <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+            </div>
+            <div class="p-2">
+              {{ .description }}
+            </div>
+            <div class="px-2">
+              <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+            </div>
+            {{ if .support_website }}
+            <div class="px-2 mb-2">
+              <b>FAIRsharing:</b>
+              {{ with .support_website }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+        <div id="no-filtered-service" style="display:none;">
+          <p class="text-center">No repositories have the given keyword, please try to use another.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+</div>
+
+<script>
+  // Function to search and filter the repository based on selected input
+  function searchAndFilter (){
+    // Get all the imputs
+    var selected_filters = new Object();
+    var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value}).get();
+    if (selected_type.length){ selected_filters['data-stype'] = selected_type };
+    var selected_ddls = $("input:checkbox[name=ddls]:checked").map(function () {return this.value}).get();
+    if (selected_ddls.length){ selected_filters['data-sddls'] = selected_ddls };
+    var search_text = $("div.repository-content input[type=text]").val().toLowerCase();
+    if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
+
+    // Hide all services before filtering
+    $(`div.service`).hide();
+    $(`div#no-filtered-service`).hide();
+
+    // Show relavant services based on selected criteria
+    if (!Object.keys(selected_filters).length) {
+      $("div.service").show();
+    } else {
+      var all_selected_services = [];
+      console.log(selected_filters);
+      // Iterate over all selected criteria and collect the services
+      for (var [filter_name, filter_list] of Object.entries(selected_filters)) {
+        var s_services = new Set;
+        filter_list.forEach(function (filter_value) {
+          $(`div.service[${filter_name}*=${filter_value}]`).each(function () { s_services.add(this); });
+        });
+        all_selected_services.push(s_services);
+      };
+      // When multiple criteria selectd it should act as AND not OR
+      selected_services = all_selected_services.reduce(function (x, y) {
+        var z = new Set;
+        x.forEach(v => y.has(v) && z.add(v));
+        return z;
+      });
+      // Set display for event with selected criteria
+      if (selected_services.size) {
+        selected_services.forEach(function (sService) { sService.style.display = ''; })
+      } else {
+        // Display a message if no events available for selected criteria
+        $('div#no-filtered-service').show();
+      };
+    };
+
+    // Bring the tab top to the veiwport if it isn't
+    // var tab_top = document.querySelector("ul.services-tab-list").getBoundingClientRect().top;
+    // if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 15); }
+  }
+
+  // Call the search function on inputs
+  $('input:checkbox').on('change', searchAndFilter);
+  $("input[type=text]").on("input", searchAndFilter);
+</script>
+
+{{ end }}
