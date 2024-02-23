@@ -32,7 +32,9 @@ By citing the platform using the RRID, you will facilitate further reuse of the 
 
 For official guidance see the [SciCrunch page on RRID citations](https://scicrunch.org/resources/about/guidelines).
 
-**In-text citation**: Scilifelab Data Platform, SciLifeLab Data Centre, _version number_, RRID: SCR_024865
+**In-text citation**: Scilifelab Data Platform, SciLifeLab Data Centre, _version number_, RRID: SCR_024865. (Access date: date of access).
+
+**Reference list**: SciLifeLab Data Platform (_access date_), SciLifeLab Data Centre, version (version number) from https://data.scilifelab.se, RRID:SCR_024865.
 
 You will find the version of the platform at the bottom of the footer on any page, or on our <a target="_blank" href="https://github.com/ScilifelabDataCentre/data.scilifelab.se">Github repository</a> under 'releases'.
 
