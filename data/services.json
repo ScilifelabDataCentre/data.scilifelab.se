@@ -4,25 +4,18 @@
       "researchers"
     ],
     "type": [
-      "database",
-      "tool"
+      "database"
     ],
     "search_tags": [
-      "Data submission",
-      "Data repository",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre",
-      "Tool"
+      "BioImage Analysis", "AI Models", "Model Zoo", "Open Science", "Data-Driven Life Sciences", "DDLS", "modelling", "Artificial intelligence"
     ],
-    "name": "SciLifeLab Data Repository",
-    "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
-    "thumbnail": "/img/service_thumbnails/figshare.jpg",
-    "url": "https://scilifelab.figshare.com/",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "figshare@scilifelab.se",
-    "support_website": "https://scilifelab.se/data/repository"
+    "name": "AI4Life BioImage Model Zoo",
+    "description": "A collaborative effort to bring artificial intelligence models to the bioimaging community",
+    "thumbnail": "/img/service_thumbnails/bioimagezoo.jpg",
+    "url": "https://bioimage.io/#/",
+    "thumbnail_border": true,
+    "maintained_by": "AI4Life BioImage Model Zoo team",
+    "support_website": "https://oeway.typeform.com/to/K3j2tJt7?typeform-source=bioimage.io"
   },
   {
     "target": [
@@ -73,6 +66,31 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "FAIRstorage@scilifelab.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "database",
+      "tool"
+    ],
+    "search_tags": [
+      "Data submission",
+      "Data repository",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
+    ],
+    "name": "SciLifeLab Data Repository",
+    "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
+    "thumbnail": "/img/service_thumbnails/figshare.jpg",
+    "url": "https://scilifelab.figshare.com/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "figshare@scilifelab.se",
+    "support_website": "https://scilifelab.se/data/repository"
   },
   {
     "target": [
