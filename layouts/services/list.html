@@ -9,7 +9,7 @@
 {{ $f_stype := slice }}
 {{ $r_smain := slice }}
 {{ $f_smain := slice }}
-{{ range .Site.Data.services }}
+{{ range sort .Site.Data.services "name" }}
     {{ if in .target "researchers" }}
       {{ $r_slist = $r_slist | append . }}
       {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
