@@ -1,23 +1,28 @@
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+cff-version: 1.2.1
+message: "If you use or reuse this software, please cite it using the following metadata."
 authors:
 - family-names: "Hughes"
   given-names: "Liane"
+  orcid: 0000-0002-4784-5436
 - family-names: "Stark"
   given-names: "Katarina Öjefors"
+  orcid: 0000-0001-7970-7778
 - family-names: "Panneerselvam"
   given-names: "Senthilkumar"
 - family-names: "Islam"
   given-names: "Kazi Jahurul"
 - family-names: "Kochari"
   given-names: "Arnold"
+  orcid: 0000-0003-1373-5121
 - family-names: "Hammaren"
   given-names: "Rickard"
+  orcid: 0000-0001-9017-591X
 - family-names: "Lorenz"
   given-names: "Jan"
-- family-names: "Ostberg"
+- family-names: "Östberg"
   given-names: "Linus"
 - family-names: "Kallberg"
   given-names: "Yvonne"
+  orcid: 0000-0002-3977-9600
 title: "Swedish Data Platform"
 url: "https://github.com/ScilifelabDataCentre/data.scilifelab.se"

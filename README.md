@@ -24,6 +24,8 @@ The site is built using the [Hugo](https://gohugo.io/) static web site generator
 
 <a href="https://zenodo.org/doi/10.5281/zenodo.10628655"><img src="https://zenodo.org/badge/474059254.svg" alt="DOI"></a>
 
+Click on 'Cite this repository' near the top right of this repository to see how to formally cite this repository.
+
 ## Development and contributions
 
 All website content is written in [Markdown](https://guides.github.com/features/mastering-markdown/), YAML, or JSON which are all beginner-friendly formats so it should be relatively easy to contribute. Please visit the [CONTRIBUTING page](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md) for instructions on how to contribute to specific sections of the website.
