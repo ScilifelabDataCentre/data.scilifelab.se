@@ -2,12 +2,12 @@
 
 {{ .Content }}
 
-{{/* Compile list of the repositories in Hugo */}}
+{{/* Compile list of the data sources in Hugo */}}
 {{ $r_slist := slice }}
 {{ $r_stype := slice }}
 {{ $r_sddls := slice }}
 {{ $r_smain := slice }}
-{{ range .Site.Data.repositories }}
+{{ range .Site.Data.data_sources }}
     {{ if in .target "researchers" }}
       {{ $r_slist = $r_slist | append . }}
       {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
@@ -18,16 +18,16 @@
 {{ $r_stype = $r_stype | uniq }}
 {{ $r_sddls = $r_sddls | uniq }}
 {{ $r_smain = $r_smain | uniq }}
-{{ $repositories := dict "researchers" (dict "slist" $r_slist "stype" $r_stype "sddls" $r_sddls "smain" $r_smain) }}
+{{ $data_sources := dict "researchers" (dict "slist" $r_slist "stype" $r_stype "sddls" $r_sddls "smain" $r_smain) }}
 
 <!-- Repository content -->
-<div class="repository-content">
+<div class="data_sources-content">
   {{ $targets := slice "researchers"}}
   {{ range $target := $targets }}
-  {{ $target_slist := index (index $repositories $target) "slist" }}
-  {{ $target_stype := index (index $repositories $target) "stype" }}
-  {{ $target_sddls := index (index $repositories $target) "sddls" }}
-  {{ $target_smain := index (index $repositories $target) "smain" }}
+  {{ $target_slist := index (index $data_sources $target) "slist" }}
+  {{ $target_stype := index (index $data_sources $target) "stype" }}
+  {{ $target_sddls := index (index $data_sources $target) "sddls" }}
+  {{ $target_smain := index (index $data_sources $target) "smain" }}
   
   <div class="row">
     <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
@@ -93,7 +93,7 @@
         </div>
         {{ end }}
         <div id="no-filtered-service" style="display:none;">
-          <p class="text-center">No repositories have the given keyword, please try to use another.</p>
+          <p class="text-center">No data sources have the given keyword, please try to use another.</p>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
 </div>
 
 <script>
-  // Function to search and filter the repository based on selected input
+  // Function to search and filter the data sources based on selected input
   function searchAndFilter (){
     // Get all the imputs
     var selected_filters = new Object();
@@ -111,7 +111,7 @@
     if (selected_type.length){ selected_filters['data-stype'] = selected_type };
     var selected_ddls = $("input:checkbox[name=ddls]:checked").map(function () {return this.value}).get();
     if (selected_ddls.length){ selected_filters['data-sddls'] = selected_ddls };
-    var search_text = $("div.repository-content input[type=text]").val().toLowerCase();
+    var search_text = $("div.data_sources-content input[type=text]").val().toLowerCase();
     if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
 
     // Hide all services before filtering

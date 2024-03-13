@@ -1,0 +1,535 @@
+[
+  {
+    "target": ["researchers"],
+    "type": ["repository"],
+    "ddls": ["Epidemiology & Biology of Infection"],
+    "search_tags": [
+      "GISAID", "infectious", "disease", "influenza", "genetic sequence data", "clinical data", "epidemiological data", "emerging infectious diseases", "SARS-CoV-2", "COVID-19", "InfA", "InfB", "DNA"
+    ],
+    "name": "GISAID",
+    "description": "A sequencing data repository on emerging infectious diseases, including influenza and SARS-CoV-2. Requires registration to access the data, and there are multiple conditions linked to the sharing of data.",
+    "thumbnail": "/img/data_sources_thumbs/GISAID.jpg",
+    "url": "https://www.gisaid.org/",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["repository"],
+    "ddls": [
+      "Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"
+    ],
+    "search_tags": [
+      "infectious", "disease", "influenza", "sequencing data", "emerging infectious diseases", "SARS-CoV-2", "COVID-19", "InfA", "InfB", "genetics", "genes", "nucleotides", "assemblies", "ENA", "human diseases", "human data", "WGS", "whole genome sequencing", "raw data", "coding", "non-coding", "RNA", "DNA", "RNA-seq", "transcriptome assembly", "genomic data", "European Nucleotide Archive"
+    ],
+    "name": "The European Nucleotide Archive",
+    "description": "An open, global data resource for nucleotide sequences, including raw sequence data, alignments, and assemblies. The data is shared openly.",
+    "url": "http://www.ebi.ac.uk/ena",
+    "thumbnail": "/img/data_sources_thumbs/ENA.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["infectious", "disease", "tuberculosis", "TB", "surveillance", "interactive databases", "European", "reports", "ECDC", "infographics"],
+    "name": "ECDC Tuberculosis",
+    "description": "Contains open datasets related to tuberculosis, including an Atlas with an interface that interacts with the latest available data about a range of infectious diseases.",
+    "url": "https://www.ecdc.europa.eu/en/tuberculosis/surveillance",
+    "thumbnail": "/img/data_sources_thumbs/ecdc.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["infectious", "disease", "influenza", "avian influenza", "zoonotic", "zoonoses", "surveillance", "European", "reports", "ECDC"],
+    "name": "ECDC Avian Influenza",
+    "description": "Contains information related to avian influenza, including a distribution map with confirmed human cases by reporting, as well as guidelines for surveillance.",
+    "url": "https://www.ecdc.europa.eu/en/avian-influenza-humans/surveillance-and-disease-data",
+    "thumbnail": "/img/data_sources_thumbs/ecdc.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["biomedical research", "Federated European Genome-phenome Archive", "FEGA", "genomic data", "genetic", "phenotypes", "phenotypic", "DNA", "human data"],
+    "name": "FEGA Sweden",
+    "description": "Secure archiving and sharing of genetic and phenotypic data resulting from Swedish biomedical research projects. Gaining access to the data only will be granted after a formal application procedure.",
+    "url": "https://fega.nbis.se/",
+    "thumbnail": "/img/data_sources_thumbs/fega-sweden-logo.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["infectious", "disease", "influenza", "COVID-19", "SARS-CoV-2", "leishmaniases schistosomiasis", "Ebola", "Chagas disease", "Laboratory", "clinical", "epidemiology", "Infectious Disease Data Observatory", "patient data"],
+    "name": "Infectious Disease Data Observatory",
+    "description": "Brings together multiple data types from infectious diseases to improve diagnosis and treatment of patients in the clinic. Access to the data held in the IDDO data repository has to be requested.",
+    "url": "https://www.iddo.org/data-sharing/accessing-data",
+    "thumbnail": "/img/data_sources_thumbs/IDDO.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["disease", "sample", "COVID-19", "SARS-CoV-2", "iPSC", "Animal genomes", "genomics", "proteomics", "cell biology", "clinical genetics", "BioSamples", "RNA", "RNA-seq", "transcriptomics", "assay", "array express", "ENA", "European Nucleotide Archive"],
+    "name": "BioSamples",
+    "description": "BioSamples stores and supplies metadata for a large number of biological samples used in research and development. The samples are either 'reference' samples or samples used in an assay database.",
+    "url": "https://www.ebi.ac.uk/biosamples",
+    "thumbnail": "/img/data_sources_thumbs/BioSamples.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["UK", "disease", "sample", "COVID-19", "SARS-CoV-2", "biological sample", "biobank", "biomedical", "infectious", "UK Biobank", "environmental data", "lifestyle data", "genotype data", "genes", "WGS", "whole genome sequencing", "WES", "exome", "genome", "biomarkers", "longitudinal data", "coding variation", "deep phenotyping", "phenotyping", "MRI"],
+    "name": "UK Biobank",
+    "description": "A large-scale biomedical database including biological and clinical data from 500K participants in the UK. Applications to access the data are welcomed from researchers anywhere in the world.",
+    "url": "https://www.ukbiobank.ac.uk/",
+    "thumbnail": "/img/data_sources_thumbs/UK_biobank_logo.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["ELSI","disease", "sample", "biobank", "infectious", "biobanking", "biological sample", "BBMRI-ERIC", "software"],
+    "name": "BBMRI-ERIC",
+    "description": "A biobanking infrastructure that promotes biomedical research. Samples can be accessed with appropriate permissions. Services, software, tools, and support with ELSI are also available.",
+    "url": "https://www.bbmri-eric.eu/",
+    "thumbnail": "/img/data_sources_thumbs/BBMRI-ERIC.png",
+    "thumbnail_border": true
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection"],
+    "search_tags": ["antibiotic resistance", "antimicrobial resistance", "AMR", "infectious", "disease", "survey", "animals", "livestock", "marine", "freshwater", "maps", "resistance bank"],
+    "name": "Resistance bank",
+    "description": "The resistance bank is an open access repository for surveys and maps of antimicrobial resistance (AMR) in animals focusing on low and middle-income countries.",
+    "url": "https://resistancebank.org/",
+    "thumbnail": "/img/data_sources_thumbs/resistance_bank.png"
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["disease", "genomics", "infectious", "gene expression", "sequence", "sequencing", "high throughput", "Array Express", "RNA-seq", "RNA", "Single cell RNA-seq", "miRNA", "transcripts", "genome-wide expression", "genotyping", "chip-seq", "non-coding", "methylation", "assay", "animal sequencing", "metabolomic profiling"],
+    "name": "Array Express",
+    "description": "ArrayExpress is an archive of functional genomics data, such as gene expression or DNA methylation profiling data. The data is open for reuse by the research community.",
+    "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies",
+    "thumbnail": "/img/data_sources_thumbs/arrayexpress.png",
+    "thumbnail_border": true    
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["resource", "disease", "human variations", "variants", "clinical genetics", "annotation", "reference sequences", "somatic variants", "ClinVar", "ClinGen"],
+    "name": "ClinVar",
+    "description": "The primary site for deposition and retrieval of variant data and annotations from individual submitters. It helps with explorations of how genomic variation is related to human health.",
+    "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+    "thumbnail": "/img/data_sources_thumbs/clinvar.png"   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["drug discovery","ChEMBL", "bioactive", "bioactivity", "drug", "drug-like", "molecules", "genomics", "genomic data", "gene", "genetic", "chemical", "chemistry", "drug development"],
+    "name": "ChEMBL",
+    "description": "A manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity, and genomic data to aid the translation of information into effective new drugs.",
+    "url": "https://www.ebi.ac.uk/chembl/",
+    "thumbnail": "/img/data_sources_thumbs/chembl.jpeg",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Gene Expression Omnibus", "GEO", "genomics", "gene expression", "array", "sequence", "microarray", "functional genomics", "RNA-seq", "RNA", "Single cell RNA-seq", "miRNA", "transcripts", "biochemistry"],
+    "name": "Gene Expression Omnibus",
+    "description": "An international public repository that archives and freely distributes microarray, next-generation sequencing, and other high-throughput functional genomics data submitted by the research community.",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/",
+    "thumbnail": "/img/data_sources_thumbs/geo.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Precision Medicine and Diagnostics"],
+    "search_tags": ["genomics", "gene expression", "array", "sequence", "microarray", "functional genomics", "RNA-seq", "RNA", "Single cell RNA-seq", "transcripts", "scRNA-seq", "gemma"],
+    "name": "Gemma",
+    "description": "Gemma provides data, experimental design annotations, and differential expression analysis results for microarray and RNA-seq experiments. Gemma contains data from thousands of public studies.",
+    "url": "https://gemma.msl.ubc.ca/home.html",
+    "thumbnail": "/img/data_sources_thumbs/gemma.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Precision Medicine and Diagnostics"],
+    "search_tags": ["genomics", "gene expression", "array", "sequence", "microarray", "functional genomics", "RNA-seq", "transcriptomics", "drug discovery", "disease", "treatment", "GENEVESTIGATOR"],
+    "name": "GENEVESTIGATOR",
+    "description": "Enables the analysis of thousands of studies simultaneously to find genes specifically related to a drug or to a disease. Free for those working in academia.",
+    "url": "https://genevestigator.com/",
+    "thumbnail": "/img/data_sources_thumbs/Genevestigator_logo.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Protein Data Bank", "PDB", "structure", "biochemistry", "proteomic", "nucleic acids", "assemblies", "alpha fold", "model archive", "computational models", "3D structure", "biochemistry"],
+    "name": "Protein Data Bank",
+    "description": "Includes over 170k 3D protein structures, nucleic acids, and complex assemblies for download. Allows users to explore computational structural models alongside data from AlphaFold DB and ModelArchive.",
+    "url": "https://www.rcsb.org/",
+    "thumbnail": "/img/data_sources_thumbs/pdb.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["The Cancer Genome Atlas", "TCGA", "genetic", "cancer", "patient", "NCI", "National Human Genome research institute", "epigenomic", "epigenetics", "transcriptomics", "proteomics", "proteins", "clinical data", "CNVs", "DNA", "methylation", "imaging", "miRNA", "microarray"],
+    "name": "The Cancer Genome Atlas",
+    "description": "Has >2.5 petabytes of genomic, epigenomic, transcriptomic, and proteomic data from >10k patients across 33 cancer types. Raw data is under controlled access, but derived data is openly accessible.",
+    "url": "https://www.cancer.gov/ccg/research/genome-sequencing/tcga",
+    "thumbnail": "/img/data_sources_thumbs/tcga.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Precision Medicine and Diagnostics"],
+    "search_tags": ["The Cancer Imaging Archive", "TCIA", "National cancer institute", "clinical", "cancer imaging", "clinical imaging", "patient outcomes", "MRI", "CT", "digital histopathology", "genomics", "image analyses", "lung cancer", "melanoma", "cancer", "prostate cancer", "breast cancer", "ovarian cancer", "leukaemia"],
+    "name": "The Cancer Imaging Archive",
+    "description": "Collections of data that are typically patient cohorts related by a common disease, image modality, or type. Supporting data for the images are also available, e.g. patient outcomes & treatment details.",
+    "url": "https://www.cancerimagingarchive.net/",
+    "thumbnail": "/img/data_sources_thumbs/tcia.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Precision Medicine and Diagnostics", "Cell and Molecular Biology"],
+    "search_tags": ["Cancer Cell Line Encyclopedia", "Cancer cell lines", "clinical", "cancer", "DNA", "mRNA expression", "copy number variants", "RNA expression", "epigenetic", "proteomics", "CCLE", "metabolomics"],
+    "name": "Cancer Cell Line Encyclopedia",
+    "description": "Genetic characterisation of a large panel of human cancer cell lines. It provides public access analysis and visualisation of DNA copy number, mRNA expression, mutation data and more.",
+    "url": "https://sites.broadinstitute.org/ccle",
+    "thumbnail": "/img/data_sources_thumbs/ccle.jpg",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Precision Medicine and Diagnostics"],
+    "search_tags": ["cBioPortal", "genomics", "cancer genomics", "cohort analysis", "clinical data", "tumour genomes"],
+    "name": "cBioPortal",
+    "description": "An open-access resource enabling the interactive exploration of multidimensional cancer genomics datasets from more than 5,000 tumour samples.",
+    "url": "https://www.cbioportal.org/",
+    "thumbnail": "/img/data_sources_thumbs/cbioportal.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Alpha Fold Protein Structure Database", "Alpha Fold", "AlphaFold", "Protein Structure", "3D structure", "structure", "AI", "artificial intelligence", "DeepMind", "EMBL-EBi", "amino acids"],
+    "name": "Alpha Fold Protein Structure Database",
+    "description": "Contains over 200 million predictions of 3D protein structure based on amino acid sequence. The predictions were generated using AlphaFold, an AI system developed by DeepMind.",
+    "url": "https://alphafold.ebi.ac.uk/",
+    "thumbnail": "/img/data_sources_thumbs/alphafold_db.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["European Chemical Biology Database", "ECBD", "EU-OPENSCREEN", "novel molecular tool", "compounds", "early therapeutic candidate molecules", "compound", "assays"],
+    "name": "European Chemical Biology Database",
+    "description": "The central hub for data generated within the EU-OPENSCREEN network. The network collaborates with external users to develop novel molecular tool compounds, and early therapeautic candidate molecules.",
+    "url": "https://ecbd.eu/",
+    "thumbnail": "/img/data_sources_thumbs/ecdb.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Swedish COVID-19 Sample Collection database", "biobank", "Biobank Sverige", "COVID-19", "SARS-CoV-2", "tissue", "patient", "metadata"],
+    "name": "Swedish COVID-19 Sample Collection Database",
+    "description": "The Swedish COVID-19 Sample Collection Database contains information about COVID-19 samples in biobanks across Sweden and how to access them, along with metadata about the samples.",
+    "url": "https://biobanks.pathogens.se/",
+    "thumbnail": "/img/data_sources_thumbs/pathogens.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["REACTOME", "bioinformatics tools", "pathways", "genome", "clinical", "modelling", "systems biology", "genetic", "genomics"],
+    "name": "REACTOME",
+    "description": "A graphical map of known biological processes and pathways. Provides tools to visualise, interpret, and analyse pathways to support research. Used for genome analysis, modelling, and systems biology.",
+    "url": "https://reactome.org/",
+    "thumbnail": "/img/data_sources_thumbs/Reactome.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Proteomics identifications archive database", "PRIDE", "proteins", "peptide", "mass spectrometry", "MS", "mass-spectrometry", "ProteomeXchange"],
+    "name": "PRoteomics IDEntifications Archive database",
+    "description": "A repository for mass spectrometry (MS) proteomics data. Includes protein and peptide identifications, with corresponding expression values, post-translational modifications, and supporting MS evidence.",
+    "url": "https://www.ebi.ac.uk/pride/",
+    "thumbnail": "/img/data_sources_thumbs/PRIDE.jpeg",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["IntAct molecular interaction database", "analysis", "EMBL-EBI", "molecules", "interactions"],
+    "name": "IntAct Molecular Interaction Database",
+    "description": "An open source database system and set of analysis tools for molecular interaction data. Interactions are derived from literature curation or direct user submission.",
+    "url": "https://www.ebi.ac.uk/intact/",
+    "thumbnail": "/img/data_sources_thumbs/intact.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Mass Spectrometry Interactive Virtual Environment", "MassIVE", "Mass Spectrometry", "MS", "computational", "protein", "biochemistry", "ProteomeXchange"],
+    "name": "MassIVE",
+    "description": "A community resource developed by the NIH-funded Center for Computational Mass Spectrometry to promote the global, free exchange of mass spectrometry data.",
+    "url": "https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp",
+    "thumbnail": "/img/data_sources_thumbs/MassIVE.png",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Proteome Exchange", "ProteomeXchange", "protein", "proteomics", "MS", "mass spectrometry", "mass-spectrometry", "consortium"],
+    "name": "ProteomeXchange",
+    "description": "A single point of submission of MS proteomics data. It includes a globally coordinated data submission and dissemination pipeline, involving the main proteomics repositories.",
+    "url": "https://www.proteomexchange.org/",
+    "thumbnail": "/img/data_sources_thumbs/proteomexchange.jpeg",
+    "thumbnail_border": true   
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["BioImage archive", "electron microscopy", "imaging", "bioimage archive", "cell", "tissue", "EMPIAR", "image data", "IDR", "BioStudies", "images", "bioimaging"],
+    "name": "BioImage archive",
+    "description": "A free, publicly available online resource which stores and distributes biological images. It accepts submissions of data from any imaging modality.",
+    "url": "https://www.ebi.ac.uk/bioimage-archive/",
+    "thumbnail": "/img/data_sources_thumbs/bioimagearchive.png" 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Electron Microscopy Public Image Archive", "electron microscope", "imaging", "EMPIAR", "3D structure", "X-ray tomography", "cryogenic-EM maps", "cryo electron microscopy", "imaging data", "cryoelectron microscopy"],
+    "name": "Electron Microscopy Public Image Archive",
+    "description": "A public resource for raw electron microscopy images. Accommodates images underpinning 3D cryo-EM maps and tomograms, as well as 3D datasets generated using volume EM techniques and X-ray tomography.",
+    "url": "https://www.ebi.ac.uk/empiar/",
+    "thumbnail": "/img/data_sources_thumbs/EMPIAR.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["SciLifeLab Data Repository", "general", "Figshare", "data", "metadata", "repository", "general repository", "SciLifeLab", "scientific publications", "supplementary"],
+    "name": "SciLifeLab Data Repository",
+    "description": "SciLifeLab’s institutional instance of FigShare. It is an open, general purpose repository including many data types. Data can be submitted by those working in Swedish life science research.",
+    "url": "http://figshare.scilifelab.se/",
+    "thumbnail": "/img/data_sources_thumbs/figshare.jpg"
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Dryad Digtal Repository", "general", "data", "repository", "general repository", "scientific publications", "supplementary"],
+    "name": "Dryad Digital Repository",
+    "description": "A general purpose repository for data underlying scientific and medical publications. Over 100,000 datasets have been made available.",
+    "url": "https://datadryad.org/",
+    "thumbnail": "/img/data_sources_thumbs/dryad.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Evolution and Biodiversity", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Mendeley Data", "general", "data", "repository", "general repository", "scientific publications", "supplementary"],
+    "name": "Mendeley Data",
+    "description": "A general purpose, cloud-based repository intended for research data. Data can be shared privately or publicly, and are assigned unique identifiers.",
+    "url": "https://data.mendeley.com/",
+    "thumbnail": "/img/data_sources_thumbs/mendeley-data.jpeg",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection"],
+    "search_tags": ["infectious disease", "pathogen", "public health", "communicable disease", "COVID-19", "influenza", "Public Health Agency Sweden", "Folkhälasomyndigheten", "FoHM", "epidemiology", "registry data"],
+    "name": "Public Health Agency of Sweden",
+    "description": "The Public Health Agency of Sweden (Folkhälsomyndigheten, FoHM) is responsible for issues related to public health. It collates and collects data on diseases that pose a threat to public health.",
+    "url": "https://data.mendeley.com/",
+    "thumbnail": "/img/data_sources_thumbs/fohm.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["infectious disease", "pathogen", "public health", "communicable disease", "COVID-19", "influenza", "Public Health Agency Sweden", "Folkhälsomyndigheten", "FoHM", "epidemiology", "registry data", "precision medicine", "general", "Swedish National Data Service", "SND", "DORIS", "social science"],
+    "name": "Swedish National Data Service",
+    "description": "A service for Swedish research in humanities, social sciences, and medicine. It includes multiple collections of research data from Sweden, as well as links to international data.",
+    "url": "https://snd.gu.se/en/catalogue",
+    "thumbnail": "/img/data_sources_thumbs/SND.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Registry-based research", "registry", "population registers", "Swedish Research Council", "Sweden", "vetenskapsrådet", "VR", "healthcare", "health", "biobanks"],
+    "name": "Registers in Sweden",
+    "description": "A list of Swedish registry-based data sources, maintained by the Swedish Research Council. Users can link data from multiple registers, including healthcare records, biobanks, and research data.",
+    "url": "https://www.registerforskning.se/en/registers-in-sweden/",
+    "thumbnail": "/img/data_sources_thumbs/VR.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["National Board of Health and Welfare", "health", "biobanks", "public health", "social care", "social welfare"],
+    "name": "National Board of Health and Welfare Statistical Databases",
+    "description": "A set of databases related to health and welfare from the National Board of Health and Welfare. This Swedish governmental agency is responsible for ensuring high-quality health and social care.",
+    "url": "https://www.socialstyrelsen.se/statistik-och-data/statistik/",
+    "thumbnail": "/img/data_sources_thumbs/socialstyrelsen.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Precision Medicine and Diagnostics"],
+    "search_tags": ["health", "biobanks", "public health", "social care", "social welfare", "SCB", "statistics sweden"],
+    "name": "Statistics Sweden",
+    "description": "Statistics Sweden has a large amount of open data available for everyone to use free of charge under open licences, including geodata, public data and data from different sectors.",
+    "url": "https://www.scb.se/hitta-statistik/temaomraden/integration/regeringsuppdraget-registerdata-for-integration/",
+    "thumbnail": "/img/data_sources_thumbs/SCB.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["genetics", "genome browser", "phenotype", "genetic data", "variants", "patient records", "DECIPHER"],
+    "name": "DECIPHER",
+    "description": "An interactive database that incorporates a suite of tools to aid the interpretation of genomic variants. It contains data from around 50k patients that have given consent for broad data sharing.",
+    "url": "https://www.deciphergenomics.org/",
+    "thumbnail": "/img/data_sources_thumbs/decipher.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["Skin Science Foundation Bioinformatics Hub", "bioinformatics", "dermatological diseases", "human diseases", "skin disease", "expression values", "transcriptomics"],
+    "name": "Skin Science Foundation Bioinformatics Hub",
+    "description": "The hub provides a web platform giving open access to curated transcriptomic data from multiple inflammatory skin diseases.",
+    "url": "https://biohub.skinsciencefoundation.org/labkey/home/project-begin.view?",
+    "thumbnail": "/img/data_sources_thumbs/skin-sci-foundation.jpg"
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics"],
+    "search_tags": ["The Sequence Read Archive", "human", "short reads", "DNA sequencing data", "high-throughput", "clinical studies", "metagenomes", "human sequences", "SRA"],
+    "name": "The Sequence Read Archive",
+    "description": "A bioinformatics database that provides a public repository for DNA sequencing data, particularly short reads generated by high‐throughput sequencing, which are typically less than 1000 base pairs in length.",
+    "url": "https://www.ncbi.nlm.nih.gov/sra/",
+    "thumbnail": "/img/data_sources_thumbs/sra.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Epidemiology & Biology of Infection", "Cell and Molecular Biology", "Precision Medicine and Diagnostics", "Evolution and Biodiversity"],
+    "search_tags": ["proteins", "protein sequences", "biological function of proteins", "UniProt", "protein annotation", "peptides", "proteomes", "proteomics", "UniParc", "UniRef", "human diseases", "disease", "human data", "infectious"],
+    "name": "Uniprot",
+    "description": "A comprehensive resource for protein sequence and annotation data. UniProt is a collaboration between EMBL-EBI, the SIB Swiss Institute of Bioinformatics, and the Protein Information Resource (PIR).",
+    "url": "https://www.uniprot.org/",
+    "thumbnail": "/img/data_sources_thumbs/UniProt.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Precision Medicine and Diagnostics"],
+    "search_tags": ["Genomic Data Commons", "GDC", "Cancer", "precision medicine", "expression", "proteins", "DNA", "DNA sequence data", "methylation", "protein expression", "mRNA", "miRNA", "personalised medicine"],
+    "name": "Genomic Data Commons",
+    "description": "The GDC provides the cancer research community with a unified repository and cancer knowledge base that enables data sharing across cancer genomic studies in support of precision medicine.",
+    "url": "https://gdc.cancer.gov/",
+    "thumbnail": "/img/data_sources_thumbs/GDC.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Repository"],
+    "ddls": ["Precision Medicine and Diagnostics"],
+    "search_tags": ["Proteomic Data Commons", "PDC", "Proteogenomic Cancer Atlas", "Proteomic data", "proteogenomic tumor datasets", "raw mass spectrometry-based data files", "NCI", "imaging", "genomic data", "medical image datasets", "personalised medicine", "precision medicine"
+    ],
+    "name": "Proteomic Data Commons",
+    "description": "The PDC represents the NCI's largest public repository of proteogenomic comprehensive tumor datasets, essentially a Proteogenomic Cancer Atlas.",
+    "url": "https://proteomic.datacommons.cancer.gov/pdc/",
+    "thumbnail": "/img/data_sources_thumbs/PDC.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Evolution and Biodiversity"],
+    "search_tags": ["Biodiversity atlas", "biodiversity data", "natural history", "biodiversity research", "GBIF", "Living Atlases", "Swedish Biodiversity Data infrastructure", "SBDI"
+    ],
+    "name": "Swedish Biodiversity Data infrastructure",
+    "description": "SBDI is the Swedish access point for open biodiversity data. It provides many powerful tools and services that allow you to search, download, analyse, and visualise the data.",
+    "url": "https://biodiversitydata.se/explore-analyze/data-and-tools/sbdi-datasets/",
+    "thumbnail": "/img/data_sources_thumbs/sbdi.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Evolution and Biodiversity"],
+    "search_tags": ["The Global Biodiversity Information Facility", "Biodiversity", "Evolution", "life on earth", "GBIF", "metadata", "sampling-event data", "occurrence data"
+    ],
+    "name": "The Global Biodiversity Information Facility",
+    "description": "An international network and data infrastructure aimed at providing open access to data about all types of life on Earth. It supports the publication of four classes of datasets using widely accepted biodiversity data standards.",
+    "url": "https://www.gbif.org/",
+    "thumbnail": "/img/data_sources_thumbs/gbif.png",
+    "thumbnail_border": true 
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Evolution and Biodiversity"],
+    "search_tags": ["The National Biodiversity Network Atlas", "Biodiversity atlas", "biodiversity data", "environmental data", "biodiversity", "NBN Atlas", "atlas"
+    ],
+    "name": "The National Biodiversity Network Atlas",
+    "description": "The NBN Atlas is the UK’s largest repository of publicly available biodiversity data. It also provides a platform to engage, educate and inform people about the natural world.",
+    "url": "https://nbnatlas.org/",
+    "thumbnail": "/img/data_sources_thumbs/nbn_atlas.jpg",
+    "thumbnail_border": true 
+  }
+]

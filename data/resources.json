@@ -52,22 +52,18 @@
     "support_email": "datacentre@scilifelab.se"
   },
   {
-    "type": ["Repositories"],
+    "type": ["Data sources"],
     "search_tags": [
-      "impact",
-      "research impact",
-      "bibliometrics",
-      "impact assessment",
-      "Altmetrics",
-      "plumx",
-      "impactstory",
-      "Alternative metrics",
-      "SciLifeLab",
-      "Data Centre"
+      "sources",
+      "data",
+      "repositories",
+      "download",
+      "submit",
+      "submission"
     ],
-    "name": "Repository collections from DDLS areas",
-    "description": "Information about alternative metrics, including what they are, their importance to your research, and how to maximise your scores.",
-    "url": "/resources/repositories",
+    "name": "Data sources",
+    "description": "Data sources that can potentially be used by researchers in Sweden. The list includes repositories as well as other resources containing data.",
+    "url": "/resources/data_sources",
     "thumbnail": "/img/resource_thumbnails/plumx_cloud.png",
     "thumbnail_border": true,
     "created_by": "SciLifeLab Data Centre",
