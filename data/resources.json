@@ -1,5 +1,24 @@
 [
   {
+    "type": ["Data sources"],
+    "search_tags": [
+      "sources",
+      "data",
+      "repositories",
+      "download",
+      "submit",
+      "submission"
+    ],
+    "name": "Data sources",
+    "description": "Sources of data that can potentially be used by researchers in Sweden. The list includes places where data and be accessed and/or submitted.",
+    "url": "/resources/data_sources",
+    "thumbnail": "/img/resource_thumbnails/plumx_cloud.png",
+    "thumbnail_border": true,
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
     "type": ["Compute resources"],
     "search_tags": [
       "Compute resource",
@@ -45,25 +64,6 @@
     "name": "Alternative metrics for impact",
     "description": "Information about alternative metrics, including what they are, their importance to your research, and how to maximise your scores.",
     "url": "/resources/altmetrics",
-    "thumbnail": "/img/resource_thumbnails/plumx_cloud.png",
-    "thumbnail_border": true,
-    "created_by": "SciLifeLab Data Centre",
-    "created_by_url": "https://scilifelab.se/data",
-    "support_email": "datacentre@scilifelab.se"
-  },
-  {
-    "type": ["Data sources"],
-    "search_tags": [
-      "sources",
-      "data",
-      "repositories",
-      "download",
-      "submit",
-      "submission"
-    ],
-    "name": "Data sources",
-    "description": "Data sources that can potentially be used by researchers in Sweden. The list includes repositories as well as other resources containing data.",
-    "url": "/resources/data_sources",
     "thumbnail": "/img/resource_thumbnails/plumx_cloud.png",
     "thumbnail_border": true,
     "created_by": "SciLifeLab Data Centre",
