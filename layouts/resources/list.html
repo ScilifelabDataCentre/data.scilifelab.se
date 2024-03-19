@@ -16,7 +16,7 @@
 </div>
 
 <div id="resources_container" class="row g-3 mb-5">
-  {{ range $resources }}
+  {{ range sort $resources "name" }}
   <div class="col-md-6 col-lg-4 resource" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
     <div class="bg-resource-and-service">
       <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
