@@ -1,6 +1,5 @@
 ---
 title: Data sources for data-driven life science
-images: [/img/resource_thumbnails/compute_2.jpg]
 ---
 
 Here is a list of potential data sources that can be used for data-driven life sciences in Sweden.
