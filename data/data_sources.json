@@ -122,7 +122,7 @@
     "description": "Provides access to high-quality datasets related to rare diseases and orphan drugs. The data is available in a reusable and computable format.",
     "thumbnail": "/img/data_sources_thumbs/orphadata.png",
     "url": "https://www.orphadata.com/orphadata-science/",
-    "data":["Genes and genomes"],
+    "data":["Genes and genomes", "Clinical", "Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -136,7 +136,7 @@
     "description": "Facilitates the assembly, analysis, and archiving of microbiome-derived nucleic acid sequences. Provides taxonomic assignments and functional annotations covering multiple data types from many environments.",
     "thumbnail": "/img/data_sources_thumbs/mgnify.png",
     "url": "https://www.ebi.ac.uk/metagenomics",
-    "data":["Genes and genomes"],
+    "data":["Molecular and cellular structures","Genes and genomes"],
     "thumbnail_border": true
   },
   {
@@ -164,7 +164,7 @@
     "description": "A public, open source database detailing protein-protein interactions that are experimentally verified. The interactions have been mined from scientific literature by expert curators.",
     "thumbnail": "/img/data_sources_thumbs/mint.png",
     "url": "https://mint.bio.uniroma2.it",
-    "data":["Enzymes, pathways, interactions", "Proteins and proteomes"],
+    "data":["Enzymes, pathways, interactions", "Proteins and proteomes","Molecular and cellular structures"],
     "thumbnail_border": true
   },
   {
@@ -220,7 +220,7 @@
     "description": "A dictionary of molecular entities (i.e. constitutionally or isotopically distinct atoms, molecules, ions, ion pairs, radicals, etc.). It is focused in particular on small chemical compounds.",
     "thumbnail": "/img/data_sources_thumbs/chembi.png",
     "url": "https://www.ebi.ac.uk/chebi/",
-    "data":["Chemical biology"]
+    "data":["Chemical biology", "Molecular and cellular structures"]
   },
   {
     "target": ["researchers"],
@@ -260,7 +260,7 @@
     "description": "A database containing information about enzymes and enzyme-ligands from all taxonomic groups. Data is extracted from primary literature, and integrated with external data and prediction algorithms.",
     "thumbnail": "/img/data_sources_thumbs/BRENDA.png",
     "url": "http://www.brenda-enzymes.org/",
-    "data":["Enzymes, pathways, interactions"],
+    "data":["Enzymes, pathways, interactions", "Genes and genomes"],
     "thumbnail_border": true
   },
   {
@@ -274,7 +274,7 @@
     "description": "The largest database for standardised bacterial phenotypic data. It includes >600 data fields, e.g. taxonomy, molecular data, and morphology. Integrates data from many sources & makes it freely accessible.",
     "thumbnail": "/img/data_sources_thumbs/bacdive.png",
     "url": "https://bacdive.dsmz.de/",
-    "data":["Genes and genomes"],
+    "data":["Genes and genomes", "Molecular and cellular structures"],
     "thumbnail_border": true
   },
   {
@@ -288,7 +288,7 @@
     "description": "A repository in which data on biological macromolecular structures can be deposited. A founding member of the worldwide Protein Data Bank (PDB), and works to collate, maintain, and provide access to PDB.",
     "thumbnail": "/img/data_sources_thumbs/PDBe.png",
     "url": "https://www.ebi.ac.uk/pdbe/about",
-    "data":["Proteins and proteomes", "Molecular and cellular structures"],
+    "data":["Proteins and proteomes", "Molecular and cellular structures", "Chemical biology"],
     "thumbnail_border": true
   },
   {
@@ -302,7 +302,7 @@
     "description": "Includes theoretical models of macromolecular structure, together with information about model coordinates, and details about assumptions, parameters, and constraints applied to simulations.",
     "thumbnail": "/img/data_sources_thumbs/modelarchive.png",
     "url": "https://www.modelarchive.org/",
-    "data":["Proteins and proteomes"]
+    "data":["Proteins and proteomes", "Molecular and cellular structures", "Chemical biology"]
   },
   {
     "target": ["researchers"],
@@ -315,7 +315,7 @@
     "description": "Contains data from metabolics experiments, and derived information from them. It contains multiple types of data from many species and techniques. It and is the recommended repository for many journals.",
     "thumbnail": "/img/data_sources_thumbs/metabolights.png",
     "url": "https://www.ebi.ac.uk/metabolights/",
-    "data":["Chemical biology"],
+    "data":["Chemical biology", "Molecular and cellular structures"],
     "thumbnail_border": true
   },
   {
@@ -329,7 +329,7 @@
     "description": "An open, systematic, and standardised resource for lipidomics research. It leads the field of lipid curation, classification, and nomenclature. It provides open access to multiple tools and data.",
     "thumbnail": "/img/data_sources_thumbs/lipid_maps.png",
     "url": "https://www.lipidmaps.org/",
-    "data":["Chemical biology"],
+    "data":["Chemical biology", "Enzymes, interactions, pathways", "Molecular and cellular structures"],
     "thumbnail_border": true
   },
   {
@@ -343,7 +343,7 @@
     "description": "The GWAS Catalog is a curated collection of human genome-wide association studies. It is results from a collaboration between EMBL-EBI and NHGRI.",
     "thumbnail": "/img/data_sources_thumbs/gwas.jpeg",
     "url": "https://www.ebi.ac.uk/gwas/",
-    "data":["Genes and genomes"],
+    "data":["Genes and genomes","Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -371,7 +371,7 @@
     "description": "A service for permanently archive and share personally identifiable genetic, phenotypic, and clinical data generated for biomedical research or for research-focused healthcare systems.",
     "thumbnail": "/img/data_sources_thumbs/ega.png",
     "url": "https://ega-archive.org/",
-    "data":["Genes and genomes"],
+    "data":["Genes and genomes", "Phenotypic", "Clinical"],
     "thumbnail_border": true
   },
   {
@@ -413,6 +413,7 @@
     "description": "A sequencing data repository on emerging infectious diseases, including influenza and SARS-CoV-2. Requires registration to access the data, and there are multiple conditions regarding data sharing.",
     "thumbnail": "/img/data_sources_thumbs/GISAID.jpg",
     "url": "https://www.gisaid.org/",
+    "data":["Genes and genomes", "Clinical", "Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -428,6 +429,7 @@
     "description": "An open, global data resource for nucleotide sequences, including raw sequence data, alignments, and assemblies. The data is shared openly.",
     "url": "http://www.ebi.ac.uk/ena",
     "thumbnail": "/img/data_sources_thumbs/ENA.png",
+    "data":["Genes and genomes", "Protein and proteomes", "Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -449,6 +451,7 @@
     "name": "ECDC Tuberculosis",
     "description": "Contains open datasets related to tuberculosis, including an atlas showing the distribution of reported cases across Europe.",
     "url": "https://www.ecdc.europa.eu/en/tuberculosis/surveillance",
+    "data":["Clinical", "Phenotypic"],
     "thumbnail": "/img/data_sources_thumbs/ecdc.png",
     "thumbnail_border": true
   },
@@ -461,6 +464,7 @@
     "description": "Contains information related to avian influenza, including a distribution map of confirmed human cases, as well as guidelines for surveillance.",
     "url": "https://www.ecdc.europa.eu/en/avian-influenza-humans/surveillance-and-disease-data",
     "thumbnail": "/img/data_sources_thumbs/ecdc.png",
+    "data":["Clinical", "Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -472,6 +476,7 @@
     "description": "Secure archiving and sharing of genetic and phenotypic data resulting from Swedish biomedical research projects. Access to the data only will be granted after a formal application procedure.",
     "url": "https://fega.nbis.se/",
     "thumbnail": "/img/data_sources_thumbs/fega-sweden-logo.png",
+    "data":["Genes and genomes", "Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -483,6 +488,7 @@
     "description": "Brings together multiple types of infectious disease data to improve the diagnosis and treatment of patients in the clinic. Access to the data held in the IDDO data repository has to be requested.",
     "url": "https://www.iddo.org/data-sharing/accessing-data",
     "thumbnail": "/img/data_sources_thumbs/IDDO.png",
+    "data":["Clinical", "Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -494,6 +500,7 @@
     "description": "BioSamples stores and supplies metadata for a large number of biological samples used in research and development. The samples are either 'reference' samples or samples used in an assay database.",
     "url": "https://www.ebi.ac.uk/biosamples/",
     "thumbnail": "/img/data_sources_thumbs/BioSamples.png",
+    "data":["Genes and genomes"],
     "thumbnail_border": true
   },
   {
@@ -505,6 +512,7 @@
     "description": "A large-scale biomedical database including biological and clinical data from 500K participants in the UK. Applications to access the data are welcomed from researchers anywhere in the world.",
     "url": "https://www.ukbiobank.ac.uk/",
     "thumbnail": "/img/data_sources_thumbs/UK_biobank_logo.png",
+    "data":["Phenotypic", "Biobank","Genes and genomes"],
     "thumbnail_border": true
   },
   {
