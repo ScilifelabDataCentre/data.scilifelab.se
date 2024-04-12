@@ -4,13 +4,13 @@
     "type": ["Data source"],
     "ddls": ["Precision Medicine and Diagnostics"],
     "search_tags": [
-      "ELIXIR Core Data Resource", "SCAPIS database", "Swedish CArdioPulmonary bioImage Study", "cardiovascular disease", "CVD", "chronic obstructive pulmonary disease", "COPD"
+      "ELIXIR Core Data Resource", "SCAPIS database", "Swedish CArdioPulmonary bioImage Study", "cardiovascular disease", "CVD", "chronic obstructive pulmonary disease", "COPD", "registry data", "health registers"
     ],
     "name": "SCAPIS database",
     "description": "Data from over 30k patients from across Sweden to study cardiovascular disease (CVD) and chronic obstructive pulmonary disease (COPD). Biobanked blood and DNA analysed in collaboration with SciLifeLab.",
     "thumbnail": "/img/data_sources_thumbs/SCAPIS.png",
     "url": "https://www.scapis.org/",
-    "data":["Imaging"],
+    "data":["Imaging", "Chemical biology", "Clinical", "Genes and genomes", "Biobank"],
     "thumbnail_border": true
   },
   {
@@ -102,13 +102,13 @@
     "type": ["Data source"],
     "ddls": ["Cell and Molecular Biology"],
     "search_tags": [
-      "ELIXIR Core Data Resource", "pombase", "fission yeast", "Schizosaccharomyces pombe", "structural annotation", "functional annotation", "literature curation", "large-scale datasets", "global core data source", "model organism"
+      "ELIXIR Core Data Resource", "pombase", "registry data", "fission yeast", "Schizosaccharomyces pombe", "structural annotation", "functional annotation", "literature curation", "large-scale datasets", "global core data source", "model organism"
     ],
     "name": "PomBase",
     "description": "A knowledge base for the model organism Schizosaccharomyces pombe, which is a fission yeast. It enables exploration of genetic, phenotypic, and molecular data from multiple sources.",
     "thumbnail": "/img/data_sources_thumbs/pombase.png",
     "url": "https://www.pombase.org/about",
-    "data":["Genes and genomes", "Phenotypic"],
+    "data":["Genes and genomes", "Phenotypic", "Proteins and proteomes", "Evolution and phylogeny"],
     "thumbnail_border": true
   },
   {
@@ -122,7 +122,7 @@
     "description": "Provides access to high-quality datasets related to rare diseases and orphan drugs. The data is available in a reusable and computable format.",
     "thumbnail": "/img/data_sources_thumbs/orphadata.png",
     "url": "https://www.orphadata.com/orphadata-science/",
-    "data":["Genes and genomes", "Clinical", "Phenotypic"],
+    "data":["Genes and genomes", "Clinical", "Phenotypic", "Biobank"],
     "thumbnail_border": true
   },
   {
@@ -247,7 +247,7 @@
     "description": "A database containing information on evolutionary relationships between protein domains. It classifies protein domains from Protein Data Bank in a hierarchical manner.",
     "thumbnail": "/img/data_sources_thumbs/CATH.png",
     "url": "http://www.cathdb.info/",
-    "data":["Molecular and cellular structures", "Proteins and proteomes"]
+    "data":["Molecular and cellular structures", "Proteins and proteomes", "Evolution and phylogeny"]
   },
   {
     "target": ["researchers"],
@@ -274,7 +274,7 @@
     "description": "The largest database for standardised bacterial phenotypic data. It includes >600 data fields, e.g. taxonomy, molecular data, and morphology. Integrates data from many sources & makes it freely accessible.",
     "thumbnail": "/img/data_sources_thumbs/bacdive.png",
     "url": "https://bacdive.dsmz.de/",
-    "data":["Genes and genomes", "Molecular and cellular structures"],
+    "data":["Genes and genomes", "Molecular and cellular structures", "Phenotypic"],
     "thumbnail_border": true
   },
   {
@@ -329,7 +329,7 @@
     "description": "An open, systematic, and standardised resource for lipidomics research. It leads the field of lipid curation, classification, and nomenclature. It provides open access to multiple tools and data.",
     "thumbnail": "/img/data_sources_thumbs/lipid_maps.png",
     "url": "https://www.lipidmaps.org/",
-    "data":["Chemical biology", "Enzymes, interactions, pathways", "Molecular and cellular structures"],
+    "data":["Chemical biology", "Molecular and cellular structures"],
     "thumbnail_border": true
   },
   {
@@ -343,7 +343,7 @@
     "description": "The GWAS Catalog is a curated collection of human genome-wide association studies. It is results from a collaboration between EMBL-EBI and NHGRI.",
     "thumbnail": "/img/data_sources_thumbs/gwas.jpeg",
     "url": "https://www.ebi.ac.uk/gwas/",
-    "data":["Genes and genomes","Phenotypic"],
+    "data":["Genes and genomes"],
     "thumbnail_border": true
   },
   {
@@ -429,7 +429,7 @@
     "description": "An open, global data resource for nucleotide sequences, including raw sequence data, alignments, and assemblies. The data is shared openly.",
     "url": "http://www.ebi.ac.uk/ena",
     "thumbnail": "/img/data_sources_thumbs/ENA.png",
-    "data":["Genes and genomes", "Protein and proteomes", "Phenotypic"],
+    "data":["Genes and genomes"],
     "thumbnail_border": true
   },
   {
@@ -441,6 +441,7 @@
     "description": "Data and code shared in papers on COVID-19 that include at least one author affiliated with a Swedish research organisation.",
     "url": "https://pathogens.se/datasets/all/",
     "thumbnail": "/img/data_sources_thumbs/pathogens.png",
+    "data":["Genes and genomes","Proteins and proteomes","Molecular and cellular structures","Chemical biology","Evolution and phylogeny","Enzymes, pathways, interactions","Clinical","Phenotypic","Biobank","Imaging"],
     "thumbnail_border": true
   },
   {
@@ -451,7 +452,7 @@
     "name": "ECDC Tuberculosis",
     "description": "Contains open datasets related to tuberculosis, including an atlas showing the distribution of reported cases across Europe.",
     "url": "https://www.ecdc.europa.eu/en/tuberculosis/surveillance",
-    "data":["Clinical", "Phenotypic"],
+    "data":["Clinical", "Phenotypic", "Epidemiology"],
     "thumbnail": "/img/data_sources_thumbs/ecdc.png",
     "thumbnail_border": true
   },
@@ -464,7 +465,7 @@
     "description": "Contains information related to avian influenza, including a distribution map of confirmed human cases, as well as guidelines for surveillance.",
     "url": "https://www.ecdc.europa.eu/en/avian-influenza-humans/surveillance-and-disease-data",
     "thumbnail": "/img/data_sources_thumbs/ecdc.png",
-    "data":["Clinical", "Phenotypic"],
+    "data":["Clinical", "Phenotypic", "Epidemiology"],
     "thumbnail_border": true
   },
   {
@@ -488,7 +489,7 @@
     "description": "Brings together multiple types of infectious disease data to improve the diagnosis and treatment of patients in the clinic. Access to the data held in the IDDO data repository has to be requested.",
     "url": "https://www.iddo.org/data-sharing/accessing-data",
     "thumbnail": "/img/data_sources_thumbs/IDDO.png",
-    "data":["Clinical", "Phenotypic"],
+    "data":["Clinical", "Phenotypic", "Epidemiology"],
     "thumbnail_border": true
   },
   {
@@ -512,7 +513,7 @@
     "description": "A large-scale biomedical database including biological and clinical data from 500K participants in the UK. Applications to access the data are welcomed from researchers anywhere in the world.",
     "url": "https://www.ukbiobank.ac.uk/",
     "thumbnail": "/img/data_sources_thumbs/UK_biobank_logo.png",
-    "data":["Phenotypic", "Biobank","Genes and genomes"],
+    "data":["Phenotypic", "Biobank","Genes and genomes", "Clinical"],
     "thumbnail_border": true
   },
   {
@@ -524,6 +525,7 @@
     "description": "A biobanking infrastructure that promotes biomedical research. Samples can be accessed with appropriate permissions. Services, software, tools, and support with ELSI are also available.",
     "url": "https://www.bbmri-eric.eu/",
     "thumbnail": "/img/data_sources_thumbs/BBMRI-ERIC.png",
+    "data":["Biobank"],
     "thumbnail_border": true
   },
   {
@@ -534,6 +536,7 @@
     "name": "Resistance bank",
     "description": "The resistance bank is an open access repository for surveys and maps of antimicrobial resistance (AMR) in animals. It focuses particularly on low and middle-income countries.",
     "url": "https://resistancebank.org/",
+    "data":["Epidemiology","Genes and genomes"],
     "thumbnail": "/img/data_sources_thumbs/resistance_bank.png"
   },
   {
@@ -545,6 +548,7 @@
     "description": "ArrayExpress is an archive of functional genomics data, such as gene expression or DNA methylation profiling data. The data is open for reuse by the research community.",
     "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies",
     "thumbnail": "/img/data_sources_thumbs/arrayexpress.png",
+    "data":["Genes and genomes"],
     "thumbnail_border": true    
   },
   {
@@ -555,6 +559,7 @@
     "name": "ClinVar",
     "description": "The primary site for the deposition and retrieval of variant data and annotations from individual submitters. It helps with explorations of how genomic variation is related to human health.",
     "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+    "data":["Genes and genomes", "Clinical"],
     "thumbnail": "/img/data_sources_thumbs/clinvar.png"   
   },
   {
@@ -565,6 +570,7 @@
     "name": "ChEMBL",
     "description": "A manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity, and genomic data to enable the translation of information into effective new drugs.",
     "url": "https://www.ebi.ac.uk/chembl/",
+    "data":["Molecular and cellular structures", "Genes and genomes", "Enzymes, pathways, interactions", "Chemical biology"],
     "thumbnail": "/img/data_sources_thumbs/chembl.jpeg",
     "thumbnail_border": true   
   },
@@ -577,6 +583,7 @@
     "description": "An international public repository that archives and freely distributes microarray, next-generation sequencing, and other high-throughput functional genomics data submitted by the research community.",
     "url": "https://www.ncbi.nlm.nih.gov/geo/",
     "thumbnail": "/img/data_sources_thumbs/geo.png",
+    "data":["Genes and genomes"],
     "thumbnail_border": true   
   },
   {
@@ -588,6 +595,7 @@
     "description": "Gemma provides data, experimental design annotations, and differential expression analysis results for microarray and RNA-seq experiments. Gemma contains data from thousands of public studies.",
     "url": "https://gemma.msl.ubc.ca/home.html",
     "thumbnail": "/img/data_sources_thumbs/gemma.png",
+    "data":["Genes and genomes"],
     "thumbnail_border": true   
   },
   {
@@ -599,6 +607,7 @@
     "description": "Enables the simultaneous analysis of thousands of studies to find genes specifically related to a drug or disease. Free to use for those working in academia.",
     "url": "https://genevestigator.com/",
     "thumbnail": "/img/data_sources_thumbs/Genevestigator_logo.png",
+    "data":["Genes and genomes"],
     "thumbnail_border": true   
   },
   {
@@ -610,6 +619,7 @@
     "description": "Includes over 170k 3D protein structures, nucleic acids, and complex assemblies available for download. Allows users to explore computational structural models alongside data from AlphaFold DB and ModelArchive.",
     "url": "https://www.rcsb.org/",
     "thumbnail": "/img/data_sources_thumbs/pdb.png",
+    "data":["Proteins and proteomes"],
     "thumbnail_border": true   
   },
   {
@@ -621,6 +631,7 @@
     "description": "Has >2.5 petabytes of genomic, epigenomic, transcriptomic, and proteomic data from >10k patients across 33 cancer types. Raw data is under controlled access, but derived data is openly accessible.",
     "url": "https://www.cancer.gov/ccg/research/genome-sequencing/tcga",
     "thumbnail": "/img/data_sources_thumbs/tcga.png",
+    "data":["Proteins and proteomes", "Genes and genomes"],
     "thumbnail_border": true   
   },
   {
@@ -632,13 +643,14 @@
     "description": "Collections of data that are typically patient cohorts related by a common disease, image modality, or type. Supporting data for the images are also available, e.g. patient outcomes & treatment details.",
     "url": "https://www.cancerimagingarchive.net/",
     "thumbnail": "/img/data_sources_thumbs/tcia.png",
+    "data":["Imaging", "Clinical","Genes and genomes"],
     "thumbnail_border": true   
   },
   {
     "target": ["researchers"],
     "type": ["Data source"],
     "ddls": ["Precision Medicine and Diagnostics", "Cell and Molecular Biology"],
-    "data": ["Imaging"],
+    "data": ["Genes and genomes", "Proteins and proteomes"],
     "search_tags": ["Cancer Cell Line Encyclopedia", "Cancer cell lines", "clinical", "cancer", "DNA", "mRNA expression", "copy number variants", "RNA expression", "epigenetic", "proteomics", "CCLE", "metabolomics"],
     "name": "Cancer Cell Line Encyclopedia",
     "description": "Genetic characterisation of a large panel of human cancer cell lines. It provides access to analyses and visualisations of DNA copy number, mRNA expression, mutation data, and more.",
@@ -654,6 +666,7 @@
     "name": "cBioPortal",
     "description": "An open-access resource enabling the interactive exploration of multidimensional cancer genomics datasets from more than 5,000 tumour samples.",
     "url": "https://www.cbioportal.org/",
+    "data":["Clinical","Genes and genomes"],
     "thumbnail": "/img/data_sources_thumbs/cbioportal.png",
     "thumbnail_border": true   
   },
@@ -666,6 +679,7 @@
     "description": "Contains over 200 million predictions of 3D protein structures based on amino acid sequence. The predictions were generated using AlphaFold, an AI system developed by DeepMind.",
     "url": "https://alphafold.ebi.ac.uk/",
     "thumbnail": "/img/data_sources_thumbs/alphafold_db.png",
+    "data":["Proteins and proteomes", "Molecular and cellular structures"],
     "thumbnail_border": true   
   },
   {
@@ -677,6 +691,7 @@
     "description": "The central hub for data generated within the EU-OPENSCREEN network. The network collaborates with external users to develop novel molecular tool compounds and early therapeautic candidate molecules.",
     "url": "https://ecbd.eu/",
     "thumbnail": "/img/data_sources_thumbs/ecdb.png",
+    "data":["Molecular and cellular structures"],
     "thumbnail_border": true   
   },
   {
@@ -688,6 +703,7 @@
     "description": "The Swedish COVID-19 Sample Collection Database contains information about COVID-19 samples in biobanks across Sweden and how to access them, along with metadata about the samples.",
     "url": "https://biobanks.pathogens.se/",
     "thumbnail": "/img/data_sources_thumbs/pathogens.png",
+    "data":["Biobank"],
     "thumbnail_border": true   
   },
   {
@@ -698,6 +714,7 @@
     "name": "REACTOME",
     "description": "A graphical map of known biological processes and pathways. Provides tools to visualise, interpret, and analyse pathways to support research. Used for genome analysis, modelling, and systems biology.",
     "url": "https://reactome.org/",
+    "data":["Proteins and proteomes", "Genes and genomes", "Clinical", "Enzymes, pathways, interactions"],
     "thumbnail": "/img/data_sources_thumbs/Reactome.png",
     "thumbnail_border": true   
   },
@@ -710,6 +727,7 @@
     "description": "A repository for mass spectrometry (MS) proteomics data. Includes protein and peptide identifications, with corresponding expression values, post-translational modifications, and supporting MS evidence.",
     "url": "https://www.ebi.ac.uk/pride/",
     "thumbnail": "/img/data_sources_thumbs/PRIDE.jpeg",
+    "data":["Proteins and proteomes"],
     "thumbnail_border": true   
   },
   {
@@ -721,6 +739,7 @@
     "description": "An open source database system and set of analysis tools for molecular interaction data. Interactions are derived from literature curation or direct user submission.",
     "url": "https://www.ebi.ac.uk/intact/",
     "thumbnail": "/img/data_sources_thumbs/intact.png",
+    "data":["Molecular and cellular structures", "Enzymes, pathways, interactions"],
     "thumbnail_border": true   
   },
   {
@@ -732,6 +751,7 @@
     "description": "A community resource developed by the NIH-funded Center for Computational Mass Spectrometry to promote the global, free exchange of mass spectrometry data.",
     "url": "https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp",
     "thumbnail": "/img/data_sources_thumbs/MassIVE.png",
+    "data":["Proteins and proteomes"],
     "thumbnail_border": true   
   },
   {
@@ -742,6 +762,7 @@
     "name": "ProteomeXchange",
     "description": "A single point of submission for mass spectrometry proteomics data. It includes a globally coordinated data submission and dissemination pipeline that involves the main proteomics repositories.",
     "url": "https://www.proteomexchange.org/",
+    "data":["Proteins and proteomes"],
     "thumbnail": "/img/data_sources_thumbs/proteomexchange.jpeg",
     "thumbnail_border": true   
   },
@@ -753,6 +774,7 @@
     "name": "BioImage archive",
     "description": "A free, publicly available online resource that stores and distributes biological images. It accepts submissions of data from any imaging modality.",
     "url": "https://www.ebi.ac.uk/bioimage-archive/",
+    "data":["Imaging"],
     "thumbnail": "/img/data_sources_thumbs/bioimagearchive.png" 
   },
   {
@@ -764,6 +786,7 @@
     "description": "A public resource for raw electron microscopy images. Includes images underpinning 3D cryo-EM maps and tomograms, as well as 3D datasets generated using volume EM techniques and X-ray tomography.",
     "url": "https://www.ebi.ac.uk/empiar/",
     "thumbnail": "/img/data_sources_thumbs/EMPIAR.png",
+    "data":["Imaging"],
     "thumbnail_border": true 
   },
   {
@@ -774,6 +797,7 @@
     "name": "SciLifeLab Data Repository",
     "description": "SciLifeLab’s institutional instance of FigShare. It is an open, general purpose repository that includes many data types. Data can be submitted by those working in Swedish life science research.",
     "url": "http://figshare.scilifelab.se/",
+    "data":["General"],
     "thumbnail": "/img/data_sources_thumbs/figshare.jpg"
   },
   {
@@ -785,6 +809,7 @@
     "description": "A general purpose repository for data underlying scientific and medical publications. Over 100,000 datasets have been made available.",
     "url": "https://datadryad.org/",
     "thumbnail": "/img/data_sources_thumbs/dryad.png",
+    "data":["General"],
     "thumbnail_border": true 
   },
   {
@@ -796,6 +821,7 @@
     "description": "A general purpose, cloud-based repository intended for research data. Data can be shared privately or publicly, and are assigned unique identifiers.",
     "url": "https://data.mendeley.com/",
     "thumbnail": "/img/data_sources_thumbs/mendeley-data.jpeg",
+    "data":["General"],
     "thumbnail_border": true 
   },
   {
@@ -807,6 +833,7 @@
     "description": "The Public Health Agency of Sweden (Folkhälsomyndigheten, FoHM) is responsible for issues related to public health. It collates and collects data on diseases that pose a threat to public health.",
     "url": "https://www.folkhalsomyndigheten.se/folkhalsorapportering-statistik/",
     "thumbnail": "/img/data_sources_thumbs/fohm.png",
+    "data":["Clinical", "Epidemiology"],
     "thumbnail_border": true 
   },
   {
@@ -818,6 +845,7 @@
     "description": "A service for Swedish research in humanities, social sciences, and medicine. It includes multiple collections of research data from Sweden, as well as links to international data.",
     "url": "https://snd.gu.se/en/catalogue",
     "thumbnail": "/img/data_sources_thumbs/SND.png",
+    "data":["Clinical", "Epidemiology", "Phenotypic"],
     "thumbnail_border": true 
   },
   {
@@ -829,6 +857,7 @@
     "description": "A list of Swedish registry-based data sources, maintained by the Swedish Research Council. Users can link data from multiple registers, including healthcare records, biobanks, and research data.",
     "url": "https://www.registerforskning.se/en/registers-in-sweden/",
     "thumbnail": "/img/data_sources_thumbs/VR.png",
+    "data":["Clinical", "Epidemiology", "Biobank"],
     "thumbnail_border": true 
   },
   {
@@ -840,6 +869,7 @@
     "description": "A set of databases related to health and welfare from the National Board of Health and Welfare. This Swedish governmental agency is responsible for ensuring high-quality health and social care.",
     "url": "https://www.socialstyrelsen.se/statistik-och-data/statistik/",
     "thumbnail": "/img/data_sources_thumbs/socialstyrelsen.png",
+    "data":["Clinical", "Epidemiology"],
     "thumbnail_border": true 
   },
   {
@@ -851,6 +881,7 @@
     "description": "Statistics Sweden has a large amount of data available for everyone to use free of charge under open licences. It includes geodata, public data, and data from different sectors.",
     "url": "https://www.scb.se/hitta-statistik/temaomraden/integration/regeringsuppdraget-registerdata-for-integration/",
     "thumbnail": "/img/data_sources_thumbs/SCB.png",
+    "data":["General"],
     "thumbnail_border": true 
   },
   {
@@ -862,6 +893,7 @@
     "description": "An interactive database that includes a suite of tools related to the interpretation of genomic variants. It contains data from around 50k patients that have given consent for broad data sharing.",
     "url": "https://www.deciphergenomics.org/",
     "thumbnail": "/img/data_sources_thumbs/decipher.png",
+    "data":["Genes and genomes", "Clinical", "Phenotypic"],
     "thumbnail_border": true 
   },
   {
@@ -872,7 +904,8 @@
     "name": "Skin Science Foundation Bioinformatics Hub",
     "description": "The hub includes a web platform through which users can gain open access to curated transcriptomic data from multiple inflammatory skin diseases.",
     "url": "https://biohub.skinsciencefoundation.org/labkey/home/project-begin.view?",
-    "thumbnail": "/img/data_sources_thumbs/skin-sci-foundation.jpg"
+    "thumbnail": "/img/data_sources_thumbs/skin-sci-foundation.jpg",
+    "data":["Genes and genomes", "Clinical"]
   },
   {
     "target": ["researchers"],
@@ -883,6 +916,7 @@
     "description": "A bioinformatics database that provides a public repository for DNA sequencing data. In particular, short reads generated using high‐throughput sequencing (typically less than 1000 base pairs long).",
     "url": "https://www.ncbi.nlm.nih.gov/sra/",
     "thumbnail": "/img/data_sources_thumbs/sra.png",
+    "data":["Genes and genomes"],
     "thumbnail_border": true 
   },
   {
@@ -894,6 +928,7 @@
     "description": "A comprehensive resource for protein sequence and annotation data. UniProt is a collaboration between EMBL-EBI, the Swiss Institute of Bioinformatics (SIB), and the Protein Information Resource (PIR).",
     "url": "https://www.uniprot.org/",
     "thumbnail": "/img/data_sources_thumbs/UniProt.png",
+    "data":["Proteins and proteomes", "Enzymes, pathways, interactions"],
     "thumbnail_border": true 
   },
   {
@@ -905,6 +940,7 @@
     "description": "A unified repository and cancer knowledge base that enables data sharing across cancer genomic studies in support of precision medicine.",
     "url": "https://gdc.cancer.gov/",
     "thumbnail": "/img/data_sources_thumbs/GDC.png",
+    "data":["Proteins and proteomes", "Genes and genomes", "Clinical"],
     "thumbnail_border": true 
   },
   {
@@ -917,6 +953,7 @@
     "description": "The PDC represents the NCI's largest public repository of comprehensive proteogenomic tumor datasets. It is essentially a Proteogenomic Cancer Atlas.",
     "url": "https://proteomic.datacommons.cancer.gov/pdc/",
     "thumbnail": "/img/data_sources_thumbs/PDC.png",
+    "data":["Proteins and proteomes"],
     "thumbnail_border": true 
   },
   {
@@ -929,6 +966,7 @@
     "description": "The Swedish access point for open biodiversity data. It includes many powerful tools and services that allow you to search, download, analyse, and visualise the data.",
     "url": "https://biodiversitydata.se/explore-analyze/data-and-tools/sbdi-datasets/",
     "thumbnail": "/img/data_sources_thumbs/sbdi.png",
+    "data":["Evolution and phylogeny", "Genes and genomes"],
     "thumbnail_border": true 
   },
   {
@@ -940,6 +978,7 @@
     "name": "Global Biodiversity Information Facility",
     "description": "An international network and data infrastructure aimed at providing open access to data about all types of life on Earth. It supports the publication of four classes of datasets using widely accepted biodiversity data standards.",
     "url": "https://www.gbif.org/",
+    "data":["Evolution and phylogeny"],
     "thumbnail": "/img/data_sources_thumbs/gbif.png",
     "thumbnail_border": true 
   },
@@ -953,6 +992,7 @@
     "description": "The NBN Atlas is the UK’s largest repository of publicly available biodiversity data. It also provides a platform to engage, educate and inform people about the natural world.",
     "url": "https://nbnatlas.org/",
     "thumbnail": "/img/data_sources_thumbs/nbn_atlas.jpg",
+    "data":["Evolution and phylogeny"],
     "thumbnail_border": true 
   },
   {
@@ -975,6 +1015,7 @@
     "Datasets"
     ],
     "name": "AIDA Dataset Register",
+    "data":["Imaging"],
     "description": "Datasets shared on the AIDA Data Hub. Data is ideal for use as training data as it has considerable annotation.",
     "url": "https://datahub.aida.scilifelab.se/datasets/",
     "thumbnail": "/img/service_thumbnails/aida.jpg"
@@ -996,6 +1037,7 @@
       "localization"
     ],
     "name": "Human Protein Atlas",
+    "data":["Proteins and proteomes"],
     "description": "The Human Protein Atlas aims to map all the human proteins in cells, tissues, and organs using an integration of various omics and imaging technologies",
     "url": "https://www.proteinatlas.org/about/download",
     "thumbnail": "/img/service_thumbnails/hpa.jpg"
@@ -1021,6 +1063,7 @@
     "name": "Metabolic Atlas",
     "description": "Metabolic Atlas is a web platform integrating open-source genome scale metabolic models (GEMs) for easy browsing and analysis.",
     "url": "https://metabolicatlas.org/",
+    "data":["Genes and genomes"],
     "thumbnail": "/img/service_thumbnails/metatlas.jpg"
   },
   {
@@ -1038,6 +1081,7 @@
     "name": "SubCellBarCode",
     "description": "A collection of resources centred around the subcellular localisation of proteins.",
     "url": "https://data.scilifelab.se/services/subcellbarcode/",
+    "data":["Molecular and cellular structures"],
     "thumbnail": "/img/service_thumbnails/subcell.jpg",
     "thumbnail_border": true 
   },
@@ -1052,6 +1096,7 @@
       "Portal"
     ],
     "name": "SweFreq",
+    "data":["Genes and genomes"],
     "description": "A website developed to make genomic datasets more findable and accessible",
     "url": "https://swefreq.nbis.se/",
     "thumbnail": "/img/service_thumbnails/scilifelab.jpg"
@@ -1071,6 +1116,7 @@
       "cell types"
     ],
     "name": "Human Developmental Cell Atlas",
+    "data":["Genes and genomes"],
     "description": "A molecular atlas of human prenatal development, describing every cell type in detail and showing their spatial and temporal distributions in three dimensions.",
     "url": "https://hdca-sweden.scilifelab.se/",
     "thumbnail": "/img/service_thumbnails/hdca.jpg",
@@ -1085,6 +1131,7 @@
     "name": "AI4Life BioImage Model Zoo",
     "description": "A collaborative effort to bring artificial intelligence models to the bioimaging community.",
     "url": "https://bioimage.io/#/",
+    "data":["Imaging"],
     "thumbnail": "/img/service_thumbnails/bioimagezoo.jpg",
     "thumbnail_border": true 
   },
@@ -1121,6 +1168,7 @@
       "SomaScan"
     ],
     "name": "COViMAPP",
+    "data":["Proteins and proteomes", "Clinical"],
     "description": "A meta-analysis resource showing changes in plasma proteins that occur during COVID-19.",
     "url": "https://covimapp.serve.scilifelab.se",
     "thumbnail": "/img/service_thumbnails/covimapp_logo.png",
