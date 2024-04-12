@@ -13,7 +13,7 @@ tags:
     human evolution,
     Evolution,
     Bantu expansion,
-    Gentics,
+    Genetics,
     Spatial analysis,
     Bioinformatics,
   ]
