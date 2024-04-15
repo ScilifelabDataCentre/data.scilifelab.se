@@ -1,8 +1,24 @@
 [
   {
-    "type": [
-      "Compute resources"
+    "type": ["Data sources"],
+    "search_tags": [
+      "sources",
+      "data",
+      "repositories",
+      "download",
+      "submit",
+      "submission"
     ],
+    "name": "Data sources",
+    "description": "Sources of data that can potentially be used by researchers in Sweden. The list includes places where data and be accessed and/or submitted.",
+    "url": "/resources/data_sources",
+    "thumbnail": "/img/resource_thumbnails/data_sources.jpg",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": ["Compute resources"],
     "search_tags": [
       "Compute resource",
       "E-infrastructure",
@@ -14,32 +30,24 @@
     "name": "Compute resources in Sweden",
     "description": "Information about the compute resources (primarily for hosting and analysis) available in Sweden, as well as how to apply.",
     "url": "/resources/e-infrastructure/",
-    "thumbnail": "/img/resource_thumbnails/compute_3.jpg",
+    "thumbnail": "/img/resource_thumbnails/compute.jpg",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
   },
   {
-    "type": [
-      "Storage resources"
-    ],
-    "search_tags": [
-      "Storage resource",
-      "SciLifeLab",
-      "Data Centre"
-    ],
+    "type": ["Storage resources"],
+    "search_tags": ["Storage resource", "SciLifeLab", "Data Centre"],
     "name": "Storage resources in Sweden",
     "description": "Information about the storage resources available in Sweden for researchers, as well as how to apply.",
     "url": "/resources/storage/",
-    "thumbnail": "/img/resource_thumbnails/compute_2.jpg",
+    "thumbnail": "/img/resource_thumbnails/storage.jpg",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
   },
   {
-    "type": [
-      "Alternative metrics"
-    ],
+    "type": ["Alternative metrics"],
     "search_tags": [
       "impact",
       "research impact",
