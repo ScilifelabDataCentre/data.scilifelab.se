@@ -7,7 +7,7 @@
       "database"
     ],
     "search_tags": [
-      "BioImage Analysis", "AI Models", "Model Zoo", "Open Science", "Data-Driven Life Sciences", "DDLS", "modelling", "Artificial intelligence"
+      "AI4Life BioImage Model Zoo", "BioImage Analysis", "AI Models", "Model Zoo", "Open Science", "Data-Driven Life Sciences", "DDLS", "modelling", "Artificial intelligence"
     ],
     "name": "AI4Life BioImage Model Zoo",
     "description": "A collaborative effort to bring artificial intelligence models to the bioimaging community",
@@ -27,6 +27,7 @@
     "search_tags": [
       "SciLifeLab Serve",
       "AI",
+      "Serve",
       "Artificial intelligence",
       "Apps",
       "DASH",
@@ -55,6 +56,7 @@
     ],
     "search_tags": [
       "FAIR Storage",
+      "Storage",
       "SUPR",
       "SciLifeLab",
       "Data Centre"
@@ -81,7 +83,10 @@
       "NBIS",
       "SciLifeLab",
       "Data Centre",
-      "Tool"
+      "Tool",
+      "Figshare",
+      "SciLifeLab Data Repository",
+      "Data Repository"
     ],
     "name": "SciLifeLab Data Repository",
     "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
@@ -101,6 +106,8 @@
     ],
     "search_tags": [
       "Pathogens portal",
+      "infectious disease data",
+      "Swedish Pathogens Portal",
       "Pandemic preparedness portal",
       "COVID-19",
       "SciLifeLab",
@@ -133,7 +140,8 @@
       "Portal",
       "NBIS",
       "SciLifeLab",
-      "Data Centre"
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
     ],
     "name": "SciLifeLab RDM Guidelines",
     "description": "A portal containing information on research data management in Sweden",
@@ -190,7 +198,8 @@
       "Sensitive data",
       "SciLifeLab",
       "Data Centre",
-      "Tool"
+      "Tool",
+      "SciLifeLab Data Delivery System"
     ],
     "name": "SciLifeLab Data Delivery System",
     "description": "Cloud-based system for the delivery of data from SciLifeLab units to their users",
@@ -234,6 +243,7 @@
       "Anubis",
       "Funding calls",
       "SciLifeLab",
+      "funding",
       "Data Centre",
       "Tool"
     ],
@@ -381,6 +391,7 @@
       "NBIS",
       "SciLifeLab",
       "Data Centre",
+      "SciLifeLab Data Stewardship Wizard",
       "Tool"
     ],
     "name": "SciLifeLab Data Stewardship Wizard",
@@ -486,6 +497,7 @@
       "primer trimming",
       "quality trimming",
       "demultiplexing",
+      "Cutadapt",
       "NBIS"
     ],
     "name": "Cutadapt",
@@ -509,6 +521,7 @@
       "illumina",
       "bcl2fastq",
       "demultiplexing",
+      "CheckQC",
       "NGI"
     ],
     "name": "CheckQC",
@@ -693,7 +706,9 @@
       "Hosting",
       "E-infrastructure",
       "SciLifeLab",
-      "Data Centre"
+      "Data Centre",
+      "Hosting on the Data Platform",
+      "Data Platform"
     ],
     "name": "Hosting on the Data Platform",
     "description": "Details about how researchers, research groups, and organisations can apply for hosting via the SciLifeLab Platform.",
