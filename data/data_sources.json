@@ -11,7 +11,10 @@
     "thumbnail": "/img/data_sources_thumbs/SCAPIS.png",
     "url": "https://www.scapis.org/",
     "data":["Imaging", "Chemical biology", "Clinical", "Genes and genomes", "Biobank"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cardiovascular Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -25,7 +28,11 @@
     "thumbnail": "/img/data_sources_thumbs/Sveriges_dp.png",
     "url": "https://www.dataportal.se/",
     "data":["General"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Public Health", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -39,7 +46,11 @@
     "thumbnail": "/img/data_sources_thumbs/veupathdb.jpg",
     "url": "https://veupathdb.org/veupathdb/app",
     "data":["Genes and genomes", "Molecular and cellular structures"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Infectious Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -53,7 +64,12 @@
     "thumbnail": "/img/data_sources_thumbs/swiss-model.png",
     "url": "https://swissmodel.expasy.org/",
     "data":["Proteins and proteomes", "Molecular and cellular structures"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Drug Development", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -67,7 +83,12 @@
     "thumbnail": "/img/data_sources_thumbs/string.png",
     "url": "https://string-db.org/",
     "data":["Proteins and proteomes", "Molecular and cellular structures", "Enzymes, pathways, interactions"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Infectious Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -81,7 +102,12 @@
     "thumbnail": "/img/data_sources_thumbs/silva.png",
     "url": "https://www.arb-silva.de/",
     "data":["Genes and genomes", "Evolution and phylogeny"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Infectious Diseases", 
+      "Public Health", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -95,7 +121,8 @@
     "thumbnail": "/img/data_sources_thumbs/rhea.png",
     "url": "https://www.rhea-db.org/",
     "data":["Chemical biology", "Enzymes, pathways, interactions"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -109,7 +136,8 @@
     "thumbnail": "/img/data_sources_thumbs/pombase.png",
     "url": "https://www.pombase.org/about",
     "data":["Genes and genomes", "Phenotypic", "Proteins and proteomes", "Evolution and phylogeny"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -123,7 +151,10 @@
     "thumbnail": "/img/data_sources_thumbs/orphadata.png",
     "url": "https://www.orphadata.com/orphadata-science/",
     "data":["Genes and genomes", "Clinical", "Phenotypic", "Biobank"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Rare Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -137,7 +168,8 @@
     "thumbnail": "/img/data_sources_thumbs/mgnify.png",
     "url": "https://www.ebi.ac.uk/metagenomics",
     "data":["Molecular and cellular structures","Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -151,7 +183,8 @@
     "thumbnail": "/img/data_sources_thumbs/interpro.jpg",
     "url": "https://www.ebi.ac.uk/interpro/",
     "data":["Molecular and cellular structures", "Proteins and proteomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -165,7 +198,12 @@
     "thumbnail": "/img/data_sources_thumbs/mint.png",
     "url": "https://mint.bio.uniroma2.it",
     "data":["Enzymes, pathways, interactions", "Proteins and proteomes","Molecular and cellular structures"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Infectious Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -179,7 +217,12 @@
     "thumbnail": "/img/data_sources_thumbs/hgnc.jpeg",
     "url": "https://www.genenames.org/",
     "data":["Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -193,7 +236,8 @@
     "thumbnail": "/img/data_sources_thumbs/ensembl.png",
     "url": "http://ensemblgenomes.org/",
     "data":["Evolution and phylogeny", "Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -207,7 +251,13 @@
     "thumbnail": "/img/data_sources_thumbs/ensembl.png",
     "url": "http://www.ensembl.org/index.html",
     "data":["Evolution and phylogeny", "Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Developmental Disorders", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -220,7 +270,8 @@
     "description": "A dictionary of molecular entities (i.e. constitutionally or isotopically distinct atoms, molecules, ions, ion pairs, radicals, etc.). It is focused in particular on small chemical compounds.",
     "thumbnail": "/img/data_sources_thumbs/chembi.png",
     "url": "https://www.ebi.ac.uk/chebi/",
-    "data":["Chemical biology", "Molecular and cellular structures"]
+    "data":["Chemical biology", "Molecular and cellular structures"],
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -234,7 +285,13 @@
     "thumbnail": "/img/data_sources_thumbs/cellosaurus.png",
     "url": "https://www.cellosaurus.org/",
     "data":["Molecular and cellular structures"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Neurological Disorders", 
+      "Infectious Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -247,7 +304,8 @@
     "description": "A database containing information on evolutionary relationships between protein domains. It classifies protein domains from Protein Data Bank in a hierarchical manner.",
     "thumbnail": "/img/data_sources_thumbs/CATH.png",
     "url": "http://www.cathdb.info/",
-    "data":["Molecular and cellular structures", "Proteins and proteomes", "Evolution and phylogeny"]
+    "data":["Molecular and cellular structures", "Proteins and proteomes", "Evolution and phylogeny"],
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -261,7 +319,8 @@
     "thumbnail": "/img/data_sources_thumbs/BRENDA.png",
     "url": "http://www.brenda-enzymes.org/",
     "data":["Enzymes, pathways, interactions", "Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -275,7 +334,8 @@
     "thumbnail": "/img/data_sources_thumbs/bacdive.png",
     "url": "https://bacdive.dsmz.de/",
     "data":["Genes and genomes", "Molecular and cellular structures", "Phenotypic"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -289,7 +349,12 @@
     "thumbnail": "/img/data_sources_thumbs/PDBe.png",
     "url": "https://www.ebi.ac.uk/pdbe/about",
     "data":["Proteins and proteomes", "Molecular and cellular structures", "Chemical biology"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Drug Development", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -302,7 +367,8 @@
     "description": "Includes theoretical models of macromolecular structure, together with information about model coordinates, and details about assumptions, parameters, and constraints applied to simulations.",
     "thumbnail": "/img/data_sources_thumbs/modelarchive.png",
     "url": "https://www.modelarchive.org/",
-    "data":["Proteins and proteomes", "Molecular and cellular structures", "Chemical biology"]
+    "data":["Proteins and proteomes", "Molecular and cellular structures", "Chemical biology"],
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -316,7 +382,8 @@
     "thumbnail": "/img/data_sources_thumbs/metabolights.png",
     "url": "https://www.ebi.ac.uk/metabolights/",
     "data":["Chemical biology", "Molecular and cellular structures"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -330,7 +397,8 @@
     "thumbnail": "/img/data_sources_thumbs/lipid_maps.png",
     "url": "https://www.lipidmaps.org/",
     "data":["Chemical biology", "Molecular and cellular structures"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -344,7 +412,13 @@
     "thumbnail": "/img/data_sources_thumbs/gwas.jpeg",
     "url": "https://www.ebi.ac.uk/gwas/",
     "data":["Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Metabolic Disorders", 
+      "Various Diseases", 
+    ],
   },
   {
     "target": ["researchers"],
@@ -358,7 +432,8 @@
     "thumbnail": "/img/data_sources_thumbs/EMDB.png",
     "url": "https://www.ebi.ac.uk/pdbe/emdb/",
     "data":["Molecular and cellular structures"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -372,7 +447,13 @@
     "thumbnail": "/img/data_sources_thumbs/ega.png",
     "url": "https://ega-archive.org/",
     "data":["Genes and genomes", "Phenotypic", "Clinical"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Developmental Disorders", 
+      "Various Diseases", 
+    ],
   },
   {
     "target": ["researchers"],
@@ -386,7 +467,12 @@
     "thumbnail": "/img/data_sources_thumbs/biostudies.png",
     "url": "https://www.ebi.ac.uk/biostudies/",
     "data":["General"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Cardiovascular Diseases", 
+      "Metabolic Disorders", 
+    ],
   },
   {
     "target": ["researchers"],
@@ -400,7 +486,8 @@
     "thumbnail": "/img/data_sources_thumbs/biomodels.png",
     "url": "http://www.ebi.ac.uk/biomodels/",
     "data":["Enzymes, pathways, interactions"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -414,7 +501,8 @@
     "thumbnail": "/img/data_sources_thumbs/GISAID.jpg",
     "url": "https://www.gisaid.org/",
     "data":["Genes and genomes", "Clinical", "Phenotypic"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -430,7 +518,13 @@
     "url": "http://www.ebi.ac.uk/ena",
     "thumbnail": "/img/data_sources_thumbs/ENA.png",
     "data":["Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Infectious Diseases", 
+      "Various Diseases", 
+    ],
   },
   {
     "target": ["researchers"],
@@ -442,7 +536,8 @@
     "url": "https://pathogens.se/datasets/all/",
     "thumbnail": "/img/data_sources_thumbs/pathogens.png",
     "data":["Genes and genomes","Proteins and proteomes","Molecular and cellular structures","Chemical biology","Evolution and phylogeny","Enzymes, pathways, interactions","Clinical","Phenotypic","Biobank","Imaging"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -454,7 +549,10 @@
     "url": "https://www.ecdc.europa.eu/en/tuberculosis/surveillance",
     "data":["Clinical", "Phenotypic", "Epidemiology"],
     "thumbnail": "/img/data_sources_thumbs/ecdc.png",
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Infectious Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -466,7 +564,10 @@
     "url": "https://www.ecdc.europa.eu/en/avian-influenza-humans/surveillance-and-disease-data",
     "thumbnail": "/img/data_sources_thumbs/ecdc.png",
     "data":["Clinical", "Phenotypic", "Epidemiology"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Infectious Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -490,7 +591,12 @@
     "url": "https://www.iddo.org/data-sharing/accessing-data",
     "thumbnail": "/img/data_sources_thumbs/IDDO.png",
     "data":["Clinical", "Phenotypic", "Epidemiology"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Various Diseases", 
+    ],
   },
   {
     "target": ["researchers"],
@@ -502,7 +608,12 @@
     "url": "https://www.ebi.ac.uk/biosamples/",
     "thumbnail": "/img/data_sources_thumbs/BioSamples.png",
     "data":["Genes and genomes"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Infectious Diseases", 
+      "Cardiovascular Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -514,7 +625,14 @@
     "url": "https://www.ukbiobank.ac.uk/",
     "thumbnail": "/img/data_sources_thumbs/UK_biobank_logo.png",
     "data":["Phenotypic", "Biobank","Genes and genomes", "Clinical"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Cardiovascular Diseases", 
+      "Neurological Disorders", 
+      "Public Health", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -526,7 +644,12 @@
     "url": "https://www.bbmri-eric.eu/",
     "thumbnail": "/img/data_sources_thumbs/BBMRI-ERIC.png",
     "data":["Biobank"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Cardiovascular Diseases", 
+      "Neurological Disorders",
+    ],
   },
   {
     "target": ["researchers"],
@@ -537,7 +660,8 @@
     "description": "The resistance bank is an open access repository for surveys and maps of antimicrobial resistance (AMR) in animals. It focuses particularly on low and middle-income countries.",
     "url": "https://resistancebank.org/",
     "data":["Epidemiology","Genes and genomes"],
-    "thumbnail": "/img/data_sources_thumbs/resistance_bank.png"
+    "thumbnail": "/img/data_sources_thumbs/resistance_bank.png",
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -549,7 +673,13 @@
     "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies",
     "thumbnail": "/img/data_sources_thumbs/arrayexpress.png",
     "data":["Genes and genomes"],
-    "thumbnail_border": true    
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Genetic Disorders", 
+      "Drug Development", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -560,7 +690,12 @@
     "description": "The primary site for the deposition and retrieval of variant data and annotations from individual submitters. It helps with explorations of how genomic variation is related to human health.",
     "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
     "data":["Genes and genomes", "Clinical"],
-    "thumbnail": "/img/data_sources_thumbs/clinvar.png"   
+    "thumbnail": "/img/data_sources_thumbs/clinvar.png",
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Developmental Disorders",
+    ],
   },
   {
     "target": ["researchers"],
@@ -572,7 +707,11 @@
     "url": "https://www.ebi.ac.uk/chembl/",
     "data":["Molecular and cellular structures", "Genes and genomes", "Enzymes, pathways, interactions", "Chemical biology"],
     "thumbnail": "/img/data_sources_thumbs/chembl.jpeg",
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Drug Development", 
+      "Cancer",
+    ],
   },
   {
     "target": ["researchers"],
@@ -584,7 +723,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/geo/",
     "thumbnail": "/img/data_sources_thumbs/geo.png",
     "data":["Genes and genomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Genetic Disorders", 
+      "Metabolic Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -596,7 +741,12 @@
     "url": "https://gemma.msl.ubc.ca/home.html",
     "thumbnail": "/img/data_sources_thumbs/gemma.png",
     "data":["Genes and genomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Genetic Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -608,7 +758,12 @@
     "url": "https://genevestigator.com/",
     "thumbnail": "/img/data_sources_thumbs/Genevestigator_logo.png",
     "data":["Genes and genomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Drug Development", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -620,7 +775,12 @@
     "url": "https://www.rcsb.org/",
     "thumbnail": "/img/data_sources_thumbs/pdb.png",
     "data":["Proteins and proteomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Drug Development", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -632,7 +792,10 @@
     "url": "https://www.cancer.gov/ccg/research/genome-sequencing/tcga",
     "thumbnail": "/img/data_sources_thumbs/tcga.png",
     "data":["Proteins and proteomes", "Genes and genomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer",
+    ],
   },
   {
     "target": ["researchers"],
@@ -644,7 +807,10 @@
     "url": "https://www.cancerimagingarchive.net/",
     "thumbnail": "/img/data_sources_thumbs/tcia.png",
     "data":["Imaging", "Clinical","Genes and genomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer",
+    ],
   },
   {
     "target": ["researchers"],
@@ -656,7 +822,10 @@
     "description": "Genetic characterisation of a large panel of human cancer cell lines. It provides access to analyses and visualisations of DNA copy number, mRNA expression, mutation data, and more.",
     "url": "https://sites.broadinstitute.org/ccle",
     "thumbnail": "/img/data_sources_thumbs/ccle.jpg",
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer",
+    ],
   },
   {
     "target": ["researchers"],
@@ -668,7 +837,10 @@
     "url": "https://www.cbioportal.org/",
     "data":["Clinical","Genes and genomes"],
     "thumbnail": "/img/data_sources_thumbs/cbioportal.png",
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer",
+    ],
   },
   {
     "target": ["researchers"],
@@ -680,7 +852,12 @@
     "url": "https://alphafold.ebi.ac.uk/",
     "thumbnail": "/img/data_sources_thumbs/alphafold_db.png",
     "data":["Proteins and proteomes", "Molecular and cellular structures"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Drug Development", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -692,7 +869,12 @@
     "url": "https://ecbd.eu/",
     "thumbnail": "/img/data_sources_thumbs/ecdb.png",
     "data":["Molecular and cellular structures"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Drug Development", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -704,7 +886,10 @@
     "url": "https://biobanks.pathogens.se/",
     "thumbnail": "/img/data_sources_thumbs/pathogens.png",
     "data":["Biobank"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Infectious Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -716,7 +901,12 @@
     "url": "https://reactome.org/",
     "data":["Proteins and proteomes", "Genes and genomes", "Clinical", "Enzymes, pathways, interactions"],
     "thumbnail": "/img/data_sources_thumbs/Reactome.png",
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Metabolic Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -728,7 +918,12 @@
     "url": "https://www.ebi.ac.uk/pride/",
     "thumbnail": "/img/data_sources_thumbs/PRIDE.jpeg",
     "data":["Proteins and proteomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Metabolic Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -740,7 +935,12 @@
     "url": "https://www.ebi.ac.uk/intact/",
     "thumbnail": "/img/data_sources_thumbs/intact.png",
     "data":["Molecular and cellular structures", "Enzymes, pathways, interactions"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Infectious Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -752,7 +952,12 @@
     "url": "https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp",
     "thumbnail": "/img/data_sources_thumbs/MassIVE.png",
     "data":["Proteins and proteomes"],
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Metabolic Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -764,7 +969,12 @@
     "url": "https://www.proteomexchange.org/",
     "data":["Proteins and proteomes"],
     "thumbnail": "/img/data_sources_thumbs/proteomexchange.jpeg",
-    "thumbnail_border": true   
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Metabolic Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -775,7 +985,12 @@
     "description": "A free, publicly available online resource that stores and distributes biological images. It accepts submissions of data from any imaging modality.",
     "url": "https://www.ebi.ac.uk/bioimage-archive/",
     "data":["Imaging"],
-    "thumbnail": "/img/data_sources_thumbs/bioimagearchive.png" 
+    "thumbnail": "/img/data_sources_thumbs/bioimagearchive.png",
+    "disease_type": [ 
+      "Cancer", 
+      "Neurological Disorders", 
+      "Infectious Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -787,7 +1002,13 @@
     "url": "https://www.ebi.ac.uk/empiar/",
     "thumbnail": "/img/data_sources_thumbs/EMPIAR.png",
     "data":["Imaging"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Infectious Diseases", 
+      "Neurological Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -798,7 +1019,10 @@
     "description": "SciLifeLab’s institutional instance of FigShare. It is an open, general purpose repository that includes many data types. Data can be submitted by those working in Swedish life science research.",
     "url": "http://figshare.scilifelab.se/",
     "data":["General"],
-    "thumbnail": "/img/data_sources_thumbs/figshare.jpg"
+    "thumbnail": "/img/data_sources_thumbs/figshare.jpg",
+    "disease_type": [ 
+      "General",
+    ],
   },
   {
     "target": ["researchers"],
@@ -810,7 +1034,10 @@
     "url": "https://datadryad.org/",
     "thumbnail": "/img/data_sources_thumbs/dryad.png",
     "data":["General"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "General",
+    ],
   },
   {
     "target": ["researchers"],
@@ -822,7 +1049,10 @@
     "url": "https://data.mendeley.com/",
     "thumbnail": "/img/data_sources_thumbs/mendeley-data.jpeg",
     "data":["General"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "General",
+    ],
   },
   {
     "target": ["researchers"],
@@ -834,7 +1064,8 @@
     "url": "https://www.folkhalsomyndigheten.se/folkhalsorapportering-statistik/",
     "thumbnail": "/img/data_sources_thumbs/fohm.png",
     "data":["Clinical", "Epidemiology"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -846,7 +1077,12 @@
     "url": "https://snd.gu.se/en/catalogue",
     "thumbnail": "/img/data_sources_thumbs/SND.png",
     "data":["Clinical", "Epidemiology", "Phenotypic"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Public Health", 
+      "Genetic Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -858,7 +1094,12 @@
     "url": "https://www.registerforskning.se/en/registers-in-sweden/",
     "thumbnail": "/img/data_sources_thumbs/VR.png",
     "data":["Clinical", "Epidemiology", "Biobank"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Public Health", 
+      "Cardiovascular Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -870,7 +1111,12 @@
     "url": "https://www.socialstyrelsen.se/statistik-och-data/statistik/",
     "thumbnail": "/img/data_sources_thumbs/socialstyrelsen.png",
     "data":["Clinical", "Epidemiology"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Public Health", 
+      "Cardiovascular Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -882,7 +1128,12 @@
     "url": "https://www.scb.se/hitta-statistik/temaomraden/integration/regeringsuppdraget-registerdata-for-integration/",
     "thumbnail": "/img/data_sources_thumbs/SCB.png",
     "data":["General"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Public Health", 
+      "Cardiovascular Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -894,7 +1145,11 @@
     "url": "https://www.deciphergenomics.org/",
     "thumbnail": "/img/data_sources_thumbs/decipher.png",
     "data":["Genes and genomes", "Clinical", "Phenotypic"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Developmental Disorders",
+    ],
   },
   {
     "target": ["researchers"],
@@ -905,7 +1160,10 @@
     "description": "The hub includes a web platform through which users can gain open access to curated transcriptomic data from multiple inflammatory skin diseases.",
     "url": "https://biohub.skinsciencefoundation.org/labkey/home/project-begin.view?",
     "thumbnail": "/img/data_sources_thumbs/skin-sci-foundation.jpg",
-    "data":["Genes and genomes", "Clinical"]
+    "data":["Genes and genomes", "Clinical"],
+    "disease_type": [ 
+      "Immunological Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -917,7 +1175,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/sra/",
     "thumbnail": "/img/data_sources_thumbs/sra.png",
     "data":["Genes and genomes"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Infectious Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -929,7 +1193,12 @@
     "url": "https://www.uniprot.org/",
     "thumbnail": "/img/data_sources_thumbs/UniProt.png",
     "data":["Proteins and proteomes", "Enzymes, pathways, interactions"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Drug Development", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -941,7 +1210,10 @@
     "url": "https://gdc.cancer.gov/",
     "thumbnail": "/img/data_sources_thumbs/GDC.png",
     "data":["Proteins and proteomes", "Genes and genomes", "Clinical"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer",
+    ],
   },
   {
     "target": ["researchers"],
@@ -954,7 +1226,10 @@
     "url": "https://proteomic.datacommons.cancer.gov/pdc/",
     "thumbnail": "/img/data_sources_thumbs/PDC.png",
     "data":["Proteins and proteomes"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer",
+    ],
   },
   {
     "target": ["researchers"],
@@ -967,7 +1242,8 @@
     "url": "https://biodiversitydata.se/explore-analyze/data-and-tools/sbdi-datasets/",
     "thumbnail": "/img/data_sources_thumbs/sbdi.png",
     "data":["Evolution and phylogeny", "Genes and genomes"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -980,7 +1256,8 @@
     "url": "https://www.gbif.org/",
     "data":["Evolution and phylogeny"],
     "thumbnail": "/img/data_sources_thumbs/gbif.png",
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -993,7 +1270,8 @@
     "url": "https://nbnatlas.org/",
     "thumbnail": "/img/data_sources_thumbs/nbn_atlas.jpg",
     "data":["Evolution and phylogeny"],
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [],
   },
   {
     "target": ["researchers"],
@@ -1018,7 +1296,15 @@
     "data":["Imaging"],
     "description": "Datasets shared on the AIDA Data Hub. Data is ideal for use as training data as it has considerable annotation.",
     "url": "https://datahub.aida.scilifelab.se/datasets/",
-    "thumbnail": "/img/service_thumbnails/aida.jpg"
+    "thumbnail": "/img/service_thumbnails/aida.jpg",
+    "disease_type": [ 
+      "Cancer", 
+      "Cardiovascular Diseases", 
+      "Immunological Diseases", 
+      "Various Diseases", 
+      "Infectious Diseases", 
+      "Public Health",
+    ],
   },
   {
     "target": ["researchers"],
@@ -1040,7 +1326,12 @@
     "data":["Proteins and proteomes"],
     "description": "The Human Protein Atlas aims to map all the human proteins in cells, tissues, and organs using an integration of various omics and imaging technologies",
     "url": "https://www.proteinatlas.org/about/download",
-    "thumbnail": "/img/service_thumbnails/hpa.jpg"
+    "thumbnail": "/img/service_thumbnails/hpa.jpg",
+    "disease_type": [ 
+      "Cancer", 
+      "Immunological Diseases", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -1064,7 +1355,12 @@
     "description": "Metabolic Atlas is a web platform integrating open-source genome scale metabolic models (GEMs) for easy browsing and analysis.",
     "url": "https://metabolicatlas.org/",
     "data":["Genes and genomes"],
-    "thumbnail": "/img/service_thumbnails/metatlas.jpg"
+    "thumbnail": "/img/service_thumbnails/metatlas.jpg",
+    "disease_type": [ 
+      "Metabolic Disorders", 
+      "Cancer", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -1083,7 +1379,12 @@
     "url": "https://data.scilifelab.se/services/subcellbarcode/",
     "data":["Molecular and cellular structures"],
     "thumbnail": "/img/service_thumbnails/subcell.jpg",
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer", 
+      "Neurological Disorders", 
+      "Various Diseases",
+    ],
   },
   {
     "target": ["researchers"],
@@ -1099,7 +1400,10 @@
     "data":["Genes and genomes"],
     "description": "A website developed to make genomic datasets more findable and accessible",
     "url": "https://swefreq.nbis.se/",
-    "thumbnail": "/img/service_thumbnails/scilifelab.jpg"
+    "thumbnail": "/img/service_thumbnails/scilifelab.jpg",
+    "disease_type": [ 
+      "Genetic Disorders",
+    ],
   },
   {
     "target": ["researchers"],
@@ -1120,7 +1424,10 @@
     "description": "A molecular atlas of human prenatal development, describing every cell type in detail and showing their spatial and temporal distributions in three dimensions.",
     "url": "https://hdca-sweden.scilifelab.se/",
     "thumbnail": "/img/service_thumbnails/hdca.jpg",
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Developmental Disorders",
+    ],
   },
   {
     "target": ["researchers"],
@@ -1133,7 +1440,11 @@
     "url": "https://bioimage.io/#/",
     "data":["Imaging"],
     "thumbnail": "/img/service_thumbnails/bioimagezoo.jpg",
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cancer Neurological Disorders", 
+      "Drug Development",
+    ],
   },
   {
     "target": ["researchers"],
@@ -1172,6 +1483,7 @@
     "description": "A meta-analysis resource showing changes in plasma proteins that occur during COVID-19.",
     "url": "https://covimapp.serve.scilifelab.se",
     "thumbnail": "/img/service_thumbnails/covimapp_logo.png",
-    "thumbnail_border": true 
+    "thumbnail_border": true,
+    "disease_type": [],
   }
 ]
