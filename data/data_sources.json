@@ -13,8 +13,8 @@
     "data":["Imaging", "Chemical biology", "Clinical", "Genes and genomes", "Biobank"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cardiovascular Diseases",
-    ],
+      "Cardiovascular Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -31,8 +31,8 @@
     "thumbnail_border": true,
     "disease_type": [ 
       "Public Health", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -49,8 +49,8 @@
     "thumbnail_border": true,
     "disease_type": [ 
       "Infectious Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -68,8 +68,8 @@
     "disease_type": [ 
       "Drug Development", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -87,8 +87,8 @@
     "disease_type": [ 
       "Cancer", 
       "Infectious Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -106,8 +106,8 @@
     "disease_type": [ 
       "Infectious Diseases", 
       "Public Health", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -122,7 +122,7 @@
     "url": "https://www.rhea-db.org/",
     "data":["Chemical biology", "Enzymes, pathways, interactions"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -137,7 +137,7 @@
     "url": "https://www.pombase.org/about",
     "data":["Genes and genomes", "Phenotypic", "Proteins and proteomes", "Evolution and phylogeny"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -153,8 +153,8 @@
     "data":["Genes and genomes", "Clinical", "Phenotypic", "Biobank"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Rare Diseases",
-    ],
+      "Rare Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -169,7 +169,7 @@
     "url": "https://www.ebi.ac.uk/metagenomics",
     "data":["Molecular and cellular structures","Genes and genomes"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -184,7 +184,7 @@
     "url": "https://www.ebi.ac.uk/interpro/",
     "data":["Molecular and cellular structures", "Proteins and proteomes"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -202,8 +202,8 @@
     "disease_type": [ 
       "Cancer", 
       "Infectious Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -221,8 +221,8 @@
     "disease_type": [ 
       "Genetic Disorders", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -237,7 +237,7 @@
     "url": "http://ensemblgenomes.org/",
     "data":["Evolution and phylogeny", "Genes and genomes"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -256,8 +256,8 @@
       "Genetic Disorders", 
       "Developmental Disorders", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -271,7 +271,7 @@
     "thumbnail": "/img/data_sources_thumbs/chembi.png",
     "url": "https://www.ebi.ac.uk/chebi/",
     "data":["Chemical biology", "Molecular and cellular structures"],
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -290,8 +290,8 @@
       "Cancer", 
       "Neurological Disorders", 
       "Infectious Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -305,7 +305,7 @@
     "thumbnail": "/img/data_sources_thumbs/CATH.png",
     "url": "http://www.cathdb.info/",
     "data":["Molecular and cellular structures", "Proteins and proteomes", "Evolution and phylogeny"],
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -320,7 +320,7 @@
     "url": "http://www.brenda-enzymes.org/",
     "data":["Enzymes, pathways, interactions", "Genes and genomes"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -335,7 +335,7 @@
     "url": "https://bacdive.dsmz.de/",
     "data":["Genes and genomes", "Molecular and cellular structures", "Phenotypic"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -353,8 +353,8 @@
     "disease_type": [ 
       "Drug Development", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -368,7 +368,7 @@
     "thumbnail": "/img/data_sources_thumbs/modelarchive.png",
     "url": "https://www.modelarchive.org/",
     "data":["Proteins and proteomes", "Molecular and cellular structures", "Chemical biology"],
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -383,7 +383,7 @@
     "url": "https://www.ebi.ac.uk/metabolights/",
     "data":["Chemical biology", "Molecular and cellular structures"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -398,7 +398,7 @@
     "url": "https://www.lipidmaps.org/",
     "data":["Chemical biology", "Molecular and cellular structures"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -417,8 +417,8 @@
       "Genetic Disorders", 
       "Cancer", 
       "Metabolic Disorders", 
-      "Various Diseases", 
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -433,7 +433,7 @@
     "url": "https://www.ebi.ac.uk/pdbe/emdb/",
     "data":["Molecular and cellular structures"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -452,8 +452,8 @@
       "Genetic Disorders", 
       "Cancer", 
       "Developmental Disorders", 
-      "Various Diseases", 
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -471,8 +471,8 @@
     "disease_type": [ 
       "Cancer", 
       "Cardiovascular Diseases", 
-      "Metabolic Disorders", 
-    ],
+      "Metabolic Disorders"
+    ]
   },
   {
     "target": ["researchers"],
@@ -487,7 +487,7 @@
     "url": "http://www.ebi.ac.uk/biomodels/",
     "data":["Enzymes, pathways, interactions"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -502,7 +502,7 @@
     "url": "https://www.gisaid.org/",
     "data":["Genes and genomes", "Clinical", "Phenotypic"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -523,8 +523,8 @@
       "Genetic Disorders", 
       "Cancer", 
       "Infectious Diseases", 
-      "Various Diseases", 
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -537,7 +537,7 @@
     "thumbnail": "/img/data_sources_thumbs/pathogens.png",
     "data":["Genes and genomes","Proteins and proteomes","Molecular and cellular structures","Chemical biology","Evolution and phylogeny","Enzymes, pathways, interactions","Clinical","Phenotypic","Biobank","Imaging"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -551,8 +551,8 @@
     "thumbnail": "/img/data_sources_thumbs/ecdc.png",
     "thumbnail_border": true,
     "disease_type": [ 
-      "Infectious Diseases",
-    ],
+      "Infectious Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -566,8 +566,8 @@
     "data":["Clinical", "Phenotypic", "Epidemiology"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Infectious Diseases",
-    ],
+      "Infectious Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -579,7 +579,12 @@
     "url": "https://fega.nbis.se/",
     "thumbnail": "/img/data_sources_thumbs/fega-sweden-logo.png",
     "data":["Genes and genomes", "Phenotypic"],
-    "thumbnail_border": true
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Genetic Disorders", 
+      "Cancer", 
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -593,10 +598,8 @@
     "data":["Clinical", "Phenotypic", "Epidemiology"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Genetic Disorders", 
-      "Cancer", 
-      "Various Diseases", 
-    ],
+      "Infectious Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -612,8 +615,8 @@
     "disease_type": [ 
       "Cancer", 
       "Infectious Diseases", 
-      "Cardiovascular Diseases",
-    ],
+      "Cardiovascular Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -631,8 +634,8 @@
       "Cardiovascular Diseases", 
       "Neurological Disorders", 
       "Public Health", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -648,8 +651,8 @@
     "disease_type": [ 
       "Cancer", 
       "Cardiovascular Diseases", 
-      "Neurological Disorders",
-    ],
+      "Neurological Disorders"
+    ]
   },
   {
     "target": ["researchers"],
@@ -661,7 +664,7 @@
     "url": "https://resistancebank.org/",
     "data":["Epidemiology","Genes and genomes"],
     "thumbnail": "/img/data_sources_thumbs/resistance_bank.png",
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -678,8 +681,8 @@
       "Cancer", 
       "Genetic Disorders", 
       "Drug Development", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -694,8 +697,8 @@
     "disease_type": [ 
       "Genetic Disorders", 
       "Cancer", 
-      "Developmental Disorders",
-    ],
+      "Developmental Disorders"
+    ]
   },
   {
     "target": ["researchers"],
@@ -710,8 +713,8 @@
     "thumbnail_border": true,
     "disease_type": [ 
       "Drug Development", 
-      "Cancer",
-    ],
+      "Cancer"
+    ]
   },
   {
     "target": ["researchers"],
@@ -728,8 +731,8 @@
       "Cancer", 
       "Genetic Disorders", 
       "Metabolic Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -745,8 +748,8 @@
     "disease_type": [ 
       "Cancer", 
       "Genetic Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -762,8 +765,8 @@
     "disease_type": [ 
       "Cancer", 
       "Drug Development", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -779,8 +782,8 @@
     "disease_type": [ 
       "Drug Development", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -794,8 +797,8 @@
     "data":["Proteins and proteomes", "Genes and genomes"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cancer",
-    ],
+      "Cancer"
+    ]
   },
   {
     "target": ["researchers"],
@@ -809,8 +812,8 @@
     "data":["Imaging", "Clinical","Genes and genomes"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cancer",
-    ],
+      "Cancer"
+    ]
   },
   {
     "target": ["researchers"],
@@ -824,8 +827,8 @@
     "thumbnail": "/img/data_sources_thumbs/ccle.jpg",
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cancer",
-    ],
+      "Cancer"
+    ]
   },
   {
     "target": ["researchers"],
@@ -839,8 +842,8 @@
     "thumbnail": "/img/data_sources_thumbs/cbioportal.png",
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cancer",
-    ],
+      "Cancer"
+    ]
   },
   {
     "target": ["researchers"],
@@ -856,8 +859,8 @@
     "disease_type": [ 
       "Cancer", 
       "Drug Development", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -873,8 +876,8 @@
     "disease_type": [ 
       "Drug Development", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -888,8 +891,8 @@
     "data":["Biobank"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Infectious Diseases",
-    ],
+      "Infectious Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -905,8 +908,8 @@
     "disease_type": [ 
       "Cancer", 
       "Metabolic Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -922,8 +925,8 @@
     "disease_type": [ 
       "Cancer", 
       "Metabolic Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -939,8 +942,8 @@
     "disease_type": [ 
       "Cancer", 
       "Infectious Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -956,8 +959,8 @@
     "disease_type": [ 
       "Cancer", 
       "Metabolic Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -973,8 +976,8 @@
     "disease_type": [ 
       "Cancer", 
       "Metabolic Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -989,8 +992,8 @@
     "disease_type": [ 
       "Cancer", 
       "Neurological Disorders", 
-      "Infectious Diseases",
-    ],
+      "Infectious Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1007,8 +1010,8 @@
       "Cancer", 
       "Infectious Diseases", 
       "Neurological Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1021,8 +1024,8 @@
     "data":["General"],
     "thumbnail": "/img/data_sources_thumbs/figshare.jpg",
     "disease_type": [ 
-      "General",
-    ],
+      "General"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1036,8 +1039,8 @@
     "data":["General"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "General",
-    ],
+      "General"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1051,8 +1054,8 @@
     "data":["General"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "General",
-    ],
+      "General"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1065,7 +1068,7 @@
     "thumbnail": "/img/data_sources_thumbs/fohm.png",
     "data":["Clinical", "Epidemiology"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -1081,8 +1084,8 @@
     "disease_type": [ 
       "Public Health", 
       "Genetic Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1098,8 +1101,8 @@
     "disease_type": [ 
       "Public Health", 
       "Cardiovascular Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1115,8 +1118,8 @@
     "disease_type": [ 
       "Public Health", 
       "Cardiovascular Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1132,8 +1135,8 @@
     "disease_type": [ 
       "Public Health", 
       "Cardiovascular Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1148,8 +1151,8 @@
     "thumbnail_border": true,
     "disease_type": [ 
       "Genetic Disorders", 
-      "Developmental Disorders",
-    ],
+      "Developmental Disorders"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1162,8 +1165,8 @@
     "thumbnail": "/img/data_sources_thumbs/skin-sci-foundation.jpg",
     "data":["Genes and genomes", "Clinical"],
     "disease_type": [ 
-      "Immunological Diseases",
-    ],
+      "Immunological Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1180,8 +1183,8 @@
       "Genetic Disorders", 
       "Cancer", 
       "Infectious Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1197,8 +1200,8 @@
     "disease_type": [ 
       "Drug Development", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1212,8 +1215,8 @@
     "data":["Proteins and proteomes", "Genes and genomes", "Clinical"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cancer",
-    ],
+      "Cancer"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1228,8 +1231,8 @@
     "data":["Proteins and proteomes"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cancer",
-    ],
+      "Cancer"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1243,7 +1246,7 @@
     "thumbnail": "/img/data_sources_thumbs/sbdi.png",
     "data":["Evolution and phylogeny", "Genes and genomes"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -1257,7 +1260,7 @@
     "data":["Evolution and phylogeny"],
     "thumbnail": "/img/data_sources_thumbs/gbif.png",
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -1271,7 +1274,7 @@
     "thumbnail": "/img/data_sources_thumbs/nbn_atlas.jpg",
     "data":["Evolution and phylogeny"],
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   },
   {
     "target": ["researchers"],
@@ -1303,8 +1306,8 @@
       "Immunological Diseases", 
       "Various Diseases", 
       "Infectious Diseases", 
-      "Public Health",
-    ],
+      "Public Health"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1330,8 +1333,8 @@
     "disease_type": [ 
       "Cancer", 
       "Immunological Diseases", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1359,8 +1362,8 @@
     "disease_type": [ 
       "Metabolic Disorders", 
       "Cancer", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1383,8 +1386,8 @@
     "disease_type": [ 
       "Cancer", 
       "Neurological Disorders", 
-      "Various Diseases",
-    ],
+      "Various Diseases"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1402,8 +1405,8 @@
     "url": "https://swefreq.nbis.se/",
     "thumbnail": "/img/service_thumbnails/scilifelab.jpg",
     "disease_type": [ 
-      "Genetic Disorders",
-    ],
+      "Genetic Disorders"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1426,8 +1429,8 @@
     "thumbnail": "/img/service_thumbnails/hdca.jpg",
     "thumbnail_border": true,
     "disease_type": [ 
-      "Developmental Disorders",
-    ],
+      "Developmental Disorders"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1443,8 +1446,8 @@
     "thumbnail_border": true,
     "disease_type": [ 
       "Cancer Neurological Disorders", 
-      "Drug Development",
-    ],
+      "Drug Development"
+    ]
   },
   {
     "target": ["researchers"],
@@ -1484,6 +1487,6 @@
     "url": "https://covimapp.serve.scilifelab.se",
     "thumbnail": "/img/service_thumbnails/covimapp_logo.png",
     "thumbnail_border": true,
-    "disease_type": [],
+    "disease_type": []
   }
 ]
