@@ -451,7 +451,8 @@
     "disease_type": [ 
       "Genetic Disorders", 
       "Cancer", 
-      "Developmental Disorders", 
+      "Developmental Disorders",
+      "Psychiatric Disorders",
       "Various Diseases"
     ]
   },
@@ -633,7 +634,8 @@
       "Cancer", 
       "Cardiovascular Diseases", 
       "Neurological Disorders", 
-      "Public Health", 
+      "Public Health",
+      "Psychiatric Disorders",
       "Various Diseases"
     ]
   },
