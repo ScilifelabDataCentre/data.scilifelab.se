@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var blockHTML = `<div class="row g-2 mt-3 mb-4">`;
         
           dataList.forEach((item, ind) => {
+            var long_date = new Date(item.deadline).toLocaleString('en-US', {'month': 'short', day:'numeric', year: 'numeric'});
             blockHTML += `
             <div class="col-md-6 col-lg-4">
               <div class="card-box">`;
@@ -148,14 +149,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     <div class="px-2 fs-3 mx-auto">${ new Date(item.deadline).getDate() }</div>
                     <div class="pb-1 px-2 mx-auto">${ new Date(item.deadline).toLocaleString('default', {'month': 'long'}) }</div>
                   </div>
+                </div>
+                <div>
+                  <b>Deadline:</b> ${item.deadline_time ? long_date + " - " + item.deadline_time : long_date}
                 </div>`;
 
                 if(item.funder) {
                   blockHTML += `
-                  <div class="row">
-                    <div class="col">
-                      <b>Funder:</b> ${item.funder}
-                    </div>
+                  <div>
+                    <b>Funder:</b> ${item.funder}
                   </div>`; 
                 }
 
@@ -177,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                           <div class="modal-body">
                             <div class="row mt-1">
                               <div class="col">
-                                <b>Application deadline:</b> ${ new Date(item.deadline).toLocaleString('en-US', {'month': 'short', day:'numeric', year: 'numeric'}) }
+                                <b>Application deadline:</b> ${item.deadline_time ? long_date + " - " + item.deadline_time : long_date}
                               </div>
                             </div>`;
 
