@@ -22,6 +22,64 @@
       "researchers"
     ],
     "type": [
+      "portal",
+      "helpdesk"
+    ],
+    "search_tags": [
+      "Pathogens portal",
+      "infectious disease data",
+      "Swedish Pathogens Portal",
+      "Pandemic preparedness portal",
+      "COVID-19",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
+    ],
+    "name": "Swedish Pathogens Portal",
+    "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
+    "thumbnail": "/img/service_thumbnails/pathogens.png",
+    "url": "https://pathogens.se/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "thumbnail_border": true,
+    "support_email": "pathogens@scilifelab.se",
+    "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
+    "support_status": "https://status.dc.scilifelab.se/793602036"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "portal",
+      "helpdesk"
+    ],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Helpdesk",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
+    ],
+    "name": "SciLifeLab RDM Guidelines",
+    "description": "A portal containing information on research data management in Sweden",
+    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "url": "https://data-guidelines.scilifelab.se",
+    "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "support_email": "data-management@scilifelab.se",
+    "support_website": "https://data-guidelines.scilifelab.se/contact/",
+    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
+    "support_status": "https://status.dc.scilifelab.se/793602117"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "tool"
     ],
     "search_tags": [
@@ -45,7 +103,8 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "serve@scilifelab.se",
-    "support_website": "https://serve.scilifelab.se/user_guide"
+    "support_website": "https://serve.scilifelab.se/user_guide",
+    "support_status": "https://status.dc.scilifelab.se/795925203"
   },
   {
     "target": [
@@ -96,62 +155,6 @@
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "figshare@scilifelab.se",
     "support_website": "https://scilifelab.se/data/repository"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
-      "portal"
-    ],
-    "search_tags": [
-      "Pathogens portal",
-      "infectious disease data",
-      "Swedish Pathogens Portal",
-      "Pandemic preparedness portal",
-      "COVID-19",
-      "SciLifeLab",
-      "Data Centre",
-      "Tool"
-    ],
-    "name": "Swedish Pathogens Portal",
-    "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
-    "thumbnail": "/img/service_thumbnails/portal.jpg",
-    "url": "https://pathogens.se/",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "pathogens@scilifelab.se",
-    "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
-    "support_status": "https://status.dc.scilifelab.se/793602036"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
-      "portal",
-      "helpdesk"
-    ],
-    "search_tags": [
-      "RDM",
-      "Research data management",
-      "Guidelines",
-      "Helpdesk",
-      "Portal",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre",
-      "SciLifeLab RDM Guidelines"
-    ],
-    "name": "SciLifeLab RDM Guidelines",
-    "description": "A portal containing information on research data management in Sweden",
-    "thumbnail": "/img/service_thumbnails/rdm.jpg",
-    "url": "https://data-guidelines.scilifelab.se",
-    "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/",
-    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
-    "support_status": "https://status.dc.scilifelab.se/793602117"
   },
   {
     "target": [
@@ -455,7 +458,7 @@
     ],
     "type": [
       "tool",
-      "community"
+      "Workflow"
     ],
     "search_tags": [
       "nf-core",
@@ -558,7 +561,8 @@
     "url": "https://github.com/Clinical-Genomics/chanjo",
     "maintained_by": "Clinical Genomics Stockholm",
     "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
-    "support_github": "https://github.com/Clinical-Genomics/chanjo"
+    "support_github": "https://github.com/Clinical-Genomics/chanjo",
+    "support_website": "https://clinical-genomics.github.io/chanjo/"
   },
   {
     "target": [
@@ -566,6 +570,374 @@
     ],
     "type": [
       "tool"
+    ],
+    "search_tags": [
+      "Scout",
+      "clinical genomics",
+      "patient data",
+      "variants",
+      "cases",
+      "tumour",
+      "tumor",
+      "load frequency database",
+      "gene",
+      "genes",
+      "gene pannels",
+      "VCF files",
+      "variant call format",
+      "rare disease",
+      "aggregate",
+      "aggregation"
+    ],
+    "name": "Scout",
+    "description": "A visualiser for variant call format (VCF) files. It helps to manage multiple patient cases in an single, user-friendly interface, and enables collaboration between groups.",
+    "thumbnail": "/img/service_thumbnails/scout.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/scout",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/scout?tab=readme-ov-file",
+    "support_website": "https://clinical-genomics.github.io/scout/"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "LoqusDB",
+      "variant",
+      "local variant database",
+      "genes",
+      "mongodb",
+      "variant database",
+      "VCF file",
+      "variant call format",
+      "variant families",
+      "ped family",
+      "ped-like family",
+      "observations database",
+      "local genomic variation",
+      "genomic variation",
+      "variation",
+      "sequencing",
+      "clinical genomics"
+    ],
+    "name": "LoqusDB",
+    "description": "A tool to keep track of variant observations from genome sequencing data. Handles a large flow of samples, and samples can be added continuously.",
+    "thumbnail": "/img/service_thumbnails/clinical_gen_sthlm.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/loqusdb",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/loqusdb"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "Workflow"
+    ],
+    "search_tags": [
+      "nf-core",
+      "nf-core/rnafusion",
+      "rnafusion",
+      "bioinformatic pipeline",
+      "RNA sequencing",
+      "detect fusion genes",
+      "visualise fusion genes",
+      "fusion genes",
+      "visualize fusion genes",
+      "AWS",
+      "RNA-seq",
+      "RNA",
+      "RNA-sequencing",
+      "gene-fusions"
+    ],
+    "name": "nf-core/rnafusion",
+    "description": "nf-core/rnafusion is a bioinformatics best-practice analysis pipeline for RNA sequencing consisting of several tools designed for detecting and visualizing fusion genes",
+    "thumbnail": "/img/service_thumbnails/nf-core-rnafusion.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/nf-core/rnafusion",
+    "maintained_by": "nf-core community",
+    "maintained_by_url": "https://nf-co.re/contributors",
+    "support_github": "https://github.com/nf-core/rnafusion",
+    "support_website": "https://nf-co.re/rnafusion"
+  },
+    {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "Workflow"
+    ],
+    "search_tags": [
+      "nf-core",
+      "nf-core/raredisease",
+      "rare disease",
+      "bioinformatic pipelines",
+      "call variants",
+      "score variants",
+      "nextflow",
+      "WGS",
+      "whole genome sequencing",
+      "whole-genome sequencing",
+      "whole exome sequencing",
+      "WES",
+      "whole-exome sequencing",
+      "raredisease",
+      "AWS",
+      "variants"
+    ],
+    "name": "nf-core/raredisease",
+    "description": "nf-core/raredisease is a best-practice bioinformatic pipeline for calling and scoring variants from WGS/WES data from rare disease patients.",
+    "thumbnail": "/img/service_thumbnails/nf-core-raredisease.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/nf-core/raredisease",
+    "maintained_by": "nf-core community",
+    "maintained_by_url": "https://nf-co.re/contributors",
+    "support_github": "https://github.com/nf-core/raredisease",
+    "support_website": "https://nf-co.re/raredisease/"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "Workflow"
+    ],
+    "search_tags": [
+      "amplicon-multi-cutadapt",
+      "SBDI",
+      "gbif",
+      "preprocessing",
+      "amplicon sequencing",
+      "sequencing",
+      "global biodiversity information facility",
+      "Swedish biodiversity data infrastructure",
+      "biodiversity",
+      "conservation",
+      "cutadapt",
+      "snakemake",
+      "fastq",
+      "paired-end fastq",
+      "NBIS",
+      "National bioinformatics infrastructure sweden",
+      "Swedish Museum of Natural History"
+    ],
+    "name": "Amplicon-multi-cutadapt",
+    "description": "A snakemake workflow for trimming and quality control of pair-ended FASTQ files",
+    "thumbnail": "/img/service_thumbnails/sbdi.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/biodiversitydata-se/amplicon-multi-cutadapt",
+    "maintained_by": "Swedish Biodiversity Data Infrastructure",
+    "maintained_by_url": "https://biodiversitydata.se",
+    "support_github": "https://github.com/biodiversitydata-se/amplicon-multi-cutadapt"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "coidb",
+      "SBDI",
+      "gbif",
+      "metabarcoding",
+      "sequence",
+      "downstream metabarcoding",
+      "global biodiversity information facility",
+      "Swedish biodiversity data infrastructure",
+      "biodiversity",
+      "conservation",
+      "metadata",
+      "format sequences",
+      "NBIS",
+      "National bioinformatics infrastructure sweden",
+      "Swedish Museum of Natural History"
+    ],
+    "name": "CoiDB",
+    "description": "A tool that downloads sequences and metadata from GBIF and formats sequences for use with downstream metabarcoding analyses.",
+    "thumbnail": "/img/service_thumbnails/sbdi.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/biodiversitydata-se/coidb",
+    "maintained_by": "Swedish Biodiversity Data Infrastructure",
+    "maintained_by_url": "https://biodiversitydata.se",
+    "support_github": "https://github.com/biodiversitydata-se/coidb"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "Workflow"
+    ],
+    "search_tags": [
+      "BALSAMIC",
+      "bioinformatics",
+      "pipeline",
+      "bioinformatics pipeline",
+      "somatic",
+      "somatic mutations",
+      "cancer",
+      "clinical genomics",
+      "FASTQ",
+      "VCF file",
+      "VCF files",
+      "variant call format",
+      "variants",
+      "workflow manager",
+      "annotated VCF"
+    ],
+    "name": "BALSAMIC",
+    "description": "A bioinformatics analysis pipeline for somatic mutations in cancer.",
+    "thumbnail": "/img/service_thumbnails/balsamic_logo.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/BALSAMIC",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/BALSAMIC",
+    "support_website": "https://balsamic.readthedocs.io/en/latest/"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "Workflow"
+    ],
+    "search_tags": [
+      "tomte",
+      "GMS",
+      "genomic medicine sweden",
+      "bioinformatic pipeline",
+      "RNAseq",
+      "RNA-seq",
+      "RNA sequencing",
+      "rare disease",
+      "disease",
+      "nextflow",
+      "clinical genomics"
+    ],
+    "name": "Tomte",
+    "description": "A bioinformatics best-practice analysis pipeline to analyse RNAseq from rare disease patients.",
+    "thumbnail": "/img/service_thumbnails/tomte_logo.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/genomic-medicine-sweden/tomte",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/genomic-medicine-sweden/tomte"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "preClinVar",
+      "clinvar",
+      "Clinvar submissions",
+      "genes",
+      "API",
+      "clinvar API",
+      "variation",
+      "human health",
+      "health",
+      "gene",
+      "genetic",
+      "genomic",
+      "genomic variation",
+      "FastAPI",
+      "clinical genomics"
+    ],
+    "name": "PreClinVar",
+    "description": "A tool to help to transform files in preparation for submission via the ClinVar API.",
+    "thumbnail": "/img/service_thumbnails/clinical_gen_sthlm.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/preClinVar",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/preClinVar"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "Schug",
+      "clinical genomics",
+      "clinical",
+      "genes",
+      "transcripts",
+      "exons",
+      "REST API",
+      "ensembl"
+    ],
+    "name": "Schug",
+    "description": "A service that gathers data about genes, transcripts, and exons from multiple sources and merge the information.",
+    "thumbnail": "/img/service_thumbnails/clinical_gen_sthlm.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/schug",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/schug"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "clinical",
+      "sequencing",
+      "coverage data",
+      "chanjo2",
+      "clinical genomics",
+      "clinical sequencing",
+      "Tool",
+      "d4 format",
+      "Dense Depth Data Dump format",
+      "Python",
+      "genes",
+      "transcripts",
+      "exons",
+      "genomic intervals",
+      "REST server"
+    ],
+    "name": "Chanjo2",
+    "description": "Chanjo2 is coverage analysis tool for human clinical sequencing data using the d4 (Dense Depth Data Dump) format.",
+    "thumbnail": "/img/service_thumbnails/clinical_gen_sthlm.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/chanjo2",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/chanjo2",
+    "support_website": "https://clinical-genomics.github.io/chanjo2/"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "Workflow"
     ],
     "search_tags": [
       "pipeline",
