@@ -22,6 +22,8 @@
   <!-- Local CSS -->
   <link rel="stylesheet" href="/css/styles.css">
   
+  <!-- Including notices.js to dynamically display notices based on the notices.json available on blobserver -->
+  <script src="/js/notices.js" defer></script>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   {{ $recaptcha_pages := slice "contact" "events" "highlights" "jobs" "funding_calls" }}
