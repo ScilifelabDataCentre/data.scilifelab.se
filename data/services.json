@@ -22,6 +22,64 @@
       "researchers"
     ],
     "type": [
+      "portal",
+      "helpdesk"
+    ],
+    "search_tags": [
+      "Pathogens portal",
+      "infectious disease data",
+      "Swedish Pathogens Portal",
+      "Pandemic preparedness portal",
+      "COVID-19",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
+    ],
+    "name": "Swedish Pathogens Portal",
+    "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
+    "thumbnail": "/img/service_thumbnails/pathogens.png",
+    "url": "https://pathogens.se/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "thumbnail_border": true,
+    "support_email": "pathogens@scilifelab.se",
+    "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
+    "support_status": "https://status.dc.scilifelab.se/793602036"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "portal",
+      "helpdesk"
+    ],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Helpdesk",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
+    ],
+    "name": "SciLifeLab RDM Guidelines",
+    "description": "A portal containing information on research data management in Sweden",
+    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "url": "https://data-guidelines.scilifelab.se",
+    "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "support_email": "data-management@scilifelab.se",
+    "support_website": "https://data-guidelines.scilifelab.se/contact/",
+    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
+    "support_status": "https://status.dc.scilifelab.se/793602117"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "tool"
     ],
     "search_tags": [
@@ -45,7 +103,8 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "serve@scilifelab.se",
-    "support_website": "https://serve.scilifelab.se/user_guide"
+    "support_website": "https://serve.scilifelab.se/user_guide",
+    "support_status": "https://status.dc.scilifelab.se/795925203"
   },
   {
     "target": [
@@ -96,62 +155,6 @@
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "figshare@scilifelab.se",
     "support_website": "https://scilifelab.se/data/repository"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
-      "portal"
-    ],
-    "search_tags": [
-      "Pathogens portal",
-      "infectious disease data",
-      "Swedish Pathogens Portal",
-      "Pandemic preparedness portal",
-      "COVID-19",
-      "SciLifeLab",
-      "Data Centre",
-      "Tool"
-    ],
-    "name": "Swedish Pathogens Portal",
-    "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
-    "thumbnail": "/img/service_thumbnails/portal.jpg",
-    "url": "https://pathogens.se/",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "pathogens@scilifelab.se",
-    "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
-    "support_status": "https://status.dc.scilifelab.se/793602036"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
-      "portal",
-      "helpdesk"
-    ],
-    "search_tags": [
-      "RDM",
-      "Research data management",
-      "Guidelines",
-      "Helpdesk",
-      "Portal",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre",
-      "SciLifeLab RDM Guidelines"
-    ],
-    "name": "SciLifeLab RDM Guidelines",
-    "description": "A portal containing information on research data management in Sweden",
-    "thumbnail": "/img/service_thumbnails/rdm.jpg",
-    "url": "https://data-guidelines.scilifelab.se",
-    "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/",
-    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
-    "support_status": "https://status.dc.scilifelab.se/793602117"
   },
   {
     "target": [
@@ -455,7 +458,7 @@
     ],
     "type": [
       "tool",
-      "community"
+      "Workflow"
     ],
     "search_tags": [
       "nf-core",
@@ -636,11 +639,12 @@
       "researchers"
     ],
     "type": [
-      "tool"
+      "tool",
+      "Workflow"
     ],
     "search_tags": [
       "nf-core",
-      "nf-core/rndfusion",
+      "nf-core/rnafusion",
       "rnafusion",
       "bioinformatic pipeline",
       "RNA sequencing",
@@ -669,7 +673,8 @@
       "researchers"
     ],
     "type": [
-      "tool"
+      "tool",
+      "Workflow"
     ],
     "search_tags": [
       "nf-core",
@@ -704,7 +709,8 @@
       "researchers"
     ],
     "type": [
-      "tool"
+      "tool",
+      "Workflow"
     ],
     "search_tags": [
       "amplicon-multi-cutadapt",
@@ -772,7 +778,43 @@
       "researchers"
     ],
     "type": [
-      "tool"
+      "tool",
+      "Workflow"
+    ],
+    "search_tags": [
+      "BALSAMIC",
+      "bioinformatics",
+      "pipeline",
+      "bioinformatics pipeline",
+      "somatic",
+      "somatic mutations",
+      "cancer",
+      "clinical genomics",
+      "FASTQ",
+      "VCF file",
+      "VCF files",
+      "variant call format",
+      "variants",
+      "workflow manager",
+      "annotated VCF"
+    ],
+    "name": "BALSAMIC",
+    "description": "A bioinformatics analysis pipeline for somatic mutations in cancer.",
+    "thumbnail": "/img/service_thumbnails/balsamic_logo.png",
+    "thumbnail_border": true,
+    "url": "https://github.com/Clinical-Genomics/BALSAMIC",
+    "maintained_by": "Clinical Genomics Stockholm",
+    "maintained_by_url": "https://www.scilifelab.se/units/clinical-genomics-stockholm/",
+    "support_github": "https://github.com/Clinical-Genomics/BALSAMIC",
+    "support_website": "https://balsamic.readthedocs.io/en/latest/"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool",
+      "Workflow"
     ],
     "search_tags": [
       "tomte",
@@ -789,7 +831,7 @@
     ],
     "name": "Tomte",
     "description": "A bioinformatics best-practice analysis pipeline to analyse RNAseq from rare disease patients.",
-    "thumbnail": "/img/service_thumbnails/tomte.png",
+    "thumbnail": "/img/service_thumbnails/tomte_logo.png",
     "thumbnail_border": true,
     "url": "https://github.com/genomic-medicine-sweden/tomte",
     "maintained_by": "Clinical Genomics Stockholm",
@@ -894,7 +936,8 @@
       "researchers"
     ],
     "type": [
-      "tool"
+      "tool",
+      "Workflow"
     ],
     "search_tags": [
       "pipeline",
