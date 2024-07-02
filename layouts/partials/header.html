@@ -3,7 +3,9 @@
   <header class="header" style="background-image: url('/img/illustrations/circle_zoomed.png'); color: white; ">
     <div class="container">
       <div class="py-2 my-1">
-        <h2><a class="banner-title-link" href="/news/#20240418">Welcome to the SciLifeLab Data Platform</a></h2>
+        <h2 {{ if .IsHome }}class="d-none" id="home-banner"{{ end }}>
+          <a class="banner-title-link" href="/news/#20240418">Welcome to the SciLifeLab Data Platform</a>
+        </h2>
       </div>
     </div>
   </header>
