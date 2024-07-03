@@ -188,12 +188,17 @@
 
   document.addEventListener("DOMContentLoaded", function (event) {
     // Takes a URL and calls the callback function pass the data fetched
-    function getDataFromUrl(url, callback) {
+    function getDataFromUrl(url, callback, loadend=false) {
       var req = new XMLHttpRequest();
       req.overrideMimeType("application/json");
       req.open("GET", url, true);
       req.onload = function () {
         callback(JSON.parse(req.responseText));
+      };
+      if (loadend){
+        req.onloadend = function () {
+          loadend();
+        };
       };
       req.send(null);
     }
@@ -322,8 +327,10 @@
         if (data.description.length > 140) {
           var descriptionDiv = `
                 <div id="app${data.id}" class="small collapse">${data.description}</div>
-                <button type="button" class="collapsed" data-bs-toggle="collapse" aria-expanded="false" 
-                   data-bs-target="#app${data.id}" aria-controls="app${data.id}"></button>`;
+                <button type="button" class="collapsed serve-app-description" data-bs-toggle="collapse"
+                  data-bs-target="#app${data.id}" aria-expanded="false" aria-controls="app${data.id}">
+                    + more description
+                  </button>`;
         } else {
           var descriptionDiv = `<div class="small">${data.description}</div>`;
         };
@@ -349,9 +356,21 @@
       };
     };
 
+    // Change button text for serve app description
+    function enableServeTextChange (){
+      $("button.serve-app-description").on("click", function(){
+        if ($(this).attr("aria-expanded") == "true"){
+          $(this).text("- less description");
+        } else {
+          $(this).text("+ more description");
+        };
+      });
+    };
+
     getDataFromUrl(
       decodeURIComponent("https%3A%2F%2Fserve.scilifelab.se%2Fopenapi%2Fv1%2Fpublic-apps"),
-      addServeApps
+      addServeApps,
+      enableServeTextChange
     );
 
     // Add latest tag to very recent news
