@@ -1,0 +1,17 @@
+[
+  {
+    "type": ["Onboarding"],
+    "search_tags": [
+      "sources",
+      "data",
+      "repositories",
+      "download",
+      "submit",
+      "submission"
+    ],
+    "name": "Onboarding for Fellows",
+    "description": "SOME SUMMARY TEXT",
+    "url": "/data_centre/onboarding_fellows",
+    "support_email": "datacentre@scilifelab.se"
+  }
+]
