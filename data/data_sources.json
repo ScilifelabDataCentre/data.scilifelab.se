@@ -2,6 +2,57 @@
   {
     "target": ["researchers"],
     "type": ["Data source"],
+    "ddls": ["Precision Medicine and Diagnostics", "Epidemiology and Biology of Infection"],
+    "search_tags": [
+      "InParanoiDB",
+      "ortholog groups",
+      "orthologs",
+      "proteins",
+      "protein domains",
+      "complex co-membership",
+      "eukaryotic",
+      "eukaryote",
+      "Sonnhammer laboratory"
+    ],
+    "name": "InParanoiDB",
+    "description": "A database of orthologs between 640 species, including inparalogs for both protein domains and full-length proteins.",
+    "thumbnail": "/img/data_sources_thumbs/sonnhammer.png",
+    "url": "https://inparanoidb.sbc.su.se",
+    "data":["Proteins and proteomes", "Genes and genomes"],
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cardiovascular Diseases"
+    ]
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Precision Medicine and Diagnostics"],
+    "search_tags": [
+      "OrthoDisease",
+      "ortholog",
+      "orthologs",
+      "Disease orthologs",
+      "Human disease",
+      "gene",
+      "Ensembl gene identifiers",
+      "OMIM",
+      "Online Mendelian Inheritance in Man",
+      "Sonnhammer laboratory"
+    ],
+    "name": "OrthoDisease",
+    "description": "A database of human disease orthologs.",
+    "thumbnail": "/img/data_sources_thumbs/sonnhammer.png",
+    "url": "https://orthodisease.sbc.su.se/cgi-bin/index.cgi",
+    "data":["Genes and genomes"],
+    "thumbnail_border": true,
+    "disease_type": [ 
+      "Cardiovascular Diseases"
+    ]
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
     "ddls": ["Precision Medicine and Diagnostics"],
     "search_tags": [
       "ELIXIR Core Data Resource", "SCAPIS database", "Swedish CArdioPulmonary bioImage Study", "cardiovascular disease", "CVD", "chronic obstructive pulmonary disease", "COPD", "registry data", "health registers"
