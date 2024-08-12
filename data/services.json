@@ -830,7 +830,7 @@
       "clinical genomics"
     ],
     "name": "Tomte",
-    "description": "A bioinformatics best-practice analysis pipeline to analyse RNAseq from rare disease patients.",
+    "description": "A bioinformatics best-practice analysis pipeline to analyse RNA-Seq from rare disease patients.",
     "thumbnail": "/img/service_thumbnails/tomte_logo.png",
     "thumbnail_border": true,
     "url": "https://github.com/genomic-medicine-sweden/tomte",
@@ -1141,7 +1141,7 @@
       "Sonnhammer laboratory"
     ],
     "name": "FunCoup",
-    "description": "A tool for exploring comprehensive protein networks of functional coupling",
+    "description": "A tool for exploring comprehensive protein networks of functional coupling.",
     "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
     "thumbnail_border": true,
     "url": "https://funcoup.org/search/",
@@ -1182,7 +1182,7 @@
       "researchers"
     ],
     "type": [
-      "tools"
+      "Tool"
     ],
     "search_tags": [
       "Phobius",
@@ -1209,7 +1209,7 @@
       "researchers"
     ],
     "type": [
-      "tools"
+      "Tool", "Workflow"
     ],
     "search_tags": [
       "PathBIX",
@@ -1224,7 +1224,7 @@
       "Sonnhammer laboratory"
     ],
     "name": "PathBIX",
-    "description": "PathBIX, Pathway Analysis with ANUBIX,is a web server that implements a novel network-based pathway enrichment analysis",
+    "description": "PathBIX, Pathway Analysis with ANUBIX, is a web server that implements a novel network-based pathway enrichment analysis.",
     "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
     "thumbnail_border": true,
     "url": "https://pathbix.sbc.su.se",
