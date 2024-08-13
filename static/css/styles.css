@@ -209,7 +209,7 @@ h5 a:hover {
 }
 
 .bg-resource-and-service-title {
-  background-color: #43858B;
+  background-color: #045c64;
 }
 
 .bg-resource-and-service-title a {
@@ -309,14 +309,6 @@ h5 a:hover {
   padding: 0px;
   background-color: #fff;
   color: #045c64;
-}
-
-.app-description button.collapsed:after {
-  content: "+ more description";
-}
-
-.app-description button:not(.collapsed):after {
-  content: "- less description";
 }
 
 /* Support block for the homepage */
