@@ -21,7 +21,7 @@
     "data":["Proteins and proteomes", "Genes and genomes"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cardiovascular Diseases"
+      "Various diseases"
     ]
   },
   {
@@ -47,7 +47,7 @@
     "data":["Genes and genomes"],
     "thumbnail_border": true,
     "disease_type": [ 
-      "Cardiovascular Diseases"
+      "Various diseases"
     ]
   },
   {
