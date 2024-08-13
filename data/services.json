@@ -830,7 +830,7 @@
       "clinical genomics"
     ],
     "name": "Tomte",
-    "description": "A bioinformatics best-practice analysis pipeline to analyse RNAseq from rare disease patients.",
+    "description": "A bioinformatics best-practice analysis pipeline to analyse RNA-Seq from rare disease patients.",
     "thumbnail": "/img/service_thumbnails/tomte_logo.png",
     "thumbnail_border": true,
     "url": "https://github.com/genomic-medicine-sweden/tomte",
@@ -1089,5 +1089,180 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "data-platform@scilifelab.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "database"
+    ],
+    "search_tags": [
+      "OrthoDisease",
+      "ortholog",
+      "orthologs",
+      "Disease orthologs",
+      "Human disease",
+      "gene",
+      "Ensembl gene identifiers",
+      "OMIM",
+      "Online Mendelian Inheritance in Man",
+      "Sonnhammer laboratory"
+    ],
+    "name": "OrthoDisease",
+    "description": "A database of human disease orthologs.",
+    "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
+    "thumbnail_border": true,
+    "url": "https://orthodisease.sbc.su.se/cgi-bin/index.cgi",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
+    "support_website": "https://orthodisease.sbc.su.se/cgi-bin/faq.cgi",
+    "support_email": "orthodisease@sbc.su.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "Funcoup",
+      "functional coupling",
+      "coupling",
+      "genome-wide functional coupling",
+      "protein-protein interaction",
+      "complex co-membership",
+      "metabolic pathway",
+      "co-membership",
+      "signalling pathway",
+      "shared operon",
+      "network",
+      "Sonnhammer laboratory"
+    ],
+    "name": "FunCoup",
+    "description": "A tool for exploring comprehensive protein networks of functional coupling.",
+    "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
+    "thumbnail_border": true,
+    "url": "https://funcoup.org/search/",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
+    "support_website": "https://funcoup.org/help/",
+    "support_email": "funcoup@scilifelab.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "database"
+    ],
+    "search_tags": [
+      "InParanoiDB",
+      "ortholog groups",
+      "orthologs",
+      "proteins",
+      "protein domains",
+      "complex co-membership",
+      "eukaryotic",
+      "eukaryote",
+      "Sonnhammer laboratory"
+    ],
+    "name": "InParanoiDB",
+    "description": "A database of orthologs between 640 species, including inparalogs for both protein domains and full-length proteins.",
+    "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
+    "thumbnail_border": true,
+    "url": "https://inparanoidb.sbc.su.se",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
+    "support_website": "https://inparanoidb.sbc.su.se/about/"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Tool"
+    ],
+    "search_tags": [
+      "Phobius",
+      "transmembrane topology",
+      "topology",
+      "single peptide predictor",
+      "peptide",
+      "FASTA format",
+      "amino acids",
+      "homology",
+      "Sonnhammer laboratory"
+    ],
+    "name": "Phobius",
+    "description": "A combined transmembrane topology and signal peptide predictor.",
+    "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
+    "thumbnail_border": true,
+    "url": "https://phobius.sbc.su.se",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
+    "support_website": "https://phobius.sbc.su.se/instructions.html"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "Tool", "Workflow"
+    ],
+    "search_tags": [
+      "PathBIX",
+      "novel network-based pathway enrichment analysis",
+      "network-based pathway enrichment",
+      "Pathway Analysis with ANUBIX",
+      "gene",
+      "gene sets",
+      "pathway enrichment analysis",
+      "network crosstalk",
+      "crosstalk",
+      "Sonnhammer laboratory"
+    ],
+    "name": "PathBIX",
+    "description": "PathBIX, Pathway Analysis with ANUBIX, is a web server that implements a novel network-based pathway enrichment analysis.",
+    "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
+    "thumbnail_border": true,
+    "url": "https://pathbix.sbc.su.se",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
+    "support_website": "https://pathbix.sbc.su.se/help"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "pathwax",
+      "funcoup",
+      "coupling",
+      "genome-wide functional coupling",
+      "protein-protein interaction",
+      "association network",
+      "pathway annotation",
+      "crosstalk",
+      "species",
+      "gene",
+      "network",
+      "association",
+      "genome wide",
+      "BinoX",
+      "Sonnhammer laboratory"
+    ],
+    "name": "PathwAX",
+    "description": "Pathway annotation based on crosstalk derived through genome-side functional association networks.",
+    "thumbnail": "/img/service_thumbnails/sonnhammer_logo.png",
+    "thumbnail_border": true,
+    "url": "https://pathwax.sbc.su.se/",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
+    "support_website": "https://pathwax.sbc.su.se/help.html"
   }
 ]
