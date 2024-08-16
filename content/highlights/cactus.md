@@ -21,7 +21,7 @@ tags:
     mRNA-Seq,
     ATAC-Seq,
   ]
-authors: [Katarina Öjefors Stark &  Jérôme Salignon]
+authors: [Katarina Öjefors Stark, Jérôme Salignon]
 images: [/highlights/cactus.png]
 ---
 
