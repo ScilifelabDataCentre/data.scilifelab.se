@@ -6,7 +6,15 @@
   </div>{{ end }}
 
 <div><h2>{{ .Title }}</h2></div>
-<div class="text-muted mb-2">Published on: {{ .Date | time.Format ":date_long" }}. Written by: {{ range (.GetTerms "authors") }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>
+
+{{ $highlight_authors := .GetTerms "authors" }}
+<div class="text-muted mb-2">
+  Published on: {{ .Date | time.Format ":date_long" }}. Written by:
+  {{ range $ind, $author := $highlight_authors }}
+    <a href="{{ $author.RelPermalink }}">{{ $author.LinkTitle }}</a>
+    {{ if ne ($highlight_authors | len) (add $ind 1) }} , {{ end }}
+  {{ end }}
+</div>
 
 <figure class="figure float-start me-3 w-50">
   <img src="{{ if (isset .Params "banner_large") }}{{ .Params.banner_large }}{{ else }}{{ .Params.banner }}{{ end }}" alt="{{ .Title }}" class="img-thumbnail">
