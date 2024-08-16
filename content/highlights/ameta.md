@@ -18,7 +18,7 @@ tags:
     ancient microbes,
     detection,
   ]
-authors: [Katarina Öjefors Stark &  Nikolay Oskolkov]
+authors: [Katarina Öjefors Stark, Nikolay Oskolkov]
 images: [/highlights/ameta.png]
 ---
 

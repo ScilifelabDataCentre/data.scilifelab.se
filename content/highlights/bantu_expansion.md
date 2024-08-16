@@ -17,7 +17,7 @@ tags:
     Spatial analysis,
     Bioinformatics,
   ]
-authors: [Katarina Öjefors Stark & Rickard Hammarén]
+authors: [Katarina Öjefors Stark, Rickard Hammarén]
 images: [/highlights/BSP_banner_large.png]
 ---
 
