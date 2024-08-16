@@ -394,7 +394,7 @@
           for (var [filter_name, filter_list] of Object.entries(selected_filters)) {
             var s_events = new Set;
             filter_list.forEach(function (filter_value) {
-              $(`div#events-container div[${filter_name}*=${filter_value}]`).each(function () { s_events.add(this); });
+              $(`div#events-container div[${filter_name}*='${filter_value}']`).each(function () { s_events.add(this); });
             });
             all_selected_events.push(s_events);
           };
