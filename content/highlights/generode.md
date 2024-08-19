@@ -5,7 +5,8 @@ summary: The GenErode pipeline is the first bioinformatics pipeline that can pro
 banner: /highlights/GenErode.png
 banner_large: /highlights/GenErode.png
 banner_caption: "Image courtesy of David Díez-del-Molino."
-tags: [Highlight, GenErode, Genomic Erosion, Bioinformatics, Conservation]
+tags:
+  [Highlight, GenErode, Genomic Erosion, Bioinformatics, Conservation, Pipeline]
 authors: [Katarina Öjefors Stark]
 images: ["/highlights/GenErode.png"]
 ---
@@ -14,9 +15,9 @@ In recent centuries, many populations of wild animal species have been in severe
 
 Genomic erosion indices are only weakly correlated with current population sizes, which makes it difficult to identify genomic erosion in endangered species. Researchers would need to compare data from historical or ancient samples from before the decline (e.g. from museum collections) with data from modern, present-day samples to directly quantify the genomic consequences of the decline. Another challenge is to make data analyses reproducible and thereby comparable. Finally, not all conservation practitioners and researchers have the bioinformatics and programming skills needed to analyse large-scale genomic datasets.
 
-In a recent publication in *BMC Bioinformatics*, Kutschera, Kierczak, van der Valk, and colleagues from SciLifeLab, Uppsala University, Stockholm University, the Swedish Museum of Natural History, and the Centre for Palaeogenetics presented the **GenErode** pipeline. It is a highly flexible, scalable, and modular bioinformatics pipeline that can compare patterns of genomic erosion using genomic data from samples from different time periods.
+In a recent publication in _BMC Bioinformatics_, Kutschera, Kierczak, van der Valk, and colleagues from SciLifeLab, Uppsala University, Stockholm University, the Swedish Museum of Natural History, and the Centre for Palaeogenetics presented the **GenErode** pipeline. It is a highly flexible, scalable, and modular bioinformatics pipeline that can compare patterns of genomic erosion using genomic data from samples from different time periods.
 
->"What is so special about the **GenErode** pipeline is that it can process and analyse whole-genome re-sequencing data from ancient, historical and modern samples at the same time”, says first author [Verena Kutschera](https://nbis.se/about/staff/verena-kutschera/) from [NBIS](https://nbis.se). “This makes it possible to estimate genomic erosion over time.”.
+> "What is so special about the **GenErode** pipeline is that it can process and analyse whole-genome re-sequencing data from ancient, historical and modern samples at the same time”, says first author [Verena Kutschera](https://nbis.se/about/staff/verena-kutschera/) from [NBIS](https://nbis.se). “This makes it possible to estimate genomic erosion over time.”.
 
 In brief, **GenErode** maps sequencing data to a reference genome assembly. It then performs variant calling and runs different downstream analyses to estimate a number of genomic erosion indices. The data is processed according to the characteristics of each data type (ancient/historical, modern). Quality checks and filtering are performed in all data processing steps, and a report with run settings and results is produced for each pipeline run. The pipeline can also run optional steps, such as subsampling a proportion of reads to achieve a similar average depth across samples, or assessing the presence of non-endogenous reads in the data by mapping historical/ancient data to mitochondrial genomes from different species.
 
@@ -26,7 +27,7 @@ To test the **GenErode** pipeline and verify it as a useful tool, the researcher
 
 In summary, while other pipelines are able to process and genotype ancient DNA data, **GenErode** is the first bioinformatics pipeline that can process and analyse ancient, historical, and modern sequencing data from the same species with the aim of generating comparable estimates of genomic erosion indices. One of the main advantages of **GenErode** is its flexibility, as the researchers propose that the pipeline can be used for sequencing data from different species groups. Results created with **GenErode** are easily reproducible and the pipeline is in an accessible format.
 
->“We hope that our pipeline helps to close the gap between evolutionary research on endangered species and applications in their conservation. It was important to us to make **GenErode** easy to run for people from different backgrounds, not only bioinformaticians”, says Verena Kutschera.
+> “We hope that our pipeline helps to close the gap between evolutionary research on endangered species and applications in their conservation. It was important to us to make **GenErode** easy to run for people from different backgrounds, not only bioinformaticians”, says Verena Kutschera.
 
 Those interested are invited to read more about the [Love Dalén group](https://www.su.se/nyheter/love-dal%C3%A9n-ny-professor-vid-zoologiska-institutionen-1.609473) and the [Centre for Palaeogenetics](http://palaeogenetics.com/).
 
@@ -36,12 +37,12 @@ This work involves multiple researchers affiliated with SciLifeLab, including a 
 
 The **GenErode** pipeline was written in Snakemake and Python3. It uses Conda and Singularity containers to achieve reproducibility on high-performance compute clusters. It is possible to run the pipeline on Linux systems, such as high-performance computing (HPC) clusters.
 
-* In adherence with Open Science, the researchers have made the source code freely available on [GitHub](https://github.com/NBISweden/GenErode).
-* The Sumatran rhinoceros test dataset is available in the [Scilifelab Data Repository](https://doi.org/10.17044/scilifelab.19248172), and it can be used to test the GenErode pipeline.
+- In adherence with Open Science, the researchers have made the source code freely available on [GitHub](https://github.com/NBISweden/GenErode).
+- The Sumatran rhinoceros test dataset is available in the [Scilifelab Data Repository](https://doi.org/10.17044/scilifelab.19248172), and it can be used to test the GenErode pipeline.
 
 #### Article
 
-Kutschera, V. E., Kierczak, M., van der Valk, T., von Seth, J., Dussex, N., Lord, E., Dehasque, M., Stanton, D. W. G., Emami Khoonsari, P., Nystedt, B., Dalén, L., Díez-del-Molino, D. (2022) GenErode: a bioinformatics pipeline to investigate genome erosion in endangered and extinct species. *BMC Bioinformatics 23*, 228. [10.1038/s41467-022-28865-w](https://doi.org/10.1186/s12859-022-04757-0)
+Kutschera, V. E., Kierczak, M., van der Valk, T., von Seth, J., Dussex, N., Lord, E., Dehasque, M., Stanton, D. W. G., Emami Khoonsari, P., Nystedt, B., Dalén, L., Díez-del-Molino, D. (2022) GenErode: a bioinformatics pipeline to investigate genome erosion in endangered and extinct species. _BMC Bioinformatics 23_, 228. [10.1038/s41467-022-28865-w](https://doi.org/10.1186/s12859-022-04757-0)
 
 #### Funding
 

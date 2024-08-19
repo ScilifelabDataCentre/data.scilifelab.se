@@ -146,7 +146,7 @@
       for (var [filter_name, filter_list] of Object.entries(selected_filters)) {
         var s_services = new Set;
         filter_list.forEach(function (filter_value) {
-          $(`div.tab-pane.active div.service[${filter_name}*=${filter_value}]`).each(function () { s_services.add(this); });
+          $(`div.tab-pane.active div.service[${filter_name}*='${filter_value}']`).each(function () { s_services.add(this); });
         });
         all_selected_services.push(s_services);
       };
