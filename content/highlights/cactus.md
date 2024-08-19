@@ -1,6 +1,6 @@
 ---
 title: New pipeline for mRNA-Seq and ATAC-Seq analysis allows for biological insights without in-depth bioinformatics skills
-date: 2024-08-12
+date: 2024-08-19
 summary: Salignon et al. created Cactus, a new pipeline that can be used for comprehensive ATAC-Seq and mRNA-Seq data analysis. Cactus contains multiple unique functions compared to other, similar pipelines, e.g. enrichment in chromatin states and ChIP-Seq binding sites.
 banner: /highlights/cactus.png
 banner_caption: Figure 1 from Salignon et al. (2024) showing an overview of the cactus pipeline. (a) Key features of the pipeline, (b) Simplified workflow, (c) Example enrichment analysis, and (d) subworkflow for the creation of Differential Analysis Subsets (DASs).
