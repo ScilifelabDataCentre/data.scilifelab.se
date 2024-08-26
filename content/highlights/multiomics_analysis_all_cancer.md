@@ -32,7 +32,7 @@ Leo, Aswad, Stahl and colleagues have made their work available as an user-frien
 
 #### Data
 
-* FORALL web portal, available at <a href="https://proteomics.se/forall">https://proteomics.se/forall</a>:
+* FORALL web portal, available at <https://proteomics.se/forall>:
     * Proteomics: MS-based protein profiles of 49 childhood ALL cell lines and two EBV transformed B-cell lines with biological replicates (N=82 samples).
     * Transcriptomics: RNA-seq-based total RNA profiles of 49 childhood ALL cell lines and two as two EBV transformed cell lines with biological replicates (N=66 samples).
     * Drugs response: 25 BCP-ALL, 16 T-ALL, and 2 B-ALL cell lines responses to treatment of a panel of 528 drugs.

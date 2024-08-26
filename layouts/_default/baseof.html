@@ -10,7 +10,7 @@
                   {{ if .Params.toc }}
                           <div class="row">
                               <div class="col-md-3 order-md-first toc small">{{- partial "toc.html" . -}}</div>
-                              <div class="col-md-9 order-md-last content" id="content">{{- block "main" . }}{{- end }}</div>
+                              <div class="col-md-9 order-md-last content" id="toc-content">{{- block "main" . }}{{- end }}</div>
                           </div>
                   {{ else }}
                           {{- block "main" . }}{{- end }}
