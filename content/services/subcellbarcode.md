@@ -16,8 +16,8 @@ The cellular organisation of proteins has, until recently, been largely unexplor
 [Orre *et al.* (2019)](https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)31005-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097276518310050%3Fshowall%3Dtrue) used cell fractionation together with quantitative mass spectrometry (MS) to study protein subcellular localisation. They then classified protein localisation on a global scale, providing a resource covering proteins mapping to almost 12.5k unique genes across 5 cell lines. They have recently progressed their work by developing an integrated workflow for spatial proteomics research [(Arslan & Pan *et al.*, 2022)](https://www.nature.com/articles/s41596-022-00699-2). This comprehensive workflow includes both the wet- and dry-lab steps. The wet-lab protocol encompasses the process from subcellular fractionation to MS sample preparation and analysis. The dry-lab protocol describes all subsequent computational steps required to make determinations about the subcellular locations of proteins. It includes quantitative MS-data analysis, classification based on machine learning, differential localisation analysis, and data visualisation. An overview of the method and approximate timings is shown below.
 
 <figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/subcellbarcode_method_overview.png" class="figure-img img-fluid w-75 d-none d-xl-inline">
-  <img src="/img/misc/subcellbarcode_method_overview.png" class="figure-img img-fluid w-100 d-xl-none">
+  <img src="/img/misc/subcellbarcode_method_overview.png" alt="Subcell barcode method" class="figure-img img-fluid w-75 d-none d-xl-inline">
+  <img src="/img/misc/subcellbarcode_method_overview.png" alt="Subcell barcode method" class="figure-img img-fluid w-100 d-xl-none">
   <figcaption class="figure-caption">Overview of latest SubCellBarCode methology, including approximate timings.</figcaption>
 </figure>
 
