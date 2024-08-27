@@ -81,8 +81,8 @@ The [Swedish User and Project Repository (SUPR) Portal](https://supr.naiss.se/) 
 After going to the portal, the first step is to register as a new user by selecting 'Register New Person' (see below).
 
 <figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/SUPR_login.png" alt="SUPR login screeshot" class="figure-img img-fluid w-75 d-none d-xl-inline">
-  <img src="/img/misc/SUPR_login.png" alt="SUPR login screeshot" class="figure-img img-fluid w-100 d-xl-none">
+  <img src="/img/misc/SUPR_login.png" class="figure-img img-fluid img-adaptive"
+       alt="Swedish User and Project Repository website screenshot">
   <figcaption class="figure-caption">A screenshot fron the SUPR login page.</figcaption>
 </figure>
 
@@ -93,8 +93,8 @@ Your application will then be evaluated. Smaller projects are evaluated on a tec
 When you application for resources is approved, you will need to apply for a user account on the compute resource to which your project has been assigned.
 
 <figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/NAISS_workflow.png" alt="NAISS workflow" class="figure-img img-fluid w-75 d-none d-xl-inline">
-  <img src="/img/misc/NAISS_workflow.png" alt="NAISS workflow" class="figure-img img-fluid w-100 d-xl-none">
+  <img src="/img/misc/NAISS_workflow.png" class="figure-img img-fluid img-adaptive"
+       alt="National Academic Infrastructure for Supercomputing in Sweden workflow">
   <figcaption class="figure-caption">A summary of the workflow on the SUPR Portal, courtesy of NAISS.</figcaption>
 </figure>
 

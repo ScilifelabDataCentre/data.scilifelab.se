@@ -145,8 +145,17 @@ h5 a:hover {
   font-weight: 600;
 }
 
+/* Adaptive image */
 
+.img-adaptive {
+  width: 100%;
+}
 
+@media all and (min-width: 1200px){
+  .img-adaptive {
+    width: 75%;
+  }
+}
 
 /* logo */
 

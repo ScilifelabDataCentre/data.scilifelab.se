@@ -43,8 +43,7 @@ Alternative metrics are also available from many journal publishers. Publishers 
 Below is a wordcloud showing all of the types of sources monitored by PlumX, please note that the size of the word does not indicate relative importance or number of e.g. blogs monitored.
 
 <figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/plumx_cloud.png" alt="Plmux cloud" class="figure-img img-fluid w-75 d-none d-xl-inline">
-  <img src="/img/misc/plumx_cloud.png" alt="Plmux cloud" class="figure-img img-fluid w-100 d-xl-none">
+  <img src="/img/misc/plumx_cloud.png" alt="PlumX artifacts cloud" class="figure-img img-fluid img-adaptive">
   <figcaption class="figure-caption">Word cloud created using <a href="https://wordart.com/">wordart.com</a>. Words are not weighted. Based largely on the 67 “PlumX artifacts”, i.e. the sources tracked by PlumX.</figcaption>
 </figure>
 <br>
