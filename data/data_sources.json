@@ -16,10 +16,9 @@
     ],
     "name": "InParanoiDB",
     "description": "A database of orthologs between 640 species, including inparalogs for both protein domains and full-length proteins.",
-    "thumbnail": "/img/data_sources_thumbs/sonnhammer.png",
+    "thumbnail": "/img/data_sources_thumbs/inparanoidb.png",
     "url": "https://inparanoidb.sbc.su.se",
     "data":["Proteins and proteomes", "Genes and genomes"],
-    "thumbnail_border": true,
     "disease_type": [ 
       "Various diseases"
     ]
@@ -42,7 +41,7 @@
     ],
     "name": "OrthoDisease",
     "description": "A database of human disease orthologs.",
-    "thumbnail": "/img/data_sources_thumbs/sonnhammer.png",
+    "thumbnail": "/img/data_sources_thumbs/orthodisease.png",
     "url": "https://orthodisease.sbc.su.se/cgi-bin/index.cgi",
     "data":["Genes and genomes"],
     "thumbnail_border": true,

@@ -56,16 +56,16 @@
         <div class="bg-light p-3" style="position: sticky; top: 15px;">
           <h5>Search</h5>
           <div class="input-group">
-            <input type="text" id="Search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
-            <label class ="form-control-label" for="Search" aria-labelledby="Search"> 
+            <input type="text" id="{{ $target }}-search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
+            <label class ="form-control-label" for="{{ $target }}-search" aria-labelledby="Search"> 
           </div>
           {{ if ge (len $target_stype) 1 }}
           <div class="mt-3">
             <h5>Type</h5>
             {{ range sort $target_stype }}
             <div class="form-check">   
-              <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ . | urlize }}">
-              <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+              <input class="form-check-input" type="checkbox" id="{{ $target }}-{{ . | urlize }}" name="type" value="{{ . | urlize }}">
+              <label class="form-check-label" for="{{ $target }}-{{ . | urlize }}">{{ . | humanize }}</label>
             </div>
             {{ end }}
           </div>
@@ -113,7 +113,7 @@
             </div>
           </div>
           {{ end }}
-          <div id="no-filtered-service" style="display:none;">
+          <div id="no-filtered-services-{{ $target }}" style="display:none;">
             <p class="text-center">No services have the given keyword, please try to use another.</p>
           </div>
         </div>
@@ -127,15 +127,16 @@
   // Function to search and filter the service based on selected input
   function searchAndFilter (){
     // Get all the imputs
+    var target = $("div.tab-pane.active").attr('id');
     var selected_filters = new Object();
-    var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value}).get();
+    var selected_type = $("div.tab-pane.active input:checkbox[name=type]:checked").map(function () {return this.value}).get();
     if (selected_type.length){ selected_filters['data-stype'] = selected_type };
     var search_text = $("div.tab-pane.active input[type=text]").val().toLowerCase();
     if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
 
     // Hide all services before filtering
     $(`div.tab-pane.active div.service`).hide();
-    $(`div.tab-pane.active div#no-filtered-service`).hide();
+    $(`div.tab-pane.active div#no-filtered-${target}`).hide();
 
     // Show relavant services based on selected criteria
     if (!Object.keys(selected_filters).length) {
@@ -161,7 +162,7 @@
         selected_services.forEach(function (sService) { sService.style.display = ''; })
       } else {
         // Display a message if no events available for selected criteria
-        $('div.tab-pane.active div#no-filtered-service').show();
+        $(`div.tab-pane.active div#no-filtered-${target}`).show();
       };
     };
 

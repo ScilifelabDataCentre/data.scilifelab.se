@@ -15,7 +15,7 @@
               {{ .Date | time.Format ":date_long" }}
             </div>
             <div>
-              <h5 id="{{ .Date.Format "20060102" }}">{{ .Title }}</h5>
+              <h5 id="{{ .Title | urlize }}">{{ .Title }}</h5>
             </div>
             <div>
               {{ .Content }}
