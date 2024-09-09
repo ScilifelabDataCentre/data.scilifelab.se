@@ -99,7 +99,7 @@
               {{ .Date | time.Format ":date_long" }}
             </span>
             <h6 class="mt-1" style="line-height:1.3rem;">
-              <a href="{{ .FirstSection.RelPermalink }}#{{ .Title | urlize }}">{{ .Title }}</a>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h6>
             {{ if ne $index 3}} <hr class="mx-4 my-3"> {{ end }}
           </div>
