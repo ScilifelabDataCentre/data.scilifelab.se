@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<!-- Collect the available pages and list as cards -->
+<div class="row g-3">
+  {{ range .Pages.ByTitle }}
+    {{ if ne .Title "Find services" }}
+      <div class="col-md-6 col-lg-4">
+        <div class="card-teal-25">
+          <div {{ if .Params.thumbnail_border }}class="p-1" {{ end }}>
+            <a target="_self" href="{{ .RelPermalink }}"><img class="img-fluid"
+              src="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ "/img/logos/scilifelab_thumbnail.jpg" }}{{ end }}"
+              alt="{{ .Title }}"></a>
+          </div>
+          <div class="p-2 card-teal-title">
+            <h5><a href="{{ .RelPermalink }}" target="_self">{{ .Title }}</a></h5>
+          </div>
+          <div class="p-2">
+            {{ .Params.description }}
+          </div>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+
+{{ end }}

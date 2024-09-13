@@ -77,13 +77,13 @@
           {{ range $target_slist }}
           <div class="col-md-6 col-lg-4 service" data-stype="{{ delimit (apply .type "urlize" ".") " " }}"
                {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
-            <div class="bg-resource-and-service">
+            <div class="card-teal-25">
               <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
                 <a target="_self" href="{{ .url }}"><img class="img-fluid"
                     src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                     alt="{{ .name }}"></a>
               </div>
-              <div class="p-2 bg-resource-and-service-title">
+              <div class="p-2 card-teal-title">
                 <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
               </div>
               <div class="p-2">
