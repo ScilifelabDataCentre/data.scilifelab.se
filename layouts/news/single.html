@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<h3>{{ .Title }}</h3>
+<span class="text-muted">{{ .Date | time.Format ":date_long" }}</span>
+
+<div class="mt-3">
+    {{ if .Params.show_thumbnail_on_page }}
+    <figure class="figure float-end mx-2" style="max-width: 400px;">
+        <img class="img-thumbnail"
+            src="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ "/img/news/scilifelab.jpg" }}{{ end }}"
+            alt="news-{{ .Date }}" >
+        <figcaption class="figure-caption mt-1">
+            <i>{{ with .Params.caption }}{{ . | markdownify }}{{ else }}{{ "SciLifeLab Logo" }}{{ end }}</i>
+        </figcaption>
+    </figure>
+    {{ end }}
+    {{ .Content }}
+</div>
+    
+
+
+{{ end }}

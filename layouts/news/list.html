@@ -1,26 +1,23 @@
 {{ define "main" }}
 
-<div class="row">
-  <div class="col">
-    {{ .Content }}
-  </div>
-</div>
+{{ .Content }}
 
 <section>
-      <div class="row row-cols-1 row-cols-md-2 g-2 g-lg-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
         {{ range .RegularPages }}
         <div class="col">
-          <div class="border rounded p-3 h-100">
-            <div class="my-1">
-              {{ .Date | time.Format ":date_long" }}
+            <div class="news-card moving-card">
+                <div aria-hidden="true">
+                    <a href="{{ .RelPermalink }}">
+                        <img class="img-fluid" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ "/img/news/scilifelab.jpg" }}{{ end }}"
+                            alt="news-{{ .Date }}">
+                    </a>
+                </div>
+                <div class="px-3 py-2" style="background-color: #045c64; color: #fff;"> {{ .Date | time.Format ":date_long" }} </div>
+                <div class="px-3 pb-1">
+                    <h5 class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+                </div>
             </div>
-            <div>
-              <h5 id="{{ .Title | urlize }}">{{ .Title }}</h5>
-            </div>
-            <div>
-              {{ .Content }}
-            </div>
-          </div>
         </div>
         {{ end }}
       </div>
