@@ -179,6 +179,25 @@ h5 a:hover {
   }
 }
 
+/* Moving cards */
+.moving-card {
+  transition: 0.15s;
+}
+
+.moving-card:hover {
+  transform: translateY(-.3rem);
+  transition: 0.15s;
+  box-shadow: 0 0 20px 0 rgba(166, 166, 166, 0.5);
+}
+
+/* News cards */
+
+.news-card {
+  height: 100%;
+  border: 0.8px solid rgba(166, 166, 166, 0.8);
+  box-shadow: 0 0 15px 0 rgba(166, 166, 166, 0.4);
+}
+
 /* Box outline and shadow */
 .card-box {
   height: 100%;

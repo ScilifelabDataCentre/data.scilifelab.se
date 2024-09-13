@@ -16,6 +16,8 @@
       {{ $banner_page := . }}
       {{ if or (eq .Section "highlights") (eq .Section "tags") (eq .Section "authors") }}
           {{ $banner_page = .Site.GetPage "section" "highlights" }}
+      {{ else if eq .Section "news" }}
+          {{ $banner_page = .Site.GetPage "section" "news" }}
       {{ else if not $banner_page.Title }}
           {{ $banner_page = .FirstSection }}
       {{ end }}
