@@ -98,12 +98,12 @@
       "Data Centre"
     ],
     "name": "SciLifeLab Serve",
-    "description": "Platform for sharing machine learning models and data science applications, such as Shiny and Dash apps.",
+    "description": "SciLifeLab Serve is a platform offering machine learning model serving, data science app hosting (Shiny, Gradio, Streamlit, Dash, etc.).",
     "url": "https://serve.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "serve@scilifelab.se",
-    "support_website": "https://serve.scilifelab.se/user_guide",
+    "support_website": "https://serve.scilifelab.se/docs/",
     "support_status": "https://status.dc.scilifelab.se/795925203"
   },
   {
