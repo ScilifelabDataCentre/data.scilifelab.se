@@ -17,13 +17,13 @@
         {{ range first 3 .Site.Data.services }}
         {{ if in .target "researchers" }}
         <div class="col">
-          <div class="bg-resource-and-service">
+          <div class="card-teal-25">
             <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
-            <div class="p-2 bg-resource-and-service-title">
+            <div class="p-2 card-teal-title">
               <b><a target="_self" href="{{ .url }}">{{ .name }}</a></b>
             </div>
             <div class="p-2">
@@ -49,13 +49,13 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
         {{ range first 3 .Site.Data.resources }}
         <div class="col">
-          <div class="bg-resource-and-service">
+          <div class="card-teal-25">
             <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
-            <div class="p-2 bg-resource-and-service-title">
+            <div class="p-2 card-teal-title">
               <b><a target="_self" href="{{ .url }}">{{ .name }}</a></b>
             </div>
             <div class="p-2">
@@ -93,7 +93,7 @@
           <a href="{{ .RelPermalink }}">See all news <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
         <div id="news-items">
-          {{ range $index, $news := first 4 .RegularPages }}
+          {{ range $index, $news := first 3 .RegularPages }}
           <div class="px-3">
             <span class="news-date small">
               {{ .Date | time.Format ":date_long" }}
@@ -101,7 +101,7 @@
             <h6 class="mt-1" style="line-height:1.3rem;">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h6>
-            {{ if ne $index 3}} <hr class="mx-4 my-3"> {{ end }}
+            {{ if ne $index 2}} <hr class="mx-4 my-3"> {{ end }}
           </div>
           {{ end }}
         </div>
@@ -113,14 +113,24 @@
         <!-- The events content will filled by JS function below -->
       </section>
 
+      <!-- DC box -->
+      <div class="dc-box rounded mb-4">
+        <h4>New to SciLifeLab?</h4>
+        <p>
+          The Data Platform is led by SciLifeLab Data Centre who develops multiple data services designed to accelerate your research.
+        </p>
+        <h6><a style="color:white;" href="/data_centre/"> Find out more about SciLifeLab Data Centre
+            <i class="bi bi-arrow-right-circle-fill"></i></a></h6>
+      </div>
+
       <!-- Get featured box -->
       <div class="support rounded">
-        <h3>Get your work featured!</h3>
+        <h4>Get your work featured!</h4>
         <p>The platform offers hosting for services, and promotes resources and work relevant to data-driven life
           science research in Sweden. We also promote relevant jobs, calls, and events/training. Get in touch with
           us about adding content relevant to you!</p>
-        <h5><a style="color:white;" href="/contact/">Click here to get in touch
-            <i class="bi bi-arrow-right-circle-fill"></i></a></h5>
+        <h6><a style="color:white;" href="/contact/">Click here to get in touch
+            <i class="bi bi-arrow-right-circle-fill"></i></a></h6>
       </div>
 
     </div>
@@ -252,7 +262,7 @@
         };
       });
       eventList = eventList.sort((a,b) => (a.banner_date > b.banner_date) ? 1 : (a.banner_date < b.banner_date) ? -1 : 0);
-      var eventsToShow = eventList.slice(0, 3);
+      var eventsToShow = eventList.slice(0, 2);
       if (eventsToShow.length > 0){
         var eventsHTML = `<div class="border rounded my-4 pb-2">
                             <div class="d-flex justify-content-between align-items-center px-3 py-2 mb-1 bg-home-events-title">

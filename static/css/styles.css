@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); */
 
 /* Brand colors
   use 1, 0.75, 0.50, or 0.25
@@ -231,23 +230,27 @@ h5 a:hover {
   background-color: rgba(229, 229, 229, 0.6);
 }
 
-.bg-resource-and-service {
+.bg-home-events-title {
+  background-color: rgba(73, 31, 83, 0.1);
+}
+
+/* Cards for Service, resource, etc */
+
+.card-teal-25 {
   height: 100%;
   background-color: #c0d6d8;
 }
 
-.bg-resource-and-service-title {
+.card-teal-title {
   background-color: #045c64;
 }
 
-.bg-resource-and-service-title a {
+.card-teal-title a {
   color: #fff;
 }
-.bg-resource-and-service-title a:hover{
+
+.card-teal-title a:hover{
   color: #fff;
-}
-.bg-home-events-title {
-  background-color: rgba(73, 31, 83, 0.1);
 }
 
 /* Highlights */
@@ -339,13 +342,17 @@ h5 a:hover {
   color: #045c64;
 }
 
+/* DC block for the homepage */
+.dc-box {
+  background-color: #045c64 !important;
+  padding: 12px;
+  color: white;
+}
+
 /* Support block for the homepage */
 .support {
   background-color: #491f53 !important;
   padding: 12px;
-}
-
-.support > * {
   color: white;
 }
 
