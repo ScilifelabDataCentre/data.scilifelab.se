@@ -11,6 +11,6 @@ The Service Finder tool will prompt you to answer a flowchart of funnelled quest
 
 <!-- Flowchart link is displayed on smaller screens -->
 <div class="d-lg-none">
-    The flowchart is not displayed in smaller screens, instead the PDF file can be viewd/downloaded
+    The flowchart is not displayed in smaller screens, instead the PDF file can be viewed/downloaded
     <a href="/misc/onboarding_schema.pdf">here</a>
 </div>
