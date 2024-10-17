@@ -1,0 +1,312 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="intro-tab" data-bs-toggle="tab" data-bs-target="#introduction"
+        type="button" role="tab" aria-controls="introduction" aria-selected="true">Introduction</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="find-services-tab" data-bs-toggle="tab" data-bs-target="#find-our-services"
+        type="button" role="tab" aria-controls="find-our-services" aria-selected="false">Find our services</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="rdm-tab" data-bs-toggle="tab" data-bs-target="#research-data-management"
+        type="button" role="tab" aria-controls="research-data-management" aria-selected="false">Research Data Management</button>
+    </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link" id="open-science-tab" data-bs-toggle="tab" data-bs-target="#open-science"
+        type="button" role="tab" aria-controls="open-science" aria-selected="false">Open Science</button>
+    </li>
+</ul>
+
+<!-- Tabs content start here -->
+<div class="tab-content" id="myTabContent">
+
+    <!-- "Introduction" tab content start here -->
+    <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="intro-tab">
+
+        <h3 class="mt-3">SciLifeLab Data Centre</h3>
+        <p>
+            This package is hosted by SciLifeLab Data Centre (DC), which is a multi-site central unit within SciLifeLab serving
+            both the infrastructure and the research community, and with a strategic data science role for SciLifeLab. Our main
+            task is to lead SciLifeLab's digital infrastructure and to ensure that SciLifeLab and Sweden is in the forefront of
+            data-driven life science when it comes to technology. DC develops and operates services for data publishing,
+            research data management, hosting of applications and AI models, Open Science and FAIR, and also runs a helpdesk
+            for data and IT related questions. We can also assist you in accessing national e-infrastructure and provide answers
+            to any questions you may have regarding data. Together with <a target="_blank" href="https://nbis.se">NBIS</a>,
+            we offer Research Data Management services and support. Learn more about our services
+            <a href="/services">here</a>.
+        </p>
+        <p>
+            <b>Contact us:</b> <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>
+            <br>
+            <b>Follow us:</b>
+            <a target="_blank" href="https://twitter.com/scilifelab_DC" aria-label="Datacentre on Twitter">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a class="ps-2" target="_blank" href="https://linkedin.com/company/scilifelab-data-centre" aria-label="Datacentre on LinkedIn" >
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </p>
+        <!-- cards in introduction page -->
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="h-100 p-3" style="background-color: #d3e4a3;">
+                    <h5 class="mb-3" style="font-weight: bold;">Support, consultations and meetings</h5>
+                    <p>
+                        SciLifeLab Data Centre teams offer support meetings and consultations (in-person or virtual) for fellows and your
+                        research groups. Please include a description of your needs and specify which team you wish to consult with, so we
+                        can tailor the meeting to effectively support your research. 
+                    </p>
+                    <p>
+                        Contact us: <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>
+                        <br>
+                        More about SciLifeLab Data Centre <a href="">here</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="h-100 p-3" style="background-color: #d2e5e7;">
+                    <h5 class="mb-3" style="font-weight: bold;">Onboarding events for fellows</h5>
+                    <p>
+                        Meeting the fellows community and learning about your specific needs is an important part of our work. Twice a year,
+                        we arrange an overview event “Discover services for data-driven life science“, which presents the services, tools,
+                        and support available for data-driven life science.
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://doi.org/10.17044/scilifelab.25913353.v2">
+                            <i class="bi bi-link-45deg"></i> The slides from previous presentations
+                        </a>
+                        <br>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=vvgPfMaDhDw">
+                            <i class="bi bi-link-45deg"></i> The recordings from previous events
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="h-100 p-3" style="background-color: #e5e5e5;">
+                    <h5 class="mb-3" style="font-weight: bold;">SciLifeLab seminar series</h5>
+                    <p>
+                        There are several SciLifeLab events and seminars that can be of interest for fellows, covering topics like artificial
+                        intelligence, machine learning or data management. Below you can find the collective links to specific topics.
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.scilifelab.se/data/tools-event-series/">
+                            <i class="bi bi-link-45deg"></i> Tools for AI/ML research in Life Sciences
+                        </a>
+                        <br>
+                        <a target="_blank" href="https://www.scilifelab.se/data/scilifelab-data-management-seminar-series/">
+                            <i class="bi bi-link-45deg"></i> Data Management seminar series
+                        </a>
+                        <br>
+                        <a target="_blank" href="https://www.scilifelab.se/research/scilifelab-seminar-series/">
+                            <i class="bi bi-link-45deg"></i> SciLifeLab seminar series
+                        </a>
+                        <br>
+                        <a href="/events">
+                            <i class="bi bi-link-45deg"></i> Discover other events at Data Platform
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- "Introduction" tab content ends here -->
+
+    <!-- "Find our services" tab content start here -->
+    <div class="tab-pane fade" id="find-our-services" role="tabpanel" aria-labelledby="find-services-tab">
+
+        <h3 class="mt-3">Services and tools for your research</h3>
+        <p>
+            SciLifeLab facilitates access to many services and tools that support data-driven Life Science research.
+            Due to the extensive range of services we provide, we offer three distinct avenues for identifying the
+            optimal research tool for your specific needs.
+        </p>
+        <!-- cards in find service page -->
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="h-100 p-3" style="background-color: #d3e4a3;">
+                    <h5 class="mb-3" style="font-weight: bold;">Service Finder</h5>
+                    <p>
+                        The Service Finder tool will prompt you to answer funnelled questions in a flowchart format to suggest
+                        a suitable service based on your specific requirements.
+                    </p>
+                    <p>
+                        <a href="/data_centre/find_service/">
+                            <i class="bi bi-link-45deg"></i> Find a service for you
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="h-100 p-3" style="background-color: #d2e5e7;">
+                    <h5 class="mb-3" style="font-weight: bold;">Services by category</h5>
+                    <p>
+                        More services are available via our SciLifeLab Data Platform, a webpage where you can browse available
+                        services by keywords and/or filter by type.
+                    </p>
+                    <p>
+                        <a href="/services">
+                            <i class="bi bi-link-45deg"></i> Read more and see our services
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="h-100 p-3" style="background-color: #e5e5e5;">
+                    <h5 class="mb-3" style="font-weight: bold;">Compute & Storage resources</h5>
+                    <p>
+                        The e-infrastructure landscape in Sweden is fragmented, with a plethora of resources made available
+                        by different organisations.
+                    </p>
+                    <p>
+                        <a href="/resources/e-infrastructure/">
+                            <i class="bi bi-link-45deg"></i> Compilation of compute resources
+                        </a>
+                        <br>
+                        <a href="/resources/storage/">
+                            <i class="bi bi-link-45deg"></i> Compilation of storage resources
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- "Find our services" tab content ends here -->
+
+    <!-- "Research data management" tab content start here -->
+    <div class="tab-pane fade" id="research-data-management" role="tabpanel" aria-labelledby="rdm-tab">
+
+        <h3 class="mt-3">Research Data Management</h3>
+        <p>
+            Research Data Management (RDM) concerns the organisation, storage, preservation, sharing, and reuse of research outputs
+            collected and analysed during a research project. Effective planning and management of research data improves the quality
+            of a project and facilitates data manipulation during the project lifecycle. Additionally, it promotes data sharing, which allows
+            others to validate, train, and reuse the data. SciLifeLab Data Management is a collaborative effort between SciLifeLab
+            Data Centre and NBIS Data Management. The overall aim of SciLifeLab Data Management is to maximise the value of life
+            science data by highlighting and disseminating information about Open Science, FAIR and good RDM practices.
+            In order to assist the research community in these areas, we offer a range of services, tools, personalised support, courses and training.
+        </p>
+        <p>
+            Below are  some of our services, guidelines and tools for managing your data in efficient and trouble-fee way. Explore our
+            full services catalouge <a href="/services">here</a>.
+        </p>
+        <!-- Sample services cards -->
+        <div class="row g-4 mb-4">
+            {{ range .Site.Data.services }}
+            {{ if in (slice "SciLifeLab RDM Guidelines" "SciLifeLab Data Stewardship Wizard" "SciLifeLab Data Repository") .name }}
+            <div class="col-md-6 col-lg-4">
+                <div class="card-teal-25">
+                    <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+                        <a target="_self" href="{{ .url }}"><img class="img-fluid"
+                            src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+                            alt="{{ .name }}"></a>
+                    </div>
+                    <div class="p-2 card-teal-title">
+                        <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+                    </div>
+                    <div class="p-2">
+                        {{ .description }}
+                    </div>
+                    <div class="px-2">
+                        <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+                    </div>
+                    <div class="px-2">
+                        <b>Maintained by:</b>
+                        {{ if .maintained_by_url}}
+                        <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
+                        {{ else }}
+                        {{ .maintained_by }}
+                        {{ end }}
+                    </div>
+                    {{ if or (or .support_email .support_website .support_slack) .support_github }}
+                    <div class="px-2 mb-2">
+                        <b>Support:</b>
+                        {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+                        {{ with .support_website }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
+                        {{ with .support_github }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
+                        {{ with .support_status }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-hdd-rack"></i></a> {{ end }}
+                        {{ with .support_slack }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-slack"></i></a> {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+        <!-- Stay in touch box -->
+        <div class="p-3" style="background-color: #e5e5e5;">
+            <h5 class="mb-3" style="font-weight: bold;">Learn more and stay in touch</h5>
+            <p>
+                We are happy to assist you with Data Management questions.
+            </p>
+            <p>
+                <b>Contact us: </b><a href="mailto:data-management@scilifelab.se">data-management@scilifelab.se</a>
+            </p>
+        </div>
+
+    </div>
+    <!-- "Research data management" tab content ends here -->
+
+    <!-- "Open science" tab content start here -->
+    <div class="tab-pane fade" id="open-science" role="tabpanel" aria-labelledby="open-science-tab">
+    
+        <h3 class="mt-3">Open Science</h3>
+        <p>
+            Open Science has gained significant traction in the research community, where transparency, accessibility, and collaboration
+            are emphasised. Recent updates to public policies are also driving change: for instance, the Swedish Research Council states that
+            scientific publications resulting from publicly funded research shall be immediately openly available, effective from 2021.
+            Furthermore, a deadline has been set for the complete implementation of open access to research data by 2026, which serves to
+            underscore the significance of making data openly available. In addition, the national guidelines for promoting Open Science
+            in Sweden not only align with international recommendations but also serve as a bridge between global standards and national initiatives.
+        </p>
+        <p>
+            These guidelines identify six key areas that are crucial for further development in Sweden:
+            <ul>
+            <li>Open access to scholarly publications</li>
+            <li>Open access to research data</li>
+            <li>Open research methods</li>
+            <li>Open Educational Resources</li>
+            <li>Public engagement in science</li>
+            <li>Infrastructures supporting Open Science</li>
+            </ul>
+        </p>
+        <p>
+            It is imperative for higher education institutions and research funders to develop policies, infrastructure, and guidance to
+            facilitate researchers in practising Open Science. By embracing Open Science principles, researchers contribute to a culture where
+            findings are freely available, reproducible, and subject to scrutiny, ultimately advancing the collective understanding of the
+            world around us. Furthermore, integrating Open Science into research practices enhances the quality and impact of research,
+            while also fostering innovation and collaboration within the scientific community. Whether researchers are just starting out or
+            seeking to incorporate Open Science into existing practices, there are numerous avenues and resources available to facilitate
+            this transformative journey.
+        </p>
+        <p>
+            The UNESCO Open Science Recommendations are a helpful resource to begin your journey. At the SciLifeLab Data Centre, resources
+            such as the Figshare data repository are helpful for sharing your research data and other outputs.
+        </p>
+        
+        <h4 class="mt-3">Read more</h4>
+        <p>
+            <a target="_blank" href="https://www.unesco.org/en/open-science/about">
+                <i class="bi bi-link-45deg"></i> UNESCO Open Science Recommendations
+            </a>
+        </p>
+
+        <h4 class="mt-3">Get in touch</h4>
+        <p>
+            If you would like to learn more about Open Science or have questions about particular approaches and tools, feel free to reach
+            out to <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a>.
+        </p>
+    </div>
+    <!-- "Open science" tab content ends here -->
+
+</div>
+<!-- Tabs content ends here -->
+
+{{ end }}
