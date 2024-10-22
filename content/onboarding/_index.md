@@ -1,8 +1,6 @@
 ---
 title: Onboarding for Fellows
 description: SciLifeLab Data Centre looks forward to engaging, supporting, and collaborating with you and your research group.
-thumbnail: /img/dc_thumbnails/fellows_onboarding.jpeg
-layout: onboarding
 ---
 
 ## Welcome to SciLifeLab Data Centre information package for fellows
