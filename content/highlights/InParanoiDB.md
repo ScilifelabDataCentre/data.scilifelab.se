@@ -1,6 +1,6 @@
 ---
 title: New tool allows users to navigate both full-length protein and domain orthologs.
-date: 2024-10-28
+date: 2024-11-07
 summary: The latest version of InParanoiDB by the Sonnhammer group allows users to navigate both full-length protein and domain orthologs with an optimised computational pipeline for an efficient and reliable ortholog interface.
 banner: /highlights/InParanoiDB9_small.jpg
 banner_large: /highlights/InParanoiDB9_large.jpg
