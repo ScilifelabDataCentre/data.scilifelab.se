@@ -4,6 +4,41 @@
       "researchers"
     ],
     "type": [
+      "Portal",
+      "Tool",
+      "Helpdesk"
+    ],
+    "search_tags": [
+      "Swedish Reference Genome Portal",
+      "Genome",
+      "Genome assembly",
+      "Genome annotation",
+      "Genomic annotation",
+      "Data track",
+      "Genome browser",
+      "JBrowse",
+      "Data visualisation",
+      "Data sharing",
+      "Tool",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "Swedish Reference Genome Portal",
+    "description": "Portal that highlights, aggregates, and displays genome data of non-human eukaryotic species studied in Sweden",
+    "thumbnail": "/img/service_thumbnails/genome-portal.png",
+    "url": "https://genomes.scilifelab.se/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "dsn-eb@scilifelab.se",
+    "support_website": "https://genomes.scilifelab.se",
+    "support_github": "https://github.com/ScilifelabDataCentre/genome-portal",
+    "support_status": "https://status.dc.scilifelab.se/797951599"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "database"
     ],
     "search_tags": [
