@@ -6,7 +6,12 @@
 
 # OSX
 .DS_Store
+__pycache__
 
 # backups
 *~
 \#*\#
+
+# Node modules and npm cache directory
+node_modules/
+.npm/
