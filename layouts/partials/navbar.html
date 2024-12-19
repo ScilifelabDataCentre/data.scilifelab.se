@@ -17,6 +17,11 @@
           {{ range .Site.Menus.navbar_top }}
           <li class="nav-item"><a class="nav-link" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
           {{ end }}
+          <li class="nav-item">
+            <a class="nav-link " href="/search" aria-label="Search">
+              <i class="bi bi-search" style="font-size: 1.2rem;"></i>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="collapse navbar-collapse">

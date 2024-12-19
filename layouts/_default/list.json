@@ -1,0 +1,6 @@
+{{- $.Scratch.Set "content" slice -}}
+{{- range .Site.RegularPages -}}
+  {{- $tags := .Params.tags | default slice -}}
+  {{- $.Scratch.Add "content" (dict "title" .Title "summary" .Summary "content" .Plain "permalink" .Permalink "tags" $tags) -}}
+{{- end -}}
+{{- $.Scratch.Get "content" | jsonify -}}
