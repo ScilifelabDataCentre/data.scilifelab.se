@@ -28,6 +28,3 @@ related:
     weight: 100
   threshold: 80
   toLower: false
-
-outputs:
-  home: ["HTML", "JSON"]

@@ -377,11 +377,11 @@ h5 a:hover {
   color: rgba(4, 92, 100, 1);
 } */
 
-a {
+#search-results a {
   text-decoration: none;
   color: rgba(73, 31, 83, 1); /* Grape color */
 }
 
-a:hover {
+#search-results a:hover {
   color: rgba(4, 92, 100, 1);
 }
