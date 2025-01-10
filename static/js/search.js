@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         searchInput.addEventListener('input', () => {
           const query = searchInput.value.trim();
           searchResults.innerHTML = '';
-  
+
           if (query) {
             const results = fuse.search(query);
   
@@ -22,15 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
               results.forEach(({ item }) => {
                 const resultDiv = document.createElement('div');
-                resultDiv.classList.add('mb-4', 'pb-3', 'border-bottom');
+                resultDiv.classList.add('mb-3', 'pb-3', 'border-bottom');
                 resultDiv.innerHTML = `
-                  <h5 class="mb-1">
-                    <a href="${item.permalink}" class="text-decoration-none" style="color: rgba(73, 31, 83, 1);">${item.title}</a>
-                  </h5>
+                  <span class="mb-1">
+                    <a href="${item.permalink}">${item.title}</a>
+                  </span>
                 `;
                 searchResults.appendChild(resultDiv);
               });
             }
+          } else {
+            searchResults.innerHTML = '<p class="text-muted">Start typing to see results ...</p>';
           }
         });
       });
