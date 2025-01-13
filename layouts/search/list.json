@@ -1,6 +1,16 @@
 {{- $.Scratch.Set "content" slice -}}
-{{- range .Site.RegularPages -}}
-  {{- $tags := .Params.tags | default slice -}}
-  {{- $.Scratch.Add "content" (dict "title" .Title "summary" .Summary "content" .Plain "permalink" .Permalink "tags" $tags) -}}
+{{- range .Site.Pages -}}
+  {{- if not (hasPrefix .RelPermalink "/search/") -}}
+    {{- $tags := .Params.tags | default slice -}}
+    {{- $summary := .Params.summary | default "" -}}
+    {{- $plain := .Plain | default "" -}}
+    {{- $.Scratch.Add "content" (dict 
+        "title" .Title 
+        "summary" $summary 
+        "content" $plain 
+        "permalink" .Permalink 
+        "tags" $tags
+    ) -}}
+  {{- end -}}
 {{- end -}}
 {{- $.Scratch.Get "content" | jsonify -}}
