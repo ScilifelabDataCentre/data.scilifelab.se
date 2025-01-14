@@ -3,11 +3,9 @@
   {{- if not (hasPrefix .RelPermalink "/search/") -}}
     {{- $tags := .Params.tags | default slice -}}
     {{- $summary := .Params.summary | default "" -}}
-    {{- $plain := .Plain | default "" -}}
     {{- $.Scratch.Add "content" (dict 
         "title" .Title 
         "summary" $summary 
-        "content" $plain 
         "permalink" .Permalink 
         "tags" $tags
     ) -}}
