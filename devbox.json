@@ -1,0 +1,22 @@
+{
+	"$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+	"packages": [
+		"hugo@0.139",
+		"nodejs@22"
+	],
+	"env": {
+		"PATH": "$PWD/node_modules/.bin/:$PATH",
+		"npm_config_cache": "$PWD/.npm/"
+	},
+	"shell": {
+		"init_hook": [
+			"echo '\nRunning npm install...'",
+			"npm install --no-fund --loglevel warn",
+			"echo 'Done :)\n'"
+
+		],
+		"scripts": {
+			"server": ["hugo server"]
+		}
+	}
+}
