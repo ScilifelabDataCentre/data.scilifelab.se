@@ -6,7 +6,7 @@ aliases:
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
-<b>Apply for the 2024 Round now to get access to FAIR Storage</b>. The round is open until 31st December 2024, and applications can be made at any time.
+<b>Apply for the 2025 Round now to get access to FAIR Storage</b>. The round is open until 31st December 2025, and applications can be made at any time.
 </div>
 
 ## About SciLifeLab FAIR Storage
