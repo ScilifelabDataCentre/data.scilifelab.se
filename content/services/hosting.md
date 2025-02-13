@@ -2,6 +2,7 @@
 title: Hosting a service on the SciLifeLab Data Platform
 images: [/img/service_thumbnails/hosting_DC.jpg]
 toc: true
+draft: true
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
