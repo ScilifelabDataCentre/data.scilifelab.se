@@ -1103,30 +1103,6 @@
   },
   {
     "target": [
-      "researchers", "facilities"
-    ],
-    "type": [
-      "Compute resources"
-    ],
-    "search_tags": [
-      "Compute resources",
-      "Hosting",
-      "E-infrastructure",
-      "SciLifeLab",
-      "Data Centre",
-      "Hosting on the Data Platform",
-      "Data Platform"
-    ],
-    "name": "Hosting on the Data Platform",
-    "description": "Details about how researchers, research groups, and organisations can apply for hosting via the SciLifeLab Platform.",
-    "url": "/services/hosting/",
-    "thumbnail": "/img/service_thumbnails/hosting_DC.jpg",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "data-platform@scilifelab.se"
-  },
-  {
-    "target": [
       "researchers"
     ],
     "type": [
