@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   searchInput.addEventListener('input', debounce(() => {
     if (!fuse) {
-      searchResults.innerHTML = '<p class="text-muted">Initializing search...</p>';
+      searchResults.innerHTML = '<p class="text-muted-dark">Initializing search...</p>';
       return;
     }
     const query = searchInput.value.trim();
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let results = fuse.search(query);
 
       if (results.length === 0) {
-        searchResults.innerHTML = '<p class="text-muted">No results found.</p>';
+        searchResults.innerHTML = '<p class="text-muted-dark">No results found.</p>';
       } else {
         // Display all results using DocumentFragment
         const fragment = document.createDocumentFragment();
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         searchResults.appendChild(fragment);
       }
     } else {
-      searchResults.innerHTML = '<p class="text-muted">Start typing to see results ...</p>';
+      searchResults.innerHTML = '<p class="text-muted-dark">Start typing to see results ...</p>';
     }
   }
 
