@@ -1540,5 +1540,28 @@
     "thumbnail": "/img/service_thumbnails/covimapp_logo.png",
     "thumbnail_border": true,
     "disease_type": []
+  },
+  {
+    "target": ["researchers"],
+    "type": ["Data source"],
+    "ddls": ["Precision Medicine and Diagnostics", "Epidemiology and Biology of Infection"],
+    "search_tags": [
+      "adiposetissue",
+      "proteins",
+      "transcriptome",
+      "single-cell",
+      "genetics",
+      "ATportal"
+    ],
+    "name": "Adipose Tissue Knowledge Portal",
+    "description": "An open-access resource that integrates transcriptomic and proteomic data from diverse clinical cohorts, adipose cell types, and adipocyte studies to enable new discoveries in adipose biology.",
+    "thumbnail": "/img/data_sources_thumbs/ATportal.png",
+    "url": "https://adiposetissue.org",
+    "data":["Proteins and proteomes", "Genes and genomes", "Clinical"],
+    "disease_type": [ 
+      "Various diseases",
+      "Cardiovascular Diseases"
+      
+    ]
   }
 ]
