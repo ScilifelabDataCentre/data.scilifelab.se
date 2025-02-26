@@ -37,42 +37,64 @@
         <h5>Search</h5>
         <div class="input-group">
           <input type="text" id="Search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
-          <label class ="form-control-label" for="Search" aria-labelledby="Search"> 
+          <label class="form-control-label" for="Search" aria-labelledby="Search"></label>
         </div>
-        {{ if ge (len $target_stype) 1 }}
-        <div class="mt-3">
-          <h5>Resource Type</h5>
-          {{ range sort $target_stype }}
-          <div class="form-check">   
-            <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ . | urlize }}">
-            <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
-          </div>
-          {{ end }}
-        </div>
-        {{ end }}
 
-        {{ if ge (len $target_sdata) 1 }}
-        <div class="mt-3">
-          <h5>Data Type</h5>
-          {{ range sort $target_sdata }}
-          <div class="form-check">   
-            <input class="form-check-input" type="checkbox" id="{{ . }}" name="data" value="{{ . | urlize }}">
-            <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+        <div class="accordion mt-3" id="filterAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingResourceType">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResourceType" aria-expanded="false" aria-controls="collapseResourceType">
+                Resource Type
+              </button>
+            </h2>
+            <div id="collapseResourceType" class="accordion-collapse collapse" aria-labelledby="headingResourceType" data-bs-parent="#filterAccordion">
+              <div class="accordion-body">
+                {{ range sort $target_stype }}
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ . | urlize }}">
+                  <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+                </div>
+                {{ end }}
+              </div>
+            </div>
           </div>
-          {{ end }}
-        </div>
-        {{ end }}
-        {{ if ge (len $target_sdata) 1 }}
-        <div class="mt-3">
-          <h5>Scientific area</h5>
-          {{ range sort $target_sddls }}
-          <div class="form-check">   
-            <input class="form-check-input" type="checkbox" id="{{ . }}" name="ddls" value="{{ . | urlize }}">
-            <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingDataType">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDataType" aria-expanded="false" aria-controls="collapseDataType">
+                Data Type
+              </button>
+            </h2>
+            <div id="collapseDataType" class="accordion-collapse collapse" aria-labelledby="headingDataType" data-bs-parent="#filterAccordion">
+              <div class="accordion-body">
+                {{ range sort $target_sdata }}
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="{{ . }}" name="data" value="{{ . | urlize }}">
+                  <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+                </div>
+                {{ end }}
+              </div>
+            </div>
           </div>
-          {{ end }}
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingScientificArea">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScientificArea" aria-expanded="false" aria-controls="collapseScientificArea">
+                Scientific Area
+              </button>
+            </h2>
+            <div id="collapseScientificArea" class="accordion-collapse collapse" aria-labelledby="headingScientificArea" data-bs-parent="#filterAccordion">
+              <div class="accordion-body">
+                {{ range sort $target_sddls }}
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="{{ . }}" name="ddls" value="{{ . | urlize }}">
+                  <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
         </div>
-        {{ end }}
       </div>
     </div>
     <div class="col-lg">

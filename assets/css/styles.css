@@ -385,3 +385,12 @@ h5 a:hover {
 .text-muted-dark {
   color: rgba(0, 0, 0, 0.65);
 }
+
+/* Override accordion styles within the data_sources-content */
+.data_sources-content .accordion {
+  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+}
+
+.data_sources-content .accordion-button:not(.collapsed) {
+  color: inherit; /* Remove specific active color */
+}
