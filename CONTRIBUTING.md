@@ -6,23 +6,27 @@ Below are instructions on how to add or edit items in each of the SciLifeLab Dat
 
 The __Events & Training__ section contains a community-sourced collection of events and training opportunities relevant for data-driven life science research.
 
-Each item displayed in the section Events & Training is stored as a file inside the `/content/events/` folder. Each file should be named with the start date of event using the following format: `20060102.md` which stands for January 2nd 2006. Each file should have extension `.md` but contain data in YAML format as shown below. The file starts and ends with lines containing three dashes. The lines between contain information about the event/training opportunity. Not all fields are obligatory (see below for which fields are obligatory).
+All the events displayed in the section Events & Training are stored in a `JSON` file [ddls_events.json](https://blobserver.dc.scilifelab.se/blob/ddls_events.json/info) in DC's `blobserver`. Each event/training is an object item in the `items` list, so to add a new event/training one should add a new object with required information (see below for the required fields). 
 
-```YAML
----
-title: Event title here # obligatory
-type: webinar # obligatory; choose from 'course', 'seminar', 'webinar', 'workshop', 'conference'
-date_start: 2006-01-02 # obligatory; starting date of the event in the exact format given as an example here
-time_start: 09:00 # optional; starting time of the event in the exact format given as an example here
-date_end: 2022-05-09 # optional; end date of the event in the exact format given as an example here
-time_end: 11:00 # optional; end time of the event in the exact format given as an example here
-venue: Online event via Zoom # optional; information about event venue in free text format
-organisers: SciLifeLab Data Centre # optional; information about event organiser(s) in free text format
-event_url: https://... # obligatory; provide the URL of the event information webpage starting with https://.
-registration_url: https://... # optional; provide the URL of the event registration webpage starting with https://.
-description: "Event description here. Markdown formatting allowed." # optional; provide a description of the event in free text, markdown formatting such as *italic*, **bold**, [link](https://..) is allowed here; if you use markdown formatting make sure to have quotation marks around the text.
----
+```JSON
+{
+  "target": [],
+  "title": "",
+  "type": "",
+  "date_start": "",
+  "time_start": "",
+  "date_end": "",
+  "time_end": "",
+  "venue": "",
+  "location": [],
+  "category": [],
+  "organisers": "",
+  "event_url": "",
+  "description": ""
+}
 ```
+
+You need write access in `blobserver` to add/update events json file, if you do not, send the event information (for above mentioned fields) to the data platform team and they will update it for you upon review. You can mail it to <data-platform@scilifelab.se> or fill in the form by clicking "Submit an event" button in [events](https://data.scilifelab.se/events/) page.
 
 ## Data highlights
 
