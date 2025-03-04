@@ -385,3 +385,29 @@ h5 a:hover {
 .text-muted-dark {
   color: rgba(0, 0, 0, 0.65);
 }
+
+/* Override accordion styles within the data_sources-content */
+.data_sources-content .accordion {
+  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+}
+
+.data_sources-content .accordion-button:not(.collapsed) {
+  color: inherit; /* Remove specific active color */
+}
+.data_sources-content .accordion-body {
+  padding: 0.5rem 0.5rem; /* Adjust these values as needed */
+}
+.data_sources-content .filter-heading h5 {
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+  margin-bottom: .15rem;
+}
+@media (min-width: 992px) {
+  .data_sources-content .accordion-item {
+    border: none;
+  }
+}
+.data_sources-content .accordion-button.custom-padding {
+  padding-left: 0.5rem; /* Adjust as needed */
+  padding-right: 0.5rem; /* Adjust as needed */
+}
