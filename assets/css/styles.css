@@ -439,3 +439,38 @@ h5 a:hover {
   padding-left: 0.75rem;
   margin-bottom: .15rem;
 }
+/* Events filters */
+#events-filters .accordion {
+  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+}
+
+#events-filters .accordion-button:not(.collapsed) {
+  color: inherit; /* Remove specific active color */
+}
+
+#events-filters .accordion-body {
+  padding: 0.5rem 0.5rem; /* Adjust these values as needed */
+} 
+
+@media (min-width: 992px) {
+  #events-filters .accordion-item {
+    border: none;
+  }
+} 
+
+#events-filters .accordion-button.custom-padding {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: left;
+} 
+
+#events-filters .filter-heading h5 {
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+  margin-bottom: .15rem;
+} 
+
+
+
+
+
