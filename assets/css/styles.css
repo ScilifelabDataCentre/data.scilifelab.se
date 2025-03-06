@@ -411,3 +411,31 @@ h5 a:hover {
   padding-left: 0.5rem; /* Adjust as needed */
   padding-right: 0.5rem; /* Adjust as needed */
 }
+#job-filters .accordion {
+  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+}
+
+#job-filters  .accordion-button:not(.collapsed) {
+  color: inherit; /* Remove specific active color */
+}
+
+#job-filters .accordion-body {
+  padding: 0.5rem 0.5rem; /* Adjust these values as needed */
+}
+
+@media (min-width: 992px) {
+  #job-filters .accordion-item {
+    border: none;
+  }
+}
+#job-filters .accordion-button.custom-padding {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+#job-filters .filter-heading h5 {
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+  margin-bottom: .15rem;
+}
