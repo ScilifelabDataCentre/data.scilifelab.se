@@ -152,25 +152,61 @@
       } else {
         var jobsHTML = `<div class="row mt-3 mb-5">
                           <div class="col-lg-2 pe-lg-0" id="job-filters">
-                            <div class="bg-light p-3" style="position: sticky; top: 15px;">
-                            <h5>Type</h5>`;
+                            <div class="accordion bg-light" id="filterAccordion" style="position: sticky; top: 15px;">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFilters">
+                                  <button class="accordion-button collapsed d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters">
+                                    Filters
+                                  </button>
+                                  <div class="filter-heading d-none d-lg-block mb-lg-0">
+                                    <h5>Filters</h5>
+                                  </div>
+                                </h2>
+                                <div id="collapseFilters" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFilters">
+                                  <div class="accordion-body">
+                                    <div class="accordion" id="innerAccordion">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingType">
+                                          <button class="accordion-button custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseType" aria-expanded="true" aria-controls="collapseType">
+                                            Type
+                                          </button>
+                                        </h2>
+                                        <div id="collapseType" class="accordion-collapse collapse show" aria-labelledby="headingType">
+                                          <div class="accordion-body">`;
         jobTypes.forEach((jt) => {
           jobsHTML += `<div class="form-check">   
                         <input class="form-check-input" type="checkbox" id="${jt}" name="type" value="${jt.replaceAll(" ", "-").toLowerCase()}">
                         <label class="form-check-label" for="${jt}">${jt.charAt(0).toUpperCase() + jt.slice(1)}</label>
                       </div>`;
         });
-        jobsHTML += `<h5 class="mt-3">Employer</h5>`;
+        jobsHTML += `          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEmployer">
+                                          <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmployer" aria-expanded="false" aria-controls="collapseEmployer">
+                                            Employer
+                                          </button>
+                                        </h2>
+                                        <div id="collapseEmployer" class="accordion-collapse collapse" aria-labelledby="headingEmployer">
+                                          <div class="accordion-body">`;
         employer.forEach((em) => {
           jobsHTML += `<div class="form-check">   
                         <input class="form-check-input" type="checkbox" id="${em}" name="employer" value="${em.replaceAll(" ", "-").toLowerCase()}">
                         <label class="form-check-label" for="${em}">${em}</label>
                       </div>`;
         });
-        jobsHTML += `</div>
-                    </div>
-                    <div class="col-lg mt-2 mt-lg-0">
-                      <div class="row g-2" id="jobs-container">`;
+        jobsHTML += `          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg mt-2 mt-lg-0">
+                            <div class="row g-2" id="jobs-container">`;
         jobsList.forEach((job, ind) => {
           var this_job_type = job.type.map(jt => jt.replaceAll(" ", "-").toLowerCase()).join(" ");
           var this_employer = job.employer.replaceAll(" ", "-").toLowerCase();
