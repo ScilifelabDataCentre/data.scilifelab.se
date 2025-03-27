@@ -1,0 +1,270 @@
+{{/*
+    schema.html
+    This is the Schema partial for data.scilifelab.se
+    It generates relevant schema (WebSite, DataCatalog, or Dataset) and keywords
+    depending on whether the page is highlights/services/resources (single or listing).
+  */}}
+  
+  {{/* Default values */}}
+  {{ $type := "WebPage" }}
+  {{ $name := .Site.Title }}
+  {{ $description := (or .Params.description .Params.summary .Site.Params.description) }}
+  {{ $image := index .Site.Params.Images 0 | absURL }}
+  
+  {{ $currentPage := path.Split (path.Clean .RelPermalink) }}
+  
+  {{/* Determine page type */}}
+  {{ $isHomePage := .IsHome }}
+  {{ $isSingleHighlightPage := and (eq $currentPage.Dir "/highlights/") ($currentPage.File) }}
+  {{ $isHighlightsPage := and (strings.HasPrefix .RelPermalink "/highlights") (not $isSingleHighlightPage) }}
+  {{ $isSingleResourcePage := and (eq $currentPage.Dir "/resources/") ($currentPage.File) }}
+  {{ $isResourcesPage := and (strings.HasPrefix .RelPermalink "/resources") (not $isSingleResourcePage) }}
+  {{ $isSingleServicePage := and (eq $currentPage.Dir "/services/") ($currentPage.File) }}
+  {{ $isServicesPage := and (strings.HasPrefix .RelPermalink "/services") (not $isSingleServicePage) }}
+  
+  {{/* Overwrite $type based on page */}}
+  {{ if $isHomePage }}
+    {{ $type = "WebSite" }}
+  {{ else if $isSingleHighlightPage }}
+    {{ $type = "Dataset" }}
+  {{ else if $isHighlightsPage }}
+    {{ $type = "DataCatalog" }}
+  {{ else if $isSingleResourcePage }}
+    {{ $type = "Dataset" }}
+  {{ else if $isResourcesPage }}
+    {{ $type = "DataCatalog" }}
+  {{ else if $isSingleServicePage }}
+    {{ $type = "Dataset" }}
+  {{ else if $isServicesPage }}
+    {{ $type = "DataCatalog" }}
+  {{ end }}
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "{{ $type }}",
+    "url": "{{ .Permalink }}",
+    "name": "{{ if .Title }}{{ .Title | htmlEscape }}{{ else }}{{ $name | htmlEscape }}{{ end }}",
+    "image": "{{ if .Params.banner }}{{ .Params.banner | absURL }}{{ else }}{{ $image }}{{ end }}",
+    "description": "{{ $description | htmlEscape }}",
+    "keywords": [
+    {{- if or $isHighlightsPage $isSingleHighlightPage -}}
+      "SARS-CoV-2",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q82069695"
+      },
+      "COVID-19",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q84263196"
+      },
+      "Public health data",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q189603"
+      },
+      "Protein data",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q7251429"
+      },
+      "Data Sharing",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q5227350"
+      },
+      "Study result",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q107296061"
+      },
+      "Transcriptomics",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q28946449"
+      }
+      {{- else if or $isResourcesPage $isSingleResourcePage -}}
+      "Data sources",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q121566744"
+      },
+      "Research tools",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q71906510"
+      },
+      "Storage",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q744980"
+      },
+      "Data Storage",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q57515336"
+      },
+      "High-performance computing",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q1190465"
+      },
+      "Data analysis",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q1988917"
+      },
+      "Research tool",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q110994345"
+      },
+      "Datasets",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q1172284"
+      }
+    {{- else if or $isServicesPage $isSingleServicePage -}}
+      "Services catalog",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q7455731"
+      },
+      "Service",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q7406919"
+      },
+      "Web Service",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q193424"
+      },
+      "AI Service in Life science",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q124256598"
+      },
+      "data integration",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q386824"
+      },
+      "Open source services",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q121705136"
+      },
+      "Web Portal",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q186165"
+      },
+      "nf-core",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q112320760"
+      },
+      "data stewardship",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q57450885"
+      },
+      "Swedish Pathogens Portal",
+      {
+        "@type": "URL",
+        "@value": "https://www.pathogens.se/"
+      },
+    {{- else if $isHomePage -}}
+      "SciLifeLab",
+      {
+        "@type": "URL",
+        "@value": "https://scilifelab.se/"
+      },
+      "Data-driven life science",
+      {
+        "@type": "URL",
+        "@value": "https://www.scilifelab.se/data-driven/"
+      },
+      "Research infrastructure",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q1438053"
+      },
+      "Bioinformatics",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q128570"
+      },
+      "Data management", 
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q1149776"
+      },
+      "Open science", 
+      {
+        "@type": "URL", 
+        "@value": "https://www.wikidata.org/wiki/Q309823"
+      },
+      "FAIR data",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q29032648"
+      }
+    {{- else -}}
+      "SciLifeLab",
+      {
+        "@type": "URL",
+        "@value": "https://scilifelab.se/"
+      },
+      "Life science research",
+      "Life sciences",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q864928"
+      },
+      "Open science", 
+      {
+        "@type": "URL", 
+        "@value": "https://www.wikidata.org/wiki/Q309823"
+      },
+      "FAIR data",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q29032648"
+      },
+      "Service",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q7406919"
+      },
+      "resource",
+      {
+        "@type": "URL",
+        "@value": "https://www.wikidata.org/wiki/Q1554231"
+      },      
+    {{- end }}
+  ],
+  
+    {{- /* If this is NOT a Dataset => creator block. Otherwise => includedInDataCatalog. */ -}}
+    {{- if ne $type "Dataset" }},
+    "creator": {
+      "@type": "Organization",
+      "@id": "https://www.scilifelab.se/",
+      "name": "SciLifeLab",
+      "address": "Tomtebodavägen 23, 171 65 Solna, Sweden",
+      "email": "info@scilifelab.se",
+      "url": "https://www.scilifelab.se/",
+      "description": "Science for Life Laboratory (SciLifeLab) is an institution for the advancement of molecular biosciences in Sweden. We are funded as a national research infrastructure by the Swedish government."
+    }
+    {{- else -}}
+    "includedInDataCatalog": {
+      "@id": "{{ with .Parent }}{{ .Permalink }}{{ end }}",
+      "@type": "DataCatalog",
+      "name": "SciLifeLab Data Catalog"
+    }
+    {{- end }}
+  }
+  </script>
+  
