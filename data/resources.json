@@ -105,7 +105,7 @@
     "name": "SciLifeLab RDM Guidelines",
     "description": "A portal containing information on research data management in Sweden",
     "url": "https://data-guidelines.scilifelab.se",
-    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "thumbnail": "/img/resource_thumbnails/rdm.jpg",
     "thumbnail_border": true,
     "created_by": "NBIS, SciLifeLab Data Centre",
     "created_by_url": "https://data-guidelines.scilifelab.se/contact/",
