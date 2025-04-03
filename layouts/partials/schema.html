@@ -1,7 +1,7 @@
 {{/*
     schema.html
     This is the Schema partial for data.scilifelab.se
-    It generates relevant schema (WebSite, DataCatalog, or Dataset) and keywords
+    It generates relevant schema (WebSite, Collection, or Dataset) and keywords
     depending on whether the page is highlights/services/resources (single or listing).
   */}}
   
@@ -17,10 +17,8 @@
   {{ $isHomePage := .IsHome }}
   {{ $isSingleHighlightPage := and (eq $currentPage.Dir "/highlights/") ($currentPage.File) }}
   {{ $isHighlightsPage := and (strings.HasPrefix .RelPermalink "/highlights") (not $isSingleHighlightPage) }}
-  {{ $isSingleResourcePage := and (eq $currentPage.Dir "/resources/") ($currentPage.File) }}
-  {{ $isResourcesPage := and (strings.HasPrefix .RelPermalink "/resources") (not $isSingleResourcePage) }}
-  {{ $isSingleServicePage := and (eq $currentPage.Dir "/services/") ($currentPage.File) }}
-  {{ $isServicesPage := and (strings.HasPrefix .RelPermalink "/services") (not $isSingleServicePage) }}
+  {{ $isResourcesPage := strings.HasPrefix .RelPermalink "/resources" }}
+  {{ $isServicesPage := strings.HasPrefix .RelPermalink "/services" }}
   
   {{/* Overwrite $type based on page */}}
   {{ if $isHomePage }}
@@ -29,14 +27,8 @@
     {{ $type = "Dataset" }}
   {{ else if $isHighlightsPage }}
     {{ $type = "DataCatalog" }}
-  {{ else if $isSingleResourcePage }}
-    {{ $type = "Dataset" }}
-  {{ else if $isResourcesPage }}
-    {{ $type = "DataCatalog" }}
-  {{ else if $isSingleServicePage }}
-    {{ $type = "Dataset" }}
-  {{ else if $isServicesPage }}
-    {{ $type = "DataCatalog" }}
+  {{ else if or $isResourcesPage $isServicesPage }}
+    {{ $type = "Collection" }}
   {{ end }}
   
   <script type="application/ld+json">
@@ -84,7 +76,7 @@
         "@type": "URL",
         "@value": "https://www.wikidata.org/wiki/Q28946449"
       }
-      {{- else if or $isResourcesPage $isSingleResourcePage -}}
+      {{- else if $isResourcesPage -}}
       "Data sources",
       {
         "@type": "URL",
@@ -125,7 +117,7 @@
         "@type": "URL",
         "@value": "https://www.wikidata.org/wiki/Q1172284"
       }
-    {{- else if or $isServicesPage $isSingleServicePage -}}
+    {{- else if $isServicesPage -}}
       "Services catalog",
       {
         "@type": "URL",
@@ -176,43 +168,7 @@
         "@type": "URL",
         "@value": "https://www.pathogens.se/"
       },
-    {{- else if $isHomePage -}}
-      "SciLifeLab",
-      {
-        "@type": "URL",
-        "@value": "https://scilifelab.se/"
-      },
-      "Data-driven life science",
-      {
-        "@type": "URL",
-        "@value": "https://www.scilifelab.se/data-driven/"
-      },
-      "Research infrastructure",
-      {
-        "@type": "URL",
-        "@value": "https://www.wikidata.org/wiki/Q1438053"
-      },
-      "Bioinformatics",
-      {
-        "@type": "URL",
-        "@value": "https://www.wikidata.org/wiki/Q128570"
-      },
-      "Data management", 
-      {
-        "@type": "URL",
-        "@value": "https://www.wikidata.org/wiki/Q1149776"
-      },
-      "Open science", 
-      {
-        "@type": "URL", 
-        "@value": "https://www.wikidata.org/wiki/Q309823"
-      },
-      "FAIR data",
-      {
-        "@type": "URL",
-        "@value": "https://www.wikidata.org/wiki/Q29032648"
-      }
-    {{- else -}}
+    {{- end }}
       "SciLifeLab",
       {
         "@type": "URL",
@@ -243,8 +199,7 @@
       {
         "@type": "URL",
         "@value": "https://www.wikidata.org/wiki/Q1554231"
-      },      
-    {{- end }}
+      },
   ],
   
     {{- /* If this is NOT a Dataset => creator block. Otherwise => includedInDataCatalog. */ -}}
