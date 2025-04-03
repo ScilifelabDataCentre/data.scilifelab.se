@@ -17,8 +17,8 @@
   {{ $isHomePage := .IsHome }}
   {{ $isSingleHighlightPage := and (eq $currentPage.Dir "/highlights/") ($currentPage.File) }}
   {{ $isHighlightsPage := and (strings.HasPrefix .RelPermalink "/highlights") (not $isSingleHighlightPage) }}
-  {{ $isResourcesPage := strings.HasPrefix .RelPermalink "/resources" }}
-  {{ $isServicesPage := strings.HasPrefix .RelPermalink "/services" }}
+  {{ $isResourcesPage := strings.HasSuffix .RelPermalink "/resources/" }}
+  {{ $isServicesPage := strings.HasSuffix .RelPermalink "/services/" }}
   
   {{/* Overwrite $type based on page */}}
   {{ if $isHomePage }}
