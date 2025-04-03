@@ -75,7 +75,7 @@
       {
         "@type": "URL",
         "@value": "https://www.wikidata.org/wiki/Q28946449"
-      }
+      },
       {{- else if $isResourcesPage -}}
       "Data sources",
       {
@@ -116,7 +116,7 @@
       {
         "@type": "URL",
         "@value": "https://www.wikidata.org/wiki/Q1172284"
-      }
+      },
     {{- else if $isServicesPage -}}
       "Services catalog",
       {
@@ -200,8 +200,7 @@
         "@type": "URL",
         "@value": "https://www.wikidata.org/wiki/Q1554231"
       },
-  ],
-  
+  ]  
     {{- /* If this is NOT a Dataset => creator block. Otherwise => includedInDataCatalog. */ -}}
     {{- if ne $type "Dataset" }},
     "creator": {
@@ -213,7 +212,7 @@
       "url": "https://www.scilifelab.se/",
       "description": "Science for Life Laboratory (SciLifeLab) is an institution for the advancement of molecular biosciences in Sweden. We are funded as a national research infrastructure by the Swedish government."
     }
-    {{- else -}}
+    {{- else -}},
     "includedInDataCatalog": {
       "@id": "{{ with .Parent }}{{ .Permalink }}{{ end }}",
       "@type": "DataCatalog",
