@@ -1,0 +1,14 @@
+{{ $menu := index .Site.Menus "open_science" }}
+{{ $current := .RelPermalink }}
+
+<nav class="section-sidebar">
+  <ul class="nav flex-column">
+    {{ range $menu }}
+      <li class="nav-item">
+        <a class="nav-link {{ if eq .Page.RelPermalink $current }}active{{ end }}" href="{{ .Page.RelPermalink }}">
+          {{ .Name }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
