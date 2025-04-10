@@ -10,24 +10,27 @@
     </div>
   </header>
 {{ else }}
-  <header class="header"
-    style="background-image: url('{{ if .Params.header_image }}{{ .Params.header_image }}{{ else }}/img/illustrations/bubble_matrix.png{{ end }}');">
-    <div class="container">
-      {{ $banner_page := . }}
-      {{ if or (eq .Section "highlights") (eq .Section "tags") (eq .Section "authors") }}
-          {{ $banner_page = .Site.GetPage "section" "highlights" }}
-      {{ else if eq .Section "news" }}
-          {{ $banner_page = .Site.GetPage "section" "news" }}
-      {{ else if not $banner_page.Title }}
-          {{ $banner_page = .FirstSection }}
-      {{ end }}
-      {{ if $banner_page.Params.description }}
-        <h2>{{ $banner_page.Title }}</h2>
-        {{ $banner_page.Params.description }}
-      {{ else }}
-        <div class="py-2 my-1">
-          <h2>{{ $banner_page.Title }}</h2>
-        </div>
+  {{ $banner_page := . }}
+  {{ if or (eq .Section "highlights") (eq .Section "tags") (eq .Section "authors") }}
+      {{ $banner_page = .Site.GetPage "section" "highlights" }}
+  {{ else if eq .Section "news" }}
+      {{ $banner_page = .Site.GetPage "section" "news" }}
+  {{ else if not $banner_page.Title }}
+      {{ $banner_page = .FirstSection }}
+  {{ end }}
+
+  {{ $header_image := $banner_page.Params.header_image | default "/img/illustrations/bubble_matrix.png" }}
+
+  <!--Only the Open Science pages need a different layout-->
+  {{ $is_open_science_page := and (eq .Section "open_science") (not .IsSection) }}
+  {{ $title := cond $is_open_science_page "Open Science" $banner_page.Title }}
+  {{ $text := cond $is_open_science_page ($banner_page.Params.title | default "") ($banner_page.Params.description | default "") }}
+
+  <header class="header" style="background-image: url('{{ $header_image }}');">
+    <div class="container {{ if not $text }}py-2 my-1{{ end }}">
+      <h2>{{ $title }}</h2>
+      {{ with $text }}
+        {{ . }}
       {{ end }}
     </div>
   </header>
