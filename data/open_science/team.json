@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Christopher Erdmann",
+    "title": "Head of Open Science (SciLifeLab Data Centre)",
+    "image": "/img/open_science/team_photos/chris_erdmann.png"
+  },
+  {
+    "name": "Parul Tewatia",
+    "title": "Project Coordinator (FAIR Metadata and Semantic Technologies)",
+    "image": "/img/open_science/team_photos/parul_tewatia.png"
+  },
+  {
+    "name": "Suné Joubert",
+    "title": "Project Coordinator (Open Science Communities and Metrics)",
+    "image": "/img/open_science/team_photos/sune_joubert.png"
+  },
+  {
+    "name": "Alma Nilsson",
+    "title": "Project Coordinator (Open Source Software and AI Communities)",
+    "image": "/img/open_science/team_photos/alma_nilsson.png"
+  }
+]
