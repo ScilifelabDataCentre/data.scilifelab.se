@@ -134,6 +134,40 @@ h5 a:hover {
   text-decoration: underline;
 }
 
+/* Nav sidebar in Open Science section */
+.section-sidebar {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #3f3f3f;
+}
+
+.section-sidebar .nav-link {
+  color: #045c64;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.section-sidebar .nav-link:hover {
+  color: #491f53;
+  text-decoration: none;
+  border-left: 3px solid #491f53;
+  background-color: rgba(229, 229, 229, 0.4);
+}
+
+.section-sidebar .nav-link.active {
+  font-weight: bold;
+  color: #491f53;
+  border-left: 3px solid #491f53;
+  background-color: rgba(229, 229, 229, 0.6);
+}
+
+.sidebar-wrapper {
+  min-height: 100vh;
+  border-right: 1px solid #ccc;
+  background-color: #f8f9fa; /* light grey */
+}
+
 /* Nav tab on services page */
 
 .services-tab-list a.nav-link {
