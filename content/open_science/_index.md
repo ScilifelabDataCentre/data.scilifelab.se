@@ -10,6 +10,7 @@ menu:
   open_science:
     name: "Overview"
     weight: 1
+draft: true
 ---
 
 <figure class="my-3 figure w-100 text-center">
