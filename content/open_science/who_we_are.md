@@ -4,6 +4,7 @@ menu:
   open_science:
     name: "Who We Are"
     weight: 2
+draft: true
 ---
 
 {{< image_text_row 
