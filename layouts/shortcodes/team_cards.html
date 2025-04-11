@@ -1,0 +1,28 @@
+<!--Reads JSON of team-->
+{{ $filepath := .Get 0 }}
+{{ $data := index site.Data (split $filepath "/") }}
+
+<!--Simple cards that can be used for team with name, title and photo-->
+<div class="team-cards-wrapper my-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    {{ range $data }}
+    <div class="col">
+      <div class="card h-100 text-center">
+        {{ if .image }}
+        <img
+          src="{{ .image }}"
+          class="card-img-top"
+          alt="Photo of {{ .name }}"
+        />
+        {{ else }}
+        <p class="text-muted">No photo for {{ .name }}</p>
+        {{ end }}
+        <div class="card-body">
+          <h5 class="card-title">{{ .name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ .title }}</h6>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

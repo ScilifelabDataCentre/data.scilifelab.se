@@ -105,8 +105,8 @@
                 (your email will not be displayed in the event information).</div>
             </div>
             <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
-            <input type="url" id="originUrl" name="originUrl" value="" hidden />
-            <input type='hidden' name='origin' value='event_training_suggestion'>
+            <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
+            <input type="hidden" name="origin" value="event_training_suggestion" aria-label="form-name" />
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -182,36 +182,91 @@
                         </div>`
       } else {
         var eventsHTML = `<div class="row mt-3 mb-5">
-                          <div class="col-lg-2 pe-lg-0" id="events-filters">`;
+                          <div class="col-lg-2 pe-lg-0" id="events-filters">
+                            <div class="accordion bg-light" id="filterAccordion" style="position: sticky; top: 15px;">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFilters">
+                                  <button class="accordion-button collapsed d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters">
+                                    Filters
+                                  </button>
+                                </h2>
+                                  <div class="filter-heading d-none d-lg-block mb-lg-0">
+                                    <h5>Filters</h5>
+                                  </div>`;
         if (local.length > 0){
-          eventsHTML += `<div class="bg-light p-3" style="position: sticky; top: 15px;">
-                          <h5>Location</h5>`;
+          eventsHTML += `<div id="collapseFilters" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFilters">
+                                  <div class="accordion-body">
+                                    <div class="accordion" id="innerAccordion">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingType">
+                                          <button class="accordion-button custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseType" aria-expanded="true" aria-controls="collapseType">
+                                            Location
+                                          </button>
+                                        </h2>
+                                        <div id="collapseType" class="accordion-collapse collapse show" aria-labelledby="headingType">
+                                          <div class="accordion-body">`;
           local.forEach((lc) => {
             eventsHTML += `<div class="form-check">   
                             <input class="form-check-input" type="checkbox" id="${lc}" name="location" value="${lc.replaceAll(" ", "-").toLowerCase()}">
                             <label class="form-check-label" for="${lc}">${(lc == "Online") ? "Online/Hybrid" : lc}</label>
                            </div>`;
           });
+          eventsHTML += `</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>`;
         };
         if (category.length > 0){
-          eventsHTML += `<h5 class="mt-3">Category</h5>`;
+          eventsHTML += `<div id="collapseFilters" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFilters">
+                                  <div class="accordion-body">
+                                    <div class="accordion" id="innerAccordion">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingCategory">
+                                          <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategory" aria-expanded="true" aria-controls="collapseCategory">
+                                            Category
+                                          </button>
+                                        </h2>
+                                        <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="headingCategory">
+                                          <div class="accordion-body">`;
           category.forEach((ct) => {
             eventsHTML += `<div class="form-check">   
                             <input class="form-check-input" type="checkbox" id="${ct}" name="category" value="${ct.replaceAll(" ", "-").toLowerCase()}">
                             <label class="form-check-label" for="${ct}">${ct}</label>
                            </div>`;
           });
+            eventsHTML += `</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>`;
         };
         if (level.length > 0){
-          eventsHTML += `<h5 class="mt-3">Level</h5>`;
+          eventsHTML += `<div id="collapseFilters" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFilters">
+                                  <div class="accordion-body">
+                                    <div class="accordion" id="innerAccordion">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLevel">
+                                          <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLevel" aria-expanded="true" aria-controls="collapseLevel">
+                                            Level
+                                          </button>
+                                        </h2>
+                                        <div id="collapseLevel" class="accordion-collapse collapse" aria-labelledby="headingLevel">
+                                          <div class="accordion-body">`;
           level.forEach((lv) => {
             eventsHTML += `<div class="form-check">   
                             <input class="form-check-input" type="checkbox" id="${lv}" name="level" value="${lv.replaceAll(" ", "-").toLowerCase()}">
                             <label class="form-check-label" for="${lv}">${lv}</label>
                            </div>`;
           });
+          eventsHTML += `</div>
+                        </div>
+                      </div>`;
         };
         eventsHTML += `</div>
+                        </div>
+                      </div>
+                      </div>
                       </div>
                        <div class="col-lg mt-2 mt-lg-0">
                          <div class="row g-2" id="events-container">`;
@@ -450,6 +505,11 @@
         alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
       }
     }); // Forms validation block ends here
+
+    // Add aria-label for code generated by recaptcha
+    window.addEventListener("load", function () {
+      $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
+    });
     
   }); // Document "DOMContentLoaded" trigger ends here
 </script>

@@ -86,35 +86,6 @@
       "researchers"
     ],
     "type": [
-      "portal",
-      "helpdesk"
-    ],
-    "search_tags": [
-      "RDM",
-      "Research data management",
-      "Guidelines",
-      "Helpdesk",
-      "Portal",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre",
-      "SciLifeLab RDM Guidelines"
-    ],
-    "name": "SciLifeLab RDM Guidelines",
-    "description": "A portal containing information on research data management in Sweden",
-    "thumbnail": "/img/service_thumbnails/rdm.jpg",
-    "url": "https://data-guidelines.scilifelab.se",
-    "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/",
-    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
-    "support_status": "https://status.dc.scilifelab.se/793602117"
-  },
-  {
-    "target": [
-      "researchers"
-    ],
-    "type": [
       "tool"
     ],
     "search_tags": [
@@ -1100,30 +1071,6 @@
     "maintained_by_url": "https://covimapp.serve.scilifelab.se",
     "support_website": "https://serve.scilifelab.se/home/",
     "support_email": "haris.babacic@scilifelab.se"
-  },
-  {
-    "target": [
-      "researchers", "facilities"
-    ],
-    "type": [
-      "Compute resources"
-    ],
-    "search_tags": [
-      "Compute resources",
-      "Hosting",
-      "E-infrastructure",
-      "SciLifeLab",
-      "Data Centre",
-      "Hosting on the Data Platform",
-      "Data Platform"
-    ],
-    "name": "Hosting on the Data Platform",
-    "description": "Details about how researchers, research groups, and organisations can apply for hosting via the SciLifeLab Platform.",
-    "url": "/services/hosting/",
-    "thumbnail": "/img/service_thumbnails/hosting_DC.jpg",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "data-platform@scilifelab.se"
   },
   {
     "target": [

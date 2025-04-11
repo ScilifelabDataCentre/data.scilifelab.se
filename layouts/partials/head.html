@@ -11,6 +11,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
+  <!-- Site manifest -->
+  {{- $manifest := resources.Get "site-manifest.json" | resources.ExecuteAsTemplate "site-manifest.json" . }}
+  <link rel="manifest" href="{{ $manifest.RelPermalink }}">
+
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
 
@@ -98,4 +102,8 @@
   </script>
   {{ end }}
 
+  {{ if strings.HasPrefix hugo.Environment "production" }}  
+    <!-- Schema.org data -->
+    {{ partial "schema.html" . }}
+  {{ end }}
 </head>

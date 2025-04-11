@@ -22,7 +22,7 @@ Most of the resources described on this page are national and do not require tha
 
 - [Karolinska Institutet (KI)](https://staff.ki.se/guidelines-for-research-documentation-and-data-management)
 
-- [KTH Royal Institute of Technology (KTH)](https://www.kth.se/en/biblioteket/publicera-analysera/hantera-forskningsdata/lagring-av-forskningsdata-och-langsiktigt-bevarande-1.861129)
+- [KTH Royal Institute of Technology (KTH)](https://www.kth.se/en/biblioteket/publicera-analysera/hantera-forskningsdata/samla-lagra-och-analysera-1.1380800)
 
 - [Lund University (LU)](https://www.staff.lu.se/research-and-education/research-support/support-research-process/research-data-management)
 

@@ -134,6 +134,40 @@ h5 a:hover {
   text-decoration: underline;
 }
 
+/* Nav sidebar in Open Science section */
+.section-sidebar {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #3f3f3f;
+}
+
+.section-sidebar .nav-link {
+  color: #045c64;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.section-sidebar .nav-link:hover {
+  color: #491f53;
+  text-decoration: none;
+  border-left: 3px solid #491f53;
+  background-color: rgba(229, 229, 229, 0.4);
+}
+
+.section-sidebar .nav-link.active {
+  font-weight: bold;
+  color: #491f53;
+  border-left: 3px solid #491f53;
+  background-color: rgba(229, 229, 229, 0.6);
+}
+
+.sidebar-wrapper {
+  min-height: 100vh;
+  border-right: 1px solid #ccc;
+  background-color: #f8f9fa; /* light grey */
+}
+
 /* Nav tab on services page */
 
 .services-tab-list a.nav-link {
@@ -381,3 +415,96 @@ h5 a:hover {
 #search-results mark {
   padding: 0;
 }
+
+.text-muted-dark {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Override accordion styles within the data_sources-content */
+.data_sources-content .accordion {
+  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+}
+
+.data_sources-content .accordion-button:not(.collapsed) {
+  color: inherit; /* Remove specific active color */
+}
+.data_sources-content .accordion-body {
+  padding: 0.5rem 0.5rem; /* Adjust these values as needed */
+}
+.data_sources-content .filter-heading h5 {
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+  margin-bottom: .15rem;
+}
+@media (min-width: 992px) {
+  .data_sources-content .accordion-item {
+    border: none;
+  }
+}
+.data_sources-content .accordion-button.custom-padding {
+  padding-left: 0.5rem; /* Adjust as needed */
+  padding-right: 0.5rem; /* Adjust as needed */
+}
+#job-filters .accordion {
+  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+}
+
+#job-filters  .accordion-button:not(.collapsed) {
+  color: inherit; /* Remove specific active color */
+}
+
+#job-filters .accordion-body {
+  padding: 0.5rem 0.5rem; /* Adjust these values as needed */
+}
+
+@media (min-width: 992px) {
+  #job-filters .accordion-item {
+    border: none;
+  }
+}
+#job-filters .accordion-button.custom-padding {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+#job-filters .filter-heading h5 {
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+  margin-bottom: .15rem;
+}
+/* Events filters */
+#events-filters .accordion {
+  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+}
+
+#events-filters .accordion-button:not(.collapsed) {
+  color: inherit; /* Remove specific active color */
+}
+
+#events-filters .accordion-body {
+  padding: 0.5rem 0.5rem; /* Adjust these values as needed */
+} 
+
+@media (min-width: 992px) {
+  #events-filters .accordion-item {
+    border: none;
+  }
+} 
+
+#events-filters .accordion-button.custom-padding {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: left;
+} 
+
+#events-filters .filter-heading h5 {
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+  margin-bottom: .15rem;
+} 
+
+
+
+
+

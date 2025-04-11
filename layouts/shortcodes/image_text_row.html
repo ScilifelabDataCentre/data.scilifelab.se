@@ -1,0 +1,15 @@
+<!--Image with text to the right-->
+<div class="row align-items-start my-4">
+  <div class="col-md-6 text-center">
+    <img
+      src='{{ .Get "image" }}'
+      alt='{{ .Get "alt" }}'
+      class="img-fluid"
+      style="max-height: 400px"
+    />
+  </div>
+  <div class="col-md-6">
+    <h2>{{ .Get "title" }}</h2>
+    {{ .Page.RenderString .Inner }}
+  </div>
+</div>
