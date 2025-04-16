@@ -1,13 +1,19 @@
 {{ $menu := index .Site.Menus "open_science" }}
-{{ $current := .RelPermalink }}
 
 <nav class="section-sidebar">
   <ul class="nav flex-column">
     {{ range $menu }}
       <li class="nav-item">
-        <a class="nav-link {{ if eq .Page.RelPermalink $current }}active{{ end }}" href="{{ .Page.RelPermalink }}">
+        {{ $isCurrent := and .Page (eq .Page.RelPermalink $.RelPermalink) }}
+        <a class="nav-link {{ if $isCurrent }}active{{ end }}" href="{{ if .Page }}{{ .Page.RelPermalink }}{{ else }}{{ .URL }}{{ end }}">
           {{ .Name }}
         </a>
+
+        {{ if and $isCurrent .Page.Params.show_section_nav }}
+          <div class="sidebar-toc nav flex-column ms-4 fs-6">
+            {{ .Page.TableOfContents }}
+          </div>
+        {{ end }}
       </li>
     {{ end }}
   </ul>
