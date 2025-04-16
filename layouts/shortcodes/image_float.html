@@ -1,0 +1,9 @@
+<div class="clearfix my-4">
+  <img
+    src='{{ .Get "image" }}'
+    alt='{{ .Get "alt" }}'
+    class="img-fluid float-end ms-3 mb-3"
+    style="max-width: 20%; height: auto; vertical-align: top"
+  />
+  {{ .Inner | markdownify }}
+</div>
