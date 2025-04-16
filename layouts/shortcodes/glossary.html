@@ -1,0 +1,33 @@
+<!--Alphabetically sorted glossary with optional image-->
+{{ $filepath := .Get 0 }} {{ $data := index site.Data (split $filepath "/") }}
+{{ define "GlossaryText" }}
+<dl>
+  <dt class="h2 mt-4">{{ .term }}</dt>
+  <dd>
+    {{ .definition }}
+    <p class="mt-3">
+      <a href="{{ .source }}">{{ .source_name }}</a>
+    </p>
+  </dd>
+</dl>
+{{ end }}
+
+<dl class="glossary">
+  {{ range sort $data "term" }} {{ $hasImage := .image }}
+  <div class="row align-items-start my-4">
+    {{ if $hasImage }}
+    <div class="col-md-6">{{ template "GlossaryText" . }}</div>
+    <div class="col-md-6 text-center">
+      <img
+        src="{{ .image }}"
+        alt="{{ .image_alt }}"
+        class="img-fluid"
+        style="max-height: 400px"
+      />
+    </div>
+    {{ else }}
+    <div class="col-12">{{ template "GlossaryText" . }}</div>
+    {{ end }}
+  </div>
+  {{ end }}
+</dl>
