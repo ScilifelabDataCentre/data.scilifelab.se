@@ -1,8 +1,82 @@
 # Contributing to the SciLifeLab Data Platform website
 
+## General guidelines
+
+### Publishing on Data Platform
+
+- All file names must be in lower case and follow the convention `file_name.md` to separate the words.
+
+- We expect all contributors to have tested their changes/additions before making a pull request to the develop branch.
+
+- Every change/addition should come via a pull request to the develop branch on GitHub.
+
+- Changes/new content will always be reviewed and tested by a member of the team before being merged into the develop branch.
+
+### Writing text
+
+- Plagiarism is unacceptable - all material must be newly written and appropriately referenced.
+
+- All English material should be written in academic English, as the primary target group is the research community. 
+
+- At least two people must read through any text before publishing (e.g., one person writes, another person reads and makes edits), in order to avoid typos, bad phrasing, misinterpretation, etc. 
+
+- All content for inclusion on the portal must be submitted in Markdown format.
+
+- In the spirit of Open Science principles and FAIR data, we should not promote journals in our texts but rather emphasise on the shared data or code and its reuse potential. For example, we don’t say, “_article published in Nature_” but more “_article for which research data has been shared on ENA_”.
+
+- **Spellings**:
+    - preprint(s) [spelled as one word]
+    - dataset(s) [spelled as one word]
+    - the plural of _code_ is _code_ [this is a mass noun]
+    - the word _data_ is plural (e.g., we say _these data_)
+    - the plural of _training_ is _training_ [this is a mass noun; you can use “training opportunities” etc if you’d like]
+    - reuse [spelled without a hyphen]
+    - email [spelled without a hyphen]
+    - SARS-CoV-2, COVID-19
+    - we use the British English “ise” (e.g., “visuali**s**e”, “visuali**s**ation”, “organi**s**ation”)
+
+- **Titles:** in titles, only the first word and acronyms are capitalised.
+- **Acronyms:** only use acronyms if the full names/phrases would be used three times or more in the text (in other cases spell out all words in one or both cases). Spell out acronyms first time they are used, unless the acronym is widely accepted in common language e.g. DNA and RNA.
+- **Capitals:** do not use all capitals for emphasis or in headings (e.g., we do not use “This Is An Important Text”)
+- **Email addresses:** spell these out and make the email address the link e.g. [data-platform@scilifelab.se](mailto:data-platform@scilifelab.se). Do not hide the email address behind a word or phrase like “contact us”.
+- **Gender:** avoid using gender-specific words like “he” or “she”, in general write Anderssson and colleagues or Andersson et al. 
+- **Dates:** use Wednesday 7th July 2021 (not Wednesday 7 July 2021 or other variations).
+- **Dates:** all sections should, if possible, have a "last updated:" field, this will make it easier for the reader to see if the section has been updated recently.
+
+### Images
+
+- We should ideally try to create images "in house". Feel free to discuss any designs with the team if you would like feedback before submission.
+
+- Images may be provided from the Communications Office images or from  DC images. If we reuse images from elsewhere, we must have a clear understanding of the copyright and licence conditions. We must adhere to these conditions in all cases (appropriate referencing etc.). If we cannot find the exact license with which the image has been shared, we should assume that reuse is not allowed and therefore not use this image.
+
+- All in-house images should be added with a free licence. 
+
+- Images integration should be tested to determine whether (a) the image looks as intended when it is embedded in a page, and (b) the image still looks good when viewed on a mobile device.
+
+- Images should be optimised for size. This means uploading the images in the smallest possible size and resolution to ensure that they are displayed well. For example, thumbnail images should be uploaded 500px wide and 250px wide.
+
+### Links
+
+- Links within the Platform are always given with “/” representing the beginning of the URL (e.g., `/highlights/inparanoidb/`) whereas the outside ones include "https://" (e.g., `https://scilifelab.figshare.com/`).
+
+- Always provide a DOI link where possible. If an article, an image, data, code, etc. has a DOI assigned, then the link should be: https://doi.org/[INSERT_DOI_HERE]. For example, for a DOI such as 10.17044/scilifelab.18020801, then the link should be `https://doi.org/10.17044/scilifelab.18020801`.
+
+- Make the link text explicitly say where the link goes. For example, display “the Contribute page”, not “click here”.
+
+- Avoid using the url as the link text.
+
+### References
+
+- References to papers, datasets, book chapters etc. should be formatted in APA reference style. See the [Referencing guide for APA 7, Karolinska Institutet University Library](https://kib.ki.se/en/write-cite/writing-references-apa-vancouver/reference-guides/reference-guide-apa-7).
+
+- We do not include articles that are not formally published as a journal publication or a preprint. In other words, we normally only reference publications that can be linked with a DOI. This means that nothing that is just "submitted" or "in press" can be included. However, we may link to a GitHub repository or a dataset that is published with a DOI in a repository. 
+
+
+## Section-specific instructions
+
 Below are instructions on how to add or edit items in each of the SciLifeLab Data Platform website sections.
 
-## Events & Training
+### Events & Training
 
 The __Events & Training__ section contains a community-sourced collection of events and training opportunities relevant for data-driven life science research.
 
@@ -28,11 +102,11 @@ All the events displayed in the section Events & Training are stored in a `JSON`
 
 You need write access in `blobserver` to add/update events json file, if you do not, send the event information (for above mentioned fields) to the data platform team and they will update it for you upon review. You can mail it to <data-platform@scilifelab.se> or fill in the form by clicking "Submit an event" button in [events](https://data.scilifelab.se/events/) page.
 
-## Data highlights
+### Data highlights
 
 __Data highlights__ is a section of the website highlighting new open datasets, tools, and research results based on open datasets and tools.
 
-### Illustrations
+#### Illustrations
 
 Typically, for each data highlight we prepare two illustrations. One illustration is smaller and appears on overview page with all data highlights. The other illustration appears on the page of the highlight itself.
 
@@ -40,11 +114,11 @@ The smaller illustration needs to have the width that is twice the length (i.e.,
 
 Both illustrations should be placed in the `/static/highlights/` folder. The URL of the images placed here will then be `https://data.scilifelab.se/highlights/file_name.png`.
 
-### Data highlight texts
+#### Data highlight texts
 
 The data highlights are generated from Markdown formatted files contained in the `/content/highlights/` folder. The file name used here will also be the URL of the data highlight (e.g., `test-highlight.md` will become `https://data.scilifelab.se/highlights/test-highlight/`).
 
-### Content of the data highlight texts
+#### Content of the data highlight texts
 
 Below is an example of a data highlight file content. You can copy this text into your markdown file and edit it to write your own data highlight.
 
@@ -78,7 +152,7 @@ On the top of the file, surrounded by `---`, basic information for this data hig
 
 The title, date, summary, illustrations will appear where they are supposed to be. The tags will appear as links so that other highlights tagged with the same tag can be seen (tags are also used to select similar previosly published highlights that appear on the bottom of each highlight page), and author name(s) will appear as link(s) so that other highlights written byt the same author(s) can be seen.
 
-## Platform news
+### Platform news
 
 The __Platform news__ section contains announcements about the SciLifeLab Data Platform and services hosted on the Platform.
 
@@ -94,7 +168,7 @@ This is the text of the news item. Write one or max two paragraphs here. Markdow
 
 ```
 
-## Services
+### Services
 
 The items in the __Service catalogue__ are contained inside the `data/services.json` JSON file. The parameters that can be defined for each services are provided below. Select one or more values in case of the list parameters (for target audience and type). The logo of the service needs to be uploaded to the folder `/static/img/service_logos/` and given here (without the `/static` part in the URL). Indicate one or more ways in which the users can receive support (email, website, github repository).
 
