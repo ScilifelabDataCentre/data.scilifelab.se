@@ -6,7 +6,7 @@
 
 - All file names must be in lower case and follow the convention `file_name.md` to separate the words.
 
-- We expect all contributors to have tested their changes/additions before making a pull request to the develop branch.
+- We expect all contributors to have manually tested their changes/additions before making a pull request to the develop branch.
 
 - Every change/addition should come via a pull request to the develop branch on GitHub.
 
@@ -14,13 +14,13 @@
 
 ### Writing text
 
-- Plagiarism is unacceptable - all material must be newly written and appropriately referenced.
+- Plagiarism should be avoided - any material should be appropriately referenced and, as much as possible, original.
 
-- All English material should be written in academic English, as the primary target group is the research community. 
+- All English material should be written in academic English, as the primary target audience is the research community. 
 
-- At least two people must read through any text before publishing (e.g., one person writes, another person reads and makes edits), in order to avoid typos, bad phrasing, misinterpretation, etc. 
+- At least two people must read through any text before publishing (e.g. one person writes, another person reads and makes edits), in order to avoid typos, bad phrasing, misinterpretation, etc. 
 
-- All content for inclusion on the portal must be submitted in Markdown format.
+- All content for inclusion on the website must be submitted in Markdown format.
 
 - In the spirit of Open Science principles and FAIR data, we should not promote journals in our texts but rather emphasise on the shared data or code and its reuse potential. For example, we don’t say, “_article published in Nature_” but more “_article for which research data has been shared on ENA_”.
 
@@ -28,42 +28,35 @@
     - preprint(s) [spelled as one word]
     - dataset(s) [spelled as one word]
     - the plural of _code_ is _code_ [this is a mass noun]
-    - the word _data_ is plural (e.g., we say _these data_)
+    - the word _data_ is plural (e.g. we say _these data_)
     - the plural of _training_ is _training_ [this is a mass noun; you can use “training opportunities” etc if you’d like]
     - reuse [spelled without a hyphen]
     - email [spelled without a hyphen]
     - SARS-CoV-2, COVID-19
-    - we use the British English “ise” (e.g., “visuali**s**e”, “visuali**s**ation”, “organi**s**ation”)
+    - we use the British English “ise” (e.g. “visuali**s**e”, “visuali**s**ation”, “organi**s**ation”)
 
 - **Titles:** in titles, only the first word and acronyms are capitalised.
-- **Acronyms:** only use acronyms if the full names/phrases would be used three times or more in the text (in other cases spell out all words in one or both cases). Spell out acronyms first time they are used, unless the acronym is widely accepted in common language e.g. DNA and RNA.
-- **Capitals:** do not use all capitals for emphasis or in headings (e.g., we do not use “This Is An Important Text”)
+- **Acronyms:** only use acronyms if the full names/phrases would be used three times or more in the text (in other cases spell out all of the words). Spell out acronyms first time they are used. The exceptions to this rule are widely accepted acronyms e.g. DNA and RNA. In these cases, there is no need to spell out the acronym.
+- **Capital letters:** do not use all capitals for emphasis or in headings (e.g. we do not use “This Is An Important Text”)
 - **Email addresses:** spell these out and make the email address the link e.g. [data-platform@scilifelab.se](mailto:data-platform@scilifelab.se). Do not hide the email address behind a word or phrase like “contact us”.
-- **Gender:** avoid using gender-specific words like “he” or “she”, in general write Anderssson and colleagues or Andersson et al. 
+- **Gender:** avoid gendered pronouns like “he” or “she”. Write, for example, Andersson and colleagues, or Andersson et al. 
 - **Dates:** use Wednesday 7th July 2021 (not Wednesday 7 July 2021 or other variations).
-- **Dates:** all sections should, if possible, have a "last updated:" field, this will make it easier for the reader to see if the section has been updated recently.
 
 ### Images
 
-- We should ideally try to create images "in house". Feel free to discuss any designs with the team if you would like feedback before submission.
+- We should ideally try to create original images. Where this is not possible, the licence of the image should be checked and properly adhered to. If the licence terms are unclear, the image should not be used. Images from elsewhere should always be properly referenced. Please contact the team to discuss the use of an image if you are unsure.
 
-- Images may be provided from the Communications Office images or from  DC images. If we reuse images from elsewhere, we must have a clear understanding of the copyright and licence conditions. We must adhere to these conditions in all cases (appropriate referencing etc.). If we cannot find the exact license with which the image has been shared, we should assume that reuse is not allowed and therefore not use this image.
-
-- All in-house images should be added with a free licence. 
-
-- Images integration should be tested to determine whether (a) the image looks as intended when it is embedded in a page, and (b) the image still looks good when viewed on a mobile device.
-
-- Images should be optimised for size. This means uploading the images in the smallest possible size and resolution to ensure that they are displayed well. For example, thumbnail images should be uploaded 500px wide and 250px wide.
+- Images should be optimised for size. This means uploading the images in the smallest possible size and resolution to ensure that they are displayed well (for example, thumbnail images should be 500px wide and 250px wide). Images integration should then be tested: check if the image looks as intended when it is embedded in a page, and if the image still looks good when viewed on a mobile device.
 
 ### Links
 
-- Links within the Platform are always given with “/” representing the beginning of the URL (e.g., `/highlights/inparanoidb/`) whereas the outside ones include "https://" (e.g., `https://scilifelab.figshare.com/`).
+- Links within the Platform are always given with “/” representing the beginning of the URL (e.g. `/highlights/inparanoidb/`) whereas the outside ones include "https://" (e.g. `https://scilifelab.figshare.com/`).
 
 - Always provide a DOI link where possible. If an article, an image, data, code, etc. has a DOI assigned, then the link should be: https://doi.org/[INSERT_DOI_HERE]. For example, for a DOI such as 10.17044/scilifelab.18020801, then the link should be `https://doi.org/10.17044/scilifelab.18020801`.
 
-- Make the link text explicitly say where the link goes. For example, display “the Contribute page”, not “click here”.
+- Wherever possible, the link text should explicitly state where the link goes. For example, display “the Contribute page”, not “click here”.
 
-- Avoid using the url as the link text.
+- Avoid using the URL as the link text.
 
 ### References
 
@@ -116,7 +109,7 @@ Both illustrations should be placed in the `/static/highlights/` folder. The URL
 
 #### Data highlight texts
 
-The data highlights are generated from Markdown formatted files contained in the `/content/highlights/` folder. The file name used here will also be the URL of the data highlight (e.g., `test-highlight.md` will become `https://data.scilifelab.se/highlights/test-highlight/`).
+The data highlights are generated from Markdown formatted files contained in the `/content/highlights/` folder. The file name used here will also be the URL of the data highlight (e.g. `test-highlight.md` will become `https://data.scilifelab.se/highlights/test-highlight/`).
 
 #### Content of the data highlight texts
 
