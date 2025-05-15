@@ -539,3 +539,12 @@ h5 a:hover {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+
+.card {
+  background-color: #d2c7d4;
+}
+
+.card:hover {
+  background-color: #a48fa9;
+}
+
