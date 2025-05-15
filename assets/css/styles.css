@@ -166,6 +166,129 @@ h5 a:hover {
   min-height: 100vh;
   border-right: 1px solid #ccc;
   background-color: #f8f9fa; /* light grey */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive sidebar styles */
+@media all and (max-width: 991px) {
+  .sidebar-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 0;
+    transform: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .section-sidebar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .section-sidebar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .section-sidebar .nav-link {
+    white-space: nowrap;
+    border-left: none;
+    padding: 0.75rem 1rem;
+  }
+
+  .section-sidebar .nav-link:hover {
+    border-left: none;
+    border-bottom: 3px solid #491f53;
+  }
+
+  .section-sidebar .nav-link.active {
+    border-left: none;
+    border-bottom: 3px solid #491f53;
+  }
+
+  /* Mobile accordion styles */
+  .mobile-nav-accordion {
+    display: block;
+  }
+
+  .mobile-nav-accordion .accordion {
+    background-color: transparent;
+  }
+
+  .mobile-nav-accordion .accordion-item {
+    border: none;
+  }
+
+  .mobile-nav-accordion .accordion-button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #045c64;
+    background-color: #f8f9fa;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-nav-accordion .accordion-button:not(.collapsed) {
+    color: #491f53;
+    background-color: #f8f9fa;
+    box-shadow: none;
+  }
+
+  .mobile-nav-accordion .accordion-button::after {
+    margin-left: 0;
+    order: 2;
+  }
+
+  .mobile-nav-accordion .accordion-body {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .mobile-nav-accordion .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav-accordion .nav-link {
+    border-left: none;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .sidebar-wrapper {
+    width: 280px;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 2rem);
+    margin: 1rem 0;
+  }
+
+  .container-fluid .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .container-fluid .row > * {
+    flex-shrink: 0;
+  }
+
+  .mobile-nav-accordion {
+    display: none;
+  }
+
+  /* Remove border-bottom in desktop view */
+  .section-sidebar.border-bottom {
+    border-bottom: none !important;
+  }
 }
 
 /* Nav tab on services page */
