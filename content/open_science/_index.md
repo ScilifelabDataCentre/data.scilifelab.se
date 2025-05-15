@@ -13,9 +13,10 @@ menu:
 draft: true
 ---
 
-<figure class="my-3 figure w-100 text-center">
-  <img src="/img/open_science/open_science.png" class="figure-img img-fluid w-100" alt="Image of scientist at microscope with text 'Open Science'">
-</figure>
+{{< video_banner
+  video="/media/open_science/index.mp4"
+  alt="A looping animation showing scenes from a wet lab."
+>}}
 
 At SciLifeLab, the Open Science team is dedicated to equipping researchers with the tools and resources needed to leverage
 Open Science practices effectively. We aim to foster a culture of openness and integrate Open Science principles into our
