@@ -10,7 +10,6 @@ menu:
   open_science:
     name: "Overview"
     weight: 1
-draft: true
 ---
 
 {{< video_banner
