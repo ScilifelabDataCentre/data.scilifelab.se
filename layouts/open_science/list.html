@@ -1,40 +1,4 @@
 {{ define "main" }}
-<div class="container-fluid">
-  <div class="row">
-    <!-- Sidebar nav -->
-    <aside class="col-lg-2 px-3 sidebar-wrapper">
-      <!-- Mobile accordion navigation -->
-      <div class="mobile-nav-accordion">
-        <div class="accordion" id="mobileNavAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="mobileNavHeader">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavCollapse" aria-expanded="false" aria-controls="mobileNavCollapse">
-                Navigation
-              </button>
-            </h2>
-            <div id="mobileNavCollapse" class="accordion-collapse collapse" aria-labelledby="mobileNavHeader" data-bs-parent="#mobileNavAccordion">
-              <div class="accordion-body">
-                <nav class="section-sidebar border-bottom">
-                  {{ partial "sidebar.html" . }}
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desktop navigation -->
-      <div class="d-none d-lg-block">
-        <nav class="section-sidebar border-bottom">
-          {{ partial "sidebar.html" . }}
-        </nav>
-      </div>
-    </aside>
-
-    <!-- Main content area -->
-    <main class="col-md-9 col-lg-10 p-4">
-      {{ .Content }}
-    </main>
-  </div>
-</div>
+  <!-- open science pages have common layout for list and single -->
+  {{ partial "open_science_page.html" . }}
 {{ end }}
