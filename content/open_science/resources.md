@@ -15,7 +15,7 @@ show_section_nav: true
 
 Welcome to our Open Science Resources page.
 Here, you’ll find a collection of resources designed to help you integrate
-[Open Science and FAIR principles]({{< ref "glossary.md" >}}) into your work.
+[Open Science and FAIR principles](/open_science/glossary) into your work.
 
 ## SciLifeLab Resources {.highlighted-header #scilifelab-resources}
 
