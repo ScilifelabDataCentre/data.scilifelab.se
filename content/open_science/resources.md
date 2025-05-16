@@ -25,7 +25,7 @@ Here, you’ll find a collection of resources designed to help you integrate
 
 #### SciLifeLab Open Science Onboarding
 
-Here you can find our Open Science Onboarding which will guide you through the essential concepts to get you started on
+Here you can find our [Open Science Onboarding](https://doi.org/10.17044/scilifelab.29087126) which will guide you through the essential concepts to get you started on
 your open science journey.
 
 #### Open Science Checklists
