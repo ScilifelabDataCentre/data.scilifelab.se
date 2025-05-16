@@ -7,7 +7,6 @@ menu:
     weight: 3
 ---
 # Initiatives
-<br/>
 
 ### Our Initiatives
 
@@ -18,7 +17,6 @@ the ongoing and upcoming initiatives that we are involved in below.
 
 {{< simple_cards "open_science/initiatives" >}}
 
-<br/>
 
 ### Collaborative Initiatives
 
@@ -28,7 +26,6 @@ upcoming initiatives that we are involved in below.
 
 {{< simple_cards "open_science/collaborative_initiatives" >}}
 
-<br/>
 
 ### Share your Open Science initiatives 
 

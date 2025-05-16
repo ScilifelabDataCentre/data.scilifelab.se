@@ -13,13 +13,11 @@ menu:
 draft: true
 ---
 # Overview 
-<br/>
 
 {{< video_banner
   video="/media/open_science/index.mp4"
   alt="A looping animation showing scenes from a wet lab."
 >}}
-<br/>
 
 At SciLifeLab, the Open Science team is dedicated to equipping researchers with the tools and resources needed to leverage
 Open Science practices effectively. We aim to foster a culture of openness and integrate Open Science principles into our
@@ -38,7 +36,6 @@ them into onboarding, systems, and training. Ultimately, we aim to drive cultura
 advance scientific discovery through openness, transparency, and collaboration, and foster meaningful connections with
 the broader public.
 
-<br/>
 
 ## Why is Open Science important to SciLifeLab?
 
