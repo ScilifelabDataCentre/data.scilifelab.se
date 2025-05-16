@@ -71,3 +71,7 @@ The network also aims to support the development of shared resources, tools, and
 Members will be able to stay informed about emerging AI trends and technologies, exchange best practices for integrating
 these tools into their work, and access a virtual meeting space to seek advice, discuss challenges, and receive
 constructive feedback on AI-related projects.
+
+<br/>
+
+_© Media Elements sourced from [Canva.com](https://canva.com)_
