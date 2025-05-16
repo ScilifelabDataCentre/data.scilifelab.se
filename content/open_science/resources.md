@@ -37,9 +37,9 @@ your open science journey.
 The following checklists are available to provide practical guidance on steps you can take to incorporate open science
 and FAIR into your research workflows:
 
-- Open Access Checklist
+- Open Access Checklist ([GitHub](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_access_checklist.md), [Figshare](https://figshare.scilifelab.se/articles/educational_resource/SciLifeLab_Open_Access_Checklist/29086706))
 - Open Data Guidelines ([RDM Guidelines](https://data-guidelines.scilifelab.se/))
-- Software Citation Checklist
+- Open Science Software Checklist ([GitHub](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_software_checklist.md), [Figshare](https://figshare.scilifelab.se/articles/educational_resource/SciLifeLab_Open_Science_Software_Checklist/29086775))
 - [FAIR-Aware Self Assessment Tool](https://fairaware.dans.knaw.nl/)
 
 <br/>
