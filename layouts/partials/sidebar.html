@@ -5,7 +5,7 @@
     {{ range $menu }}
     <li class="nav-item">
       {{ $isCurrent := and .Page (eq .Page.RelPermalink $.RelPermalink) }}
-      <a class="nav-link {{ if eq .Page.RelPermalink $isCurrent }}active{{ end }}"
+      <a class="nav-link {{ if $isCurrent }}active{{ end }}"
          href="{{ .Page.RelPermalink }}">
         {{ .Name }}
       </a>
@@ -17,7 +17,7 @@
       <ul class="nav flex-column ms-2">
         {{ range .Children }}
         <li class="nav-item">
-          <a class="nav-link py-1 {{ if eq .Page.RelPermalink $isCurrent }}active{{ end }}"
+          <a class="nav-link py-1 {{ if eq .Page.RelPermalink $.RelPermalink }}active{{ end }}"
              href="{{ .Page.RelPermalink }}">
             {{ .Name }}
           </a>
