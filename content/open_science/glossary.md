@@ -7,4 +7,6 @@ menu:
 draft: true
 ---
 
+# Glossary 
+
 {{< glossary "open_science/glossary" >}}

@@ -7,6 +7,9 @@ menu:
     weight: 1
 ---
 
+# Our Initiatives 
+<br/>
+
 ## Community of Practice {#community-of-practice}
 
 An initiative to foster collaboration, innovation, and researcher-driven guidance in advancing Open Science and FAIR
