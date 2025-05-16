@@ -38,10 +38,12 @@ making every team member within SciLifeLab a part of our broader Open Science ef
 You can view our broader team from the [Data Centre](https://www.scilifelab.se/contact/data-center/) and find out more
 about [NBIS here](https://nbis.se/).
 
-If you're interested in being involved in the advancement of Open Science, we’d love to hear from you.
-Contact us for more information.
+<br/>
 
 ## Contact Us
+
+If you're interested in being involved in the advancement of Open Science, we’d love to hear from you.
+Contact us for more information.
 
 Email [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with 'Open Science' in the subject line.
 
