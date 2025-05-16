@@ -6,7 +6,7 @@ This is the source code for the SciLifeLab Data Platform website:
 [https://data.scilifelab.se/](https://data.scilifelab.se/).
 
 - [Introduction](#introduction)
-- [Development](#development)
+- [Development and contributions](#development-and-contributions)
   - [Step 1: Access the code](#step-1-access-the-code)
   - [Step 2a: Edit the files (online)](#step-2a-edit-the-files-online)
   - [Step 2b: Edit the files (locally)](#step-2b-edit-the-files-locally)
@@ -29,7 +29,8 @@ Click on 'Cite this repository' near the top right of this repository to see how
 
 ## Development and contributions
 
-All website content is written in [Markdown](https://guides.github.com/features/mastering-markdown/), YAML, or JSON which are all beginner-friendly formats so it should be relatively easy to contribute. Please visit the [CONTRIBUTING page](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md) for instructions on how to contribute to specific sections of the website.
+All website content is written in [Markdown](https://guides.github.com/features/mastering-markdown/), YAML, or JSON which are all beginner-friendly formats so it should be relatively easy to contribute.
+Please visit the [CONTRIBUTING page](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md) for general guidelines and specific instructions on how to contribute to different sections of the Platform.
 
 ### Step 1: Access the code
 
@@ -80,11 +81,21 @@ Then you can fetch changes at any time from this remote:
 git pull upstream develop
 ```
 
-When you have finished editing, commit and push to your fork:
+To keep commit messages consistent, contributors are advised to configure `git` with the supplied commit message template by running the following command in the repository's directory:
+```bash
+git config --local commit.template .github/.gitmessage.txt
+```
 
+This will cause `git` to pre-fill your commit message with the following template:
+```text
+<type>(scope): <short description>
+```
+
+When you have finished editing, commit and push to your fork.
+For a good commit message, just replace the `<type>` and `(scope)` placeholders and write what would follow after "*If accepted, my changes are going to...*" as a short description:
 ```bash
 git add .
-git commit -m "My changes"
+git commit
 git push
 ```
 
