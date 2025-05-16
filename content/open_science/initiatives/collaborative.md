@@ -177,7 +177,7 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
 
 {{< banner_image
   image="/img/open_science/initiatives/eosc.png"
-  alt="OSMI logo"
+  alt="EOSC logo"
 >}}
 
 ## European Open Science Cloud (EOSC) {#eosc}
