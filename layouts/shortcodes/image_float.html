@@ -1,0 +1,13 @@
+<!--Small image (e.g. logo) on left and text on the right-->
+<div class="row my-4">
+    <div class="col-md-3 d-flex justify-content-center">
+    <img
+      src='{{ .Get "image" }}'
+      alt='{{ .Get "alt" }}'
+      class="img-fluid"
+      style="max-height: 150px; object-fit: contain;">
+  </div>
+  <div class="col-md-9">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

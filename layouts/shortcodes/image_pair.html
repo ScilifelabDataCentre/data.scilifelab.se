@@ -1,9 +1,31 @@
-<!--Generic to place 2 images side by side-->
-<div class="row my-4 align-items-center">
-  <div class="col-md-6 text-center mb-3">
-    <img src='{{ .Get "image1" }}' class="img-fluid" alt='{{ .Get "alt1" }}' />
+<!--Places 2 images side by side, with optional caption and height restriction-->
+{{ $height := .Get "height" | default "auto" }}
+
+<div class="row my-4 align-items-start">
+  <div class="col-md-6 d-flex flex-column text-center mb-3">
+    <div class="flex-grow-1 d-flex flex-column align-items-center">
+      <img
+        src='{{ .Get "image1" }}'
+        class="img-fluid"
+        alt='{{ .Get "alt1" }}'
+        style="height: {{ $height }};"
+      />
+      {{ with .Get "caption1" }}
+      <div class="image-caption mt-2">{{ . }}</div>
+      {{ end }}
+    </div>
   </div>
-  <div class="col-md-6 text-center mb-3">
-    <img src='{{ .Get "image2" }}' class="img-fluid" alt='{{ .Get "alt2" }}' />
+  <div class="col-md-6 d-flex flex-column text-center mb-3">
+    <div class="flex-grow-1 d-flex flex-column align-items-center">
+      <img
+        src='{{ .Get "image2" }}'
+        class="img-fluid"
+        alt='{{ .Get "alt2" }}'
+        style="height: {{ $height }};"
+      />
+      {{ with .Get "caption2" }}
+      <div class="image-caption mt-2">{{ . }}</div>
+      {{ end }}
+    </div>
   </div>
 </div>

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "CoARA",
+    "description": "We are a proud member of CoARA, a global coalition dedicated to reforming how research, researchers, and institutions are assessed. CoARA promotes inclusive and effective practices, moving beyond publication-based metrics to recognise diverse research contributions.",
+    "url": "/open_science/initiatives/collaborative#coara"
+  },
+  {
+    "title": "Global Alliance for Genomics and Health (GA4GH)",
+    "description": "We are collaborating with GA4GH to advance responsible sharing of genomic and health data through harmonised standards and tools.",
+    "url": "/open_science/initiatives/collaborative#ga4gh"
+  },
+  {
+    "title": "ADORE.software",
+    "description": "SciLifeLab is a signatory of ADORE.software initiative. This declaration emphasises the importance of skilled individuals, supportive infrastructure, and effective funding policies for long-term software impact",
+    "url": "/open_science/initiatives/collaborative#adore"
+  },
+  {
+    "title": "GoFAIR Sweden",
+    "description": "We are collaborating with GoFAIR Sweden to promote FAIR principles in data management and sharing. This initiative fosters collaboration among Swedish institutions and supports life sciences research through training, workshops, and the development of FAIR-aligned tools and practices.",
+    "url": "/open_science/initiatives/collaborative#go-fair"
+  },
+  {
+    "title": "The Open Science Monitoring Initiative (OSMI)",
+    "description": "We are partnering with OSMI to support the adoption of open science monitoring practices. OSMI connects individuals and institutions working to implement and advanced open science monitoring.",
+    "url": "/open_science/initiatives/collaborative#osmi"
+  }
+]

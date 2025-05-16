@@ -11,6 +11,7 @@ This is the source code for the SciLifeLab Data Platform website:
   - [Step 2a: Edit the files (online)](#step-2a-edit-the-files-online)
   - [Step 2b: Edit the files (locally)](#step-2b-edit-the-files-locally)
   - [Step 3: Make a pull request](#step-3-make-a-pull-request)
+- [Media (images and videos)](#media)
 - [How to get help](#how-to-get-help)
 - [Credits](#credits)
 
@@ -148,6 +149,16 @@ You can find full documentation on the [GitHub help website](https://help.github
 
 Once created, a member of the website team will review your changes.
 Once approved, they will be merged and deployed.
+
+## Media
+
+### Videos
+For videos which are used for visual interest (e.g. as banners), compress the images as much as possible using a tool 
+such as [VEED](https://www.veed.io/). Try quality as "medium" and the resolution as "2918 x 720" as a default starting
+point but always visually inspect the compressed video. 
+
+To keep the overall repository small, avoid committing videos over 5MB and store the video elsewhere. Likewise, if the 
+number of MP4s in the repository grows, we likely will move all videos out of the repository. 
 
 ## How to get help
 

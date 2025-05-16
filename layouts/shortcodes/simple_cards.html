@@ -1,0 +1,17 @@
+<!--Simple cards which contain title, description and are clickable-->
+{{ $filepath := .Get 0 }}{{ $data := index site.Data (split $filepath "/") }}
+
+<div class="row row-cols-1 row-cols-lg-2 mx-xxl-5 py-2">
+  {{ range $data }}
+  <div class="col pb-3">
+    <a href="{{ .url }}" class="text-decoration-none text-reset">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ .title }}</h5>
+          <p class="card-text">{{ .description }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {{ end }}
+</div>
