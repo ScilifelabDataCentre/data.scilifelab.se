@@ -80,12 +80,21 @@ Then you can fetch changes at any time from this remote:
 git pull upstream develop
 ```
 
-When you have finished editing, commit and push to your fork.
-To write a good commit message, just write what would follow after "*If accepted, my changes are going to...*":
+To keep commit messages consistent, contributors are advised to configure `git` with the supplied commit message template by running the following command in the repository's directory:
+```bash
+git config --local commit.template .github/.gitmessage.txt
+```
 
+This will cause `git` to pre-fill your commit message with the following template:
+```text
+<type>(scope): <short description>
+```
+
+When you have finished editing, commit and push to your fork.
+For a good commit message, just replace the `<type>` and `(scope)` placeholders and write what would follow after "*If accepted, my changes are going to...*" as a short description:
 ```bash
 git add .
-git commit -m "Short message describing the changes"
+git commit
 git push
 ```
 
