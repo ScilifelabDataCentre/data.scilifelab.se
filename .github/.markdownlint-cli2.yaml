@@ -1,4 +1,4 @@
 config:
   default: true
-  line-length: false  # Disable line length rule
-  no-inline-html: false  # Allow inline HTML
+  line-length: 120
+  no-inline-html: false
