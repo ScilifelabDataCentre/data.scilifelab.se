@@ -11,6 +11,7 @@ menu:
     name: "Overview"
     weight: 1
 ---
+# Overview 
 
 {{< video_banner
   video="/media/open_science/index.mp4"
@@ -33,6 +34,7 @@ Our goal is to provide practical, straightforward guidance on how to navigate th
 them into onboarding, systems, and training. Ultimately, we aim to drive cultural change toward FAIR and Open Science,
 advance scientific discovery through openness, transparency, and collaboration, and foster meaningful connections with
 the broader public.
+
 
 ## Why is Open Science important to SciLifeLab?
 

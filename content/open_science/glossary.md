@@ -6,4 +6,6 @@ menu:
     weight: 5
 ---
 
+# Glossary 
+
 {{< glossary "open_science/glossary" >}}

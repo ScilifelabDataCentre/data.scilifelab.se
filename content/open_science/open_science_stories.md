@@ -5,8 +5,10 @@ menu:
     name: "Open Science Stories"
     weight: 4
 ---
+# Open Science Stories 
 
-#### Open Science Stories: Golnaz Taheri and Gisele Miranda
+## Golnaz Taheri and Gisele Miranda
+
 
 From code sharing to FAIR data, two of our new SciLifeLab/DDLS (Data Driven Life Sciences) Fellows discuss their Open
 Science journeys. They highlight practical steps, benefits, and challenges of making research more transparent and 
@@ -22,9 +24,10 @@ accessible. Their stories showcase how Open Science fuels collaboration and acce
   height=25rem
 >}}
 
+
 ### Can you introduce yourself and your current research focus?
 
-_Taheri_: My name is Golnaz Taheri and I am currently an Assistant Professor at the Department of EECS (Electrical
+_Golnaz Taheri_: My name is Golnaz Taheri and I am currently an Assistant Professor at the Department of EECS (Electrical
 Engineering and Computer Science)/Division of CST (Computational Science and Technology) and a DDLS Fellow at SciLifeLab.
 I work in the field of computational biology, with a focus on applying machine learning to cancer biology and drug
 interaction prediction. My research involves analyzing multi-omics data and developing computational models to better
@@ -37,9 +40,10 @@ SciLifeLab Fellow and an Imaging Scientist of the Chan-Zuckerberg Initiative. My
 learning to understand cellular behaviour and interactions. I work extensively with imaging data and develop methods to
 extract meaningful biological insights from complex datasets.
 
+
 ### Can you describe what Open Science means to you?
 
-_Taheri_: To me, Open Science is about making research and data accessible, transparent, and collaborative. It goes
+_Golnaz Taheri_: To me, Open Science is about making research and data accessible, transparent, and collaborative. It goes
 beyond just sharing data; It involves using practices that allow others to reuse and build upon scientific work in an
 ethical, responsible, and sustainable manner. Open Science enables a more inclusive research ecosystem by removing
 barriers to knowledge sharing. It also promotes reproducibility, transparency, and integrity in science, which
@@ -56,9 +60,10 @@ research community. That experience was eye-opening as it changed the way I thin
 research, encouraging me to plan for FAIR outputs from the very beginning and to consider
 how to make my work as reusable and impactful as possible.
 
+
 ### How have you implemented Open Science in your work? (E.g., open data, code sharing, preprints, FAIR principles, etc.)
 
-_Taheri_: I have implemented Open Science in several ways in my work. I share non-sensitive data openly through
+_Golnaz Taheri_: I have implemented Open Science in several ways in my work. I share non-sensitive data openly through
 accessible repositories, following the FAIR principles to ensure that others can easily access and use it. I also share
 code for my computational tools and models through platforms like GitHub, enabling others to replicate or build upon my
 work. Additionally, I have contributed to preprints, making my findings publicly available before formal peer review to
@@ -80,9 +85,10 @@ working on publishing this material in a more FAIR-compliant format.
 While I don’t often generate raw data myself, I work extensively with data already generated
 by the research community, and ensuring those are available for reuse is a key priority.
 
+
 ### What were the biggest benefits or outcomes of sharing your work openly? (Did it lead to new collaborations, reuse of your data, or public engagement?
 
-_Taheri_: Sharing my work openly has been incredibly beneficial in terms of collaboration and data reuse. With the
+_Golnaz Taheri_: Sharing my work openly has been incredibly beneficial in terms of collaboration and data reuse. With the
 resources available through SciLifeLab, like Berzelius, NBIS, and Bianca, my data is accessible to the broader scientific
 community, which has led to new collaborations and the reuse of my data by researchers worldwide. The open access nature
 of the Swedish research environment, especially with support for journal publication fees, has made it easier for my work
@@ -99,9 +105,10 @@ Open sharing also aligns well with the expectations of many funders. For example
 has clear requirements around data sharing and making outputs FAIR. These guidelines have been helpful in structuring
 our work more thoughtfully and ensuring that what we produce is accessible and meaningful to others.
 
+
 ### Did you face any challenges in doing Open Science, and how did you deal with them? (Practical, academic culture, technical, etc.)
 
-_Taheri_: While the benefits of Open Science are clear, there are certainly challenges. One of the practical challenges
+_Golnaz Taheri_: While the benefits of Open Science are clear, there are certainly challenges. One of the practical challenges
 I’ve faced is ensuring that my data and code are properly documented and organised so that they can be used by others. This can be
 time-consuming and requires discipline, especially when working with large, complex datasets. Moreover, it’s crucial to
 ensure that the data is shared ethically, with consideration for privacy and consent, so that it doesn't inadvertently
@@ -123,9 +130,10 @@ transparent about the steps taken to generate it. Providing that level of detail
 an opportunity to strengthen the reproducibility and clarity of your work. Over time, these practices become more
 intuitive and rewarding.
 
+
 ### What advice would you give to other researchers who want to make their science more open?
 
-_Taheri_: Start small but make a commitment to being transparent and open. Share your data and code early in the process and
+_Golnaz Taheri_: Start small but make a commitment to being transparent and open. Share your data and code early in the process and
 follow the FAIR principles to ensure that your work is accessible and reusable. It’s also important to engage with
 platforms that support Open Science, such as GitHub for code, and utilize institutional resources like NBIS and Bianca
 for computational support. Finally, prioritize collaboration and ask for feedback from others; Open Science is not just
@@ -137,9 +145,10 @@ communities. Look at how others in your field format and document their outputs.
 those standards not only makes your work more visible but also encourage reuse. Clear
 documentation can make a big difference in whether your work gets adopted more broadly.
 
+
 ### How does SciLifeLab/DDLS Fellow program facilitate Open Science in your work?
 
-_Taheri_: The SciLifeLab/DDLS Fellow program has been crucial in supporting Open Science in my work by providing access
+_Golnaz Taheri_: The SciLifeLab/DDLS Fellow program has been crucial in supporting Open Science in my work by providing access
 to invaluable resources like NBIS, Bianca, and Berzelius. These platforms allow me to manage, analyse, and share large
 biological datasets efficiently, making my work more accessible to others. Furthermore, SciLifeLab’s Open Science
 culture, supported by Sweden’s strong open access policies, provides a robust infrastructure for data sharing and
@@ -155,9 +164,10 @@ program also provides access to training opportunities and resources that make i
 publish data, code, and workflows. Moreover, it also promotes the development and
 dissemination of open-source tools and encourages the use of public repositories.
 
+
 ### What was your favourite holiday you’ve been on?
 
-_Taheri_: I went to Malaysia and Singapore a few years ago, and I absolutely loved it. Both places are incredibly
+_Golnaz Taheri_: I went to Malaysia and Singapore a few years ago, and I absolutely loved it. Both places are incredibly
 unique, with Malaysia offering vibrant street food, thick and green rainforests, and cultural diversity, while
 Singapore amazed me with its modern skyline, beautiful gardens, and impressive mix of tradition and innovation. The
 contrast in food, nature, and culture made the trip unforgettable. I really enjoyed exploring the local markets, trying
@@ -166,6 +176,7 @@ new foods, and experiencing the different ways of life.
 _Gisele Miranda_: I really enjoy traveling and exploring new places, whether it’s a different country or just
 discovering a new part of Stockholm and having some fika! I find a lot of inspiration in
 seeing how people live, eat, and create in different cultures.
+
 
 #### Bonus: Community Practice and Networking
 
