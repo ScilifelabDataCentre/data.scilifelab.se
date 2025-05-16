@@ -1,0 +1,17 @@
+<!--Row of logos with required alt text-->
+{{ $delimiter := "|" }}
+
+<div class="row text-center justify-content-center align-items-center">
+  {{ range .Params }}
+    {{ $logo := strings.TrimSpace . }}
+    {{ if and $logo (in $logo $delimiter) }}
+      {{ $pair := split $logo $delimiter }}
+      {{ $image := index $pair 0 | strings.TrimSpace }}
+      {{ $alt := index $pair 1 | strings.TrimSpace }}
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="{{ $image }}" class="img-fluid mb-3" alt="{{ $alt }}">
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+

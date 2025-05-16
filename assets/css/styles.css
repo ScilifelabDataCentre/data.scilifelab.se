@@ -50,6 +50,12 @@ h5 a:hover {
   color: #045c64;
 }
 
+/* Special styling for headers that need to be highlighted more */
+.highlighted-header {
+  color: #77577e;
+  margin-top: 2rem;
+}
+
 .title-link {
   color: #17202a;
 }
@@ -289,6 +295,29 @@ h5 a:hover {
   .section-sidebar.border-bottom {
     border-bottom: none !important;
   }
+}
+
+/* Subheaders in the side navbar */
+.sidebar-toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.sidebar-toc li {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-toc a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: inherit;
+  display: block;
+}
+
+.sidebar-toc a:hover {
+  text-decoration: underline;
 }
 
 /* Nav tab on services page */
@@ -633,3 +662,12 @@ h5 a:hover {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+
+.card {
+  background-color: #d2c7d4;
+}
+
+.card:hover {
+  background-color: #a48fa9;
+}
+
