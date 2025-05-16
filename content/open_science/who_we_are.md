@@ -9,7 +9,6 @@ draft: true
 
 # Who We Are 
 
-
 {{< image_text_row 
   image="/img/open_science/team_photo.png" 
   alt="Photo of Open Science team"
