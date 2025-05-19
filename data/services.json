@@ -404,7 +404,7 @@
       "Tool"
     ],
     "name": "SciLifeLab Data Stewardship Wizard",
-    "description": "A tool that aids researchers in creating data management plans (DMPs) using multiple choice questions",
+    "description": "A tool that aids researchers in creating data management plans (DMPs) using multiple-choice questions",
     "thumbnail": "/img/service_thumbnails/dsw.jpg",
     "url": "https://dsw.scilifelab.se/",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
