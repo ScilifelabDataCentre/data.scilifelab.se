@@ -5,6 +5,7 @@ menu:
     name: "Open Science Stories"
     weight: 4
 ---
+
 # Open Science Stories 
 
 ## Golnaz Taheri and Gisele Miranda

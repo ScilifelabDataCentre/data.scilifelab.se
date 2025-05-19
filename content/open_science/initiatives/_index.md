@@ -6,6 +6,7 @@ menu:
     identifier: "initiatives"
     weight: 3
 ---
+
 # Initiatives
 
 ### Our Initiatives
