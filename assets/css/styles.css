@@ -178,8 +178,10 @@ h5 a:hover {
 }
 
 .sidebar-wrapper {
-  border-right: 1px solid #ccc;
   background-color: #f8f9fa; /* light grey */
+  @media all and (min-width: 768px) {
+    border-right: 1px solid #ccc;
+  }
 }
 
 /* Subheaders in the side navbar */
@@ -203,6 +205,16 @@ h5 a:hover {
 
 .sidebar-toc a:hover {
   text-decoration: underline;
+}
+
+/* OS page mobile navigation button */
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  color: #3f3f3f;
+  font-weight: bold;
+  background-color: #e5e5e5;
+  box-shadow: none;
 }
 
 /* Nav tab on services page */
