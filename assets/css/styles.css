@@ -50,6 +50,15 @@ h5 a:hover {
   color: #045c64;
 }
 
+.open-science-content h1 {
+    margin-bottom: 2rem;
+}
+
+.open-science-content h2,
+.open-science-content h3 {
+    margin-top: 1.5rem;
+}
+
 /* Special styling for headers that need to be highlighted more */
 .highlighted-header {
   color: #77577e;
