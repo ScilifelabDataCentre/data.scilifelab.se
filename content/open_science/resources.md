@@ -8,6 +8,8 @@ menu:
 show_section_nav: true
 ---
 
+# Resources
+
 {{< video_banner
   video="/media/open_science/resources.mp4"
   alt="A looping animation showing scenes from a wet lab."
@@ -21,7 +23,7 @@ Here, you’ll find a collection of resources designed to help you integrate
 
 #### SciLifeLab Open Science Onboarding
 
-Here you can find our Open Science Onboarding which will guide you through the essential concepts to get you started on
+Here you can find our [Open Science Onboarding](https://doi.org/10.17044/scilifelab.29087126) which will guide you through the essential concepts to get you started on
 your open science journey.
 
 #### Open Science Checklists
@@ -29,9 +31,9 @@ your open science journey.
 The following checklists are available to provide practical guidance on steps you can take to incorporate open science
 and FAIR into your research workflows:
 
-- Open Access Checklist
+- Open Access Checklist ([Markdown](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_access_checklist.md), [PDF](https://doi.org/10.17044/scilifelab.29086706.v1))
 - Open Data Guidelines ([RDM Guidelines](https://data-guidelines.scilifelab.se/))
-- Software Citation Checklist
+- Open Science Software Checklist ([Markdown](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_software_checklist.md), [PDF](https://doi.org/10.17044/scilifelab.29086775.v1))
 - [FAIR-Aware Self Assessment Tool](https://fairaware.dans.knaw.nl/)
 
 #### CoARA Action Plan for SciLifeLab

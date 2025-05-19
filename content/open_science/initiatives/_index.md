@@ -7,6 +7,8 @@ menu:
     weight: 3
 ---
 
+# Initiatives
+
 ### Our Initiatives
 
 At SciLifeLab, we are dedicated to facilitating collaboration, driving innovation, and empowering the
