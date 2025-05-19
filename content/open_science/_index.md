@@ -12,6 +12,8 @@ menu:
     weight: 1
 ---
 
+# Overview 
+
 {{< video_banner
   video="/media/open_science/index.mp4"
   alt="A looping animation showing scenes from a wet lab."
