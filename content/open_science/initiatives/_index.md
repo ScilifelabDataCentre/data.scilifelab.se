@@ -26,7 +26,7 @@ upcoming initiatives that we are involved in below.
 
 {{< simple_cards "open_science/collaborative_initiatives" >}}
 
-### Share your Open Science initiatives 
+### SciLifeLab Initiatives 
 
 There are many innovative Open Science initiatives throughout SciLifeLab, and
 [this page](/open_science/initiatives/scilifelab) offers a space for these projects to be highlighted.

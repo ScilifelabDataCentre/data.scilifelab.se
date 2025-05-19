@@ -182,6 +182,6 @@ SciLifeLab actively collaborates with EOSC by providing feedback to the EOSC EU 
 [several task forces](https://eosc.eu/eosc-task-forces/). It works closely with university partners such as Uppsala
 University, as well as through broader European collaborations with organisations like CERN and initiatives such as
 the ELIXIR BY-COVID project. Through these efforts, SciLifeLab supports the development of a robust, interoperable,
-and researcher-driven European open science infrastructure.
+and researcher-driven European Open Science infrastructure.
 
 _© Media Elements sourced from [Canva.com](https://canva.com)_
