@@ -54,7 +54,6 @@ You can review SciLifeLab’s CoARA Action Plan [here](https://docs.google.com/d
 - **Alignment with Swedish Institutions**: Over 30 Swedish universities, including KI, SU, KTH, and UU, have joined CoARA,
   providing an opportunity for national collaboration and consistency. 
 
-
 {{< banner_image
   image="/img/open_science/initiatives/ga4gh.png"
   alt="GA4GH logo"
@@ -76,7 +75,6 @@ as well as have the opportunity to explore GA4GH technical standards and policie
 scalable solutions for genomic and health data sharing. Guided by an international Programme Committee and shaped by
 input from the broader GA4GH community, this plenary aims to foster global collaboration in genomic science to improve health outcomes worldwide. 
 You can learn more and register for the GA4GH 13th Plenary Meeting [here](https://broadinstitute.swoogo.com/ga4gh13plenary/7101555)
-
 
 {{< banner_image
   image="/img/open_science/initiatives/adore.png"
@@ -113,7 +111,6 @@ Discover more about ADORE.software [here](https://adore.software/) and Become a 
 - **Leading in Sweden and Beyond**: SciLifeLab is uniquely positioned to guide the operationalisation and implementation of
   ADORE.software in Sweden.
 
-
 {{< banner_image
   image="/img/open_science/initiatives/go_fair.png"
   alt="GO FAIR logo"
@@ -133,7 +130,6 @@ Through these initiatives, SciLifeLab aims to strengthen Sweden’s position as 
 sustainable research practices, and data-driven innovation.
 
 Read more about LIFES and GO FAIR [here](https://www.gofair.foundation/lifes).
-
 
 {{< banner_image
   image="/img/open_science/initiatives/osmi.png"
@@ -167,8 +163,6 @@ Through this collaboration, SciLifeLab joins a growing international network com
 accessibility, and accountability in research. This partnership reinforces our commitment to cultivating open research
 environments and shaping robust, evidence-informed monitoring frameworks at institutional, national, and global levels.
 
-
-
 {{< banner_image
   image="/img/open_science/initiatives/eosc.png"
   alt="EOSC logo"
@@ -179,6 +173,5 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
 The European Open Science Cloud (EOSC) is a European Commission initiative aimed at developing a federated, open, and multidisciplinary digital environment for European researchers, academics, innovators, and citizen scientists. Its primary goal is to facilitate the sharing, discovery, and reuse of research data, tools, and services, fostering collaboration and accelerating scientific progress. EOSC builds upon existing infrastructures and services supported by the European Commission, Member States, and research communities, integrating them into a cohesive 'system of systems' to add value by aggregating content and enabling services to be used together. 
 You can read more about EOSC [here](https://eosc.eu/). 
 SciLifeLab actively collaborates with EOSC by providing feedback to the EOSC EU Node and participating in [several task forces](https://eosc.eu/eosc-task-forces/). It works closely with university partners such as Uppsala University, as well as through broader European collaborations with organizations like CERN and initiatives such as the ELIXIR BY-COVID project. Through these efforts, SciLifeLab supports the development of a robust, interoperable, and researcher-driven European open science infrastructure.
-
 
 _© Media Elements sourced from [Canva.com](https://canva.com)_

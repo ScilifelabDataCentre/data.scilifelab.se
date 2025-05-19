@@ -26,7 +26,6 @@ Key aspects of the initiative include gathering insights early in development, d
 actionable feedback, fostering a collaborative and inclusive expert community. It also emphasises engaging the wider
 audience through outreach and networking, and recognising contributions to create impactful services and projects.
 
-
 {{< banner_image
   image="/img/open_science/initiatives/fair_metadata.png"
   alt="FAIR metadata NW banner"
@@ -52,7 +51,6 @@ science research by facilitating more effective and connected research data.
 
 You can read more about the work that is being done [here](https://docs.google.com/presentation/d/1aapjARKgO-IBNCUrrILlqYyKVJxmUoqRMvO5IZaHs_I/edit#slide=id.g32233462cdb_0_199).
 
-
 {{< banner_image
   image="/img/open_science/initiatives/osmonitor.png"
   alt="Open Science Monitoring Initiative banner"
@@ -76,7 +74,6 @@ This initiative aims to deepen our understanding of Open Science practices withi
 inform improvements in our policies, guidelines, and practices, ensuring that we remain at the forefront of Open Science
 innovation.
 
-
 {{< banner_image
   image="/img/open_science/initiatives/ainw.png"
   alt="AI Network banner"
@@ -93,6 +90,5 @@ The network also aims to support the development of shared resources, tools, and
 Members will be able to stay informed about emerging AI trends and technologies, exchange best practices for integrating
 these tools into their work, and access a virtual meeting space to seek advice, discuss challenges, and receive
 constructive feedback on AI-related projects.
-
 
 _© Media Elements sourced from [Canva.com](https://canva.com)_

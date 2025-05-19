@@ -9,10 +9,8 @@ menu:
 
 # SciLifeLab Initiatives 
 
-
 There are many innovative Open Science initiatives throughout SciLifeLab, and this page offers a space for these
 projects to be highlighted.
-
 
 {{< image_text_row 
   image="/img/open_science/initiatives/nf-core_hackathon_2024.png" 

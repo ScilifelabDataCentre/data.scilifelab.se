@@ -36,7 +36,6 @@ them into onboarding, systems, and training. Ultimately, we aim to drive cultura
 advance scientific discovery through openness, transparency, and collaboration, and foster meaningful connections with
 the broader public.
 
-
 ## Why is Open Science important to SciLifeLab?
 
 Open Science aims to make scientific research more transparent, accessible, and collaborative. By engaging with Open

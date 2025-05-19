@@ -9,7 +9,6 @@ menu:
 
 ## Golnaz Taheri and Gisele Miranda
 
-
 From code sharing to FAIR data, two of our new SciLifeLab/DDLS (Data Driven Life Sciences) Fellows discuss their Open
 Science journeys. They highlight practical steps, benefits, and challenges of making research more transparent and 
 accessible. Their stories showcase how Open Science fuels collaboration and accelerates discovery.
@@ -23,7 +22,6 @@ accessible. Their stories showcase how Open Science fuels collaboration and acce
   caption2="Gisele Miranda (Assistant Professor, Division of Computational Science and Technology, EECS - KTH, SciLifeLab Fellow)"
   height=25rem
 >}}
-
 
 ### Can you introduce yourself and your current research focus?
 
@@ -39,7 +37,6 @@ _Gisele Miranda_: I am an Assistant Professor in machine learning for computatio
 SciLifeLab Fellow and an Imaging Scientist of the Chan-Zuckerberg Initiative. My research focuses on using machine
 learning to understand cellular behaviour and interactions. I work extensively with imaging data and develop methods to
 extract meaningful biological insights from complex datasets.
-
 
 ### Can you describe what Open Science means to you?
 
@@ -59,7 +56,6 @@ information. It was also my first time working within such an international and 
 research community. That experience was eye-opening as it changed the way I think about
 research, encouraging me to plan for FAIR outputs from the very beginning and to consider
 how to make my work as reusable and impactful as possible.
-
 
 ### How have you implemented Open Science in your work? (E.g., open data, code sharing, preprints, FAIR principles, etc.)
 
@@ -85,7 +81,6 @@ working on publishing this material in a more FAIR-compliant format.
 While I don’t often generate raw data myself, I work extensively with data already generated
 by the research community, and ensuring those are available for reuse is a key priority.
 
-
 ### What were the biggest benefits or outcomes of sharing your work openly? (Did it lead to new collaborations, reuse of your data, or public engagement?
 
 _Golnaz Taheri_: Sharing my work openly has been incredibly beneficial in terms of collaboration and data reuse. With the
@@ -104,7 +99,6 @@ adds academic value through recognition and reuse.
 Open sharing also aligns well with the expectations of many funders. For example, the grant source I mentioned earlier
 has clear requirements around data sharing and making outputs FAIR. These guidelines have been helpful in structuring
 our work more thoughtfully and ensuring that what we produce is accessible and meaningful to others.
-
 
 ### Did you face any challenges in doing Open Science, and how did you deal with them? (Practical, academic culture, technical, etc.)
 
@@ -130,7 +124,6 @@ transparent about the steps taken to generate it. Providing that level of detail
 an opportunity to strengthen the reproducibility and clarity of your work. Over time, these practices become more
 intuitive and rewarding.
 
-
 ### What advice would you give to other researchers who want to make their science more open?
 
 _Golnaz Taheri_: Start small but make a commitment to being transparent and open. Share your data and code early in the process and
@@ -144,7 +137,6 @@ only becomes clear after it’s been shared. It also helps to align with existin
 communities. Look at how others in your field format and document their outputs. Following
 those standards not only makes your work more visible but also encourage reuse. Clear
 documentation can make a big difference in whether your work gets adopted more broadly.
-
 
 ### How does SciLifeLab/DDLS Fellow program facilitate Open Science in your work?
 
@@ -164,7 +156,6 @@ program also provides access to training opportunities and resources that make i
 publish data, code, and workflows. Moreover, it also promotes the development and
 dissemination of open-source tools and encourages the use of public repositories.
 
-
 ### What was your favourite holiday you’ve been on?
 
 _Golnaz Taheri_: I went to Malaysia and Singapore a few years ago, and I absolutely loved it. Both places are incredibly
@@ -176,7 +167,6 @@ new foods, and experiencing the different ways of life.
 _Gisele Miranda_: I really enjoy traveling and exploring new places, whether it’s a different country or just
 discovering a new part of Stockholm and having some fika! I find a lot of inspiration in
 seeing how people live, eat, and create in different cultures.
-
 
 #### Bonus: Community Practice and Networking
 

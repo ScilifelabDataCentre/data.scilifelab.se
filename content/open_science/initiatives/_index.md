@@ -17,7 +17,6 @@ the ongoing and upcoming initiatives that we are involved in below.
 
 {{< simple_cards "open_science/initiatives" >}}
 
-
 ### Collaborative Initiatives
 
 SciLifeLab is proud to support and advance a range of initiatives that align with our commitment to Open Science,
@@ -25,7 +24,6 @@ FAIR principles, and the sustainable development of research infrastructure. You
 upcoming initiatives that we are involved in below.
 
 {{< simple_cards "open_science/collaborative_initiatives" >}}
-
 
 ### Share your Open Science initiatives 
 

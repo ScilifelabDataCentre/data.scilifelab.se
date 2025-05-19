@@ -21,12 +21,10 @@ Here, you’ll find a collection of resources designed to help you integrate
 
 ## SciLifeLab Resources {.highlighted-header #scilifelab-resources}
 
-
 #### SciLifeLab Open Science Onboarding
 
 Here you can find our [Open Science Onboarding](https://doi.org/10.17044/scilifelab.29087126) which will guide you through the essential concepts to get you started on
 your open science journey.
-
 
 #### Open Science Checklists
 
@@ -37,7 +35,6 @@ and FAIR into your research workflows:
 - Open Data Guidelines ([RDM Guidelines](https://data-guidelines.scilifelab.se/))
 - Open Science Software Checklist ([Markdown](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_software_checklist.md), [PDF](https://doi.org/10.17044/scilifelab.29086775.v1))
 - [FAIR-Aware Self Assessment Tool](https://fairaware.dans.knaw.nl/)
-
 
 #### CoARA Action Plan for SciLifeLab
 
@@ -56,7 +53,6 @@ a principle that CoARA builds upon to drive systemic change through collective i
 
 {{< /image_float  >}}
 
-
 #### SciLifeLab Data Policy
 
 The [SciLifeLab Data Policy](https://www.scilifelab.se/wp-content/uploads/2023/10/Data-Policy.pdf) outlines SciLifeLab's
@@ -66,14 +62,12 @@ ethical requirements. It sets expectations for SciLifeLab-affiliated programs, i
 data sharing, reproducibility, and accessibility, while providing the necessary resources, support, and governance to
 integrate these principles into the research we produce.
 
-
 #### SciLifeLab Training Hub
 
 The [SciLifeLab Training Hub](https://www.scilifelab.se/training/) offers a range of educational opportunities and
 training infrastructure, to advance Open Science and FAIR learning, ensuring Sweden’s life science community has open
 access to world-class knowledge and expertise. View [SciLifeLab Training Hub’s website](https://www.scilifelab.se/training/)
 to learn more about training tools, upcoming courses and ways in which the Training Hub team can support you.
-
 
 #### SciLifeLab RDM Guidelines
 
@@ -89,7 +83,6 @@ offers guidance on key topics, including data management plans, metadata, versio
 
 {{< /image_float  >}}
 
-
 ## External Resources {.highlighted-header #external-resources}
 
 {{< logo_row 
@@ -100,14 +93,12 @@ offers guidance on key topics, including data management plans, metadata, versio
 "/img/open_science/resources/plan_s.png|Plan-S logo"
 >}}
 
-
 #### FAIR-Aware Self Assessment Tool
 
 The [FAIR-Aware Self Assessment Tool](https://fairaware.dans.knaw.nl/) helps researchers evaluate their knowledge of the
 FAIR principles, offering guidance to enhance the findability, accessibility, interoperability, and reusability of their
 data. In addition, the [F-UJI FAIR assessment tool](https://www.f-uji.net/) is an automated tool designed to evaluate
 the FAIRness of research data objects.
-
 
 #### The National Guidelines for Open Science
 
@@ -117,7 +108,6 @@ Swedish institutions and research funders in aligning policies, infrastructure, 
 international recommendations. You can read The National Guidelines for Open Science
 [here](https://urn.kb.se/resolve?urn=urn:nbn:se:kb:publ-738).
 
-
 #### The EU Open Science Policy
 
 The [EU Open Science Policy](https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science_en)
@@ -126,7 +116,6 @@ enhancing scientific impact. This is achieved by advocating for practices like o
 engagement, and supporting these efforts with initiatives and infrastructures such as the
 [European Open Science Cloud (EOSC)](https://eosc.eu/eosc-about/) and [OpenAIRE](https://www.openaire.eu/).
 EOSC provides a federated infrastructure for sharing and accessing research data across Europe, while OpenAIRE supports open science by enabling open access to publications, linking research outputs, and facilitating compliance with EU open science policies.
-
 
 #### The Swedish Research Council: Vision and Guiding Principles
 
@@ -142,7 +131,6 @@ found on the [Swedish Research Council’s Open Science webpage](https://www.vr.
 This platform serves as a central resource for national guidelines, ongoing projects, and collaborative efforts that
 support Sweden’s transition towards open and FAIR research practices.
 
-
 #### UNESCO Open Science Toolkit
 
 [UNESCO](https://www.unesco.org/en) developed the [Open Science Toolkit](https://www.unesco.org/en/open-science/toolkit?hub=686),
@@ -150,14 +138,12 @@ a collection of guides, policies, and factsheets designed to support the impleme
 [UNESCO Recommendation on Open Science](https://www.unesco.org/en/open-science/about?hub=686). You can review the UNESCO
 Open Science Toolkit [here](https://www.unesco.org/en/open-science/toolkit?hub=686).
 
-
 #### SUHF Roadmap for Open Science with Action Proposals for Implementation
 
 The [roadmap](https://suhf.se/app/uploads/2025/02/REC-2021-1-Open-Science-Roadmap-REVISED-31-01-2025.pdf) includes
 overarching recommendations that clarify the responsibilities of higher education institutions, as well as proposals for
 measures and capabilities that need to be established at these institutions during the transition to a responsible,
 secure, and open scientific system.
-
 
 #### Plan S/Coalition S
 
