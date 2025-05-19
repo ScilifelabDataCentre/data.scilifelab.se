@@ -7,13 +7,10 @@ menu:
     weight: 3
 ---
 
-## Share your Open Science initiatives 
+# SciLifeLab Initiatives 
 
 There are many innovative Open Science initiatives throughout SciLifeLab, and this page offers a space for these
 projects to be highlighted.
-
-If you are working on an Open Science project at SciLifeLab and would like to showcase your work, please contact us
-via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with the subject line 'Open Science'.
 
 {{< image_text_row 
   image="/img/open_science/initiatives/nf-core_hackathon_2024.png" 
@@ -33,5 +30,7 @@ behind the initiative.
 
 {{< /image_text_row  >}}
 
+## Share your Open Science initiatives 
 
-
+If you are working on an Open Science project at SciLifeLab and would like to showcase your work, please contact us
+via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with the subject line 'Open Science'.
