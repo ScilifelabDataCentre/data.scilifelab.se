@@ -571,6 +571,7 @@ h5 a:hover {
 /*Floating button*/
 .back-to-top {
   background-color: #491f53;
+  color: #fff;
   border: none;
   position: fixed;
   bottom: 2rem;
@@ -582,19 +583,13 @@ h5 a:hover {
 }
 
 /*Overriding the default blue highlight of button*/
-.back-to-top:hover,
-.back-to-top:focus,
-.back-to-top:active {
-  opacity: 1;
-  background-color: #491f53;
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
-
+a.back-to-top.btn:hover,
 a.back-to-top.btn:focus,
 a.back-to-top.btn:active {
+  opacity: 1;
   background-color: #491f53;
+  color: #fff;
+  border: none;
   box-shadow: none;
   outline: none;
 }
