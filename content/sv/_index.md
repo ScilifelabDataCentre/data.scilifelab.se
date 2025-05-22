@@ -1,6 +1,6 @@
 ---
 title: Om SciLifeLab Data Platform
-lang: sv
+language: sv
 toc: true
 menu:
     bottom_about:
