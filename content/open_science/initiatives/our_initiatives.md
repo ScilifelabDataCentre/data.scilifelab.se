@@ -5,6 +5,7 @@ menu:
     parent: "initiatives"
     name: "Our Initiatives"
     weight: 1
+back_to_top_button: true
 ---
 
 # Our Initiatives 
