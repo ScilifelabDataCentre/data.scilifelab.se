@@ -6,6 +6,7 @@ menu:
     name: "Resources"
     weight: 4
 show_section_nav: true
+back_to_top_button: true
 ---
 
 # Resources

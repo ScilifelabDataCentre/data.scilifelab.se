@@ -4,6 +4,7 @@ menu:
   open_science:
     name: "Open Science Stories"
     weight: 4
+back_to_top_button: true
 ---
 
 # Open Science Stories 

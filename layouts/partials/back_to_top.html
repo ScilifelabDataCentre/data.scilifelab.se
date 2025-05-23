@@ -1,0 +1,12 @@
+<!--Floating button to take users to top for pages with lots of content-->
+<a href="#top"
+   class="btn back-to-top"
+   data-bs-toggle="tooltip"
+   data-bs-placement="left"
+   title="Back to top"
+   aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+{{ $js := resources.Get "js/back_to_top.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
