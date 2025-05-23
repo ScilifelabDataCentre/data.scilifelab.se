@@ -147,5 +147,5 @@ secure, and open scientific system.
 
 #### Plan S/Coalition S
 
-[Plan S](https://www.coalition-s.org/) is a European initiative (with Swedish participation) that mandates full and
+[Plan S](https://www.coalition-s.org/) is a global initiative (with Swedish participation) that mandates full and
 immediate Open Access for publicly funded research. Essential for researchers navigating open publishing policies.
