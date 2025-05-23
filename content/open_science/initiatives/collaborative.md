@@ -84,7 +84,7 @@ You can learn more and register for the GA4GH 13th Plenary Meeting [here](https:
 ## ADORE.software {#adore}
 
 SciLifeLab is proud to be a signatory of the 
-[Amsterdam Declaration on Funding Research Software Sustainability](https://zenodo.org/records/13735888), demonstrating 
+[Amsterdam Declaration on Funding Research Software Sustainability](https://zenodo.org/records/13735888)(ADORE.software), demonstrating 
 our commitment to advancing sustainable and impactful research software practices.
 
 ADORE.software emphasises the importance of skilled individuals, supportive infrastructures, and funding policies to
