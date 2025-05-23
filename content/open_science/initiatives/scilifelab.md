@@ -1,13 +1,13 @@
 ---
-title: "Other SciLifeLab"
+title: "Across SciLifeLab"
 menu:
   open_science:
     parent: "initiatives"
-    name: " Other SciLifeLab"
+    name: "Across SciLifeLab"
     weight: 3
 ---
 
-# SciLifeLab Initiatives 
+# Initiatives Across SciLifeLab
 
 There are many innovative Open Science initiatives throughout SciLifeLab, and this page offers a space for these
 projects to be highlighted.
