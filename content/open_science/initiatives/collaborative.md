@@ -1,9 +1,9 @@
 ---
-title: "Collaborative Initiatives"
+title: "Collaborations"
 menu:
   open_science:
     parent: "initiatives"
-    name: "Collaborative Initiatives"
+    name: "Collaborations"
     weight: 2
 ---
 

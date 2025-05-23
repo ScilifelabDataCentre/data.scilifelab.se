@@ -1,9 +1,9 @@
 ---
-title: "SciLifeLab Initiatives"
+title: "Other SciLifeLab"
 menu:
   open_science:
     parent: "initiatives"
-    name: "SciLifeLab Initiatives"
+    name: " Other SciLifeLab"
     weight: 3
 ---
 

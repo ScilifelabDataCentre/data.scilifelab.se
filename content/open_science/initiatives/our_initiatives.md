@@ -1,13 +1,13 @@
 ---
-title: "Our Initiatives"
+title: "Open Science Team"
 menu:
   open_science:
     parent: "initiatives"
-    name: "Our Initiatives"
+    name: "Open Science Team"
     weight: 1
 ---
 
-# Our Initiatives 
+# Open Science Team Initiatives 
 
 {{< banner_image
   image="/img/open_science/initiatives/cop.png"
