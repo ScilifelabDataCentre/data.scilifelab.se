@@ -177,18 +177,28 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
 
 ## European Open Science Cloud (EOSC) {#eosc}
 
-The European Open Science Cloud (EOSC) is a European Commission initiative aimed at developing a federated, open, and
-multidisciplinary digital environment for European researchers, academics, innovators, and citizen scientists. Its
-primary goal is to facilitate the sharing, discovery, and reuse of research data, tools, and services, fostering
-collaboration and accelerating scientific progress. EOSC builds upon existing infrastructures and services supported
-by the European Commission, Member States, and research communities, integrating them into a cohesive 'system of
-systems' to add value by aggregating content and enabling services to be used together. 
-You can read more about EOSC [here](https://eosc.eu/). 
+The European Open Science Cloud (EOSC) is a broad-based initiative aimed at developing a federated, open, and 
+multidisciplinary digital environment for European researchers, academics, innovators, and citizen scientists. 
+Its primary goal is to facilitate the sharing, discovery, and reuse of research data, tools, and services, fostering 
+collaboration and accelerating scientific progress. 
 
-SciLifeLab actively collaborates with EOSC by providing feedback to the EOSC EU Node and participating in
-[several task forces](https://eosc.eu/eosc-task-forces/). It works closely with university partners such as Uppsala
-University, as well as through broader European collaborations with organisations like CERN and initiatives such as
-the ELIXIR BY-COVID project. Through these efforts, SciLifeLab supports the development of a robust, interoperable,
-and researcher-driven European Open Science infrastructure.
+The EOSC Association (EOSC-A) and its member base of more than 250 organisations is working together with the European 
+Commission and the EU Member States and Associated Countries to implement the EOSC Federation of Nodes.
+
+The EOSC Federation will build upon existing infrastructures and services supported by the European Commission, 
+Member States, and research communities, integrating them into a cohesive 'system of systems' to add value by 
+aggregating content and enabling services to be used together.
+ 
+EOSC stands at the intersection of Europe’s strategic priorities, offering solutions to critical challenges in 
+research, innovation, and societal development. As a transformative tool, EOSC fosters digital sovereignty, 
+inclusivity, trust, and transparency in the research and innovation domain. You can read more about EOSC and the 
+EOSC Federation [here](https://eosc.eu/). 
+
+SciLifeLab actively collaborates with the EOSC Association by providing feedback to the EOSC EU Node and by 
+participating in several [EOSC-A Task Forces](https://eosc.eu/eosc-task-forces/). It works closely with university 
+partners such as Uppsala University, a member of the EOSC Association, as well as through broader European 
+collaborations with organizations like CERN and EU projects such as BY-COVID. Through these efforts, SciLifeLab supports
+ the development of a robust, interoperable, and researcher-driven European Open Science infrastructure.
+
 
 _© Media Elements sourced from [Canva.com](https://canva.com)_
