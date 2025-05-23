@@ -151,3 +151,5 @@ secure, and open scientific system.
 
 [Plan S](https://www.coalition-s.org/) is a global initiative (with Swedish participation) that mandates full and
 immediate Open Access for publicly funded research. Essential for researchers navigating open publishing policies.
+
+_© Media Element “[Data life cycle diagram](https://rdmkit.elixir-europe.org/media_kit)” by [RDMkit](https://rdmkit.elixir-europe.org/) licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)_
