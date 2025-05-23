@@ -127,9 +127,11 @@ coordinated efforts among researchers, institutions, and funders to integrate op
 and enhance usability. This is achieved through standardised frameworks, infrastructure, and FAIR data management
 planning, while ensuring compliance with legal and ethical considerations. Further details on Sweden’s approach to open
 science, including policies on open access to publications, research data, and broader open science initiatives, can be
-found on the [Swedish Research Council’s Open Science webpage](https://www.vr.se/english/mandates/open-science.html).
-This platform serves as a central resource for national guidelines, ongoing projects, and collaborative efforts that
-support Sweden’s transition towards open and FAIR research practices.
+found on the 
+[Open access to research data - Swedish Research Council](https://www.vr.se/english/mandates/open-science/open-access-to-research-data.html)
+page.
+This platform serves as a resource for national recommendations and guidelines, that
+support Sweden’s transition towards open and FAIR research practices, as well as development in Sweden.
 
 #### UNESCO Open Science Toolkit
 
@@ -147,5 +149,7 @@ secure, and open scientific system.
 
 #### Plan S/Coalition S
 
-[Plan S](https://www.coalition-s.org/) is a European initiative (with Swedish participation) that mandates full and
+[Plan S](https://www.coalition-s.org/) is a global initiative (with Swedish participation) that mandates full and
 immediate Open Access for publicly funded research. Essential for researchers navigating open publishing policies.
+
+_© Media Element “[Data life cycle diagram](https://rdmkit.elixir-europe.org/media_kit)” by [RDMkit](https://rdmkit.elixir-europe.org/) licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)_
