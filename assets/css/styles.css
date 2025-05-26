@@ -50,6 +50,21 @@ h5 a:hover {
   color: #045c64;
 }
 
+.open-science-content h1 {
+    margin-bottom: 2rem;
+}
+
+.open-science-content h2,
+.open-science-content h3 {
+    margin-top: 1.5rem;
+}
+
+/* Special styling for headers that need to be highlighted more */
+.highlighted-header {
+  color: #77577e;
+  margin-top: 2rem;
+}
+
 .title-link {
   color: #17202a;
 }
@@ -163,9 +178,43 @@ h5 a:hover {
 }
 
 .sidebar-wrapper {
-  min-height: 100vh;
-  border-right: 1px solid #ccc;
   background-color: #f8f9fa; /* light grey */
+  @media all and (min-width: 768px) {
+    border-right: 1px solid #ccc;
+  }
+}
+
+/* Subheaders in the side navbar */
+.sidebar-toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.sidebar-toc li {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-toc a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: inherit;
+  display: block;
+}
+
+.sidebar-toc a:hover {
+  text-decoration: underline;
+}
+
+/* OS page mobile navigation button */
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  color: #3f3f3f;
+  font-weight: bold;
+  background-color: #e5e5e5;
+  box-shadow: none;
 }
 
 /* Nav tab on services page */
@@ -504,7 +553,18 @@ h5 a:hover {
   margin-bottom: .15rem;
 } 
 
+.image-caption {
+  font-style: italic;
+  color: #3f3f3f;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
 
+.card {
+  background-color: #d2c7d4;
+}
 
-
+.card:hover {
+  background-color: #a48fa9;
+}
 
