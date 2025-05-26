@@ -83,10 +83,10 @@ innovation.
 
 SciLifeLab is launching an AI Network to foster a collaborative community for researchers, infrastructure users, and
 staff working with AI in life science. The initiative will build on the existing monthly
-[AI Seminar Series](https://www.scilifelab.se/research/scilifelab-seminar-series/ai-seminar-series/) led by NBIS, which 
-"aims to facilitate knowledge sharing pertaining to artificial intelligence (AI) among the life science community". 
-This network will support this existing seminar series by providing a structured virtual meeting space where 
-members can:
+[AI Seminar Series](https://www.scilifelab.se/research/scilifelab-seminar-series/ai-seminar-series/), led jointly by 
+NBIS and DC, which "aims to facilitate knowledge sharing pertaining to artificial intelligence (AI) among the life 
+science community". This network will support this existing seminar series by providing an AI focused discussion
+platform where members can:
 
 * Connect with others to seek advice, discuss challenges, and receive feedback
 * Reduce duplicated efforts and identify opportunities for collaboration
