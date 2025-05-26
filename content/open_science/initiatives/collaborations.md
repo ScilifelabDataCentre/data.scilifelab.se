@@ -1,9 +1,9 @@
 ---
-title: "Collaborative Initiatives"
+title: "Collaborations"
 menu:
   open_science:
     parent: "initiatives"
-    name: "Collaborative Initiatives"
+    name: "Collaborations"
     weight: 2
 ---
 
@@ -83,8 +83,9 @@ You can learn more and register for the GA4GH 13th Plenary Meeting [here](https:
 
 ## ADORE.software {#adore}
 
-SciLifeLab is proud to be a signatory of the Amsterdam Declaration on Funding Research Software Sustainability
-(ADORE.software), demonstrating our commitment to advancing sustainable and impactful research software practices.
+SciLifeLab is proud to be a signatory of the 
+[Amsterdam Declaration on Funding Research Software Sustainability](https://zenodo.org/records/13735888)(ADORE.software), demonstrating 
+our commitment to advancing sustainable and impactful research software practices.
 
 ADORE.software emphasises the importance of skilled individuals, supportive infrastructures, and funding policies to
 promote the reusability and long-term impact of research software. The Declaration outlines global principles and
@@ -92,24 +93,30 @@ recommendations for ensuring software sustainability by recognising research sof
 efficient resource use, and scientific progress.
 It builds on prior initiatives by the [Research Software Alliance](https://www.researchsoft.org/), the
 [Research Software Funders Forum](https://www.researchsoft.org/funders-forum/), among others to formalise global
-principles and recommendations for funding research software sustainability.
+principles and recommendations for funding research software sustainability. The 
+[ADORE.software Toolkit](https://adore.software/toolkit/) offers regularly updated examples and resources aligned with 
+the Declaration’s recommendations.
 
-Discover more about ADORE.software [here](https://adore.software/) and Become a Signatory for the declaration [here](https://adore.software/get-involved/).
+Discover more about ADORE.software [here](https://adore.software/) and Become a Signatory for the declaration 
+[here](https://adore.software/get-involved/).
 
 ### Importance of ADORE.software for SciLifeLab
 
-- **Collaborating with Global Stakeholders**: With over 45 funding organisations participating in the first Amsterdam meeting,
-  including [Wellcome](https://wellcome.org/), [Sloan Foundation](https://sloan.org/), 
+- **Collaborating with Global Stakeholders**: With over 45 funding organisations participating in the first Amsterdam 
+  meeting, including [Wellcome](https://wellcome.org/), [Sloan Foundation](https://sloan.org/), 
   the [Chan Zuckerberg Initiative](https://chanzuckerberg.com/) (CZI), and [NWO](https://www.nwo.nl/en) 
   (The Dutch Research Council), SciLifeLab has the opportunity to engage with leading funders, agencies, and 
-  infrastructure providers to shape the future of research software sustainability.
+  infrastructure providers to shape the future of research software sustainability. To date, three international 
+  workshops have taken place, with SciLifeLab co-hosting the [2024 event](https://adore.software/2024-international-research-software-funders-workshop/).
 - **Building Connections**: SciLifeLab is connecting with key research software communities, including Research Software
-  Engineers and Open Source Program Offices, to contribute to programs that reward, recognise, and sustain software development,
-  such as those led by CZI.
-- **Advancing Data Science and Scholarly Workflows**: By participating in discussions and initiatives, SciLifeLab aims to learn
-  and adopt best practices for advancing data science and enhancing scholarly workflows through sustainable software.
-- **Leading in Sweden and Beyond**: SciLifeLab is uniquely positioned to guide the operationalisation and implementation of
-  ADORE.software in Sweden.
+  Engineers and Open Source Program Offices, to contribute to programs that reward, recognise, and sustain software 
+  development - such as initiatives led by CZI, the Sloan Foundation’s support of OSPOs, and the Netherlands eScience 
+  Center’s Fellowship Programme.
+- **Advancing Data Science and Scholarly Workflows**: By participating in discussions and initiatives, SciLifeLab aims 
+  to learn and adopt best practices for advancing data science and enhancing scholarly workflows through sustainable 
+  software.
+- **Leading in Sweden and Beyond**: SciLifeLab is uniquely positioned to guide the operationalisation and implementation 
+  of ADORE.software in Sweden.
 
 {{< banner_image
   image="/img/open_science/initiatives/go_fair.png"
@@ -170,18 +177,28 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
 
 ## European Open Science Cloud (EOSC) {#eosc}
 
-The European Open Science Cloud (EOSC) is a European Commission initiative aimed at developing a federated, open, and
-multidisciplinary digital environment for European researchers, academics, innovators, and citizen scientists. Its
-primary goal is to facilitate the sharing, discovery, and reuse of research data, tools, and services, fostering
-collaboration and accelerating scientific progress. EOSC builds upon existing infrastructures and services supported
-by the European Commission, Member States, and research communities, integrating them into a cohesive 'system of
-systems' to add value by aggregating content and enabling services to be used together. 
-You can read more about EOSC [here](https://eosc.eu/). 
+The European Open Science Cloud (EOSC) is a broad-based initiative aimed at developing a federated, open, and 
+multidisciplinary digital environment for European researchers, academics, innovators, and citizen scientists. 
+Its primary goal is to facilitate the sharing, discovery, and reuse of research data, tools, and services, fostering 
+collaboration and accelerating scientific progress. 
 
-SciLifeLab actively collaborates with EOSC by providing feedback to the EOSC EU Node and participating in
-[several task forces](https://eosc.eu/eosc-task-forces/). It works closely with university partners such as Uppsala
-University, as well as through broader European collaborations with organisations like CERN and initiatives such as
-the ELIXIR BY-COVID project. Through these efforts, SciLifeLab supports the development of a robust, interoperable,
-and researcher-driven European Open Science infrastructure.
+The EOSC Association (EOSC-A) and its member base of more than 250 organisations is working together with the European 
+Commission and the EU Member States and Associated Countries to implement the EOSC Federation of Nodes.
+
+The EOSC Federation will build upon existing infrastructures and services supported by the European Commission, 
+Member States, and research communities, integrating them into a cohesive 'system of systems' to add value by 
+aggregating content and enabling services to be used together.
+ 
+EOSC stands at the intersection of Europe’s strategic priorities, offering solutions to critical challenges in 
+research, innovation, and societal development. As a transformative tool, EOSC fosters digital sovereignty, 
+inclusivity, trust, and transparency in the research and innovation domain. You can read more about EOSC and the 
+EOSC Federation [here](https://eosc.eu/). 
+
+SciLifeLab actively collaborates with the EOSC Association by providing feedback to the EOSC EU Node and by 
+participating in several [EOSC-A Task Forces](https://eosc.eu/eosc-task-forces/). It works closely with university 
+partners such as Uppsala University, a member of the EOSC Association, as well as through broader European 
+collaborations with organizations like CERN and EU projects such as BY-COVID. Through these efforts, SciLifeLab supports
+ the development of a robust, interoperable, and researcher-driven European Open Science infrastructure.
+
 
 _© Media Elements sourced from [Canva.com](https://canva.com)_
