@@ -16,6 +16,7 @@
                           {{- block "main" . }}{{- end }}
                   {{ end }}
           </div>
+        {{ if .Params.back_to_top_button }} {{- partial "back_to_top.html" . -}} {{ end }}
         </main>
         {{- partial "footer.html" . -}}
     </body>

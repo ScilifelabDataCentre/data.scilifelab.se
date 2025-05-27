@@ -5,6 +5,7 @@ menu:
     parent: "initiatives"
     name: "Open Science Team"
     weight: 1
+back_to_top_button: true
 ---
 
 # Open Science Team Initiatives 

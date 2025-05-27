@@ -5,6 +5,7 @@ menu:
     parent: "initiatives"
     name: "Collaborations"
     weight: 2
+back_to_top_button: true
 ---
 
 # Collaborative Initiatives
