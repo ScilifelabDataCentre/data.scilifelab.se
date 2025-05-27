@@ -1,14 +1,14 @@
 ---
-title: "Our Initiatives"
+title: "Open Science Team"
 menu:
   open_science:
     parent: "initiatives"
-    name: "Our Initiatives"
+    name: "Open Science Team"
     weight: 1
 back_to_top_button: true
 ---
 
-# Our Initiatives 
+# Open Science Team Initiatives 
 
 {{< banner_image
   image="/img/open_science/initiatives/cop.png"
@@ -83,13 +83,19 @@ innovation.
 ## AI Network {#ai-network}
 
 SciLifeLab is launching an AI Network to foster a collaborative community for researchers, infrastructure users, and
-staff working with AI in life science. The initiative will provide a virtual meeting space where members can discuss
-and explore AI applications in life science research, share insights and experiences in leveraging AI for discovery and
-efficiency, and connect with others to learn who is working on what and identify opportunities for collaboration.
+staff working with AI in life science. The initiative will build on the existing monthly
+[AI Seminar Series](https://www.scilifelab.se/research/scilifelab-seminar-series/ai-seminar-series/), led jointly by 
+NBIS and DC, which "aims to facilitate knowledge sharing pertaining to artificial intelligence (AI) among the life 
+science community". This network will support this existing seminar series by providing an AI focused discussion
+platform where members can:
 
-The network also aims to support the development of shared resources, tools, and workflows for AI-driven research.
-Members will be able to stay informed about emerging AI trends and technologies, exchange best practices for integrating
-these tools into their work, and access a virtual meeting space to seek advice, discuss challenges, and receive
-constructive feedback on AI-related projects.
+* Connect with others to seek advice, discuss challenges, and receive feedback
+* Reduce duplicated efforts and identify opportunities for collaboration
+* Share insights and experiences in leveraging AI for discovery and efficiency
+* Discuss and explore AI applications in life science research
+* Support the development of shared resources, tools, and workflows for AI-driven research
+
+The AI Network is a project aimed at unifying all AI related communities, work groups and activities within 
+SciLifeLab - opening them to the broader public and enabling cross-community discovery to increase their impact.
 
 _© Media Elements sourced from [Canva.com](https://canva.com)_

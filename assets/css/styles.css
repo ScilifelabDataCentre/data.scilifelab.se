@@ -59,6 +59,10 @@ h5 a:hover {
     margin-top: 1.5rem;
 }
 
+.open-science-code-snippet {
+  color: #4C979F;
+}
+
 /* Special styling for headers that need to be highlighted more */
 .highlighted-header {
   color: #77577e;
