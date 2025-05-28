@@ -1,5 +1,10 @@
 # <type>(scope): <short description>
 
+# Example Commit Messages:
+# feat(auth): add user authentication system
+# fix(api): resolve login endpoint timeout
+# docs(readme): update installation instructions
+
 # Example types:
 # feat     - A new feature or capability
 # fix      - A bug fix
@@ -18,8 +23,3 @@
 # deps     - Dependency updates
 # docs     - Documentation changes
 # ci       - CI/CD pipeline changes
-
-# Example Commit Messages:
-# feat(auth): add user authentication system
-# fix(api): resolve login endpoint timeout
-# docs(readme): update installation instructions
