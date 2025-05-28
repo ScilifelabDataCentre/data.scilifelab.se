@@ -80,11 +80,22 @@ Then you can fetch changes at any time from this remote:
 git pull upstream develop
 ```
 
+#### Configure Commit Message Template
+
+We follow a structured commit message format defined in [`.github/.gitmessage.txt`](.github/.gitmessage.txt). To use this template:
+
+```bash
+# you just need to run this command once after cloning repository
+git config --local commit.template .github/.gitmessage.txt
+```
+
+This will pre-fill your commit message editor with our lightweight conventional commit template whenever you run `git commit`.
+
 When you have finished editing, commit and push to your fork:
 
 ```bash
 git add .
-git commit -m "My changes"
+git commit  # This will open your editor with the template
 git push
 ```
 
