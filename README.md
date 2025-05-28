@@ -131,6 +131,66 @@ Press Ctrl+C to stop
 Use the URL printed at the bottom of this message (here, it's `http://localhost:1313/`) to view the site.
 Every time you save a file, the page will automatically refresh in the browser.
 
+#### Configure Markdown Linting Locally (Open Science Content [content/open_science/](content/open_science/))
+
+To ensure consistent markdown formatting across the website, especially for **Open Science content** ([content/open_science/](content/open_science/)), we use `markdownlint-cli2`. The linter uses our custom configuration file ([.github/.markdownlint-cli2.yaml](.github/.markdownlint-cli2.yaml)) which sets specific rules for our markdown files. Follow these steps to run the linter locally before pushing your changes:
+
+> **Important**: To maintain consistency with our GitHub Actions workflow, please ensure you install Node.js version 20.x. This version is required to match the CI/CD environment.
+
+1. **Install Node.js and npm**:
+
+   <details>
+   <summary><strong>For macOS</strong> (using Homebrew)</summary>
+
+   ```bash
+   # Install Homebrew if you don't have it
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
+   # Install Node.js (this will include npm)
+   brew install node@20
+   
+   # Add Node.js to your PATH (if not already done)
+   echo 'export PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
+   </details>
+
+   <details>
+   <summary><strong>For Windows</strong></summary>
+
+   - Download Node.js 20.x LTS installer from [Node.js official website](https://nodejs.org/)
+   - Run the installer and follow the installation wizard
+   - Restart your terminal after installation
+   </details>
+
+   <details>
+   <summary><strong>For Linux</strong> (Ubuntu/Debian)</summary>
+
+   ```bash
+   # Using NodeSource repository
+   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+   sudo apt-get install -y nodejs
+   ```
+   </details>
+
+2. **Verify Installation**:
+   ```bash
+   node --version  # Should show v20.x.x
+   npm --version   # Should show the npm version
+   ```
+
+3. **Install markdownlint-cli2**:
+   ```bash
+   npm install -g markdownlint-cli2
+   ```
+
+4. **Run the linter**:
+   ```bash
+   markdownlint-cli2 "content/open_science/**/*.md" --config .github/.markdownlint-cli2.yaml
+   ```
+
+Before committing your changes, run the linter locally to catch and fix any formatting issues. This helps maintain consistent markdown style across the project and prevents CI failures. The same checks will be run automatically in our GitHub Actions workflow when you create a pull request. For detailed information about the linting rules, refer to the [markdownlint documentation](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/Rules.md).
+
 #### Docker
 
 If you would prefer not to use Hugo, you can use the provided Dockerfile to build and run a container.
