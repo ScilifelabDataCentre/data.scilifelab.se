@@ -24,7 +24,7 @@
     "description": "GeneSPIDER(v2) is a Matlab toolbox for gene regulatory network inference and benchmarking with controlled network and data properties.",
     "thumbnail": "/img/service_thumbnails/GeneSPIDER.png",
     "thumbnail_border": true,
-    "url": "https://bitbucket.org/sonnhammergrni/genespider/src/master/",
+    "url": "https://sonnhammer-tutorials.bitbucket.io/genespider.html#Getting_started",
     "maintained_by": " Erik Sonnhammer",
     "support_email": "erik.sonnhammer@scilifelab.se",
     "support_website": "https://sonnhammer-tutorials.bitbucket.io/genespider.html#Getting_started",
