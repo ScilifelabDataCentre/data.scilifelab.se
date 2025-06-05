@@ -8,15 +8,10 @@
 # Example types:
 # feat     - A new feature or capability
 # fix      - A bug fix
+# content  - New content such as markdown pages under `content` directory
 # docs     - Documentation-only changes
-# style    - Formatting-only changes (no logic change)
-# refactor - A code change that neither fixes a bug nor adds a feature
-# perf     - Performance improvements
 # test     - Adding or correcting tests
-# build    - Build system or dependency changes
-# ci       - CI/CD configuration or scripts
 # chore    - Maintenance, tooling, or infrastructure changes
-# revert   - Reverts a previous commit
 
 # Example Scope:
 # ui       - User interface components
