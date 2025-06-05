@@ -80,21 +80,51 @@ Then you can fetch changes at any time from this remote:
 git pull upstream develop
 ```
 
-To keep commit messages consistent, contributors are advised to configure `git` with the supplied commit message template by running the following command in the repository's directory:
+To keep commit messages consistent, contributors are advised to configure `git` with the commit message template provided.
+This can be achieved by running the following command in the repository's directory:
+
 ```bash
 git config --local commit.template .github/.gitmessage.txt
 ```
 
-This will cause `git` to pre-fill your commit message with the following template:
+When you have finished editing, commit your changes:
+``` bash
+git add .
+git commit
+```
+
+The commit message will now be pre-filled with the following template:
+
 ```text
 <type>(scope): <short description>
 ```
 
-When you have finished editing, commit and push to your fork.
-For a good commit message, just replace the `<type>` and `(scope)` placeholders and write what would follow after "*If accepted, my changes are going to...*" as a short description:
+Replace the `<type>` and `(scope)` placeholders with the best matching entry in the following table:
+
+| Type    | Description                                  |
+|---------|----------------------------------------------|
+| feat    | A new feature                                |
+| fix     | A bug fix or improvement of existing feature |
+| content | New content such as markdown pages           |
+| docs    | Documentation-only changes                   |
+| test    | Adding or modifying tests                    |
+| chore   | Maintenance, tooling, dependencies update    |
+
+
+Scope is optional but nice to have if deemed relevant.
+
+Examples:
+
+``` text
+fix(visualization): correct/add genome visualization
+feat(dashboard): add SARS-Cov2 dashboard
+style(css): reformat layout classes
+```
+
+For the short description, write as if completing "*If accepted, my changes are going to...*".
+
+And finally push to your fork:
 ```bash
-git add .
-git commit
 git push
 ```
 
