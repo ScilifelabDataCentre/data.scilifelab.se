@@ -1,5 +1,6 @@
 config:
   default: true
+  MD025: false
   line-length:
     line_length: 120
   no-inline-html: false
