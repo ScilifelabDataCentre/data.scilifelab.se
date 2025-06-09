@@ -3,6 +3,6 @@ config:
   MD025: false
   MD051: false
   line-length:
-    line_length: 120
+    line_length: 180
   no-inline-html: false
   
