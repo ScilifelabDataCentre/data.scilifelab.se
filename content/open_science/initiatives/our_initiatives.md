@@ -50,7 +50,8 @@ Through discussions, roundtables, and a dedicated Slack community, the initiativ
 and expand its reach, strengthening data integration, discovery, and reuse. By doing so, it advances innovation in life
 science research by facilitating more effective and connected research data.
 
-You can read more about the work that is being done [here](https://docs.google.com/presentation/d/1aapjARKgO-IBNCUrrILlqYyKVJxmUoqRMvO5IZaHs_I/edit#slide=id.g32233462cdb_0_199).
+You can read more about the work that is being done in this
+[presentation](https://docs.google.com/presentation/d/1aapjARKgO-IBNCUrrILlqYyKVJxmUoqRMvO5IZaHs_I/edit#slide=id.g32233462cdb_0_199).
 
 {{< banner_image
   image="/img/open_science/initiatives/osmonitor.png"

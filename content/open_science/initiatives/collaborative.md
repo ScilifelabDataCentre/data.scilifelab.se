@@ -44,8 +44,8 @@ We are actively working to implement CoARA’s principles at both national and i
 collaborative approach, we hope to move beyond traditional, publication-based metrics and promote more inclusive
 evaluation practices that recognise the full range of research contributions.
 
-You can review SciLifeLab’s CoARA Action Plan
-[here](https://docs.google.com/document/d/1KAKOK6HoXsixQA5FaPegDIw1w3uI6OvlHgT2YR1m0pg/edit?tab=t.0).
+You can review SciLifeLab’s CoARA Action Plan in this
+[document on Google Docs](https://docs.google.com/document/d/1KAKOK6HoXsixQA5FaPegDIw1w3uI6OvlHgT2YR1m0pg/edit?tab=t.0).
 
 ### Why SciLifeLab Joined CoARA
 
@@ -68,8 +68,8 @@ You can review SciLifeLab’s CoARA Action Plan
 ## Global Alliance for Genomics and Health (GA4GH) {#ga4gh}
 
 SciLifeLab is collaborating with GA4GH to advance responsible sharing of genomic and health data through standards,
-policy frameworks, and harmonised approaches. Discover more about GA4GH and the work they are doing to promote the
-responsible sharing of genomic data [here](https://www.ga4gh.org/).
+policy frameworks, and harmonised approaches. Discover more about GA4GH and the work they are doing to promote the  
+responsible sharing of genomic data on the [GA4GH official website](https://www.ga4gh.org/).
 
 ### GA4GH 13th Plenary Meeting
 
@@ -81,8 +81,8 @@ as well as have the opportunity to explore GA4GH technical standards and policie
 scalable solutions for genomic and health data sharing. Guided by an international Programme Committee and shaped by
 input from the broader GA4GH community, this plenary aims to foster global collaboration in genomic science to improve
 health outcomes worldwide.
-You can learn more and register for the GA4GH 13th Plenary Meeting
-[here](https://broadinstitute.swoogo.com/ga4gh13plenary/7101555)
+You can learn more and register for the GA4GH 13th Plenary Meeting on the
+[event page](https://broadinstitute.swoogo.com/ga4gh13plenary/7101555)
 
 {{< banner_image
   image="/img/open_science/initiatives/adore.png"
@@ -102,8 +102,8 @@ It builds on prior initiatives by the [Research Software Alliance](https://www.r
 [Research Software Funders Forum](https://www.researchsoft.org/funders-forum/), among others to formalise global
 principles and recommendations for funding research software sustainability.
 
-Discover more about ADORE.software [here](https://adore.software/) and Become a Signatory for the declaration
-[here](https://adore.software/get-involved/).
+Discover more about [ADORE.software](https://adore.software/) and become a signatory to the declaration on the
+[Get Involved page](https://adore.software/get-involved/).
 
 ### Importance of ADORE.software for SciLifeLab
 
@@ -191,7 +191,7 @@ primary goal is to facilitate the sharing, discovery, and reuse of research data
 collaboration and accelerating scientific progress. EOSC builds upon existing infrastructures and services supported
 by the European Commission, Member States, and research communities, integrating them into a cohesive 'system of
 systems' to add value by aggregating content and enabling services to be used together.
-You can read more about EOSC [here](https://eosc.eu/).
+You can read more about EOSC on the [EOSC website](https://eosc.eu/).
 
 SciLifeLab actively collaborates with EOSC by providing feedback to the EOSC EU Node and participating in
 [several task forces](https://eosc.eu/eosc-task-forces/). It works closely with university partners such as Uppsala

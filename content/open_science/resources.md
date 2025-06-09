@@ -51,8 +51,8 @@ On 23 February 2024, SciLifeLab announced that it had joined [CoARA](https://coa
 (Coalition for Advancing Research
 Assessment) as a signatory member. This reaffirmed SciLifeLab’s commitment to advancing research assessment and open
 science practices.
-You can review SciLifeLab’s CoARA Action Plan
-[here](https://docs.google.com/document/d/1KAKOK6HoXsixQA5FaPegDIw1w3uI6OvlHgT2YR1m0pg/edit?tab=t.0).
+You can review SciLifeLab’s CoARA Action Plan in this
+[Google Docs document](https://docs.google.com/document/d/1KAKOK6HoXsixQA5FaPegDIw1w3uI6OvlHgT2YR1m0pg/edit?tab=t.0).
 Note, [DORA](https://sfdora.org) (San Francisco Declaration on Research Assessment) laid
 the foundation for research assessment reform by advocating for qualitative evaluation over journal-based metrics,
 a principle that CoARA builds upon to drive systemic change through collective institutional commitment.
@@ -114,7 +114,7 @@ The [National Library of Sweden](https://www.kb.se/) (Kungliga Biblioteket) has 
 [National Guidelines on Open Science](https://urn.kb.se/resolve?urn=urn:nbn:se:kb:publ-738), providing material for
 Swedish institutions and research funders in aligning policies, infrastructure, and coordination efforts with
 international recommendations. You can read The National Guidelines for Open Science
-[here](https://urn.kb.se/resolve?urn=urn:nbn:se:kb:publ-738).
+in the [official PDF document](https://urn.kb.se/resolve?urn=urn:nbn:se:kb:publ-738).
 
 ### The EU Open Science Policy
 
@@ -145,8 +145,8 @@ support Sweden’s transition towards open and FAIR research practices.
 
 [UNESCO](https://www.unesco.org/en) developed the [Open Science Toolkit](https://www.unesco.org/en/open-science/toolkit?hub=686),
 a collection of guides, policies, and factsheets designed to support the implementation of the
-[UNESCO Recommendation on Open Science](https://www.unesco.org/en/open-science/about?hub=686). You can review the UNESCO
-Open Science Toolkit [here](https://www.unesco.org/en/open-science/toolkit?hub=686).
+[UNESCO Recommendation on Open Science](https://www.unesco.org/en/open-science/about?hub=686).
+You can find more information on the [UNESCO Open Science Toolkit webpage](https://www.unesco.org/en/open-science/toolkit?hub=686).
 
 ### SUHF Roadmap for Open Science with Action Proposals for Implementation
 
