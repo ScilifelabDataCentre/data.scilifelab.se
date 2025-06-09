@@ -85,7 +85,7 @@ offers guidance on key topics, including data management plans, metadata, versio
 
 ## External Resources {.highlighted-header #external-resources}
 
-{{< logo_row 
+{{< logo_row
 "/img/open_science/resources/fair_aware.png|FAIR Aware logo"
 "/img/open_science/resources/eu_commission.png|EU Commission logo"
 "/img/open_science/resources/vetenskapsrådet.png|Vetenskapsrådet logo"

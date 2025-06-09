@@ -45,14 +45,15 @@ evaluation practices that recognise the full range of research contributions.
 You can review SciLifeLab’s CoARA Action Plan [here](https://docs.google.com/document/d/1KAKOK6HoXsixQA5FaPegDIw1w3uI6OvlHgT2YR1m0pg/edit?tab=t.0).
 
 ### Why SciLifeLab Joined CoARA:
-- **Alignment with EU and EC Initiatives**: Participation with CoARA aligns with broader European Union and European 
-  Commission collaborations on research evaluation reform. 
-- **Open Science Implementation in Our Practices at SciLifeLab**: Commitment to incorporating Open Science principles into 
-  reporting, recruitment and awards at SciLifeLab. 
+
+- **Alignment with EU and EC Initiatives**: Participation with CoARA aligns with broader European Union and European
+  Commission collaborations on research evaluation reform.
+- **Open Science Implementation in Our Practices at SciLifeLab**: Commitment to incorporating Open Science principles into
+  reporting, recruitment and awards at SciLifeLab.
 - **Commitment to Reform Research Assessment**: Support for CoARA's principles of reforming traditional research
-  assessment methods, moving beyond publication-based metrics to recognise diverse research contributions. 
+  assessment methods, moving beyond publication-based metrics to recognise diverse research contributions.
 - **Alignment with Swedish Institutions**: Over 30 Swedish universities, including KI, SU, KTH, and UU, have joined CoARA,
-  providing an opportunity for national collaboration and consistency. 
+  providing an opportunity for national collaboration and consistency.
 
 {{< banner_image
   image="/img/open_science/initiatives/ga4gh.png"
@@ -69,11 +70,11 @@ responsible sharing of genomic data [here](https://www.ga4gh.org/).
 
 As a part of this partnership, SciLifeLab will host the GA4GH 13th Plenary Meeting in October 2025 in Uppsala, Sweden.
 This event will bring together the global genomics community to address shared challenges, develop innovative solutions,
-and drive progress in genomic data sharing to advance human health. 
+and drive progress in genomic data sharing to advance human health.
 Over the course of the week, attendees will participate in collaborative workshops, presentations, and keynote talks,
 as well as have the opportunity to explore GA4GH technical standards and policies, exchange insights, and create
 scalable solutions for genomic and health data sharing. Guided by an international Programme Committee and shaped by
-input from the broader GA4GH community, this plenary aims to foster global collaboration in genomic science to improve health outcomes worldwide. 
+input from the broader GA4GH community, this plenary aims to foster global collaboration in genomic science to improve health outcomes worldwide.
 You can learn more and register for the GA4GH 13th Plenary Meeting [here](https://broadinstitute.swoogo.com/ga4gh13plenary/7101555)
 
 {{< banner_image
@@ -99,9 +100,9 @@ Discover more about ADORE.software [here](https://adore.software/) and Become a 
 ### Importance of ADORE.software for SciLifeLab
 
 - **Collaborating with Global Stakeholders**: With over 45 funding organisations participating in the first Amsterdam meeting,
-  including [Wellcome](https://wellcome.org/), [Sloan Foundation](https://sloan.org/), 
-  the [Chan Zuckerberg Initiative](https://chanzuckerberg.com/) (CZI), and [NWO](https://www.nwo.nl/en) 
-  (The Dutch Research Council), SciLifeLab has the opportunity to engage with leading funders, agencies, and 
+  including [Wellcome](https://wellcome.org/), [Sloan Foundation](https://sloan.org/),
+  the [Chan Zuckerberg Initiative](https://chanzuckerberg.com/) (CZI), and [NWO](https://www.nwo.nl/en)
+  (The Dutch Research Council), SciLifeLab has the opportunity to engage with leading funders, agencies, and
   infrastructure providers to shape the future of research software sustainability.
 - **Building Connections**: SciLifeLab is connecting with key research software communities, including Research Software
   Engineers and Open Source Program Offices, to contribute to programs that reward, recognise, and sustain software development,
@@ -175,8 +176,8 @@ multidisciplinary digital environment for European researchers, academics, innov
 primary goal is to facilitate the sharing, discovery, and reuse of research data, tools, and services, fostering
 collaboration and accelerating scientific progress. EOSC builds upon existing infrastructures and services supported
 by the European Commission, Member States, and research communities, integrating them into a cohesive 'system of
-systems' to add value by aggregating content and enabling services to be used together. 
-You can read more about EOSC [here](https://eosc.eu/). 
+systems' to add value by aggregating content and enabling services to be used together.
+You can read more about EOSC [here](https://eosc.eu/).
 
 SciLifeLab actively collaborates with EOSC by providing feedback to the EOSC EU Node and participating in
 [several task forces](https://eosc.eu/eosc-task-forces/). It works closely with university partners such as Uppsala

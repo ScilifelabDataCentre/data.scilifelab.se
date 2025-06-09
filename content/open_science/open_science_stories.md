@@ -6,12 +6,12 @@ menu:
     weight: 4
 ---
 
-# Open Science Stories 
+# Open Science Stories
 
 ## Golnaz Taheri and Gisele Miranda
 
 From code sharing to FAIR data, two of our new SciLifeLab/DDLS (Data Driven Life Sciences) Fellows discuss their Open
-Science journeys. They highlight practical steps, benefits, and challenges of making research more transparent and 
+Science journeys. They highlight practical steps, benefits, and challenges of making research more transparent and
 accessible. Their stories showcase how Open Science fuels collaboration and accelerates discovery.
 
 {{< image_pair 

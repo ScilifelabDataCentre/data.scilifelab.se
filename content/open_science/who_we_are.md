@@ -6,8 +6,7 @@ menu:
     weight: 2
 ---
 
-
-# Who We Are 
+# Who We Are
 
 {{< image_text_row
   image="/img/open_science/team_photo.png"

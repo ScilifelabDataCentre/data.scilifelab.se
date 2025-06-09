@@ -12,7 +12,7 @@ menu:
     weight: 1
 ---
 
-# Overview 
+# Overview
 
 {{< video_banner
   video="/media/open_science/index.mp4"
