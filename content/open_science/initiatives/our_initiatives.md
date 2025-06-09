@@ -38,7 +38,8 @@ Accessible, Interoperable, Reusable), to enhance data interoperability and suppo
 
 The initiative seeks to understand how standards are being adopted, and the barriers preventing adoption, across
 research domains, institutions, and funding agencies. This will be achieved by building expertise and fostering
-collaborations among SciLifeLab [researchers](https://www.scilifelab.se/research/), [fellows](https://www.scilifelab.se/contact/fellows/),
+collaborations among SciLifeLab [researchers](https://www.scilifelab.se/research/),
+[fellows](https://www.scilifelab.se/contact/fellows/),
 and [infrastructure](https://www.scilifelab.se/services/infrastructure/) experts.
 
 It addresses shared challenges in metadata management, including standards, curation, and discovery, while promoting

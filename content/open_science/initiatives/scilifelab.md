@@ -12,10 +12,10 @@ menu:
 There are many innovative Open Science initiatives throughout SciLifeLab, and this page offers a space for these
 projects to be highlighted.
 
-{{< image_text_row 
-  image="/img/open_science/initiatives/nf-core_hackathon_2024.png" 
+{{< image_text_row
+  image="/img/open_science/initiatives/nf-core_hackathon_2024.png"
   alt="nf-core hackathon 2024"
-  title="SciLifeLab & nf-core" 
+  title="SciLifeLab & nf-core"
 >}}
 
 SciLifeLab is a founding member of [nf-core](https://nf-co.re/) - a community effort to collect a curated set of
