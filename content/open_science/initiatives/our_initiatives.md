@@ -7,7 +7,7 @@ menu:
     weight: 1
 ---
 
-# Our Initiatives 
+# Our Initiatives
 
 {{< banner_image
   image="/img/open_science/initiatives/cop.png"
@@ -38,7 +38,8 @@ Accessible, Interoperable, Reusable), to enhance data interoperability and suppo
 
 The initiative seeks to understand how standards are being adopted, and the barriers preventing adoption, across
 research domains, institutions, and funding agencies. This will be achieved by building expertise and fostering
-collaborations among SciLifeLab [researchers](https://www.scilifelab.se/research/), [fellows](https://www.scilifelab.se/contact/fellows/),
+collaborations among SciLifeLab [researchers](https://www.scilifelab.se/research/),
+[fellows](https://www.scilifelab.se/contact/fellows/),
 and [infrastructure](https://www.scilifelab.se/services/infrastructure/) experts.
 
 It addresses shared challenges in metadata management, including standards, curation, and discovery, while promoting
@@ -49,7 +50,8 @@ Through discussions, roundtables, and a dedicated Slack community, the initiativ
 and expand its reach, strengthening data integration, discovery, and reuse. By doing so, it advances innovation in life
 science research by facilitating more effective and connected research data.
 
-You can read more about the work that is being done [here](https://docs.google.com/presentation/d/1aapjARKgO-IBNCUrrILlqYyKVJxmUoqRMvO5IZaHs_I/edit#slide=id.g32233462cdb_0_199).
+You can read more about the work that is being done in this
+[presentation](https://docs.google.com/presentation/d/1aapjARKgO-IBNCUrrILlqYyKVJxmUoqRMvO5IZaHs_I/edit#slide=id.g32233462cdb_0_199).
 
 {{< banner_image
   image="/img/open_science/initiatives/osmonitor.png"
@@ -60,13 +62,13 @@ You can read more about the work that is being done [here](https://docs.google.c
 
 At SciLifeLab, we monitor the compliance with Open Science and FAIR principles, as displayed in the
 [annual report](https://www.scilifelab.se/about-us/management/all-reports/#h-annual-reports), which reviews the research
-produced by our infrastructure units and affiliated researchers. As this process is highly resource intensive, we are 
+produced by our infrastructure units and affiliated researchers. As this process is highly resource intensive, we are
 procuring a software service to support large-scale, automated, and in-depth analysis of the publications and research
 outputs produced by SciLifeLab.
 
-The Open Science Monitoring Initiative aims to implement an automated solution for tracking Open Science indicators. 
-Our initial focus is on analysing the data and software shared in SciLifeLab publications. By mining this information, 
-we will assess how closely our community aligns with Open Science practices, policies, and guidelines. Using this 
+The Open Science Monitoring Initiative aims to implement an automated solution for tracking Open Science indicators.
+Our initial focus is on analysing the data and software shared in SciLifeLab publications. By mining this information,
+we will assess how closely our community aligns with Open Science practices, policies, and guidelines. Using this
 information, we will develop an interactive dashboard to help the community explore, interpret, and engage with the
 findings.
 
