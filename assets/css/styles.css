@@ -59,6 +59,10 @@ h5 a:hover {
     margin-top: 1.5rem;
 }
 
+.open-science-code-snippet {
+  color: #4C979F;
+}
+
 /* Special styling for headers that need to be highlighted more */
 .highlighted-header {
   color: #77577e;
@@ -568,3 +572,28 @@ h5 a:hover {
   background-color: #a48fa9;
 }
 
+/*Floating button*/
+.back-to-top {
+  background-color: #491f53;
+  color: #fff;
+  border: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1030;
+  display: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/*Overriding the default blue highlight of button*/
+a.back-to-top.btn:hover,
+a.back-to-top.btn:focus,
+a.back-to-top.btn:active {
+  opacity: 1;
+  background-color: #491f53;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
