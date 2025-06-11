@@ -6,4 +6,3 @@ config:
   line-length:
     line_length: 180
   no-inline-html: false
-  
