@@ -4,6 +4,43 @@
       "researchers"
     ],
     "type": [
+      "Portal",
+      "Tool"
+    ],
+    "search_tags": [
+      "Precision Medicine Portal",
+      "Precision Medicine",
+      "KIARVA",
+      "Karolinska Institutet Adaptive Immune Receptor Gene Variant Atlas",
+      "Atlas",
+      "Data visualisation",
+      "Data sharing",
+      "Data management",
+      "quality registries",
+      "registries",
+      "immunology",
+      "portal",
+      "Tool",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "Precision Medicine Portal",
+    "description": "Links to multiple data sources, including quality registers and KIARVA (an open-source immunology database).",
+    "thumbnail": "/img/service_thumbnails/precision_med_portal.png",
+    "thumbnail_border": true,
+    "url": "(https://precision-medicine-portal.scilifelab.se/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "precisionmedicine@scilifelab.se",
+    "support_website": "https://precision-medicine-portal.scilifelab.se",
+    "support_github": "https://github.com/ScilifelabDataCentre/precision-medicine-portal-frontend",
+    "support_status": "https://status.dc.scilifelab.se/800572728"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "Tool"
     ],
     "search_tags": [ 
