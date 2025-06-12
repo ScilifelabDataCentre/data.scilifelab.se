@@ -4,25 +4,27 @@ menu:
   open_science:
     name: "Open Science Stories"
     weight: 4
+back_to_top_button: true
 ---
 
-# Open Science Stories 
+# Open Science Stories
 
 ## Golnaz Taheri and Gisele Miranda
 
 From code sharing to FAIR data, two of our new SciLifeLab/DDLS (Data Driven Life Sciences) Fellows discuss their Open
-Science journeys. They highlight practical steps, benefits, and challenges of making research more transparent and 
+Science journeys. They highlight practical steps, benefits, and challenges of making research more transparent and
 accessible. Their stories showcase how Open Science fuels collaboration and accelerates discovery.
 
-{{< image_pair 
-  image1="/img/open_science/stories/golnaz.png"
-  alt1="Photo of Golnaz Taheri"
-  caption1="Golnaz Taheri (Assistant Professor, Division of Computational Science and Technology, EECS - KTH, DDLS Fellow)"
-  image2="/img/open_science/stories/miranda.png" 
-  alt2="Photo of Gisele Miranda"
-  caption2="Gisele Miranda (Assistant Professor, Division of Computational Science and Technology, EECS - KTH, SciLifeLab Fellow)"
-  height=25rem
->}}
+{{< image_pair
+image1="/img/open_science/stories/golnaz.png"
+alt1="Photo of Golnaz Taheri"
+caption1="Golnaz Taheri (Assistant Professor, Division of Computational Science and Technology, EECS - KTH, DDLS Fellow)"
+image2="/img/open_science/stories/miranda.png"
+alt2="Photo of Gisele Miranda"
+caption2="Gisele Miranda (Assistant Professor, Division of Computational Science and Technology, EECS - KTH, SciLifeLab Fellow)"
+height=25rem
+
+> }}
 
 ### Can you introduce yourself and your current research focus?
 
