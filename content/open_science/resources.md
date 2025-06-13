@@ -12,9 +12,8 @@ back_to_top_button: true
 # Resources
 
 {{< video_banner
-  video="/media/open_science/resources.mp4"
-  alt="A looping animation showing scenes from a wet lab."
->}}
+video="/media/open_science/resources.mp4"
+alt="A looping animation showing scenes from a wet lab." >}}
 
 Welcome to our Open Science Resources page.
 Here, you’ll find a collection of resources designed to help you integrate
@@ -39,10 +38,9 @@ and FAIR into your research workflows:
 
 #### CoARA Action Plan for SciLifeLab
 
-{{< image_float 
-  image="/img/open_science/resources/coara.png" 
-  alt="COARA logo"
->}}
+{{< image_float
+image="/img/open_science/resources/coara.png"
+alt="COARA logo" >}}
 
 On 23 February 2024, SciLifeLab announced that it had joined [CoARA](https://coara.eu/) (Coalition for Advancing Research
 Assessment) as a signatory member. This reaffirmed SciLifeLab’s commitment to advancing research assessment and open
@@ -72,10 +70,9 @@ to learn more about training tools, upcoming courses and ways in which the Train
 
 #### SciLifeLab RDM Guidelines
 
-{{< image_float 
-  image="/img/open_science/resources/rdm_guidelines.png" 
-  alt="RDM Guidelines logo"
->}}
+{{< image_float
+image="/img/open_science/resources/rdm_guidelines.png"
+alt="RDM Guidelines logo" >}}
 
 In collaboration with [NBIS](https://nbis.se/), SciLifeLab Data Centre has developed the
 [Research Data Management Guidelines](https://data-guidelines.scilifelab.se/) as a knowledge
@@ -86,13 +83,12 @@ offers guidance on key topics, including data management plans, metadata, versio
 
 ## External Resources {.highlighted-header #external-resources}
 
-{{< logo_row 
+{{< logo_row
 "/img/open_science/resources/fair_aware.png|FAIR Aware logo"
 "/img/open_science/resources/eu_commission.png|EU Commission logo"
 "/img/open_science/resources/vetenskapsrådet.png|Vetenskapsrådet logo"
 "/img/open_science/resources/unesco.png|UNESCO logo"
-"/img/open_science/resources/plan_s.png|Plan-S logo"
->}}
+"/img/open_science/resources/plan_s.png|Plan-S logo" >}}
 
 #### FAIR-Aware Self Assessment Tool
 
@@ -128,7 +124,7 @@ coordinated efforts among researchers, institutions, and funders to integrate op
 and enhance usability. This is achieved through standardised frameworks, infrastructure, and FAIR data management
 planning, while ensuring compliance with legal and ethical considerations. Further details on Sweden’s approach to open
 science, including policies on open access to publications, research data, and broader open science initiatives, can be
-found on the 
+found on the
 [Open access to research data - Swedish Research Council](https://www.vr.se/english/mandates/open-science/open-access-to-research-data.html)
 page.
 This platform serves as a resource for national recommendations and guidelines, that

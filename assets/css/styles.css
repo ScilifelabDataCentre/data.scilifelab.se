@@ -51,16 +51,16 @@ h5 a:hover {
 }
 
 .open-science-content h1 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .open-science-content h2,
 .open-science-content h3 {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .open-science-code-snippet {
-  color: #4C979F;
+  color: #4c979f;
 }
 
 /* Special styling for headers that need to be highlighted more */
@@ -237,7 +237,7 @@ h5 a:hover {
   width: 100%;
 }
 
-@media all and (min-width: 1200px){
+@media all and (min-width: 1200px) {
   .img-adaptive {
     width: 75%;
   }
@@ -249,7 +249,7 @@ h5 a:hover {
   .logo {
     max-width: 340px;
   }
-  
+
   .logo span {
     font-size: 0.95rem;
   }
@@ -259,7 +259,7 @@ h5 a:hover {
   .logo {
     width: 75%;
   }
-  
+
   .logo span {
     display: none;
   }
@@ -271,7 +271,7 @@ h5 a:hover {
 }
 
 .moving-card:hover {
-  transform: translateY(-.3rem);
+  transform: translateY(-0.3rem);
   transition: 0.15s;
   box-shadow: 0 0 20px 0 rgba(166, 166, 166, 0.5);
 }
@@ -336,7 +336,7 @@ h5 a:hover {
   color: #fff;
 }
 
-.card-teal-title a:hover{
+.card-teal-title a:hover {
   color: #fff;
 }
 
@@ -358,7 +358,7 @@ h5 a:hover {
 /* Buttons */
 
 .btn-aqua {
-  background-color: #79B1B7;
+  background-color: #79b1b7;
 }
 
 .btn-aqua:hover {
@@ -374,7 +374,7 @@ h5 a:hover {
 }
 
 .event-type {
-  background-color: #77577E;
+  background-color: #77577e;
   color: white;
 }
 
@@ -389,7 +389,7 @@ h5 a:hover {
 }
 
 .btn-details {
-  background-color: #79B1B7;
+  background-color: #79b1b7;
 }
 
 .btn-details:hover {
@@ -487,7 +487,7 @@ h5 a:hover {
 .data_sources-content .filter-heading h5 {
   padding-top: 1rem;
   padding-left: 0.75rem;
-  margin-bottom: .15rem;
+  margin-bottom: 0.15rem;
 }
 @media (min-width: 992px) {
   .data_sources-content .accordion-item {
@@ -502,7 +502,7 @@ h5 a:hover {
   --bs-accordion-bg: inherit; /* Use the parent bg-light color */
 }
 
-#job-filters  .accordion-button:not(.collapsed) {
+#job-filters .accordion-button:not(.collapsed) {
   color: inherit; /* Remove specific active color */
 }
 
@@ -524,7 +524,7 @@ h5 a:hover {
 #job-filters .filter-heading h5 {
   padding-top: 1rem;
   padding-left: 0.75rem;
-  margin-bottom: .15rem;
+  margin-bottom: 0.15rem;
 }
 /* Events filters */
 #events-filters .accordion {
@@ -537,25 +537,25 @@ h5 a:hover {
 
 #events-filters .accordion-body {
   padding: 0.5rem 0.5rem; /* Adjust these values as needed */
-} 
+}
 
 @media (min-width: 992px) {
   #events-filters .accordion-item {
     border: none;
   }
-} 
+}
 
 #events-filters .accordion-button.custom-padding {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   text-align: left;
-} 
+}
 
 #events-filters .filter-heading h5 {
   padding-top: 1rem;
   padding-left: 0.75rem;
-  margin-bottom: .15rem;
-} 
+  margin-bottom: 0.15rem;
+}
 
 .image-caption {
   font-style: italic;
