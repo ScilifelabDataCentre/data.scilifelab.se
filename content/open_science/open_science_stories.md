@@ -22,9 +22,7 @@ caption1="Golnaz Taheri (Assistant Professor, Division of Computational Science 
 image2="/img/open_science/stories/miranda.png"
 alt2="Photo of Gisele Miranda"
 caption2="Gisele Miranda (Assistant Professor, Division of Computational Science and Technology, EECS - KTH, SciLifeLab Fellow)"
-height=25rem
-
-> }}
+height=25rem >}}
 
 ### Can you introduce yourself and your current research focus?
 
