@@ -146,7 +146,7 @@ Every time you save a file, the page will automatically refresh in the browser.
 
 To ensure consistent markdown formatting across the website, especially for **Open Science content** ([content/open_science/](content/open_science/)), we use `markdownlint-cli2`. The linter uses our custom configuration file ([.github/.markdownlint-cli2.yaml](.github/.markdownlint-cli2.yaml)) which sets specific rules for our markdown files. Follow these steps to run the linter locally before pushing your changes:
 
-> **Important**: To maintain consistency with our GitHub Actions workflow, please ensure you install Node.js version 20.x. This version is required to match the CI/CD environment.
+> **Important**: To maintain consistency with our GitHub Actions workflow, please ensure you install the same Node.js version as specified in our [markdownlint workflow](.github/workflows/markdownlint.yaml). This ensures your local environment matches our CI/CD environment.
 
 1. **Install Node.js and npm**:
 
