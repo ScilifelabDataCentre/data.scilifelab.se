@@ -30,10 +30,10 @@ making every team member within SciLifeLab a part of our broader Open Science ef
 {{< image_pair
   image1="/img/open_science/res_software_funders_2024.png"
   alt1="Group photo of Research Software Funders Workshop 2024"
-  caption1="SciLifeLab Team members at the 2024 DDLS Conference"
+  caption1="Group photo of 2024 International Research Software Funders Workshop"
   image2="/img/open_science/ddls_conference_2024.png"
   alt2="Group photo of DDLS Conference 2024"
-  caption2="Open Science Team at the 2024 DDLS Conference"
+  caption2="SciLifeLab Team members at the 2024 DDLS Conference"
 >}}
 
 You can view our broader team from the [Data Centre](https://www.scilifelab.se/contact/data-center/) and find out more
