@@ -1,8 +1,10 @@
 config:
   default: true
-  MD001: false
-  MD025: false
-  MD051: false
+  heading-increment: false
+  single-title: false
+  single-h1: false
+  link-fragments: false
   line-length:
     line_length: 180
   no-inline-html: false
+  
