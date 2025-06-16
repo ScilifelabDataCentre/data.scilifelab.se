@@ -149,7 +149,7 @@ To ensure consistent markdown formatting across the website, especially for **Op
 > **Important**: To maintain consistency with our GitHub Actions workflow, please ensure you install the same Node.js version as specified in our [markdownlint workflow](.github/workflows/markdownlint.yaml). This ensures your local environment matches our CI/CD environment.
 
 1. **Install Node.js and npm**:
-
+Following installations instructions are for Node.js version 20 (you should refer to [markdownlint workflow](.github/workflows/markdownlint.yaml) for current nodejs version)
    <details>
    <summary><strong>For macOS</strong> (using Homebrew)</summary>
 
@@ -158,6 +158,8 @@ To ensure consistent markdown formatting across the website, especially for **Op
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    
    # Install Node.js (this will include npm)
+   # refer .github/workflows/markdownlint.yaml for exact node version
+   
    brew install node@20
    
    # Add Node.js to your PATH (if not already done)
@@ -169,7 +171,7 @@ To ensure consistent markdown formatting across the website, especially for **Op
    <details>
    <summary><strong>For Windows</strong></summary>
 
-   - Download Node.js 20.x LTS installer from [Node.js official website](https://nodejs.org/)
+   - Download Nodejs LTS (refer [markdownlint workflow](.github/workflows/markdownlint.yaml) for exact nodejs version) installer from [Nodejs official website](https://nodejs.org/)
    - Run the installer and follow the installation wizard
    - Restart your terminal after installation
    </details>
@@ -179,6 +181,7 @@ To ensure consistent markdown formatting across the website, especially for **Op
 
    ```bash
    # Using NodeSource repository
+   # refer .github/workflows/markdownlint.yaml for exact nodejs version
    curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
    sudo apt-get install -y nodejs
    ```
