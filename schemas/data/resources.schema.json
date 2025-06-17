@@ -1,0 +1,90 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/resources.schema.json",
+    "title": "Resources Schema",
+    "description": "Schema for validating resource objects used in the Data Centre portal.",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "type",
+        "search_tags",
+        "name",
+        "description",
+        "url",
+        "thumbnail",
+        "created_by",
+        "created_by_url",
+        "support_email"
+      ],
+      "properties": {
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Interactive guide",
+              "Data sources",
+              "Compute resources",
+              "Storage resources",
+              "Alternative metrics",
+              "portal",
+              "helpdesk"
+            ]
+          },
+          "minItems": 1,
+          "description": "One or more categories describing the type of resource."
+        },
+        "search_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "description": "Search keywords associated with the resource."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Title or name of the resource."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short description explaining the resource purpose or content."
+        },
+        "url": {
+          "type": "string",
+          "description": "URL linking to the resource.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "thumbnail": {
+          "type": "string",
+          "description": "Path to a thumbnail image for the resource.",
+          "pattern": "^\\/img\\/resource_thumbnails\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+        },
+        "thumbnail_border": {
+          "type": "boolean",
+          "description": "Whether to display a border around the thumbnail image.",
+          "default": false
+        },
+        "created_by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the individual or group that created the resource."
+        },
+        "created_by_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Web address of the creating organization or individual."
+        },
+        "support_email": {
+          "type": "string",
+          "format": "email",
+          "description": "Email address to contact for support regarding the resource."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+  
