@@ -1,0 +1,9 @@
+config:
+  default: true
+  heading-increment: false
+  single-title: false
+  single-h1: false
+  link-fragments: false
+  line-length:
+    line_length: 180
+  no-inline-html: false

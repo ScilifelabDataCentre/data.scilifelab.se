@@ -11,6 +11,7 @@ This is the source code for the SciLifeLab Data Platform website:
   - [Step 2a: Edit the files (online)](#step-2a-edit-the-files-online)
   - [Step 2b: Edit the files (locally)](#step-2b-edit-the-files-locally)
   - [Step 3: Make a pull request](#step-3-make-a-pull-request)
+- [Media (images and videos)](#media)
 - [How to get help](#how-to-get-help)
 - [Credits](#credits)
 
@@ -81,7 +82,7 @@ git pull upstream develop
 ```
 
 To keep commit messages consistent, contributors are advised to configure `git` with the commit message template provided.
-This can be achieved by running the following command in the repository's directory:
+This can be achieved by running the following command once in the repository's directory:
 
 ```bash
 git config --local commit.template .github/.gitmessage.txt
@@ -90,7 +91,7 @@ git config --local commit.template .github/.gitmessage.txt
 When you have finished editing, commit your changes:
 ``` bash
 git add .
-git commit
+git commit  # This will open your editor with the template
 ```
 
 The commit message will now be pre-filled with the following template:
@@ -171,6 +172,69 @@ Press Ctrl+C to stop
 Use the URL printed at the bottom of this message (here, it's `http://localhost:1313/`) to view the site.
 Every time you save a file, the page will automatically refresh in the browser.
 
+#### Configure Markdown Linting Locally (Open Science Content [content/open_science/](content/open_science/))
+
+To ensure consistent markdown formatting across the website, especially for **Open Science content** ([content/open_science/](content/open_science/)), we use `markdownlint-cli2`. The linter uses our custom configuration file ([.github/.markdownlint-cli2.yaml](.github/.markdownlint-cli2.yaml)) which sets specific rules for our markdown files. Follow these steps to run the linter locally before pushing your changes:
+
+> **Important**: To maintain consistency with our GitHub Actions workflow, please ensure you install the same Node.js version as specified in our [markdownlint workflow](.github/workflows/markdownlint.yaml). This ensures your local environment matches our CI/CD environment.
+
+1. **Install Node.js and npm**:
+Following installations instructions are for Node.js version 20 (you should refer to [markdownlint workflow](.github/workflows/markdownlint.yaml) for current nodejs version)
+   <details>
+   <summary><strong>For macOS</strong> (using Homebrew)</summary>
+
+   ```bash
+   # Install Homebrew if you don't have it
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
+   # Install Node.js (this will include npm)
+   # refer .github/workflows/markdownlint.yaml for exact node version
+   
+   brew install node@20
+   
+   # Add Node.js to your PATH (if not already done)
+   echo 'export PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
+   </details>
+
+   <details>
+   <summary><strong>For Windows</strong></summary>
+
+   - Download Nodejs LTS (refer [markdownlint workflow](.github/workflows/markdownlint.yaml) for exact nodejs version) installer from [Nodejs official website](https://nodejs.org/)
+   - Run the installer and follow the installation wizard
+   - Restart your terminal after installation
+   </details>
+
+   <details>
+   <summary><strong>For Linux</strong> (Ubuntu/Debian)</summary>
+
+   ```bash
+   # Using NodeSource repository
+   # refer .github/workflows/markdownlint.yaml for exact nodejs version
+   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+   sudo apt-get install -y nodejs
+   ```
+   </details>
+
+2. **Verify Installation**:
+   ```bash
+   node --version  # Should show v20.x.x
+   npm --version   # Should show the npm version
+   ```
+
+3. **Install markdownlint-cli2**:
+   ```bash
+   npm install -g markdownlint-cli2
+   ```
+
+4. **Run the linter**:
+   ```bash
+   markdownlint-cli2 "content/open_science/**/*.md" --config .github/.markdownlint-cli2.yaml
+   ```
+
+Before committing your changes, run the linter locally to catch and fix any formatting issues. This helps maintain consistent markdown style across the project and prevents CI failures. The same checks will be run automatically in our GitHub Actions workflow when you create a pull request. For detailed information about the linting rules, refer to the [markdownlint documentation](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/Rules.md).
+
 #### Docker
 
 If you would prefer not to use Hugo, you can use the provided Dockerfile to build and run a container.
@@ -189,6 +253,16 @@ You can find full documentation on the [GitHub help website](https://help.github
 
 Once created, a member of the website team will review your changes.
 Once approved, they will be merged and deployed.
+
+## Media
+
+### Videos
+For videos which are used for visual interest (e.g. as banners), compress the images as much as possible using a tool 
+such as [VEED](https://www.veed.io/). Try quality as "medium" and the resolution as "2918 x 720" as a default starting
+point but always visually inspect the compressed video. 
+
+To keep the overall repository small, avoid committing videos over 5MB and store the video elsewhere. Likewise, if the 
+number of MP4s in the repository grows, we likely will move all videos out of the repository. 
 
 ## How to get help
 

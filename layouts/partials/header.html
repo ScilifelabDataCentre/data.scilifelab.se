@@ -37,26 +37,18 @@
 {{ end }}
 
 <!-- Breadcrumbs -->
-{{ if .Parent }}
+{{ if .Ancestors }}
   <nav class="breadcrumbs pt-1 bg-light" aria-label="breadcrumb">
     <div class="container">
       <ol class="breadcrumb">
-        {{ if .Parent.Parent }}
-        {{ if .Parent.Parent.Parent }}
-        {{ if .Parent.Parent.Parent.Parent }}
-        <li class="breadcrumb-item"><a
-            href="{{ .Parent.Parent.Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Parent.Parent.Title }}</a></li>
-        {{ end }}
-        <li class="breadcrumb-item"><a
-            href="{{ .Parent.Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Parent.Title }}</a></li>
-        {{ end }}
-        <li class="breadcrumb-item"><a href="{{ .Parent.Parent.RelPermalink }}">{{ .Parent.Parent.Title }}</a></li>
-        {{ end }}
-        {{ if or (eq .Section "tags") (eq .Section "authors") }}
-        <li class="breadcrumb-item"><a href="/highlights/">Data highlights</a>
-        <li class="breadcrumb-item">{{ .Parent.Title }}</li>
-        {{ else }}
-        <li class="breadcrumb-item"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
+        {{ range $index, $ancestor := .Ancestors.Reverse }}
+          <!-- Special case check for tags and author pages -->
+          {{ if in (slice "Tags" "Authors") $ancestor.Title }}
+            <li class="breadcrumb-item"><a href="/highlights/">Data highlights</a>
+            <li class="breadcrumb-item">{{ $ancestor.Title }}</li>
+          {{ else }}
+            <li class="breadcrumb-item"><a href="{{ $ancestor.RelPermalink }}">{{ $ancestor.Title }}</a></li>
+          {{ end }}
         {{ end }}
         <li class="breadcrumb-item active" aria-current="page"><span style="color: #4a5055;">{{ .Title }}</span></li>
       </ol>
