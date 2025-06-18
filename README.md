@@ -6,7 +6,7 @@ This is the source code for the SciLifeLab Data Platform website:
 [https://data.scilifelab.se/](https://data.scilifelab.se/).
 
 - [Introduction](#introduction)
-- [Development](#development)
+- [Development and contributions](#development-and-contributions)
   - [Step 1: Access the code](#step-1-access-the-code)
   - [Step 2a: Edit the files (online)](#step-2a-edit-the-files-online)
   - [Step 2b: Edit the files (locally)](#step-2b-edit-the-files-locally)
@@ -29,7 +29,8 @@ Click on 'Cite this repository' near the top right of this repository to see how
 
 ## Development and contributions
 
-All website content is written in [Markdown](https://guides.github.com/features/mastering-markdown/), YAML, or JSON which are all beginner-friendly formats so it should be relatively easy to contribute. Please visit the [CONTRIBUTING page](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md) for instructions on how to contribute to specific sections of the website.
+All website content is written in [Markdown](https://guides.github.com/features/mastering-markdown/), YAML, or JSON which are all beginner-friendly formats so it should be relatively easy to contribute.
+Please visit the [CONTRIBUTING page](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md) for general guidelines and specific instructions on how to contribute to different sections of the Platform.
 
 ### Step 1: Access the code
 
@@ -80,22 +81,51 @@ Then you can fetch changes at any time from this remote:
 git pull upstream develop
 ```
 
-#### Configure Commit Message Template
-
-We follow a structured commit message format defined in [`.github/.gitmessage.txt`](.github/.gitmessage.txt). To use this template:
+To keep commit messages consistent, contributors are advised to configure `git` with the commit message template provided.
+This can be achieved by running the following command once in the repository's directory:
 
 ```bash
-# you just need to run this command once after cloning repository
 git config --local commit.template .github/.gitmessage.txt
 ```
 
-This will pre-fill your commit message editor with our lightweight conventional commit template whenever you run `git commit`.
-
-When you have finished editing, commit and push to your fork:
-
-```bash
+When you have finished editing, commit your changes:
+``` bash
 git add .
 git commit  # This will open your editor with the template
+```
+
+The commit message will now be pre-filled with the following template:
+
+```text
+<type>(scope): <short description>
+```
+
+Replace the `<type>` and `(scope)` placeholders with the best matching entry in the following table:
+
+| Type    | Description                                  |
+|---------|----------------------------------------------|
+| feat    | A new feature                                |
+| fix     | A bug fix or improvement of existing feature |
+| content | New content such as markdown pages           |
+| docs    | Documentation-only changes                   |
+| test    | Adding or modifying tests                    |
+| chore   | Maintenance, tooling, dependencies update    |
+
+
+Scope is optional but nice to have if deemed relevant.
+
+Examples:
+
+``` text
+fix(visualization): correct/add genome visualization
+feat(dashboard): add SARS-Cov2 dashboard
+style(css): reformat layout classes
+```
+
+For the short description, write as if completing "*If accepted, my changes are going to...*".
+
+And finally push to your fork:
+```bash
 git push
 ```
 
