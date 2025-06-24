@@ -15,3 +15,7 @@ __pycache__
 # Node modules and npm cache directory
 node_modules/
 .npm/
+
+# asdf and venv
+.tool-versions
+.venv/
