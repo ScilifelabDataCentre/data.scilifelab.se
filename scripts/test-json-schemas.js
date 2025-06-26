@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const glb = require('glob');
 const fs = require('fs');
 const path = require('path');
 const Ajv = require('ajv');
@@ -13,56 +14,30 @@ const ajv = new Ajv({
 });
 addFormats(ajv);
 
-// Find all JSON files recursively
-const findJsonFiles = (dir, baseDir = '') => {
-  const jsonFiles = [];
-  
-  try {
-    const items = fs.readdirSync(dir);
-    
-    for (const item of items) {
-      const fullPath = path.join(dir, item);
-      const relativePath = path.join(baseDir, item);
-      const stat = fs.statSync(fullPath);
-      
-      if (stat.isDirectory()) {
-        jsonFiles.push(...findJsonFiles(fullPath, relativePath));
-      } else if (item.endsWith('.json')) {
-        jsonFiles.push(relativePath);
-      }
-    }
-  } catch (error) {
-    console.error(`Error reading directory ${dir}:`, error.message);
-  }
-  
-  return jsonFiles;
-};
-
 // Get schema path for a JSON file
-const getSchemaPath = (jsonFilePath) => {
+const getSchemaPath = function (jsonFilePath) {
   const schemaPath = jsonFilePath.replace(/\.json$/, '.schema.json');
-  return path.join('schemas/data', schemaPath);
+  return path.join('schemas', schemaPath);
 };
 
 // Test a single JSON file against its schema
-const testJsonFile = (jsonFilePath) => {
+const testJsonFile = function (jsonFilePath) {
   const schemaPath = getSchemaPath(jsonFilePath);
-  
+  const testResult = {
+        file: jsonFilePath,
+        schema: schemaPath
+  }
+
   try {
     if (!fs.existsSync(schemaPath)) {
-      return {
-        file: 'data/' + jsonFilePath,
-        schema: schemaPath,
-        status: 'MISSING_SCHEMA',
-        message: 'Schema file does not exist',
-        valid: false
-      };
+        testResult.status = 'MISSING_SCHEMA';
+        testResult.message = 'Schema file does not exist';
+        return testResult;
     }
     
-    const dataPath = path.resolve("data/", jsonFilePath);
+    const dataPath = path.resolve(jsonFilePath);
     const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
-    
     if (schema.$schema) {
       delete schema.$schema;
     }
@@ -70,30 +45,23 @@ const testJsonFile = (jsonFilePath) => {
     const validate = ajv.compile(schema);
     const valid = validate(data);
     
-    return {
-      file: 'data/' + jsonFilePath,
-      schema: schemaPath,
-      status: valid ? 'PASSED' : 'FAILED',
-      message: valid ? 'Validation passed' : ajv.errorsText(validate.errors, { dataVar: 'data' }),
-      valid
-    };
+    testResult.status = valid ? 'PASSED' : 'FAILED';
+    testResult.message = valid ? 'Validation passed' : ajv.errorsText(validate.errors, { dataVar: 'data' });
+    return testResult;
   } catch (error) {
-    return {
-      file: 'data/' + jsonFilePath,
-      schema: schemaPath,
-      status: 'ERROR',
-      message: error.message,
-      valid: false
-    };
+      testResult.status = 'ERROR';
+      testResult.message = error.message;
+      return testResult;
   }
 };
 
 // Main test function
-const testJsonSchemas = () => {
+const testJsonSchemas = function () {
   console.log('🧪 JSON Schema Validation Test\n');
   console.log('=' .repeat(60));
   
-  const jsonFiles = findJsonFiles('data');
+  // collect JSON files in 'data' directory
+  const jsonFiles = glb.globSync('data/**/*.json');
   
   if (jsonFiles.length === 0) {
     console.log('❌ No JSON files found in data directory');
@@ -144,17 +112,6 @@ const testJsonSchemas = () => {
   
   if (hasIssues) {
     console.log('\n❌ Test completed with issues');
-    
-    // if (statusCounts.MISSING_SCHEMA > 0) {
-    //   console.log('\n💡 To create missing schemas:');
-    // //   results
-    // //     .filter(r => r.status === 'MISSING_SCHEMA')
-    // //     .forEach(result => {
-    // //       console.log(`   mkdir -p $(dirname ${result.schema})`);
-    // //       console.log(`   touch ${result.schema}`);
-    // //     });
-    // }
-    
     process.exit(1);
   } else {
     console.log('\n✅ All tests passed!');
@@ -163,4 +120,4 @@ const testJsonSchemas = () => {
 };
 
 // Run the test
-testJsonSchemas(); 
+testJsonSchemas();
