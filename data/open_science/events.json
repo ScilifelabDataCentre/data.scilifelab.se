@@ -131,6 +131,30 @@
             "organisers": "",
             "event_url": "https://www.open-science-conference.eu/",
             "description": "A global forum for open science stakeholders to explore the intersection of open science and artificial intelligence, addressing challenges and opportunities in transparency, reproducibility, and responsible research practices."
+        },
+        {
+            "title": "International Data Week and Research Data Alliance",
+            "type": "Event",
+            "date_start": "2025-10-13",
+            "time_start": "",
+            "date_end": "2025-10-16",
+            "time_end": "",
+            "venue": "Brisbane, Australia",
+            "organisers": "",
+            "event_url": "https://www.rd-alliance.org/event/international-data-week-2025-brisbane-australia/",
+            "description": "A global event uniting data professionals, researchers, and policymakers to explore how data can drive positive societal change, with a focus on ethical governance, open science, and inclusive innovation."
+        },
+        {
+            "title": "European Open Science Cloud (EOSC) Symposium 2025",
+            "type": "Event",
+            "date_start": "2025-11-03",
+            "time_start": "",
+            "date_end": "2025-11-05",
+            "time_end": "",
+            "venue": "Brussels, Belgium",
+            "organisers": "",
+            "event_url": "https://eosc.eu/events/eosc-symposium-2025/",
+            "description": "An event for the European Open Science community, dedicated to advancing the EOSC Federation through strategic collaboration, shared infrastructure, and real-world scientific use cases."
         }
 
 
