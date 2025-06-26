@@ -71,12 +71,12 @@
         eventList.forEach((event, ind) => {
             let event_date = new Date(event.banner_date);
             eventsHTML += `<div class="col-md-6 col-lg-4 event">
-                            <div class="card-box moving-card">
+                            <div class="card-box">
                             <div class="d-flex justify-content-between">
                                 <div>
                                 <span class="badge event-type mb-1">${event.type}</span>
                                 <h5><a class="" role="button" data-bs-toggle="modal"
-                                    data-bs-target="#descriptionModal${ind}">${event.title}</a></h5>
+                                    data-bs-target="#descriptionModal-${context}-${ind}">${event.title}</a></h5>
                                 </div>
                                 <div>
                                 <div class="px-2 pb-1 m-2 d-flex flex-column rounded event-date">
@@ -126,7 +126,7 @@
                                 See details
                                 </button>
                                 <div class="modal fade" id="descriptionModal-${context}-${ind}" tabindex="-1"
-                                aria-labelledby="descriptionModalLabel-${context}-${ind}">
+                                aria-labelledby="descriptionModalLabel-${context}-${ind}" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                     <div class="modal-header">
@@ -213,7 +213,7 @@
 
     // Call the function to display other events
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Frefs%2Fheads%2Fopen-science-activity-page%2Fdata%2Fopen_science%2Fevents.json"),
+      decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Frefs%2Fheads%2Fdevelop%2Fdata%2Fopen_science%2Fevents.json"),
       addEvents,
       "other-events-section" // "div id" in open_science/activites page
     );
