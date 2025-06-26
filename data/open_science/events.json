@@ -11,6 +11,128 @@
             "organisers": "Scilifelab Data Centre",
             "event_url": "https://www.scilifelab.se/events",
             "description": "If you are working on an Open Science project or event at SciLifeLab and would like to showcase your work, please contact us via email at datacentre@scilifelab.se with the subject line ‘Open Science’."
+        },
+        {
+            "title": "Metascience Conference",
+            "type": "Event",
+            "date_start": "2025-06-30",
+            "time_start": "",
+            "date_end": "2025-07-02",
+            "time_end": "",
+            "venue": "London, UK",
+            "organisers": "",
+            "event_url": "https://metascience.info/",
+            "description": "A global gathering for knowledge sharing, community building, and opportunities to define a roadmap of research and intervention priorities to accelerate science.  (Description taken from event website)"
+        },
+        {
+            "title": "LIBER 2025",
+            "type": "Event",
+            "date_start": "2025-07-02",
+            "time_start": "",
+            "date_end": "2025-07-04",
+            "time_end": "",
+            "venue": "Lausanne, Switzerland",
+            "organisers": "",
+            "event_url": "https://liberconference.eu/",
+            "description": "A leading forum for research library professionals to explore how libraries can drive innovation, foster collaboration, and address global challenges through open science, equitable access, and sustainable development."
+        },
+         {
+            "title": "Open Science: Monitoring Progress, Assessing Impact",
+            "type": "Event",
+            "date_start": "2025-07-07",
+            "time_start": "",
+            "date_end": "2025-07-08",
+            "time_end": "",
+            "venue": "Paris, France",
+            "organisers": "",
+            "event_url": "https://indico.un.org/event/1016293/",
+            "description": "A global gathering of open science stakeholders to share evidence, refine monitoring tools, and advance collaborative strategies for assessing the impact of open science initiatives."
+        },
+         {
+            "title": "Bioinformatics Open Source Conference (BOSC) 2025",
+            "type": "Event",
+            "date_start": "2025-07-21",
+            "time_start": "",
+            "date_end": "2025-07-22",
+            "time_end": "",
+            "venue": "Liverpool, UK",
+            "organisers": "",
+            "event_url": "https://www.open-bio.org/events/bosc-2025/",
+            "description": "A community-focused conference exploring open source bioinformatics, featuring sessions on open data, reproducibility, and data sustainability, along with interdisciplinary collaboration."
+        },
+        {
+            "title": "Free and Open Source Software Conference (FrOSCon)",
+            "type": "Event",
+            "date_start": "2025-08-16",
+            "time_start": "",
+            "date_end": "2025-08-17",
+            "time_end": "",
+            "venue": "Sankt Augustin, Germany",
+            "organisers": "",
+            "event_url": "https://froscon.org/en/cfp/",
+            "description": "A community-driven conference showcasing the latest in free and open source software, with talks and workshops on digital sovereignty, AI, open science, and emerging tech trends."
+        },
+        {
+            "title": "IFLA World Library and Information Congress",
+            "type": "Event",
+            "date_start": "2025-08-18",
+            "time_start": "",
+            "date_end": "2025-08-22",
+            "time_end": "",
+            "venue": "Astana, Kazakhstan",
+            "organisers": "",
+            "event_url": "https://2025.ifla.org/",
+            "description": "An international conference for library and information professionals, focusing on advancing equitable access to knowledge, fostering innovation, and building sustainable futures through global collaboration."
+        },
+        {
+            "title": "Conference on Research Data Infrastructure (CoRDI)",
+            "type": "Event",
+            "date_start": "2025-08-26",
+            "time_start": "",
+            "date_end": "2025-08-28",
+            "time_end": "",
+            "venue": "Aachen, Germany",
+            "organisers": "",
+            "event_url": "https://www.nfdi.de/cordi-2025/",
+            "description": "A conference highlighting innovations in research data management, featuring sessions on data literacy, infrastructure, and the societal impact of effective data practices."
+        },
+         {
+            "title": "STI-ENID 2025 – 29th Annual International Conference on Science and Technology Indicators",
+            "type": "Event",
+            "date_start": "2025-09-03",
+            "time_start": "",
+            "date_end": "2025-09-05",
+            "time_end": "",
+            "venue": "Bristol, UK",
+            "organisers": "",
+            "event_url": "https://www.stienid2025.org/",
+            "description": "A forum for research library professionals to explore how libraries can drive innovation, foster collaboration, and address global challenges through open science, equitable access, and sustainable development."
+        },
+         {
+            "title": "Open Science Fair",
+            "type": "Event",
+            "date_start": "2025-09-15",
+            "time_start": "",
+            "date_end": "2025-09-17",
+            "time_end": "",
+            "venue": "Geneva, Switzerland",
+            "organisers": "",
+            "event_url": "https://opensciencefair.eu/",
+            "description": "A collaborative forum uniting global open science communities to explore inclusive partnerships, innovative infrastructures, and policies that drive transparent and equitable research practices."
+        },
+         {
+            "title": "Open Science and AI Conference 2025",
+            "type": "Event",
+            "date_start": "2025-10-08",
+            "time_start": "",
+            "date_end": "2025-10-09",
+            "time_end": "",
+            "venue": "Hamburg, Germany",
+            "organisers": "",
+            "event_url": "https://www.open-science-conference.eu/",
+            "description": "A global forum for open science stakeholders to explore the intersection of open science and artificial intelligence, addressing challenges and opportunities in transparency, reproducibility, and responsible research practices."
         }
+
+
     ]
 }
