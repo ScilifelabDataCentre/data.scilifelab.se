@@ -3,9 +3,9 @@
         {
             "title": "Open science test event",
             "type": "Event",
-            "date_start": "2025-06-12",
+            "date_start": "2025-08-12",
             "time_start": "10:30",
-            "date_end": "2025-06-12",
+            "date_end": "2025-08-12",
             "time_end": "13:30",
             "venue": "Scilifelab Uppsala",
             "organisers": "Scilifelab Data Centre",
