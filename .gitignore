@@ -19,3 +19,7 @@ node_modules/
 # asdf and venv
 .tool-versions
 .venv/
+
+# VS code stuff
+.vscode
+*.code-workspace
