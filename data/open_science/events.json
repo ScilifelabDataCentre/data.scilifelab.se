@@ -1,0 +1,164 @@
+{
+    "items": [
+       
+        {
+            "title": "Metascience Conference",
+            "type": "Event",
+            "date_start": "2025-06-30",
+            "time_start": "",
+            "date_end": "2025-07-02",
+            "time_end": "",
+            "venue": "London, UK",
+            "organisers": "",
+            "event_url": "https://metascience.info/",
+            "description": "A meeting focused on collaboration, knowledge sharing, and shaping future directions for research and metascience."
+        },
+        {
+            "title": "LIBER 2025",
+            "type": "Event",
+            "date_start": "2025-07-02",
+            "time_start": "",
+            "date_end": "2025-07-04",
+            "time_end": "",
+            "venue": "Lausanne, Switzerland",
+            "organisers": "",
+            "event_url": "https://liberconference.eu/",
+            "description": "A gathering for research library professionals to discuss innovation, access to knowledge, and development through open science and collaboration."
+        },
+         {
+            "title": "Open Science: Monitoring Progress, Assessing Impact",
+            "type": "Event",
+            "date_start": "2025-07-07",
+            "time_start": "",
+            "date_end": "2025-07-08",
+            "time_end": "",
+            "venue": "Paris, France",
+            "organisers": "",
+            "event_url": "https://indico.un.org/event/1016293/",
+            "description": "A global event bringing together open science stakeholders to exchange evidence, refine indicators, and discuss progress on implementation."
+        },
+         {
+            "title": "Bioinformatics Open Source Conference (BOSC) 2025",
+            "type": "Event",
+            "date_start": "2025-07-21",
+            "time_start": "",
+            "date_end": "2025-07-22",
+            "time_end": "",
+            "venue": "Liverpool, UK",
+            "organisers": "",
+            "event_url": "https://www.open-bio.org/events/bosc-2025/",
+            "description": "A conference on open source bioinformatics, with sessions on open data, reproducibility, and sustainable scientific practices."
+        },
+        {
+            "title": "Free and Open Source Software Conference (FrOSCon)",
+            "type": "Event",
+            "date_start": "2025-08-16",
+            "time_start": "",
+            "date_end": "2025-08-17",
+            "time_end": "",
+            "venue": "Sankt Augustin, Germany",
+            "organisers": "",
+            "event_url": "https://froscon.org/en/cfp/",
+            "description": "A community event featuring talks and workshops on free and open source software, digital sovereignty, artificial intelligence, and related technologies."
+        },
+        {
+            "title": "IFLA World Library and Information Congress",
+            "type": "Event",
+            "date_start": "2025-08-18",
+            "time_start": "",
+            "date_end": "2025-08-22",
+            "time_end": "",
+            "venue": "Astana, Kazakhstan",
+            "organisers": "",
+            "event_url": "https://2025.ifla.org/",
+            "description": "An international conference for library and information professionals, focusing on advancing equitable access to knowledge, fostering innovation, and building sustainable futures through global collaboration."
+        },
+        {
+            "title": "Conference on Research Data Infrastructure (CoRDI)",
+            "type": "Event",
+            "date_start": "2025-08-26",
+            "time_start": "",
+            "date_end": "2025-08-28",
+            "time_end": "",
+            "venue": "Aachen, Germany",
+            "organisers": "",
+            "event_url": "https://www.nfdi.de/cordi-2025/",
+            "description": "A conference highlighting innovations in research data management, featuring sessions on data literacy, infrastructure, and the societal impact of effective data practices."
+        },
+         {
+            "title": "STI-ENID 2025 – 29th Annual International Conference on Science and Technology Indicators",
+            "type": "Event",
+            "date_start": "2025-09-03",
+            "time_start": "",
+            "date_end": "2025-09-05",
+            "time_end": "",
+            "venue": "Bristol, UK",
+            "organisers": "",
+            "event_url": "https://www.stienid2025.org/",
+            "description": "A conference for research library professionals to explore how libraries can drive innovation, foster collaboration, and address global challenges through open science, equitable access, and sustainable development."
+        },
+         {
+            "title": "Open Science Fair",
+            "type": "Event",
+            "date_start": "2025-09-15",
+            "time_start": "",
+            "date_end": "2025-09-17",
+            "time_end": "",
+            "venue": "Geneva, Switzerland",
+            "organisers": "",
+            "event_url": "https://opensciencefair.eu/",
+            "description": "An event uniting global open science communities to explore inclusive partnerships, innovative infrastructures, and policies that drive transparent and equitable research practices."
+        },
+         {
+            "title": "Open Science Conference 2025",
+            "type": "Event",
+            "date_start": "2025-10-08",
+            "time_start": "",
+            "date_end": "2025-10-09",
+            "time_end": "",
+            "venue": "Hamburg, Germany",
+            "organisers": "",
+            "event_url": "https://www.open-science-conference.eu/",
+            "description": "A global gathering for open science stakeholders to explore the intersection of open science and artificial intelligence, addressing challenges and opportunities in transparency, reproducibility, and responsible research practices."
+        },
+        {
+            "title": "International Data Week and Research Data Alliance",
+            "type": "Event",
+            "date_start": "2025-10-13",
+            "time_start": "",
+            "date_end": "2025-10-16",
+            "time_end": "",
+            "venue": "Brisbane, Australia",
+            "organisers": "",
+            "event_url": "https://www.rd-alliance.org/event/international-data-week-2025-brisbane-australia/",
+            "description": "A global event uniting data professionals, researchers and policymakers to explore how data can drive positive societal change, with a focus on ethical governance, open science, and inclusive innovation."
+        },
+        {
+            "title": "European Open Science Cloud (EOSC) Symposium 2025",
+            "type": "Event",
+            "date_start": "2025-11-03",
+            "time_start": "",
+            "date_end": "2025-11-05",
+            "time_end": "",
+            "venue": "Brussels, Belgium",
+            "organisers": "",
+            "event_url": "https://eosc.eu/events/eosc-symposium-2025/",
+            "description": "An event for the European Open Science community, dedicated to advancing the EOSC Federation through strategic collaboration, shared infrastructure and real-world scientific use cases."
+        },
+        {
+            "title": "LU Open Science Days 2025",
+            "type": "Event",
+            "date_start": "2025-11-19",
+            "time_start": "",
+            "date_end": "2025-11-20",
+            "time_end": "",
+            "venue": "Lund, Sweden",
+            "organisers": "",
+            "event_url": "https://www.staff.lu.se/calendar/welcome-lu-open-science-days-2025",
+            "description": "A two-day event at Lund University exploring how open science can foster trust, transparency and accountability in research, featuring discussions on topics like reproducibility, preprints, and indigenous knowledge. This lunch-to-lunch event, held at Palaestra in Lund, Sweden, is open to Lund University-affiliated researchers, PhD students and support staff, with limited spots for external participants."
+        }
+
+
+
+    ]
+}
