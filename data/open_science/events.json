@@ -59,7 +59,7 @@
             "venue": "Sankt Augustin, Germany",
             "organisers": "",
             "event_url": "https://froscon.org/en/cfp/",
-            "description": "A community event featuring talks and workshops on free and open source software, digital sovereignty, AI, and related technologies."
+            "description": "A community event featuring talks and workshops on free and open source software, digital sovereignty, artificial intelligence, and related technologies."
         },
         {
             "title": "IFLA World Library and Information Congress",
@@ -131,7 +131,7 @@
             "venue": "Brisbane, Australia",
             "organisers": "",
             "event_url": "https://www.rd-alliance.org/event/international-data-week-2025-brisbane-australia/",
-            "description": "A global event uniting data professionals, researchers, and policymakers to explore how data can drive positive societal change, with a focus on ethical governance, open science, and inclusive innovation."
+            "description": "A global event uniting data professionals, researchers and policymakers to explore how data can drive positive societal change, with a focus on ethical governance, open science, and inclusive innovation."
         },
         {
             "title": "European Open Science Cloud (EOSC) Symposium 2025",
@@ -143,7 +143,7 @@
             "venue": "Brussels, Belgium",
             "organisers": "",
             "event_url": "https://eosc.eu/events/eosc-symposium-2025/",
-            "description": "An event for the European Open Science community, dedicated to advancing the EOSC Federation through strategic collaboration, shared infrastructure, and real-world scientific use cases."
+            "description": "An event for the European Open Science community, dedicated to advancing the EOSC Federation through strategic collaboration, shared infrastructure and real-world scientific use cases."
         },
         {
             "title": "LU Open Science Days 2025",
@@ -155,7 +155,7 @@
             "venue": "Lund, Sweden",
             "organisers": "",
             "event_url": "https://www.staff.lu.se/calendar/welcome-lu-open-science-days-2025",
-            "description": "A two-day event at Lund University exploring how open science can foster trust, transparency, and accountability in research, featuring discussions on topics like reproducibility, preprints, and indigenous knowledge. This lunch-to-lunch event, held at Palaestra in Lund, Sweden, is open to Lund University-affiliated researchers, PhD students, and support staff, with limited spots for external participants."
+            "description": "A two-day event at Lund University exploring how open science can foster trust, transparency and accountability in research, featuring discussions on topics like reproducibility, preprints, and indigenous knowledge. This lunch-to-lunch event, held at Palaestra in Lund, Sweden, is open to Lund University-affiliated researchers, PhD students and support staff, with limited spots for external participants."
         }
 
 
