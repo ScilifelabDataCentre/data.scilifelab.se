@@ -41,5 +41,5 @@ with ‘Open Science’ in the subject line.
 ## Announcements
 
 This section highlights news and announcements related to Open Science from SciLifeLab.
-<!-- This page have more dunamic content, so everything is written in a shortcode -->
+<!-- This page have more dynamic content, so everything is written in a shortcode -->
 {{< update_activities >}}
