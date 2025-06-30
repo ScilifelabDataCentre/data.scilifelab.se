@@ -28,7 +28,10 @@ This section displays events related to Open Science, organised by SciLifeLab.
 
 This section features upcoming Open Science events hosted by external organisations that are relevant to the Swedish research community.
 
-If you know of an appropriate event that is not listed here, fill in the template provided (with relevant fields) in the [Events & Training section of contribution guide](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md#events--training) with the event details and email this to [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se?subject=Open%20Science) with ‘Open Science’ in the subject line.
+If you know of an appropriate event that is not listed here, fill in the template provided (with relevant fields) in the
+[Events & Training section of contribution guide](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md#events--training)
+with the event details and email this to [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se?subject=Open%20Science)
+with 'Open Science' in the subject line.
 
 <section id="other-events-section" class="my-4">
   <!-- The events content will be filled by shortcode 'update_activities' that is called below -->
