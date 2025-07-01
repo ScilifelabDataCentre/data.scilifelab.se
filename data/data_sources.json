@@ -660,7 +660,6 @@
       "model archive",
       "computational models",
       "3D structure",
-      "biochemistry",
       "ELIXIR Deposition Database",
       "ELIXIR Core Data Resource"
     ],
@@ -1488,8 +1487,7 @@
       "alpha fold",
       "model archive",
       "computational models",
-      "3D structure",
-      "biochemistry"
+      "3D structure"
     ],
     "name": "Protein Data Bank",
     "description": "Includes over 170k 3D protein structures, nucleic acids, and complex assemblies available for download. Allows users to explore computational structural models alongside data from AlphaFold DB and ModelArchive.",

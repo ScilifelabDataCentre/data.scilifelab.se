@@ -1,0 +1,88 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/data_sources.schema.json",
+    "title": "Data sources Schema",
+    "description": "Schema for validating data source objects used in the data.scilifelab.se",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "type",
+        "ddls",
+        "search_tags",
+        "name",
+        "description",
+        "thumbnail",
+        "url",
+        "data"
+      ],
+      "properties": {
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "One or more categories describing the type of data source"
+        },
+        "ddls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Scientific area associated with the data source."
+        },
+        "search_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Search keywords associated with the data source."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Title or name of the data source."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short description about the data source."
+        },
+        "thumbnail": {
+          "type": "string",
+          "description": "Path to a thumbnail image for the data source.",
+          "pattern": "^\\/img\\/data_sources_thumbs\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+        },
+        "thumbnail_border": {
+          "type": "boolean",
+          "description": "Optional, whether to display a border around the thumbnail image.",
+          "default": false
+        },
+        "url": {
+          "type": "string",
+          "description": "URL linking to the data source.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Types of data that exists in the data source."
+        }
+      },
+      "additionalProperties": false
+    }
+}
