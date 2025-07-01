@@ -35,13 +35,16 @@
       req.open("GET", url, true);
       // The function call for fetching data and display
       req.onload = function () {
-        load_callback(JSON.parse(req.responseText).items, context);
+        load_callback(JSON.parse(req.responseText), context);
       };
       req.send(null);
     }; // function "getDataFromUrl" ends here
 
     // Take data about events and displays it
     function addEvents(dataArray, context) {
+      if (context == "sll-events-section") {
+        dataArray = dataArray.items;
+      };
       let eventList = [];
       dataArray.forEach((event) => {
         // Show only events that are meant to be displayed
@@ -210,6 +213,10 @@
       addEvents,
       "sll-events-section" // "div id" in open_science/activites page
     );
+ 
+    // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing
+    // let local_events = '{{ .Site.Data.open_science.events | jsonify }}';
+    // addEvents(JSON.parse(local_events), "other-events-section");
 
     // Call the function to display other events
     getDataFromUrl(
