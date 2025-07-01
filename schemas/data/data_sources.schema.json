@@ -20,25 +20,31 @@
         "type": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "minItems": 1,
+          "uniqueItems": true,
           "description": "One or more categories describing the type of data source"
         },
         "ddls": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "minItems": 1,
+          "uniqueItems": true,
           "description": "Scientific area associated with the data source."
         },
         "search_tags": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "minItems": 1,
+          "uniqueItems": true,
           "description": "Search keywords associated with the data source."
         },
         "name": {
@@ -69,9 +75,11 @@
         "data": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "minItems": 1,
+          "uniqueItems": true,
           "description": "Types of data that exists in the data source."
         }
       },
