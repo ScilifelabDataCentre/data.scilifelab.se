@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/open_science/team.schema.json",
+    "title": "Open Science team schema",
+    "description": "Schema for validating team member json used in the open science section of data.scilifelab.se",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "name",
+        "title",
+        "image"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the team member."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Title of the team member."
+        },
+        "image": {
+          "type": "string",
+          "description": "Path to a image of the team member.",
+          "pattern": "^\\/img\\/open_science\\/team_photos\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+        }
+      },
+      "additionalProperties": false
+    }
+}
