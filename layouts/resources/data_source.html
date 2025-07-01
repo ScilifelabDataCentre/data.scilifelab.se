@@ -7,30 +7,29 @@
 {{ $r_stype := slice }}
 {{ $r_sddls := slice }}
 {{ $r_sdata := slice }}
-{{ $r_smain := slice }}
-{{ range sort .Site.Data.data_sources "name" }}
-      {{ $r_slist = $r_slist | append . }}
-      {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
-      {{ $r_sddls = $r_sddls | append (apply .ddls "lower" ".") }}
-      {{ $r_sdata = $r_sdata | append (apply .data "lower" ".") }}
-      {{ $r_smain = $r_smain | append (apply (split .maintained_by ", ") "lower" ".") }}
+
+{{/* Read data sources JSON file */}}
+{{ range .Site.Data.data_sources }}
+  {{ $r_slist = $r_slist | append . }}
+  {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
+  {{ $r_sddls = $r_sddls | append (apply .ddls "lower" ".") }}
+  {{ $r_sdata = $r_sdata | append (apply .data "lower" ".") }}
 {{ end }}
+
+{{/* Read services JSON file */}}
+{{ range where .Site.Data.services "data_source_type" "!=" nil }}
+  {{ $r_slist = $r_slist | append . }}
+  {{ $r_stype = $r_stype | append (apply .data_source_type "lower" ".") }}
+{{ end }}
+
+{{/* Sort and remove duplicates */}}
+{{ $r_slist = sort $r_slist "name" }}
 {{ $r_stype = $r_stype | uniq }}
 {{ $r_sddls = $r_sddls | uniq }}
 {{ $r_sdata = $r_sdata | uniq }}
-{{ $r_smain = $r_smain | uniq }}
-{{ $data_sources := dict "researchers" (dict "slist" $r_slist "stype" $r_stype "sddls" $r_sddls "sdata" $r_sdata "smain" $r_smain) }}
 
 <!-- Repository content -->
-<div class="data_sources-content">
-  {{ $targets := slice "researchers"}}
-  {{ range $target := $targets }}
-  {{ $target_slist := index (index $data_sources $target) "slist" }}
-  {{ $target_stype := index (index $data_sources $target) "stype" }}
-  {{ $target_sddls := index (index $data_sources $target) "sddls" }}
-  {{ $target_sdata := index (index $data_sources $target) "sdata" }}
-  {{ $target_smain := index (index $data_sources $target) "smain" }}
-  
+<div class="data_sources-content">  
   <div class="row">
     <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
       <div class="bg-light" style="position: sticky; top: 15px;">
@@ -47,7 +46,7 @@
             <div id="collapseFilters" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFilters">
               <div class="accordion-body">
                 <div class="input-group mb-3 mt-0">
-                  <input type="text" id="Search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
+                  <input type="text" id="Search" class="form-control" placeholder="Name/Keywords">
                   <label class="form-control-label" for="Search" aria-labelledby="Search"></label>
                 </div>
                 <div class="accordion" id="innerAccordion">
@@ -59,7 +58,7 @@
                     </h2>
                     <div id="collapseResourceType" class="accordion-collapse collapse show" aria-labelledby="headingResourceType">
                       <div class="accordion-body">
-                        {{ range sort $target_stype }}
+                        {{ range sort $r_stype }}
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ . | urlize }}">
                           <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
@@ -77,7 +76,7 @@
                     </h2>
                     <div id="collapseDataType" class="accordion-collapse collapse" aria-labelledby="headingDataType">
                       <div class="accordion-body">
-                        {{ range sort $target_sdata }}
+                        {{ range sort $r_sdata }}
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="{{ . }}" name="data" value="{{ . | urlize }}">
                           <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
@@ -95,7 +94,7 @@
                     </h2>
                     <div id="collapseScientificArea" class="accordion-collapse collapse" aria-labelledby="headingScientificArea">
                       <div class="accordion-body">
-                        {{ range sort $target_sddls }}
+                        {{ range sort $r_sddls }}
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="{{ . }}" name="ddls" value="{{ . | urlize }}">
                           <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
@@ -112,9 +111,10 @@
       </div>
     </div>
     <div class="col-lg">
-      <div id="{{ $target }}_services" class="row g-3 mb-5">
-        {{ range $target_slist }}
-        <div class="col-md-6 col-lg-4 service" data-stype="{{ delimit (apply .type "urlize" ".") " " }}" 
+      <div id="services" class="row g-3 mb-5">
+        {{ range $r_slist }}
+        {{ $type := cond (isset . "data_source_type") .data_source_type .type }}
+        <div class="col-md-6 col-lg-4 service" data-stype="{{ delimit (apply $type "urlize" ".") " " }}" 
             data-sddls="{{ delimit (apply .ddls "urlize" ".") ":" }}"
             {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}
             data-sdata="{{ delimit (apply .data "urlize" ".") ":" }}"
@@ -131,8 +131,8 @@
             <div class="p-2">
               {{ .description }}
             </div>
-            <div class="px-2">
-              <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+            <div class="px-2 pb-2">
+              <b>Type:</b> {{ delimit (apply $type "strings.FirstUpper" ".") ", " }}
             </div>
           </div>
         </div>
@@ -143,8 +143,6 @@
       </div>
     </div>
   </div>
-
-  {{ end }}
 </div>
 
 <script>

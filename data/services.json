@@ -7,6 +7,7 @@
       "Portal",
       "Tool"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "Precision Medicine Portal",
       "Precision Medicine",
@@ -108,6 +109,7 @@
     "type": [
       "database"
     ],
+    "data_source_type": ["Repository"],
     "search_tags": [
       "AI4Life BioImage Model Zoo", "BioImage Analysis", "AI Models", "Model Zoo", "Open Science", "Data-Driven Life Sciences", "DDLS", "modelling", "Artificial intelligence"
     ],
@@ -127,6 +129,7 @@
       "portal",
       "helpdesk"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "Pathogens portal",
       "infectious disease data",
@@ -209,6 +212,7 @@
       "database",
       "tool"
     ],
+    "data_source_type": ["Repository"],
     "search_tags": [
       "Data submission",
       "Data repository",
@@ -238,6 +242,7 @@
       "Portal",
       "Tool"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "Metabolic Atlas",
@@ -340,6 +345,7 @@
       "Portal",
       "Tool"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "HPA",
@@ -399,6 +405,7 @@
       "Database",
       "Helpdesk"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "AIDA Data Hub",
@@ -432,6 +439,7 @@
       "Database",
       "Tool"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "Human Developmental Cell Atlas",
@@ -488,6 +496,7 @@
       "tool",
       "portal"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "SubCellBarCode",
       "Subcellular localisations",
@@ -513,6 +522,7 @@
     "type": [
       "database"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "SweFreq",
       "Genomics",
@@ -1100,6 +1110,7 @@
     "type": [
       "database"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "COViMAPP",
       "COVID-19",
@@ -1146,6 +1157,7 @@
     "type": [
       "database"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "OrthoDisease",
       "ortholog",
@@ -1205,6 +1217,7 @@
     "type": [
       "database"
     ],
+    "data_source_type": ["Data source"],
     "search_tags": [
       "InParanoiDB",
       "ortholog groups",
