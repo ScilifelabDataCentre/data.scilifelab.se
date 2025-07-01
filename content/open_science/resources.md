@@ -24,30 +24,36 @@ Here, you’ll find a collection of resources designed to help you integrate
 
 #### SciLifeLab Open Science Onboarding
 
-Here you can find our [Open Science Onboarding](https://doi.org/10.17044/scilifelab.29087126) which will guide you through the essential concepts to get you started on
-your open science journey.
+Here you can find our [Open Science Onboarding](https://doi.org/10.17044/scilifelab.29087126) which will guide you
+through the essential concepts to get you started on your open science journey.
 
 #### Open Science Checklists
 
 The following checklists are available to provide practical guidance on steps you can take to incorporate open science
 and FAIR into your research workflows:
 
-- Open Access Checklist ([Markdown](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_access_checklist.md), [PDF](https://doi.org/10.17044/scilifelab.29086706.v1))
+- Open Access Checklist
+  ([Markdown](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_access_checklist.md),
+  [PDF](https://doi.org/10.17044/scilifelab.29086706.v1))
 - Open Data Guidelines ([RDM Guidelines](https://data-guidelines.scilifelab.se/))
-- Open Science Software Checklist ([Markdown](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_software_checklist.md), [PDF](https://doi.org/10.17044/scilifelab.29086775.v1))
+- Open Science Software Checklist
+  ([Markdown](https://github.com/ScilifelabDataCentre/open-science-checklists/blob/develop/open_software_checklist.md),
+  [PDF](https://doi.org/10.17044/scilifelab.29086775.v1))
 - [FAIR-Aware Self Assessment Tool](https://fairaware.dans.knaw.nl/)
 
 #### CoARA Action Plan for SciLifeLab
 
-{{< image_float 
-  image="/img/open_science/resources/coara.png" 
+{{< image_float
+  image="/img/open_science/resources/coara.png"
   alt="COARA logo"
 >}}
 
-On 23 February 2024, SciLifeLab announced that it had joined [CoARA](https://coara.eu/) (Coalition for Advancing Research
+On 23 February 2024, SciLifeLab announced that it had joined [CoARA](https://coara.eu/)
+(Coalition for Advancing Research
 Assessment) as a signatory member. This reaffirmed SciLifeLab’s commitment to advancing research assessment and open
 science practices.
-You can review SciLifeLab’s CoARA Action Plan [here](https://docs.google.com/document/d/1KAKOK6HoXsixQA5FaPegDIw1w3uI6OvlHgT2YR1m0pg/edit?tab=t.0).
+You can review SciLifeLab’s CoARA Action Plan in this
+[Google Docs document](https://docs.google.com/document/d/1KAKOK6HoXsixQA5FaPegDIw1w3uI6OvlHgT2YR1m0pg/edit?tab=t.0).
 Note, [DORA](https://sfdora.org) (San Francisco Declaration on Research Assessment) laid
 the foundation for research assessment reform by advocating for qualitative evaluation over journal-based metrics,
 a principle that CoARA builds upon to drive systemic change through collective institutional commitment.
@@ -59,7 +65,8 @@ a principle that CoARA builds upon to drive systemic change through collective i
 The [SciLifeLab Data Policy](https://www.scilifelab.se/wp-content/uploads/2023/10/Data-Policy.pdf) outlines SciLifeLab's
 commitment to Open Science, research transparency, and the FAIR
 principles, ensuring that data from publicly funded research is as open as possible, while adhering to legal and
-ethical requirements. It sets expectations for SciLifeLab-affiliated programs, infrastructure, and researchers to promote
+ethical requirements.
+It sets expectations for SciLifeLab-affiliated programs, infrastructure, and researchers to promote
 data sharing, reproducibility, and accessibility, while providing the necessary resources, support, and governance to
 integrate these principles into the research we produce.
 
@@ -67,13 +74,14 @@ integrate these principles into the research we produce.
 
 The [SciLifeLab Training Hub](https://www.scilifelab.se/training/) offers a range of educational opportunities and
 training infrastructure, to advance Open Science and FAIR learning, ensuring Sweden’s life science community has open
-access to world-class knowledge and expertise. View [SciLifeLab Training Hub’s website](https://www.scilifelab.se/training/)
+access to world-class knowledge and expertise. View
+[SciLifeLab Training Hub’s website](https://www.scilifelab.se/training/)
 to learn more about training tools, upcoming courses and ways in which the Training Hub team can support you.
 
 #### SciLifeLab RDM Guidelines
 
-{{< image_float 
-  image="/img/open_science/resources/rdm_guidelines.png" 
+{{< image_float
+  image="/img/open_science/resources/rdm_guidelines.png"
   alt="RDM Guidelines logo"
 >}}
 
@@ -86,7 +94,7 @@ offers guidance on key topics, including data management plans, metadata, versio
 
 ## External Resources {.highlighted-header #external-resources}
 
-{{< logo_row 
+{{< logo_row
 "/img/open_science/resources/fair_aware.png|FAIR Aware logo"
 "/img/open_science/resources/eu_commission.png|EU Commission logo"
 "/img/open_science/resources/vetenskapsrådet.png|Vetenskapsrådet logo"
@@ -107,7 +115,7 @@ The [National Library of Sweden](https://www.kb.se/) (Kungliga Biblioteket) has 
 [National Guidelines on Open Science](https://urn.kb.se/resolve?urn=urn:nbn:se:kb:publ-738), providing material for
 Swedish institutions and research funders in aligning policies, infrastructure, and coordination efforts with
 international recommendations. You can read The National Guidelines for Open Science
-[here](https://urn.kb.se/resolve?urn=urn:nbn:se:kb:publ-738).
+in the [official PDF document](https://urn.kb.se/resolve?urn=urn:nbn:se:kb:publ-738).
 
 #### The EU Open Science Policy
 
@@ -116,7 +124,9 @@ promotes openness, collaboration, and transparency in research by removing barri
 enhancing scientific impact. This is achieved by advocating for practices like open access, reproducibility, and citizen
 engagement, and supporting these efforts with initiatives and infrastructures such as the
 [European Open Science Cloud (EOSC)](https://eosc.eu/eosc-about/) and [OpenAIRE](https://www.openaire.eu/).
-EOSC provides a federated infrastructure for sharing and accessing research data across Europe, while OpenAIRE supports open science by enabling open access to publications, linking research outputs, and facilitating compliance with EU open science policies.
+EOSC provides a federated infrastructure for sharing and accessing research data across Europe, while OpenAIRE supports
+open science by enabling open access to publications, linking research outputs,
+and facilitating compliance with EU open science policies.
 
 #### The Swedish Research Council: Vision and Guiding Principles
 
@@ -128,7 +138,7 @@ coordinated efforts among researchers, institutions, and funders to integrate op
 and enhance usability. This is achieved through standardised frameworks, infrastructure, and FAIR data management
 planning, while ensuring compliance with legal and ethical considerations. Further details on Sweden’s approach to open
 science, including policies on open access to publications, research data, and broader open science initiatives, can be
-found on the 
+found on the
 [Open access to research data - Swedish Research Council](https://www.vr.se/english/mandates/open-science/open-access-to-research-data.html)
 page.
 This platform serves as a resource for national recommendations and guidelines, that
@@ -138,8 +148,8 @@ support Sweden’s transition towards open and FAIR research practices, as well 
 
 [UNESCO](https://www.unesco.org/en) developed the [Open Science Toolkit](https://www.unesco.org/en/open-science/toolkit?hub=686),
 a collection of guides, policies, and factsheets designed to support the implementation of the
-[UNESCO Recommendation on Open Science](https://www.unesco.org/en/open-science/about?hub=686). You can review the UNESCO
-Open Science Toolkit [here](https://www.unesco.org/en/open-science/toolkit?hub=686).
+[UNESCO Recommendation on Open Science](https://www.unesco.org/en/open-science/about?hub=686).
+You can find more information on the [UNESCO Open Science Toolkit webpage](https://www.unesco.org/en/open-science/toolkit?hub=686).
 
 #### SUHF Roadmap for Open Science with Action Proposals for Implementation
 

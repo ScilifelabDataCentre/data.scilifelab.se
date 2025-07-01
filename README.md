@@ -6,7 +6,7 @@ This is the source code for the SciLifeLab Data Platform website:
 [https://data.scilifelab.se/](https://data.scilifelab.se/).
 
 - [Introduction](#introduction)
-- [Development](#development)
+- [Development and contributions](#development-and-contributions)
   - [Step 1: Access the code](#step-1-access-the-code)
   - [Step 2a: Edit the files (online)](#step-2a-edit-the-files-online)
   - [Step 2b: Edit the files (locally)](#step-2b-edit-the-files-locally)
@@ -29,7 +29,8 @@ Click on 'Cite this repository' near the top right of this repository to see how
 
 ## Development and contributions
 
-All website content is written in [Markdown](https://guides.github.com/features/mastering-markdown/), YAML, or JSON which are all beginner-friendly formats so it should be relatively easy to contribute. Please visit the [CONTRIBUTING page](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md) for instructions on how to contribute to specific sections of the website.
+All website content is written in [Markdown](https://guides.github.com/features/mastering-markdown/), YAML, or JSON which are all beginner-friendly formats so it should be relatively easy to contribute.
+Please visit the [CONTRIBUTING page](https://github.com/ScilifelabDataCentre/data.scilifelab.se/blob/develop/CONTRIBUTING.md) for general guidelines and specific instructions on how to contribute to different sections of the Platform.
 
 ### Step 1: Access the code
 
@@ -80,22 +81,51 @@ Then you can fetch changes at any time from this remote:
 git pull upstream develop
 ```
 
-#### Configure Commit Message Template
-
-We follow a structured commit message format defined in [`.github/.gitmessage.txt`](.github/.gitmessage.txt). To use this template:
+To keep commit messages consistent, contributors are advised to configure `git` with the commit message template provided.
+This can be achieved by running the following command once in the repository's directory:
 
 ```bash
-# you just need to run this command once after cloning repository
 git config --local commit.template .github/.gitmessage.txt
 ```
 
-This will pre-fill your commit message editor with our lightweight conventional commit template whenever you run `git commit`.
-
-When you have finished editing, commit and push to your fork:
-
-```bash
+When you have finished editing, commit your changes:
+``` bash
 git add .
 git commit  # This will open your editor with the template
+```
+
+The commit message will now be pre-filled with the following template:
+
+```text
+<type>(scope): <short description>
+```
+
+Replace the `<type>` and `(scope)` placeholders with the best matching entry in the following table:
+
+| Type    | Description                                  |
+|---------|----------------------------------------------|
+| feat    | A new feature                                |
+| fix     | A bug fix or improvement of existing feature |
+| content | New content such as markdown pages           |
+| docs    | Documentation-only changes                   |
+| test    | Adding or modifying tests                    |
+| chore   | Maintenance, tooling, dependencies update    |
+
+
+Scope is optional but nice to have if deemed relevant.
+
+Examples:
+
+``` text
+fix(visualization): correct/add genome visualization
+feat(dashboard): add SARS-Cov2 dashboard
+style(css): reformat layout classes
+```
+
+For the short description, write as if completing "*If accepted, my changes are going to...*".
+
+And finally push to your fork:
+```bash
 git push
 ```
 
@@ -141,6 +171,69 @@ Press Ctrl+C to stop
 
 Use the URL printed at the bottom of this message (here, it's `http://localhost:1313/`) to view the site.
 Every time you save a file, the page will automatically refresh in the browser.
+
+#### Configure Markdown Linting Locally (Open Science Content [content/open_science/](content/open_science/))
+
+To ensure consistent markdown formatting across the website, especially for **Open Science content** ([content/open_science/](content/open_science/)), we use `markdownlint-cli2`. The linter uses our custom configuration file ([.github/.markdownlint-cli2.yaml](.github/.markdownlint-cli2.yaml)) which sets specific rules for our markdown files. Follow these steps to run the linter locally before pushing your changes:
+
+> **Important**: To maintain consistency with our GitHub Actions workflow, please ensure you install the same Node.js version as specified in our [markdownlint workflow](.github/workflows/markdownlint.yaml). This ensures your local environment matches our CI/CD environment.
+
+1. **Install Node.js and npm**:
+Following installations instructions are for Node.js version 20 (you should refer to [markdownlint workflow](.github/workflows/markdownlint.yaml) for current nodejs version)
+   <details>
+   <summary><strong>For macOS</strong> (using Homebrew)</summary>
+
+   ```bash
+   # Install Homebrew if you don't have it
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
+   # Install Node.js (this will include npm)
+   # refer .github/workflows/markdownlint.yaml for exact node version
+   
+   brew install node@20
+   
+   # Add Node.js to your PATH (if not already done)
+   echo 'export PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
+   </details>
+
+   <details>
+   <summary><strong>For Windows</strong></summary>
+
+   - Download Nodejs LTS (refer [markdownlint workflow](.github/workflows/markdownlint.yaml) for exact nodejs version) installer from [Nodejs official website](https://nodejs.org/)
+   - Run the installer and follow the installation wizard
+   - Restart your terminal after installation
+   </details>
+
+   <details>
+   <summary><strong>For Linux</strong> (Ubuntu/Debian)</summary>
+
+   ```bash
+   # Using NodeSource repository
+   # refer .github/workflows/markdownlint.yaml for exact nodejs version
+   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+   sudo apt-get install -y nodejs
+   ```
+   </details>
+
+2. **Verify Installation**:
+   ```bash
+   node --version  # Should show v20.x.x
+   npm --version   # Should show the npm version
+   ```
+
+3. **Install markdownlint-cli2**:
+   ```bash
+   npm install -g markdownlint-cli2
+   ```
+
+4. **Run the linter**:
+   ```bash
+   markdownlint-cli2 "content/open_science/**/*.md" --config .github/.markdownlint-cli2.yaml
+   ```
+
+Before committing your changes, run the linter locally to catch and fix any formatting issues. This helps maintain consistent markdown style across the project and prevents CI failures. The same checks will be run automatically in our GitHub Actions workflow when you create a pull request. For detailed information about the linting rules, refer to the [markdownlint documentation](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/Rules.md).
 
 #### Docker
 
