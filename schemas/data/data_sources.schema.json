@@ -81,6 +81,14 @@
           "minItems": 1,
           "uniqueItems": true,
           "description": "Types of data that exists in the data source."
+        },
+        "disease_type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "description": "OPTIONAL: Disease type relevant to the data source. Used by precision medicine portal."
         }
       },
       "additionalProperties": false
