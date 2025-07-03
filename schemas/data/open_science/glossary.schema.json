@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/open_science/glossary.schema.json",
+    "title": "Open Science glossary schema",
+    "description": "Schema for validating glossary objects used in the open science section of data.scilifelab.se",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "term",
+        "definition",
+        "source",
+        "source_name"
+      ],
+      "properties": {
+        "term": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Title/name of the glossary."
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short description about the glossary."
+        },
+        "source": {
+          "type": "string",
+          "description": "URL linking to the glossary.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "source_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short title to be used for hyperlink text of the glossary."
+        },
+        "image": {
+          "type": "string",
+          "description": "Path to a image for the glossary.",
+          "pattern": "^\\/img\\/open_science\\/glossary\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+        },
+        "image_alt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Alt text for the provided image of the glossary."
+        }
+      },
+      "additionalProperties": false
+    }
+}

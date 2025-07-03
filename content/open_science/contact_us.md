@@ -3,7 +3,7 @@ title: "Contact us"
 menu:
   open_science:
     name: "Contact us"
-    weight: 6
+    weight: 7
 ---
 
 

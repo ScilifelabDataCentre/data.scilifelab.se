@@ -12,6 +12,7 @@ menu:
     name: Services
     identifier: services
     weight: 10
+back_to_top_button: true
 ---
 
 This page details the services available for **researchers** and **data-producing facilities**. We define services as tools, databases, and support functions (e.g. hosting services) useful in data-driven life science. Use the search function to identify services that may be relevant for you.

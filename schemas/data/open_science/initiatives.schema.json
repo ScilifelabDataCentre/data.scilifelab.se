@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/open_science/initiatives.schema.json",
+    "title": "Open Science initiatives schema",
+    "description": "Schema for validating initiatives objects used in the open science section of data.scilifelab.se",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "title",
+        "description",
+        "url"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Title of the initiative."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short description about the initiative."
+        },
+        "url": {
+          "type": "string",
+          "description": "URL linking to the initiative.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        }
+      },
+      "additionalProperties": false
+    }
+}
