@@ -33,14 +33,17 @@
             ]
           },
           "minItems": 1,
+          "uniqueItems": true,
           "description": "One or more categories describing the type of resource."
         },
         "search_tags": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "minItems": 1,
+          "uniqueItems": true,
           "description": "Search keywords associated with the resource."
         },
         "name": {

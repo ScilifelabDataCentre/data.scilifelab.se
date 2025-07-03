@@ -1,0 +1,139 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/services.schema.json",
+    "title": "Services Schema",
+    "description": "Schema for validating service objects used in the data.scilifelab.se",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "target",
+        "type",
+        "search_tags",
+        "name",
+        "description",
+        "url",
+        "maintained_by"
+      ],
+      "properties": {
+        "target": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "researchers",
+              "facilities"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Target audience for the service."
+        },
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Portal",
+              "Tool",
+              "Helpdesk",
+              "Database",
+              "portal",
+              "helpdesk",
+              "tool",
+              "database",
+              "Storage resources",
+              "Compute resources",
+              "Workflow"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "One or more categories describing the type of service."
+        },
+        "data_source_type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Data source",
+              "Repository"
+            ]
+          },
+          "uniqueItems": true,
+          "description": "OPTIONAL: Type of data source associated with the service."
+        },
+        "search_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Search keywords associated with the service."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Title or name of the service."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short description about the service."
+        },
+        "thumbnail": {
+          "type": "string",
+          "description": "OPTIONAL: Path to a thumbnail image for the service.",
+          "pattern": "^\\/img\\/service_thumbnails\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+        },
+        "thumbnail_border": {
+          "type": "boolean",
+          "description": "Optional, whether to display a border around the thumbnail image.",
+          "default": false
+        },
+        "url": {
+          "type": "string",
+          "description": "URL linking to the service.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "maintained_by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the individual or organization that maintains the service."
+        },
+        "maintained_by_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "OPTIONAL: Web address of the maintaining organization or individual."
+        },
+        "support_email": {
+          "type": "string",
+          "format": "email",
+          "description": "OPTIONAL: Email address to contact for support regarding the service."
+        },
+        "support_website": {
+          "type": "string",
+          "format": "uri",
+          "description": "OPTIONAL: Website URL for service support or documentation."
+        },
+        "support_github": {
+          "type": "string",
+          "format": "uri",
+          "description": "OPTIONAL: GitHub repository URL for the service."
+        },
+        "support_status": {
+          "type": "string",
+          "format": "uri",
+          "description": "OPTIONAL: Status page URL for the service."
+        },
+        "support_slack": {
+          "type": "string",
+          "format": "uri",
+          "description": "OPTIONAL: Slack channel or workspace URL for service support."
+        }
+      },
+      "additionalProperties": false
+    }
+}
