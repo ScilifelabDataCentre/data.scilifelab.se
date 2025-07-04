@@ -20,7 +20,10 @@
           "type": "array",
           "items": {
             "type": "string",
-            "minLength": 1
+            "enum": [
+              "researchers",
+              "facilities"
+            ]
           },
           "minItems": 1,
           "uniqueItems": true,
@@ -40,10 +43,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "enum": [
-              "Data source",
-              "Repository"
-            ]
+            "minLength": 1
           },
           "uniqueItems": true,
           "description": "OPTIONAL: Type of data source associated with the service."
