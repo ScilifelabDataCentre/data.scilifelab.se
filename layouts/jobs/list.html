@@ -14,8 +14,7 @@
   <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form action="https://forms.dc.scilifelab.se/api/v1/form/M5GfePAbHxkPdIph/incoming" class="needs-validation"
-          novalidate method="POST" accept-charset="utf-8">
+        <form class="needs-validation" novalidate accept-charset="utf-8" id="jobs-form">
           <div class="modal-header">
             <h5 class="modal-title" id="suggestionModalLabel">Jobs, PhD positions, Postdoc positions or master's
               projects</h5>
@@ -89,13 +88,48 @@
               <div class="form-text">Enter your email address if you agree to be contacted regarding this submission
                 (your email will not be displayed in the listing).</div>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
+            <!-- Additional fields -->
+            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+              <label for="website" class="form-label">Website:</label>
+              <input type="text" class="form-control" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            
+            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+              <label for="phone_number" class="form-label">Phone:</label>
+              <input type="text" class="form-control" id="phone_number" name="phone_number" tabindex="-1" autocomplete="off">
+            </div>
+            
+            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+              <label for="company" class="form-label">Company:</label>
+              <input type="text" class="form-control" id="company" name="company" tabindex="-1" autocomplete="off">
+            </div>
+            
+            <!-- Session tracking for anti-spam -->
+            <input type="hidden" name="session_id" id="session_id" value="">
+            <input type="hidden" name="session_duration" id="session_duration" value="">
+            
+            <!-- Form metadata -->
             <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
             <input type="hidden" name="origin" value="call_job_suggestion" aria-label="form-name" />
+            
+            <!-- reCAPTCHA - commented out to test anti-spam -->
+            <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-aqua">Submit</button>
+            <button type="button" class="btn btn-aqua" id="jobs-submit-btn" onclick="submitJobsForm()">Submit</button>
+          </div>
+          
+          <!-- Success message -->
+          <div class="alert alert-success mt-3" id="jobs-success-message" style="display: none;">
+            <h4 class="alert-heading">Thank you!</h4>
+            <p id="jobs-success-message-text">Your job listing suggestion has been submitted successfully. We'll review it and get back to you soon.</p>
+          </div>
+          
+          <!-- Error message -->
+          <div class="alert alert-danger mt-3" id="jobs-error-message" style="display: none;">
+            <h4 class="alert-heading">Submission failed</h4>
+            <p id="jobs-error-message-text">There was an issue with your submission. Please try again.</p>
           </div>
         </form>
       </div>
@@ -108,6 +142,159 @@
 </section>
 
 <script>
+  // Initialize session tracking for anti-spam
+  var sessionStartTime = Date.now();
+  var sessionId = 'jobs_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+  
+  // Set session data
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById('session_id').value = sessionId;
+    document.getElementById('originUrl').value = location.href;
+  });
+  
+  // Form validation functions
+  function validateJobsForm() {
+    var form = document.getElementById('jobs-form');
+    var isValid = true;
+    
+    // Check required fields
+    var requiredFields = ['job_title', 'job_type', 'job_deadline', 'employer', 'job_url'];
+    
+    requiredFields.forEach(function(fieldName) {
+      var field = document.getElementById(fieldName);
+      if (!field.value.trim()) {
+        isValid = false;
+        field.classList.add('is-invalid');
+      } else {
+        field.classList.remove('is-invalid');
+      }
+    });
+    
+    // Validate URL
+    var urlField = document.getElementById('job_url');
+    if (urlField.value.trim() && !urlField.value.match(/^https?:\/\/.+/)) {
+      isValid = false;
+      urlField.classList.add('is-invalid');
+    } else {
+      urlField.classList.remove('is-invalid');
+    }
+    
+    // Validate email if provided
+    var emailField = document.getElementById('submitter_email');
+    if (emailField.value.trim() && !emailField.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      isValid = false;
+      emailField.classList.add('is-invalid');
+    } else {
+      emailField.classList.remove('is-invalid');
+    }
+    
+    return isValid;
+  }
+  
+  function validateJobsSubmission() {
+    var sessionDuration = (Date.now() - sessionStartTime) / 1000;
+    
+    // Check timing (5 seconds minimum, 1 hour maximum)
+    if (sessionDuration < 5 || sessionDuration > 3600) {
+      return false;
+    }
+    
+    // Check honeypot fields
+    var honeypotFields = ['website', 'phone_number', 'company'];
+    for (var i = 0; i < honeypotFields.length; i++) {
+      if (document.getElementById(honeypotFields[i]).value.trim() !== '') {
+        return false;
+      }
+    }
+    
+    return true;
+  }
+  
+  function showJobsSuccess(message) {
+    document.getElementById('jobs-success-message-text').textContent = message;
+    document.getElementById('jobs-success-message').style.display = 'block';
+    document.getElementById('jobs-error-message').style.display = 'none';
+    
+    // Reset form
+    document.getElementById('jobs-form').reset();
+    
+    // Hide modal after a delay
+    setTimeout(function() {
+      $('#suggestionModal').modal('hide');
+    }, 2000);
+  }
+  
+  function showJobsError(message) {
+    document.getElementById('jobs-error-message-text').textContent = message;
+    document.getElementById('jobs-error-message').style.display = 'block';
+    document.getElementById('jobs-success-message').style.display = 'none';
+  }
+  
+  function submitJobsForm() {
+    // Validate form
+    if (!validateJobsForm()) {
+      showJobsError('Please fill out all required fields correctly.');
+      return;
+    }
+    
+      // Validate submission timing and honeypots
+  if (!validateJobsSubmission()) {
+    showJobsError('Form submission failed validation. Please try again.');
+    return;
+  }
+  
+  // reCAPTCHA validation - commented out to test anti-spam
+  /*
+  var recaptcha = $("#g-recaptcha-response").val();
+  if (recaptcha === "") {
+    showJobsError("Please tick 'I'm not a robot' above the 'Submit' button.");
+    return;
+  }
+  */
+  
+  // Set session duration
+    document.getElementById('session_duration').value = (Date.now() - sessionStartTime) / 1000;
+    
+    // Show loading state
+    var submitBtn = document.getElementById('jobs-submit-btn');
+    var originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
+    
+    // Collect form data
+    var formData = new FormData(document.getElementById('jobs-form'));
+    
+    // reCAPTCHA data - commented out to test anti-spam
+    /*
+    var recaptchaResponse = $("#g-recaptcha-response").val();
+    if (recaptchaResponse) {
+      formData.append('g-recaptcha-response', recaptchaResponse);
+    }
+    */
+    
+    // Submit to Google Apps Script
+    fetch('https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        showJobsSuccess(data.message);
+      } else {
+        showJobsError(data.message);
+      }
+    })
+    .catch(error => {
+      showJobsError('Network error. Please check your connection and try again.');
+    })
+    .finally(() => {
+      // Reset button
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    });
+  }
+  
   // Functions need to be run when the DOM is ready
   document.addEventListener("DOMContentLoaded", function (event) {
     
@@ -357,7 +544,16 @@
     // Job suggestion form relted function
     // set origin url in the form
     document.getElementById('originUrl').value = location.href;
+    
+    // reCAPTCHA aria-label setup - commented out to test anti-spam
+    /*
+    window.addEventListener("load", function () {
+      $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
+    });
+    */
 
+    // reCAPTCHA validation - commented out to test anti-spam
+    /*
     // Validate the form by checking mandatory fields and recaptcha
     var form = document.querySelector('.needs-validation');
     form.addEventListener('submit', function (event) {
@@ -378,6 +574,7 @@
     window.addEventListener("load", function () {
       $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
     });
+    */
     
   }); // Document "DOMContentLoaded" trigger ends here
   
