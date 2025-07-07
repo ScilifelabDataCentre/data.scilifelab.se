@@ -14,8 +14,7 @@
   <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form action="https://forms.dc.scilifelab.se/api/v1/form/B6_setlwEffu0PMR/incoming" class="needs-validation"
-          novalidate method="POST" accept-charset="utf-8">
+        <form class="needs-validation" novalidate accept-charset="utf-8" id="events-form">
           <div class="modal-header">
             <h5 class="modal-title" id="suggestionModalLabel">Events & training suggestion</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -38,7 +37,7 @@
               <label for="event_type" class="form-label fw-bold">Event type:*</label>
               <select class="form-select" id="event_type" name="event_type" required>
                 <option hidden disabled selected value> </option>
-                <option value="conferece">Conference</option>
+                <option value="conference">Conference</option>
                 <option value="course">Course</option>
                 <option value="seminar">Seminar</option>
                 <option value="webinar">Webinar</option>
@@ -104,13 +103,48 @@
               <div class="form-text">Enter your email address if you agree to be contacted regarding this suggestion
                 (your email will not be displayed in the event information).</div>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
+            <!-- Additional fields -->
+            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+              <label for="website" class="form-label">Website:</label>
+              <input type="text" class="form-control" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            
+            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+              <label for="phone_number" class="form-label">Phone:</label>
+              <input type="text" class="form-control" id="phone_number" name="phone_number" tabindex="-1" autocomplete="off">
+            </div>
+            
+            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+              <label for="company" class="form-label">Company:</label>
+              <input type="text" class="form-control" id="company" name="company" tabindex="-1" autocomplete="off">
+            </div>
+            
+            <!-- Session tracking for anti-spam -->
+            <input type="hidden" name="session_id" id="session_id" value="">
+            <input type="hidden" name="session_duration" id="session_duration" value="">
+            
+            <!-- Form metadata -->
             <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
             <input type="hidden" name="origin" value="event_training_suggestion" aria-label="form-name" />
+            
+            <!-- Commented out reCAPTCHA - can be re-enabled for production if needed -->
+            <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-aqua">Submit</button>
+            <button type="button" class="btn btn-aqua" id="events-submit-btn" onclick="submitEventsForm()">Submit</button>
+          </div>
+          
+          <!-- Success message -->
+          <div class="alert alert-success mt-3" id="events-success-message" style="display: none;">
+            <h4 class="alert-heading">Thank you!</h4>
+            <p id="events-success-message-text">Your event suggestion has been submitted successfully. We'll review it and get back to you soon.</p>
+          </div>
+          
+          <!-- Error message -->
+          <div class="alert alert-danger mt-3" id="events-error-message" style="display: none;">
+            <h4 class="alert-heading">Submission failed</h4>
+            <p id="events-error-message-text">There was an issue with your submission. Please try again.</p>
           </div>
         </form>
       </div>
@@ -123,7 +157,163 @@
 </section>
 
 <script>
- // Functions need to be run when the DOM is ready
+  // Initialise session tracking for anti-spam
+  var sessionStartTime = Date.now();
+  var sessionId = 'events_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+  
+  // Set session data
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById('session_id').value = sessionId;
+    document.getElementById('originUrl').value = location.href;
+  });
+  
+  // Form validation functions
+  function validateEventsForm() {
+    var form = document.getElementById('events-form');
+    var isValid = true;
+    
+    // Check required fields
+    var requiredFields = ['event_title', 'event_type', 'event_start_date', 'event_info_url'];
+    
+    requiredFields.forEach(function(fieldName) {
+      var field = document.getElementById(fieldName);
+      if (!field.value.trim()) {
+        isValid = false;
+        field.classList.add('is-invalid');
+      } else {
+        field.classList.remove('is-invalid');
+      }
+    });
+    
+    // Validate URLs
+    var urlFields = ['event_info_url', 'event_registration_url'];
+    urlFields.forEach(function(fieldName) {
+      var field = document.getElementById(fieldName);
+      if (field.value.trim() && !field.value.match(/^https?:\/\/.+/)) {
+        isValid = false;
+        field.classList.add('is-invalid');
+      } else {
+        field.classList.remove('is-invalid');
+      }
+    });
+    
+    // Validate email
+    var emailField = document.getElementById('submitter_email');
+    if (emailField.value.trim() && !emailField.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      isValid = false;
+      emailField.classList.add('is-invalid');
+    } else {
+      emailField.classList.remove('is-invalid');
+    }
+    
+    return isValid;
+  }
+  
+  function validateEventsSubmission() {
+    var sessionDuration = (Date.now() - sessionStartTime) / 1000;
+    
+    // Check timing (5 seconds minimum, 1 hour maximum)
+    if (sessionDuration < 5 || sessionDuration > 3600) {
+      return false;
+    }
+    
+    // Check honeypot fields
+    var honeypotFields = ['website', 'phone_number', 'company'];
+    for (var i = 0; i < honeypotFields.length; i++) {
+      if (document.getElementById(honeypotFields[i]).value.trim() !== '') {
+        return false;
+      }
+    }
+    
+    return true;
+  }
+  
+  function showEventsSuccess(message) {
+    document.getElementById('events-success-message-text').textContent = message;
+    document.getElementById('events-success-message').style.display = 'block';
+    document.getElementById('events-error-message').style.display = 'none';
+    
+    // Reset form
+    document.getElementById('events-form').reset();
+    
+    // Hide modal after a delay
+    setTimeout(function() {
+      $('#suggestionModal').modal('hide');
+    }, 2000);
+  }
+  
+  function showEventsError(message) {
+    document.getElementById('events-error-message-text').textContent = message;
+    document.getElementById('events-error-message').style.display = 'block';
+    document.getElementById('events-success-message').style.display = 'none';
+  }
+  
+  function submitEventsForm() {
+    // Validate form
+    if (!validateEventsForm()) {
+      showEventsError('Please fill out all required fields correctly.');
+      return;
+    }
+    
+    // Validate submission timing and honeypots
+    if (!validateEventsSubmission()) {
+      showEventsError('Form submission failed validation. Please try again.');
+      return;
+    }
+    
+    // reCAPTCHA validation - commented out to test anti-spam
+    /*
+    var recaptcha = $("#g-recaptcha-response").val();
+    if (recaptcha === "") {
+      showEventsError("Please tick 'I'm not a robot' above the 'Submit' button.");
+      return;
+    }
+    */
+    
+    // Set session duration
+    document.getElementById('session_duration').value = (Date.now() - sessionStartTime) / 1000;
+    
+    // Show loading state
+    var submitBtn = document.getElementById('events-submit-btn');
+    var originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
+    
+    // Collect form data
+    var formData = new FormData(document.getElementById('events-form'));
+    
+    // reCAPTCHA data - commented out to test anti-spam
+    /*
+    var recaptchaResponse = $("#g-recaptcha-response").val();
+    if (recaptchaResponse) {
+      formData.append('g-recaptcha-response', recaptchaResponse);
+    }
+    */
+    
+    // Submit to Google Apps Script
+    fetch('https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        showEventsSuccess(data.message);
+      } else {
+        showEventsError(data.message);
+      }
+    })
+    .catch(error => {
+      showEventsError('Network error. Please check your connection and try again.');
+    })
+    .finally(() => {
+      // Reset button
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    });
+  }
+  
+  // Functions need to be run when the DOM is ready
   document.addEventListener("DOMContentLoaded", function (event) {
     // Takes a URL and calls the callback function pass the data fetched
     function getDataFromUrl(url, load_callback, loadend_callback) {
@@ -458,7 +648,7 @@
           };
           // When multiple criteria selectd it should act as AND not OR
           selected_events = all_selected_events.reduce(function (x, y) {
-            var z = new Set;
+            var s = new Set;
             x.forEach(v => y.has(v) && z.add(v));
             return z;
           });
@@ -490,6 +680,8 @@
     // set origin url in the form
     document.getElementById('originUrl').value = location.href;
 
+    // reCAPTCHA aria-label setup - commented out to test anti-spam
+    /*
     // Validate the form by checking mandatory fields and recaptcha
     var form = document.querySelector('.needs-validation');
     form.addEventListener('submit', function (event) {
@@ -510,6 +702,7 @@
     window.addEventListener("load", function () {
       $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
     });
+    */
     
   }); // Document "DOMContentLoaded" trigger ends here
 </script>
