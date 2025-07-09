@@ -18,6 +18,9 @@
     "scripts": {
       "server": [
         "hugo server"
+      ],
+      "test-schemas": [
+        "pnpm validateJson"
       ]
     }
   }
