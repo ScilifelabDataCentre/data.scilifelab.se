@@ -16,22 +16,21 @@
       "funder": {
         "type": "string",
         "minLength": 1,
-        "description": "Name of the funding organization or institution."
+        "description": "Name of the funding organisation or institution."
       },
       "logo": {
         "type": "string",
-        "description": "Path to the logo image for the funding organization.",
+        "description": "Path to the logo image for the funding organisation.",
         "pattern": "^\\/img\\/funders_logo\\/[^\\s]+\\.png$"
       },
       "url": {
         "type": "string",
-        "description": "URL linking to the funding organization's calls or application information.",
+        "description": "URL linking to the funding organisation's calls or application information.",
         "pattern": "^https:\\/\\/.+"
       },
       "alt": {
         "type": "string",
-        "minLength": 1,
-        "description": "Alt text for the logo image, typically describing the funding organization.",
+        "description": "Alt text for the logo image, typically describing the funding organisation.",
         "pattern": "^Logo for '.+'"
       }
     },
