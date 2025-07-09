@@ -3,49 +3,39 @@
   "$id": "/schemas/data/other_funding_sources.schema.json",
   "title": "Other Funding Sources Schema",
   "description": "Schema for validating other funding sources objects used on data.scilifelab.se",
-  "type": "object",
-  "required": [
-    "items"
-  ],
-  "properties": {
-    "items": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "funder",
-          "logo",
-          "url",
-          "alt"
-        ],
-        "properties": {
-          "funder": {
-            "type": "string",
-            "minLength": 1,
-            "description": "Name of the funding organization or institution."
-          },
-          "logo": {
-            "type": "string",
-            "description": "Path to the logo image for the funding organization.",
-            "pattern": "^\\/img\\/funders_logo\\/[^\\s]+\\.png$"
-          },
-          "url": {
-            "type": "string",
-            "description": "URL linking to the funding organization's calls or application information.",
-            "pattern": "^https:\\/\\/.+"
-          },
-          "alt": {
-            "type": "string",
-            "minLength": 1,
-            "description": "Alt text for the logo image, typically describing the funding organization.",
-            "pattern": "^Logo for '.+'"
-          }
-        },
-        "additionalProperties": false
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "funder",
+      "logo",
+      "url",
+      "alt"
+    ],
+    "properties": {
+      "funder": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Name of the funding organization or institution."
       },
-      "minItems": 1,
-      "description": "Array of funding source objects."
-    }
+      "logo": {
+        "type": "string",
+        "description": "Path to the logo image for the funding organization.",
+        "pattern": "^\\/img\\/funders_logo\\/[^\\s]+\\.png$"
+      },
+      "url": {
+        "type": "string",
+        "description": "URL linking to the funding organization's calls or application information.",
+        "pattern": "^https:\\/\\/.+"
+      },
+      "alt": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Alt text for the logo image, typically describing the funding organization.",
+        "pattern": "^Logo for '.+'"
+      }
+    },
+    "additionalProperties": false
   },
-  "additionalProperties": false
+  "minItems": 1
 }
