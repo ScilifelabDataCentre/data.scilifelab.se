@@ -19,28 +19,21 @@
       <div class="p-2 card-teal-title">
         <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
       </div>
-      <div class="p-2">
-        {{ .description }}
-      </div>
       <div class="px-2">
-        <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
-      </div>
-      <div class="px-2">
-        <b>Created by:</b>
-        {{ if .created_by_url}}
-          <a href="{{ .created_by_url}}" aria-label = "{{ .created_by_url }}" >{{ .created_by }}</a>
+        <b>Affiliation:</b>
+        {{ if .affiliation_url}}
+          <a href="{{ .affiliation_url}}" aria-label = "{{ .affiliation_url }}" >{{ .affiliation }}</a>
         {{ else }}
-          {{ .created_by }}
+          {{ .affiliation }}
         {{ end }}
       </div>
-      {{ if or (or .support_email .support_website) .support_github }}
-        <div class="px-2 mb-2">
-          <b>Support:</b>
-          {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-          {{ with .support_website }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-          {{ with .support_github }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
-        </div>
-      {{ end }}
+
+      <div class="px-2">
+        {{ if .resource_url}}
+          <a href="{{ .resource_url}}" aria-label = "{{ .resource_url }}" >{{ "Click to view this resource" }}</a>
+        {{ end }}
+      </div>
+
     </div>
   </div>
   {{ end }}

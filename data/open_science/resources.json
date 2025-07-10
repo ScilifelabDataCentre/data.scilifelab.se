@@ -1,34 +1,30 @@
 [
   {
-    "type": ["Internal/External"],
+    "type": ["Externally produced"],
     "search_tags": [
-      "Data driven lifecycle",
-      "DDLS",
-      "SciLifeLab",
-      "Data Centre",
-      "Guide"
+      "Tag 1",
+      "Tag 2"
     ],
-    "name": "The Data-driven life cycle",
-    "url": "https://www.scilifelab.se/data-driven/ddls-data-lifecycle/",
+    "name": "Name of resource",
+    "description": "blablabla",
+    "url": "https://www.scilifelab.se/",
     "thumbnail": "/img/resource_thumbnails/ddls_lifecycle.jpg",
-    "created_by": "SciLifeLab Comms/Ceros",
-    "created_by_url": "https://scilifelab.se/",
-    "support_email": "johan.inganni@scilifelab.se"
+    "affiliation": "Organisation",
+    "affiliation_url": "https://scilifelab.se/",
+    "resource_url": "https://scilifelab.se/"
   },
-    {
-    "type": ["Internal/External"],
+  {
+    "type": ["SciLifeLab produced"],
     "search_tags": [
-      "Data driven lifecycle",
-      "DDLS",
-      "SciLifeLab",
-      "Data Centre",
-      "Guide"
+      "Tag 1",
+      "Tag 2"
     ],
-    "name": "The Data-driven life cycle",
-    "url": "https://www.scilifelab.se/data-driven/ddls-data-lifecycle/",
-    "thumbnail": "/img/resource_thumbnails/ddls_lifecycle.jpg",
-    "created_by": "SciLifeLab Comms/Ceros",
-    "created_by_url": "https://scilifelab.se/",
-    "support_email": "johan.inganni@scilifelab.se"
+    "name": "SciLifeLab Data Policy",
+    "description": "blablabla",
+    "url": "https://www.scilifelab.se/wp-content/uploads/2023/10/Data-Policy.pdf",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab",
+    "affiliation_url": "https://scilifelab.se/",
+    "resource_url": "https://scilifelab.se/"
   }
 ]
