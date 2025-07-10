@@ -1,16 +1,41 @@
 <!--Simple cards which contain title, description and are clickable-->
-{{ $resources := .Site.Data.open_science.resources }}
+{{ $filepath := .Get 0 }}{{ $resources := index site.Data (split $filepath "/") }}
 
-    <div class="input-group">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-resource-area="resources_container">
-    </div>
+
+{{ $all_types := slice }}
+{{ range $resources }}
+  {{ $all_types = $all_types | append .type }}
+{{ end }}
+{{ $all_types = $all_types | uniq }}
+
+<div class="row">
+    <div class="bg-light p-3" style="position: sticky; top: 15px;">
+      <h5>Search</h5>
+      <div class="input-group">
+        <input type="text" id="resources-search" class="form-control" placeholder="Name/Keywords">
+      </div>
+      {{ if ge (len $all_types) 1 }}
+      <div class="mt-3">
+        <h5>Type</h5>
+        {{ range sort $all_types }}
+        <div class="form-check">   
+          <input class="form-check-input" type="checkbox" id="type-{{ . | urlize }}" name="type" value="{{ . | urlize }}">
+          <label class="form-check-label" for="type-{{ . | urlize }}">{{ . }}</label>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+  </div>
 
 
 <div id="resources_container" class="row g-3 mb-5">
   {{ range sort $resources "name" }}
-  <div class="col-md-6 col-lg-4 resource" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
-    <div class="card-teal-25">
+  <div class="col-md-6 col-lg-4 resource"
+    {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}
+    {{ with .type }}data-stype="{{ delimit (apply . "urlize" ".") ":" }}"{{ end }}
+    data-name="{{ .name | lower }}">
+      <div class="card-teal-25">
       <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
         <a target="_self" href="{{ .url }}"><img class="img-fluid"
             src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
@@ -41,3 +66,73 @@
     <p class="text-center">No resources have the given keyword, please try to use another.</p>
   </div>
 </div>
+
+<script>
+  // Function to search and filter the service based on selected input
+  function searchAndFilter() {
+    // Get all the inputs
+    var selected_filters = {};
+    var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value;}).get();
+    if (selected_type.length) {selected_filters['data-stype'] = selected_type;}
+    var search_text = $("#resources-search").val().toLowerCase();
+    if (search_text.length) {selected_filters['search-text'] = [search_text];}
+
+    // Hide all resources initially
+    $(".resource").hide();
+    $("#no-filtered-resource").hide();
+
+    // Show relavant resources based on selected criteria
+    if (!Object.keys(selected_filters).length) {
+      // If no filters show all
+      $(".resource").show();
+    } else {
+      var all_selected_resources = [];
+      // Iterate over all selected criteria and collect the services
+      for (var [filter_name, filter_value] of Object.entries(selected_filters)) {
+        var matching_resources = new Set();
+        if (filter_name === 'search-text') {
+          $(".resource").each(function () {
+            var tags = ($(this).attr("data-search-tags") || "").toLowerCase();
+            var name = ($(this).attr("data-name") || "").toLowerCase();
+            if (tags.includes(filter_value) || name.includes(filter_value)) {
+              matching_resources.add(this);
+            }
+          });
+        } else {
+          filter_value.forEach(function (val) {
+            $(`.resource[${filter_name}*='${val}']`).each(function () {
+              matching_resources.add(this);
+            });
+          });
+        }
+        all_selected_resources.push(matching_resources);
+      }
+      // When multiple criteria selected it should act as AND not OR
+      var selected_resources = all_selected_resources.reduce(function (a, b) {
+        var result = new Set();
+        a.forEach(item => b.has(item) && result.add(item));
+        return result;
+      });
+      // Display resources with selected criteria
+      if (selected_resources.size) {
+        selected_resources.forEach(function (resource) {
+          resource.style.display = '';
+        });
+      } else {
+        // Display a message if no resources available for selected criteria
+        $("#no-filtered-resource").show();
+      }
+    }
+
+    // Bring the tab top to the veiwport if it isn't
+    const top = document.querySelector("h5").getBoundingClientRect().top;
+    if (top < 0) {
+      $("html").scrollTop(window.pageYOffset + top - 15);
+    }
+  }
+
+  $("input:checkbox[name=type]").on("change", searchAndFilter);
+  $("#resources-search").on("input", searchAndFilter);
+</script>
+
+
