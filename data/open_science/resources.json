@@ -1,0 +1,19 @@
+[
+  {
+    "type": ["Internal/External"],
+    "search_tags": [
+      "Data driven lifecycle",
+      "DDLS",
+      "SciLifeLab",
+      "Data Centre",
+      "Guide"
+    ],
+    "name": "The Data-driven life cycle",
+    "description": "Learn more about the Data lifecycle and find out which services are offered by the Data Centre and NBIS in this interactive guide.",
+    "url": "https://www.scilifelab.se/data-driven/ddls-data-lifecycle/",
+    "thumbnail": "/img/resource_thumbnails/ddls_lifecycle.jpg",
+    "created_by": "SciLifeLab Comms/Ceros",
+    "created_by_url": "https://scilifelab.se/",
+    "support_email": "johan.inganni@scilifelab.se"
+  }
+]
