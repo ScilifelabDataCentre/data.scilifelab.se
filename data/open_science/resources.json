@@ -5,7 +5,7 @@
       "Tag 1",
       "Tag 2"
     ],
-    "name": "Name of resource",
+    "name": "EXTERNALLY Name of resource",
     "description": "blablabla",
     "url": "https://www.scilifelab.se/",
     "thumbnail": "/img/resource_thumbnails/ddls_lifecycle.jpg",
@@ -13,7 +13,133 @@
     "affiliation_url": "https://scilifelab.se/",
     "resource_url": "https://scilifelab.se/"
   },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "FAIR-Aware Self Assessment Tool",
+    "description": "The FAIR-Aware Self Assessment Tool helps researchers evaluate their knowledge of the FAIR principles, offering guidance to enhance the findability, accessibility, interoperability, and reusability of their data. In addition, the F-UJI FAIR assessment tool is an automated tool designed to evaluate the FAIRness of research data objects.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "FAIRSFAIR",
+    "affiliation_url": "https://www.fairsfair.eu/fair-aware",
+    "resource_url": "https://fairaware.dans.knaw.nl/"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "The National Guidelines for Open Science",
+    "description": "The National Library of Sweden (Kungliga Biblioteket) has published National Guidelines on Open Science, providing material for Swedish institutions and research funders in aligning policies, infrastructure, and coordination efforts with international recommendations. You can read The National Guidelines for Open Science in the official PDF document.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "The National Library of Sweden (Kungl Biblioteket)",
+    "affiliation_url": "https://www.kb.se/",
+    "resource_url": "https://www.kb.se/samverkan-och-utveckling/nytt-fran-kb/nyheter-samverkan-och-utveckling/2024-01-15-national-guidelines-for-promoting-open-science-in-sweden.html"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "EU Open Science Policy",
+    "description": "The EU Open Science Policy promotes openness, collaboration, and transparency in research by removing barriers, fostering data sharing, and enhancing scientific impact. This is achieved by advocating for practices like open access, reproducibility, and citizen engagement, and supporting these efforts with initiatives and infrastructures such as the European Open Science Cloud (EOSC) and OpenAIRE. EOSC provides a federated infrastructure for sharing and accessing research data across Europe, while OpenAIRE supports open science by enabling open access to publications, linking research outputs, and facilitating compliance with EU open science policies.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "European Commission",
+    "affiliation_url": "https://commission.europa.eu/index_en",
+    "resource_url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science_en"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "The Swedish Research Council: Vision and Guiding Principles",
+    "description": "The Swedish Research Council (Vetenskaprådet) produced a Vision and Guiding Principles for Open Access to Research Data. This outlines a national strategy to ensure publicly funded research data is made “as open as possible, as closed as necessary”, with the goal of fully implementing the transition to open access by 2026. The recommendations emphasise coordinated efforts among researchers, institutions, and funders to integrate open data practices, develop incentives, and enhance usability. This is achieved through standardised frameworks, infrastructure, and FAIR data management planning, while ensuring compliance with legal and ethical considerations. Further details on Sweden’s approach to open science, including policies on open access to publications, research data, and broader open science initiatives, can be found on the Open access to research data - Swedish Research Council page. This platform serves as a resource for national recommendations and guidelines, that support Sweden’s transition towards open and FAIR research practices, as well as development in Sweden.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "Swedish Research Council (Vetenskaprådet)",
+    "affiliation_url": "https://www.vr.se/",
+    "resource_url": "https://www.vr.se/english/mandates/open-science/open-access-to-research-data/recommendations-for-fair-och-open-research-data.html"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "UNESCO Open Science Toolkit",
+    "description": "UNESCO developed the Open Science Toolkit, a collection of guides, policies, and factsheets designed to support the implementation of the UNESCO Recommendation on Open Science. You can find more information on the UNESCO Open Science Toolkit webpage.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "UNESCO",
+    "affiliation_url": "https://www.unesco.org/en",
+    "resource_url": "https://www.unesco.org/en/open-science/toolkit?hub=686"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "SUHF Roadmap for Open Science with Action Proposals for Implementation",
+    "description": "The roadmap includes overarching recommendations that clarify the responsibilities of higher education institutions, as well as proposals for measures and capabilities that need to be established at these institutions during the transition to a responsible, secure, and open scientific system.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "SUHF",
+    "affiliation_url": "https://suhf.se/",
+    "resource_url": "https://suhf.se/app/uploads/2025/02/REC-2021-1-Open-Science-Roadmap-REVISED-31-01-2025.pdf"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "Plan S/Coalition S",
+    "description": "Plan S is a global initiative (with Swedish participation) that mandates full and immediate Open Access for publicly funded research. Essential for researchers navigating open publishing policies.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "Plan S/cOAlition S",
+    "affiliation_url": "https://www.coalition-s.org/",
+    "resource_url": "https://www.coalition-s.org/about/"
+  },
   {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "SciLifeLab Open Science Onboarding",
+    "description": "Here you can find our Open Science Onboarding which will guide you through the essential concepts to get you started on your open science journey.",
+    "url": "https://doi.org/10.17044/scilifelab.29087126.v2",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab Data Centre",
+    "affiliation_url": "https://data.scilifelab.se/",
+    "resource_url": "https://doi.org/10.17044/scilifelab.29087126.v2"
+  },
+    {
+    "type": ["INTERNALSciLifeLab produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "SciLifeLab Open Science Onboarding",
+    "description": "Here you can find our Open Science Onboarding which will guide you through the essential concepts to get you started on your open science journey.",
+    "url": "https://doi.org/10.17044/scilifelab.29087126.v2",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab Data Centre",
+    "affiliation_url": "https://data.scilifelab.se/",
+    "resource_url": "https://doi.org/10.17044/scilifelab.29087126.v2"
+  },
+    {
     "type": ["SciLifeLab produced"],
     "search_tags": [
       "Tag 1",
