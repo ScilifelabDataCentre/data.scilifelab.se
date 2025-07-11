@@ -39,15 +39,6 @@
           "uniqueItems": true,
           "description": "One or more categories describing the type of service."
         },
-        "data_source_type": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "minLength": 1
-          },
-          "uniqueItems": true,
-          "description": "OPTIONAL: Type of data source associated with the service."
-        },
         "search_tags": {
           "type": "array",
           "items": {
@@ -117,6 +108,33 @@
           "type": "string",
           "format": "uri",
           "description": "OPTIONAL: Slack channel or workspace URL for service support."
+        },
+        "data_source_type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "OPTIONAL: Type of data source associated with the service."
+        },
+        "ddls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "OPTIONAL: Scientific area of the services that are also data sources."
+        },
+        "disease_type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "OPTIONAL: Disease types associated with the services that are also data sources."
         }
       },
       "additionalProperties": false
