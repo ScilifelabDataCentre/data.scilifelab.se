@@ -31,7 +31,7 @@
         </div>
       </div>
       
-      <!-- Additional contact information -->
+      {{/* Honeypot fields for anti-bot protection, referred to as 'additional fields' in production code */}}
       <div class="row mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
         <label for="website" class="col-sm-2 col-form-label">Website:</label>
         <div class="col-sm-10">
@@ -65,217 +65,97 @@
       <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
       <!-- <label id="g-recaptcha" for="url"> -->
       
-      <input type="url" id="originUrl" name="originUrl" value="" hidden />
-      <!-- reCAPTCHA - commented out to test anti-spam -->
-      <!-- <input type="url" id="originUrl" name="originUrl" value="" hidden aria-labelledby="g-recaptcha" /> -->
-      
-      <!-- <label id="general_contact" for="url"> -->
-      <input type='hidden' name='origin' value='general_contact' hidden>
-      <!-- <input type='hidden' name='origin' value='general_contact' hidden aria-labelledby="general_contact"> -->
-      
-      <!-- Session tracking for anti-spam -->
-      <input type="hidden" id="session_id" name="session_id" value="">
-      
-      <button type="button" class="btn btn-aqua mt-2" id="submit-btn">
-        <span class="btn-text">Send</span>
-        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
-      </button>
+      <button type="button" class="btn btn-aqua mt-2" id="submit-btn" onclick="submitContactForm()">Send</button>
     </form>
   </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Session tracking
-    const sessionStart = Date.now();
-    document.getElementById('session_id').value = sessionStart;
-    
-    // Origin tracking
-    document.getElementById('originUrl').value = location.href;
+  // Initialise session tracking for anti-spam
+  var sessionStartTime = Date.now();
+  var sessionId = generateSessionId('contact');
 
-    const form = document.getElementById('contact-form');
-    const submitBtn = document.getElementById('submit-btn');
-    const btnText = submitBtn.querySelector('.btn-text');
-    const spinner = submitBtn.querySelector('.spinner-border');
+  // Prevent form submission if user presses Enter
+  preventEnterSubmission('contact-form');
 
-    // Handle button click instead of form submit
-    submitBtn.addEventListener('click', function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-      
-      // Form validation
-      if (!validateSubmission()) {
-        console.log('Validation failed');
-        showError();
-        return;
-      }
-      
-      // Standard form validation
-      if (!validateForm()) {
-        return;
-      }
-
-      // reCAPTCHA validation - commented out to test anti-spam
-      /*
-      var recaptcha = $("#g-recaptcha-response").val();
-      if (recaptcha === "") {
-        alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
-        return;
-      }
-      */
-
-      // Show loading state
-      submitBtn.disabled = true;
-      btnText.textContent = 'Sending...';
-      spinner.classList.remove('d-none');
-
-      // Hide any previous messages
-      document.getElementById('success-message').classList.add('d-none');
-      document.getElementById('error-message').classList.add('d-none');
-
-      // Gather form data
-      const formData = new FormData();
-      formData.append('name', document.getElementById('name').value);
-      formData.append('email', document.getElementById('email').value);
-      formData.append('message', document.getElementById('message').value);
-      formData.append('originUrl', document.getElementById('originUrl').value);
-      formData.append('origin', 'general_contact');
-      
-      // Session data
-      const currentTime = Date.now();
-      const duration = Math.round((currentTime - sessionStart) / 1000);
-      formData.append('session_id', sessionStart);
-      formData.append('session_duration', duration);
-      
-      // Additional fields
-      formData.append('website', document.getElementById('website').value);
-      formData.append('phone_number', document.getElementById('phone_number').value);
-      formData.append('company', document.getElementById('company').value);
-      
-      // reCAPTCHA data - commented out to test anti-spam
-      /*
-      var recaptchaResponse = $("#g-recaptcha-response").val();
-      if (recaptchaResponse) {
-        formData.append('g-recaptcha-response', recaptchaResponse);
-      }
-      */
-
-      // Submit to Google Apps Script
-      fetch('https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          console.log('Form submitted successfully:', data.message);
-          showSuccess(data.message);
-        } else {
-          console.error('Form submission failed:', data.message);
-          showError(data.message);
-        }
-      })
-      .catch(error => {
-        console.error('Form submission error:', error);
-        showError();
-      })
-      .finally(() => {
-        // Reset button state
-        submitBtn.disabled = false;
-        btnText.textContent = 'Send';
-        spinner.classList.add('d-none');
-      });
-    });
-
-    // Also prevent form submission if user presses Enter
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      event.stopPropagation();
-      return false;
-    });
-
-    function validateSubmission() {
-      // Check additional fields
-      const website = document.getElementById('website').value;
-      const phone = document.getElementById('phone_number').value;
-      const company = document.getElementById('company').value;
-      
-      if (website || phone || company) {
-        console.log('Additional fields validation failed');
-        return false;
-      }
-      
-      // Check session timing
-      const currentTime = Date.now();
-      const elapsed = (currentTime - sessionStart) / 1000;
-      
-      if (elapsed < 5) {
-        console.log('Session too short:', elapsed);
-        return false;
-      }
-      
-      if (elapsed > 3600) {
-        console.log('Session too long:', elapsed);
-        return false;
-      }
-      
-      console.log('Session validation passed:', Math.round(elapsed), 'seconds');
-      return true;
+  function submitContactForm() {
+    // Validate form-specific fields
+    if (!validateContactForm()) {
+      return;
     }
 
-    function validateForm() {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-
-      if (!name || !email || !message) {
-        alert("Please fill out all required fields.");
-        return false;
-      }
-
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        alert("Please enter a valid email address.");
-        return false;
-      }
-
-      return true;
+    // Validate common submission criteria
+    if (!validateCommonSubmission(sessionStartTime)) {
+      showContactError('Form submission failed validation. Please try again.');
+      return;
     }
 
-    function showSuccess(message) {
-      // Update success message text if provided
-      if (message) {
-        document.getElementById('success-message-text').textContent = message;
-      }
-      
-      // Show success message and hide form
-      document.getElementById('success-message').classList.remove('d-none');
-      document.getElementById('contact-form-container').classList.add('d-none');
-      
-      // Scroll to success message
-      document.getElementById('success-message').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function showError(message) {
-      // Update error message text if provided
-      if (message) {
-        document.getElementById('error-message-text').textContent = message;
-      }
-      
-      // Show error message, keep form visible
-      document.getElementById('error-message').classList.remove('d-none');
-      
-      // Scroll to error message
-      document.getElementById('error-message').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // reCAPTCHA aria-label setup - commented out to test anti-spam
-
+    // reCAPTCHA validation - commented out to test anti-spam
     /*
-    window.addEventListener("load", function () {
-      $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
-    });
+    var recaptcha = $("#g-recaptcha-response").val();
+    if (recaptcha === "") {
+      showContactError("Please tick 'I'm not a robot' above the 'Submit' button.");
+      return;
+    }
     */
-  });
+
+    // Show loading state
+    setButtonLoadingState('submit-btn', true, 'Sending...');
+
+    // Hide any previous messages
+    hideFormMessage('success-message');
+    hideFormMessage('error-message');
+
+    // Collect form-specific data
+    var formData = new FormData();
+    formData.append('name', document.getElementById('name').value);
+    formData.append('email', document.getElementById('email').value);
+    formData.append('message', document.getElementById('message').value);
+
+    // Add common metadata
+    addFormMetadata(formData, 'contact', sessionId, sessionStartTime);
+
+    // reCAPTCHA data - commented out to test anti-spam
+    /*
+    var recaptchaResponse = $("#g-recaptcha-response").val();
+    if (recaptchaResponse) {
+      formData.append('g-recaptcha-response', recaptchaResponse);
+    }
+    */
+
+    // Submit using common function
+    submitFormData(formData, showContactSuccess, showContactError)
+    .finally(() => {
+      setButtonLoadingState('submit-btn', false);
+    });
+  }
+
+  // Form-specific validation
+  function validateContactForm() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill out all required fields.");
+      return false;
+    }
+
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+
+    return true;
+  }
+
+  function showContactSuccess(message) {
+    showFormMessage('success-message', message);
+    document.getElementById('contact-form-container').classList.add('d-none');
+  }
+
+  function showContactError(message) {
+    showFormMessage('error-message', message, false);
+  }
 </script>
 {{ end }}

@@ -103,7 +103,7 @@
               <div class="form-text">Enter your email address if you agree to be contacted regarding this suggestion
                 (your email will not be displayed in the event information).</div>
             </div>
-            <!-- Additional fields -->
+            {{/* Honeypot fields for anti-bot protection, referred to as 'additional fields' in production code */}}
             <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
               <label for="website" class="form-label">Website:</label>
               <input type="text" class="form-control" id="website" name="website" tabindex="-1" autocomplete="off">
@@ -118,14 +118,6 @@
               <label for="company" class="form-label">Company:</label>
               <input type="text" class="form-control" id="company" name="company" tabindex="-1" autocomplete="off">
             </div>
-            
-            <!-- Session tracking for anti-spam -->
-            <input type="hidden" name="session_id" id="session_id" value="">
-            <input type="hidden" name="session_duration" id="session_duration" value="">
-            
-            <!-- Form metadata -->
-            <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
-            <input type="hidden" name="origin" value="event_training_suggestion" aria-label="form-name" />
             
             <!-- Commented out reCAPTCHA - can be re-enabled for production if needed -->
             <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
@@ -159,17 +151,56 @@
 <script>
   // Initialise session tracking for anti-spam
   var sessionStartTime = Date.now();
-  var sessionId = 'events_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+  var sessionId = generateSessionId('events');
+
+  function submitEventsForm() {
+    // Validate form-specific fields
+    if (!validateEventsForm()) {
+      showEventsError('Please fill out all required fields correctly.');
+      return;
+    }
+    
+    // Validate common submission criteria
+    if (!validateCommonSubmission(sessionStartTime)) {
+      showEventsError('Form submission failed validation. Please try again.');
+      return;
+    }
+    
+    // reCAPTCHA validation - commented out to test anti-spam
+    /*
+    var recaptcha = $("#g-recaptcha-response").val();
+    if (recaptcha === "") {
+      showEventsError("Please tick 'I'm not a robot' above the 'Submit' button.");
+      return;
+    }
+    */
+    
+    // Show loading state
+    setButtonLoadingState('events-submit-btn', true);
+    
+    // Collect form data
+    var formData = new FormData(document.getElementById('events-form'));
+    
+    // Add common metadata
+    addFormMetadata(formData, 'events', sessionId, sessionStartTime);
+    
+    // reCAPTCHA data - commented out to test anti-spam
+    /*
+    var recaptchaResponse = $("#g-recaptcha-response").val();
+    if (recaptchaResponse) {
+      formData.append('g-recaptcha-response', recaptchaResponse);
+    }
+    */
+    
+    // Submit using common function
+    submitFormData(formData, showEventsSuccess, showEventsError)
+    .finally(() => {
+      setButtonLoadingState('events-submit-btn', false);
+    });
+  }
   
-  // Set session data
-  document.addEventListener("DOMContentLoaded", function (event) {
-    document.getElementById('session_id').value = sessionId;
-    document.getElementById('originUrl').value = location.href;
-  });
-  
-  // Form validation functions
+  // Form-specific validation
   function validateEventsForm() {
-    var form = document.getElementById('events-form');
     var isValid = true;
     
     // Check required fields
@@ -199,7 +230,7 @@
     
     // Validate email
     var emailField = document.getElementById('submitter_email');
-    if (emailField.value.trim() && !emailField.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+    if (emailField.value.trim() && !validateEmail(emailField.value)) {
       isValid = false;
       emailField.classList.add('is-invalid');
     } else {
@@ -209,32 +240,12 @@
     return isValid;
   }
   
-  function validateEventsSubmission() {
-    var sessionDuration = (Date.now() - sessionStartTime) / 1000;
-    
-    // Check timing (5 seconds minimum, 1 hour maximum)
-    if (sessionDuration < 5 || sessionDuration > 3600) {
-      return false;
-    }
-    
-    // Check honeypot fields
-    var honeypotFields = ['website', 'phone_number', 'company'];
-    for (var i = 0; i < honeypotFields.length; i++) {
-      if (document.getElementById(honeypotFields[i]).value.trim() !== '') {
-        return false;
-      }
-    }
-    
-    return true;
-  }
-  
   function showEventsSuccess(message) {
-    document.getElementById('events-success-message-text').textContent = message;
-    document.getElementById('events-success-message').style.display = 'block';
-    document.getElementById('events-error-message').style.display = 'none';
+    showFormMessage('events-success-message', message);
+    hideFormMessage('events-error-message');
     
     // Reset form
-    document.getElementById('events-form').reset();
+    resetForm('events-form');
     
     // Hide modal after a delay
     setTimeout(function() {
@@ -243,76 +254,12 @@
   }
   
   function showEventsError(message) {
-    document.getElementById('events-error-message-text').textContent = message;
-    document.getElementById('events-error-message').style.display = 'block';
-    document.getElementById('events-success-message').style.display = 'none';
+    showFormMessage('events-error-message', message, false);
+    hideFormMessage('events-success-message');
   }
+</script>
   
-  function submitEventsForm() {
-    // Validate form
-    if (!validateEventsForm()) {
-      showEventsError('Please fill out all required fields correctly.');
-      return;
-    }
-    
-    // Validate submission timing and honeypots
-    if (!validateEventsSubmission()) {
-      showEventsError('Form submission failed validation. Please try again.');
-      return;
-    }
-    
-    // reCAPTCHA validation - commented out to test anti-spam
-    /*
-    var recaptcha = $("#g-recaptcha-response").val();
-    if (recaptcha === "") {
-      showEventsError("Please tick 'I'm not a robot' above the 'Submit' button.");
-      return;
-    }
-    */
-    
-    // Set session duration
-    document.getElementById('session_duration').value = (Date.now() - sessionStartTime) / 1000;
-    
-    // Show loading state
-    var submitBtn = document.getElementById('events-submit-btn');
-    var originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Submitting...';
-    submitBtn.disabled = true;
-    
-    // Collect form data
-    var formData = new FormData(document.getElementById('events-form'));
-    
-    // reCAPTCHA data - commented out to test anti-spam
-    /*
-    var recaptchaResponse = $("#g-recaptcha-response").val();
-    if (recaptchaResponse) {
-      formData.append('g-recaptcha-response', recaptchaResponse);
-    }
-    */
-    
-    // Submit to Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        showEventsSuccess(data.message);
-      } else {
-        showEventsError(data.message);
-      }
-    })
-    .catch(error => {
-      showEventsError('Network error. Please check your connection and try again.');
-    })
-    .finally(() => {
-      // Reset button
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
-    });
-  }
-  
+<script>
   // Functions need to be run when the DOM is ready
   document.addEventListener("DOMContentLoaded", function (event) {
     // Takes a URL and calls the callback function pass the data fetched

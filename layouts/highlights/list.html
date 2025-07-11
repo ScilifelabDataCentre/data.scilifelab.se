@@ -80,7 +80,7 @@
               <div class="form-text">Enter your email address if you agree to be contacted regarding this suggestion.
               </div>
             </div>
-            <!-- Additional fields -->
+            {{/* Honeypot fields for anti-bot protection, referred to as 'additional fields' in production code */}}
             <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
               <label for="website" class="form-label">Website:</label>
               <input type="text" class="form-control" id="website" name="website" tabindex="-1" autocomplete="off">
@@ -95,14 +95,6 @@
               <label for="company" class="form-label">Company:</label>
               <input type="text" class="form-control" id="company" name="company" tabindex="-1" autocomplete="off">
             </div>
-            
-            <!-- Session tracking for anti-spam -->
-            <input type="hidden" name="session_id" id="session_id" value="">
-            <input type="hidden" name="session_duration" id="session_duration" value="">
-            
-            <!-- Form metadata -->
-            <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
-            <input type="hidden" name="origin" value="data_highlight_suggestion" aria-label="form-name" />
             
             <!-- Commented out reCAPTCHA - can be re-enabled for production if needed -->
             <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
@@ -168,19 +160,12 @@
 </section>
 
 <script>
-  // Initialize session tracking for anti-spam
+  // Initialise session tracking for anti-spam
   var sessionStartTime = Date.now();
-  var sessionId = 'highlights_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+  var sessionId = generateSessionId('highlights');
   
-  // Set session data
-  document.addEventListener("DOMContentLoaded", function (event) {
-    document.getElementById('session_id').value = sessionId;
-    document.getElementById('originUrl').value = location.href;
-  });
-  
-  // Form validation functions
+  // Form-specific validation
   function validateHighlightsForm() {
-    var form = document.getElementById('highlights-form');
     var isValid = true;
     
     // Check required fields
@@ -198,7 +183,7 @@
     
     // Validate email if provided
     var emailField = document.getElementById('submitter_email');
-    if (emailField.value.trim() && !emailField.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+    if (emailField.value.trim() && !validateEmail(emailField.value)) {
       isValid = false;
       emailField.classList.add('is-invalid');
     } else {
@@ -208,32 +193,12 @@
     return isValid;
   }
   
-  function validateHighlightsSubmission() {
-    var sessionDuration = (Date.now() - sessionStartTime) / 1000;
-    
-    // Check timing (5 seconds minimum, 1 hour maximum)
-    if (sessionDuration < 5 || sessionDuration > 3600) {
-      return false;
-    }
-    
-    // Check honeypot fields
-    var honeypotFields = ['website', 'phone_number', 'company'];
-    for (var i = 0; i < honeypotFields.length; i++) {
-      if (document.getElementById(honeypotFields[i]).value.trim() !== '') {
-        return false;
-      }
-    }
-    
-    return true;
-  }
-  
   function showHighlightsSuccess(message) {
-    document.getElementById('highlights-success-message-text').textContent = message;
-    document.getElementById('highlights-success-message').style.display = 'block';
-    document.getElementById('highlights-error-message').style.display = 'none';
+    showFormMessage('highlights-success-message', message);
+    hideFormMessage('highlights-error-message');
     
     // Reset form
-    document.getElementById('highlights-form').reset();
+    resetForm('highlights-form');
     
     // Hide modal after a delay
     setTimeout(function() {
@@ -242,20 +207,19 @@
   }
   
   function showHighlightsError(message) {
-    document.getElementById('highlights-error-message-text').textContent = message;
-    document.getElementById('highlights-error-message').style.display = 'block';
-    document.getElementById('highlights-success-message').style.display = 'none';
+    showFormMessage('highlights-error-message', message, false);
+    hideFormMessage('highlights-success-message');
   }
   
   function submitHighlightsForm() {
-    // Validate form
+    // Validate form-specific fields
     if (!validateHighlightsForm()) {
       showHighlightsError('Please fill out all required fields correctly.');
       return;
     }
     
-    // Validate submission timing and honeypots
-    if (!validateHighlightsSubmission()) {
+    // Validate common submission criteria
+    if (!validateCommonSubmission(sessionStartTime)) {
       showHighlightsError('Form submission failed validation. Please try again.');
       return;
     }
@@ -269,17 +233,14 @@
     }
     */
     
-    // Set session duration
-    document.getElementById('session_duration').value = (Date.now() - sessionStartTime) / 1000;
-    
     // Show loading state
-    var submitBtn = document.getElementById('highlights-submit-btn');
-    var originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Submitting...';
-    submitBtn.disabled = true;
+    setButtonLoadingState('highlights-submit-btn', true);
     
     // Collect form data
     var formData = new FormData(document.getElementById('highlights-form'));
+    
+    // Add common metadata
+    addFormMetadata(formData, 'highlights', sessionId, sessionStartTime);
     
     // reCAPTCHA data - commented out to test anti-spam
     /*
@@ -289,29 +250,15 @@
     }
     */
     
-    // Submit to Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        showHighlightsSuccess(data.message);
-      } else {
-        showHighlightsError(data.message);
-      }
-    })
-    .catch(error => {
-      showHighlightsError('Network error. Please check your connection and try again.');
-    })
+    // Submit using common function
+    submitFormData(formData, showHighlightsSuccess, showHighlightsError)
     .finally(() => {
-      // Reset button
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
+      setButtonLoadingState('highlights-submit-btn', false);
     });
   }
+</script>
   
+<script>
   // Function to filter the service based on search text
   $("input[type=text]").on("input", function(){
     
@@ -336,7 +283,7 @@
       }
     }
   });
-  
+
   // reCAPTCHA aria-label setup - commented out to test anti-spam
   /*
   window.addEventListener("load", function () {
