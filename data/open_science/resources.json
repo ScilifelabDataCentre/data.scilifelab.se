@@ -1,18 +1,4 @@
 [
-  {
-    "type": ["Externally produced"],
-    "search_tags": [
-      "Tag 1",
-      "Tag 2"
-    ],
-    "name": "EXTERNALLY Name of resource",
-    "description": "blablabla",
-    "url": "https://www.scilifelab.se/",
-    "thumbnail": "/img/resource_thumbnails/ddls_lifecycle.jpg",
-    "affiliation": "Organisation",
-    "affiliation_url": "https://scilifelab.se/",
-    "resource_url": "https://scilifelab.se/"
-  },
     {
     "type": ["Externally produced"],
     "search_tags": [
@@ -119,21 +105,21 @@
     ],
     "name": "SciLifeLab Open Science Onboarding",
     "description": "Here you can find our Open Science Onboarding which will guide you through the essential concepts to get you started on your open science journey.",
-    "url": "https://doi.org/10.17044/scilifelab.29087126.v2",
+    "url": "",
     "thumbnail": "",
     "affiliation": "SciLifeLab Data Centre",
     "affiliation_url": "https://data.scilifelab.se/",
-    "resource_url": "https://doi.org/10.17044/scilifelab.29087126.v2"
+    "resource_url": "https://doi.org/10.17044/scilifelab.29086706.v1"
   },
     {
-    "type": ["INTERNALSciLifeLab produced"],
+    "type": ["SciLifeLab produced"],
     "search_tags": [
       "Tag 1",
       "Tag 2"
     ],
-    "name": "SciLifeLab Open Science Onboarding",
-    "description": "Here you can find our Open Science Onboarding which will guide you through the essential concepts to get you started on your open science journey.",
-    "url": "https://doi.org/10.17044/scilifelab.29087126.v2",
+    "name": "SciLifeLab Open Access Checklist",
+    "description": "This checklist is designed to guide you in making informed decisions about publishing your research Open Access. It covers key steps for choosing the right Open Access route, applying appropriate licenses, and ensuring compliance with institutional and funder policies. Please note that this is a guiding resource, and does not require every item to be completed.",
+    "url": "",
     "thumbnail": "",
     "affiliation": "SciLifeLab Data Centre",
     "affiliation_url": "https://data.scilifelab.se/",
@@ -145,12 +131,68 @@
       "Tag 1",
       "Tag 2"
     ],
+    "name": "SciLifeLab Open Science Software Checklist",
+    "description": "This checklist provides essential steps for sharing and citing your research software. It covers everything from planning your software to ensuring others can find, understand, reuse, and contribute to your software, and how to ensure your work is credited. Please note that this is a guiding resource, and does not require every item to be completed.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab Data Centre",
+    "affiliation_url": "https://data.scilifelab.se/",
+    "resource_url": "https://doi.org/10.17044/scilifelab.29086775.v1"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "CoARA Action Plan for SciLifeLab",
+    "description": "On 23 February 2024, SciLifeLab announced that it had joined CoARA (Coalition for Advancing Research Assessment) as a signatory member. This reaffirmed SciLifeLab’s commitment to advancing research assessment and open science practices. You can review SciLifeLab’s CoARA Action Plan in this Google Docs document. Note, DORA (San Francisco Declaration on Research Assessment) laid the foundation for research assessment reform by advocating for qualitative evaluation over journal-based metrics, a principle that CoARA builds upon to drive systemic change through collective institutional commitment.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab",
+    "affiliation_url": "https://www.scilifelab.se/",
+    "resource_url": "https://doi.org/10.5281/zenodo.14796936"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
     "name": "SciLifeLab Data Policy",
-    "description": "blablabla",
-    "url": "https://www.scilifelab.se/wp-content/uploads/2023/10/Data-Policy.pdf",
+    "description": "The SciLifeLab Data Policy outlines SciLifeLab’s commitment to Open Science, research transparency, and the FAIR principles, ensuring that data from publicly funded research is as open as possible, while adhering to legal and ethical requirements. It sets expectations for SciLifeLab-affiliated programs, infrastructure, and researchers to promote data sharing, reproducibility, and accessibility, while providing the necessary resources, support, and governance to integrate these principles into the research we produce.",
+    "url": "",
     "thumbnail": "",
     "affiliation": "SciLifeLab",
     "affiliation_url": "https://scilifelab.se/",
-    "resource_url": "https://scilifelab.se/"
+    "resource_url": "https://www.scilifelab.se/wp-content/uploads/2023/10/Data-Policy.pdf"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "SciLifeLab Training Hub",
+    "description": "The SciLifeLab Training Hub offers a range of educational opportunities and training infrastructure, to advance Open Science and FAIR learning, ensuring Sweden’s life science community has open access to world-class knowledge and expertise. View SciLifeLab Training Hub’s website to learn more about training tools, upcoming courses and ways in which the Training Hub team can support you.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab Training Hub",
+    "affiliation_url": "https://training.scilifelab.se/about",
+    "resource_url": "https://training.scilifelab.se/"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      "Tag 1",
+      "Tag 2"
+    ],
+    "name": "SciLifeLab RDM Guidelines",
+    "description": "The SciLifeLab Training Hub offers a range of educational opportunities and training infrastructure, to advance Open Science and FAIR learning, ensuring Sweden’s life science community has open access to world-class knowledge and expertise. View SciLifeLab Training Hub’s website to learn more about training tools, upcoming courses and ways in which the Training Hub team can support you.",
+    "url": "",
+    "thumbnail": "",
+    "affiliation": "NBIS, SciLifeLab Data Centre",
+    "affiliation_url": "https://data-guidelines.scilifelab.se/contact/",
+    "resource_url": "https://data-guidelines.scilifelab.se/"
   }
 ]
