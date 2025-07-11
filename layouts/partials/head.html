@@ -32,6 +32,12 @@
   <script src="{{ $notice_js.RelPermalink }}" defer></script>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  {{ $form_pages := slice "contact" "events" "highlights" "jobs" "funding_calls" }}
+  {{ if in $form_pages .Page.Section }}
+  <!-- Common forms utilities -->
+  {{ $forms_common_js := resources.Get "js/forms-common.js" | minify | fingerprint "md5" }}
+  <script src="{{ $forms_common_js.RelPermalink }}"></script>
+  {{ end }}
   {{ $recaptcha_pages := slice "contact" "events" "highlights" "jobs" "funding_calls" }}
   {{ if in $recaptcha_pages .Page.Section }}
   <!-- reCAPTCHA for contact page -->

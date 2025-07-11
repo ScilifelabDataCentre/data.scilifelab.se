@@ -53,7 +53,7 @@
                 data-driven life science:</label>
               <textarea class="form-control" id="call_description" name="call_description" rows="5"></textarea>
             </div>
-            <!-- Additional fields -->
+            {{/* Honeypot fields for anti-bot protection, referred to as 'additional fields' in production code */}}
             <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
               <label for="website" class="form-label">Website:</label>
               <input type="text" class="form-control" id="website" name="website" tabindex="-1" autocomplete="off">
@@ -68,14 +68,6 @@
               <label for="company" class="form-label">Company:</label>
               <input type="text" class="form-control" id="company" name="company" tabindex="-1" autocomplete="off">
             </div>
-            
-            <!-- Session tracking for anti-spam -->
-            <input type="hidden" name="session_id" id="session_id" value="">
-            <input type="hidden" name="session_duration" id="session_duration" value="">
-            
-            <!-- Form metadata -->
-            <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
-            <input type="hidden" name="origin" value="funding_call_suggestion" aria-label="form-name" />
             
             <!-- Commented out reCAPTCHA - can be re-enabled for production if needed -->
             <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
@@ -137,19 +129,58 @@
 <!-- Code for other funding sources ends here -->
 
 <script>
-// Initialize session tracking for anti-spam
+// Initialise session tracking for anti-spam
 var sessionStartTime = Date.now();
-var sessionId = 'funding_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+var sessionId = generateSessionId('funding');
 
-// Set session data
-document.addEventListener("DOMContentLoaded", function (event) {
-  document.getElementById('session_id').value = sessionId;
-  document.getElementById('originUrl').value = location.href;
-});
+function submitFundingForm() {
+  // Validate form-specific fields
+  if (!validateFundingForm()) {
+    showFundingError('Please fill out all required fields correctly.');
+    return;
+  }
+  
+  // Validate common submission criteria
+  if (!validateCommonSubmission(sessionStartTime)) {
+    showFundingError('Form submission failed validation. Please try again.');
+    return;
+  }
+  
+  // reCAPTCHA validation - commented out to test anti-spam
+  /*
+  var recaptcha = $("#g-recaptcha-response").val();
+  if (recaptcha === "") {
+    showFundingError("Please tick 'I'm not a robot' above the 'Submit' button.");
+    return;
+  }
+  */
+  
+  // Show loading state
+  setButtonLoadingState('funding-submit-btn', true);
+  
+  // Collect form data
+  var formData = new FormData(document.getElementById('funding-form'));
+  
+  // Add common metadata
+  addFormMetadata(formData, 'funding_calls', sessionId, sessionStartTime);
+  
+  // reCAPTCHA data - commented out to test anti-spam
+  /*
+  var recaptchaResponse = $("#g-recaptcha-response").val();
+  if (recaptchaResponse) {
+    formData.append('g-recaptcha-response', recaptchaResponse);
+  }
+  */
+  
+  // Submit using common function
+  submitFormData(formData, showFundingSuccess, showFundingError)
+  .finally(() => {
+    setButtonLoadingState('funding-submit-btn', false);
+  });
+}
 
-// Form validation functions
+// Form-specific validation
 function validateFundingForm() {
-  var form = document.getElementById('funding-form');
   var isValid = true;
   
   // Check required fields
@@ -176,7 +207,7 @@ function validateFundingForm() {
   
   // Validate email
   var emailField = document.getElementById('submitter_email');
-  if (emailField.value.trim() && !emailField.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+  if (emailField.value.trim() && !validateEmail(emailField.value)) {
     isValid = false;
     emailField.classList.add('is-invalid');
   } else {
@@ -186,32 +217,12 @@ function validateFundingForm() {
   return isValid;
 }
 
-function validateFundingSubmission() {
-  var sessionDuration = (Date.now() - sessionStartTime) / 1000;
-  
-  // Check timing (5 seconds minimum, 1 hour maximum)
-  if (sessionDuration < 5 || sessionDuration > 3600) {
-    return false;
-  }
-  
-  // Check honeypot fields
-  var honeypotFields = ['website', 'phone_number', 'company'];
-  for (var i = 0; i < honeypotFields.length; i++) {
-    if (document.getElementById(honeypotFields[i]).value.trim() !== '') {
-      return false;
-    }
-  }
-  
-  return true;
-}
-
 function showFundingSuccess(message) {
-  document.getElementById('funding-success-message-text').textContent = message;
-  document.getElementById('funding-success-message').style.display = 'block';
-  document.getElementById('funding-error-message').style.display = 'none';
+  showFormMessage('funding-success-message', message);
+  hideFormMessage('funding-error-message');
   
   // Reset form
-  document.getElementById('funding-form').reset();
+  resetForm('funding-form');
   
   // Hide modal after a delay
   setTimeout(function() {
@@ -220,76 +231,12 @@ function showFundingSuccess(message) {
 }
 
 function showFundingError(message) {
-  document.getElementById('funding-error-message-text').textContent = message;
-  document.getElementById('funding-error-message').style.display = 'block';
-  document.getElementById('funding-success-message').style.display = 'none';
+  showFormMessage('funding-error-message', message, false);
+  hideFormMessage('funding-success-message');
 }
+</script>
 
-function submitFundingForm() {
-  // Validate form
-  if (!validateFundingForm()) {
-    showFundingError('Please fill out all required fields correctly.');
-    return;
-  }
-  
-  // Validate submission timing and honeypots
-  if (!validateFundingSubmission()) {
-    showFundingError('Form submission failed validation. Please try again.');
-    return;
-  }
-  
-  // reCAPTCHA validation - commented out to test anti-spam
-  /*
-  var recaptcha = $("#g-recaptcha-response").val();
-  if (recaptcha === "") {
-    showFundingError("Please tick 'I'm not a robot' above the 'Submit' button.");
-    return;
-  }
-  */
-  
-  // Set session duration
-  document.getElementById('session_duration').value = (Date.now() - sessionStartTime) / 1000;
-  
-  // Show loading state
-  var submitBtn = document.getElementById('funding-submit-btn');
-  var originalText = submitBtn.textContent;
-  submitBtn.textContent = 'Submitting...';
-  submitBtn.disabled = true;
-  
-  // Collect form data
-  var formData = new FormData(document.getElementById('funding-form'));
-  
-  // reCAPTCHA data - commented out to test anti-spam
-  /*
-  var recaptchaResponse = $("#g-recaptcha-response").val();
-  if (recaptchaResponse) {
-    formData.append('g-recaptcha-response', recaptchaResponse);
-  }
-  */
-  
-  // Submit to Google Apps Script
-  fetch('https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
-      showFundingSuccess(data.message);
-    } else {
-      showFundingError(data.message);
-    }
-  })
-  .catch(error => {
-    showFundingError('Network error. Please check your connection and try again.');
-  })
-  .finally(() => {
-    // Reset button
-    submitBtn.textContent = originalText;
-    submitBtn.disabled = false;
-  });
-}
-
+<script>
 // Functions need to be run when the DOM is ready
 document.addEventListener("DOMContentLoaded", function (event) {
     
