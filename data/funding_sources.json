@@ -1,5 +1,11 @@
 [
     {
+        "funder": "SciLifeLab Anubis",
+        "logo": "/img/funders_logo/anubis.png",
+        "url": "https://anubis.scilifelab.se/",
+        "alt": "Logo for 'Scilifelab Anubis'"
+    },
+    {
         "funder": "VR - Swedish Research Council",
         "logo": "/img/funders_logo/vr.png",
         "url": "https://www.vr.se/english/applying-for-funding/calls-and-decisions.html",
