@@ -71,7 +71,7 @@
 
 <!-- SciLifeLab funding related code begins here -->
 
-<h4>Funding from SciLifeLab</h4>
+<h4>Open funding calls</h4>
 
 <section id="fundings-calls-section">
   <!-- The fundings and calls content will be filled by JS function below -->
@@ -79,12 +79,12 @@
 
 <!-- Code for other funding sources starts here -->
 {{/* Get list of other funding sources */}}
-{{ $other_funding_sources := $.Site.Data.other_funding_sources }}
+{{ $other_funding_sources := $.Site.Data.funding_sources }}
 {{ if ge (len $other_funding_sources) 1 }}
 <section>
-  <h4>Other potential sources of funding</h4>
+  <h4>Potential funding sources</h4>
   <div class="mt-3 mb-4">
-    Below is a list of other sources of funding that may include calls relevant to data-driven life science.
+    Below is a list of sources of funding that may include calls relevant to data-driven life science.
     <div class="row g-2 mt-3 mb-4">
       {{ range $other_funding_sources }}
       <div class="col-md-6 col-lg-4">
