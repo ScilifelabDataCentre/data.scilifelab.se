@@ -1,0 +1,36 @@
+name: JSON Schema Validation
+
+on:
+  push:
+    paths:
+      - 'data/**/*.json'
+      - 'schemas/**/*.json'
+      - 'scripts/test-json-schemas.js'
+      - 'package.json'
+  pull_request:
+    paths:
+      - 'data/**/*.json'
+      - 'schemas/**/*.json'
+      - 'scripts/test-json-schemas.js'
+      - 'package.json'
+
+jobs:
+  validate-json-schemas:
+    name: Validate JSON Schemas
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run JSON Schema validation
+        run: npm run validateJson 
