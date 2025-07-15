@@ -7,7 +7,6 @@
       "Portal",
       "Tool"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "Precision Medicine Portal",
       "Precision Medicine",
@@ -34,7 +33,13 @@
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "precisionmedicine@scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/precision-medicine-portal-frontend",
-    "support_status": "https://status.dc.scilifelab.se/800572728"
+    "support_status": "https://status.dc.scilifelab.se/800572728",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection"
+    ]
   },
   {
     "target": [
@@ -109,7 +114,6 @@
     "type": [
       "database"
     ],
-    "data_source_type": ["Repository"],
     "search_tags": [
       "AI4Life BioImage Model Zoo", "BioImage Analysis", "AI Models", "Model Zoo", "Open Science", "Data-Driven Life Sciences", "DDLS", "modelling", "Artificial intelligence"
     ],
@@ -119,7 +123,19 @@
     "url": "https://bioimage.io/#/",
     "thumbnail_border": true,
     "maintained_by": "AI4Life BioImage Model Zoo team",
-    "support_website": "https://oeway.typeform.com/to/K3j2tJt7?typeform-source=bioimage.io"
+    "support_website": "https://oeway.typeform.com/to/K3j2tJt7?typeform-source=bioimage.io",
+    "data_source_type": [
+      "Repository"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer Neurological Disorders", 
+      "Drug Development"
+    ]
   },
   {
     "target": [
@@ -129,7 +145,6 @@
       "portal",
       "helpdesk"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "Pathogens portal",
       "infectious disease data",
@@ -149,7 +164,10 @@
     "thumbnail_border": true,
     "support_email": "pathogens@scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
-    "support_status": "https://status.dc.scilifelab.se/793602036"
+    "support_status": "https://status.dc.scilifelab.se/793602036",
+    "data_source_type": [
+      "Data source"
+    ]
   },
   {
     "target": [
@@ -212,7 +230,6 @@
       "database",
       "tool"
     ],
-    "data_source_type": ["Repository"],
     "search_tags": [
       "Data submission",
       "Data repository",
@@ -231,7 +248,19 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "figshare@scilifelab.se",
-    "support_website": "https://scilifelab.se/data/repository"
+    "support_website": "https://scilifelab.se/data/repository",
+    "data_source_type": [
+      "Repository"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Evolution and Biodiversity",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "General"
+    ]
   },
   {
     "target": [
@@ -242,7 +271,6 @@
       "Portal",
       "Tool"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "Metabolic Atlas",
@@ -264,7 +292,20 @@
     "thumbnail": "/img/service_thumbnails/metatlas.jpg",
     "maintained_by": "NBIS",
     "maintained_by_url": "http://www.nbis.se/",
-    "support_email": "contact@metabolicatlas.org"
+    "support_email": "contact@metabolicatlas.org",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Metabolic Disorders", 
+      "Cancer", 
+      "Various Diseases"
+    ]
   },
   {
     "target": [
@@ -345,7 +386,6 @@
       "Portal",
       "Tool"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "HPA",
@@ -365,7 +405,20 @@
     "thumbnail": "/img/service_thumbnails/hpa.jpg",
     "maintained_by": "The Human Protein Atlas",
     "maintained_by_url": "https://www.proteinatlas.org/about/organization",
-    "support_email": "contact@proteinatlas.org"
+    "support_email": "contact@proteinatlas.org",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer", 
+      "Immunological Diseases", 
+      "Various Diseases"
+    ]
   },
   {
     "target": [
@@ -405,7 +458,6 @@
       "Database",
       "Helpdesk"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "AIDA Data Hub",
@@ -429,7 +481,23 @@
     "maintained_by": "AIDA Data Hub",
     "maintained_by_url": "https://datahub.aida.scilifelab.se/about/",
     "support_email": "aida-data-director@medtech4health.se",
-    "support_status": "https://status.dc.scilifelab.se/793602004"
+    "support_status": "https://status.dc.scilifelab.se/793602004",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer", 
+      "Cardiovascular Diseases", 
+      "Immunological Diseases", 
+      "Various Diseases", 
+      "Infectious Diseases", 
+      "Public Health"
+    ]
   },
   {
     "target": [
@@ -439,7 +507,6 @@
       "Database",
       "Tool"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "NBIS",
       "Human Developmental Cell Atlas",
@@ -458,7 +525,18 @@
     "thumbnail_border": true,
     "maintained_by": "Human Developmental Cell Atlas",
     "maintained_by_url": "https://hdca-sweden.scilifelab.se/",
-    "support_email": "hdca-sweden@scilifelab.se"
+    "support_email": "hdca-sweden@scilifelab.se",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Developmental Disorders"
+    ]
   },
   {
     "target": [
@@ -496,7 +574,6 @@
       "tool",
       "portal"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "SubCellBarCode",
       "Subcellular localisations",
@@ -513,7 +590,20 @@
     "url": "/services/subcellbarcode/",
     "maintained_by": "SubCellBarCode Team",
     "maintained_by_url": "https://www.subcellbarcode.org/about.html",
-    "support_website": "https://www.subcellbarcode.org/index.html"
+    "support_website": "https://www.subcellbarcode.org/index.html",
+    "data_source_type": [
+      "Data source"
+    ],
+     "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer", 
+      "Neurological Disorders", 
+      "Various Diseases"
+    ]
   },
   {
     "target": [
@@ -522,7 +612,6 @@
     "type": [
       "database"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "SweFreq",
       "Genomics",
@@ -533,7 +622,17 @@
     "name": "SweFreq",
     "url": "https://swefreq.nbis.se/",
     "description": "A website developed to make genomic datasets more findable and accessible",
-    "maintained_by": "SciLifeLab Data Centre"
+    "maintained_by": "SciLifeLab Data Centre",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Genetic Disorders"
+    ]
   },
   {
     "target": [
@@ -1109,7 +1208,6 @@
     "type": [
       "database"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "COViMAPP",
       "COVID-19",
@@ -1147,7 +1245,13 @@
     "maintained_by": "CoViMAPP team",
     "maintained_by_url": "https://covimapp.serve.scilifelab.se",
     "support_website": "https://serve.scilifelab.se/home/",
-    "support_email": "haris.babacic@scilifelab.se"
+    "support_email": "haris.babacic@scilifelab.se",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection"
+    ]
   },
   {
     "target": [
@@ -1156,7 +1260,6 @@
     "type": [
       "database"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "OrthoDisease",
       "ortholog",
@@ -1177,7 +1280,16 @@
     "maintained_by": "Sonnhammer Group",
     "maintained_by_url": "https://sonnhammer.org",
     "support_website": "https://orthodisease.sbc.su.se/cgi-bin/faq.cgi",
-    "support_email": "orthodisease@sbc.su.se"
+    "support_email": "orthodisease@sbc.su.se",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Various diseases"
+    ]
   },
   {
     "target": [
@@ -1216,7 +1328,6 @@
     "type": [
       "database"
     ],
-    "data_source_type": ["Data source"],
     "search_tags": [
       "InParanoiDB",
       "ortholog groups",
@@ -1234,7 +1345,17 @@
     "url": "https://inparanoidb.sbc.su.se",
     "maintained_by": "Sonnhammer Group",
     "maintained_by_url": "https://sonnhammer.org",
-    "support_website": "https://inparanoidb.sbc.su.se/about/"
+    "support_website": "https://inparanoidb.sbc.su.se/about/",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Precision Medicine and Diagnostics",
+      "Epidemiology and Biology of Infection"
+    ],
+    "disease_type": [ 
+      "Various diseases"
+    ]
   },
   {
     "target": [
