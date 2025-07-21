@@ -109,118 +109,116 @@
 
 <script>
   // Functions need to be run when the DOM is ready
-  document.addEventListener("DOMContentLoaded", function (event) {
+  document.addEventListener("DOMContentLoaded", async () => {
     
-    // Takes a URL and calls the callback function pass the data fetched
-    function getDataFromUrl(url, load_callback) {
-      // Fetch jobs directly from SciLifeLab WordPress API
-      fetch('https://www.scilifelab.se/wp-json/wp/v2/career?orderby=archive_date&per_page=50')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+    // Constants
+    const JOBS_API_URL = 'https://www.scilifelab.se/wp-json/wp/v2/career?orderby=archive_date&per_page=50';
+    
+    // Helper functions for job data transformation
+    function extractJobUrl(job) {
+      try {
+        return job.acf?.read_more_external_link?.url || job.link;
+      } catch {
+        return job.link;
+      }
+    }
+    
+    function extractEmployer(job) {
+      let employer = 'SciLifeLab';
+      try {
+        const universityList = job.acf?.university_lists;
+        if (Array.isArray(universityList) && universityList.length > 0) {
+          const universities = universityList
+            .filter(univ => univ && univ.university && univ.university.title)
+            .map(univ => univ.university.title.trim());
+          if (universities.length > 0) {
+            employer = universities.join(', ');
           }
-          return response.json();
-        })
-        .then(apiData => {
-          // Process and transform the API response
-          const today = new Date();
-          today.setHours(0, 0, 0, 0);
-          
-          const filteredJobs = apiData.filter(job => {
-            // Filter jobs that are not past today
-            const archiveDate = new Date(job.archive_date);
-            archiveDate.setHours(0, 0, 0, 0);
-            return archiveDate >= today;
-          });
+        }
+      } catch (err) {
+        console.warn('Error extracting employer from job:', err);
+      }
+      return employer;
+    }
+    
+    function determineJobType(job) {
+      let jobType = 'Job Position'; // Default value
+      try {
+        // Try to extract job type from API if available
+        if (job.acf?.job_type) {
+          jobType = job.acf.job_type;
+        } else {
+          // Optimized job type detection based on title and category
+          const title = (job.title?.rendered || '').toLowerCase();
+          const category = (job.class_list?.[5]?.replace(/^[^-]*-/, '').trim() || '').toLowerCase();
 
-          // Transform jobs to our format
-          const transformedJobs = filteredJobs.map(job => {
-            // Extract job URL
-            let jobUrl;
-            try {
-              jobUrl = job.acf?.read_more_external_link?.url;
-            } catch {
-              jobUrl = job.link;
-            }
-
-            // Extract employer
-            let employer = '';
-            try {
-              const universityList = job.acf?.university_lists || [];
-              const universities = universityList
-                .filter(univ => univ.university)
-                .map(univ => univ.university.title.trim());
-              if (universities.length > 0) {
-                employer = universities.join(', ');
-              } else {
-                employer = 'SciLifeLab'; // Default fallback if list is empty
-              }
-            } catch {
-              employer = 'SciLifeLab'; // Default fallback
-            }
-
-            // Extract job type from API or use default
-            let jobType = [];
-            try {
-              // Try to extract job type from API if available
-              if (job.acf?.job_type) {
-                jobType = [job.acf.job_type];
-              } else {
-                // Optimized job type detection based on title and category
-                const title = (job.title?.rendered || '').toLowerCase();
-                const category = (job.class_list?.[5]?.replace(/^[^-]*-/, '').trim() || '').toLowerCase();
-
-                if (title.includes('professorship') || title.includes('professor')) {
-                  jobType = ['Professor or Fellow'];
-                } else if (title.includes('postdoc') || title.includes('post-doc')) {
-                  jobType = ['Postdoc Position'];
-                } else if (title.includes('phd')) {
-                  jobType = ['PhD Position'];
-                } else if (category.includes('researchers-research-engineers-and-postdocs')) {
-                  jobType = ['Researcher or Engineer'];
-                } else if (category.includes('technical-and-administrative-personnel')) {
-                  jobType = ['Admin and Technical'];
-                } else {
-                  jobType = ['Job Position']; // Default fallback
-                }
-              }
-            } catch {
-              jobType = ['Job Position']; // Default fallback
-            }
-
-            return {
-              title: job.title?.rendered || 'No title available',
-              type: jobType,
-              app_deadline: job.archive_date,
-              job_url: jobUrl,
-              employer: employer
-            };
-          });
-
-          const result = { items: transformedJobs };
-          load_callback(result.items);
-        })
-        .catch(error => {
-          console.error('Error fetching jobs:', error);
-          var req = new XMLHttpRequest();
-          req.overrideMimeType("application/json");
-          req.open("GET", url, true);
-          req.onload = function () {
-            load_callback(JSON.parse(req.responseText).items);
-          };
-          req.send(null);
+          if (title.includes('professorship') || title.includes('professor')) {
+            jobType = 'Professor or Fellow';
+          } else if (title.includes('postdoc') || title.includes('post-doc')) {
+            jobType = 'Postdoc Position';
+          } else if (title.includes('phd')) {
+            jobType = 'PhD Position';
+          } else if (category.includes('researchers-research-engineers-and-postdocs')) {
+            jobType = 'Researcher or Engineer';
+          } else if (category.includes('technical-and-administrative-personnel')) {
+            jobType = 'Admin and Technical';
+          }
+          // Otherwise, keep default 'Job Position'
+        }
+      } catch (err) {
+        // Error extracting job type; jobType remains as default
+        console.warn('Error extracting job type from job:', err);
+      }
+      return jobType;
+    }
+    
+    // Takes a URL and returns the data fetched
+    async function getDataFromUrl(url) {
+      try {
+        // Fetch jobs directly from SciLifeLab WordPress API
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const apiData = await response.json();
+        
+        // Process and transform the API response
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        
+        const filteredJobs = apiData.filter(job => {
+          // Filter jobs that are not past today
+          const archiveDate = new Date(job.archive_date);
+          archiveDate.setHours(0, 0, 0, 0);
+          return archiveDate >= today;
         });
+
+        // Transform jobs to our format
+        const transformedJobs = filteredJobs.map(job => ({
+          title: job.title?.rendered || 'No title available',
+          type: determineJobType(job),
+          app_deadline: job.archive_date,
+          job_url: extractJobUrl(job),
+          employer: extractEmployer(job)
+        }));
+
+        return transformedJobs;
+      } catch (error) {
+        console.error('Error fetching jobs:', error);
+        return []; // Return empty array if API fails
+      }
     };
     
-    function addJobs(dataArray) {
+    async function addJobs(dataArray) {
       var jobsList = [], jobTypes = new Set(), employer = new Set();
       
       // Filter and collect data in a single pass
-      const today = new Date().setHours(0,0,0,0);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
       dataArray.forEach((job) => {
         if (new Date(job.app_deadline) >= today){
           jobsList.push(job);
-          job.type.forEach((jt) => jobTypes.add(jt.toLowerCase()));
+          jobTypes.add(job.type.toLowerCase());
           employer.add(job.employer);
         }
       });
@@ -296,16 +294,14 @@
                           <div class="col-lg mt-2 mt-lg-0">
                             <div class="row g-2" id="jobs-container">`;
         jobsList.forEach((job) => {
-          var this_job_type = job.type.map(jt => jt.replaceAll(" ", "-").toLowerCase()).join(" ");
+          var this_job_type = job.type.replaceAll(" ", "-").toLowerCase();
           var this_employer = job.employer.replaceAll(" ", "-").toLowerCase();
           var job_date = new Date(job.app_deadline);
           jobsHTML += `<div class="col-md-6 col-lg-4 job" data-job-type="${this_job_type}" data-employer="${this_employer}">
                         <div class="card-box">
                           <div class="d-flex justify-content-between">
                             <div>`;
-          job.type.forEach((jt) => {
-            jobsHTML += `<span class="badge event-type mb-1 me-1">${jt}</span>`;
-          });
+          jobsHTML += `<span class="badge event-type mb-1 me-1">${job.type}</span>`;
           jobsHTML += `<h5><a href="${job.job_url}" target="_blank">${job.title}</a></h5>
                        </div>
                        <div>
@@ -375,11 +371,11 @@
               showJob = true;
             } else if (job_type.length && employer.length) {
               // Both filters active
-              showJob = job_type.some(type => jobType.includes(type)) && 
+              showJob = job_type.some(type => jobType.toLowerCase() === type.toLowerCase()) && 
                        employer.includes(jobEmployer);
             } else if (job_type.length) {
               // Only job type filter
-              showJob = job_type.some(type => jobType.includes(type));
+              showJob = job_type.some(type => jobType.toLowerCase() === type.toLowerCase());
             } else if (employer.length) {
               // Only employer filter
               showJob = employer.includes(jobEmployer);
@@ -405,13 +401,9 @@
     };
     
     // Call the function to fetch, parse and display jobs
-    getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_jobs.json"),
-      function(jobsData) {
-        addJobs(jobsData);
-        enableFiltering();
-      }
-    );
+    const availableJobs = await getDataFromUrl(JOBS_API_URL);
+    await addJobs(availableJobs);
+    enableFiltering();
     
     // Job suggestion form relted function
     // set origin url in the form
