@@ -104,6 +104,14 @@
 </section>
 
 <section id="jobs-section">
+  <!-- Loading indicator -->
+  <div id="jobs-loading" class="text-center py-5">
+    <div class="spinner-border text-aqua" role="status" style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Loading jobs...</span>
+    </div>
+    <p class="mt-3 text-muted">Loading available positions...</p>
+  </div>
+  
   <!-- The jobs content will be filled by JS function below -->
 </section>
 
@@ -336,6 +344,12 @@
       
       var jobsSection = document.getElementById('jobs-section');
       jobsSection.innerHTML = jobsHTML;
+      
+      // Hide loading indicator
+      const loadingElement = document.getElementById('jobs-loading');
+      if (loadingElement) {
+        loadingElement.style.display = 'none';
+      }
     };
     
     function enableFiltering (){
