@@ -371,28 +371,28 @@
     
         // Show relevant jobs based on selected criteria
         if (!job_type.length && !employer.length) {
+          // No filters selected, show all jobs
           $jobs.show();
         } else {
-          // Use more efficient filtering
+          // Filter jobs based on selected criteria
           $jobs.each(function(){
             var $job = $(this);
             var jobType = $job.data('job-type');
             var jobEmployer = $job.data('employer');
+            var showJob = true;
             
-            var showJob = false;
+            // Check job type filter
+            if (job_type.length > 0) {
+              // Normalize filter values to match data attribute format (lowercase with hyphens)
+              var normalizedJobTypes = job_type.map(type => type.replaceAll(" ", "-").toLowerCase());
+              showJob = showJob && normalizedJobTypes.includes(jobType);
+            }
             
-            if (!job_type.length && !employer.length) {
-              showJob = true;
-            } else if (job_type.length && employer.length) {
-              // Both filters active
-              showJob = job_type.some(type => jobType.toLowerCase() === type.toLowerCase()) && 
-                       employer.includes(jobEmployer);
-            } else if (job_type.length) {
-              // Only job type filter
-              showJob = job_type.some(type => jobType.toLowerCase() === type.toLowerCase());
-            } else if (employer.length) {
-              // Only employer filter
-              showJob = employer.includes(jobEmployer);
+            // Check employer filter
+            if (employer.length > 0) {
+              // Normalize filter values to match data attribute format (lowercase with hyphens)
+              var normalizedEmployers = employer.map(emp => emp.replaceAll(" ", "-").toLowerCase());
+              showJob = showJob && normalizedEmployers.includes(jobEmployer);
             }
             
             if (showJob) {
