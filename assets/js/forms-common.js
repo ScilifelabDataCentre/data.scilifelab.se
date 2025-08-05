@@ -21,14 +21,19 @@ function generateSessionId(prefix) {
 // Common validation for all forms
 function validateCommonSubmission(sessionStartTime) {
   // Check session timing
-  if (!validateSessionDuration(sessionStartTime)) {
+  const sessionDuration = (Date.now() - sessionStartTime) / 1000;
+  if (sessionDuration < FORM_CONFIG.minSessionTime) {
     console.log('Session too short');
     return false;
   }
   
   // Check additional fields
-  if (!validateAdditionalFields()) {
-    return false;
+  for (const fieldName of FORM_CONFIG.additionalFields) {
+    const field = document.getElementById(fieldName);
+    if (field && field.value.trim() !== '') {
+      console.log('Additional fields validation failed');
+      return false;
+    }
   }
   
   return true;
@@ -38,24 +43,6 @@ function validateCommonSubmission(sessionStartTime) {
 function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
-}
-
-// Validate session duration (minimum time spent on page)
-function validateSessionDuration(sessionStartTime) {
-  const sessionDuration = (Date.now() - sessionStartTime) / 1000;
-  return sessionDuration >= FORM_CONFIG.minSessionTime;
-}
-
-// Validate additional fields
-function validateAdditionalFields() {
-  for (const fieldName of FORM_CONFIG.additionalFields) {
-    const field = document.getElementById(fieldName);
-    if (field && field.value.trim() !== '') {
-      console.log('Additional fields validation failed');
-      return false;
-    }
-  }
-  return true;
 }
 
 // Add common form metadata to FormData
@@ -141,14 +128,46 @@ function resetForm(formId) {
 
 // Prevent form submission on Enter key press
 function preventEnterSubmission(formId) {
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById(formId);
-    if (form) {
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        return false;
-      });
-    }
-  });
+  const form = document.getElementById(formId);
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    });
+  }
+}
+
+// Generic success handler for forms
+function showFormSuccess(formName, message, options = {}) {
+  const successMessageId = options.successMessageId || `${formName}-success-message`;
+  const errorMessageId = options.errorMessageId || `${formName}-error-message`;
+  const formId = options.formId || `${formName}-form`;
+  
+  // Show success message and hide error message
+  showFormMessage(successMessageId, message);
+  hideFormMessage(errorMessageId);
+  
+  // Reset form
+  resetForm(formId);
+  
+  // Handle post-success actions
+  if (options.hideFormContainer) {
+    document.getElementById(options.hideFormContainer).classList.add('d-none');
+  } else if (options.hideModal !== false) {
+    // Default behavior: hide modal after delay
+    setTimeout(function() {
+      $('#suggestionModal').modal('hide');
+    }, 2000);
+  }
+}
+
+// Generic error handler for forms
+function showFormError(formName, message, options = {}) {
+  const successMessageId = options.successMessageId || `${formName}-success-message`;
+  const errorMessageId = options.errorMessageId || `${formName}-error-message`;
+  
+  // Show error message and hide success message
+  showFormMessage(errorMessageId, message, false);
+  hideFormMessage(successMessageId);
 }

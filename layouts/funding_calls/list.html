@@ -135,14 +135,47 @@ var sessionId = generateSessionId('funding');
 
 function submitFundingForm() {
   // Validate form-specific fields
-  if (!validateFundingForm()) {
-    showFundingError('Please fill out all required fields correctly.');
+  var isValid = true;
+  
+  // Check required fields
+  var requiredFields = ['submitter_name', 'submitter_email', 'funder', 'call_url'];
+  
+  requiredFields.forEach(function(fieldName) {
+    var field = document.getElementById(fieldName);
+    if (!field.value.trim()) {
+      isValid = false;
+      field.classList.add('is-invalid');
+    } else {
+      field.classList.remove('is-invalid');
+    }
+  });
+  
+  // Check URL
+  var urlField = document.getElementById('call_url');
+  if (urlField.value.trim() && !urlField.value.match(/^https?:\/\/.+/)) {
+    isValid = false;
+    urlField.classList.add('is-invalid');
+  } else {
+    urlField.classList.remove('is-invalid');
+  }
+  
+  // Check email
+  var emailField = document.getElementById('submitter_email');
+  if (emailField.value.trim() && !validateEmail(emailField.value)) {
+    isValid = false;
+    emailField.classList.add('is-invalid');
+  } else {
+    emailField.classList.remove('is-invalid');
+  }
+  
+  if (!isValid) {
+    showFormError('funding', 'Please fill out all required fields correctly.');
     return;
   }
   
   // Validate common submission criteria
   if (!validateCommonSubmission(sessionStartTime)) {
-    showFundingError('Form submission failed validation. Please try again.');
+    showFormError('funding', 'Form submission failed validation. Please try again.');
     return;
   }
   
@@ -173,66 +206,13 @@ function submitFundingForm() {
   */
   
   // Submit using common function
-  submitFormData(formData, showFundingSuccess, showFundingError)
+  submitFormData(formData, 
+    function(message) { showFormSuccess('funding', message); }, 
+    function(message) { showFormError('funding', message); }
+  )
   .finally(() => {
     setButtonLoadingState('funding-submit-btn', false);
   });
-}
-
-// Form-specific validation
-function validateFundingForm() {
-  var isValid = true;
-  
-  // Check required fields
-  var requiredFields = ['submitter_name', 'submitter_email', 'funder', 'call_url'];
-  
-  requiredFields.forEach(function(fieldName) {
-    var field = document.getElementById(fieldName);
-    if (!field.value.trim()) {
-      isValid = false;
-      field.classList.add('is-invalid');
-    } else {
-      field.classList.remove('is-invalid');
-    }
-  });
-  
-  // Validate URL
-  var urlField = document.getElementById('call_url');
-  if (urlField.value.trim() && !urlField.value.match(/^https?:\/\/.+/)) {
-    isValid = false;
-    urlField.classList.add('is-invalid');
-  } else {
-    urlField.classList.remove('is-invalid');
-  }
-  
-  // Validate email
-  var emailField = document.getElementById('submitter_email');
-  if (emailField.value.trim() && !validateEmail(emailField.value)) {
-    isValid = false;
-    emailField.classList.add('is-invalid');
-  } else {
-    emailField.classList.remove('is-invalid');
-  }
-  
-  return isValid;
-}
-
-function showFundingSuccess(message) {
-  showFormMessage('funding-success-message', message);
-  hideFormMessage('funding-error-message');
-  
-  // Reset form
-  resetForm('funding-form');
-  
-  // Hide modal after a delay
-  setTimeout(function() {
-    $('#suggestionModal').modal('hide');
-  }, 2000);
-}
-
-function showFundingError(message) {
-  showFormMessage('funding-error-message', message, false);
-  hideFormMessage('funding-success-message');
 }
 </script>
 

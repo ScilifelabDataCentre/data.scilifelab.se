@@ -140,14 +140,47 @@
   
   function submitJobsForm() {
     // Validate form-specific fields
-    if (!validateJobsForm()) {
-      showJobsError('Please fill out all required fields correctly.');
+    var isValid = true;
+    
+    // Check required fields
+    var requiredFields = ['job_title', 'job_type', 'job_deadline', 'employer', 'job_url'];
+    
+    requiredFields.forEach(function(fieldName) {
+      var field = document.getElementById(fieldName);
+      if (!field.value.trim()) {
+        isValid = false;
+        field.classList.add('is-invalid');
+      } else {
+        field.classList.remove('is-invalid');
+      }
+    });
+    
+    // Check URL
+    var urlField = document.getElementById('job_url');
+    if (urlField.value.trim() && !urlField.value.match(/^https?:\/\/.+/)) {
+      isValid = false;
+      urlField.classList.add('is-invalid');
+    } else {
+      urlField.classList.remove('is-invalid');
+    }
+    
+    // Check email if provided
+    var emailField = document.getElementById('submitter_email');
+    if (emailField.value.trim() && !validateEmail(emailField.value)) {
+      isValid = false;
+      emailField.classList.add('is-invalid');
+    } else {
+      emailField.classList.remove('is-invalid');
+    }
+    
+    if (!isValid) {
+      showFormError('jobs', 'Please fill out all required fields correctly.');
       return;
     }
     
     // Validate common submission criteria
     if (!validateCommonSubmission(sessionStartTime)) {
-      showJobsError('Form submission failed validation. Please try again.');
+      showFormError('jobs', 'Form submission failed validation. Please try again.');
       return;
     }
     
@@ -178,66 +211,13 @@
     */
     
     // Submit using common function
-    submitFormData(formData, showJobsSuccess, showJobsError)
+    submitFormData(formData, 
+      function(message) { showFormSuccess('jobs', message); }, 
+      function(message) { showFormError('jobs', message); }
+    )
     .finally(() => {
       setButtonLoadingState('jobs-submit-btn', false);
     });
-  }
-  
-  // Form-specific validation
-  function validateJobsForm() {
-    var isValid = true;
-    
-    // Check required fields
-    var requiredFields = ['job_title', 'job_type', 'job_deadline', 'employer', 'job_url'];
-    
-    requiredFields.forEach(function(fieldName) {
-      var field = document.getElementById(fieldName);
-      if (!field.value.trim()) {
-        isValid = false;
-        field.classList.add('is-invalid');
-      } else {
-        field.classList.remove('is-invalid');
-      }
-    });
-    
-    // Validate URL
-    var urlField = document.getElementById('job_url');
-    if (urlField.value.trim() && !urlField.value.match(/^https?:\/\/.+/)) {
-      isValid = false;
-      urlField.classList.add('is-invalid');
-    } else {
-      urlField.classList.remove('is-invalid');
-    }
-    
-    // Validate email if provided
-    var emailField = document.getElementById('submitter_email');
-    if (emailField.value.trim() && !validateEmail(emailField.value)) {
-      isValid = false;
-      emailField.classList.add('is-invalid');
-    } else {
-      emailField.classList.remove('is-invalid');
-    }
-    
-    return isValid;
-  }
-  
-  function showJobsSuccess(message) {
-    showFormMessage('jobs-success-message', message);
-    hideFormMessage('jobs-error-message');
-    
-    // Reset form
-    resetForm('jobs-form');
-    
-    // Hide modal after a delay
-    setTimeout(function() {
-      $('#suggestionModal').modal('hide');
-    }, 2000);
-  }
-  
-  function showJobsError(message) {
-    showFormMessage('jobs-error-message', message, false);
-    hideFormMessage('jobs-success-message');
   }
 </script>
 

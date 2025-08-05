@@ -164,8 +164,8 @@
   var sessionStartTime = Date.now();
   var sessionId = generateSessionId('highlights');
   
-  // Form-specific validation
-  function validateHighlightsForm() {
+  function submitHighlightsForm() {
+    // Validate form-specific fields
     var isValid = true;
     
     // Check required fields
@@ -181,7 +181,7 @@
       }
     });
     
-    // Validate email if provided
+    // Check email if provided
     var emailField = document.getElementById('submitter_email');
     if (emailField.value.trim() && !validateEmail(emailField.value)) {
       isValid = false;
@@ -190,37 +190,14 @@
       emailField.classList.remove('is-invalid');
     }
     
-    return isValid;
-  }
-  
-  function showHighlightsSuccess(message) {
-    showFormMessage('highlights-success-message', message);
-    hideFormMessage('highlights-error-message');
-    
-    // Reset form
-    resetForm('highlights-form');
-    
-    // Hide modal after a delay
-    setTimeout(function() {
-      $('#suggestionModal').modal('hide');
-    }, 2000);
-  }
-  
-  function showHighlightsError(message) {
-    showFormMessage('highlights-error-message', message, false);
-    hideFormMessage('highlights-success-message');
-  }
-  
-  function submitHighlightsForm() {
-    // Validate form-specific fields
-    if (!validateHighlightsForm()) {
-      showHighlightsError('Please fill out all required fields correctly.');
+    if (!isValid) {
+      showFormError('highlights', 'Please fill out all required fields correctly.');
       return;
     }
     
     // Validate common submission criteria
     if (!validateCommonSubmission(sessionStartTime)) {
-      showHighlightsError('Form submission failed validation. Please try again.');
+      showFormError('highlights', 'Form submission failed validation. Please try again.');
       return;
     }
     
@@ -251,7 +228,10 @@
     */
     
     // Submit using common function
-    submitFormData(formData, showHighlightsSuccess, showHighlightsError)
+    submitFormData(formData, 
+      function(message) { showFormSuccess('highlights', message); }, 
+      function(message) { showFormError('highlights', message); }
+    )
     .finally(() => {
       setButtonLoadingState('highlights-submit-btn', false);
     });
