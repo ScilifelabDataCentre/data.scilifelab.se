@@ -134,47 +134,33 @@ var sessionStartTime = Date.now();
 var sessionId = generateSessionId('funding');
 
 function submitFundingForm() {
+  // Deactivate button and show loading state
+  setButtonLoadingState('funding-submit-btn', true);
+  
   // Validate form-specific fields
-  var isValid = true;
+  var form = document.getElementById('funding-form');
+  var isValid = form.checkValidity();
   
-  // Check required fields
-  var requiredFields = ['submitter_name', 'submitter_email', 'funder', 'call_url'];
-  
-  requiredFields.forEach(function(fieldName) {
+  // Add visual feedback for invalid fields
+  var allFields = ['submitter_name', 'submitter_email', 'funder', 'call_url'];
+  allFields.forEach(function(fieldName) {
     var field = document.getElementById(fieldName);
-    if (!field.value.trim()) {
-      isValid = false;
+    if (!field.checkValidity()) {
       field.classList.add('is-invalid');
     } else {
       field.classList.remove('is-invalid');
     }
   });
   
-  // Check URL
-  var urlField = document.getElementById('call_url');
-  if (urlField.value.trim() && !urlField.value.match(/^https?:\/\/.+/)) {
-    isValid = false;
-    urlField.classList.add('is-invalid');
-  } else {
-    urlField.classList.remove('is-invalid');
-  }
-  
-  // Check email
-  var emailField = document.getElementById('submitter_email');
-  if (emailField.value.trim() && !validateEmail(emailField.value)) {
-    isValid = false;
-    emailField.classList.add('is-invalid');
-  } else {
-    emailField.classList.remove('is-invalid');
-  }
-  
   if (!isValid) {
+    setButtonLoadingState('funding-submit-btn', false);
     showFormError('funding', 'Please fill out all required fields correctly.');
     return;
   }
   
   // Validate common submission criteria
   if (!validateCommonSubmission(sessionStartTime)) {
+    setButtonLoadingState('funding-submit-btn', false);
     showFormError('funding', 'Form submission failed validation. Please try again.');
     return;
   }
@@ -187,9 +173,6 @@ function submitFundingForm() {
     return;
   }
   */
-  
-  // Show loading state
-  setButtonLoadingState('funding-submit-btn', true);
   
   // Collect form data
   var formData = new FormData(document.getElementById('funding-form'));

@@ -139,47 +139,33 @@
   var sessionId = generateSessionId('jobs');
   
   function submitJobsForm() {
-    // Validate form-specific fields
-    var isValid = true;
+    // Deactivate button and show loading state
+    setButtonLoadingState('jobs-submit-btn', true);
     
-    // Check required fields
-    var requiredFields = ['job_title', 'job_type', 'job_deadline', 'employer', 'job_url'];
+    // Validate form-specific fields using HTML5 validation
+    var form = document.getElementById('jobs-form');
+    var isValid = form.checkValidity();
     
-    requiredFields.forEach(function(fieldName) {
+    // Add visual feedback for invalid fields
+    var allFields = ['job_title', 'job_type', 'job_deadline', 'employer', 'job_url', 'submitter_email'];
+    allFields.forEach(function(fieldName) {
       var field = document.getElementById(fieldName);
-      if (!field.value.trim()) {
-        isValid = false;
+      if (field && !field.checkValidity()) {
         field.classList.add('is-invalid');
-      } else {
+      } else if (field) {
         field.classList.remove('is-invalid');
       }
     });
     
-    // Check URL
-    var urlField = document.getElementById('job_url');
-    if (urlField.value.trim() && !urlField.value.match(/^https?:\/\/.+/)) {
-      isValid = false;
-      urlField.classList.add('is-invalid');
-    } else {
-      urlField.classList.remove('is-invalid');
-    }
-    
-    // Check email if provided
-    var emailField = document.getElementById('submitter_email');
-    if (emailField.value.trim() && !validateEmail(emailField.value)) {
-      isValid = false;
-      emailField.classList.add('is-invalid');
-    } else {
-      emailField.classList.remove('is-invalid');
-    }
-    
     if (!isValid) {
+      setButtonLoadingState('jobs-submit-btn', false);
       showFormError('jobs', 'Please fill out all required fields correctly.');
       return;
     }
     
     // Validate common submission criteria
     if (!validateCommonSubmission(sessionStartTime)) {
+      setButtonLoadingState('jobs-submit-btn', false);
       showFormError('jobs', 'Form submission failed validation. Please try again.');
       return;
     }
@@ -192,9 +178,6 @@
       return;
     }
     */
-    
-    // Show loading state
-    setButtonLoadingState('jobs-submit-btn', true);
     
     // Collect form data
     var formData = new FormData(document.getElementById('jobs-form'));

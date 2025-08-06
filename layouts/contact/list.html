@@ -4,20 +4,20 @@
 
 <div class="container">
   <!-- Success message (shown after successful submission) -->
-  <div id="success-message" class="alert alert-success d-none" role="alert">
+  <div id="success-message" class="alert alert-success" style="display: none;" role="alert">
     <h4 class="alert-heading">Thank you!</h4>
     <p id="success-message-text">Your message has been sent successfully. We'll get back to you as soon as possible.</p>
   </div>
 
   <!-- Error message (shown if submission fails) -->
-  <div id="error-message" class="alert alert-danger d-none" role="alert">
+  <div id="error-message" class="alert alert-danger" style="display: none;" role="alert">
     <h4 class="alert-heading">Submission failed</h4>
     <p id="error-message-text">There was an issue with your submission. Please try again.</p>
   </div>
 
   <!-- Contact form container -->
   <div id="contact-form-container">
-    <form id="contact-form" class="needs-validation" novalidate>
+    <form id="contact-form" class="needs-validation" novalidate accept-charset="utf-8">
       <div class="row mb-3 mt-2">
         <label for="name" class="col-sm-2 col-form-label fw-bold">Name:*</label>
         <div class="col-sm-10">
@@ -65,7 +65,7 @@
       <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
       <!-- <label id="g-recaptcha" for="url"> -->
       
-      <button type="button" class="btn btn-aqua mt-2" id="submit-btn" onclick="submitContactForm()">Send</button>
+      <button type="button" class="btn btn-aqua mt-2" id="contact-submit-btn" onclick="submitContactForm()">Send</button>
     </form>
   </div>
 </div>
@@ -85,23 +85,36 @@
     hideFormMessage('success-message');
     hideFormMessage('error-message');
 
-    // Validate form-specific fields
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var message = document.getElementById('message').value.trim();
+    // Deactivate button and show loading state
+    setButtonLoadingState('contact-submit-btn', true);
 
-    if (!name || !email || !message) {
-      alert("Please fill out all required fields.");
-      return;
-    }
-
-    if (!validateEmail(email)) {
-      alert("Please enter a valid email address.");
+    // Validate form-specific fields using HTML5 validation
+    var form = document.getElementById('contact-form');
+    var isValid = form.checkValidity();
+    
+    // Add visual feedback for invalid fields
+    var requiredFields = ['name', 'email', 'message'];
+    requiredFields.forEach(function(fieldName) {
+      var field = document.getElementById(fieldName);
+      if (!field.checkValidity()) {
+        field.classList.add('is-invalid');
+      } else {
+        field.classList.remove('is-invalid');
+      }
+    });
+    
+    if (!isValid) {
+      setButtonLoadingState('contact-submit-btn', false);
+      showFormError('contact', 'Please fill out all required fields correctly.', {
+        successMessageId: 'success-message',
+        errorMessageId: 'error-message'
+      });
       return;
     }
 
     // Validate common submission criteria
     if (!validateCommonSubmission(sessionStartTime)) {
+      setButtonLoadingState('contact-submit-btn', false);
       showFormError('contact', 'Form submission failed validation. Please try again.', {
         successMessageId: 'success-message',
         errorMessageId: 'error-message'
@@ -117,9 +130,6 @@
       return;
     }
     */
-
-    // Show loading state
-    setButtonLoadingState('submit-btn', true, 'Sending...');
 
     // Collect form-specific data
     var formData = new FormData(document.getElementById('contact-form'));
@@ -153,7 +163,7 @@
       }
     )
     .finally(() => {
-      setButtonLoadingState('submit-btn', false);
+      setButtonLoadingState('contact-submit-btn', false);
     });
   }
 </script>

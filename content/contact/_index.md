@@ -15,4 +15,4 @@ Both the website and the technical platform associated with the SciLifeLab Data 
 
 You can also get in touch with us by emailing us at [data-platform@scilifelab.se](mailto:data-platform@scilifelab.se).
 
-### Contact form
+### Contact form {#contact-form-section}

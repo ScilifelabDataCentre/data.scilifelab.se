@@ -50,7 +50,10 @@ function addFormMetadata(formData, origin, sessionId, sessionStartTime) {
   formData.append('originUrl', location.href);
   formData.append('origin', origin);
   formData.append('session_id', sessionId);
-  formData.append('session_duration', (Date.now() - sessionStartTime) / 1000);
+  
+  // Initial session duration (will be updated right before sending)
+  const sessionDuration = (Date.now() - sessionStartTime) / 1000;
+  formData.append('session_duration', sessionDuration);
   
   // Add additional fields
   for (const fieldName of FORM_CONFIG.additionalFields) {
@@ -63,6 +66,18 @@ function addFormMetadata(formData, origin, sessionId, sessionStartTime) {
 
 // Handle form submission with common logic
 function submitFormData(formData, successCallback, errorCallback) {
+  // Update session duration right before sending to minimise timing discrepancy
+  const sessionId = formData.get('session_id');
+  if (sessionId) {
+    // Extract timestamp from session ID
+    const sessionIdParts = sessionId.split('_');
+    const sessionTimestamp = parseInt(sessionIdParts[sessionIdParts.length - 1]);
+    if (!isNaN(sessionTimestamp)) {
+      const actualDuration = (Date.now() - sessionTimestamp) / 1000;
+      formData.set('session_duration', actualDuration);
+    }
+  }
+  
   return fetch(FORM_CONFIG.submitUrl, {
     method: 'POST',
     body: formData
@@ -82,7 +97,7 @@ function submitFormData(formData, successCallback, errorCallback) {
 }
 
 // Manage button loading state
-function setButtonLoadingState(buttonId, isLoading, loadingText = 'Submitting...') {
+function setButtonLoadingState(buttonId, isLoading, loadingText = 'Processing...') {
   const button = document.getElementById(buttonId);
   if (!button) return;
   
@@ -107,7 +122,7 @@ function showFormMessage(messageElementId, message, isSuccess = true) {
   }
   
   messageElement.style.display = 'block';
-  messageElement.scrollIntoView({ behavior: 'smooth' });
+  messageElement.scrollIntoView({ behaviour: 'smooth' });
 }
 
 // Hide form message
@@ -155,7 +170,7 @@ function showFormSuccess(formName, message, options = {}) {
   if (options.hideFormContainer) {
     document.getElementById(options.hideFormContainer).classList.add('d-none');
   } else if (options.hideModal !== false) {
-    // Default behavior: hide modal after delay
+    // Default behaviour: hide modal after delay
     setTimeout(function() {
       $('#suggestionModal').modal('hide');
     }, 2000);

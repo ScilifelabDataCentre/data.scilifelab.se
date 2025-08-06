@@ -50,7 +50,7 @@
             </div>
             <div class="mb-3">
               <label for="url" class="form-label fw-bold">URL or DOI with more information:*</label>
-              <input type="text" class="form-control" id="url" name="url" required>
+              <input type="url" class="form-control" id="url" name="url" required>
               <div class="form-text">Enter URL starting with 'https://...' or DOI.</div>
             </div>
             <div class="mb-3">
@@ -165,38 +165,33 @@
   var sessionId = generateSessionId('highlights');
   
   function submitHighlightsForm() {
-    // Validate form-specific fields
-    var isValid = true;
+    // Deactivate button and show loading state
+    setButtonLoadingState('highlights-submit-btn', true);
     
-    // Check required fields
-    var requiredFields = ['title', 'url'];
+    // Validate form-specific fields using HTML5 validation
+    var form = document.getElementById('highlights-form');
+    var isValid = form.checkValidity();
     
-    requiredFields.forEach(function(fieldName) {
+    // Add visual feedback for invalid fields
+    var allFields = ['title', 'url', 'submitter_email'];
+    allFields.forEach(function(fieldName) {
       var field = document.getElementById(fieldName);
-      if (!field.value.trim()) {
-        isValid = false;
+      if (field && !field.checkValidity()) {
         field.classList.add('is-invalid');
-      } else {
+      } else if (field) {
         field.classList.remove('is-invalid');
       }
     });
     
-    // Check email if provided
-    var emailField = document.getElementById('submitter_email');
-    if (emailField.value.trim() && !validateEmail(emailField.value)) {
-      isValid = false;
-      emailField.classList.add('is-invalid');
-    } else {
-      emailField.classList.remove('is-invalid');
-    }
-    
     if (!isValid) {
+      setButtonLoadingState('highlights-submit-btn', false);
       showFormError('highlights', 'Please fill out all required fields correctly.');
       return;
     }
     
     // Validate common submission criteria
     if (!validateCommonSubmission(sessionStartTime)) {
+      setButtonLoadingState('highlights-submit-btn', false);
       showFormError('highlights', 'Form submission failed validation. Please try again.');
       return;
     }
@@ -209,9 +204,6 @@
       return;
     }
     */
-    
-    // Show loading state
-    setButtonLoadingState('highlights-submit-btn', true);
     
     // Collect form data
     var formData = new FormData(document.getElementById('highlights-form'));
