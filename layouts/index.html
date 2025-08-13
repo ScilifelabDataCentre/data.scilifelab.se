@@ -250,48 +250,38 @@
     
     // Creates html entry for latest events
     function addEvents(data){
-      var dataArray = data.items, eventList = [], eventsHTML = "";;
-      dataArray.forEach((event) => {
-        if (typeof event.target !== 'undefined' && event.target.includes("data-platform")) {
-          event.banner_date = event.date_start || event.registration_deadline;
-          if (typeof event.banner_date !== 'undefined'){
-            var dateString = event.banner_date + (event.time_start ? ' ' + event.time_start : '');
-            var [h, m] = event.time_start ? event.time_start.split(":") : [0, 0];
-            if (new Date(dateString) >= new Date().setHours(h, m)){
-              eventList.push(event);
-            };
-          };
-        };
-      });
-      eventList = eventList.sort((a,b) => (a.banner_date > b.banner_date) ? 1 : (a.banner_date < b.banner_date) ? -1 : 0);
-      var eventsToShow = eventList.slice(0, 2);
-      if (eventsToShow.length > 0){
-        var eventsHTML = `<div class="border rounded my-4 pb-2">
+      let eventList = data?.events;
+      let eventsHTML = `<div class="border rounded my-4 pb-2">
                             <div class="d-flex justify-content-between align-items-center px-3 py-2 mb-1 bg-home-events-title">
-                              <h4 class="mb-1">Upcoming Events</h4>
-                              <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
-                            </div>
-                            <div>`;
-        eventsToShow.forEach((event, ind) => {
-          var event_date = new Date(event.banner_date);
+                              <h4 class="mb-1">Upcoming Events</h4>`;
+      if (eventList.length > 0){
+        eventsHTML += `<a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>`;
+      }
+      eventsHTML += `</div>
+                      <div>`;
+      if (eventList.length > 0){
+        eventList.forEach((event, ind) => {
+          let event_date = new Date(event.start_date);
           eventsHTML += `<div class="d-flex justify-content-between align-items-center px-3 py-2">
-                          <a class="" role="button" href="/events/" target="_blank">${event.title}</a>
+                          <a class="" role="button" href="${event.url}" target="_blank">${event.title}</a>
                           <div class="px-2 py-1 d-flex flex-column rounded event-date mw-100">
                             <div class="px-2 fs-6 mx-auto">${event_date.getDate().toString().padStart(2, '0')}</div>
                             <div class="pb-1 px-2 fs-6 mx-auto">${event_date.toLocaleString('en-US', { 'month': 'short' })}</div>
                           </div>
                          </div>
-                        ${ind < (eventsToShow.length - 1) ? '<div class="px-4 py-1"><hr class="my-2"></div>' : ''}`;
+                        ${ind < (eventList.length - 1) ? '<div class="px-4 py-1"><hr class="my-2"></div>' : ''}`;
         }); // for each events iteration to create html ends here
-        eventsHTML += `</div>
-                    </div>`;
+      } else {
+        eventsHTML += `<div class="px-3 py-2">No upcoming Data Centre events</div>`;
+      }
+      eventsHTML += `</div>
+                  </div>`;
       var eventRow = document.getElementById('upcoming-events');
       eventRow.innerHTML = eventsHTML;
-      };
     }
     
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fddls_events.json"),
+      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7989%26per_page%3D2"),
       addEvents
     );
 

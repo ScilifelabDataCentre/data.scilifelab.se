@@ -495,8 +495,7 @@ h5 a:hover {
   }
 }
 .data_sources-content .accordion-button.custom-padding {
-  padding-left: 0.5rem; /* Adjust as needed */
-  padding-right: 0.5rem; /* Adjust as needed */
+  padding: 0.5rem;
 }
 #job-filters .accordion {
   --bs-accordion-bg: inherit; /* Use the parent bg-light color */
@@ -516,8 +515,7 @@ h5 a:hover {
   }
 }
 #job-filters .accordion-button.custom-padding {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
   text-align: left;
 }
 
@@ -546,8 +544,7 @@ h5 a:hover {
 } 
 
 #events-filters .accordion-button.custom-padding {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
   text-align: left;
 } 
 
