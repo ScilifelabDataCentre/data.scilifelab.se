@@ -16,7 +16,8 @@
   <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <form class="needs-validation" novalidate accept-charset="utf-8" id="funding-form">
+        <form action="https://forms.dc.scilifelab.se/api/v1/form/zFbsta5_P7R-3V2u/incoming" class="needs-validation"
+          novalidate method="POST" accept-charset="utf-8">
           <div class="modal-header">
             <h5 class="modal-title" id="suggestionModalLabel">Suggestion for funding source</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -53,40 +54,13 @@
                 data-driven life science:</label>
               <textarea class="form-control" id="call_description" name="call_description" rows="5"></textarea>
             </div>
-            {{/* Honeypot fields for anti-bot protection, referred to as 'additional fields' in production code */}}
-            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
-              <label for="website" class="form-label">Website:</label>
-              <input type="text" class="form-control" id="website" name="website" tabindex="-1" autocomplete="off">
-            </div>
-            
-            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
-              <label for="phone_number" class="form-label">Phone:</label>
-              <input type="text" class="form-control" id="phone_number" name="phone_number" tabindex="-1" autocomplete="off">
-            </div>
-            
-            <div class="mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
-              <label for="company" class="form-label">Company:</label>
-              <input type="text" class="form-control" id="company" name="company" tabindex="-1" autocomplete="off">
-            </div>
-            
-            <!-- Commented out reCAPTCHA - can be re-enabled for production if needed -->
-            <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
+            <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
+            <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
+            <input type="hidden" name="origin" value="funding_call_suggestion" aria-label="form-name" />
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-aqua" id="funding-submit-btn" onclick="submitFundingForm()">Submit</button>
-          </div>
-          
-          <!-- Success message -->
-          <div class="alert alert-success mt-3" id="funding-success-message" style="display: none;">
-            <h4 class="alert-heading">Thank you!</h4>
-            <p id="funding-success-message-text">Your funding source suggestion has been submitted successfully. We'll review it and get back to you soon.</p>
-          </div>
-          
-          <!-- Error message -->
-          <div class="alert alert-danger mt-3" id="funding-error-message" style="display: none;">
-            <h4 class="alert-heading">Submission failed</h4>
-            <p id="funding-error-message-text">There was an issue with your submission. Please try again.</p>
+            <button type="submit" class="btn btn-aqua">Submit</button>
           </div>
         </form>
       </div>
@@ -127,77 +101,6 @@
 </section>
 {{ end }}
 <!-- Code for other funding sources ends here -->
-
-<script>
-// Initialise session tracking for anti-spam
-var sessionStartTime = Date.now();
-var sessionId = generateSessionId('funding');
-
-function submitFundingForm() {
-  // Deactivate button and show loading state
-  setButtonLoadingState('funding-submit-btn', true);
-  
-  // Validate form-specific fields
-  var form = document.getElementById('funding-form');
-  var isValid = form.checkValidity();
-  
-  // Add visual feedback for invalid fields
-  var allFields = ['submitter_name', 'submitter_email', 'funder', 'call_url'];
-  allFields.forEach(function(fieldName) {
-    var field = document.getElementById(fieldName);
-    if (!field.checkValidity()) {
-      field.classList.add('is-invalid');
-    } else {
-      field.classList.remove('is-invalid');
-    }
-  });
-  
-  if (!isValid) {
-    setButtonLoadingState('funding-submit-btn', false);
-    showFormError('funding', 'Please fill out all required fields correctly.');
-    return;
-  }
-  
-  // Validate common submission criteria
-  if (!validateCommonSubmission(sessionStartTime)) {
-    setButtonLoadingState('funding-submit-btn', false);
-    showFormError('funding', 'Form submission failed validation. Please try again.');
-    return;
-  }
-  
-  // reCAPTCHA validation - commented out to test anti-spam
-  /*
-  var recaptcha = $("#g-recaptcha-response").val();
-  if (recaptcha === "") {
-    showFundingError("Please tick 'I'm not a robot' above the 'Submit' button.");
-    return;
-  }
-  */
-  
-  // Collect form data
-  var formData = new FormData(document.getElementById('funding-form'));
-  
-  // Add common metadata
-  addFormMetadata(formData, 'funding_calls', sessionId, sessionStartTime);
-  
-  // reCAPTCHA data - commented out to test anti-spam
-  /*
-  var recaptchaResponse = $("#g-recaptcha-response").val();
-  if (recaptchaResponse) {
-    formData.append('g-recaptcha-response', recaptchaResponse);
-  }
-  */
-  
-  // Submit using common function
-  submitFormData(formData, 
-    function(message) { showFormSuccess('funding', message); }, 
-    function(message) { showFormError('funding', message); }
-  )
-  .finally(() => {
-    setButtonLoadingState('funding-submit-btn', false);
-  });
-}
-</script>
 
 <script>
 // Functions need to be run when the DOM is ready
@@ -351,16 +254,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Funding Source suggestion form relted function
     // set origin url in the form
     document.getElementById('originUrl').value = location.href;
-    
-    // reCAPTCHA aria-label setup - commented out to test anti-spam
-    /*
-    window.addEventListener("load", function () {
-      $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
-    });
-    */
 
-    // reCAPTCHA validation - commented out to test anti-spam
-    /*
     // Validate the form by checking mandatory fields and recaptcha
     var form = document.querySelector('.needs-validation');
     form.addEventListener('submit', function (event) {
@@ -381,7 +275,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     window.addEventListener("load", function () {
       $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
     });
-    */
 
   }); // Document "DOMContentLoaded" trigger ends here
 
