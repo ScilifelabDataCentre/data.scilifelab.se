@@ -19,7 +19,7 @@
   {{ range sort $resources "name" }}
   <div class="col-md-6 col-lg-4 resource" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
     <div class="card-teal-25">
-      <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+      <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
         <a target="_self" href="{{ .url }}"><img class="img-fluid"
             src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
             alt="{{ .name }}"></a>
