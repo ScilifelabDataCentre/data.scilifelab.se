@@ -3,16 +3,10 @@
 {{ .Content }}
 
 <div class="container">
-  <!-- Success message (shown after successful submission) -->
-  <div id="success-message" class="alert alert-success" style="display: none;" role="alert">
-    <h4 class="alert-heading">Thank you!</h4>
-    <p id="success-message-text">Your message has been sent successfully. We'll get back to you as soon as possible.</p>
-  </div>
-
-  <!-- Error message (shown if submission fails) -->
-  <div id="error-message" class="alert alert-danger" style="display: none;" role="alert">
-    <h4 class="alert-heading">Submission failed</h4>
-    <p id="error-message-text">There was an issue with your submission. Please try again.</p>
+  <!-- Message (success or error) -->
+  <div id="message" class="alert" style="display: none;" role="alert" aria-live="polite" aria-atomic="true">
+    <h4 id="message-head" class="alert-heading">Submission failed</h4>
+    <p id="message-text">There was an issue with your submission. Please try again.</p>
   </div>
 
   <!-- Contact form container -->
@@ -71,54 +65,56 @@
 </div>
 
 <script>
+  // Contact form utilities (self-contained, no external dependency)
+  const FORM_CONFIG = {
+    submitUrl: 'https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec',
+    minSessionTime: 5,
+    additionalFields: ['website', 'phone_number', 'company']
+  };
+
+  // Element ID constants 
+  const IDS = {
+    message: 'message',
+    messageHead: 'message-head',
+    messageText: 'message-text',
+    form: 'contact-form',
+    container: 'contact-form-container',
+    submitBtn: 'contact-submit-btn'
+  };
+
   // Initialise session tracking for anti-spam
-  var sessionStartTime = Date.now();
-  var sessionId = generateSessionId('contact');
+  const sessionStartTime = Date.now();
+  const sessionId = generateSessionId('contact');
 
   // Prevent form submission if user presses Enter
   document.addEventListener('DOMContentLoaded', function() {
     preventEnterSubmission('contact-form');
   })
 
-  function submitContactForm() {
+  async function submitContactForm() {
     // Hide any previous messages
-    hideFormMessage('success-message');
-    hideFormMessage('error-message');
+    hideMessage();
 
     // Deactivate button and show loading state
-    setButtonLoadingState('contact-submit-btn', true);
+    setButtonLoadingState(IDS.submitBtn, true);
 
     // Validate form-specific fields using HTML5 validation
-    var form = document.getElementById('contact-form');
-    var isValid = form.checkValidity();
+    const form = document.getElementById(IDS.form);
     
-    // Add visual feedback for invalid fields
-    var requiredFields = ['name', 'email', 'message'];
-    requiredFields.forEach(function(fieldName) {
-      var field = document.getElementById(fieldName);
-      if (!field.checkValidity()) {
-        field.classList.add('is-invalid');
-      } else {
-        field.classList.remove('is-invalid');
-      }
-    });
+    // Enable Bootstrap instant validation feedback on inputs
+    form.classList.add('was-validated');
+    const isValid = form.checkValidity();
     
     if (!isValid) {
-      setButtonLoadingState('contact-submit-btn', false);
-      showFormError('contact', 'Please fill out all required fields correctly.', {
-        successMessageId: 'success-message',
-        errorMessageId: 'error-message'
-      });
+      setButtonLoadingState(IDS.submitBtn, false);
+      showMessage('error', '', 'Please fill out all required fields correctly.');
       return;
     }
 
     // Validate common submission criteria
     if (!validateCommonSubmission(sessionStartTime)) {
-      setButtonLoadingState('contact-submit-btn', false);
-      showFormError('contact', 'Form submission failed validation. Please try again.', {
-        successMessageId: 'success-message',
-        errorMessageId: 'error-message'
-      });
+      setButtonLoadingState(IDS.submitBtn, false);
+      showMessage('error', '', 'Form submission failed validation. Please try again.');
       return;
     }
 
@@ -132,7 +128,7 @@
     */
 
     // Collect form-specific data
-    var formData = new FormData(document.getElementById('contact-form'));
+    const formData = new FormData(form);
 
     // Add common metadata
     addFormMetadata(formData, 'contact', sessionId, sessionStartTime);
@@ -145,26 +141,138 @@
     }
     */
 
-    // Submit using common function
-    submitFormData(formData, 
-      function(message) { 
-        showFormSuccess('contact', message, {
-          successMessageId: 'success-message',
-          errorMessageId: 'error-message',
-          hideFormContainer: 'contact-form-container',
-          hideModal: false
-        });
-      }, 
-      function(message) { 
-        showFormError('contact', message, {
-          successMessageId: 'success-message',
-          errorMessageId: 'error-message'
-        });
+    // Ensure session duration is set once using the known page session start time
+    const durationSeconds = (Date.now() - sessionStartTime) / 1000;
+    formData.set('session_duration', durationSeconds);
+
+    try {
+      const response = await fetch(FORM_CONFIG.submitUrl, { method: 'POST', body: formData });
+      const data = await response.json();
+      if (data.success) {
+        // Show success message, reset and hide form
+        showMessage('success', 'Thank you!', data.message);
+        resetForm(IDS.form);
+        const container = document.getElementById(IDS.container);
+        if (container) container.classList.add('d-none');
+      } else {
+        showMessage('error', '', data.message);
       }
-    )
-    .finally(() => {
-      setButtonLoadingState('contact-submit-btn', false);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      showMessage('error', '', 'Network error. Please check your connection and try again.');
+    } finally {
+      setButtonLoadingState(IDS.submitBtn, false);
+    }
+  }
+
+  function generateSessionId(prefix) {
+    return prefix + '_' + Math.random().toString(36).slice(2, 11) + '_' + Date.now();
+  }
+
+  function validateCommonSubmission(sessionStartTime) {
+    const sessionDuration = (Date.now() - sessionStartTime) / 1000;
+    if (sessionDuration < FORM_CONFIG.minSessionTime) {
+      console.log('Session too short');
+      return false;
+    }
+    for (const fieldName of FORM_CONFIG.additionalFields) {
+      const field = document.getElementById(fieldName);
+      if (field && field.value.trim() !== '') {
+        console.log('Additional fields validation failed');
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function addFormMetadata(formData, origin, sessionId, sessionStartTime) {
+    formData.append('originUrl', location.href);
+    formData.append('origin', origin);
+    formData.append('session_id', sessionId);
+    const sessionDuration = (Date.now() - sessionStartTime) / 1000;
+    formData.append('session_duration', sessionDuration);
+    for (const fieldName of FORM_CONFIG.additionalFields) {
+      const field = document.getElementById(fieldName);
+      if (field) {
+        formData.append(fieldName, field.value);
+      }
+    }
+  }
+
+  function setButtonLoadingState(buttonId, isLoading, loadingText = 'Processing...') {
+    const button = document.getElementById(buttonId);
+    if (!button) return;
+    if (isLoading) {
+      button.dataset.originalText = button.textContent;
+      button.textContent = loadingText;
+      button.disabled = true;
+    } else {
+      button.textContent = button.dataset.originalText || button.textContent;
+      button.disabled = false;
+    }
+  }
+
+  function showMessage(type, head = '', body = '') {
+    const messageElement = document.getElementById(IDS.message);
+    const headElement = document.getElementById(IDS.messageHead);
+    const textElement = document.getElementById(IDS.messageText);
+    if (!messageElement || !headElement || !textElement) return;
+
+    // Reset base state
+    messageElement.style.display = 'none';
+    messageElement.classList.remove('alert-success');
+    messageElement.classList.remove('alert-danger');
+
+    if (type === 'success') {
+      headElement.textContent = head || 'Thank you!';
+      textElement.textContent = body || "Your message has been sent successfully. We'll get back to you as soon as possible.";
+      messageElement.classList.add('alert-success');
+    } else {
+      headElement.textContent = head || 'Submission failed';
+      textElement.textContent = body || 'There was an issue with your submission. Please try again.';
+      messageElement.classList.add('alert-danger');
+    }
+
+    messageElement.style.display = 'block';
+    messageElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function hideMessage() {
+    const messageElement = document.getElementById(IDS.message);
+    if (messageElement) messageElement.style.display = 'none';
+  }
+
+  function resetForm(formId) {
+    const form = document.getElementById(formId);
+    if (form) {
+      form.reset();
+    }
+  }
+
+  function preventEnterSubmission(formId) {
+    const form = document.getElementById(formId);
+    if (!form) return;
+    form.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        const tagName = (event.target && event.target.tagName) ? event.target.tagName.toLowerCase() : '';
+        if (tagName !== 'textarea') {
+          event.preventDefault();
+        }
+      }
     });
   }
+
+  // reCAPTCHA aria-label setup - commented out to test anti-spam
+
+  /*
+    window.addEventListener("load", function () {
+    $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
+    });
+  */
+
 </script>
+
+<!-- source reCAPTCHA -->
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
 {{ end }}
