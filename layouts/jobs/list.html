@@ -51,37 +51,6 @@
       return employer;
     }
     
-    function determineJobType(job) {
-      let jobType = 'Job Position'; // Default value
-      try {
-        // Try to extract job type from API if available
-        if (job.acf?.job_type) {
-          jobType = job.acf.job_type;
-        } else {
-          // Optimized job type detection based on title and category
-          const title = (job.title?.rendered || '').toLowerCase();
-          const category = (job.class_list?.[5]?.replace(/^[^-]*-/, '').trim() || '').toLowerCase();
-
-          if (title.includes('professorship') || title.includes('professor')) {
-            jobType = 'Professor or Fellow';
-          } else if (title.includes('postdoc') || title.includes('post-doc')) {
-            jobType = 'Postdoc Position';
-          } else if (title.includes('phd')) {
-            jobType = 'PhD Position';
-          } else if (category.includes('researchers-research-engineers-and-postdocs')) {
-            jobType = 'Researcher or Engineer';
-          } else if (category.includes('technical-and-administrative-personnel')) {
-            jobType = 'Admin and Technical';
-          }
-          // Otherwise, keep default 'Job Position'
-        }
-      } catch (err) {
-        // Error extracting job type; jobType remains as default
-        console.warn('Error extracting job type from job:', err);
-      }
-      return jobType;
-    }
-    
     // Takes a URL and returns the data fetched
     async function getDataFromUrl(url) {
       try {
@@ -106,7 +75,6 @@
         // Transform jobs to our format
         const transformedJobs = filteredJobs.map(job => ({
           title: job.title?.rendered || 'No title available',
-          type: determineJobType(job),
           app_deadline: job.archive_date,
           job_url: extractJobUrl(job),
           employer: extractEmployer(job)
@@ -120,7 +88,7 @@
     };
     
     async function addJobs(dataArray) {
-      var jobsList = [], jobTypes = new Set(), employer = new Set();
+      var jobsList = [], employer = new Set();
       
       // Filter and collect data in a single pass
       const today = new Date();
@@ -128,14 +96,12 @@
       dataArray.forEach((job) => {
         if (new Date(job.app_deadline) >= today){
           jobsList.push(job);
-          jobTypes.add(job.type.toLowerCase());
           employer.add(job.employer);
         }
       });
       
       // Sort the arrays
       jobsList.sort((a,b) => (a.app_deadline > b.app_deadline) ? 1 : (a.app_deadline < b.app_deadline) ? -1 : 0);
-      const sortedJobTypes = Array.from(jobTypes).sort();
       const sortedEmployer = Array.from(employer).sort();
       
       // If no jobs to show, display appropriate message
@@ -162,29 +128,12 @@
                                   <div class="accordion-body">
                                     <div class="accordion" id="innerAccordion">
                                       <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingType">
-                                          <button class="accordion-button custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseType" aria-expanded="true" aria-controls="collapseType">
-                                            Type
-                                          </button>
-                                        </h2>
-                                        <div id="collapseType" class="accordion-collapse collapse show" aria-labelledby="headingType">
-                                          <div class="accordion-body">`;
-        sortedJobTypes.forEach((jt) => {
-          jobsHTML += `<div class="form-check">   
-                        <input class="form-check-input" type="checkbox" id="${jt}" name="type" value="${jt.replaceAll(" ", "-").toLowerCase()}">
-                        <label class="form-check-label" for="${jt}">${jt.charAt(0).toUpperCase() + jt.slice(1)}</label>
-                      </div>`;
-        });
-        jobsHTML += `          </div>
-                                        </div>
-                                      </div>
-                                      <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingEmployer">
-                                          <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmployer" aria-expanded="false" aria-controls="collapseEmployer">
+                                          <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmployer" aria-expanded="true" aria-controls="collapseEmployer">
                                             Employer
                                           </button>
                                         </h2>
-                                        <div id="collapseEmployer" class="accordion-collapse collapse" aria-labelledby="headingEmployer">
+                                        <div id="collapseEmployer" class="accordion-collapse collapse show" aria-labelledby="headingEmployer">
                                           <div class="accordion-body">`;
         sortedEmployer.forEach((em) => {
           jobsHTML += `<div class="form-check">   
@@ -204,14 +153,12 @@
                           <div class="col-lg mt-2 mt-lg-0">
                             <div class="row g-2" id="jobs-container">`;
         jobsList.forEach((job) => {
-          var this_job_type = job.type.replaceAll(" ", "-").toLowerCase();
           var this_employer = job.employer.replaceAll(" ", "-").toLowerCase();
           var job_date = new Date(job.app_deadline);
-          jobsHTML += `<div class="col-md-6 col-lg-4 job" data-job-type="${this_job_type}" data-employer="${this_employer}">
+          jobsHTML += `<div class="col-md-6 col-lg-4 job" data-employer="${this_employer}">
                         <div class="card-box">
                           <div class="d-flex justify-content-between">
                             <div>`;
-          jobsHTML += `<span class="badge event-type mb-1 me-1">${job.type}</span>`;
           jobsHTML += `<h5><a href="${job.job_url}" target="_blank">${job.title}</a></h5>
                        </div>
                        <div>
@@ -259,7 +206,6 @@
       $('div#job-filters input:checkbox').on('change', function(){
       
         // Collect and create a list with selected values
-        var job_type = $('input:checkbox[name="type"]:checked').map(function () {return this.value}).get();
         var employer = $('input:checkbox[name="employer"]:checked').map(function () {return this.value}).get();
     
         // Cache DOM elements for better performance
@@ -272,23 +218,15 @@
         $noFilteredJobs.hide();
     
         // Show relevant jobs based on selected criteria
-        if (!job_type.length && !employer.length) {
+        if (!employer.length) {
           // No filters selected, show all jobs
           $jobs.show();
         } else {
           // Filter jobs based on selected criteria
           $jobs.each(function(){
             var $job = $(this);
-            var jobType = $job.data('job-type');
             var jobEmployer = $job.data('employer');
             var showJob = true;
-            
-            // Check job type filter
-            if (job_type.length > 0) {
-              // Normalize filter values to match data attribute format (lowercase with hyphens)
-              var normalizedJobTypes = job_type.map(type => type.replaceAll(" ", "-").toLowerCase());
-              showJob = showJob && normalizedJobTypes.includes(jobType);
-            }
             
             // Check employer filter
             if (employer.length > 0) {
