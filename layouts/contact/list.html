@@ -92,8 +92,8 @@
   })
 
   async function submitContactForm() {
-    // Hide any previous messages
-    hideMessage();
+    // Reset any previous messages
+    resetMessage();
 
     // Deactivate button and show loading state
     setButtonLoadingState(IDS.submitBtn, true);
@@ -102,19 +102,19 @@
     const form = document.getElementById(IDS.form);
     
     // Enable Bootstrap instant validation feedback on inputs
-    form.classList.add('was-validated');
     const isValid = form.checkValidity();
     
     if (!isValid) {
       setButtonLoadingState(IDS.submitBtn, false);
-      showMessage('error', '', 'Please fill out all required fields correctly.');
+      showMessage('error', 'Please fill out all required fields correctly.');
+      form.classList.add('was-validated');
       return;
     }
 
     // Validate common submission criteria
     if (!validateCommonSubmission(sessionStartTime)) {
       setButtonLoadingState(IDS.submitBtn, false);
-      showMessage('error', '', 'Form submission failed validation. Please try again.');
+      showMessage('error', 'Form submission failed validation. Please try again.');
       return;
     }
 
@@ -131,7 +131,7 @@
     const formData = new FormData(form);
 
     // Add common metadata
-    addFormMetadata(formData, 'contact', sessionId, sessionStartTime);
+    addFormMetadata(formData, sessionId, sessionStartTime);
 
     // reCAPTCHA data - commented out to test anti-spam
     /*
@@ -150,21 +150,22 @@
       const data = await response.json();
       if (data.success) {
         // Show success message, reset and hide form
-        showMessage('success', 'Thank you!', data.message);
+        showMessage('success', data.message);
         resetForm(IDS.form);
         const container = document.getElementById(IDS.container);
         if (container) container.classList.add('d-none');
       } else {
-        showMessage('error', '', data.message);
+        showMessage('error', data.message);
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      showMessage('error', '', 'Network error. Please check your connection and try again.');
+      showMessage('error', 'Network error. Please check your connection and try again.');
     } finally {
       setButtonLoadingState(IDS.submitBtn, false);
     }
   }
 
+  /* Helper functions */
   function generateSessionId(prefix) {
     return prefix + '_' + Math.random().toString(36).slice(2, 11) + '_' + Date.now();
   }
@@ -185,9 +186,9 @@
     return true;
   }
 
-  function addFormMetadata(formData, origin, sessionId, sessionStartTime) {
+  function addFormMetadata(formData, sessionId, sessionStartTime) {
     formData.append('originUrl', location.href);
-    formData.append('origin', origin);
+    formData.append('origin', 'contact');
     formData.append('session_id', sessionId);
     const sessionDuration = (Date.now() - sessionStartTime) / 1000;
     formData.append('session_duration', sessionDuration);
@@ -212,16 +213,14 @@
     }
   }
 
-  function showMessage(type, head = '', body = '') {
+  function showMessage(type, body = '', head = '') {
     const messageElement = document.getElementById(IDS.message);
     const headElement = document.getElementById(IDS.messageHead);
     const textElement = document.getElementById(IDS.messageText);
     if (!messageElement || !headElement || !textElement) return;
 
     // Reset base state
-    messageElement.style.display = 'none';
-    messageElement.classList.remove('alert-success');
-    messageElement.classList.remove('alert-danger');
+    resetMessage();
 
     if (type === 'success') {
       headElement.textContent = head || 'Thank you!';
@@ -237,9 +236,13 @@
     messageElement.scrollIntoView({ behavior: 'smooth' });
   }
 
-  function hideMessage() {
+  function resetMessage() {
     const messageElement = document.getElementById(IDS.message);
-    if (messageElement) messageElement.style.display = 'none';
+    if (messageElement) { 
+      messageElement.style.display = 'none';
+      messageElement.classList.remove('alert-success');
+      messageElement.classList.remove('alert-danger');
+    }
   }
 
   function resetForm(formId) {
