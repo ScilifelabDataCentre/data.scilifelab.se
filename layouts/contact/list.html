@@ -3,55 +3,279 @@
 {{ .Content }}
 
 <div class="container">
-  <form action="https://forms.dc.scilifelab.se/api/v1/form/SBHJi6wO1oUz7ulb/incoming" class="needs-validation"
-    novalidate method="POST" accept-charset="utf-8">
-    <div class="row mb-3 mt-2">
-      <label for="name" class="col-sm-2 col-form-label fw-bold">Your name*:</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="name" name="name" required>
+  <!-- Message (success or error) -->
+  <div id="message" class="alert" style="display: none;" role="alert" aria-live="polite" aria-atomic="true">
+    <h4 id="message-head" class="alert-heading">Submission failed</h4>
+    <p id="message-text">There was an issue with your submission. Please try again.</p>
+  </div>
+
+  <!-- Contact form container -->
+  <div id="contact-form-container">
+    <form id="contact-form" class="needs-validation" novalidate accept-charset="utf-8">
+      <div class="row mb-3 mt-2">
+        <label for="name" class="col-sm-2 col-form-label fw-bold">Name:*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
       </div>
-    </div>
-    <div class="row mb-3">
-      <label for="email" class="col-sm-2 col-form-label fw-bold">Your email*:</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" name="email" required>
+      <div class="row mb-3">
+        <label for="email" class="col-sm-2 col-form-label fw-bold">Email:*</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
       </div>
-    </div>
-    <div class="row mb-3">
-      <label for="message" class="col-sm-2 col-form-label fw-bold">Message:*</label>
-      <div class="col-sm-10">
-        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      
+      {{/* Honeypot fields for anti-bot protection, referred to as 'additional fields' in production code */}}
+      <div class="row mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+        <label for="website" class="col-sm-2 col-form-label">Website:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
       </div>
-    </div>
-    <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
-    <label id="g-recaptcha" for="url">
-    <input type="url" id="originUrl" name="originUrl" value="" hidden aria-labelledby="g-recaptcha" />
-    <label id="general_contact" for="url">
-    <input type='hidden' name='origin' value='general_contact' hidden aria-labelledby="general_contact">
-    <button type="submit" class="btn btn-aqua mt-2">Send</button>
-  </form>
+      
+      <div class="row mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+        <label for="phone_number" class="col-sm-2 col-form-label">Phone:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="phone_number" name="phone_number" tabindex="-1" autocomplete="off">
+        </div>
+      </div>
+      
+      <div class="row mb-3" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+        <label for="company" class="col-sm-2 col-form-label">Company:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="company" name="company" tabindex="-1" autocomplete="off">
+        </div>
+      </div>
+      
+      <!-- Message field -->
+      <div class="row mb-3">
+        <label for="message" class="col-sm-2 col-form-label fw-bold">Message:*</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+      </div>
+      
+      <!-- reCAPTCHA - commented out to test anti-spam -->
+      <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
+      <!-- <label id="g-recaptcha" for="url"> -->
+      
+      <button type="button" class="btn btn-aqua mt-2" id="contact-submit-btn" onclick="submitContactForm()">Send</button>
+    </form>
+  </div>
 </div>
 
 <script>
-  document.getElementById('originUrl').value = location.href;
+  // Contact form utilities (self-contained, no external dependency)
+  const FORM_CONFIG = {
+    submitUrl: 'https://script.google.com/macros/s/AKfycbzDm3HImX8rx052Ooe888T702iuAYNosV4zO3mgSgucQ1IKCI2hhP_EMhFI82lMqDDT/exec',
+    minSessionTime: 5,
+    additionalFields: ['website', 'phone_number', 'company']
+  };
 
-  var form = document.querySelector('.needs-validation');
-  form.addEventListener('submit', function (event) {
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      alert("Please fill out all required fields.");
-      event.stopPropagation();
-      form.classList.add('was-validated')
+  // Element ID constants 
+  const IDS = {
+    message: 'message',
+    messageHead: 'message-head',
+    messageText: 'message-text',
+    form: 'contact-form',
+    container: 'contact-form-container',
+    submitBtn: 'contact-submit-btn'
+  };
+
+  // Initialise session tracking for anti-spam
+  const sessionStartTime = Date.now();
+  const sessionId = generateSessionId('contact');
+
+  // Prevent form submission if user presses Enter
+  document.addEventListener('DOMContentLoaded', function() {
+    preventEnterSubmission('contact-form');
+  })
+
+  async function submitContactForm() {
+    // Reset any previous messages
+    resetMessage();
+
+    // Deactivate button and show loading state
+    setButtonLoadingState(IDS.submitBtn, true);
+
+    // Validate form-specific fields using HTML5 validation
+    const form = document.getElementById(IDS.form);
+    
+    // Enable Bootstrap instant validation feedback on inputs
+    const isValid = form.checkValidity();
+    
+    if (!isValid) {
+      setButtonLoadingState(IDS.submitBtn, false);
+      showMessage('error', 'Please fill out all required fields correctly.');
+      form.classList.add('was-validated');
+      return;
     }
+
+    // Validate common submission criteria
+    if (!validateCommonSubmission(sessionStartTime)) {
+      setButtonLoadingState(IDS.submitBtn, false);
+      showMessage('error', 'Form submission failed validation. Please try again.');
+      return;
+    }
+
+    // reCAPTCHA validation - commented out to test anti-spam
+    /*
     var recaptcha = $("#g-recaptcha-response").val();
     if (recaptcha === "") {
-      event.preventDefault();
-      alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
+      showContactError("Please tick 'I'm not a robot' above the 'Submit' button.");
+      return;
     }
-  });
+    */
 
-  window.addEventListener("load", function () {
+    // Collect form-specific data
+    const formData = new FormData(form);
+
+    // Add common metadata
+    addFormMetadata(formData, sessionId, sessionStartTime);
+
+    // reCAPTCHA data - commented out to test anti-spam
+    /*
+    var recaptchaResponse = $("#g-recaptcha-response").val();
+    if (recaptchaResponse) {
+      formData.append('g-recaptcha-response', recaptchaResponse);
+    }
+    */
+
+    // Ensure session duration is set once using the known page session start time
+    const durationSeconds = (Date.now() - sessionStartTime) / 1000;
+    formData.set('session_duration', durationSeconds);
+
+    try {
+      const response = await fetch(FORM_CONFIG.submitUrl, { method: 'POST', body: formData });
+      const data = await response.json();
+      if (data.success) {
+        // Show success message, reset and hide form
+        showMessage('success', data.message);
+        resetForm(IDS.form);
+        const container = document.getElementById(IDS.container);
+        if (container) container.classList.add('d-none');
+      } else {
+        showMessage('error', data.message);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      showMessage('error', 'Network error. Please check your connection and try again.');
+    } finally {
+      setButtonLoadingState(IDS.submitBtn, false);
+    }
+  }
+
+  /* Helper functions */
+  function generateSessionId(prefix) {
+    return prefix + '_' + Math.random().toString(36).slice(2, 11) + '_' + Date.now();
+  }
+
+  function validateCommonSubmission(sessionStartTime) {
+    const sessionDuration = (Date.now() - sessionStartTime) / 1000;
+    if (sessionDuration < FORM_CONFIG.minSessionTime) {
+      console.log('Session too short');
+      return false;
+    }
+    for (const fieldName of FORM_CONFIG.additionalFields) {
+      const field = document.getElementById(fieldName);
+      if (field && field.value.trim() !== '') {
+        console.log('Additional fields validation failed');
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function addFormMetadata(formData, sessionId, sessionStartTime) {
+    formData.append('originUrl', location.href);
+    formData.append('origin', 'contact');
+    formData.append('session_id', sessionId);
+    const sessionDuration = (Date.now() - sessionStartTime) / 1000;
+    formData.append('session_duration', sessionDuration);
+    for (const fieldName of FORM_CONFIG.additionalFields) {
+      const field = document.getElementById(fieldName);
+      if (field) {
+        formData.append(fieldName, field.value);
+      }
+    }
+  }
+
+  function setButtonLoadingState(buttonId, isLoading, loadingText = 'Processing...') {
+    const button = document.getElementById(buttonId);
+    if (!button) return;
+    if (isLoading) {
+      button.dataset.originalText = button.textContent;
+      button.textContent = loadingText;
+      button.disabled = true;
+    } else {
+      button.textContent = button.dataset.originalText || button.textContent;
+      button.disabled = false;
+    }
+  }
+
+  function showMessage(type, body = '', head = '') {
+    const messageElement = document.getElementById(IDS.message);
+    const headElement = document.getElementById(IDS.messageHead);
+    const textElement = document.getElementById(IDS.messageText);
+    if (!messageElement || !headElement || !textElement) return;
+
+    // Reset base state
+    resetMessage();
+
+    if (type === 'success') {
+      headElement.textContent = head || 'Thank you!';
+      textElement.textContent = body || "Your message has been sent successfully. We'll get back to you as soon as possible.";
+      messageElement.classList.add('alert-success');
+    } else {
+      headElement.textContent = head || 'Submission failed';
+      textElement.textContent = body || 'There was an issue with your submission. Please try again.';
+      messageElement.classList.add('alert-danger');
+    }
+
+    messageElement.style.display = 'block';
+    messageElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function resetMessage() {
+    const messageElement = document.getElementById(IDS.message);
+    if (messageElement) { 
+      messageElement.style.display = 'none';
+      messageElement.classList.remove('alert-success');
+      messageElement.classList.remove('alert-danger');
+    }
+  }
+
+  function resetForm(formId) {
+    const form = document.getElementById(formId);
+    if (form) {
+      form.reset();
+    }
+  }
+
+  function preventEnterSubmission(formId) {
+    const form = document.getElementById(formId);
+    if (!form) return;
+    form.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        const tagName = (event.target && event.target.tagName) ? event.target.tagName.toLowerCase() : '';
+        if (tagName !== 'textarea') {
+          event.preventDefault();
+        }
+      }
+    });
+  }
+
+  // reCAPTCHA aria-label setup - commented out to test anti-spam
+
+  /*
+    window.addEventListener("load", function () {
     $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
-  });
+    });
+  */
+
 </script>
+
+<!-- source reCAPTCHA -->
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
 {{ end }}

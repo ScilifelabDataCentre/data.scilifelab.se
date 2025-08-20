@@ -11,8 +11,8 @@ menu:
     weight: 20
 ---
 
-Both the website and the technical platform associated with the SciLifeLab Data Platform are maintained by the SciLifeLab Data Centre and partners. We welcome contributions, suggestions, and questions related to the possibility of hosting tools/databases, and website content. For example, you can suggest [a data highlight](/highlights/), [an event](/events/), or [a training opportunity](/events/). Please do not hesitate to suggest your own research and/or events, as well as those of your colleagues. We'd also be happy to receive suggestions about other types of content. The content of the website is moderated by the team behind the SciLifeLab Data Platform.
+Please use this form to contact SciLifeLab Data Centre. Queries could include, for example, suggestions for new content, reports of bugs on this website, or requests for help from the Data Centre.
 
-You can also get in touch with us by emailing us at [data-platform@scilifelab.se](mailto:data-platform@scilifelab.se).
+Alternatively, you can get in touch by emailing [data-platform@scilifelab.se](mailto:data-platform@scilifelab.se).
 
-### Contact form
+### Contact form {#contact-form-section}
