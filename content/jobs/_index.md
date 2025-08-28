@@ -16,4 +16,4 @@ aliases:
     - /calls_and_jobs/
 ---
 
-In this section, we show the latest job opportunities from the **SciLifeLab Data Centre**. These positions focus on IT infrastructure, data management, and computational services that support life science research across Sweden.
+Here are the latest job opportunities within **SciLifeLab Data Centre**. Positions typically relate to open science, research data management, and developing and managing IT infrastructure.
