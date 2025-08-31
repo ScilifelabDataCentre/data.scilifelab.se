@@ -16,6 +16,4 @@ aliases:
     - /calls_and_jobs/
 ---
 
-In this section, we show the latest job opportunities, PhD positions, postdoc positions and masters project opportunities related to *data-driven life science in Sweden*. We may show some 'global' opportunities but, in each case, it will be possible for individuals based in Sweden to apply.
-
-If you know of any opportunity that is not listed below, but feel that it should be, please *click the button below and fill in the short form*.
+Here are the latest job opportunities within **SciLifeLab Data Centre**. Positions typically relate to open science, research data management, and developing and managing IT infrastructure.
