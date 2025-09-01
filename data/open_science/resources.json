@@ -8,7 +8,7 @@
     "name": "FAIR-Aware Self Assessment Tool",
     "description": "The FAIR-Aware Self Assessment Tool helps researchers evaluate their knowledge of the FAIR principles, offering guidance to enhance the findability, accessibility, interoperability, and reusability of their data. In addition, the F-UJI FAIR assessment tool is an automated tool designed to evaluate the FAIRness of research data objects.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/5.png",
     "affiliation": "FAIRSFAIR",
     "affiliation_url": "https://www.fairsfair.eu/fair-aware",
     "resource_url": "https://fairaware.dans.knaw.nl/"
@@ -22,7 +22,7 @@
     "name": "The National Guidelines for Open Science",
     "description": "The National Library of Sweden (Kungliga Biblioteket) has published National Guidelines on Open Science, providing material for Swedish institutions and research funders in aligning policies, infrastructure, and coordination efforts with international recommendations. You can read The National Guidelines for Open Science in the official PDF document.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/9.png",
     "affiliation": "The National Library of Sweden (Kungl Biblioteket)",
     "affiliation_url": "https://www.kb.se/",
     "resource_url": "https://www.kb.se/samverkan-och-utveckling/nytt-fran-kb/nyheter-samverkan-och-utveckling/2024-01-15-national-guidelines-for-promoting-open-science-in-sweden.html"
@@ -36,7 +36,7 @@
     "name": "EU Open Science Policy",
     "description": "The EU Open Science Policy promotes openness, collaboration, and transparency in research by removing barriers, fostering data sharing, and enhancing scientific impact. This is achieved by advocating for practices like open access, reproducibility, and citizen engagement, and supporting these efforts with initiatives and infrastructures such as the European Open Science Cloud (EOSC) and OpenAIRE. EOSC provides a federated infrastructure for sharing and accessing research data across Europe, while OpenAIRE supports open science by enabling open access to publications, linking research outputs, and facilitating compliance with EU open science policies.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/10.png",
     "affiliation": "European Commission",
     "affiliation_url": "https://commission.europa.eu/index_en",
     "resource_url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science_en"
@@ -50,7 +50,7 @@
     "name": "The Swedish Research Council: Vision and Guiding Principles",
     "description": "The Swedish Research Council (Vetenskaprådet) produced a Vision and Guiding Principles for Open Access to Research Data. This outlines a national strategy to ensure publicly funded research data is made “as open as possible, as closed as necessary”, with the goal of fully implementing the transition to open access by 2026. The recommendations emphasise coordinated efforts among researchers, institutions, and funders to integrate open data practices, develop incentives, and enhance usability. This is achieved through standardised frameworks, infrastructure, and FAIR data management planning, while ensuring compliance with legal and ethical considerations. Further details on Sweden’s approach to open science, including policies on open access to publications, research data, and broader open science initiatives, can be found on the Open access to research data - Swedish Research Council page. This platform serves as a resource for national recommendations and guidelines, that support Sweden’s transition towards open and FAIR research practices, as well as development in Sweden.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/11.png",
     "affiliation": "Swedish Research Council (Vetenskaprådet)",
     "affiliation_url": "https://www.vr.se/",
     "resource_url": "https://www.vr.se/english/mandates/open-science/open-access-to-research-data/recommendations-for-fair-och-open-research-data.html"
@@ -64,7 +64,7 @@
     "name": "UNESCO Open Science Toolkit",
     "description": "UNESCO developed the Open Science Toolkit, a collection of guides, policies, and factsheets designed to support the implementation of the UNESCO Recommendation on Open Science. You can find more information on the UNESCO Open Science Toolkit webpage.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/12.png",
     "affiliation": "UNESCO",
     "affiliation_url": "https://www.unesco.org/en",
     "resource_url": "https://www.unesco.org/en/open-science/toolkit?hub=686"
@@ -78,7 +78,7 @@
     "name": "SUHF Roadmap for Open Science with Action Proposals for Implementation",
     "description": "The roadmap includes overarching recommendations that clarify the responsibilities of higher education institutions, as well as proposals for measures and capabilities that need to be established at these institutions during the transition to a responsible, secure, and open scientific system.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/13.png",
     "affiliation": "SUHF",
     "affiliation_url": "https://suhf.se/",
     "resource_url": "https://suhf.se/app/uploads/2025/02/REC-2021-1-Open-Science-Roadmap-REVISED-31-01-2025.pdf"
@@ -92,7 +92,7 @@
     "name": "Plan S/Coalition S",
     "description": "Plan S is a global initiative (with Swedish participation) that mandates full and immediate Open Access for publicly funded research. Essential for researchers navigating open publishing policies.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/14.png",
     "affiliation": "Plan S/cOAlition S",
     "affiliation_url": "https://www.coalition-s.org/",
     "resource_url": "https://www.coalition-s.org/about/"
@@ -106,7 +106,7 @@
     "name": "SciLifeLab Open Science Onboarding",
     "description": "Here you can find our Open Science Onboarding which will guide you through the essential concepts to get you started on your open science journey.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/1.png",
     "affiliation": "SciLifeLab Data Centre",
     "affiliation_url": "https://data.scilifelab.se/",
     "resource_url": "https://doi.org/10.17044/scilifelab.29086706.v1"
@@ -120,7 +120,7 @@
     "name": "SciLifeLab Open Access Checklist",
     "description": "This checklist is designed to guide you in making informed decisions about publishing your research Open Access. It covers key steps for choosing the right Open Access route, applying appropriate licenses, and ensuring compliance with institutional and funder policies. Please note that this is a guiding resource, and does not require every item to be completed.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/2.png",
     "affiliation": "SciLifeLab Data Centre",
     "affiliation_url": "https://data.scilifelab.se/",
     "resource_url": "https://doi.org/10.17044/scilifelab.29087126.v2"
@@ -134,7 +134,7 @@
     "name": "SciLifeLab Open Science Software Checklist",
     "description": "This checklist provides essential steps for sharing and citing your research software. It covers everything from planning your software to ensuring others can find, understand, reuse, and contribute to your software, and how to ensure your work is credited. Please note that this is a guiding resource, and does not require every item to be completed.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/3.png",
     "affiliation": "SciLifeLab Data Centre",
     "affiliation_url": "https://data.scilifelab.se/",
     "resource_url": "https://doi.org/10.17044/scilifelab.29086775.v1"
@@ -148,7 +148,7 @@
     "name": "CoARA Action Plan for SciLifeLab",
     "description": "On 23 February 2024, SciLifeLab announced that it had joined CoARA (Coalition for Advancing Research Assessment) as a signatory member. This reaffirmed SciLifeLab’s commitment to advancing research assessment and open science practices. You can review SciLifeLab’s CoARA Action Plan in this Google Docs document. Note, DORA (San Francisco Declaration on Research Assessment) laid the foundation for research assessment reform by advocating for qualitative evaluation over journal-based metrics, a principle that CoARA builds upon to drive systemic change through collective institutional commitment.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/6.png",
     "affiliation": "SciLifeLab",
     "affiliation_url": "https://www.scilifelab.se/",
     "resource_url": "https://doi.org/10.5281/zenodo.14796936"
@@ -190,7 +190,7 @@
     "name": "SciLifeLab RDM Guidelines",
     "description": "The SciLifeLab Training Hub offers a range of educational opportunities and training infrastructure, to advance Open Science and FAIR learning, ensuring Sweden’s life science community has open access to world-class knowledge and expertise. View SciLifeLab Training Hub’s website to learn more about training tools, upcoming courses and ways in which the Training Hub team can support you.",
     "url": "",
-    "thumbnail": "",
+    "thumbnail": "/img/open_science/resources/4.png",
     "affiliation": "NBIS, SciLifeLab Data Centre",
     "affiliation_url": "https://data-guidelines.scilifelab.se/contact/",
     "resource_url": "https://data-guidelines.scilifelab.se/"
