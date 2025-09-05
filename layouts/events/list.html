@@ -33,10 +33,11 @@
       allData["events"].forEach(event => {
         // Collect all even types to be used as filter
         const eventType = event?.categories.map(ct => ct?.name);
-        eventType.forEach(et => allTypes.add(et));
+        eventType.forEach(et => et && allTypes.add(et));
         // Collect all location to be used as filter
-        const location = event?.venue?.city;
-        allLocations.add(location);
+        const venue = event?.venue?.venue || "";
+        const location = event?.venue?.city || ((/online|zoom/gi).test(venue) ? "Online" : "");
+        location && allLocations.add(location);
         // Collect only required data
         eventsData.push({
           title: event?.title,
@@ -59,7 +60,7 @@
               event?.end_date_details?.hour,
               event?.end_date_details?.minutes
             ].join(':'),
-          venue: event?.venue?.venue,
+          venue: venue,
           location: location,
           organisers: event?.organizer.map(org => org?.organizer),
           url: event?.url
