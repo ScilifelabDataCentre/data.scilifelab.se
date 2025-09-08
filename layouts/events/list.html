@@ -33,10 +33,11 @@
       allData["events"].forEach(event => {
         // Collect all even types to be used as filter
         const eventType = event?.categories.map(ct => ct?.name);
-        eventType.forEach(et => allTypes.add(et));
+        eventType.forEach(et => et && allTypes.add(et));
         // Collect all location to be used as filter
-        const location = event?.venue?.city;
-        allLocations.add(location);
+        const venue = event?.venue?.venue || "";
+        const location = event?.venue?.city || ((/online|zoom/gi).test(venue) ? "Online" : "");
+        location && allLocations.add(location);
         // Collect only required data
         eventsData.push({
           title: event?.title,
@@ -51,15 +52,15 @@
               event?.start_date_details?.minutes
             ].join(':'),
           date_end: [
-              event?.end_date_details?.month,
               event?.end_date_details?.year,
+              event?.end_date_details?.month,
               event?.end_date_details?.day
             ].join('-'),
           time_end: [
               event?.end_date_details?.hour,
               event?.end_date_details?.minutes
             ].join(':'),
-          venue: event?.venue?.venue,
+          venue: venue,
           location: location,
           organisers: event?.organizer.map(org => org?.organizer),
           url: event?.url
@@ -174,7 +175,7 @@
         event.date_start && event_date_time.push(new Date(event.date_start).toLocaleString('en-US', date_format_options));
         event.time_start && event_date_time.push(event.time_start);
         (event.date_end || event.time_end) && event_date_time.push("-")
-        event.date_end && event_date_time.push(new Date(event.date_end).toLocaleString('en-US', date_format_options));
+        event.date_end && event.date_end != event.date_start && event_date_time.push(new Date(event.date_end).toLocaleString('en-US', date_format_options));
         event.time_end && event_date_time.push(event.time_end);
         if (event_date_time.length > 0){
           eventsHTML += `<div class="row mt-3">
