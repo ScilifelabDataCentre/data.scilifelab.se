@@ -57,4 +57,4 @@ Science for Life Laboratory's SFO program (M.G.); National Science and Technolog
 
 - GeneSPIDER2 runs under the MATLAB computing platform and is available under GPLv3 license at [Zenodo](https://zenodo.org/records/10974220).
 - Software source code and postprocessed fold-change gene expression data with perturbation design matrices are publicly available at [Bitbucket](https://bitbucket.org/sonnhammergrni/genespider/src/master/).
-- Raw single-cell RNA-seq data were uploaded on [Figshare](https://doi.org/10.25452/figshare.plus.20029387.v1) and GEO ([GSE208240 and GSE241115).
+- Raw single-cell RNA-seq data were uploaded on [Figshare](https://doi.org/10.25452/figshare.plus.20029387.v1) and GEO ([GSE208240](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE208240) and [GSE241115](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241115)).
