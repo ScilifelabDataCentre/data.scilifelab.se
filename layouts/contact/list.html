@@ -55,10 +55,6 @@
         </div>
       </div>
       
-      <!-- reCAPTCHA - commented out to test anti-spam -->
-      <!-- <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div> -->
-      <!-- <label id="g-recaptcha" for="url"> -->
-      
       <button type="button" class="btn btn-aqua mt-2" id="contact-submit-btn" onclick="submitContactForm()">Send</button>
     </form>
   </div>
@@ -118,28 +114,11 @@
       return;
     }
 
-    // reCAPTCHA validation - commented out to test anti-spam
-    /*
-    var recaptcha = $("#g-recaptcha-response").val();
-    if (recaptcha === "") {
-      showContactError("Please tick 'I'm not a robot' above the 'Submit' button.");
-      return;
-    }
-    */
-
     // Collect form-specific data
     const formData = new FormData(form);
 
     // Add common metadata
     addFormMetadata(formData, sessionId, sessionStartTime);
-
-    // reCAPTCHA data - commented out to test anti-spam
-    /*
-    var recaptchaResponse = $("#g-recaptcha-response").val();
-    if (recaptchaResponse) {
-      formData.append('g-recaptcha-response', recaptchaResponse);
-    }
-    */
 
     // Ensure session duration is set once using the known page session start time
     const durationSeconds = (Date.now() - sessionStartTime) / 1000;
@@ -265,17 +244,6 @@
     });
   }
 
-  // reCAPTCHA aria-label setup - commented out to test anti-spam
-
-  /*
-    window.addEventListener("load", function () {
-    $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
-    });
-  */
-
 </script>
-
-<!-- source reCAPTCHA -->
-<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
 {{ end }}
