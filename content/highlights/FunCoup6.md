@@ -4,7 +4,7 @@ date: 2025-10-16
 summary: FunCoup 6 bridges the gap between functional association and regulatory networks across many organisms, enabling users to explore regulation and module-level insights in a unified framework.
 banner: /highlights/FunCoup6_small.png
 banner_large: /highlights/FunCoup6_large.png
-banner_caption: "Graphical Abstract of FunCoup 6 from [Buzzao et al.](https://doi.org/10.1093/nar/gkae1021)"
+banner_caption: "Graphical abstract of FunCoup 6 from [Buzzao et al.](https://doi.org/10.1093/nar/gkae1021)"
 tags:
   [
     FunCoup database, Functional association networks, Directed regulatory links, Cross species interactomics, Gene regulatory inference, Bin free Bayesian training, Network module detection, Pathway enrichment, ANUBIX, EASE, TOPAS algorithm, Highlight,
