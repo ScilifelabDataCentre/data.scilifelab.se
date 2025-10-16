@@ -1,5 +1,5 @@
 ---
-title: FunCoup 6, Large-scale functional association networks with regulatory links and integrated tools
+title: FunCoup 6: Large-scale functional association networks with regulatory links and integrated tools
 date: 2025-10-16
 summary: FunCoup 6 bridges the gap between functional association and regulatory networks across many organisms, enabling users to explore regulation and module-level insights in a unified framework.
 banner: /highlights/FunCoup6_small.png
@@ -19,7 +19,7 @@ The article ["FunCoup 6: advancing functional association networks across spec
 
 It includes the following key innovations: Extension of network coverage through bin‑free Bayesian training across 23 primary species, plus network generation for an additional 618 species. Expanded regulatory link coverage: FunCoup 6 now includes over half a million directed gene regulatory links in the human network alone. 13 species in FunCoup now contain regulatory links. Inclusion of pathway enrichment tools ([ANUBIX](https://pubmed.ncbi.nlm.nih.gov/32788619/), [EASE](https://pubmed.ncbi.nlm.nih.gov/14519205/)) and a new module for disease or drug target module detection using the [TOPAS](https://pubmed.ncbi.nlm.nih.gov/36458021/) algorithm. A redesigned website and updated API to facilitate user access and integrative analyses. A new mode of ‘comparative interactomics’ for exploring network conservation in multiple species by ortholog‑alignment. FunCoup 6 is also available as a [Cytoscape](https://cytoscape.org/) [app](https://doi.org/10.1093/bioinformatics/btae739)
 
-This resource strongly aligns with the goals of the functional genomics research by enabling integrative views of functional coupling and regulatory interactions across species. The regulatory links and module detection facilitate deeper hypotheses about pathogen‑host interactions, drug targets, and conserved pathways across species, relevant to pandemic preparedness and transational biology.
+This resource strongly aligns with the goals of the functional genomics research by enabling integrative views of functional coupling and regulatory interactions across species. The regulatory links and module detection facilitate deeper hypotheses about pathogen‑host interactions, drug targets, and conserved pathways across species, relevant to pandemic preparedness and translational biology.
 
 #### Article
 
