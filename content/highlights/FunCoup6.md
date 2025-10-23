@@ -1,5 +1,5 @@
 ---
-title: FunCoup 6: Large-scale functional association networks with regulatory links and integrated tools
+title: "FunCoup 6: Large-scale functional association networks with regulatory links and integrated tools"
 date: 2025-10-16
 summary: FunCoup 6 bridges the gap between functional association and regulatory networks across many organisms, enabling users to explore regulation and module-level insights in a unified framework.
 banner: /highlights/FunCoup6_small.png
