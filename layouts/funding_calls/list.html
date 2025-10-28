@@ -8,8 +8,6 @@
 
 <!-- SciLifeLab funding related code begins here -->
 
-<h4>Open Data Centre funding calls</h4>
-
 <section id="fundings-calls-section">
   <!-- The fundings and calls content will be filled by JS function below -->
 </section>
@@ -19,9 +17,8 @@
 {{ $other_funding_sources := $.Site.Data.funding_sources }}
 {{ if ge (len $other_funding_sources) 1 }}
 <section>
-  <h4 class="mt-4">Potential funding sources</h4>
+  <h4 class="mt-4">Other potential funding sources</h4>
   <div class="mt-3 mb-4">
-    Below is a list of sources of funding that may include calls relevant to data-driven life science.
     <div class="row g-2 mt-3 mb-4">
       {{ range $other_funding_sources }}
       <div class="col-md-6 col-lg-4">
@@ -78,7 +75,7 @@
       blockHTML += `</div>`;
     } else {
       blockHTML += `<div class="alert alert-secondary mt-4">
-                          There are currently no open funding calls from SciLifeLab Data Centre.
+                          No funding or calls are currently available from SciLifeLab Data Centre.
                       </div>`
     }
     return blockHTML;
@@ -94,8 +91,8 @@
       console.log("Problem adding DC funding calls", error);
       fundingHTML += `
         <div class="alert alert-danger mt-4">
-          There was a problem while trying to load Data Centre funding calls, try again later. If the problem persists,
-          please contact <data-platform@scilifelab.se>.
+          There was a problem whilst loading the funding and calls. Please try again later. If the problem persists,
+          please contact us.
         </div>
       `;
     }
