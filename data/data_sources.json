@@ -4,6 +4,49 @@
       "Data source"
     ],
     "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Evolution and Biodiversity",
+      "Precision Medicine and Diagnostics"
+    ],
+    "search_tags": [
+      "DORIS SND",
+      "SND",
+      "Swedish National Data Service",
+      "Bolin Centre Database",
+      "FEGA Sweden",
+      "GBIF",
+      "SciLifeLab",
+      "SITES",
+      "SBDI",
+      "researchdata.se"
+    ],
+    "name": "Researchdata.se",
+    "description": "Researchdata.se is a national web portal where you can find, share, and reuse research data from a wide range of research fields. You can also find helpful advice and recommendations on managing research data.",
+    "thumbnail": "/img/data_sources_thumbs/Researchdata.png",
+    "url": "https://researchdata.se/en",
+    "data": [
+      "Social sciences",
+      "Humanities",
+      "Agricultural and veterinary sciences",
+      "Medical",
+      "Health",
+      "Engineering",
+      "Natural sciences"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Cardiovascular Diseases",
+      "Cancer",
+      "Infectious Diseases"
+
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
       "Precision Medicine and Diagnostics"
     ],
     "search_tags": [
