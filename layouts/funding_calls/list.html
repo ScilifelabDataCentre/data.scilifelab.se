@@ -42,11 +42,18 @@
     try {
       // Fetch DC funding directly from Anubis using API
       const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const allData = await response.json();
-      const allFund = allData.calls.filter((f) => f.labels.includes(label))
+      // Check if there are 'calls' in the response and they are a list
+      if (!allData?.calls || !Array.isArray(allData.calls)) {
+        return [];
+      }
+      const allFund = allData.calls.filter((f) => f.labels.includes(label));
       return allFund.sort((a,b) => (a.closes > b.closes) ? 1 : (a.closes < b.closes) ? -1 : 0);
     } catch (error) {
-      console.error('Error fetching events:', error);
+      console.error('Error fetching DC fundings:', error);
       return []; // Return empty array if API fails
     }
   };
@@ -58,6 +65,10 @@
     if(dcFundings.length !== 0) {
       blockHTML += `<div class="row g-2 mt-3 mb-4">`;
       dcFundings.forEach((item) => {
+        // Skip the call if it misses either of needed info
+        if (!item.closes || !item.href || !item.title) {
+          return;
+        }
         const close_date = new Date(item.closes);
         const close_date_formatted = close_date.toLocaleString('en-SE', { timeZone: 'Europe/Stockholm', 'month': 'short', day:'numeric', year: 'numeric', hourCycle:'h12', hour: 'numeric', minute: 'numeric' });
         blockHTML += `
@@ -86,9 +97,9 @@
     let fundingHTML = "";
     try {
       const dcCalls = await getDCFundingCalls("https://anubis.scilifelab.se/api/calls/open");
-      fundingHTML += getFundingsCallsHTML(fundings.calls);
+      fundingHTML += getFundingsCallsHTML(dcCalls);
     } catch (error) {
-      console.log("Problem adding DC funding calls", error);
+      console.error("Problem adding DC funding calls", error);
       fundingHTML += `
         <div class="alert alert-danger mt-4">
           There was a problem whilst loading the funding and calls. Please try again later. If the problem persists,
