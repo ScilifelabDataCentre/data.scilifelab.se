@@ -59,7 +59,8 @@
   };
 
   // Code for funding sources starts here
-  function getFundingsCallsHTML(dcFundings) {   
+  function getFundingsCallsHTML(dcFundings) {
+    const dateFormatSettings = { timeZone: 'Europe/Stockholm', 'month': 'short', day:'numeric', year: 'numeric', hourCycle:'h12', hour: 'numeric', minute: 'numeric' }
     let blockHTML = ""; 
     // If no funds to show, display appropriate message
     if(dcFundings.length !== 0) {
@@ -69,15 +70,15 @@
         if (!item.closes || !item.href || !item.title) {
           return;
         }
-        const close_date = new Date(item.closes);
-        const close_date_formatted = close_date.toLocaleString('en-SE', { timeZone: 'Europe/Stockholm', 'month': 'short', day:'numeric', year: 'numeric', hourCycle:'h12', hour: 'numeric', minute: 'numeric' });
+        const closeDate = new Date(item.closes);
+        const closeDateFormatted = closeDate.toLocaleString('en-SE', dateFormatSettings);
         blockHTML += `
         <div class="col-md-6 col-lg-4">
           <div class="card-box">
             <a href="${item.href}" target="_blank">
               <h5>${item.title}</h5>
               <div>
-                <b>Deadline:</b> ${close_date_formatted + ' (Swedish time)'}
+                <b>Deadline:</b> ${closeDateFormatted + ' (Swedish time)'}
               </div>
             </a>
           </div>
