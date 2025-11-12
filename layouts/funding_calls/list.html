@@ -50,7 +50,7 @@
       if (!allData?.calls || !Array.isArray(allData.calls)) {
         return [];
       }
-      const allFund = allData.calls.filter((f) => f.labels.includes(label));
+      const allFund = allData.calls.filter((f) => f.labels && Array.isArray(f.labels) && f.labels.includes(label));
       return allFund.sort((a,b) => (a.closes > b.closes) ? 1 : (a.closes < b.closes) ? -1 : 0);
     } catch (error) {
       console.error('Error fetching DC fundings:', error);
@@ -60,7 +60,15 @@
 
   // Code for funding sources starts here
   function getFundingsCallsHTML(dcFundings) {
-    const dateFormatSettings = { timeZone: 'Europe/Stockholm', 'month': 'short', day:'numeric', year: 'numeric', hourCycle:'h12', hour: 'numeric', minute: 'numeric' }
+    const dateFormatSettings = {
+      timeZone: 'Europe/Stockholm',
+      month: 'short',
+      day:'numeric',
+      year: 'numeric',
+      hourCycle:'h12',
+      hour: 'numeric',
+      minute: 'numeric'
+    };
     let blockHTML = ""; 
     // If no funds to show, display appropriate message
     if(dcFundings.length !== 0) {
@@ -78,7 +86,7 @@
             <a href="${item.href}" target="_blank">
               <h5>${item.title}</h5>
               <div>
-                <b>Deadline:</b> ${closeDateFormatted + ' (Swedish time)'}
+                <b>Deadline:</b> ${closeDateFormatted} (Swedish time)
               </div>
             </a>
           </div>
@@ -88,7 +96,7 @@
     } else {
       blockHTML += `<div class="alert alert-secondary mt-4">
                           No funding or calls are currently available from SciLifeLab Data Centre.
-                      </div>`
+                      </div>`;
     }
     return blockHTML;
   };
