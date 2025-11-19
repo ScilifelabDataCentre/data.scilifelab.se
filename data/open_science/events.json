@@ -166,8 +166,8 @@
         "organisers": "",
         "event_url": "https://lyyti.events/p/SBDI_Days_2026__Artificial_Intelligence_in_Ecology_and_Biodiversity_Research_9077",
         "description": "A meeting hosted by the Swedish Biodiversity Data Infrastructure that brings together researchers in ecology, biodiversity, remote sensing and data science to explore how AI and machine learning are transforming biodiversity research, monitoring and conservation."
-    },
-     {
+    },    
+    {
         "title": "FAIR play: Mastering Metadata to Empower Life Scientists",
         "type": "Event",
         "date_start": "2025-11-25",
@@ -220,7 +220,7 @@
         "type": "Event",
         "date_start": "2026-04-17",
         "time_start": "",
-        "date_end": "2026-04-17",
+        "date_end": "",
         "time_end": "",
         "venue": "Gothenburg, Sweden",
         "organisers": "",
@@ -232,7 +232,7 @@
         "type": "Event",
         "date_start": "2026-05-07",
         "time_start": "12:00",
-        "date_end": "2026-05-07",
+        "date_end": "",
         "time_end": "18:00",
         "venue": "To be announced soon",
         "organisers": "",
