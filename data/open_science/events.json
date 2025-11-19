@@ -168,6 +168,30 @@
         "description": "A meeting hosted by the Swedish Biodiversity Data Infrastructure that brings together researchers in ecology, biodiversity, remote sensing and data science to explore how AI and machine learning are transforming biodiversity research, monitoring and conservation."
     },
      {
+        "title": "FAIR play: Mastering Metadata to Empower Life Scientists",
+        "type": "Event",
+        "date_start": "2025-11-25",
+        "time_start": "11:00",
+        "date_end": "",
+        "time_end": "12:00",
+        "venue": "Virtual Event",
+        "organisers": "",
+        "event_url": "https://www.scilifelab.se/event/openscience-fair/",
+        "description": "A seminar hosted by SciLifeLab’s Data Centre and NBIS focused on open science and research-data management, offering life scientists practical insights and discussion around metadata, FAIR data practices, sharing strategies and reproducibility."
+    }, 
+    {
+        "title": "CoARA National Chapter Sweden: Nationell konferens 2025",
+        "type": "Event",
+        "date_start": "2025-12-05",
+        "time_start": "09:30",
+        "date_end": "",
+        "time_end": "12:00",
+        "venue": "Virtual Event",
+        "organisers": "",
+        "event_url": "https://suhf.se/aktiviteter/coara-national-chapter-sweden-nationell-konferens-2025/",
+        "description": "A virtual conference hosted by Sweden’s CoARA National Chapter, bringing together researchers, funders and institutions to discuss current initiatives and working-group efforts to reform research assessment."
+    },
+     {
         "title": "Artificial intelligence and data-driven approaches for addressing the global challenge of antibiotic resistance",
         "type": "Event",
         "date_start": "2026-03-11",
