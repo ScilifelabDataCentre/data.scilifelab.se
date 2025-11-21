@@ -1,9 +1,9 @@
 [
     {
-        "funder": "SciLifeLab Anubis",
+        "funder": "SciLifeLab",
         "logo": "/img/funders_logo/anubis.png",
         "url": "https://anubis.scilifelab.se/",
-        "alt": "Logo for 'Scilifelab Anubis'"
+        "alt": "Logo for 'Scilifelab'"
     },
     {
         "funder": "VR - Swedish Research Council",
@@ -18,10 +18,10 @@
         "alt": "Logo for 'Knut and Alice Wallenberg Foundation'"
     },
     {
-        "funder": "ISIDORe - Integrated Services for Infectious Disease Outbreak Research",
-        "logo": "/img/funders_logo/isidore.png",
-        "url": "https://isidore-project.eu/calls/",
-        "alt": "Logo for 'ISIDORe - Integrated Services for Infectious Disease Outbreak Research'"
+        "funder": "Swedish Foundation for Strategic Research",
+        "logo": "/img/funders_logo/ssf.png",
+        "url": "https://strategiska.se/en/call-for-proposals/",
+        "alt": "Logo for 'Swedish Foundation for Strategic Research'"
     },
     {
         "funder": "Formas - Swedish Research Council for Sustainable Development",
@@ -60,12 +60,6 @@
         "alt": "Logo for 'Vinnova - Sweden’s innovation agency'"
     },
     {
-        "funder": "Swedish Foundation for Strategic Research",
-        "logo": "/img/funders_logo/ssf.png",
-        "url": "https://strategiska.se/en/call-for-proposals/",
-        "alt": "Logo for 'Swedish Foundation for Strategic Research'"
-    },
-    {
         "funder": "Svenska Läkarsällskapet",
         "logo": "/img/funders_logo/sls.png",
         "url": "https://www.sls.se/vetenskap/sok-anslag/",
@@ -82,11 +76,5 @@
         "logo": "/img/funders_logo/eu.png",
         "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search;callCode=null;freeTextSearchKeyword=;matchWholeText=true;typeCodes=0,1,2,8;statusCodes=31094501,31094502,31094503;programmePeriod=null;programCcm2Id=null;programDivisionCode=null;focusAreaCode=null;destinationGroup=null;missionGroup=null;geographicalZonesCode=null;programmeDivisionProspect=null;startDateLte=null;startDateGte=null;crossCuttingPriorityCode=null;cpvCode=null;performanceOfDelivery=null;sortQuery=sortStatus;orderBy=asc;onlyTenders=false;topicListKey=topicSearchTablePageState",
         "alt": "Logo for 'Horizon Europe funding'"
-    },
-    {
-        "funder": "University of Cambridge",
-        "logo": "/img/funders_logo/cambridge.png",
-        "url": "https://www.infectiousdisease.cam.ac.uk/funding-calls-interest",
-        "alt": "Logo for 'University of Cambridge'"
     }
 ]
