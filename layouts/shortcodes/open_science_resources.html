@@ -35,7 +35,7 @@
     {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}
     {{ with .type }}data-stype="{{ delimit (apply . "urlize" ".") ":" }}"{{ end }}
     data-name="{{ .name | lower }}">
-      <div class="card-teal-25">
+    <div class="card-teal-25">
       <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
         <a target="_self" href="{{ .url }}"><img class="img-fluid"
             src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
@@ -44,6 +44,9 @@
       <div class="p-2 card-teal-title">
         <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
       </div>
+      <div class="p-2">
+        {{ .description }}
+      </div>
       <div class="px-2">
         <b>Affiliation:</b>
         {{ if .affiliation_url}}
@@ -51,13 +54,7 @@
         {{ else }}
           {{ .affiliation }}
         {{ end }}
-      </div>
-
-      <div class="px-2">
-        {{ if .resource_url}}
-          <a href="{{ .resource_url}}" aria-label = "{{ .resource_url }}" >{{ "Click to view this resource" }}</a>
-        {{ end }}
-      </div>
+    </div>
 
     </div>
   </div>
