@@ -49,7 +49,7 @@
       dataArray.forEach((event) => {
         // Show only events that are meant to be displayed
         if (context == "sll-events-section" && typeof event.category !== 'undefined' &&
-           !event.category.includes("Open Science")) {
+          !event.category.toLowerCase().includes("open science")) {
           return;
         };
         // Not insterested if the deadline have already passed
