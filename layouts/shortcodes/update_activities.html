@@ -47,9 +47,11 @@
       };
       let eventList = [];
       dataArray.forEach((event) => {
-        // Show only events that are meant to be displayed
-        if (context == "sll-events-section" && typeof event.category !== 'undefined' &&
-          !event.category.toLowerCase().includes("open science")) {
+        // Show only events that are tagged with "open science" in any capitalisation
+        const category_string = (Array.isArray(event.category) ? event.category : [event.category])
+          .join(" ")
+          .toLowerCase();
+        if (context === "sll-events-section" && !category_string.includes("open science")) {
           return;
         };
         // Not insterested if the deadline have already passed
