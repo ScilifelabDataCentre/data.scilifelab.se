@@ -5,6 +5,39 @@
     ],
     "ddls": [
       "Epidemiology and Biology of Infection",
+      "Precision Medicine and Diagnostics"
+    ],
+    "search_tags": [
+      "AMR",
+      "antimicrobial resistance",
+      "EMBL-EBI",
+      "MRC",
+      "CABBAGE",
+      "microbial",
+      "antibiogram",
+      "phenotype",
+      "genotype annotations",
+      "annotations"
+    ],
+    "name": "Antimicrobial resistance portal",
+    "description": "The AMR Portal is a collaboration between EMBL-EBI research and service teams alongside Imperial College London to deliver a new way to access and explore AMR phenotype and genotype annotations through a user-friendly interface.",
+    "thumbnail": "/img/data_sources_thumbs/EMBL_EBI-logo.png",
+    "url": "https://www.ebi.ac.uk/amr",
+    "data": [
+      "Genes and genomes",
+      "Phenotypic"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Infectious Diseases"
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
       "Cell and Molecular Biology",
       "Evolution and Biodiversity",
       "Precision Medicine and Diagnostics"
@@ -26,13 +59,13 @@
     "thumbnail": "/img/data_sources_thumbs/Researchdata.png",
     "url": "https://researchdata.se/en",
     "data": [
-      "Social sciences",
-      "Humanities",
-      "Agricultural and veterinary sciences",
-      "Medical",
+      "Clinical",
+      "Epidemiology",
+      "Genes and genomes",
       "Health",
-      "Engineering",
-      "Natural sciences"
+      "Medical",
+      "Phenotypic",
+      "Proteins and proteomes"
     ],
     "thumbnail_border": true,
     "disease_type": [
