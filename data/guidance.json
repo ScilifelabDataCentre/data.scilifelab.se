@@ -46,7 +46,7 @@
       "submission"
     ],
     "name": "Data sources",
-    "description": "Sources of data that can potentially be used by researchers in Sweden. The list includes places where data and be accessed and/or submitted.",
+    "description": "Information about where to submit/access different types of data.",
     "url": "/resources/data_sources",
     "thumbnail": "/img/resource_thumbnails/data_sources.jpg",
     "created_by": "SciLifeLab Data Centre",
