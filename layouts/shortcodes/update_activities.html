@@ -4,6 +4,9 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
         {{ $news := where .Site.RegularPages "Section" "eq" "news" }}
         {{ $os_news := where $news "Params.open_science" "eq" true }}
+        {{ $extra_os_news := where .Site.RegularPages "File.Dir" "eq" "open_science/news/" }}
+        {{ $os_news = union $os_news $extra_os_news }}
+        {{ $os_news = sort $os_news "Params.date" "desc" }}
         {{ range $os_news }}
         <div class="col">
             <div class="news-card moving-card">
