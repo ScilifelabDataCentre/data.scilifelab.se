@@ -17,6 +17,29 @@
     "support_email": "johan.inganni@scilifelab.se"
   },
   {
+    "type": ["Research Data Management"],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Helpdesk",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "SciLifeLab Data Centre",
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
+    ],
+    "name": "SciLifeLab RDM guidelines",
+    "description": "A knowledge hub containing guidance to life science researchers in Sweden regarding Research Data Management (RDM)",
+    "url": "https://data-guidelines.scilifelab.se",
+    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "created_by": "NBIS, SciLifeLab Data Centre",
+    "created_by_url": "https://data-guidelines.scilifelab.se/contact/",
+    "support_email": "data-management@scilifelab.se",
+    "thumbnail_border": true
+  },
+  {
     "type": ["Data sources"],
     "search_tags": [
       "sources",
