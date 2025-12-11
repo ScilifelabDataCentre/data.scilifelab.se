@@ -33,7 +33,7 @@
     "name": "SciLifeLab RDM guidelines",
     "description": "A knowledge hub containing guidance to life science researchers in Sweden regarding Research Data Management (RDM).",
     "url": "https://data-guidelines.scilifelab.se",
-    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "thumbnail": "/img/resource_thumbnails/rdm.jpg",
     "thumbnail_border": true,
     "created_by": "NBIS, SciLifeLab Data Centre",
     "created_by_url": "https://data-guidelines.scilifelab.se/contact/",
