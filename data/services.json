@@ -1485,15 +1485,16 @@
     "search_tags": [
       "machine learning",
       "MLOp",
-      "ML lifecycle",
+      "ML lifecycle"
     ],
     "name": "MLFlow",
-    "description": "MLFlow is a tool for machine learning model tracking and model management. Can be used regardless of where you are running ML training.",
+    "description": "MLFlow is a tool for machine learning, model tracking, and model management. Can be used regardless of where you are running ML training.",
     "thumbnail": "/img/service_thumbnails/mlflow-logo.png",
     "thumbnail_border": true,
     "url": "https://serve.scilifelab.se/docs/mlflow/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data/",
-    "support_website": "https://serve.scilifelab.se/docs/mlflow/"
+    "support_website": "https://serve.scilifelab.se/docs/mlflow/",
+    "support_email": "serve@scilifelab.se"
   }
 ]
