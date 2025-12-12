@@ -1,6 +1,6 @@
 ---
 title: Events & Training
-description: Community-sourced collection of events and training opportunities relevant for data-driven life science research.
+description: Events and training opportunities available from SciLifeLab Data Centre.
 cascade:
   header_image: /img/illustrations/navet.jpg
 menu:
