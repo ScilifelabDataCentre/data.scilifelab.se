@@ -1,6 +1,6 @@
 # Use alpine Linux, download desired version of HUGO and build html files
 FROM alpine:3.21 AS build
-RUN apk update && apk upgrade --no-cache
+RUN apk update && apk upgrade
 RUN apk add --no-cache wget
 ARG HUGO_VERSION="0.147.3"
 ARG HUGO_ENV_ARG
