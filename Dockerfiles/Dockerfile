@@ -1,6 +1,6 @@
 # Use alpine Linux, download desired version of HUGO and build html files
 FROM alpine:3.21 AS build
-RUN apk add --no-cache wget
+RUN apk add --no-cache wget "libpng>=1.6.53-r0"
 ARG HUGO_VERSION="0.147.3"
 ARG HUGO_ENV_ARG
 WORKDIR /src
