@@ -2,19 +2,19 @@
   {
     "type": ["Research Data Management"],
     "search_tags": [
-      "Open Science",
-      "Data lifecycle",
-      "SciLifeLab",
-      "Data Centre",
-      "Guide",
-      "data management"
+      "sources",
+      "data",
+      "repositories",
+      "download",
+      "submit",
+      "submission"
     ],
-    "name": "Open Science at SciLifeLab",
-    "description": "Find out more about the activities of SciLifeLab Data Centre in regard to Open Science.",
-    "url": "/open_science/",
-    "thumbnail": "/img/resource_thumbnails/ddls_lifecycle.jpg",
+    "name": "Data sources",
+    "description": "Information about where to submit/access different types of data.",
+    "url": "/resources/data_sources",
+    "thumbnail": "/img/resource_thumbnails/data_sources.jpg",
     "created_by": "SciLifeLab Data Centre",
-    "created_by_url": "https://scilifelab.se/data/",
+    "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
   },
   {
@@ -33,24 +33,6 @@
     "url": "/onboarding/",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data/",
-    "support_email": "datacentre@scilifelab.se"
-  },
-  {
-    "type": ["Research Data Management"],
-    "search_tags": [
-      "sources",
-      "data",
-      "repositories",
-      "download",
-      "submit",
-      "submission"
-    ],
-    "name": "Data sources",
-    "description": "Information about where to submit/access different types of data.",
-    "url": "/resources/data_sources",
-    "thumbnail": "/img/resource_thumbnails/data_sources.jpg",
-    "created_by": "SciLifeLab Data Centre",
-    "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
   },
   {
@@ -80,6 +62,24 @@
     "thumbnail": "/img/resource_thumbnails/storage.jpg",
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": ["Research Data Management"],
+    "search_tags": [
+      "Open Science",
+      "Data lifecycle",
+      "SciLifeLab",
+      "Data Centre",
+      "Guide",
+      "data management"
+    ],
+    "name": "Open Science at SciLifeLab",
+    "description": "Find out more about the activities of SciLifeLab Data Centre in regard to Open Science.",
+    "url": "/open_science/",
+    "thumbnail": "/img/resource_thumbnails/open_science.png",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data/",
     "support_email": "datacentre@scilifelab.se"
   },
   {
