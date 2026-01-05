@@ -4,6 +4,38 @@
       "Data source"
     ],
     "ddls": [
+      "Epidemiology and Biology of Infection"
+    ],
+    "search_tags": [
+      "pathogens",
+      "genome",
+      "phylogenetic",
+      "analysis tools",
+      "workflows",
+      "bioinformatics tools",
+      "phylogenetic trees",
+      "genomic epidemiology", 
+      "Nextstrain",
+      "pathogen monitoring"
+    ],
+    "name": "Nextstrain",
+    "description": "An open-source project to harness the scientific and public health potential of pathogen genome data",
+    "thumbnail": "/img/data_sources_thumbs/nextstrain-logo.png",
+    "url": "https://nextstrain.org/",
+    "data": [
+      "Genes and genomes",
+      "Pathogens"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Infectious Diseases"
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
       "Epidemiology and Biology of Infection",
       "Precision Medicine and Diagnostics"
     ],
