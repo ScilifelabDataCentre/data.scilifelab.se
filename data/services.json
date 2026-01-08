@@ -22,10 +22,7 @@
     "thumbnail_border": true,
     "url": "https://www.scilifelab.se/data/protocols-io/",
     "maintained_by": "protocols.io team",
-    "maintained_by_url": "https://www.protocols.io/about",
-    "support_email": "info@protocols.io",
-    "support_github": "",
-    "support_status": ""
+    "maintained_by_url": "https://www.protocols.io/about"
   },
   {
     "target": [
