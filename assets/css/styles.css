@@ -495,8 +495,7 @@ h5 a:hover {
   }
 }
 .data_sources-content .accordion-button.custom-padding {
-  padding-left: 0.5rem; /* Adjust as needed */
-  padding-right: 0.5rem; /* Adjust as needed */
+  padding: 0.5rem;
 }
 #job-filters .accordion {
   --bs-accordion-bg: inherit; /* Use the parent bg-light color */
@@ -516,8 +515,7 @@ h5 a:hover {
   }
 }
 #job-filters .accordion-button.custom-padding {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
   text-align: left;
 }
 
@@ -546,8 +544,7 @@ h5 a:hover {
 } 
 
 #events-filters .accordion-button.custom-padding {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
   text-align: left;
 } 
 
@@ -596,4 +593,21 @@ a.back-to-top.btn:active {
   border: none;
   box-shadow: none;
   outline: none;
+}
+
+/* Funding card links styling */
+#fundings-calls-section .card-box a {
+  color: inherit;
+  /* Heading color inside the card */
+  & h5 {
+    color: #045c64;
+  };
+  /* Card's hover styling */
+  & :hover {
+    text-decoration: none;
+  };
+}
+
+#fundings-calls-section .card-box:hover {
+  box-shadow: 0px 0px 3px #045c64;
 }

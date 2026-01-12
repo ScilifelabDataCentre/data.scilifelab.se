@@ -1,89 +1,36 @@
 ---
-title: About the SciLifeLab Data Platform
+title: About
 menu:
-    navbar_top:
-        name: About
-        identifier: about
-        weight: 10
-    bottom_about:
-        name: About us
-        identifier: about
-        weight: 10
-toc: True
+  navbar_top:
+    name: About
+    identifier: about
+    weight: 10
+  bottom_about:
+    name: About us
+    identifier: about
+    weight: 10
 ---
 
-<div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
-  This page is also available in <a href="/sv/">Swedish</a>.
-</div>
+### Purpose of Data.scilifelab.se
 
-## Data-driven life science research
+_Data.scilifelab.se_ is a resource created by SciLifeLab Data Centre, with funding from [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven) and the [Swedish Foundation for Strategic Research (SSF)](https://strategiska.se/en/). It contains information about the services created by SciLifeLab Data Centre, and other resources that are in line with their vision and mission [(detailed below)](#scilifelab-data-centre).
 
-Life science, the science of all things living, is becoming increasingly data-driven. The amount and complexity of research data produced by the field has grown rapidly in recent years. Today, a substantial amount of life science data is shared openly within the global research community. These data can be, and has been, used to fuel further discoveries in multiple fields, including healthcare practices, drug discovery, veterinary medicine, plant research, biotechnology, and food science.
-
-Swedish life science research has an excellent reputation globally. Sweden has fostered many well-known scientists, from botanist Carl von Linné to present-day Nobel Prize winners. A number of  programs to promote and support work in Swedish data-driven life science have now been established to ensure that the global reputation of Swedish life science research is upheld far into the future, and the SciLifeLab Data Platform is one such initiative.
-
-## About the SciLifeLab Data Platform
-
-In order for the Swedish life science research community to generate cutting-edge data-driven research, it will need access to appropriate services, tools, and support. The *SciLifeLab Data Platform* comprises both a technical infrastructure for data-centric research and a **website** that promotes relevant services, research, events, and training. The platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven) but is open to all life science researchers and data-producing facilities in Sweden, regardless of their affiliation with DDLS.
-
-The services hosted on the SciLifeLab Data Platform adhere to the values of [Open Science](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), [Transparent research](https://www.ucl.ac.uk/research/strategy-and-policy/research-transparency), and [FAIR (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18), as well as good data management practices throughout the data lifecycle.
-
-The SciLifeLab Data Platform was built and is maintained by the [SciLifeLab Data Centre](https://scilifelab.se/data) and our partners. We welcome any questions on any element of the platform. Please get in touch with us by emailing [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) or by sending us a message using our [contact form](/contact/).
-
-### Vision & mission
-
-This platform aims to boost the number of services available for data-driven life science research in Sweden. Our vision is to create an envronment in which our users can easily locate, access, and use life science resources (including data, tools, and e-infrastructure).
-
-<figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-75 d-none d-xl-inline" alt="Schematic representation of the Scilifelab Data Platform, relating Users, Data to E-infrastructure">
-  <img src="/img/misc/users_data_einfra_illustration.png" class="figure-img img-fluid w-100 d-xl-none" alt="Schematic representation of the Scilifelab Data Platform, relating Users, Data to E-infrastructure" >
-  <figcaption class="figure-caption">We see the SciLifeLab Data Platform as the environment for hosting services connecting users, life science data, and e-Infrastructure.</figcaption>
-</figure>
-
-### Hosting environment
-The SciLifeLab Data Platform will provide a hosting environment for web-based computational tools and databases supporting data-driven life science research. This service will accommodate compute-intensive applications and large datasets, offering infrastructure for researchers to share and manage their resources effectively.
-
-Initially, the hosting environment will focus on integrating services developed by SciLifeLab Data Centre and its partners. In the future, researchers, research groups, and organizations will be able to apply for hosting. Details about the application process and eligibility criteria will be announced when the service is launched. Some services, particularly those designed for data-producing units, may have specific access restrictions.
-
-This service will align with best practices in data management, ensuring compliance with [Open Science](https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science_en), [Transparent research](http://ucl.ac.uk/research/strategy-environment/research-transparency), and [FAIR](https://doi.org/10.1038/sdata.2016.18) data principles.
-
-<a href="/services/hosting/"><b>Find out more about applying for hosting <i class="bi bi-arrow-right-square-fill"></i></b></a>
-
-### Website
-
-The SciLifeLab Data Platform website is available at [data.scilifelab.se](https://data.scilifelab.se/). It aims to showcase and promote services and research related to data-driven life science in Sweden, as well as relevant events, training, and community-driven initiatives.
-
-The content of the website is moderated by the team behind the SciLifeLab Data Platform. However, much of the content is contributed by the research community. Contributions are welcome in each of the sections. For example, you can suggest [a data highlight](/highlights/), [an event](/events/), or [a training opportunity](/events/). We'd also be happy to receive suggestions about other types of content that is not currently available on the platform.
-
-<a href="/contact/"><b>Contact form for enquiries and contributions <i class="bi bi-arrow-right-square-fill"></i></b></a>
-
-## Organisations behind the platform
+Feedback on any part of data.scilifelab.se is always welcomed, and can be provided via the [contact page](/contact/).
 
 ### SciLifeLab
 
-SciLifeLab (Science for Life Laboratory) is an institution for the advancement of molecular biosciences in Sweden. We are funded as a national research infrastructure by the Swedish government.
+[SciLifeLab (Science for Life Laboratory)](https://www.scilifelab.se) is an institution for the advancement of molecular biosciences in Sweden. It is a national research infrastructure and was established in 2010. It supports research activities at all major Swedish universities.
 
-Our organisation leverages the unique strengths of individual researchers across Sweden into a focused resource for the life science community. For example, we provide thousands of researchers in Sweden with access to the cutting-edge instrumentation and scientific expertise necessary to be internationally competitive in bioscience research. The infrastructure that we provide is, in turn, supported and further developed by our research community, which includes internationally recognised experts in life science and technology. This results in a unique environment for carrying out health and environmental research at the highest level.
+SciLifeLab leverages the unique strengths of individual researchers across Sweden to create valuable resources for the life science community. For example, SciLifeLab provides access to national infrastructure, which contains the cutting-edge instrumentation and scientific expertise necessary to be internationally competitive in bioscience research. In turn, the infrastructure is further developed by the Swedish life science research community. This results in a unique environment for conducting life science at the highest level.
 
-SciLifeLab started in 2010 as a joint effort between four universities; [Karolinska Institutet](https://www.ki.se/), [KTH Royal Institute of Technology](https://www.kth.se/), [Stockholm University](https://www.su.se/) and [Uppsala University](https://www.uu.se/). Today, we support research activities at all major Swedish universities.
+More information about SciLifeLab is available at [scilifelab.se](https://www.scilifelab.se/).
 
-For more information about SciLifeLab, please see [scilifelab.se](https://www.scilifelab.se).
+#### SciLifeLab Data Centre
 
-### SciLifeLab Data Centre
+The primary activities of SciLifeLab Data Centre are to make data as [Open](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), and [FAIR (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18) as possible. This is done by providing [Services](/services/) to aid researchers in sharing their research outputs (e.g. data and apps) according to best practice, and in promoting their research outputs to maximise their reuse.
 
-Life science research is increasingly becoming not only technology-driven, but also data-driven. SciLifeLab coordinates and supports activities throughout the data lifecycle. This includes project planning, data production, data analysis, data sharing, through to the publication and reuse of data, where researchers are dependent on advanced data analysis and e-infrastructures.
+The **vision** of SciLifeLab Data Centre is to position Sweden at the global forefront of data-driven life science research.
 
-SciLifeLab Data Centre focuses primarily on data generated by SciLifeLab infrastructure platforms. We work to maximise the value, and biological insight, that can be obtained from data, and to enable infrastructure to make data findable and accessible. At SciLifeLab Data Centre, we see data as one of the most valuable and long-lasting products of our operations and strive to make our data [FAIR](https://www.force11.org/group/fairgroup/fairprinciples), ensure that it is handled according to open science standards, and to maximise its long-term value to the scientific community.
+The **mission** of SciLifeLab Data Centre is to facilitate world class research and enhance research quality by offering a suite of impactful services. This is done by contributing to Open Science and removing barriers to the reuse of research outputs. Data Centre participates at the highest international level in technology development, and in shaping best practices and standards for data-driven life science research.
 
-General information about the Data Centre is available at [scilifelab.se/data/](https://www.scilifelab.se/data/).
-
-### Partner organisations
-
-The SciLifeLab Data Platform is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven). A total of 3.1 billion SEK  has been granted from the Knut and Alice Wallenberg Foundation over a period of 12 years. The purpose of the program is to train the next generation of life scientists, to create a strong computational and data science base, and to strengthen the competencies in today’s research society. Thereby, the program will ultimately enable every scientist to better analyse data patterns and integrate their data with the global data flows in life sciences. Furthermore, the program aims to strengthen national collaborations between universities, to build bridges between life and data science communities, and to create partnerships with industry, healthcare and other national and international entities.
-
-Eleven Swedish organisations are also participating in the DDLS, alongside SciLifeLab and the Knut and Alice Wallenberg Foundation. The organisations involved are shown below:
-
-<figure class="my-2 figure w-100 text-center">
-  <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-75 d-none d-xl-inline" alt="Logos for Scilifelab, Knut and Alice Wallenberg Foundation, Chalmers, Göteborgs Universitet, Karolinska institutet, Kungliga Tekniska Högskolan, Linköpins Universitet, Lunds Universitet, Naturhistoriska Riksmuseet, Sveriges LantbruksUniversitet, Stockholms Universitet, Umeå Universitet, Uppsala Universitet">
-  <img src="/img/logos/scilifelab_kaw_unis_etc.png" class="img-fluid w-100 d-xl-none" alt="Logos for Scilifelab, Knut and Alice Wallenberg Foundation, Chalmers, Göteborgs Universitet, Karolinska institutet, Kungliga Tekniska Högskolan, Linköpins Universitet, Lunds Universitet, Naturhistoriska Riksmuseet, Sveriges LantbruksUniversitet, Stockholms Universitet, Umeå Universitet, Uppsala Universitet">
-</figure>
+More general information about SciLifeLab Data Centre is available at [scilifelab.se/data/](https://www.scilifelab.se/data/).

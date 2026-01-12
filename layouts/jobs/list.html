@@ -5,149 +5,109 @@
     {{ .Content }}</div>
 </section>
 
-<section>
-  <div class="my-2 text-start">
-    <button type="button" class="btn btn-aqua" data-bs-toggle="modal" data-bs-target="#suggestionModal">
-      Tell us about an open position
-    </button>
-  </div>
-  <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form action="https://forms.dc.scilifelab.se/api/v1/form/M5GfePAbHxkPdIph/incoming" class="needs-validation"
-          novalidate method="POST" accept-charset="utf-8">
-          <div class="modal-header">
-            <h5 class="modal-title" id="suggestionModalLabel">Jobs, PhD positions, Postdoc positions or master's
-              projects</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="">
-              <p>We are happy to list any job listings, PhD positions, postdoc positions or masters project opportunities
-                related to data-driven life science in Sweden.</p>
-              <p>If you know of an opportunity that has not been listed on this page, but
-                feel that it should be, please fill in the form below. Obligatory fields are marked with an
-                asterisk.
-                The editorial team behind the SciLifeLab Data Platform will publish all suitable submissions as soon as
-                possible.</p>
-            </div>
-            <div class="mb-3">
-              <label for="job_title" class="form-label fw-bold">Title:*</label>
-              <input type="text" class="form-control" id="job_title" name="job_title" required>
-            </div>
-            <div class="mb-3">
-              <label for="job_type" class="form-label fw-bold">Type of listing:*</label>
-              <select class="form-select" id="job_type" name="job_type" required>
-                <option hidden disabled selected value> </option>
-                <option value="job_listing">Job listing</option>
-                <option value="phd">PhD position</option>
-                <option value="postdoc">Postdoc position</option>
-                <option value="masters">Masters project</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="opening_date" class="form-label fw-bold">Opening date:</label>
-              <input type="date" class="form-control" id="opening_date" name="opening_date">
-              <div class="form-text">Add opening date if the job is not yet open for applications.
-               </div>
-            </div>
-            <div class="mb-3">
-              <label for="job_deadline" class="form-label fw-bold">Application deadline:*</label>
-              <input type="date" class="form-control" id="job_deadline" name="job_deadline" required>
-              <div class="form-text">If no deadline applies, please write a date 1 year from today's date, or your best
-                estimate. This field can also be used to state e.g. closing date for grant applications.</div>
-            </div>
-            <div class="mb-3">
-              <label for="employer" class="form-label fw-bold">Employer:*</label>
-              <input type="text" class="form-control" id="employer" name="employer" required>
-              <div class="form-text">Where is the position? List an employer</div>
-            </div>
-            <div class="mb-3">
-              <label for="job_url" class="form-label fw-bold">Webpage with advertisement:*</label>
-              <input type="url" class="form-control" id="job_url" name="job_url" required>
-              <div class="form-text">Enter URL starting with 'https://...'</div>
-            </div>
-            <div class="mb-3">
-              <label for="job_description" class="form-label fw-bold">Additional relevant information:</label>
-              <textarea class="form-control" id="job_description" name="job_description" rows="5"></textarea>
-              <div class="form-text">Any additional information that you feel could be useful.</div>
-            </div>
-            <div class="mb-3 form-check fw-bold">
-              <input type="checkbox" class="form-check-input" id="involved_in_listing" name="involved_in_listing">
-              <label class="form-check-label" for="involved_in_listing">I am involved in this listing</label>
-            </div>
-            <div class="mb-3">
-              <label for="submitter_name" class="form-label fw-bold">Your name:</label>
-              <input type="text" class="form-control" id="submitter_name" name="submitter_name">
-              <div class="form-text">Enter your name if you agree to be contacted regarding this submission (your name
-                will not be shown in the listing).</div>
-            </div>
-            <div class="mb-3">
-              <label for="submitter_email" class="form-label fw-bold">Your contact email:</label>
-              <input type="email" class="form-control" id="submitter_email" name="submitter_email">
-              <div class="form-text">Enter your email address if you agree to be contacted regarding this submission
-                (your email will not be displayed in the listing).</div>
-            </div>
-            <div class="g-recaptcha" data-sitekey="6LdPd50fAAAAAJ_dVMXFJjzOTh7XZeAI-ej82GPv"></div>
-            <input type="url" id="originUrl" name="originUrl" value="" hidden aria-label="form-origin-url" />
-            <input type="hidden" name="origin" value="call_job_suggestion" aria-label="form-name" />
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-aqua">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="jobs-section">
+  <!-- Loading indicator -->
+  <div id="jobs-loading" class="text-center py-5">
+    <div class="spinner-border text-aqua" role="status" style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Loading jobs...</span>
+    </div>
+    <p class="mt-3 text-muted">Loading available positions...</p>
+  </div>
+  
   <!-- The jobs content will be filled by JS function below -->
 </section>
 
 <script>
   // Functions need to be run when the DOM is ready
-  document.addEventListener("DOMContentLoaded", function (event) {
+  document.addEventListener("DOMContentLoaded", async () => {
     
-    // Takes a URL and calls the callback function pass the data fetched
-    function getDataFromUrl(url, load_callback, loadend_callback) {
-      var req = new XMLHttpRequest();
-      req.overrideMimeType("application/json");
-      req.open("GET", url, true);
-      // The function call for fetching data and display
-      req.onload = function () {
-        load_callback(JSON.parse(req.responseText).items);
-      };
-      // The function call for adding filtering
-      req.onloadend = function () {
-        loadend_callback();
-      };
-      req.send(null);
+    // Constants
+    const JOBS_API_URL = 'https://www.scilifelab.se/wp-json/wp/v2/career?categories=980&orderby=archive_date&per_page=50';
+    
+    // Helper functions for job data transformation
+    function extractJobUrl(job) {
+      try {
+        return job.acf?.read_more_external_link?.url || job.link;
+      } catch {
+        return job.link;
+      }
+    }
+    
+    function extractEmployer(job) {
+      let employer = 'SciLifeLab';
+      try {
+        const universityList = job.acf?.university_lists;
+        if (Array.isArray(universityList) && universityList.length > 0) {
+          const universities = universityList
+            .filter(univ => univ && univ.university && univ.university.title)
+            .map(univ => univ.university.title.trim());
+          if (universities.length > 0) {
+            employer = universities.join(', ');
+          }
+        }
+      } catch (err) {
+        console.warn('Error extracting employer from job:', err);
+      }
+      return employer;
+    }
+    
+    // Takes a URL and returns the data fetched
+    async function getDataFromUrl(url) {
+      try {
+        // Fetch jobs directly from SciLifeLab WordPress API
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const apiData = await response.json();
+        
+        // Process and transform the API response
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        
+        const filteredJobs = apiData.filter(job => {
+          // Filter jobs that are not past today
+          const archiveDate = new Date(job.archive_date);
+          archiveDate.setHours(0, 0, 0, 0);
+          return archiveDate >= today;
+        });
+
+        // Transform jobs to our format
+        const transformedJobs = filteredJobs.map(job => ({
+          title: job.title?.rendered || 'No title available',
+          app_deadline: job.archive_date,
+          job_url: extractJobUrl(job),
+          employer: extractEmployer(job)
+        }));
+
+        return transformedJobs;
+      } catch (error) {
+        console.error('Error fetching jobs:', error);
+        return []; // Return empty array if API fails
+      }
     };
     
-    function addJobs(dataArray) {
-      var jobsList = [], jobTypes = [], employer = [];
-      // Not insterested if the deadline have already passed
+    async function addJobs(dataArray) {
+      var jobsList = [], employer = new Set();
+      
+      // Filter and collect data in a single pass
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
       dataArray.forEach((job) => {
-        if (new Date(job.app_deadline) >= new Date().setHours(0,0,0,0)){
+        if (new Date(job.app_deadline) >= today){
           jobsList.push(job);
-          job.type.forEach((jt) => {if(!jobTypes.includes(jt.toLowerCase())){jobTypes.push(jt.toLowerCase())}});
-          if(!employer.includes(job.employer)){employer.push(job.employer);}
+          employer.add(job.employer);
         }
       });
+      
       // Sort the arrays
-      jobsList = jobsList.sort((a,b) => (a.app_deadline > b.app_deadline) ? 1 : (a.app_deadline < b.app_deadline) ? -1 : 0);
-      jobTypes = jobTypes.sort();
-      employer = employer.sort();
+      jobsList.sort((a,b) => (a.app_deadline > b.app_deadline) ? 1 : (a.app_deadline < b.app_deadline) ? -1 : 0);
+      const sortedEmployer = Array.from(employer).sort();
       
       // If no jobs to show, display appropriate message
       if (jobsList.length === 0) {
-        var jobsHTML = `<div class="alert alert-secondary mt-4">
-                          We are currently unaware of any upcoming jobs or project opportunities relevant for data-driven 
-                          life science. If you know of any relevant jobs or project opportunities that should be shown 
-                          here, please suggest them to us using the "Tell us about an open position" button above.
+        var jobsHTML = `<div class="alert alert-secondary mt-4 text-center">
+                          There are currently no open job opportunities at SciLifeLab Data Centre.
                         </div>`
       } else {
         var jobsHTML = `<div class="row mt-3 mb-5">
@@ -166,31 +126,14 @@
                                   <div class="accordion-body">
                                     <div class="accordion" id="innerAccordion">
                                       <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingType">
-                                          <button class="accordion-button custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseType" aria-expanded="true" aria-controls="collapseType">
-                                            Type
-                                          </button>
-                                        </h2>
-                                        <div id="collapseType" class="accordion-collapse collapse show" aria-labelledby="headingType">
-                                          <div class="accordion-body">`;
-        jobTypes.forEach((jt) => {
-          jobsHTML += `<div class="form-check">   
-                        <input class="form-check-input" type="checkbox" id="${jt}" name="type" value="${jt.replaceAll(" ", "-").toLowerCase()}">
-                        <label class="form-check-label" for="${jt}">${jt.charAt(0).toUpperCase() + jt.slice(1)}</label>
-                      </div>`;
-        });
-        jobsHTML += `          </div>
-                                        </div>
-                                      </div>
-                                      <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingEmployer">
-                                          <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmployer" aria-expanded="false" aria-controls="collapseEmployer">
+                                          <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmployer" aria-expanded="true" aria-controls="collapseEmployer">
                                             Employer
                                           </button>
                                         </h2>
-                                        <div id="collapseEmployer" class="accordion-collapse collapse" aria-labelledby="headingEmployer">
+                                        <div id="collapseEmployer" class="accordion-collapse collapse show" aria-labelledby="headingEmployer">
                                           <div class="accordion-body">`;
-        employer.forEach((em) => {
+        sortedEmployer.forEach((em) => {
           jobsHTML += `<div class="form-check">   
                         <input class="form-check-input" type="checkbox" id="${em}" name="employer" value="${em.replaceAll(" ", "-").toLowerCase()}">
                         <label class="form-check-label" for="${em}">${em}</label>
@@ -207,18 +150,14 @@
                           </div>
                           <div class="col-lg mt-2 mt-lg-0">
                             <div class="row g-2" id="jobs-container">`;
-        jobsList.forEach((job, ind) => {
-          var this_job_type = job.type.map(jt => jt.replaceAll(" ", "-").toLowerCase()).join(" ");
+        jobsList.forEach((job) => {
           var this_employer = job.employer.replaceAll(" ", "-").toLowerCase();
           var job_date = new Date(job.app_deadline);
-          jobsHTML += `<div class="col-md-6 col-lg-4 job" data-job-type="${this_job_type}" data-employer="${this_employer}">
+          jobsHTML += `<div class="col-md-6 col-lg-4 job" data-employer="${this_employer}">
                         <div class="card-box">
                           <div class="d-flex justify-content-between">
                             <div>`;
-          job.type.forEach((jt) => {
-            jobsHTML += `<span class="badge event-type mb-1 me-1">${jt}</span>`;
-          });
-          jobsHTML += `<h5><a class="" role="button" data-bs-toggle="modal" data-bs-target="#descriptionModal${ind}">${job.title}</a></h5>
+          jobsHTML += `<h5><a href="${job.job_url}" target="_blank">${job.title}</a></h5>
                        </div>
                        <div>
                          <div class="px-2 m-2 d-flex flex-column rounded event-date">
@@ -234,61 +173,13 @@
                       </div>
                       <div class="row mt-3">
                         <div class="col">
-                          <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#descriptionModal${ind}">
-                            See details
-                          </button>
-                          <div class="modal fade" id="descriptionModal${ind}" tabindex="-1"
-                            aria-labelledby="descriptionModalLabel${ind}" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                   <h5 class="modal-title" id="descriptionModalLabel${ind}">${job.title}</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="row">
-                                    <div class="col">
-                                      <b>Listing type:</b> `;
-          
-          job.type.forEach((jt) => {
-            jobsHTML += `<span class="badge event-type mb-1 me-1">${jt}</span>`;
-          });
-          jobsHTML += `</div>
-                       </div>
-                       <div class="row mt-1">
-                         <div class="col">
-                           <b>Deadline for applications:</b> ${job.app_deadline}
-                         </div>
-                       </div>
-                       <div class="row mt-1">
-                         <div class="col">
-                           <b>Employer:</b> ${job.employer}
-                         </div>
-                       </div>
-                       <div class="row mt-3">
-                         <div class="col"><b>Brief description:</b><br>
-                           ${job.description}
-                         </div>
-                       </div>
-                        <div class="row mt-3">
-                          <div class="col-md">
-                            <p>For more information, visit the link below.</p>
-                            <a target="_blank" href="${job.job_url}"><i class="bi bi-globe"></i> Listing
-                              webpage</a>
-                          </div>
+                          <a href="${job.job_url}" target="_blank" class="btn btn-details btn-sm">
+                            <i class="bi bi-globe"></i> See Details
+                          </a>
                         </div>
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>`;
+                  </div>`;
         }); // For each job iteration ends here
         jobsHTML += `<div id="no-filtered-jobs" style="display:none;">
                       <p class="text-center">No jobs found for selected criteria.</p>
@@ -300,6 +191,12 @@
       
       var jobsSection = document.getElementById('jobs-section');
       jobsSection.innerHTML = jobsHTML;
+      
+      // Hide loading indicator
+      const loadingElement = document.getElementById('jobs-loading');
+      if (loadingElement) {
+        loadingElement.style.display = 'none';
+      }
     };
     
     function enableFiltering (){
@@ -307,40 +204,48 @@
       $('div#job-filters input:checkbox').on('change', function(){
       
         // Collect and create a list with selected values
-        var job_type = $('input:checkbox[name="type"]:checked').map(function () {return this.value}).get();
         var employer = $('input:checkbox[name="employer"]:checked').map(function () {return this.value}).get();
     
+        // Cache DOM elements for better performance
+        var $jobsContainer = $('div#jobs-container');
+        var $jobs = $jobsContainer.find('div.job');
+        var $noFilteredJobs = $('div#no-filtered-jobs');
+        
         // Hide all displayed jobs and message
-        $('div#jobs-container div.job').hide();
-        $('div#no-filtered-jobs').hide();
+        $jobs.hide();
+        $noFilteredJobs.hide();
     
-        // Show relavant jobs based on selected criteria
-        if (!job_type.length && !employer.length) {
-          $('div#jobs-container div.job').show();
+        // Show relevant jobs based on selected criteria
+        if (!employer.length) {
+          // No filters selected, show all jobs
+          $jobs.show();
         } else {
-          job_type.forEach(function(jtype){
-            $(`div#jobs-container div[data-job-type*=${jtype}]`).each(function(){
-              if (!employer.length) {
-                this.style.display = '';
-              } else if (employer.includes(this.getAttribute('data-employer'))){
-                this.style.display = '';
-              }
-            });
-          });
-          employer.forEach(function(emp){
-            if (!job_type.length) {
-              $(`div#jobs-container div[data-employer*=${emp}]`).show();
+          // Filter jobs based on selected criteria
+          $jobs.each(function(){
+            var $job = $(this);
+            var jobEmployer = $job.data('employer');
+            var showJob = true;
+            
+            // Check employer filter
+            if (employer.length > 0) {
+              // Normalize filter values to match data attribute format (lowercase with hyphens)
+              var normalizedEmployers = employer.map(emp => emp.replaceAll(" ", "-").toLowerCase());
+              showJob = showJob && normalizedEmployers.includes(jobEmployer);
+            }
+            
+            if (showJob) {
+              $job.show();
             }
           });
       
           // Display a message if no jobs available for selected criteria
-          var visible_jobs = $('div#jobs-container div.job').filter(":visible");
+          var visible_jobs = $jobs.filter(":visible");
           if (!visible_jobs.length) {
-            $('div#no-filtered-jobs').show();
+            $noFilteredJobs.show();
           }
         }
 
-        // Bring the jobs section top to the veiwport if it isn't
+        // Bring the jobs section top to the viewport if it isn't
         var tab_top = document.querySelector("section#jobs-section").getBoundingClientRect().top;
         if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 60); }
 
@@ -348,37 +253,10 @@
     };
     
     // Call the function to fetch, parse and display jobs
-    getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fdata_platform_jobs.json"),
-      addJobs,
-      enableFiltering
-    );
-    
-    // Job suggestion form relted function
-    // set origin url in the form
-    document.getElementById('originUrl').value = location.href;
-
-    // Validate the form by checking mandatory fields and recaptcha
-    var form = document.querySelector('.needs-validation');
-    form.addEventListener('submit', function (event) {
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        alert("Please fill out all required fields.");
-        event.stopPropagation();
-        form.classList.add('was-validated')
-      }
-      var recaptcha = $("#g-recaptcha-response").val();
-      if (recaptcha === "") {
-        event.preventDefault();
-        alert("Please tick 'I'm not a robot' above the 'Submit the form' button.");
-      }
-    });
-
-    // Add aria-label for code generated by recaptcha
-    window.addEventListener("load", function () {
-      $('textarea#g-recaptcha-response').attr('aria-label', "The recaptcha response will appear here");
-    });
-    
+    const availableJobs = await getDataFromUrl(JOBS_API_URL);
+    await addJobs(availableJobs);
+    enableFiltering();
+     
   }); // Document "DOMContentLoaded" trigger ends here
   
 </script>

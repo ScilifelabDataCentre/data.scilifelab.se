@@ -17,6 +17,29 @@
     "support_email": "johan.inganni@scilifelab.se"
   },
   {
+    "type": ["Research Data Management"],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Helpdesk",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "SciLifeLab Data Centre",
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
+    ],
+    "name": "SciLifeLab RDM guidelines",
+    "description": "A knowledge hub containing guidance to life science researchers in Sweden regarding Research Data Management (RDM).",
+    "url": "https://data-guidelines.scilifelab.se",
+    "thumbnail": "/img/resource_thumbnails/rdm.jpg",
+    "thumbnail_border": true,
+    "created_by": "NBIS, SciLifeLab Data Centre",
+    "created_by_url": "https://data-guidelines.scilifelab.se/contact/",
+    "support_email": "data-management@scilifelab.se"
+  },
+  {
     "type": ["Data sources"],
     "search_tags": [
       "sources",
@@ -85,30 +108,5 @@
     "created_by": "SciLifeLab Data Centre",
     "created_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se"
-  },
-  {
-    "type": [
-      "portal",
-      "helpdesk"
-    ],
-    "search_tags": [
-      "RDM",
-      "Research data management",
-      "Guidelines",
-      "Helpdesk",
-      "Portal",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre",
-      "SciLifeLab RDM Guidelines"
-    ],
-    "name": "SciLifeLab RDM Guidelines",
-    "description": "A portal containing information on research data management in Sweden",
-    "url": "https://data-guidelines.scilifelab.se",
-    "thumbnail": "/img/resource_thumbnails/rdm.jpg",
-    "thumbnail_border": true,
-    "created_by": "NBIS, SciLifeLab Data Centre",
-    "created_by_url": "https://data-guidelines.scilifelab.se/contact/",
-    "support_email": "data-management@scilifelab.se"
   }
 ]

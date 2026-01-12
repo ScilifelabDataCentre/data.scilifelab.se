@@ -4,6 +4,114 @@
       "Data source"
     ],
     "ddls": [
+      "Epidemiology and Biology of Infection"
+    ],
+    "search_tags": [
+      "pathogens",
+      "genome",
+      "phylogenetic",
+      "analysis tools",
+      "workflows",
+      "bioinformatics tools",
+      "phylogenetic trees",
+      "genomic epidemiology", 
+      "Nextstrain",
+      "pathogen monitoring"
+    ],
+    "name": "Nextstrain",
+    "description": "An open-source project to harness the scientific and public health potential of pathogen genome data",
+    "thumbnail": "/img/data_sources_thumbs/nextstrain-logo.png",
+    "url": "https://nextstrain.org/",
+    "data": [
+      "Genes and genomes",
+      "Pathogens"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Infectious Diseases"
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Precision Medicine and Diagnostics"
+    ],
+    "search_tags": [
+      "AMR",
+      "antimicrobial resistance",
+      "EMBL-EBI",
+      "MRC",
+      "CABBAGE",
+      "microbial",
+      "antibiogram",
+      "phenotype",
+      "genotype annotations",
+      "annotations"
+    ],
+    "name": "Antimicrobial resistance portal",
+    "description": "The AMR Portal is a collaboration between EMBL-EBI research and service teams alongside Imperial College London to deliver a new way to access and explore AMR phenotype and genotype annotations through a user-friendly interface.",
+    "thumbnail": "/img/data_sources_thumbs/EMBL_EBI-logo.png",
+    "url": "https://www.ebi.ac.uk/amr",
+    "data": [
+      "Genes and genomes",
+      "Phenotypic"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Infectious Diseases"
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Evolution and Biodiversity",
+      "Precision Medicine and Diagnostics"
+    ],
+    "search_tags": [
+      "DORIS SND",
+      "SND",
+      "Swedish National Data Service",
+      "Bolin Centre Database",
+      "FEGA Sweden",
+      "GBIF",
+      "SciLifeLab",
+      "SITES",
+      "SBDI",
+      "researchdata.se"
+    ],
+    "name": "Researchdata.se",
+    "description": "Researchdata.se is a national web portal where you can find, share, and reuse research data from a wide range of research fields. You can also find helpful advice and recommendations on managing research data.",
+    "thumbnail": "/img/data_sources_thumbs/Researchdata.png",
+    "url": "https://researchdata.se/en",
+    "data": [
+      "Clinical",
+      "Epidemiology",
+      "Genes and genomes",
+      "Health",
+      "Medical",
+      "Phenotypic",
+      "Proteins and proteomes"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Cardiovascular Diseases",
+      "Cancer",
+      "Infectious Diseases"
+
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
       "Precision Medicine and Diagnostics"
     ],
     "search_tags": [

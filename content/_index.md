@@ -1,7 +1,7 @@
 ---
-title: SciLifeLab Data Platform
+title: Data.scilifelab.se
 ---
 
-The *SciLifeLab Data Platform* is a technical environment offering data-centric tools and databases as well as an overarching website with the goal to support and accelerate data-driven life science research in Sweden. The services hosted on the Platform are available to all life science researchers in Sweden. The platform is maintained by the SciLifeLab Data Centre.
+_Data.scilifelab.se_ is a resource created by SciLifeLab Data Centre, with funding from [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven) and the [Swedish Foundation for Strategic Research (SSF)](https://strategiska.se/en/). It contains information about services created by SciLifeLab Data Centre, and other resources that are in line with their vision and mission. The primary activities of SciLifeLab Data Centre are to make data as [Open](https://ec.europa.eu/info/research-and-innovation/strategy/strategy-2020-2024/our-digital-future/open-science_en), and [FAIR (Findable, Accessible, Interoperable, Reusable)](https://doi.org/10.1038/sdata.2016.18). This is done by providing [Services](/services/) to aid researchers in sharing their research outputs (e.g. data and apps) according to best practice, and in promoting their research outputs to maximise their reuse.
 
-The services hosted on the SciLifeLab Data Platform adhere to the values of open science, transparent research, and FAIR as well as good data management practises throughout the data life cycle.
+Feedback on any part of data.scilifelab.se is always welcomed, and can be provided via the [contact page](/contact/).

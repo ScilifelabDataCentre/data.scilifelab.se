@@ -4,6 +4,31 @@
       "researchers"
     ],
     "type": [
+      "Tool"
+    ],
+    "search_tags": [
+      "Protocols",
+      "Versioning",
+      "reproducibility",
+      "Data sharing",
+      "Data management",
+      "Tool",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "protocols.io",
+    "description": "Used for the creation, sharing, and versioning of laboratory and computational protocols. Enables collaboration, author attribution, and reproducibility.",
+    "thumbnail": "/img/service_thumbnails/protocolsio.png",
+    "thumbnail_border": true,
+    "url": "https://www.scilifelab.se/data/protocols-io/",
+    "maintained_by": "protocols.io team",
+    "maintained_by_url": "https://www.protocols.io/about"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "Portal",
       "Tool"
     ],
@@ -34,7 +59,13 @@
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "precisionmedicine@scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/precision-medicine-portal-frontend",
-    "support_status": "https://status.dc.scilifelab.se/800572728"
+    "support_status": "https://status.dc.scilifelab.se/800572728",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection"
+    ]
   },
   {
     "target": [
@@ -62,8 +93,8 @@
     "thumbnail": "/img/service_thumbnails/GeneSPIDER.png",
     "thumbnail_border": true,
     "url": "https://sonnhammer-tutorials.bitbucket.io/genespider.html#Getting_started",
-    "maintained_by": " Erik Sonnhammer",
-    "support_email": "erik.sonnhammer@scilifelab.se",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
     "support_website": "https://sonnhammer-tutorials.bitbucket.io/genespider.html#Getting_started",
     "support_github": "https://bitbucket.org/sonnhammergrni/genespider/src/master/"
   },
@@ -119,7 +150,49 @@
     "url": "https://bioimage.io/#/",
     "thumbnail_border": true,
     "maintained_by": "AI4Life BioImage Model Zoo team",
-    "support_website": "https://oeway.typeform.com/to/K3j2tJt7?typeform-source=bioimage.io"
+    "support_website": "https://oeway.typeform.com/to/K3j2tJt7?typeform-source=bioimage.io",
+    "data_source_type": [
+      "Repository"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer Neurological Disorders", 
+      "Drug Development"
+    ]
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "portal",
+      "helpdesk"
+    ],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Helpdesk",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
+    ],
+    "name": "SciLifeLab RDM Guidelines",
+    "description": "Free consultations and support on all aspects of data management for those working in in Swedish life science research",
+    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "thumbnail_border": true,
+    "url": "https://data-guidelines.scilifelab.se",
+    "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "support_email": "data-management@scilifelab.se",
+    "support_website": "https://data-guidelines.scilifelab.se/contact/",
+    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
+    "support_status": "https://status.dc.scilifelab.se/793602117"
   },
   {
     "target": [
@@ -149,7 +222,10 @@
     "thumbnail_border": true,
     "support_email": "pathogens@scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
-    "support_status": "https://status.dc.scilifelab.se/793602036"
+    "support_status": "https://status.dc.scilifelab.se/793602036",
+    "data_source_type": [
+      "Data source"
+    ]
   },
   {
     "target": [
@@ -231,7 +307,19 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "figshare@scilifelab.se",
-    "support_website": "https://scilifelab.se/data/repository"
+    "support_website": "https://scilifelab.se/data/repository",
+    "data_source_type": [
+      "Repository"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Evolution and Biodiversity",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "General"
+    ]
   },
   {
     "target": [
@@ -264,7 +352,20 @@
     "thumbnail": "/img/service_thumbnails/metatlas.jpg",
     "maintained_by": "NBIS",
     "maintained_by_url": "http://www.nbis.se/",
-    "support_email": "contact@metabolicatlas.org"
+    "support_email": "contact@metabolicatlas.org",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Metabolic Disorders", 
+      "Cancer", 
+      "Various Diseases"
+    ]
   },
   {
     "target": [
@@ -365,7 +466,20 @@
     "thumbnail": "/img/service_thumbnails/hpa.jpg",
     "maintained_by": "The Human Protein Atlas",
     "maintained_by_url": "https://www.proteinatlas.org/about/organization",
-    "support_email": "contact@proteinatlas.org"
+    "support_email": "contact@proteinatlas.org",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer", 
+      "Immunological Diseases", 
+      "Various Diseases"
+    ]
   },
   {
     "target": [
@@ -429,7 +543,23 @@
     "maintained_by": "AIDA Data Hub",
     "maintained_by_url": "https://datahub.aida.scilifelab.se/about/",
     "support_email": "aida-data-director@medtech4health.se",
-    "support_status": "https://status.dc.scilifelab.se/793602004"
+    "support_status": "https://status.dc.scilifelab.se/793602004",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer", 
+      "Cardiovascular Diseases", 
+      "Immunological Diseases", 
+      "Various Diseases", 
+      "Infectious Diseases", 
+      "Public Health"
+    ]
   },
   {
     "target": [
@@ -458,7 +588,18 @@
     "thumbnail_border": true,
     "maintained_by": "Human Developmental Cell Atlas",
     "maintained_by_url": "https://hdca-sweden.scilifelab.se/",
-    "support_email": "hdca-sweden@scilifelab.se"
+    "support_email": "hdca-sweden@scilifelab.se",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Developmental Disorders"
+    ]
   },
   {
     "target": [
@@ -513,7 +654,20 @@
     "url": "/services/subcellbarcode/",
     "maintained_by": "SubCellBarCode Team",
     "maintained_by_url": "https://www.subcellbarcode.org/about.html",
-    "support_website": "https://www.subcellbarcode.org/index.html"
+    "support_website": "https://www.subcellbarcode.org/index.html",
+    "data_source_type": [
+      "Data source"
+    ],
+     "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Cancer", 
+      "Neurological Disorders", 
+      "Various Diseases"
+    ]
   },
   {
     "target": [
@@ -533,7 +687,17 @@
     "name": "SweFreq",
     "url": "https://swefreq.nbis.se/",
     "description": "A website developed to make genomic datasets more findable and accessible",
-    "maintained_by": "SciLifeLab Data Centre"
+    "maintained_by": "SciLifeLab Data Centre",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Genetic Disorders"
+    ]
   },
   {
     "target": [
@@ -1083,7 +1247,6 @@
       "python",
       "bioinformatics",
       "multiqc",
-      "bioinformatics",
       "pypi",
       "biconda",
       "aggregate",
@@ -1148,7 +1311,13 @@
     "maintained_by": "CoViMAPP team",
     "maintained_by_url": "https://covimapp.serve.scilifelab.se",
     "support_website": "https://serve.scilifelab.se/home/",
-    "support_email": "haris.babacic@scilifelab.se"
+    "support_email": "haris.babacic@scilifelab.se",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection"
+    ]
   },
   {
     "target": [
@@ -1178,14 +1347,23 @@
     "maintained_by": "Sonnhammer Group",
     "maintained_by_url": "https://sonnhammer.org",
     "support_website": "https://orthodisease.sbc.su.se/cgi-bin/faq.cgi",
-    "support_email": "orthodisease@sbc.su.se"
+    "support_email": "orthodisease@sbc.su.se",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "Various diseases"
+    ]
   },
   {
     "target": [
       "researchers"
     ],
     "type": [
-      "tool"
+      "database"
     ],
     "search_tags": [
       "Funcoup",
@@ -1235,7 +1413,17 @@
     "url": "https://inparanoidb.sbc.su.se",
     "maintained_by": "Sonnhammer Group",
     "maintained_by_url": "https://sonnhammer.org",
-    "support_website": "https://inparanoidb.sbc.su.se/about/"
+    "support_website": "https://inparanoidb.sbc.su.se/about/",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Precision Medicine and Diagnostics",
+      "Epidemiology and Biology of Infection"
+    ],
+    "disease_type": [ 
+      "Various diseases"
+    ]
   },
   {
     "target": [
@@ -1324,5 +1512,27 @@
     "maintained_by": "Sonnhammer Group",
     "maintained_by_url": "https://sonnhammer.org",
     "support_website": "https://pathwax.sbc.su.se/help.html"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "machine learning",
+      "MLOp",
+      "ML lifecycle"
+    ],
+    "name": "MLFlow",
+    "description": "MLFlow is a tool for machine learning, model tracking, and model management. Can be used regardless of where you are running ML training.",
+    "thumbnail": "/img/service_thumbnails/mlflow-logo.png",
+    "thumbnail_border": true,
+    "url": "https://serve.scilifelab.se/docs/mlflow/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data/",
+    "support_website": "https://serve.scilifelab.se/docs/mlflow/",
+    "support_email": "serve@scilifelab.se"
   }
 ]

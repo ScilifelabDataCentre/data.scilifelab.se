@@ -68,7 +68,7 @@
                     </div>
                   </div>
 
-                  <div class="accordion-item">
+                  <div class="accordion-item mt-2">
                     <h2 class="accordion-header" id="headingDataType">
                       <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDataType" aria-expanded="false" aria-controls="collapseDataType">
                         Data Type
@@ -86,7 +86,7 @@
                     </div>
                   </div>
 
-                  <div class="accordion-item">
+                  <div class="accordion-item mt-2">
                     <h2 class="accordion-header" id="headingScientificArea">
                       <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScientificArea" aria-expanded="false" aria-controls="collapseScientificArea">
                         Scientific Area
@@ -120,7 +120,7 @@
             data-sdata="{{ delimit (apply .data "urlize" ".") ":" }}"
             {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
           <div class="card-teal-25">
-            <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+            <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>

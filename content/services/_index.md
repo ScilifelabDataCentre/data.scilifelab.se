@@ -1,6 +1,6 @@
 ---
 title: Services
-description: Overview of the tools and datasets available via this Platform.
+description: Overview of tools, data sources, and other outputs from SciLifeLab designed to aid life science research.
 cascade:
   header_image: /img/illustrations/circos_cropped.png
 menu:

@@ -18,7 +18,7 @@
         {{ if in .target "researchers" }}
         <div class="col">
           <div class="card-teal-25">
-            <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+            <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
@@ -50,7 +50,7 @@
         {{ range first 3 .Site.Data.resources }}
         <div class="col">
           <div class="card-teal-25">
-            <div {{ if .thumbnail_border }}class="p-1" {{ end }}>
+            <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
               <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
@@ -169,21 +169,19 @@
   <div class="p-3 p-lg-4 my-4">
     <div class="row mb-3">
       <div class="col text-white">
-        <h3>Apps recently deployed on SciLifeLab Serve</h3>
+        <h3>Recent apps and models published on SciLifeLab Serve</h3>
       </div>
       <div class="col-4 mt-2 fs-6 text-end d-none d-md-block">
         <small class="text-small text-white">(external site) </small>
-        <a href="https://serve.scilifelab.se/apps" target="_blank" class="text-white">See public apps
+        <a href="https://serve.scilifelab.se/apps" target="_blank" class="text-white">See public apps and models
           <i class="bi bi-arrow-right-square-fill text-white"></i></a>
       </div>
     </div>
     <div id="recent-serve-apps" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 pb-4"></div>
     <p class="text-white">If you would like further information about SciLifeLab Serve or experience issues with the
       apps above, please email <a class="text-white" style="text-decoration: underline;"
-        href="mailto:serve@scilifelab.se">serve@scilifelab.se</a>. If you have questions about a specific app, go to
-      the <a class="text-white" style="text-decoration: underline;" href="https://serve.scilifelab.se/apps"
-        target="_blank">apps page on SciLifeLab Serve</a> and click on the 'Details' button of the to find contact
-      information for the owner of the app.
+        href="mailto:serve@scilifelab.se">serve@scilifelab.se</a>. To find out more about a given app/model, click on the corresponding 'Details' button on the  <a class="text-white" style="text-decoration: underline;" href="https://serve.scilifelab.se/apps"
+        target="_blank">apps and models page on SciLifeLab Serve</a>.
     </p>
     <div class="d-md-none">
       <small class="text-small text-white">(external site) </small>
@@ -250,48 +248,38 @@
     
     // Creates html entry for latest events
     function addEvents(data){
-      var dataArray = data.items, eventList = [], eventsHTML = "";;
-      dataArray.forEach((event) => {
-        if (typeof event.target !== 'undefined' && event.target.includes("data-platform")) {
-          event.banner_date = event.date_start || event.registration_deadline;
-          if (typeof event.banner_date !== 'undefined'){
-            var dateString = event.banner_date + (event.time_start ? ' ' + event.time_start : '');
-            var [h, m] = event.time_start ? event.time_start.split(":") : [0, 0];
-            if (new Date(dateString) >= new Date().setHours(h, m)){
-              eventList.push(event);
-            };
-          };
-        };
-      });
-      eventList = eventList.sort((a,b) => (a.banner_date > b.banner_date) ? 1 : (a.banner_date < b.banner_date) ? -1 : 0);
-      var eventsToShow = eventList.slice(0, 2);
-      if (eventsToShow.length > 0){
-        var eventsHTML = `<div class="border rounded my-4 pb-2">
+      let eventList = data?.events;
+      let eventsHTML = `<div class="border rounded my-4 pb-2">
                             <div class="d-flex justify-content-between align-items-center px-3 py-2 mb-1 bg-home-events-title">
-                              <h4 class="mb-1">Upcoming Events</h4>
-                              <a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>
-                            </div>
-                            <div>`;
-        eventsToShow.forEach((event, ind) => {
-          var event_date = new Date(event.banner_date);
+                              <h4 class="mb-1">Upcoming Events</h4>`;
+      if (eventList.length > 0){
+        eventsHTML += `<a href="/events/">See all events <i class="bi bi-arrow-right-square-fill"></i></a>`;
+      }
+      eventsHTML += `</div>
+                      <div>`;
+      if (eventList.length > 0){
+        eventList.forEach((event, ind) => {
+          let event_date = new Date(event.start_date);
           eventsHTML += `<div class="d-flex justify-content-between align-items-center px-3 py-2">
-                          <a class="" role="button" href="/events/" target="_blank">${event.title}</a>
+                          <a class="" role="button" href="${event.url}" target="_blank">${event.title}</a>
                           <div class="px-2 py-1 d-flex flex-column rounded event-date mw-100">
                             <div class="px-2 fs-6 mx-auto">${event_date.getDate().toString().padStart(2, '0')}</div>
                             <div class="pb-1 px-2 fs-6 mx-auto">${event_date.toLocaleString('en-US', { 'month': 'short' })}</div>
                           </div>
                          </div>
-                        ${ind < (eventsToShow.length - 1) ? '<div class="px-4 py-1"><hr class="my-2"></div>' : ''}`;
+                        ${ind < (eventList.length - 1) ? '<div class="px-4 py-1"><hr class="my-2"></div>' : ''}`;
         }); // for each events iteration to create html ends here
-        eventsHTML += `</div>
-                    </div>`;
+      } else {
+        eventsHTML += `<div class="px-3 py-2">No upcoming Data Centre events</div>`;
+      }
+      eventsHTML += `</div>
+                  </div>`;
       var eventRow = document.getElementById('upcoming-events');
       eventRow.innerHTML = eventsHTML;
-      };
     }
     
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fddls_events.json"),
+      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7989%26per_page%3D2"),
       addEvents
     );
 
