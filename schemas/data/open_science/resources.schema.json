@@ -1,0 +1,57 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/open_science/resources.schema.json",
+    "title": "Open Science resources schema",
+    "description": "Schema for validating resources json used in the open science section of data.scilifelab.se",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "name",
+        "description",
+        "thumbnail",
+        "affiliation",
+        "affiliation_url",
+        "url"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the resource."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 150,
+          "description": "Description of the resource card."
+        },
+        "thumbnail": {
+          "type": "string",
+          "description": "Path to a thumbnail for the resource card.",
+          "pattern": "^\\/img\\/open_science\\/resources\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+        },
+        "affiliation": {
+          "type": "string",
+          "description": "The name of the affiliation related to the resource.",
+          "minLength": 1
+        },
+        "affiliation_url": {
+          "type": "string",
+          "description": "The URL to the affiliations website.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "url": {
+          "type": "string",
+          "description": "The URL to the resource.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "thumbnail_border": {
+          "type": "boolean",
+          "description": "OPTIONAL: Whether to display a border around the thumbnail image.",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    }
+}
