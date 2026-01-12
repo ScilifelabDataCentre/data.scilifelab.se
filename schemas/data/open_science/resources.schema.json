@@ -45,7 +45,14 @@
         "thumbnail": {
           "type": "string",
           "description": "OPTIONAL: Path to a thumbnail for the resource card. If emppty, will display the SciLifeLab logo.",
-          "pattern": "^\\/img\\/open_science\\/resources\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+          "anyOf": [
+            {
+              "pattern": "^\\/img\\/open_science\\/resources\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+            },
+            {
+              "const": ""
+            }
+          ]        
         },
         "affiliation": {
           "type": "string",
