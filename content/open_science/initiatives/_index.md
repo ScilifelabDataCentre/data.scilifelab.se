@@ -29,5 +29,5 @@ upcoming initiatives that we are involved in below.
 ## SciLifeLab Initiatives
 
 There are many innovative Open Science initiatives throughout SciLifeLab, and the
-["Initiatives Across SciLifeLab" page](https://data.scilifelab.se/open_science/initiatives/across_scilifelab/) offers a space for these
+["Initiatives Across SciLifeLab" page](/open_science/initiatives/across_scilifelab/) offers a space for these
 projects to be highlighted.
