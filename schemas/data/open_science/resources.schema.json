@@ -1,0 +1,78 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/data/open_science/resources.schema.json",
+    "title": "Open Science resources schema",
+    "description": "Schema for validating resources json used in the open science section of data.scilifelab.se",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "name",
+        "description",
+        "affiliation",
+        "affiliation_url",
+        "url"
+      ],
+      "properties": {
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["Externally produced", "SciLifeLab produced"]
+        },
+        "minItems": 1,
+        "description": "Type of the resource."
+      },
+        "search_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minLength": 1,
+          "description": "Search tags such as keywords for finding the resource via text search."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the resource."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 150,
+          "description": "Description of the resource card."
+        },
+        "thumbnail": {
+          "type": "string",
+          "description": "OPTIONAL: Path to a thumbnail for the resource card. If emppty, will display the SciLifeLab logo.",
+          "anyOf": [
+            {
+              "pattern": "^\\/img\\/open_science\\/resources\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+            },
+            {
+              "const": ""
+            }
+          ]        
+        },
+        "affiliation": {
+          "type": "string",
+          "description": "The name of the affiliation related to the resource.",
+          "minLength": 1
+        },
+        "affiliation_url": {
+          "type": "string",
+          "description": "The URL to the affiliations website.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "url": {
+          "type": "string",
+          "description": "The URL to the resource.",
+          "pattern": "^(https?:\\/\\/|\\/).+"
+        },
+        "thumbnail_border": {
+          "type": "string",
+          "description": "OPTIONAL: Whether to display a border around the thumbnail image or not. Empty string for no border, p-1 for border."        }
+      },
+      "additionalProperties": false
+    }
+}
