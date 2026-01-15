@@ -37,8 +37,8 @@ with 'Open Science' in the subject line.
   <!-- The events content will be filled by shortcode 'update_activities' that is called below -->
 </section>
 
-## Announcements
+## Announcements and Previous Events
 
-This section highlights news and announcements related to Open Science from SciLifeLab.
+This section highlights news, announcements and previous online events related to Open Science from SciLifeLab.
 <!-- This page have more dynamic content, so everything is written in a shortcode -->
 {{< update_activities >}}
