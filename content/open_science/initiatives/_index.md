@@ -9,7 +9,7 @@ menu:
 
 # Initiatives
 
-## Our Initiatives
+## SciLifeLab Initiatives
 
 At SciLifeLab, we are dedicated to facilitating collaboration, driving innovation, and empowering the
 scientific community through Open Science practices and the FAIR principles. Our initiatives focus on creating
@@ -25,8 +25,3 @@ FAIR principles, and the sustainable development of research infrastructure. You
 upcoming initiatives that we are involved in below.
 
 {{< simple_cards "open_science/collaborative_initiatives" >}}
-
-## SciLifeLab Initiatives
-
-There are many innovative Open Science initiatives throughout SciLifeLab, and
-[this page](/open_science/initiatives/scilifelab) offers a space for these projects to be highlighted.
