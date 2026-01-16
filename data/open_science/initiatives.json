@@ -21,7 +21,7 @@
   },
   {
     "title": "SciLifeLab & nf-core",
-    "description": "SciLifeLab is a founding member of [nf-core](https://nf-co.re/) - a community effort to collect a curated set of analysis pipelines and modules built using Nextflow.",
+    "description": "SciLifeLab is a founding member of - a community effort to collect a curated set of analysis pipelines and modules built using Nextflow, aimed at enhancing reproducibility and collaboration.",
     "url": "/open_science/initiatives/scilifelab#scilifelab-nfcore"
   }
 ]
