@@ -209,4 +209,17 @@ partners such as Uppsala University, a member of the EOSC Association, as well a
 collaborations with organizations like CERN and EU projects such as BY-COVID. Through these efforts, SciLifeLab
 supports the development of a robust, interoperable, and researcher-driven European Open Science infrastructure.
 
+{{< banner_image
+  image="/img/open_science/initiatives/nf-core.png"
+  alt="nf-core logo"
+>}}
+
+## SciLifeLab & nf-core {#scilifelab-nfcore}
+
+SciLifeLab is a founding member of [nf-core](https://nf-co.re/) - a community effort to collect a curated set of
+analysis pipelines and modules built using Nextflow, aimed at enhancing reproducibility and collaboration. Different
+groups, especially [National Genomics Infrastructure (NGI)](https://ngisweden.scilifelab.se/), are supporting both the
+community and the development of pipelines. SciLifeLab Data Centre contributes to the development of the infrastructure
+behind the initiative.
+
 _© Media Elements sourced from [Canva.com](https://canva.com)_

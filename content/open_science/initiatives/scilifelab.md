@@ -102,22 +102,4 @@ platform where members can:
 The AI Network is a project aimed at unifying all AI related communities, work groups and activities within
 SciLifeLab - opening them to the broader public and enabling cross-community discovery to increase their impact.
 
-{{< banner_image
-  image="/img/open_science/initiatives/nf-core.png"
-  alt="nf-core logo"
->}}
-
-## SciLifeLab & nf-core {#scilifelab-nfcore}
-
-SciLifeLab is a founding member of [nf-core](https://nf-co.re/) - a community effort to collect a curated set of
-analysis pipelines and modules built using Nextflow, aimed at enhancing reproducibility and collaboration. Different
-groups, especially [National Genomics Infrastructure (NGI)](https://ngisweden.scilifelab.se/), are supporting both the
-community and the development of pipelines. SciLifeLab Data Centre contributes to the development of the infrastructure
-behind the initiative.
-
-## Share your Open Science initiatives
-
-If you are working on an Open Science project at SciLifeLab and would like to showcase your work, please contact us
-via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with the subject line 'Open Science'.
-
 _© Media Elements sourced from [Canva.com](https://canva.com)_

@@ -18,10 +18,5 @@
     "title": "AI Network",
     "description": "An initiative to provide an AI community for SciLifeLab researchers and infrastructure users by encouraging collaboration and the sharing of emerging technologies.",
     "url": "/open_science/initiatives/scilifelab#ai-network"
-  },
-  {
-    "title": "SciLifeLab & nf-core",
-    "description": "SciLifeLab is a founding member of - a community effort to collect a curated set of analysis pipelines and modules built using Nextflow, aimed at enhancing reproducibility and collaboration.",
-    "url": "/open_science/initiatives/scilifelab#scilifelab-nfcore"
   }
 ]
