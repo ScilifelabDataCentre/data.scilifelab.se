@@ -10,6 +10,12 @@ back_to_top_button: true
 
 # Collaborative Initiatives
 
+SciLifeLab is part of many larger Open Science initiatives, nationally and internationally,
+and this page offers a space for these projects to be highlighted.
+If you are working on a collaborative Open Science project between SciLifeLab and another organisation, and would like to showcase your work,
+please contact us
+via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with the subject line 'Open Science'.
+
 {{< banner_image
   image="/img/open_science/initiatives/coara.png"
   alt="CoARA logo"
