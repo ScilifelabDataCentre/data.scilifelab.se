@@ -14,7 +14,7 @@ menu:
 At SciLifeLab, we are dedicated to facilitating collaboration, driving innovation, and empowering the
 scientific community through Open Science practices and the FAIR principles. Our initiatives focus on creating
 impactful, researcher-driven solutions to enhance data sharing, discovery, and reuse across life sciences. You can view
-some of the ongoing and upcoming initiatives that we are involved in below.
+some of our ongoing and upcoming initiatives below.
 
 {{< simple_cards "open_science/initiatives" >}}
 
