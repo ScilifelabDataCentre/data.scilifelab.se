@@ -16,11 +16,11 @@
       "SciLifeLab",
       "Data Centre"
     ],
-    "name": "protocols.io",
+    "name": "SciLifeLab Protocols",
     "description": "Used for the creation, sharing, and versioning of laboratory and computational protocols. Enables collaboration, author attribution, and reproducibility.",
-    "thumbnail": "/img/service_thumbnails/protocolsio.png",
+    "thumbnail": "/img/service_thumbnails/scilifelab_protocols.png",
     "thumbnail_border": true,
-    "url": "https://www.scilifelab.se/data/protocols-io/",
+    "url": "https://www.scilifelab.se/data-ai/protocols/",
     "maintained_by": "protocols.io team",
     "maintained_by_url": "https://www.protocols.io/about"
   },
