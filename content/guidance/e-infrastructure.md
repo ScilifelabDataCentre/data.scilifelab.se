@@ -3,6 +3,7 @@ title: Accessing compute resources (e-infrastructure)
 toc: true
 aliases:
   - /services/e-infrastructure/
+  - /resources/e-infrastructure/
 images: [/img/resource_thumbnails/compute_3.jpg]
 ---
 
@@ -34,9 +35,17 @@ Applications to use the NAISS resources listed here should be submitted through 
 
 ### Berzelius
 
-[Berzelius](https://nsc.liu.se/systems/berzelius/) is a GPU-rich NVIDIA DGX system based at the National Supercomputer Centre at Linköping University (NSC-LiU). It is primarily intended for simulation and analysis, and is financed by the Wallenberg AI, Autonomous Systems and Software Program. Berzelius is primarily intended for AI/ML research but is also open for applications from other sorts of projects.
+[Berzelius](https://nsc.liu.se/systems/berzelius/) is Sweden’s flagship AI/ML supercomputing infrastructure. It is a GPU-rich NVIDIA DGX system based at the National Supercomputer Centre at Linköping University (NSC-LiU), and was donated by the Knut and Alice Wallenberg foundation. Whilst Berzelius is primarily intended for AI/ML research, it is also open for applications from other sorts of projects. For details on project eligibility and allocation criteria, please refer to the [Berzelius Resource Allocation](https://www.nsc.liu.se/support/systems/berzelius-resource-allocation/) page.
 
-Applications to use Berzelius should be submitted through the SUPR Portal. Please see our section on [applying for resources via SUPR](#applying-for-resources-via-the-supr-portal) below for information on how to apply.
+SciLifeLab and NSC-LiU collaborate to provide a dedicated user support team embedded within NSC-LiU. The team ensures that users can fully leverage Berzelius to produce cutting-edge life science research by:
+
+- Providing user support to life science researchers running computational workflows on Berzelius.
+- Assisting with software optimisation, reproducibility, and scalability.
+- Offering training and outreach to promote efficient and sustainable use of HPC resources.
+
+Feel free to contact the Berzelius support team at [berzelius-support@nsc.liu.se](mailto:berzelius-support@nsc.liu.se).
+
+Applications to use Berzelius should be submitted through the SUPR Portal. Please the below section on [applying for resources via SUPR](#applying-for-resources-via-the-supr-portal) for information on how to apply.
 
 ### LUMI
 
@@ -58,13 +67,7 @@ For enquiries please contact [aida@nbis.se](mailto:aida@nbis.se).
 
 [EuroHPC](https://eurohpc-ju.europa.eu/index_en) provides multiple compute resources across Europe (e.g. [LUMI](#lumi), described above). Researchers based in Sweden are eligible to apply to use these resources, and their applications will be considered in competition from researchers based in the rest of Europe. As of early 2023, it remains relatively easy to secure compute time at EuroHPC resources due to overcapacity.
 
-As described with [LUMI above](#lumi), portions of EuroHPC resources are allocated for specfic countries, but portions are just allocated for use by researchers in Europe, regardless of the specific country. We encourage researchers to make use of this. Applications can be made via the [European PRACE Portal](https://prace-ri.eu/hpc-access/eurohpc-access/)).
-
-### SciLifeLab Data Platform
-
-Scilifelab provides e-infrastructure services complementing those available from national e-infrastructures, and with a focus on resources for FAIR data sharing. This includes compute- and storage resources for hosted services adhering to principles of FAIR and Open Science
-
-Applications are welcomed from individual researchers, research groups, and organisations. To learn more about the SciLifeLab Data Platform, and to apply, please see our [hosting page](/services/hosting/).
+As described with [LUMI above](#lumi), portions of EuroHPC resources are allocated for specfic countries, but portions are just allocated for use by researchers in Europe, regardless of the specific country. We encourage researchers to make use of this. Applications can be made via the [European PRACE Portal](https://prace-ri.eu/hpc-access/eurohpc-access/).
 
 ### Resources aimed at data support
 
