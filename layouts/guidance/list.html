@@ -2,26 +2,26 @@
 
 {{ .Content }}
 
-{{ $resources := .Site.Data.resources }}
+{{ $guidance := .Site.Data.guidance }}
 <div class="row mb-2">
   <div class="col">
-    <h3 id="for-researchers">Resources</h3>
+    <h3 id="for-researchers">Guidance</h3>
   </div>
   <div class="col-sm col-lg-3 text-end">
     <div class="input-group">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-resource-area="resources_container">
+      <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-guidance-area="guidance_container">
     </div>
   </div>
 </div>
 
-<div id="resources_container" class="row g-3 mb-5">
-  {{ range sort $resources "name" }}
-  <div class="col-md-6 col-lg-4 resource" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
+<div id="guidance_container" class="row g-3 mb-5">
+  {{ range sort $guidance "name" }}
+  <div class="col-md-6 col-lg-4 guidance" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
     <div class="card-teal-25">
       <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
         <a target="_self" href="{{ .url }}"><img class="img-fluid"
-            src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/resource_thumbnails/scilifelab.jpg" }}{{ end }}"
+            src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/guidance_thumbnails/scilifelab.jpg" }}{{ end }}"
             alt="{{ .name }}"></a>
       </div>
       <div class="p-2 card-teal-title">
@@ -52,34 +52,34 @@
     </div>
   </div>
   {{ end }}
-  <div id="no-filtered-resource" style="display:none;">
-    <p class="text-center">No resources have the given keyword, please try to use another.</p>
+  <div id="no-filtered-guidance" style="display:none;">
+    <p class="text-center">No guidance related to the given keyword, please try to use another.</p>
   </div>
 </div>
 
 <script>
   
-  // Function to filter the resource based on search text
+  // Function to filter the guidance based on search text
   $("input[type=text]").on("input", function(){
     
-    // Get the text entered and resource category 
+    // Get the text entered and guidance category 
     var searchText = $(this).val().toLowerCase();
-    var searchArea = this.getAttribute('data-resource-area');
+    var searchArea = this.getAttribute('data-guidance-area');
     
-    // Hide all resources before filtering
-    $(`div#${searchArea} div.resource`).hide();
-    $(`div#${searchArea} div#no-filtered-resource`).hide();
+    // Hide all guidance before filtering
+    $(`div#${searchArea} div.guidance`).hide();
+    $(`div#${searchArea} div#no-filtered-guidance`).hide();
     
-    // If text empty show all resources
+    // If text empty show all guidance
     if (searchText == ''){
-      $(`div#${searchArea} div.resource`).show();
+      $(`div#${searchArea} div.guidance`).show();
     } else {
       $(`div#${searchArea} div[data-search-tags*='${searchText}']`).show();
       
-      // Display a message if no resources available for given keyword
-      var visible_resources = $(`div#${searchArea} div.resource`).filter(":visible");
-      if (!visible_resources.length) {
-        $(`div#${searchArea} div#no-filtered-resource`).show();
+      // Display a message if no guidance available for given keyword
+      var visible_guidance = $(`div#${searchArea} div.guidance`).filter(":visible");
+      if (!visible_guidance.length) {
+        $(`div#${searchArea} div#no-filtered-guidance`).show();
       }
     }
   });

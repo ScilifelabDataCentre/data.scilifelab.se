@@ -1,0 +1,148 @@
+[
+  {
+    "type": ["Research Data Management"],
+    "search_tags": [
+      "sources",
+      "data",
+      "repositories",
+      "download",
+      "submit",
+      "submission"
+    ],
+    "name": "Data sources",
+    "description": "Information about where to submit/access different types of data.",
+    "url": "/guidance/data_sources",
+    "thumbnail": "/img/guidance_thumbnails/data_sources.jpg",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": ["SciLifeLab services"],
+    "search_tags": [
+      "DDLS fellows",
+      "DDLS",
+      "SciLifeLab",
+      "Data Centre",
+      "Guide",
+      "onboarding",
+      "services"
+    ],
+    "name": "Onboarding for fellows",
+    "description": "Find out more about how to access services offered by SciLifeLab Data Centre. Aimed in particular at SciLifeLab and DDLS fellows.",
+    "url": "/onboarding/",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data/",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": ["Research Data Management"],
+    "search_tags": [
+      "Compute resource",
+      "E-infrastructure",
+      "Compute hosting",
+      "SciLifeLab",
+      "Data Centre",
+      "Hosting"
+    ],
+    "name": "Compute resources in Sweden",
+    "description": "Information about the compute resources (primarily for hosting and analysis) available in Sweden, as well as how to apply.",
+    "url": "/guidance/e-infrastructure/",
+    "thumbnail": "/img/guidance_thumbnails/compute.jpg",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": ["Research Data Management"],
+    "search_tags": ["Storage resource", "SciLifeLab", "Data Centre"],
+    "name": "Storage resources in Sweden",
+    "description": "Information about the storage resources available in Sweden for researchers, as well as how to apply.",
+    "url": "/guidance/storage/",
+    "thumbnail": "/img/guidance_thumbnails/storage.jpg",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": ["Research Data Management"],
+    "search_tags": [
+      "Open Science",
+      "Data lifecycle",
+      "SciLifeLab",
+      "Data Centre",
+      "Guide",
+      "data management"
+    ],
+    "name": "Open Science at SciLifeLab",
+    "description": "Find out more about the activities of SciLifeLab Data Centre in regard to Open Science.",
+    "url": "/open_science/",
+    "thumbnail": "/img/guidance_thumbnails/open_science.png",
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data/",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "type": ["SciLifeLab services"],
+    "search_tags": [
+      "Data driven lifecycle",
+      "DDLS",
+      "SciLifeLab",
+      "Data Centre",
+      "Guide"
+    ],
+    "name": "The data-driven life cycle",
+    "description": "Learn more about the Data lifecycle and find out which services are offered by the Data Centre and NBIS in this interactive guide.",
+    "url": "https://www.scilifelab.se/data-driven/ddls-data-lifecycle/",
+    "thumbnail": "/img/guidance_thumbnails/ddls_lifecycle.jpg",
+    "created_by": "SciLifeLab Comms/Ceros",
+    "created_by_url": "https://scilifelab.se/",
+    "support_email": "johan.inganni@scilifelab.se"
+  },
+  {
+    "type": ["Research Data Management"],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Helpdesk",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "SciLifeLab Data Centre",
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
+    ],
+    "name": "SciLifeLab RDM guidelines",
+    "description": "A knowledge hub containing guidance to life science researchers in Sweden regarding Research Data Management (RDM)",
+    "url": "https://data-guidelines.scilifelab.se",
+    "thumbnail": "/img/guidance_thumbnails/rdm.jpg",
+    "created_by": "NBIS, SciLifeLab Data Centre",
+    "created_by_url": "https://data-guidelines.scilifelab.se/contact/",
+    "support_email": "data-management@scilifelab.se",
+    "thumbnail_border": true
+  },
+  {
+    "type": ["Career support"],
+    "search_tags": [
+      "impact",
+      "research impact",
+      "bibliometrics",
+      "impact assessment",
+      "Altmetrics",
+      "plumx",
+      "impactstory",
+      "Alternative metrics",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "Alternative metrics for impact",
+    "description": "Information about alternative metrics, including what they are, their importance to your research, and how to maximise your scores.",
+    "url": "/guidance/altmetrics",
+    "thumbnail": "/img/guidance_thumbnails/plumx_cloud.png",
+    "thumbnail_border": true,
+    "created_by": "SciLifeLab Data Centre",
+    "created_by_url": "https://scilifelab.se/data",
+    "support_email": "datacentre@scilifelab.se"
+  }
+]

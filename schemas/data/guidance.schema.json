@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/schemas/data/resources.schema.json",
-    "title": "Resources Schema",
-    "description": "Schema for validating resource objects used in the Data Centre portal.",
+    "$id": "/schemas/data/guidance.schema.json",
+    "title": "Guidance Schema",
+    "description": "Schema for validating guidance objects used in data.scilifelab.se.",
     "type": "array",
     "items": {
       "type": "object",
@@ -12,7 +12,6 @@
         "name",
         "description",
         "url",
-        "thumbnail",
         "created_by",
         "created_by_url",
         "support_email"
@@ -26,7 +25,7 @@
           },
           "minItems": 1,
           "uniqueItems": true,
-          "description": "One or more categories describing the type of resource."
+          "description": "One or more categories describing the type of guidance."
         },
         "search_tags": {
           "type": "array",
@@ -36,27 +35,27 @@
           },
           "minItems": 1,
           "uniqueItems": true,
-          "description": "Search keywords associated with the resource."
+          "description": "Search keywords associated with the guidance."
         },
         "name": {
           "type": "string",
           "minLength": 1,
-          "description": "Title or name of the resource."
+          "description": "Title or name of the guidance."
         },
         "description": {
           "type": "string",
           "minLength": 1,
-          "description": "Short description explaining the resource purpose or content."
+          "description": "Short description explaining the guidance purpose or content."
         },
         "url": {
           "type": "string",
-          "description": "URL linking to the resource.",
+          "description": "URL linking to the guidance.",
           "pattern": "^(https?:\\/\\/|\\/).+"
         },
         "thumbnail": {
           "type": "string",
-          "description": "Path to a thumbnail image for the resource.",
-          "pattern": "^\\/img\\/resource_thumbnails\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+          "description": "OPTIONAL: Path to a thumbnail image for the guidance.",
+          "pattern": "^\\/img\\/guidance_thumbnails\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
         },
         "thumbnail_border": {
           "type": "boolean",
@@ -66,7 +65,7 @@
         "created_by": {
           "type": "string",
           "minLength": 1,
-          "description": "Name of the individual or group that created the resource."
+          "description": "Name of the individual or group that created the guidance."
         },
         "created_by_url": {
           "type": "string",
@@ -76,7 +75,7 @@
         "support_email": {
           "type": "string",
           "format": "email",
-          "description": "Email address to contact for support regarding the resource."
+          "description": "Email address to contact for support regarding the guidance."
         }
       },
       "additionalProperties": false
