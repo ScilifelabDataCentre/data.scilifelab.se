@@ -2,8 +2,8 @@
 title: Accessing compute resources (e-infrastructure)
 toc: true
 aliases:
-  - /services/e-infrastructure/
   - /resources/e-infrastructure/
+  - /services/e-infrastructure/
 images: [/img/resource_thumbnails/compute_3.jpg]
 ---
 
