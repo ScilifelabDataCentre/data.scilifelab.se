@@ -12,6 +12,8 @@ menu:
     name: Guidance
     identifier: guidance
     weight: 20
+aliases:
+  - /resources/
 ---
 
 SciLifeLab Data Centre produces guidance and information on a multitude of subjects. Use the search function to identify guidance potentially useful for your needs. Please [get in touch](/contact/) to request guidance on other topics.

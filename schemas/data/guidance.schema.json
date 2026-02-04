@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "/schemas/data/guidance.schema.json",
-    "title": "Resources Schema",
-    "description": "Schema for validating guidance objects used in the Data Centre portal.",
+    "title": "Guidance Schema",
+    "description": "Schema for validating guidance objects used in data.scilifelab.se.",
     "type": "array",
     "items": {
       "type": "object",
@@ -56,7 +56,7 @@
         "thumbnail": {
           "type": "string",
           "description": "Path to a thumbnail image for the guidance.",
-          "pattern": "^\\/img\\/resource_thumbnails\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
+          "pattern": "^\\/img\\/guidance_thumbnails\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
         },
         "thumbnail_border": {
           "type": "boolean",
