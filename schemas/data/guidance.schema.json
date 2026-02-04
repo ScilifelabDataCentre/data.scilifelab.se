@@ -12,7 +12,6 @@
         "name",
         "description",
         "url",
-        "thumbnail",
         "created_by",
         "created_by_url",
         "support_email"
