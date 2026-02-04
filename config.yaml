@@ -1,10 +1,10 @@
 baseURL: "https://data.scilifelab.se/"
 languageCode: "en-us"
-title: "SciLifeLab Data Platform - hub for data-driven life science research in Sweden"
+title: "Hub for data-driven life science research in Sweden"
 buildFuture: true
 params:
   title: "SciLifeLab Data Platform"
-  description: "SciLifeLab Data Platform - hub for data-driven life science research in Sweden"
+  description: "Hub for data-driven life science research in Sweden"
   images:
     - https://data.scilifelab.se/img/logos/sll_dp_social_media.png
 
@@ -24,7 +24,7 @@ permalinks:
 related:
   includeNewer: false
   indices:
-  - name: tags
-    weight: 100
+    - name: tags
+      weight: 100
   threshold: 80
   toLower: false

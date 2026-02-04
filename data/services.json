@@ -4,6 +4,30 @@
       "researchers"
     ],
     "type": [
+      "Tool"
+    ],
+    "search_tags": [
+      "Protocols",
+      "Versioning",
+      "reproducibility",
+      "Data sharing",
+      "Data management",
+      "Tool",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "SciLifeLab Protocols",
+    "description": "Used for the creation, sharing, and versioning of laboratory and computational protocols. Enables collaboration, author attribution, and reproducibility.",
+    "thumbnail": "/img/service_thumbnails/scilifelab_protocols.png",
+    "url": "https://www.scilifelab.se/data-ai/protocols/",
+    "maintained_by": "protocols.io team",
+    "maintained_by_url": "https://www.protocols.io/about"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "Portal",
       "Tool"
     ],
@@ -67,8 +91,8 @@
     "thumbnail": "/img/service_thumbnails/GeneSPIDER.png",
     "thumbnail_border": true,
     "url": "https://sonnhammer-tutorials.bitbucket.io/genespider.html#Getting_started",
-    "maintained_by": " Erik Sonnhammer",
-    "support_email": "erik.sonnhammer@scilifelab.se",
+    "maintained_by": "Sonnhammer Group",
+    "maintained_by_url": "https://sonnhammer.org",
     "support_website": "https://sonnhammer-tutorials.bitbucket.io/genespider.html#Getting_started",
     "support_github": "https://bitbucket.org/sonnhammergrni/genespider/src/master/"
   },
@@ -1474,5 +1498,27 @@
     "maintained_by": "Sonnhammer Group",
     "maintained_by_url": "https://sonnhammer.org",
     "support_website": "https://pathwax.sbc.su.se/help.html"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "machine learning",
+      "MLOp",
+      "ML lifecycle"
+    ],
+    "name": "MLFlow",
+    "description": "MLFlow is a tool for machine learning, model tracking, and model management. Can be used regardless of where you are running ML training.",
+    "thumbnail": "/img/service_thumbnails/mlflow-logo.png",
+    "thumbnail_border": true,
+    "url": "https://serve.scilifelab.se/docs/mlflow/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data/",
+    "support_website": "https://serve.scilifelab.se/docs/mlflow/",
+    "support_email": "serve@scilifelab.se"
   }
 ]

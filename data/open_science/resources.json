@@ -1,0 +1,197 @@
+[
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "FAIR-Aware Self Assessment Tool",
+    "description": "Helps researchers assess their knowledge of FAIR principles and improve data findability, accessibility, interoperability, and reusability.",
+    "thumbnail": "/img/open_science/resources/fair_aware.png",
+    "affiliation": "FAIRSFAIR",
+    "affiliation_url": "https://www.fairsfair.eu/fair-aware",
+    "url": "https://fairaware.dans.knaw.nl/",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+ 
+    ],
+    "name": "National Open Science Guidelines",
+    "description": "Guidelines from the National Library of Sweden supporting institutions in implementing Open Science practices.",    
+    "thumbnail": "/img/open_science/resources/national_library.png",
+    "affiliation": "The National Library of Sweden (Kungl Biblioteket)",
+    "affiliation_url": "https://www.kb.se/",
+    "url": "https://www.kb.se/samverkan-och-utveckling/nytt-fran-kb/nyheter-samverkan-och-utveckling/2024-01-15-national-guidelines-for-promoting-open-science-in-sweden.html",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "EU Open Science Policy",
+    "description": "EU policies promoting Open Science, open access, data sharing, and infrastructures like EOSC and OpenAIRE.",
+    "thumbnail": "/img/open_science/resources/eu_commission.png",
+    "affiliation": "European Commission",
+    "affiliation_url": "https://commission.europa.eu/index_en",
+    "url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science_en",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "SRC (VR) Guiding Principles",
+    "description": "The Swedish Research Council's (Vetenskaprådet) strategy and recommendations for open and FAIR research practices", 
+    "thumbnail": "/img/open_science/resources/vetenskapsradet.png",
+    "affiliation": "Swedish Research Council (Vetenskaprådet)",
+    "affiliation_url": "https://www.vr.se/",
+    "url": "https://www.vr.se/english/mandates/open-science/open-access-to-research-data/recommendations-for-fair-och-open-research-data.html",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "UNESCO Open Science Toolkit",
+    "description": "Resources for implementing Open Science based on the UNESCO Open Science Recommendation.",
+    "thumbnail": "/img/open_science/resources/unesco.png",
+    "affiliation": "UNESCO",
+    "affiliation_url": "https://www.unesco.org/en",
+    "url": "https://www.unesco.org/en/open-science/toolkit?hub=686",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "SUHF Roadmap for Open Science",
+    "description": "Recommendations and actions for universities transitioning toward a responsible and open scientific system.",    
+    "thumbnail": "/img/open_science/resources/suhf.png",
+    "affiliation": "SUHF",
+    "affiliation_url": "https://suhf.se/",
+    "url": "https://suhf.se/app/uploads/2025/05/REC-2021-1-Open-Science-Roadmap-REVISED-08-05-2025-1-2.pdf",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "Plan S/cOAlition S",
+    "description": "Global initiative mandating immediate Open Access for publicly funded research.",
+    "thumbnail": "/img/open_science/resources/plan_s.png",
+    "affiliation": "Plan S/cOAlition S",
+    "affiliation_url": "https://www.coalition-s.org/",
+    "url": "https://www.coalition-s.org/about/",
+    "thumbnail_border": "p-1"
+  },
+  {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "Open Science - Getting Started Slides",
+    "description": "Slide deck produced by the Open Science team introducing key Open Science concepts.",
+    "thumbnail": "/img/open_science/resources/getting_started.png",
+    "affiliation": "SciLifeLab Data Centre",
+    "affiliation_url": "https://data.scilifelab.se/",
+    "url": "https://doi.org/10.17044/scilifelab.29087126",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "SciLifeLab Open Access Checklist",
+    "description": "Guide to selecting Open Access routes, applying licences, and fulfilling policy requirements, according to the FAIR principles.",
+    "thumbnail": "/img/open_science/resources/open_access_checklist.png",
+    "affiliation": "SciLifeLab Data Centre",
+    "affiliation_url": "https://data.scilifelab.se/",
+    "url": "https://doi.org/10.17044/scilifelab.29086706",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "SciLifeLab Open Software Checklist",
+    "description": "Guidance for sharing, documenting, licensing, and citing research software, according to the FAIR principles.",
+    "thumbnail": "/img/open_science/resources/open_software_checklist.png",
+    "affiliation": "SciLifeLab Data Centre",
+    "affiliation_url": "https://data.scilifelab.se/",
+    "url": "https://doi.org/10.17044/scilifelab.29086775.v1",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "CoARA Action Plan for SciLifeLab",
+    "description": "SciLifeLab's commitments to implementing Open Science and FAIR principles, as a signatory member of CoARA.",
+    "thumbnail": "/img/open_science/resources/coara.png",
+    "affiliation": "SciLifeLab",
+    "affiliation_url": "https://www.scilifelab.se/",
+    "url": "https://doi.org/10.5281/zenodo.14796936",
+    "thumbnail_border": "p-1"
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "SciLifeLab Data Policy",
+    "description": "SciLifeLab's approach to Open Science, transparency, and FAIR data practices.",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab",
+    "affiliation_url": "https://scilifelab.se/",
+    "url": "https://www.scilifelab.se/wp-content/uploads/2023/10/Data-Policy.pdf",
+    "thumbnail_border": ""
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "SciLifeLab Training Hub",
+    "description": "Platform for open access training resources and courses.",
+    "thumbnail": "",
+    "affiliation": "SciLifeLab Training Hub",
+    "affiliation_url": "https://training.scilifelab.se/about",
+    "url": "https://training.scilifelab.se/",
+    "thumbnail_border": ""
+  },
+    {
+    "type": ["SciLifeLab produced"],
+    "search_tags": [
+      ""
+    ],
+    "name": "SciLifeLab RDM Guidelines",
+    "description": "Guidelines and resources for research data management from NBIS and SciLifeLab Data Centre.",
+    "thumbnail": "/img/open_science/resources/rdm_guidelines.png",
+    "affiliation": "NBIS, SciLifeLab Data Centre",
+    "affiliation_url": "https://data-guidelines.scilifelab.se/contact/",
+    "url": "https://data-guidelines.scilifelab.se/",
+    "thumbnail_border": "p-1"
+      },
+    {
+    "type": ["Externally produced"],
+    "search_tags": [
+      ""
+        ],
+    "name": "Openscience.se",
+    "description": " Swedish Open Science portal with national policies, practical resources and news supporting open research, data sharing and public access nationwide.",
+    "thumbnail": "/img/open_science/resources/open_science_logo.png",
+    "affiliation": "Openscience.se",
+    "affiliation_url": "https://openscience.se/",
+    "url": "https://openscience.se/",
+    "thumbnail_border": "p-1"
+      }
+]

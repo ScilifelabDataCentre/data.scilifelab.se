@@ -1,14 +1,18 @@
 ---
-title: "Open Science Team"
+title: "SciLifeLab"
 menu:
   open_science:
     parent: "initiatives"
-    name: "Open Science Team"
+    name: "SciLifeLab"
     weight: 1
 back_to_top_button: true
 ---
 
-# Open Science Team Initiatives
+# Initiatives Across SciLifeLab
+
+There are many innovative Open Science initiatives throughout SciLifeLab, and this page offers a space for these projects to be highlighted.
+If you are working on an Open Science project at SciLifeLab and would like to showcase your work, please contact us
+via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with the subject line 'Open Science'.
 
 {{< banner_image
   image="/img/open_science/initiatives/cop.png"

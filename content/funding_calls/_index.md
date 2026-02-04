@@ -1,6 +1,6 @@
 ---
 title: Funding & Calls
-description: Finding and calls available from SciLifeLab Data Centre
+description: Funding and calls available from SciLifeLab Data Centre
 cascade:
   header_image: /img/illustrations/bubble_matrix.png
 menu:
