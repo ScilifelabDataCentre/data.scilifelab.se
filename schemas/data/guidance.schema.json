@@ -54,7 +54,7 @@
         },
         "thumbnail": {
           "type": "string",
-          "description": "Path to a thumbnail image for the guidance.",
+          "description": "OPTIONAL: Path to a thumbnail image for the guidance.",
           "pattern": "^\\/img\\/guidance_thumbnails\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"
         },
         "thumbnail_border": {
