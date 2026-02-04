@@ -6,7 +6,7 @@ aliases:
 ---
 
 <div class="bg-light-gray border rounded py-2 px-4 my-3 fst-italic">
-<b>Apply for the 2025 Round now to get access to FAIR Storage</b>. The round is open until 31st December 2025, and applications can be made at any time.
+<b>Apply for the annual FAIR Storage call, which ends on 31st December each year. Applications can be made at any time through the <a href="https://supr.naiss.se/">Swedish User and Project Repository (SUPR) Portal</a>. Please see below for further details..
 </div>
 
 ## About SciLifeLab FAIR Storage
