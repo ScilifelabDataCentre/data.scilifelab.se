@@ -4,6 +4,37 @@
       "researchers"
     ],
     "type": [
+      "Portal"
+    ],
+    "search_tags": [
+      "Open Science",
+      "Open Access",
+      "Research outputs",
+      "Publications",
+      "Datasets",
+      "Software",
+      "Monitoring",
+      "Research visibility",
+      "Research impact",
+      "Impact",
+      "SciLifeLab",
+      "SciLifeLab Open Science Monitor",
+      "Open Science Monitor",
+      "Monitor"
+    ],
+    "name": "SciLifeLab Open Science Monitor",
+    "description": "A monitoring service for SciLifeLab-related publications, datasets, and software, built on the OpenAIRE Graph.",
+    "thumbnail": "/img/service_thumbnails/OS_monitor.png",
+    "url": "https://scilifelab.openaire.eu",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.openaire.eu/faqs",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "target": [
+      "researchers"
+    ],
+    "type": [
       "Tool"
     ],
     "search_tags": [
@@ -20,8 +51,9 @@
     "description": "Used for the creation, sharing, and versioning of laboratory and computational protocols. Enables collaboration, author attribution, and reproducibility.",
     "thumbnail": "/img/service_thumbnails/scilifelab_protocols.png",
     "url": "https://www.scilifelab.se/data-ai/protocols/",
-    "maintained_by": "protocols.io team",
-    "maintained_by_url": "https://www.protocols.io/about"
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.protocols.io/about",
+    "support_email": "datacentre@scilifelab.se"
   },
   {
     "target": [
