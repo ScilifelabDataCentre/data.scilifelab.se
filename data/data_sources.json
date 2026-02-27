@@ -2814,8 +2814,9 @@
       "cancer"
     ],
     "name": "National Genomics Platform",
-    "description": "Genomic Medicine Sweden's national initiative to store, analyse and share genetic data securely. The platform harmonises genomic and health data across Sweden's university hospital regions to enable precision medicine research.",
+    "description": "Genomic Medicine Sweden's national initiative to store, analyse, and share genetic data securely. The platform harmonises genomic and health data across Sweden's university hospital regions to enable precision medicine research.",
     "thumbnail": "/img/data_sources_thumbs/NGP.png",
+    "thumbnail_border": true,
     "url": "https://genomicmedicine.se/en/it-informatics/national-genomics-platform/",
     "data": [
       "Genes and genomes",
