@@ -5,6 +5,7 @@
   <title>{{ if ne .Title "SciLifeLab Data Platform"}}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content='{{ if .IsHome }}{{ .Param "description" }}{{ else }}{{ .Description }}{{ end }}'>
   <meta http-equiv="content-language" content="en">
+  <meta name="google-site-verification" content="odbEVA-ZoRHXtO34lWnTlb5tOxRRkGciSO4SRIlcqMI" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -32,9 +33,6 @@
   <script src="{{ $notice_js.RelPermalink }}" defer></script>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-
-  <!-- Google verification tag -->
-  <meta name="google-site-verification" content="odbEVA-ZoRHXtO34lWnTlb5tOxRRkGciSO4SRIlcqMI" />
   
   <!-- imjoy -->
   {{ with .Params.imjoy }}
