@@ -1,7 +1,7 @@
 [
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "Portal"
@@ -31,8 +31,8 @@
     "support_email": "datacentre@scilifelab.se"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "Tool"
@@ -56,8 +56,8 @@
     "support_email": "datacentre@scilifelab.se"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "Portal",
@@ -98,8 +98,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "Tool"
@@ -129,13 +129,12 @@
     "support_github": "https://bitbucket.org/sonnhammergrni/genespider/src/master/"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "Portal",
-      "Tool",
-      "Helpdesk"
+      "Tool"
     ],
     "search_tags": [
       "Swedish Reference Genome Portal",
@@ -164,8 +163,8 @@
     "support_status": "https://status.dc.scilifelab.se/797951599"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "database"
@@ -194,18 +193,16 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
-      "portal",
-      "helpdesk"
+      "portal"
     ],
     "search_tags": [
       "RDM",
       "Research data management",
       "Guidelines",
-      "Helpdesk",
       "Portal",
       "NBIS",
       "SciLifeLab",
@@ -224,12 +221,39 @@
     "support_status": "https://status.dc.scilifelab.se/793602117"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "nbis"
     ],
     "type": [
-      "portal",
-      "helpdesk"
+      "portal"
+    ],
+    "search_tags": [
+      "RDM",
+      "Research data management",
+      "Guidelines",
+      "Portal",
+      "NBIS",
+      "SciLifeLab",
+      "Data Centre",
+      "SciLifeLab RDM Guidelines"
+    ],
+    "name": "SciLifeLab RDM Guidelines",
+    "description": "Free consultations and support on all aspects of data management for those working in in Swedish life science research",
+    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "thumbnail_border": true,
+    "url": "https://data-guidelines.scilifelab.se",
+    "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "support_email": "data-management@scilifelab.se",
+    "support_website": "https://data-guidelines.scilifelab.se/contact/",
+    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
+    "support_status": "https://status.dc.scilifelab.se/793602117"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "portal"
     ],
     "search_tags": [
       "Pathogens portal",
@@ -256,8 +280,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "tool"
@@ -287,8 +311,8 @@
     "support_status": "https://status.dc.scilifelab.se/795925203"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "Storage resources"
@@ -309,11 +333,11 @@
     "support_email": "FAIRstorage@scilifelab.se"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
-      "database",
+      "Repository",
       "tool"
     ],
     "search_tags": [
@@ -349,8 +373,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "nbis"
     ],
     "type": [
       "Database",
@@ -394,8 +418,8 @@
     ]
   },
   {
-    "target": [
-      "facilities"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "tool"
@@ -419,8 +443,8 @@
     "support_status": "https://status.dc.scilifelab.se/793448467"
   },
   {
-    "target": [
-      "facilities"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "tool"
@@ -441,8 +465,8 @@
     "support_status": "https://status.dc.scilifelab.se/793602084"
   },
   {
-    "target": [
-      "facilities"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "tool"
@@ -464,8 +488,8 @@
     "support_status": "https://status.dc.scilifelab.se/793602009"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "Database",
@@ -507,8 +531,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "Database",
@@ -536,19 +560,17 @@
     "support_status": "https://status.dc.scilifelab.se/793601986"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "nbis"
     ],
     "type": [
       "Compute resources",
-      "Database",
-      "Helpdesk"
+      "Database"
     ],
     "search_tags": [
       "NBIS",
       "AIDA Data Hub",
       "Compute resources",
-      "Helpdesk",
       "Medical imaging",
       "AI",
       "Artificial intelligence",
@@ -586,8 +608,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "Database",
@@ -625,8 +647,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "tool"
@@ -652,8 +674,8 @@
     "support_status": "https://status.dc.scilifelab.se/793602047"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "database",
@@ -692,11 +714,11 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
-      "database"
+      "Repository"
     ],
     "search_tags": [
       "SweFreq",
@@ -721,8 +743,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool",
@@ -755,8 +777,8 @@
     "support_slack": "https://nf-co.re/join/slack"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "nbis"
     ],
     "type": [
       "tool"
@@ -781,8 +803,8 @@
     "support_github": "https://github.com/marcelm/cutadapt/"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -805,8 +827,8 @@
     "support_github": "https://github.com/Molmed/checkQC"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -833,8 +855,8 @@
     "support_website": "https://clinical-genomics.github.io/chanjo/"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -868,8 +890,8 @@
     "support_website": "https://clinical-genomics.github.io/scout/"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -903,8 +925,8 @@
     "support_github": "https://github.com/Clinical-Genomics/loqusdb"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool",
@@ -937,8 +959,8 @@
     "support_website": "https://nf-co.re/rnafusion"
   },
     {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool",
@@ -973,8 +995,8 @@
     "support_website": "https://nf-co.re/raredisease/"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool",
@@ -1009,8 +1031,8 @@
     "support_github": "https://github.com/biodiversitydata-se/amplicon-multi-cutadapt"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -1042,8 +1064,8 @@
     "support_github": "https://github.com/biodiversitydata-se/coidb"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool",
@@ -1077,8 +1099,8 @@
     "support_website": "https://balsamic.readthedocs.io/en/latest/"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool",
@@ -1107,8 +1129,8 @@
     "support_github": "https://github.com/genomic-medicine-sweden/tomte"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -1140,8 +1162,8 @@
     "support_github": "https://github.com/Clinical-Genomics/preClinVar"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -1166,8 +1188,8 @@
     "support_github": "https://github.com/Clinical-Genomics/schug"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -1200,8 +1222,8 @@
     "support_website": "https://clinical-genomics.github.io/chanjo2/"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool",
@@ -1232,8 +1254,8 @@
     "support_slack": "https://nf-co.re/join/slack"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -1258,8 +1280,8 @@
     "support_website": "https://github.com/Clinical-Genomics/genmod"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -1288,8 +1310,8 @@
     "support_website": "https://community.seqera.io/c/multiqc/6"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "database"
@@ -1340,8 +1362,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "database"
@@ -1378,8 +1400,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "database"
@@ -1408,8 +1430,8 @@
     "support_email": "funcoup@scilifelab.se"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "database"
@@ -1444,8 +1466,8 @@
     ]
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "Tool"
@@ -1471,8 +1493,8 @@
     "support_website": "https://phobius.sbc.su.se/instructions.html"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "Tool", "Workflow"
@@ -1499,8 +1521,8 @@
     "support_website": "https://pathbix.sbc.su.se/help"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "community"
     ],
     "type": [
       "tool"
@@ -1532,8 +1554,8 @@
     "support_website": "https://pathwax.sbc.su.se/help.html"
   },
   {
-    "target": [
-      "researchers"
+    "owner": [
+      "data-centre"
     ],
     "type": [
       "tool"
@@ -1552,5 +1574,133 @@
     "maintained_by_url": "https://scilifelab.se/data/",
     "support_website": "https://serve.scilifelab.se/docs/mlflow/",
     "support_email": "serve@scilifelab.se"
+  },
+  {
+    "owner": [
+      "nbis"
+    ],
+    "type": [
+      "Analysis"
+    ],
+    "search_tags": [
+      "bioinformatics",
+      "computational",
+      "structural",
+      "protein structure"
+    ],
+    "name": "Bioinformatics support",
+    "description": "NBIS produces tailored bioinformatics solutions for multi-omics, single cell genomics, proteomics, metabolomics, structural biology and more.",
+    "thumbnail": "/img/service_thumbnails/nbis_logo.png",
+    "thumbnail_border": true,
+    "url": "https://nbis.se/services/bioinformatics",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "https://nbis.se",
+    "support_website": "https://nbis.se/contact",
+    "support_email": "info@nbis.se"
+  },
+  {
+    "owner": [
+      "nbis"
+    ],
+    "type": [
+      "Analysis"
+    ],
+    "search_tags": [
+      "image data",
+      "computer vision",
+      "analysis",
+      "workflows",
+      "Sensitive",
+      "learning-based image analysis",
+      "large-scale image analysis"
+    ],
+    "name": "Image data analysis",
+    "description": "Enables state-of-the-art analyses for image data using computer vision, machine learning, and bioinformatics.",
+    "thumbnail": "/img/service_thumbnails/nbis_logo.png",
+    "thumbnail_border": true,
+    "url": "https://nbis.se/services/bioinformatics",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "https://nbis.se",
+    "support_website": "https://nbis.se/contact",
+    "support_email": "info@nbis.se"
+  },
+  {
+    "owner": [
+      "nbis"
+    ],
+    "type": [
+      "Software development"
+    ],
+    "search_tags": [
+      "web applications",
+      "bioinformatics tools",
+      "cli tools",
+      "visualisations",
+      "code review",
+      "backend solutions"
+    ],
+    "name": "Software development",
+    "description": "NBIS produces and maintains easy-to-use bioinformatics tools to investigate research results.",
+    "thumbnail": "/img/service_thumbnails/nbis_logo.png",
+    "thumbnail_border": true,
+    "url": "https://nbis.se/services/bioinformatics",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "https://nbis.se",
+    "support_website": "https://nbis.se/contact",
+    "support_email": "info@nbis.se"
+  },
+  {
+    "owner": [
+      "nbis"
+    ],
+    "type": [
+      "Helpdesk"
+    ],
+    "search_tags": [
+      "helpdesk",
+      "RDM",
+      "data management",
+      "DMP",
+      "Data Management Plans",
+      "storage solution",
+      "human data"
+    ],
+    "name": "Data Management helpdesk",
+    "description": "Data stewards can provide guidance on multiple elements of data management, e.g. Data Management Plans.",
+    "thumbnail": "/img/service_thumbnails/nbis_logo.png",
+    "thumbnail_border": true,
+    "url": "https://nbis.se/services/bioinformatics",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "https://nbis.se",
+    "support_website": "https://nbis.se/contact",
+    "support_email": "info@nbis.se"
+  },
+  {
+    "owner": [
+      "nbis"
+    ],
+    "type": [
+      "Helpdesk"
+    ],
+    "search_tags": [
+      "biomedical research",
+      "Federated European Genome-phenome Archive",
+      "FEGA",
+      "genomic data",
+      "genetic",
+      "phenotypes",
+      "phenotypic",
+      "DNA",
+      "human data"
+    ],
+    "name": "FEGA Sweden",
+    "description": "Enables sensitive data from Swedish omics research in a responsible, safe, and legally compliant way.",
+    "thumbnail": "/img/service_thumbnails/nbis_logo.png",
+    "thumbnail_border": true,
+    "url": "https://nbis.se/services/bioinformatics",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "https://nbis.se",
+    "support_website": "https://nbis.se/contact",
+    "support_email": "info@nbis.se"
   }
 ]
