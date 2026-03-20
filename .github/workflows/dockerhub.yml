@@ -6,15 +6,12 @@
 
 name: Publish Docker Image
 on:
-  # generate image whenever there is a push to the listed branches
-  push:
-    branches:
-      - main
-      - develop
-  # generate images for releases, using the tag name
-  # the newest one will be latest as well
-  release:
-    types: [published]
+    workflow_dispatch:
+#  push:
+#    branches:
+#      - main
+#  release:
+#    types: [published]
 jobs:
   push_to_registry:
     # only generate images when in the named repo
@@ -52,10 +49,12 @@ jobs:
         with:
           images: ${{ matrix.images }}
           tags: |
-            type=ref,event=branch
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
+             type=sha,format=long
+             type=sha,prefix={{branch}}-
+             type=ref,event=branch
+             type=semver,pattern={{version}}
+             type=semver,pattern={{major}}.{{minor}}
+             type=semver,pattern={{major}}
       - name: Build and Publish
         uses: docker/build-push-action@v6
         with:
