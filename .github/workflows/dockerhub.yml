@@ -6,13 +6,10 @@
 
 name: Publish Docker Image
 on:
-  # generate image whenever there is a push to the listed branches
+  workflow_dispatch:
   push:
     branches:
       - main
-      - develop
-  # generate images for releases, using the tag name
-  # the newest one will be latest as well
   release:
     types: [published]
 jobs:
@@ -52,6 +49,7 @@ jobs:
         with:
           images: ${{ matrix.images }}
           tags: |
+            type=sha,prefix={{branch}}-
             type=ref,event=branch
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
