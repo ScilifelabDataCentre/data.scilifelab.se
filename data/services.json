@@ -4,30 +4,119 @@
       "data-centre"
     ],
     "type": [
-      "Portal"
+      "Hosting tool"
     ],
     "search_tags": [
-      "Open Science",
-      "Open Access",
-      "Research outputs",
-      "Publications",
-      "Datasets",
-      "Software",
-      "Monitoring",
-      "Research visibility",
-      "Research impact",
-      "Impact",
+      "SciLifeLab Serve",
+      "AI",
+      "Serve",
+      "Artificial intelligence",
+      "Apps",
+      "DASH",
+      "R-Shiny",
+      "Hosting",
+      "Data sharing",
+      "Machine learning",
       "SciLifeLab",
-      "SciLifeLab Open Science Monitor",
-      "Open Science Monitor",
-      "Monitor"
+      "Data Centre"
     ],
-    "name": "SciLifeLab Open Science Monitor",
-    "description": "A monitoring service for SciLifeLab-related publications, datasets, and software, built on the OpenAIRE Graph.",
-    "thumbnail": "/img/service_thumbnails/OS_monitor.png",
-    "url": "https://scilifelab.openaire.eu",
+    "name": "SciLifeLab Serve",
+    "description": "SciLifeLab Serve is a platform offering machine learning model serving, data science app hosting (Shiny, Gradio, Streamlit, Dash, etc.).",
+    "url": "https://serve.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.openaire.eu/faqs",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "serve@scilifelab.se",
+    "support_website": "https://serve.scilifelab.se/docs/",
+    "support_status": "https://status.dc.scilifelab.se/795925203"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Web portal"
+    ],
+    "search_tags": [
+      "Pathogens portal",
+      "infectious disease data",
+      "Swedish Pathogens Portal",
+      "Pandemic preparedness portal",
+      "COVID-19",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool"
+    ],
+    "name": "Swedish Pathogens Portal",
+    "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
+    "thumbnail": "/img/service_thumbnails/pathogens.png",
+    "url": "https://pathogens.se/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "thumbnail_border": true,
+    "support_email": "pathogens@scilifelab.se",
+    "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
+    "support_status": "https://status.dc.scilifelab.se/793602036",
+    "data_source_type": [
+      "Data source"
+    ]
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Data repository"
+    ],
+    "search_tags": [
+      "Data submission",
+      "Data repository",
+      "SciLifeLab",
+      "Data Centre",
+      "Tool",
+      "Figshare",
+      "SciLifeLab Data Repository",
+      "Data Repository"
+    ],
+    "name": "SciLifeLab Data Repository",
+    "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
+    "thumbnail": "/img/service_thumbnails/figshare.jpg",
+    "url": "https://scilifelab.figshare.com/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "figshare@scilifelab.se",
+    "support_website": "https://www.scilifelab.se/data-ai/repository",
+    "data_source_type": [
+      "Repository"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection",
+      "Cell and Molecular Biology",
+      "Evolution and Biodiversity",
+      "Precision Medicine and Diagnostics"
+    ],
+    "disease_type": [ 
+      "General"
+    ]
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Collaboration tool"
+    ],
+    "search_tags": [
+      "SciLifeLab Atlassian Services",
+      "Atlassian",
+      "Jira",
+      "Confluence",
+      "Trello",
+      "Collaboration tool"
+    ],
+    "name": "SciLifeLab Atlassian Services",
+    "description": "Access to Jira, Confluence, and Trello is available for those affiliated with SciLifeLab.",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se"
   },
   {
@@ -35,7 +124,110 @@
       "data-centre"
     ],
     "type": [
-      "Tool"
+      "Survey service"
+    ],
+    "search_tags": [
+      "SciLifeLab Typeform",
+      "survey",
+      "surveys",
+      "user feedback"
+    ],
+    "name": "SciLifeLab Typeform",
+    "description": "Access to Typeform is available for those affiliated with SciLifeLab.",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Data repository"
+    ],
+    "search_tags": [
+      "Publications",
+      "Publications database",
+      "Infrastructure publications database",
+      "articles",
+      "infrastructure",
+      "reporting"
+    ],
+    "name": "SciLifeLab infrastructure publications database",
+    "description": "Databases showing publications involving SciLifeLab infrastructure units.",
+    "url": "https://publications.scilifelab.se",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se",
+    "support_status": "https://status.dc.scilifelab.se/793602112"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Collaboration tool"
+    ],
+    "search_tags": [
+      "Slack",
+      "coworking",
+      "collaboration",
+      "communication"
+    ],
+    "name": "SciLifeLab Slack",
+    "description": "Access to Slack to enable collaboration and communication.",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Filesharing tool"
+    ],
+    "search_tags": [
+      "Filesharing",
+      "file sharing",
+      "collaboration",
+      "SUNET drive"
+    ],
+    "name": "SciLifeLab SUNET drive",
+    "description": "A cloud-based file sharing and storage service.",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Data repository"
+    ],
+    "search_tags": [
+      "Publications",
+      "Publications database",
+      "affiliates publications database",
+      "articles",
+      "affiliates",
+      "reporting"
+    ],
+    "name": "SciLifeLab affiliates publications database",
+    "description": "Databases showing publications from research fellows affiliated with SciLifeLab.",
+    "url": "https://publications-affiliated.scilifelab.se",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se",
+    "support_status": "https://status.dc.scilifelab.se/793602106"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Collaboration tool"
     ],
     "search_tags": [
       "Protocols",
@@ -45,57 +237,16 @@
       "Data management",
       "Tool",
       "SciLifeLab",
-      "Data Centre"
+      "Data Centre",
+      "SciLifeLab Protocols"
     ],
     "name": "SciLifeLab Protocols",
-    "description": "Used for the creation, sharing, and versioning of laboratory and computational protocols. Enables collaboration, author attribution, and reproducibility.",
+    "description": "Licences are provided for those affiliated with SciLifeLab to use protocols.io - used for the creation, sharing, and versioning of laboratory and computational protocols.",
     "thumbnail": "/img/service_thumbnails/scilifelab_protocols.png",
     "url": "https://www.scilifelab.se/data-ai/protocols/",
     "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://www.protocols.io/about",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se"
-  },
-  {
-    "owner": [
-      "data-centre"
-    ],
-    "type": [
-      "Portal",
-      "Tool"
-    ],
-    "search_tags": [
-      "Precision Medicine Portal",
-      "Precision Medicine",
-      "KIARVA",
-      "Karolinska Institutet Adaptive Immune Receptor Gene Variant Atlas",
-      "Atlas",
-      "Data visualisation",
-      "Data sharing",
-      "Data management",
-      "quality registries",
-      "registries",
-      "immunology",
-      "portal",
-      "Tool",
-      "SciLifeLab",
-      "Data Centre"
-    ],
-    "name": "Precision Medicine Portal",
-    "description": "Links to multiple data sources, including quality registers and KIARVA (an open-source immunology database).",
-    "thumbnail": "/img/service_thumbnails/precision_med_portal.png",
-    "thumbnail_border": true,
-    "url": "https://precision-medicine-portal.scilifelab.se/",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "precisionmedicine@scilifelab.se",
-    "support_github": "https://github.com/ScilifelabDataCentre/precision-medicine-portal-frontend",
-    "support_status": "https://status.dc.scilifelab.se/800572728",
-    "data_source_type": [
-      "Data source"
-    ],
-    "ddls": [
-      "Epidemiology and Biology of Infection"
-    ]
   },
   {
     "owner": [
@@ -133,11 +284,11 @@
       "data-centre"
     ],
     "type": [
-      "Portal",
-      "Tool"
+      "Web portal"
     ],
     "search_tags": [
       "Swedish Reference Genome Portal",
+      "SciLifeLab Swedish Reference Genome Portal",
       "Genome",
       "Genome assembly",
       "Genome annotation",
@@ -151,7 +302,7 @@
       "SciLifeLab",
       "Data Centre"
     ],
-    "name": "Swedish Reference Genome Portal",
+    "name": "SciLifeLab Swedish Reference Genome Portal",
     "description": "Portal that highlights, aggregates, and displays genome data of non-human eukaryotic species studied in Sweden",
     "thumbnail": "/img/service_thumbnails/genome-portal.png",
     "url": "https://genomes.scilifelab.se/",
@@ -197,7 +348,7 @@
       "data-centre"
     ],
     "type": [
-      "portal"
+      "Web portal"
     ],
     "search_tags": [
       "RDM",
@@ -253,62 +404,43 @@
       "data-centre"
     ],
     "type": [
-      "portal"
+      "Collaboration tool"
     ],
     "search_tags": [
-      "Pathogens portal",
-      "infectious disease data",
-      "Swedish Pathogens Portal",
-      "Pandemic preparedness portal",
-      "COVID-19",
-      "SciLifeLab",
-      "Data Centre",
-      "Tool"
-    ],
-    "name": "Swedish Pathogens Portal",
-    "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
-    "thumbnail": "/img/service_thumbnails/pathogens.png",
-    "url": "https://pathogens.se/",
+      "Google workspace",
+      "email",
+      "SciLifeLab email",
+      "SciLifeLab Google workspace",
+      "Google",
+      "Google Docs",
+      "Google Sheets",
+      "Google slides",
+      "@scilifelab.se"
+  ],
+    "name": "SciLifeLab Google Workspace",
+    "description": "Access to the Google workspace (including @scilifelab.se email addresses) for those affiliated with SciLifeLab.",
     "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "thumbnail_border": true,
-    "support_email": "pathogens@scilifelab.se",
-    "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
-    "support_status": "https://status.dc.scilifelab.se/793602036",
-    "data_source_type": [
-      "Data source"
-    ]
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "tool"
+      "Collaboration tool"
     ],
     "search_tags": [
-      "SciLifeLab Serve",
-      "AI",
-      "Serve",
-      "Artificial intelligence",
-      "Apps",
-      "DASH",
-      "R-Shiny",
-      "Hosting",
-      "Data sharing",
-      "Machine learning",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre"
-    ],
-    "name": "SciLifeLab Serve",
-    "description": "SciLifeLab Serve is a platform offering machine learning model serving, data science app hosting (Shiny, Gradio, Streamlit, Dash, etc.).",
-    "url": "https://serve.scilifelab.se/",
+      "share files",
+      "fileshare",
+      "Nextcloud",
+      "SciLifeLab Nextcloud"
+  ],
+    "name": "SciLifeLab Nextcloud",
+    "description": "Access to Nextcloud which enables real-time document editing and file sharing.",
     "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "serve@scilifelab.se",
-    "support_website": "https://serve.scilifelab.se/docs/",
-    "support_status": "https://status.dc.scilifelab.se/795925203"
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se"
   },
   {
     "owner": [
@@ -322,55 +454,16 @@
       "Storage",
       "SUPR",
       "SciLifeLab",
-      "Data Centre"
+      "Data Centre",
+      "SciLifeLab FAIR storage"
   ],
-    "name": "FAIR storage",
+    "name": "SciLifeLab FAIR storage",
     "description": "Details about how researchers, research groups, and organisations can store their data using SciLifeLab FAIR Storage resources.",
     "url": "/services/fairstorage/",
     "thumbnail": "/img/service_thumbnails/fairstorage.jpg",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "FAIRstorage@scilifelab.se"
-  },
-  {
-    "owner": [
-      "data-centre"
-    ],
-    "type": [
-      "Repository",
-      "tool"
-    ],
-    "search_tags": [
-      "Data submission",
-      "Data repository",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre",
-      "Tool",
-      "Figshare",
-      "SciLifeLab Data Repository",
-      "Data Repository"
-    ],
-    "name": "SciLifeLab Data Repository",
-    "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
-    "thumbnail": "/img/service_thumbnails/figshare.jpg",
-    "url": "https://scilifelab.figshare.com/",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
-    "support_email": "figshare@scilifelab.se",
-    "support_website": "https://scilifelab.se/data/repository",
-    "data_source_type": [
-      "Repository"
-    ],
-    "ddls": [
-      "Epidemiology and Biology of Infection",
-      "Cell and Molecular Biology",
-      "Evolution and Biodiversity",
-      "Precision Medicine and Diagnostics"
-    ],
-    "disease_type": [ 
-      "General"
-    ]
   },
   {
     "owner": [
@@ -438,7 +531,7 @@
     "thumbnail": "/img/service_thumbnails/dds.jpg",
     "url": "https://delivery.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "delivery@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793448467"
   },
@@ -450,19 +543,66 @@
       "tool"
     ],
     "search_tags": [
-      "Order Portal",
+      "Data.scilifelab.se",
+      "Data Plaform",
+      "SciLifeLab Data Platform",
+      "SciLifeLab",
+      "Data Centre",
+      "NBIS",
+      "services"
+    ],
+    "name": "SciLifeLab Data Platform",
+    "description": "A service describing the data services available at SciLifeLab.",
+    "url": "https://data.scilifelab.se/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se",
+    "support_status": "https://status.dc.scilifelab.se/793602042"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "tool"
+    ],
+    "search_tags": [
+      "Order Portals",
       "Communication",
       "SciLifeLab",
       "Data Centre",
+      "SciLifeLab Order Portals",
       "Tool"
     ],
-    "name": "Order Portal",
-    "description": "A configurable web-based system enabling communication between units and prospective users",
+    "name": "SciLifeLab Order Portals",
+    "description": "Instances of a configurable web-based system that enable communication between units and prospective users.",
     "url": "https://orderportal.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602084"
+  },
+  {
+    "owner": [
+      "data-centre"
+    ],
+    "type": [
+      "Data Repository"
+    ],
+    "search_tags": [
+      "Order Portals",
+      "Reporting",
+      "SciLifeLab Reporting Portal",
+      "Reporting Portal",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "SciLifeLab Reporting Portal",
+    "description": "An instance of an order portal used to collate information about SciLifeLab affiliated researchers and infrastructure units.",
+    "url": "https://reporting.scilifelab.se",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se"
   },
   {
     "owner": [
@@ -477,13 +617,14 @@
       "SciLifeLab",
       "funding",
       "Data Centre",
-      "Tool"
+      "Tool",
+      "SciLifeLab Anubis"
     ],
-    "name": "Anubis",
+    "name": "SciLifeLab Anubis",
     "description": "A web-based system for handling calls, proposal submission, reviews, decisions, and grant dossiers.",
     "url": "https://anubis.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602009"
   },
@@ -669,7 +810,7 @@
     "thumbnail": "/img/service_thumbnails/dsw.jpg",
     "url": "https://dsw.scilifelab.se/",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "data-management@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602047"
   },
@@ -715,7 +856,7 @@
   },
   {
     "owner": [
-      "data-centre"
+      "nbis"
     ],
     "type": [
       "Repository"
@@ -1555,35 +1696,13 @@
   },
   {
     "owner": [
-      "data-centre"
-    ],
-    "type": [
-      "tool"
-    ],
-    "search_tags": [
-      "machine learning",
-      "MLOp",
-      "ML lifecycle"
-    ],
-    "name": "MLFlow",
-    "description": "MLFlow is a tool for machine learning, model tracking, and model management. Can be used regardless of where you are running ML training.",
-    "thumbnail": "/img/service_thumbnails/mlflow-logo.png",
-    "thumbnail_border": true,
-    "url": "https://serve.scilifelab.se/docs/mlflow/",
-    "maintained_by": "SciLifeLab Data Centre",
-    "maintained_by_url": "https://scilifelab.se/data/",
-    "support_website": "https://serve.scilifelab.se/docs/mlflow/",
-    "support_email": "serve@scilifelab.se"
-  },
-  {
-    "owner": [
       "nbis"
     ],
     "type": [
       "Analysis"
     ],
     "search_tags": [
-      "bioinformatics",
+      "bioinformatics support",
       "computational",
       "structural",
       "protein structure"
@@ -1612,7 +1731,8 @@
       "workflows",
       "Sensitive",
       "learning-based image analysis",
-      "large-scale image analysis"
+      "large-scale image analysis",
+      "Image data analysis"
     ],
     "name": "Image data analysis",
     "description": "Enables state-of-the-art analyses for image data using computer vision, machine learning, and bioinformatics.",
@@ -1637,6 +1757,7 @@
       "cli tools",
       "visualisations",
       "code review",
+      "Software development",
       "backend solutions"
     ],
     "name": "Software development",
@@ -1662,6 +1783,7 @@
       "data management",
       "DMP",
       "Data Management Plans",
+      "Data Management helpdesk",
       "storage solution",
       "human data"
     ],
@@ -1690,6 +1812,7 @@
       "genetic",
       "phenotypes",
       "phenotypic",
+      "FEGA Sweden",
       "DNA",
       "human data"
     ],
