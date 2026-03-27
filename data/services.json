@@ -4,7 +4,7 @@
       "data-centre"
     ],
     "type": [
-      "Hosting tool"
+      "Swedish affiliation"
     ],
     "search_tags": [
       "SciLifeLab Serve",
@@ -27,14 +27,15 @@
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "serve@scilifelab.se",
     "support_website": "https://serve.scilifelab.se/docs/",
-    "support_status": "https://status.dc.scilifelab.se/795925203"
+    "support_status": "https://status.dc.scilifelab.se/795925203",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/8bcddb335945451ba3d1fb8232dd9d9b"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "Web portal"
+      "No restrictions"
     ],
     "search_tags": [
       "Pathogens portal",
@@ -65,7 +66,7 @@
       "data-centre"
     ],
     "type": [
-      "Data repository"
+      "Swedish affiliation"
     ],
     "search_tags": [
       "Data submission",
@@ -85,6 +86,7 @@
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "figshare@scilifelab.se",
     "support_website": "https://www.scilifelab.se/data-ai/repository",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/6b18d7f79f23464bb510e8dc06be6e6a",
     "data_source_type": [
       "Repository"
     ],
@@ -103,7 +105,7 @@
       "data-centre"
     ],
     "type": [
-      "Collaboration tool"
+      "Swedish affiliation"
     ],
     "search_tags": [
       "SciLifeLab Atlassian Services",
@@ -117,14 +119,15 @@
     "description": "Access to Jira, Confluence, and Trello is available for those affiliated with SciLifeLab.",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/de33e302931f40c3aa115e0a38549034"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "Survey service"
+      "Central SciLifeLab Operations"
     ],
     "search_tags": [
       "SciLifeLab Typeform",
@@ -143,7 +146,7 @@
       "data-centre"
     ],
     "type": [
-      "Data repository"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "Publications",
@@ -153,7 +156,7 @@
       "infrastructure",
       "reporting"
     ],
-    "name": "SciLifeLab infrastructure publications database",
+    "name": "SciLifeLab Infrastructure Publications Database",
     "description": "Databases showing publications involving SciLifeLab infrastructure units.",
     "url": "https://publications.scilifelab.se",
     "maintained_by": "SciLifeLab Data Centre",
@@ -166,7 +169,7 @@
       "data-centre"
     ],
     "type": [
-      "Collaboration tool"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "Slack",
@@ -178,14 +181,15 @@
     "description": "Access to Slack to enable collaboration and communication.",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/93ae57afd935431e8d06f1a8049ad93b"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "Filesharing tool"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "Filesharing",
@@ -197,14 +201,15 @@
     "description": "A cloud-based file sharing and storage service.",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/d4402d5a18c847a39f48d4ee45c898f3"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "Data repository"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "Publications",
@@ -214,7 +219,7 @@
       "affiliates",
       "reporting"
     ],
-    "name": "SciLifeLab affiliates publications database",
+    "name": "SciLifeLab Affiliates Publications Database",
     "description": "Databases showing publications from research fellows affiliated with SciLifeLab.",
     "url": "https://publications-affiliated.scilifelab.se",
     "maintained_by": "SciLifeLab Data Centre",
@@ -227,7 +232,7 @@
       "data-centre"
     ],
     "type": [
-      "Collaboration tool"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "Protocols",
@@ -253,7 +258,7 @@
       "community"
     ],
     "type": [
-      "Tool"
+      "No restrictions"
     ],
     "search_tags": [ 
       "GeneSPIDER tutorial",
@@ -284,7 +289,7 @@
       "data-centre"
     ],
     "type": [
-      "Web portal"
+      "Swedish affiliation"
     ],
     "search_tags": [
       "Swedish Reference Genome Portal",
@@ -311,14 +316,15 @@
     "support_email": "dsn-eb@scilifelab.se",
     "support_website": "https://genomes.scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/genome-portal",
-    "support_status": "https://status.dc.scilifelab.se/797951599"
+    "support_status": "https://status.dc.scilifelab.se/797951599",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/57e5e8481d9f41508b5794ab9b9584ff"
   },
   {
     "owner": [
       "community"
     ],
     "type": [
-      "database"
+      "No restrictions"
     ],
     "search_tags": [
       "AI4Life BioImage Model Zoo", "BioImage Analysis", "AI Models", "Model Zoo", "Open Science", "Data-Driven Life Sciences", "DDLS", "modelling", "Artificial intelligence"
@@ -345,38 +351,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "data-centre", "nbis"
     ],
     "type": [
-      "Web portal"
-    ],
-    "search_tags": [
-      "RDM",
-      "Research data management",
-      "Guidelines",
-      "Portal",
-      "NBIS",
-      "SciLifeLab",
-      "Data Centre",
-      "SciLifeLab RDM Guidelines"
-    ],
-    "name": "SciLifeLab RDM Guidelines",
-    "description": "Free consultations and support on all aspects of data management for those working in in Swedish life science research",
-    "thumbnail": "/img/service_thumbnails/rdm.jpg",
-    "thumbnail_border": true,
-    "url": "https://data-guidelines.scilifelab.se",
-    "maintained_by": "NBIS, SciLifeLab Data Centre",
-    "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/",
-    "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
-    "support_status": "https://status.dc.scilifelab.se/793602117"
-  },
-  {
-    "owner": [
-      "nbis"
-    ],
-    "type": [
-      "portal"
+      "No restrictions"
     ],
     "search_tags": [
       "RDM",
@@ -404,7 +382,7 @@
       "data-centre"
     ],
     "type": [
-      "Collaboration tool"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "Google workspace",
@@ -421,14 +399,15 @@
     "description": "Access to the Google workspace (including @scilifelab.se email addresses) for those affiliated with SciLifeLab.",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/203bf907e6e14b3c893a06b3234344d6"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "Collaboration tool"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "share files",
@@ -440,14 +419,16 @@
     "description": "Access to Nextcloud which enables real-time document editing and file sharing.",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_status": "https://status.dc.scilifelab.se/793601941",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/d4402d5a18c847a39f48d4ee45c898f3"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "Storage resources"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "FAIR Storage",
@@ -470,9 +451,7 @@
       "nbis"
     ],
     "type": [
-      "Database",
-      "Portal",
-      "Tool"
+      "No restrictions"
     ],
     "search_tags": [
       "NBIS",
@@ -515,7 +494,7 @@
       "data-centre"
     ],
     "type": [
-      "tool"
+      "SciLifeLab infrastructure"
     ],
     "search_tags": [
       "DDS",
@@ -533,14 +512,15 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "delivery@scilifelab.se",
-    "support_status": "https://status.dc.scilifelab.se/793448467"
+    "support_status": "https://status.dc.scilifelab.se/793448467",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/a523a9d4c7384687924d7f30317540b7"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "Data.scilifelab.se",
@@ -564,7 +544,7 @@
       "data-centre"
     ],
     "type": [
-      "tool"
+      "SciLifeLab infrastructure"
     ],
     "search_tags": [
       "Order Portals",
@@ -580,14 +560,15 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se",
-    "support_status": "https://status.dc.scilifelab.se/793602084"
+    "support_status": "https://status.dc.scilifelab.se/793602084",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/1a98ecb7be4c47d2ba84b7c839d3aabc"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "Data Repository"
+      "SciLifeLab affiliation"
     ],
     "search_tags": [
       "Order Portals",
@@ -602,14 +583,16 @@
     "url": "https://reporting.scilifelab.se",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_status": "https://status.dc.scilifelab.se/793602088",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/1a98ecb7be4c47d2ba84b7c839d3aabc"
   },
   {
     "owner": [
       "data-centre"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "Anubis",
@@ -626,16 +609,15 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_status": "https://status.dc.scilifelab.se/793602009"
+    "support_status": "https://status.dc.scilifelab.se/793602009",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/2dd586604a5149ef985f8bd4ae2f819d"
   },
   {
     "owner": [
       "community"
     ],
     "type": [
-      "Database",
-      "Portal",
-      "Tool"
+      "No restrictions"
     ],
     "search_tags": [
       "NBIS",
@@ -676,9 +658,7 @@
       "community"
     ],
     "type": [
-      "Database",
-      "Portal",
-      "Tool"
+      "No restrictions"
     ],
     "search_tags": [
       "NBIS",
@@ -697,16 +677,14 @@
     "maintained_by": "TissUUmaps",
     "maintained_by_url": "https://tissuumaps.github.io/about_us/",
     "support_email": "biif@scilifelab.se",
-    "support_github": "https://github.com/TissUUmaps/TissUUmaps",
-    "support_status": "https://status.dc.scilifelab.se/793601986"
+    "support_github": "https://github.com/TissUUmaps/TissUUmaps"
   },
   {
     "owner": [
       "nbis"
     ],
     "type": [
-      "Compute resources",
-      "Database"
+      "Swedish affiliation"
     ],
     "search_tags": [
       "NBIS",
@@ -753,8 +731,7 @@
       "community"
     ],
     "type": [
-      "Database",
-      "Tool"
+      "No restrictions"
     ],
     "search_tags": [
       "NBIS",
@@ -792,7 +769,7 @@
       "data-centre"
     ],
     "type": [
-      "tool"
+      "Swedish affiliation"
     ],
     "search_tags": [
       "DSW",
@@ -819,9 +796,7 @@
       "community"
     ],
     "type": [
-      "database",
-      "tool",
-      "portal"
+      "No restrictions"
     ],
     "search_tags": [
       "SubCellBarCode",
@@ -859,7 +834,7 @@
       "nbis"
     ],
     "type": [
-      "Repository"
+      "No restrictions"
     ],
     "search_tags": [
       "SweFreq",
@@ -888,8 +863,7 @@
       "community"
     ],
     "type": [
-      "tool",
-      "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "nf-core",
@@ -922,7 +896,7 @@
       "nbis"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "sequencing",
@@ -948,7 +922,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "sequencing",
@@ -972,7 +946,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "clinical",
@@ -1000,7 +974,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "Scout",
@@ -1035,7 +1009,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "LoqusDB",
@@ -1070,8 +1044,7 @@
       "community"
     ],
     "type": [
-      "tool",
-      "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "nf-core",
@@ -1104,8 +1077,7 @@
       "community"
     ],
     "type": [
-      "tool",
-      "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "nf-core",
@@ -1140,8 +1112,7 @@
       "community"
     ],
     "type": [
-      "tool",
-      "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "amplicon-multi-cutadapt",
@@ -1176,7 +1147,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "coidb",
@@ -1209,8 +1180,7 @@
       "community"
     ],
     "type": [
-      "tool",
-      "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "BALSAMIC",
@@ -1244,8 +1214,7 @@
       "community"
     ],
     "type": [
-      "tool",
-      "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "tomte",
@@ -1274,7 +1243,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "preClinVar",
@@ -1307,7 +1276,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "Schug",
@@ -1333,7 +1302,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "clinical",
@@ -1367,8 +1336,7 @@
       "community"
     ],
     "type": [
-      "tool",
-      "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "pipeline",
@@ -1399,7 +1367,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "annotate",
@@ -1425,7 +1393,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "python",
@@ -1455,7 +1423,7 @@
       "community"
     ],
     "type": [
-      "database"
+      "No restrictions"
     ],
     "search_tags": [
       "COViMAPP",
@@ -1507,7 +1475,7 @@
       "community"
     ],
     "type": [
-      "database"
+      "No restrictions"
     ],
     "search_tags": [
       "OrthoDisease",
@@ -1545,7 +1513,7 @@
       "community"
     ],
     "type": [
-      "database"
+      "No restrictions"
     ],
     "search_tags": [
       "Funcoup",
@@ -1575,7 +1543,7 @@
       "community"
     ],
     "type": [
-      "database"
+      "No restrictions"
     ],
     "search_tags": [
       "InParanoiDB",
@@ -1611,7 +1579,7 @@
       "community"
     ],
     "type": [
-      "Tool"
+      "No restrictions"
     ],
     "search_tags": [
       "Phobius",
@@ -1638,7 +1606,7 @@
       "community"
     ],
     "type": [
-      "Tool", "Workflow"
+      "No restrictions"
     ],
     "search_tags": [
       "PathBIX",
@@ -1666,7 +1634,7 @@
       "community"
     ],
     "type": [
-      "tool"
+      "No restrictions"
     ],
     "search_tags": [
       "pathwax",
@@ -1699,7 +1667,7 @@
       "nbis"
     ],
     "type": [
-      "Analysis"
+      "No restrictions"
     ],
     "search_tags": [
       "bioinformatics support",
@@ -1722,7 +1690,7 @@
       "nbis"
     ],
     "type": [
-      "Analysis"
+      "No restrictions"
     ],
     "search_tags": [
       "image data",
@@ -1749,7 +1717,7 @@
       "nbis"
     ],
     "type": [
-      "Software development"
+      "No restrictions"
     ],
     "search_tags": [
       "web applications",
@@ -1775,7 +1743,7 @@
       "nbis"
     ],
     "type": [
-      "Helpdesk"
+      "No restrictions"
     ],
     "search_tags": [
       "helpdesk",
@@ -1802,7 +1770,7 @@
       "nbis"
     ],
     "type": [
-      "Helpdesk"
+      "No restrictions"
     ],
     "search_tags": [
       "biomedical research",

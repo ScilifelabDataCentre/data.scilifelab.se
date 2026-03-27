@@ -77,11 +77,11 @@
           </div>
           {{ if ge (len $owner_stype) 1 }}
           <div class="mt-3">
-            <h5>Type</h5>
+            <h5>Users eligible for accounts:</h5>
             {{ range sort $owner_stype }}
             <div class="form-check">   
               <input class="form-check-input" type="checkbox" id="{{ $owner }}-{{ . | urlize }}" name="type" value="{{ . | urlize }}">
-              <label class="form-check-label" for="{{ $owner }}-{{ . | urlize }}">{{ . | humanize }}</label>
+              <label class="form-check-label" for="{{ $owner }}-{{ . | urlize }}">{{ . }}</label>
             </div>
             {{ end }}
           </div>
@@ -106,7 +106,7 @@
                 {{ .description }}
               </div>
               <div class="px-2">
-                <b>Type:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+                <b>Eligible for accounts:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
               </div>
               <div class="px-2">
                 <b>Maintained by:</b>
@@ -118,12 +118,13 @@
               </div>
               {{ if or (or .support_email .support_website .support_slack) .support_github }}
               <div class="px-2 mb-2">
-                <b>Support:</b>
-                {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "{{ . }}"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-                {{ with .support_website }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-globe"></i></a> {{ end }}
-                {{ with .support_github }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-github"></i></a> {{ end }}
-                {{ with .support_status }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-hdd-rack"></i></a> {{ end }}
-                {{ with .support_slack }}<a href="{{ . }}" aria-label = "{{ . }}"><i class="bi bi-slack"></i></a> {{ end }}
+                <b>Extra info:</b>
+                {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "support email address"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+                {{ with .support_website }}<a href="{{ . }}" aria-label = "support website"><i class="bi bi-globe"></i></a> {{ end }}
+                {{ with .support_github }}<a href="{{ . }}" aria-label = "github source code"><i class="bi bi-github"></i></a> {{ end }}
+                {{ with .support_status }}<a href="{{ . }}" aria-label = "uptime"><i class="bi bi-hdd-rack"></i></a> {{ end }}
+                {{ with .support_slack }}<a href="{{ . }}" aria-label = "slack community"><i class="bi bi-slack"></i></a> {{ end }}
+                {{ with .support_impact }}<a href="{{ . }}" aria-label = "usage metrics"><i class="bi bi-bar-chart-line-fill"></i></a> {{ end }}
               </div>
               {{ end }}
             </div>
@@ -147,7 +148,7 @@
     var selected_filters = new Object();
     var selected_type = $("div.tab-pane.active input:checkbox[name=type]:checked").map(function () {return this.value}).get();
     if (selected_type.length){ selected_filters['data-stype'] = selected_type };
-    var search_text = $("div.tab-pane.active input[type=text]").val().toLowerCase();
+    var search_text = $("div.tab-pane.active input[type=text]").val();
     if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
 
     // Hide all services before filtering
