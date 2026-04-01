@@ -15,17 +15,17 @@
 {{ range sort .Site.Data.services "name" }}
     {{ if in .owner "data-centre" }}
       {{ $r_slist = $r_slist | append . }}
-      {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
+      {{ $r_stype = $r_stype | append .type }}
       {{ $r_smain = $r_smain | append (apply (split .maintained_by ", ") "lower" ".") }}
     {{ end }}
     {{ if in .owner "nbis" }}
       {{ $n_slist = $n_slist | append . }}
-      {{ $n_stype = $n_stype | append (apply .type "lower" ".") }}
+      {{ $n_stype = $n_stype | append .type }}
       {{ $n_smain = $n_smain | append (lower .maintained_by) }}
     {{ end }}
     {{ if in .owner "community" }}
       {{ $f_slist = $f_slist | append . }}
-      {{ $f_stype = $f_stype | append (apply .type "lower" ".") }}
+      {{ $f_stype = $f_stype | append .type }}
       {{ $f_smain = $f_smain | append (lower .maintained_by) }}
     {{ end }}
 {{ end }}

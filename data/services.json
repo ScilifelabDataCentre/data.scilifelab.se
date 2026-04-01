@@ -162,7 +162,8 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_status": "https://status.dc.scilifelab.se/793602112"
+    "support_status": "https://status.dc.scilifelab.se/793602112",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/50c100ee5635434bae7f9315fa80235d"
   },
   {
     "owner": [
@@ -225,7 +226,8 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_status": "https://status.dc.scilifelab.se/793602106"
+    "support_status": "https://status.dc.scilifelab.se/793602106",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/50c100ee5635434bae7f9315fa80235d"
   },
   {
     "owner": [
