@@ -6,12 +6,14 @@ on:
       - 'data/**/*.json'
       - 'schemas/**/*.json'
       - 'scripts/test-json-schemas.js'
+      - '.github/workflows/json-schema-validation.yml'
       - 'package.json'
   pull_request:
     paths:
       - 'data/**/*.json'
       - 'schemas/**/*.json'
       - 'scripts/test-json-schemas.js'
+      - '.github/workflows/json-schema-validation.yml'
       - 'package.json'
 
 jobs:
@@ -30,10 +32,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.x
-          cache: 'pnpm'
           
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-lockfile
         
       - name: Run JSON Schema validation
         run: npm run validateJson
