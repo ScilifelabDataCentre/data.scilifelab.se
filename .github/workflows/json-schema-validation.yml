@@ -37,4 +37,4 @@ jobs:
         run: pnpm install --no-lockfile
         
       - name: Run JSON Schema validation
-        run: npm run validateJson
+        run: pnpm run validateJson
