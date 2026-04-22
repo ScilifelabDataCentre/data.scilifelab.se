@@ -6,7 +6,6 @@
 
 # Local dev stuff
 devbox*
-pnpm-lock.yaml
 
 # OSX
 .DS_Store
