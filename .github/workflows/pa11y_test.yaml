@@ -20,10 +20,10 @@ jobs:
             - name: Check out the repo
               uses: actions/checkout@v6
 
-            - name: Set up Node.js 22.x
+            - name: Set up Node.js
               uses: actions/setup-node@v6
               with:
-                node-version: 22.x
+                node-version: 24.x
             
             - name: Install Pa11ly CI
               run: npm install -g pa11y-ci
