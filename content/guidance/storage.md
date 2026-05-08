@@ -32,7 +32,7 @@ Most of the resources described on this page are national and do not require tha
 
 - [Stockholm University (SU)](https://www.su.se/staff/researchers/research-data)
 
-- [Uppsala University (UU)](https://mp.uu.se/en/web/info/forska/forskningsdata/lagra-samarbeta)
+- [Uppsala University (UU)](https://www.uu.se/en/staff/gateway/research/research-data/store-data-and-collaborate/data-storage)
 
 - [Umeå University (UmU)](https://www.umu.se/en/library/research-data/)
 
