@@ -1,4 +1,4 @@
-cff-version: 1.2.1
+cff-version: 2.0.0
 message: "If you use or reuse this software, please cite it using the following metadata."
 authors:
 - family-names: "Hughes"
@@ -11,12 +11,20 @@ authors:
   given-names: "Senthilkumar"
 - family-names: "Islam"
   given-names: "Kazi Jahurul"
-- family-names: "Kochari"
-  given-names: "Arnold"
+- family-names: "Aziz"
+  given-names: "Abdullah"
+  orcid: 0000-0003-4684-4682
+- family-names: "Venkatesh"
+  given-names: "Nalina Hamsaiyni"
+  orcid: 0000-0002-0641-7953 
+- family-names: "Dulaud"
+  given-names: "Paul"
   orcid: 0000-0003-1373-5121
 - family-names: "Hammaren"
   given-names: "Rickard"
   orcid: 0000-0001-9017-591X
+- family-names: "Kochari"
+  given-names: "Arnold"
 - family-names: "Lorenz"
   given-names: "Jan"
 - family-names: "Östberg"
