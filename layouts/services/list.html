@@ -2,121 +2,35 @@
 
 {{ .Content }}
 
-{{/* Compile list of the services in Hugo */}}
-{{ $r_slist := slice }}
-{{ $r_stype := slice }}
-{{ $f_slist := slice }}
-{{ $f_stype := slice }}
-{{ $n_slist := slice }}
-{{ $n_stype := slice }}
-{{ $r_smain := slice }}
-{{ $f_smain := slice }}
-{{ $n_smain := slice }}
-{{ range sort .Site.Data.services "name" }}
-    {{ if in .owner "data-centre" }}
-      {{ $r_slist = $r_slist | append . }}
-      {{ $r_stype = $r_stype | append .type }}
-      {{ $r_smain = $r_smain | append (apply (split .maintained_by ", ") "lower" ".") }}
-    {{ end }}
-    {{ if in .owner "nbis" }}
-      {{ $n_slist = $n_slist | append . }}
-      {{ $n_stype = $n_stype | append .type }}
-      {{ $n_smain = $n_smain | append (lower .maintained_by) }}
-    {{ end }}
-    {{ if in .owner "community" }}
-      {{ $f_slist = $f_slist | append . }}
-      {{ $f_stype = $f_stype | append .type }}
-      {{ $f_smain = $f_smain | append (lower .maintained_by) }}
-    {{ end }}
-{{ end }}
-{{ $r_stype = $r_stype | uniq }}
-{{ $r_smain = $r_smain | uniq }}
-{{ $f_stype = $f_stype | uniq }}
-{{ $f_smain = $f_smain | uniq }}
-{{ $n_stype = $n_stype | uniq }}
-{{ $n_smain = $n_smain | uniq }}
-{{ $services := dict "data-centre" (dict "slist" $r_slist "stype" $r_stype "smain" $r_smain) 
-                     "nbis" (dict "slist" $n_slist "stype" $n_stype "smain" $n_smain)
-                     "community" (dict "slist" $f_slist "stype" $f_stype "smain" $f_smain) }}
+{{ $services := .Site.Data.services }}
 
-<!-- Tab list -->
-<ul class="nav nav-tabs nav-justified services-tab-list mb-3">
-  <li class="nav-item">
-    <a class="nav-link active" href="#services-data-centre" data-bs-toggle="tab" role="tab">
-      Data Centre Services
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#services-nbis" data-bs-toggle="tab" role="tab">
-      NBIS Services
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#services-community" data-bs-toggle="tab" role="tab">
-      SciLifeLab Community Services
-    </a>
-  </li>
-</ul>
-
-<!-- Tab content -->
-<div class="tab-content">
-  {{ $owners := slice "data-centre" "nbis" "community"}}
-  {{ range $owner := $owners }}
-  {{ $owner_slist := index (index $services $owner) "slist" }}
-  {{ $owner_stype := index (index $services $owner) "stype" }}
-  {{ $owner_smain := index (index $services $owner) "smain" }}
-  <div class='tab-pane fade {{ if eq $owner "data-centre" }}show active{{ end }}'
-       id="services-{{ $owner }}" role="tabpanel">
-    <div class="row">
-      <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
-        <div class="bg-light p-3" style="position: sticky; top: 15px;">
-          <h5>Search</h5>
-          <div class="input-group">
-            <input type="text" id="{{ $owner }}-search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $owner }}_services">
-            <label class ="form-control-label" for="{{ $owner }}-search" aria-labelledby="Search"> 
-          </div>
-          {{ if ge (len $owner_stype) 1 }}
-          <div class="mt-3">
-            <h5>Users eligible for accounts:</h5>
-            {{ range sort $owner_stype }}
-            <div class="form-check">   
-              <input class="form-check-input" type="checkbox" id="{{ $owner }}-{{ . | urlize }}" name="type" value="{{ . | urlize }}">
-              <label class="form-check-label" for="{{ $owner }}-{{ . | urlize }}">{{ . }}</label>
-            </div>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
+<div id="services_container" class="row g-3 mb-5">
+  {{ range sort $services "name" }}
+  <div class="col-md-6 col-lg-4 services" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
+    <div class="card-teal-25">
+      <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
+        <a target="_self" href="{{ .url }}"><img class="img-fluid"
+            src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+            alt="{{ .name }}"></a>
       </div>
-      <div class="col-lg">
-        <div id="{{ $owner }}_services" class="row g-3 mb-5">
-          {{ range $owner_slist }}
-          <div class="col-md-6 col-lg-4 service" data-stype="{{ delimit (apply .type "urlize" ".") " " }}"
-               {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
-            <div class="card-teal-25">
-              <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
-                <a owner="_self" href="{{ .url }}"><img class="img-fluid"
-                    src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
-                    alt="{{ .name }}"></a>
-              </div>
-              <div class="p-2 card-teal-title">
-                <h5><a href="{{ .url }}" owner="_self">{{ .name }}</a></h5>
-              </div>
-              <div class="p-2">
-                {{ .description }}
-              </div>
-              <div class="px-2">
-                <b>Eligible for accounts:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
-              </div>
-              <div class="px-2">
-                <b>Maintained by:</b>
-                {{ if .maintained_by_url}}
-                <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
-                {{ else }}
-                {{ .maintained_by }}
-                {{ end }}
-              </div>
-              {{ if or (or .support_email .support_website .support_slack) .support_github }}
+      <div class="p-2 card-teal-title">
+        <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+      </div>
+      <div class="p-2">
+        {{ .description }}
+      </div>
+      <div class="px-2">
+        <b>Eligible for accounts:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+      </div>
+      <div class="px-2">
+        <b>Service owner:</b>
+        {{ if .maintained_by_url}}
+        <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
+        {{ else }}
+        {{ .maintained_by }}
+        {{ end }}
+      </div>
+      {{ if or (or .support_email .support_website .support_slack) .support_github }}
               <div class="px-2 mb-2">
                 <b>Extra info:</b>
                 {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "support email address"><i class="bi bi-envelope-fill"></i></a> {{ end }}
@@ -125,19 +39,14 @@
                 {{ with .support_status }}<a href="{{ . }}" aria-label = "uptime"><i class="bi bi-hdd-rack"></i></a> {{ end }}
                 {{ with .support_slack }}<a href="{{ . }}" aria-label = "slack community"><i class="bi bi-slack"></i></a> {{ end }}
                 {{ with .support_impact }}<a href="{{ . }}" aria-label = "usage metrics"><i class="bi bi-bar-chart-line-fill"></i></a> {{ end }}
-              </div>
-              {{ end }}
-            </div>
-          </div>
-          {{ end }}
-          <div id="no-filtered-services-{{ $owner }}" style="display:none;">
-            <p class="text-center">No services have the given keyword, please try to use another.</p>
-          </div>
         </div>
-      </div>
+      {{ end }}
     </div>
   </div>
   {{ end }}
+  <div id="no-filtered-services" style="display:none;">
+    <p class="text-center">No services related to the given keyword, please try to use another.</p>
+  </div>
 </div>
 
 <script>
