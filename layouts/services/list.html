@@ -2,111 +2,125 @@
 
 {{ .Content }}
 
-<!-- {{ $stype := slice }}
-{{ $smain := slice }}
-{{ range sort .Site.Data.services "name" }}
-      {{ $stype = $r_stype | append (apply .type "lower" ".") }}
-      {{ $smain = $r_smain | append (apply (split .maintained_by ", ") "lower" ".") }}
-{{ end }}
-{{ $r_stype = $r_stype | uniq }}
-{{ $r_smain = $r_smain | uniq }} -->
-
 {{ $services := .Site.Data.services }}
 
-<div id="services_container" class="row g-3 mb-5">
-  <div class="row">
-    <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
-      <div class="bg-light p-3" style="position: sticky; top: 15px;">
-        <h5>Search</h5>
-        <div class="input-group">
-          <input type="text" id="{{ $target }}-search" class="form-control" placeholder="Name/Keywords" data-service-area="{{ $target }}_services">
-          <label class ="form-control-label" for="{{ $target }}-search" aria-labelledby="Search"> 
-        </div>
-        {{ if ge (len $target_stype) 1 }}
-        <div class="mt-3">
-          <h5>Type</h5>
-          {{ range sort $target_stype }}
-          <div class="form-check">   
-            <input class="form-check-input" type="checkbox" id="{{ $target }}-{{ . | urlize }}" name="type" value="{{ . | urlize }}">
-            <label class="form-check-label" for="{{ $target }}-{{ . | urlize }}">{{ . | humanize }}</label>
-          </div>
-          {{ end }}
+{{ $stype := slice }}
+{{ $smain := slice }}
+{{ range sort $services "name" }}
+      {{ $stype = $stype | append .type }}
+      {{ $smain = $smain | append (split .maintained_by ", ") }}
+{{ end }}
+{{ $stype = $stype | uniq }}
+{{ $smain = $smain | uniq }}
+
+
+<div id="services_container" class="row g-4 mb-5">
+  <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
+    <div class="bg-light p-3" style="position: sticky; top: 15px;">
+      <h5>Search</h5>
+      <div class="input-group">
+        <input type="text" id="service-search" class="form-control" placeholder="Name/Keywords">
+        <label class ="form-control-label" for="service-search" aria-labelledby="Search"> 
+      </div>
+      {{ if ge (len $services) 1 }}
+      <div class="mt-3">
+        <h5>Type</h5>
+        {{ range sort $stype }}
+        <div class="form-check">   
+          <input class="form-check-input" type="checkbox" id="service-type-{{ . | urlize }}" name="type" value="{{ . | urlize }}">
+          <label class="form-check-label" for="service-type-{{ . | urlize }}">{{ . }}</label>
         </div>
         {{ end }}
       </div>
-    </div>
-    <div class="col-lg">
-    {{ range sort $services "name" }}
-    <div class="col-md-6 col-lg-4 services" {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
-      <div class="card-teal-25">
-        <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
-          <a target="_self" href="{{ .url }}"><img class="img-fluid"
-              src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
-              alt="{{ .name }}"></a>
+      <div class="mt-3">
+        <h5>Maintained by</h5>
+        {{ range sort $smain }}
+        <div class="form-check">   
+          <input class="form-check-input" type="checkbox" id="service-maintained-by-{{ . | urlize }}" name="maintained_by" value="{{ . | urlize }}">
+          <label class="form-check-label" for="service-maintained-by-{{ . | urlize }}">{{ . }}</label>
         </div>
-        <div class="p-2 card-teal-title">
-          <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
-        </div>
-        <div class="p-2">
-          {{ .description }}
-        </div>
-        <div class="px-2">
-          <b>Eligible for accounts:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
-        </div>
-        <div class="px-2">
-          <b>Service owner:</b>
-          {{ if .maintained_by_url}}
-          <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
-          {{ else }}
-          {{ .maintained_by }}
-          {{ end }}
-        </div>
-        {{ if or (or .support_email .support_website .support_slack) .support_github }}
-                <div class="px-2 mb-2">
-                  <b>Extra info:</b>
-                  {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "support email address"><i class="bi bi-envelope-fill"></i></a> {{ end }}
-                  {{ with .support_website }}<a href="{{ . }}" aria-label = "support website"><i class="bi bi-globe"></i></a> {{ end }}
-                  {{ with .support_github }}<a href="{{ . }}" aria-label = "github source code"><i class="bi bi-github"></i></a> {{ end }}
-                  {{ with .support_status }}<a href="{{ . }}" aria-label = "uptime"><i class="bi bi-hdd-rack"></i></a> {{ end }}
-                  {{ with .support_slack }}<a href="{{ . }}" aria-label = "slack community"><i class="bi bi-slack"></i></a> {{ end }}
-                  {{ with .support_impact }}<a href="{{ . }}" aria-label = "usage metrics"><i class="bi bi-bar-chart-line-fill"></i></a> {{ end }}
-          </div>
         {{ end }}
       </div>
-    </div>
-    {{ end }}
-    <div id="no-filtered-services" style="display:none;">
-      <p class="text-center">No services related to the given keyword, please try to use another.</p>
+      {{ end }}
     </div>
   </div>
+  <div class="col-lg">
+    <div class="row g-2">
+      {{ range sort $services "name" }}
+      <div class="col-md-6 col-lg-4 services"
+      data-stype='{{ delimit (apply .type "urlize" ".") ":" }}'
+      data-smain='{{ .maintained_by | urlize }}'
+      {{ with .search_tags }}data-search-tags='{{ delimit . ":" | lower }}'{{ end }}>
+        <div class="card-teal-25">
+          <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
+            <a target="_self" href="{{ .url }}"><img class="img-fluid"
+                src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+                alt="{{ .name }}"></a>
+          </div>
+          <div class="p-2 card-teal-title">
+            <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+          </div>
+          <div class="p-2">
+            {{ .description }}
+          </div>
+          <div class="px-2">
+            <b>Eligible for accounts:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
+          </div>
+          <div class="px-2">
+            <b>Service owner:</b>
+            {{ if .maintained_by_url}}
+            <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
+            {{ else }}
+            {{ .maintained_by }}
+            {{ end }}
+          </div>
+          {{ if or (or .support_email .support_website .support_slack) .support_github }}
+                  <div class="px-2 mb-2">
+                    <b>Extra info:</b>
+                    {{ with .support_email }}<a href="mailto:{{ . }}" aria-label = "support email address"><i class="bi bi-envelope-fill"></i></a> {{ end }}
+                    {{ with .support_website }}<a href="{{ . }}" aria-label = "support website"><i class="bi bi-globe"></i></a> {{ end }}
+                    {{ with .support_github }}<a href="{{ . }}" aria-label = "github source code"><i class="bi bi-github"></i></a> {{ end }}
+                    {{ with .support_status }}<a href="{{ . }}" aria-label = "uptime"><i class="bi bi-hdd-rack"></i></a> {{ end }}
+                    {{ with .support_slack }}<a href="{{ . }}" aria-label = "slack community"><i class="bi bi-slack"></i></a> {{ end }}
+                    {{ with .support_impact }}<a href="{{ . }}" aria-label = "usage metrics"><i class="bi bi-bar-chart-line-fill"></i></a> {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      <div id="no-filtered-services" style="display:none;">
+        <p class="text-center">No services related to the given keyword, please try to use another.</p>
+      </div>
+    </div>
   </div>  
 </div>
 
 <script>
   // Function to search and filter the service based on selected input
   function searchAndFilter (){
-    // Get all the imputs
-    var owner = $("div.tab-pane.active").attr('id');
+    // Get all the inputs
     var selected_filters = new Object();
-    var selected_type = $("div.tab-pane.active input:checkbox[name=type]:checked").map(function () {return this.value}).get();
+    var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value}).get();
     if (selected_type.length){ selected_filters['data-stype'] = selected_type };
-    var search_text = $("div.tab-pane.active input[type=text]").val();
+    var selected_maintainer = $("input:checkbox[name=maintained_by]:checked").map(function () {return this.value}).get();
+    if (selected_maintainer.length){ selected_filters['data-smain'] = selected_maintainer };
+    var search_text = $("input[type=text]").val();
     if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
 
     // Hide all services before filtering
-    $(`div.tab-pane.active div.service`).hide();
-    $(`div.tab-pane.active div#no-filtered-${owner}`).hide();
+    $(`div.services`).hide();
+    $(`div#no-filtered-services`).hide();
 
     // Show relavant services based on selected criteria
     if (!Object.keys(selected_filters).length) {
-      $("div.tab-pane.active div.service").show();
+      $("div.services").show();
     } else {
       var all_selected_services = [];
       // Iterate over all selected criteria and collect the services
       for (var [filter_name, filter_list] of Object.entries(selected_filters)) {
         var s_services = new Set;
         filter_list.forEach(function (filter_value) {
-          $(`div.tab-pane.active div.service[${filter_name}*='${filter_value}']`).each(function () { s_services.add(this); });
+          $(`div.services[${filter_name}*='${filter_value}']`).each(function () { s_services.add(this); });
         });
         all_selected_services.push(s_services);
       };
@@ -121,12 +135,12 @@
         selected_services.forEach(function (sService) { sService.style.display = ''; })
       } else {
         // Display a message if no events available for selected criteria
-        $(`div.tab-pane.active div#no-filtered-${owner}`).show();
+        $(`div#no-filtered-services`).show();
       };
     };
 
-    // Bring the tab top to the veiwport if it isn't
-    var tab_top = document.querySelector("ul.services-tab-list").getBoundingClientRect().top;
+    // Bring the tab top to the viewport if it isn't
+    var tab_top = document.querySelector("div#services_container").getBoundingClientRect().top;
     if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 15); }
   }
 
