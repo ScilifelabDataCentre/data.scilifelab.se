@@ -67,7 +67,7 @@ For enquiries please contact [aida@nbis.se](mailto:aida@nbis.se).
 
 [EuroHPC](https://eurohpc-ju.europa.eu/index_en) provides multiple compute resources across Europe (e.g. [LUMI](#lumi), described above). Researchers based in Sweden are eligible to apply to use these resources, and their applications will be considered in competition from researchers based in the rest of Europe. As of early 2023, it remains relatively easy to secure compute time at EuroHPC resources due to overcapacity.
 
-As described with [LUMI above](#lumi), portions of EuroHPC resources are allocated for specfic countries, but portions are just allocated for use by researchers in Europe, regardless of the specific country. We encourage researchers to make use of this. Applications can be made via the [European PRACE Portal](https://prace-ri.eu/hpc-access/eurohpc-access/).
+As described with [LUMI above](#lumi), portions of EuroHPC resources are allocated for specific countries, but portions are just allocated for use by researchers in Europe, regardless of the specific country. We encourage researchers to make use of this. Applications can be made via the [European PRACE Portal](https://prace-ri.eu/hpc-access/eurohpc-access/).
 
 ### Resources aimed at data support
 

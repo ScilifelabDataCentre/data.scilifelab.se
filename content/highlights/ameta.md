@@ -5,7 +5,7 @@ summary: Pochon et al. have developed aMeta; a new metagenomic profiling workflo
 banner: /highlights/ameta.png
 banner_large: /highlights/ameta_large.png
 banner_caption: Image courtesy of Pochon et al. 2023
-banner_alt: Figure 1 from Pochon et al. (2023) showing ancient metgenomic profiling(aMeta) workflow overview.
+banner_alt: Figure 1 from Pochon et al. (2023) showing ancient metagenomic profiling(aMeta) workflow overview.
 tags:
   [
     Ancient DNA,

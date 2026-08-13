@@ -338,11 +338,11 @@
       "sequence data",
       "ARB",
       "bacteria",
-      "archea",
+      "archaea",
       "eukarya"
     ],
     "name": "SILVA",
-    "description": "A comprehensive online resource for quality-checked ribosomal RNA (rRNA) data. Includes aligned small and large subunits of rRNA from all three domains of life (archea, bacteria, eukarya).",
+    "description": "A comprehensive online resource for quality-checked ribosomal RNA (rRNA) data. Includes aligned small and large subunits of rRNA from all three domains of life (archaea, bacteria, eukarya).",
     "thumbnail": "/img/data_sources_thumbs/silva.png",
     "url": "https://www.arb-silva.de/",
     "data": [
@@ -2248,7 +2248,7 @@
       "Precision Medicine and Diagnostics"
     ],
     "search_tags": [
-      "Dryad Digtal Repository",
+      "Dryad Digital Repository",
       "general",
       "data",
       "Repository",

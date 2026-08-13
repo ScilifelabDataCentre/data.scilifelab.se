@@ -24,7 +24,7 @@ In brief, the pipeline consisted of seven steps. The first step was filtering. A
 
 Using the pipeline, the researchers were able to compare the results from long-read sequencing with traditional Sanger sequencing, which is used as the routine method at Uppsala University Hospital. Validation checks confirmed that all 17 resistance mutations found by Sanger sequencing were also detected by long-read sequencing. Notably though, 16 additional *de novo* mutations were found only by long-read sequencing. All of these mutations had frequencies below the detection limit for Sanger sequencing. The new pipeline was found to detect all cancer mutations occurring in frequencies higher than 1%. In summary, long-read sequencing was found to have higher sensitivity, and be able to detect emerging TKI resistance mutations earlier than Sanger sequencing.
 
-After implementation and validation, the clinical laboratory at Uppsala University Hospital changed their method, and now uses long-read sequencing for this application. One important factor behind the switch was the user-friendly pipeline information system. The system is comprised of features for data management, analysis, and visualisation, and thus faciltates the use and interpretation of the data by clinicians.
+After implementation and validation, the clinical laboratory at Uppsala University Hospital changed their method, and now uses long-read sequencing for this application. One important factor behind the switch was the user-friendly pipeline information system. The system is comprised of features for data management, analysis, and visualisation, and thus facilitates the use and interpretation of the data by clinicians.
 
 #### Data and code availability
 

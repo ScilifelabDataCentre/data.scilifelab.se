@@ -25,7 +25,7 @@ In summary, Andermann and colleagues used an entirely data-driven approach to ex
 
 #### Data
 
-In adherance with the open sharing of data and code, the researchers have shared the code for the BNN model, and also provided the main BNN functionalities as an open source Python package. This package can be used for any classification or regression task; it is not restricted to vegetation prediction.
+In adherence with the open sharing of data and code, the researchers have shared the code for the BNN model, and also provided the main BNN functionalities as an open source Python package. This package can be used for any classification or regression task; it is not restricted to vegetation prediction.
 
 * All code used in this study, as well as a full data tutorial and installation instructions for training BNN models are available on the project’s [GitHub repository](https://github.com/tandermann/paleovegetation).
 
