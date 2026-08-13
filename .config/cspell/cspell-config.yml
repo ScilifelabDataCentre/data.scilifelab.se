@@ -51,6 +51,7 @@ ignoreRegExpList:
   - Url # Ignore full URLs, such as https://www.example.com
   - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
+  - '/(?<=\/)arnold(?=\/)/gi'
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true
