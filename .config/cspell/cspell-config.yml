@@ -17,6 +17,7 @@ language: en-gb,sv
 import:
   - "@cspell/dict-sv/cspell-ext.json"
   - "@cspell/dict-people-names/cspell-ext.json"
+  - "@cspell/dict-medicalterms/cspell-ext.json"
 
 # Spell checking is case-sensitive
 caseSensitive: true
