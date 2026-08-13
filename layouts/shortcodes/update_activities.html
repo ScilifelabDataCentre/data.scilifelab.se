@@ -1,4 +1,4 @@
-<!-- This shortcode consists of code to populate events and news in open_science/activites page -->
+<!-- This shortcode consists of code to populate events and news in open_science/activities page -->
 
 <section class="my-4">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
@@ -57,7 +57,7 @@
         if (context === "sll-events-section" && !category_string.includes("open science")) {
           return;
         };
-        // Not insterested if the deadline have already passed
+        // Not interested if the deadline have already passed
         event.banner_date = event.date_start || event.registration_deadline;
         if (typeof event.banner_date !== 'undefined'){
           let dateString = event.banner_date + (event.time_start ? ' ' + event.time_start : '');
@@ -216,7 +216,7 @@
     getDataFromUrl(
       decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fddls_events.json"),
       addEvents,
-      "sll-events-section" // "div id" in open_science/activites page
+      "sll-events-section" // "div id" in open_science/activities page
     );
  
     // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing

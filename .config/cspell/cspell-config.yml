@@ -25,16 +25,21 @@ caseSensitive: true
 # These do not require installation or import
 # See https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts
 dictionaries:
-  - companies
-  - cpp-compound-words
-  - fonts
+  # - companies
+  # - cpp-compound-words
+  # - fonts
+  - css
+  - docker
   - forbidden-words
-  - fullstack
-  - k8s
-  - latex
+  # - fullstack
+  - html
+  # - k8s
+  # - latex
   - project-specific-words
-  - ruby
-  - sql
+  - python
+  # - ruby
+  # - sql
+  - typescript
 
 # Import project-specific words as a custom dictionary
 dictionaryDefinitions:
@@ -52,6 +57,7 @@ ignoreRegExpList:
   - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
   - '/(?<=\/)arnold(?=\/)/gi'
+  - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true
