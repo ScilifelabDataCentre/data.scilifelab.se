@@ -58,6 +58,7 @@ ignoreRegExpList:
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
   - '/(?<=\/)arnold(?=\/)/gi'
   - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
+  - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true

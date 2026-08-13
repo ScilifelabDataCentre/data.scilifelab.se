@@ -6,6 +6,8 @@
 # ---
 ddls
 DDLS
+data-stype
 hugo
+markdownify
 SciLifeLab
 VEED

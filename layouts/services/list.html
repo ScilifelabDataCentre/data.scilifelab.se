@@ -138,7 +138,7 @@
     $(`div.tab-pane.active div.service`).hide();
     $(`div.tab-pane.active div#no-filtered-${target}`).hide();
 
-    // Show relavant services based on selected criteria
+    // Show relevant services based on selected criteria
     if (!Object.keys(selected_filters).length) {
       $("div.tab-pane.active div.service").show();
     } else {
@@ -151,7 +151,7 @@
         });
         all_selected_services.push(s_services);
       };
-      // When multiple criteria selectd it should act as AND not OR
+      // When multiple criteria selected it should act as AND not OR
       selected_services = all_selected_services.reduce(function (x, y) {
         var z = new Set;
         x.forEach(v => y.has(v) && z.add(v));
@@ -166,7 +166,7 @@
       };
     };
 
-    // Bring the tab top to the veiwport if it isn't
+    // Bring the tab top to the viewport if it isn't
     var tab_top = document.querySelector("ul.services-tab-list").getBoundingClientRect().top;
     if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 15); }
   }
