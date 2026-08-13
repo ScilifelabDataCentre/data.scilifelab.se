@@ -1,0 +1,59 @@
+# Configuration file for CSpell
+# CSpell checks this config file too
+# so we may need to use CSpell's ignore functionality in some cases,
+# e.g. before the ignoreRegExpList below.
+---
+# Version of setting file. Always 0.2
+version: "0.2"
+
+# Languages used for spell checking
+# en-gb is British English; sv is Swedish
+# Note: British English may allow some US spellings
+language: en-gb,sv
+
+# Extra dictionaries that are enabled when imported
+# Note: These dictionaries must be installed before import
+# (see .github/workflows/cspell.yml)
+import:
+  - "@cspell/dict-sv/cspell-ext.json"
+  - "@cspell/dict-people-names/cspell-ext.json"
+
+# Spell checking is case-sensitive
+caseSensitive: true
+
+# Additional dictionaries to use during spell checking
+# These do not require installation or import
+# See https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts
+dictionaries:
+  - companies
+  - cpp-compound-words
+  - fonts
+  - forbidden-words
+  - fullstack
+  - k8s
+  - latex
+  - project-specific-words
+  - ruby
+  - sql
+
+# Import project-specific words as a custom dictionary
+dictionaryDefinitions:
+  - name: project-specific-words
+    path: ./project-specific-words.txt
+    addWords: true
+  - name: forbidden-words
+    path: ./forbidden-words.txt
+
+# Patterns to ignore during spell checking
+# cSpell:ignore datacentre
+ignoreRegExpList:
+  - MarkdownLink # Ignore link target, but still check link text
+  - Url # Ignore full URLs, such as https://www.example.com
+  - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
+  - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
+
+# Paths to ignore during spell checking
+ignorePaths:
+  - "**/package.json"
+  - "**/package-lock.json"
+  - "**/node_modules/**"

@@ -1,0 +1,15 @@
+# Forbidden words
+#
+# Add words / terms that should be flagged as incorrect,
+# but are allowed by an enabled dictionary.
+#
+# The examples below are US spellings. British English uses "recognise", "recognised", and "recognises".
+# CSpell is disabled below since it will otherwise fail due to this file
+# One word per line (after disable and before enable)
+# Each line should start with !
+# ---
+# cspell:disable
+!recognize
+!recognized
+!recognizes
+# cspell:enable

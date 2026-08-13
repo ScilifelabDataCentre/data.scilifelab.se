@@ -1,0 +1,30 @@
+# Project-specific words
+#
+# Add terms that are valid for your repository but
+# not covered by CSpell's available dictionaries.
+# One word per line.
+# ---
+Berserkers
+Bitnami
+Bitwarden
+citability
+Codespell
+Distributables
+findability
+jsquery
+Kivy
+logfmt
+mdlint
+MSBFS
+nerdctl
+ORCID
+Pandoc
+pandoc
+Pinga
+prek
+RACI
+RORID
+RRID
+SciLifeLab
+Zenodo
+ZSON
