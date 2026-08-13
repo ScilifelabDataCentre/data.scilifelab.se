@@ -5,7 +5,7 @@ summary: Schaal et al. (2022) found that long-read sequencing was more sensitive
 banner: /highlights/long_read_seq_pipeline.png
 banner_large: /highlights/long_read_seq_pipeline.png
 banner_caption: Figure 5 from Schaal et al. (2022) comparing long-read and Sanger sequencing.
-tags: [Cancer, Long-read sequencing, Chronic myeloid leukemia, Tyrosine kinase inhibitors, Workflow, Pipeline, Drug resistance, Highlight]
+tags: [Cancer, Long-read sequencing, Chronic myeloid leukaemia, Tyrosine kinase inhibitors, Workflow, Pipeline, Drug resistance, Highlight]
 authors: [Katarina Öjefors Stark]
 images: ["/highlights/long_read_seq_pipeline.png"]
 ---

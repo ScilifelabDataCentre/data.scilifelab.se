@@ -31,7 +31,7 @@ _Golnaz Taheri_: My name is Golnaz Taheri and I am currently an Assistant Profes
 (Electrical
 Engineering and Computer Science)/Division of CST (Computational Science and Technology) and a DDLS Fellow at
 SciLifeLab. I work in the field of computational biology, with a focus on applying machine learning to cancer biology
-and drug interaction prediction. My research involves analyzing multi-omics data and developing computational models to
+and drug interaction prediction. My research involves analysing multi-omics data and developing computational models to
 better understand complex biological systems, especially related to female cancers.
 I also work on creating systematic frameworks for predicting drug interactions, aiming to improve the quality of life
 for patients dealing with multiple diseases, especially elderly individuals.
@@ -171,7 +171,7 @@ Singapore amazed me with its modern skyline, beautiful gardens, and impressive m
 contrast in food, nature, and culture made the trip unforgettable. I really enjoyed exploring the local markets, trying
 new foods, and experiencing the different ways of life.
 
-_Gisele Miranda_: I really enjoy traveling and exploring new places, whether it’s a different country or just
+_Gisele Miranda_: I really enjoy travelling and exploring new places, whether it’s a different country or just
 discovering a new part of Stockholm and having some fika! I find a lot of inspiration in
 seeing how people live, eat, and create in different cultures.
 

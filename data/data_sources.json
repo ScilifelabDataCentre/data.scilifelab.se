@@ -2660,7 +2660,7 @@
       "PDC",
       "Proteogenomic Cancer Atlas",
       "Proteomic data",
-      "proteogenomic tumor datasets",
+      "proteogenomic tumour datasets",
       "raw mass spectrometry-based data files",
       "NCI",
       "imaging",
@@ -2670,7 +2670,7 @@
       "precision medicine"
     ],
     "name": "Proteomic Data Commons",
-    "description": "The PDC represents the NCI's largest public repository of comprehensive proteogenomic tumor datasets. It is essentially a Proteogenomic Cancer Atlas.",
+    "description": "The PDC represents the NCI's largest public repository of comprehensive proteogenomic tumour datasets. It is essentially a Proteogenomic Cancer Atlas.",
     "url": "https://proteomic.datacommons.cancer.gov/pdc/",
     "thumbnail": "/img/data_sources_thumbs/PDC.png",
     "data": [
