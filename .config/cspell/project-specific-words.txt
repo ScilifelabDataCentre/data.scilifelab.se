@@ -4,10 +4,12 @@
 # not covered by CSpell's available dictionaries.
 # One word per line.
 # ---
+blobserver
 ddls
 DDLS
 data-stype
 hugo
+imjoy
 markdownify
 SciLifeLab
 VEED
