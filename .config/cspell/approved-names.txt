@@ -5,6 +5,10 @@
 # One name per line.
 # ---
 Andermann
+Akusjärvi
+Bagci
+Banerjea
+Benfeitas
 Dehasque
 Díez
 Dussex
@@ -15,9 +19,12 @@ Hamsaiyni
 Kierczak
 Khoonsari
 Kutschera
+Mirazimi
+Monteil
 Nalina
 Skłodowska
 Sonnhammer
 Tryggers
 Uller
+Vegvari
 Öjefors
