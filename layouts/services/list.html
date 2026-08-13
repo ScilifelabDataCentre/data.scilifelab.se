@@ -8,7 +8,7 @@
 {{ $smain := slice }}
 {{ range sort $services "name" }}
       {{ $stype = $stype | append .type }}
-      {{ $smain = $smain | append (split .maintained_by ", ") }}
+      {{ $smain = $smain | append .owner }}
 {{ end }}
 {{ $stype = $stype | uniq }}
 {{ $smain = $smain | uniq }}
@@ -24,7 +24,7 @@
       </div>
       {{ if ge (len $services) 1 }}
       <div class="mt-3">
-        <h5>Type</h5>
+        <h5>Eligible for accounts</h5>
         {{ range sort $stype }}
         <div class="form-check">   
           <input class="form-check-input" type="checkbox" id="service-type-{{ . | urlize }}" name="type" value="{{ . | urlize }}">
@@ -33,11 +33,11 @@
         {{ end }}
       </div>
       <div class="mt-3">
-        <h5>Maintained by</h5>
+        <h5>Service owner</h5>
         {{ range sort $smain }}
         <div class="form-check">   
-          <input class="form-check-input" type="checkbox" id="service-maintained-by-{{ . | urlize }}" name="maintained_by" value="{{ . | urlize }}">
-          <label class="form-check-label" for="service-maintained-by-{{ . | urlize }}">{{ . }}</label>
+          <input class="form-check-input" type="checkbox" id="service-owned-by-{{ . | urlize }}" name="owned_by" value="{{ . | urlize }}">
+          <label class="form-check-label" for="service-owned-by-{{ . | urlize }}">{{ . }}</label>
         </div>
         {{ end }}
       </div>
@@ -49,7 +49,7 @@
       {{ range sort $services "name" }}
       <div class="col-md-6 col-lg-4 services"
       data-stype='{{ delimit (apply .type "urlize" ".") ":" }}'
-      data-smain='{{ .maintained_by | urlize }}'
+      data-smain='{{ delimit (apply .owner "urlize" ".") ":" }}'
       {{ with .search_tags }}data-search-tags='{{ delimit . ":" | lower }}'{{ end }}>
         <div class="card-teal-25">
           <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
@@ -67,7 +67,7 @@
             <b>Eligible for accounts:</b> {{ delimit (apply .type "strings.FirstUpper" ".") ", " }}
           </div>
           <div class="px-2">
-            <b>Service owner:</b>
+            <b>Maintained by:</b>
             {{ if .maintained_by_url}}
             <a href="{{ .maintained_by_url}}">{{ .maintained_by }}</a>
             {{ else }}
@@ -102,7 +102,7 @@
     var selected_filters = new Object();
     var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value}).get();
     if (selected_type.length){ selected_filters['data-stype'] = selected_type };
-    var selected_maintainer = $("input:checkbox[name=maintained_by]:checked").map(function () {return this.value}).get();
+    var selected_maintainer = $("input:checkbox[name=owner]:checked").map(function () {return this.value}).get();
     if (selected_maintainer.length){ selected_filters['data-smain'] = selected_maintainer };
     var search_text = $("input[type=text]").val();
     if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };

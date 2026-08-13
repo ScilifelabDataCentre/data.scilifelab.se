@@ -1,10 +1,10 @@
 [
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "Swedish affiliation"
+      "Swedish Research Institute Affiliation"
     ],
     "search_tags": [
       "SciLifeLab Serve",
@@ -33,10 +33,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "Pathogens portal",
@@ -50,12 +50,13 @@
     ],
     "name": "Swedish Pathogens Portal",
     "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
-    "thumbnail": "/img/service_thumbnails/scilifelab_green.jpg",
+    "thumbnail": "/img/service_thumbnails/pathogens.png",
+    "thumbnail_border": true,
     "url": "https://pathogens.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "pathogens@scilifelab.se",
-    "support_github": "https://github.com/ScilifelabDataCentre/covid-portal/tree/develop",
+    "support_github": "https://github.com/ScilifelabDataCentre/pathogens-portal/tree/develop",
     "support_status": "https://status.dc.scilifelab.se/793602036",
     "data_source_type": [
       "Data source"
@@ -63,10 +64,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "Swedish affiliation"
+      "Swedish Research Institute Affiliation"
     ],
     "search_tags": [
       "Data submission",
@@ -80,7 +81,7 @@
     ],
     "name": "SciLifeLab Data Repository",
     "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
-    "thumbnail": "/img/service_thumbnails/scilifelab_grape.jpg",
+    "thumbnail": "/img/service_thumbnails/figshare.jpg",
     "url": "https://scilifelab.figshare.com/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
@@ -102,10 +103,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "Swedish affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "SciLifeLab Atlassian Services",
@@ -118,6 +119,7 @@
     "name": "SciLifeLab Atlassian Services",
     "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
     "description": "Access to Jira, Confluence, and Trello is available for those affiliated with SciLifeLab.",
+    "url": "https://www.scilifelab.se/data-ai/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
@@ -125,10 +127,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "Central SciLifeLab Operations"
+      "SciLifeLab Operations"
     ],
     "search_tags": [
       "SciLifeLab Typeform",
@@ -145,10 +147,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "Publications",
@@ -170,10 +172,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "Slack",
@@ -191,10 +193,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "Filesharing",
@@ -212,10 +214,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "Publications",
@@ -237,10 +239,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "Protocols",
@@ -263,10 +265,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [ 
       "GeneSPIDER tutorial",
@@ -294,10 +296,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "Swedish affiliation"
+      "Swedish Research Institute Affiliation"
     ],
     "search_tags": [
       "Swedish Reference Genome Portal",
@@ -329,10 +331,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "AI4Life BioImage Model Zoo", "BioImage Analysis", "AI Models", "Model Zoo", "Open Science", "Data-Driven Life Sciences", "DDLS", "modelling", "Artificial intelligence"
@@ -359,10 +361,10 @@
   },
   {
     "owner": [
-      "data-centre", "nbis"
+      "SciLifeLab Data Centre", "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "RDM",
@@ -376,9 +378,11 @@
     ],
     "name": "SciLifeLab RDM Guidelines",
     "description": "Free consultations and support on all aspects of data management for those working in in Swedish life science research",
-    "thumbnail": "/img/service_thumbnails/scilifelab_grape.jpg",
+    "thumbnail": "/img/service_thumbnails/rdm.jpg",
+    "thumbnail_border": true,
     "url": "https://data-guidelines.scilifelab.se",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "data-management@scilifelab.se",
     "support_website": "https://data-guidelines.scilifelab.se/contact/",
     "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
@@ -386,10 +390,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "Google workspace",
@@ -412,10 +416,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "share files",
@@ -434,10 +438,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "FAIR Storage",
@@ -450,17 +454,17 @@
     "name": "SciLifeLab FAIR storage",
     "description": "Details about how researchers, research groups, and organisations can store their data using SciLifeLab FAIR Storage resources.",
     "url": "/services/fairstorage/",
-    "thumbnail": "/img/service_thumbnails/scilifelab_green.jpg",
+    "thumbnail": "/img/service_thumbnails/fairstorage.jpg",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "FAIRstorage@scilifelab.se"
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "NBIS",
@@ -480,7 +484,8 @@
     "name": "Metabolic Atlas",
     "description": "Metabolic Atlas is a web platform integrating open-source genome scale metabolic models (GEMs) for easy browsing and analysis.",
     "url": "https://metabolicatlas.org/",
-    "thumbnail": "/img/service_thumbnails/scilifelab_grape.jpg",
+    "thumbnail": "/img/service_thumbnails/meta-atlas.png",
+    "thumbnail_border": true,
     "maintained_by": "NBIS",
     "maintained_by_url": "http://www.nbis.se/",
     "support_email": "contact@metabolicatlas.org",
@@ -500,10 +505,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab infrastructure"
+      "SciLifeLab Units"
     ],
     "search_tags": [
       "DDS",
@@ -516,7 +521,7 @@
     ],
     "name": "SciLifeLab Data Delivery System",
     "description": "Cloud-based system for the delivery of data from SciLifeLab units to their users",
-    "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
+    "thumbnail": "/img/service_thumbnails/dds.jpg",
     "url": "https://delivery.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
@@ -526,10 +531,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "Data.scilifelab.se",
@@ -551,10 +556,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab infrastructure"
+      "SciLifeLab Units"
     ],
     "search_tags": [
       "Order Portals",
@@ -576,10 +581,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "SciLifeLab affiliation"
+      "SciLifeLab Affiliation"
     ],
     "search_tags": [
       "Order Portals",
@@ -601,10 +606,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "Anubis",
@@ -627,10 +632,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "NBIS",
@@ -668,10 +673,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "NBIS",
@@ -694,10 +699,10 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "Swedish affiliation"
+      "Swedish Research Institute Affiliation"
     ],
     "search_tags": [
       "NBIS",
@@ -717,7 +722,7 @@
     "name": "AIDA Data Hub",
     "description": "Data Sharing, Policy Support, and Services for researchers in Swedish medical imaging AI.",
     "url": "https://datahub.aida.scilifelab.se/",
-    "thumbnail": "/img/service_thumbnails/scilifelab_teal.jpg",
+    "thumbnail": "/img/service_thumbnails/aida.jpg",
     "maintained_by": "AIDA Data Hub",
     "maintained_by_url": "https://datahub.aida.scilifelab.se/about/",
     "support_email": "aida-data-director@medtech4health.se",
@@ -741,10 +746,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "NBIS",
@@ -779,10 +784,10 @@
   },
   {
     "owner": [
-      "data-centre"
+      "SciLifeLab Data Centre"
     ],
     "type": [
-      "Swedish affiliation"
+      "Swedish Research Institute Affiliation"
     ],
     "search_tags": [
       "DSW",
@@ -806,10 +811,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "SubCellBarCode",
@@ -844,10 +849,10 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "SweFreq",
@@ -860,7 +865,8 @@
     "url": "https://swefreq.nbis.se/",
     "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
     "description": "A website developed to make genomic datasets more findable and accessible",
-    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "http://www.nbis.se/",
     "data_source_type": [
       "Data source"
     ],
@@ -874,10 +880,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "nf-core",
@@ -907,10 +913,10 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "sequencing",
@@ -924,7 +930,8 @@
     ],
     "name": "Cutadapt",
     "description": "Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.",
-    "thumbnail": "/img/service_thumbnails/scilifelab_grape.jpg",
+    "thumbnail": "/img/service_thumbnails/cutadapt-logo.png",
+    "thumbnail_border": true,
     "url": "https://cutadapt.readthedocs.io/",
     "maintained_by": "NBIS",
     "maintained_by_url": "http://www.nbis.se/",
@@ -932,10 +939,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "sequencing",
@@ -956,10 +963,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "clinical",
@@ -984,10 +991,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "Scout",
@@ -1019,10 +1026,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "LoqusDB",
@@ -1054,10 +1061,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "nf-core",
@@ -1087,10 +1094,10 @@
   },
     {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "nf-core",
@@ -1122,10 +1129,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "amplicon-multi-cutadapt",
@@ -1157,10 +1164,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "coidb",
@@ -1190,10 +1197,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "BALSAMIC",
@@ -1224,10 +1231,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "tomte",
@@ -1253,10 +1260,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "preClinVar",
@@ -1286,10 +1293,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "Schug",
@@ -1312,10 +1319,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "clinical",
@@ -1346,10 +1353,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "pipeline",
@@ -1377,10 +1384,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "annotate",
@@ -1403,10 +1410,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "python",
@@ -1433,10 +1440,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "COViMAPP",
@@ -1485,10 +1492,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "OrthoDisease",
@@ -1523,10 +1530,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "Funcoup",
@@ -1553,10 +1560,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "InParanoiDB",
@@ -1589,10 +1596,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "Phobius",
@@ -1616,10 +1623,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "PathBIX",
@@ -1644,10 +1651,10 @@
   },
   {
     "owner": [
-      "community"
+      "SciLifeLab Community"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "pathwax",
@@ -1677,10 +1684,10 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "bioinformatics support",
@@ -1699,10 +1706,10 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "image data",
@@ -1714,10 +1721,10 @@
       "large-scale image analysis",
       "Image data analysis"
     ],
-    "name": "Image data analysis",
+    "name": "Bio- and medical image data analysis",
     "description": "Enables state-of-the-art analyses for image data using computer vision, machine learning, and bioinformatics.",
     "thumbnail": "/img/service_thumbnails/scilifelab_green.jpg",
-    "url": "https://nbis.se/services/bioinformatics",
+    "url": "https://nbis.se/services/bioimage-informatics",
     "maintained_by": "NBIS",
     "maintained_by_url": "https://nbis.se",
     "support_website": "https://nbis.se/contact",
@@ -1725,10 +1732,10 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "web applications",
@@ -1742,7 +1749,7 @@
     "name": "Software development",
     "description": "NBIS produces and maintains easy-to-use bioinformatics tools to investigate research results.",
     "thumbnail": "/img/service_thumbnails/scilifelab_grape.jpg",
-    "url": "https://nbis.se/services/bioinformatics",
+    "url": "https://nbis.se/services/software-development",
     "maintained_by": "NBIS",
     "maintained_by_url": "https://nbis.se",
     "support_website": "https://nbis.se/contact",
@@ -1750,10 +1757,35 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
+    ],
+    "search_tags": [
+      "helpdesk",
+      "RDM",
+      "data management",
+      "DMP",
+      "Data Submission",
+      "Submission",
+      "repository"
+    ],
+    "name": "Data submission support",
+    "description": "Data stewards can provide support for submitting data to the relevant research repository.",
+    "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
+    "url": "https://nbis.se/services/data-submission-support/apply",
+    "maintained_by": "NBIS",
+    "maintained_by_url": "https://nbis.se",
+    "support_website": "https://nbis.se/contact",
+    "support_email": "info@nbis.se"
+  },
+  {
+    "owner": [
+      "NBIS"
+    ],
+    "type": [
+      "Everyone"
     ],
     "search_tags": [
       "helpdesk",
@@ -1765,10 +1797,10 @@
       "storage solution",
       "human data"
     ],
-    "name": "Data Management helpdesk",
+    "name": "Data management support",
     "description": "Data stewards can provide guidance on multiple elements of data management, e.g. Data Management Plans.",
     "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
-    "url": "https://nbis.se/services/bioinformatics",
+    "url": "https://nbis.se/services/data-management-support/apply",
     "maintained_by": "NBIS",
     "maintained_by_url": "https://nbis.se",
     "support_website": "https://nbis.se/contact",
@@ -1776,10 +1808,10 @@
   },
   {
     "owner": [
-      "nbis"
+      "NBIS"
     ],
     "type": [
-      "No restrictions"
+      "Everyone"
     ],
     "search_tags": [
       "biomedical research",
@@ -1795,11 +1827,52 @@
     ],
     "name": "FEGA Sweden",
     "description": "Enables sensitive data from Swedish omics research in a responsible, safe, and legally compliant way.",
-    "thumbnail": "/img/service_thumbnails/scilifelab_teal.jpg",
-    "url": "https://nbis.se/services/bioinformatics",
+    "thumbnail": "/img/service_thumbnails/fega-sweden.png",
+    "thumbnail_border": true,
+    "url": "https://fega.nbis.se",
     "maintained_by": "NBIS",
     "maintained_by_url": "https://nbis.se",
     "support_website": "https://nbis.se/contact",
     "support_email": "info@nbis.se"
+  },
+  {
+    "owner": [
+      "SciLifeLab Data Centre"
+    ],
+    "type": [
+      "Everyone"
+    ],
+    "search_tags": [
+      "Precision Medicine Portal",
+      "Precision Medicine",
+      "KIARVA",
+      "Karolinska Institutet Adaptive Immune Receptor Gene Variant Atlas",
+      "Atlas",
+      "Data visualisation",
+      "Data sharing",
+      "Data management",
+      "quality registries",
+      "registries",
+      "immunology",
+      "portal",
+      "Tool",
+      "SciLifeLab",
+      "Data Centre"
+    ],
+    "name": "SciLifeLab Precision Medicine Portal",
+    "description": "Links to multiple data sources, including quality registers and KIARVA (an open-source immunology database).",
+    "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
+    "url": "https://precision-medicine-portal.scilifelab.se/",
+    "maintained_by": "SciLifeLab Data Centre",
+    "maintained_by_url": "https://scilifelab.se/data",
+    "support_email": "precisionmedicine@scilifelab.se",
+    "support_github": "https://github.com/ScilifelabDataCentre/precision-medicine-portal-frontend",
+    "support_status": "https://status.dc.scilifelab.se/800572728",
+    "data_source_type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection"
+    ]
   }
 ]
