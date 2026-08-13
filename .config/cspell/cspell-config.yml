@@ -59,4 +59,5 @@ useGitignore: true
 ignorePaths:
   - "**/package.json"
   - "**/package-lock.json"
+  - "**/static/browserconfig.xml"
  

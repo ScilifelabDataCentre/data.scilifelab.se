@@ -4,4 +4,6 @@
 # not covered by CSpell's available dictionaries.
 # One word per line.
 # ---
+ddls
+DDLS
 SciLifeLab
