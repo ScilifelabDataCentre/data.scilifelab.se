@@ -119,7 +119,7 @@
     "name": "SciLifeLab Atlassian Services",
     "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
     "description": "Access to Jira, Confluence, and Trello is available for those affiliated with SciLifeLab.",
-    "url": "https://www.scilifelab.se/data-ai/",
+    "url": "https://scilifelab.atlassian.net/",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
@@ -140,7 +140,8 @@
     ],
     "name": "SciLifeLab Typeform",
     "thumbnail": "/img/service_thumbnails/scilifelab_teal.jpg",
-    "description": "Access to Typeform is available for those affiliated with SciLifeLab.",
+    "url": "mailto:datacentre@scilifelab.se?subject=Request%20access%20to%20SciLifeLab%20Typeform",
+    "description": "Contact Data Centre to create dynamic forms with Typeform.",
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se"
@@ -187,6 +188,7 @@
     "description": "Access to Slack to enable collaboration and communication.",
     "maintained_by": "SciLifeLab Data Centre",
     "thumbnail": "/img/service_thumbnails/scilifelab_green.jpg",
+    "url": "https://scilifelab.slack.com/",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/93ae57afd935431e8d06f1a8049ad93b"
@@ -208,6 +210,7 @@
     "thumbnail": "/img/service_thumbnails/scilifelab_grape.jpg",
     "description": "A cloud-based file sharing and storage service.",
     "maintained_by": "SciLifeLab Data Centre",
+    "url": "https://scilifelab.drive.sunet.se/",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/d4402d5a18c847a39f48d4ee45c898f3"
@@ -407,8 +410,9 @@
       "@scilifelab.se"
   ],
     "name": "SciLifeLab Google Workspace",
-    "description": "Access to the Google workspace (including @scilifelab.se email addresses) for those affiliated with SciLifeLab.",
+    "description": "Contact Data Centre for access to SciLifeLab Google Workspace (including aquiring a @scilifelab.se email addresses).",
     "maintained_by": "SciLifeLab Data Centre",
+    "url": "mailto:datacentre@scilifelab.se?subject=Request%20acces%20to%20SciLifeLab%20Google%20Workspace",
     "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
@@ -429,8 +433,9 @@
   ],
     "name": "SciLifeLab Nextcloud",
     "thumbnail": "/img/service_thumbnails/scilifelab_teal.jpg",
-    "description": "Access to Nextcloud which enables real-time document editing and file sharing.",
+    "description": "Nextcloud enables real-time document editing and file sharing.",
     "maintained_by": "SciLifeLab Data Centre",
+    "url": "https://nextcloud.dc.scilifelab.se/",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793601941",
@@ -1782,7 +1787,7 @@
   },
   {
     "owner": [
-      "NBIS"
+      "NBIS", "SciLifeLab Data Centre"
     ],
     "type": [
       "Everyone"
@@ -1800,11 +1805,11 @@
     "name": "Data management support",
     "description": "Data stewards can provide guidance on multiple elements of data management, e.g. Data Management Plans.",
     "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
-    "url": "https://nbis.se/services/data-management-support/apply",
-    "maintained_by": "NBIS",
-    "maintained_by_url": "https://nbis.se",
-    "support_website": "https://nbis.se/contact",
-    "support_email": "info@nbis.se"
+    "url": "mailto:data-management@scilifelab.se?subject=Request%20for%20data%20management%20support",
+    "maintained_by": "NBIS, SciLifeLab Data Centre",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "data-management@scilifelab.se",
+    "support_website": "https://data-guidelines.scilifelab.se/contact/"
   },
   {
     "owner": [

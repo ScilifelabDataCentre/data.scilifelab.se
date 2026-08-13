@@ -7,7 +7,7 @@
       {{ with .Site.GetPage "section" "services" }}
       <div class="row mb-2">
         <div class="col">
-          <h3><a class="title-link" href="{{ .RelPermalink }}">Data Centre Services</a></h3>
+          <h3><a class="title-link" href="{{ .RelPermalink }}">SciLifeLab Data Services</a></h3>
         </div>
         <div class="col mt-2 fs-6 text-end">
           <a href="{{ .RelPermalink }}">See all services <i class="bi bi-arrow-right-square-fill"></i></a>
@@ -15,16 +15,15 @@
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
         {{ range first 3 .Site.Data.services }}
-        {{ if in .owner "data-centre" }}
         <div class="col">
           <div class="card-teal-25">
             <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
-              <a owner="_self" href="{{ .url }}"><img class="img-fluid"
+              <a target="_self" href="{{ .url }}"><img class="img-fluid"
                   src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
                   alt="{{ .name }}"></a>
             </div>
             <div class="p-2 card-teal-title">
-              <b><a owner="_self" href="{{ .url }}">{{ .name }}</a></b>
+              <b><a target="_self" href="{{ .url }}">{{ .name }}</a></b>
             </div>
             <div class="p-2">
               {{ .description }}
@@ -32,11 +31,11 @@
           </div>
         </div>
         {{ end }}
-        {{ end }}
       </div>
       {{ end }}
 
-      <!-- Services list -->
+
+      <!-- Services list
       {{ with .Site.GetPage "section" "services" }}
       <div class="row mb-2">
         <div class="col">
@@ -67,7 +66,7 @@
         {{ end }}
         {{ end }}
       </div>
-      {{ end }}
+      {{ end }} -->
 
 
       <!-- guidance list -->
@@ -148,7 +147,7 @@
       </section>
 
       <!-- DC box -->
-      <div class="dc-box rounded mb-4">
+      <div class="support rounded">
         <h4>New to SciLifeLab?</h4>
         <p>
           SciLifeLab Data Centre has produced guidance to help to get you started with using their services.
@@ -157,7 +156,7 @@
             <i class="bi bi-arrow-right-circle-fill"></i></a></h6>
       </div>
 
-      <!-- Get featured box -->
+      <!-- Get featured box
       <div class="support rounded">
         <h4>Get your work featured!</h4>
         <p>The platform offers hosting for services, and promotes resources and work relevant to data-driven life
@@ -165,7 +164,7 @@
           us about adding content relevant to you!</p>
         <h6><a style="color:white;" href="/contact/">Click here to get in touch
             <i class="bi bi-arrow-right-circle-fill"></i></a></h6>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -304,7 +303,7 @@
                         ${ind < (eventList.length - 1) ? '<div class="px-4 py-1"><hr class="my-2"></div>' : ''}`;
         }); // for each events iteration to create html ends here
       } else {
-        eventsHTML += `<div class="px-3 py-2">No upcoming Data Centre events</div>`;
+        eventsHTML += `<div class="px-3 py-2">No upcoming relevant events</div>`;
       }
       eventsHTML += `</div>
                   </div>`;

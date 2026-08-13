@@ -102,9 +102,9 @@
     var selected_filters = new Object();
     var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value}).get();
     if (selected_type.length){ selected_filters['data-stype'] = selected_type };
-    var selected_maintainer = $("input:checkbox[name=owner]:checked").map(function () {return this.value}).get();
+    var selected_maintainer = $("input:checkbox[name=owned_by]:checked").map(function () {return this.value}).get();
     if (selected_maintainer.length){ selected_filters['data-smain'] = selected_maintainer };
-    var search_text = $("input[type=text]").val();
+    var search_text = $("input[type=text]").val().toLowerCase();
     if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
 
     // Hide all services before filtering
