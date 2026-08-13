@@ -1,0 +1,23 @@
+# Names mentioned in this repository that are flagged by CSpell but should be allowed
+#
+# Add names that are valid for your repository but
+# not covered by CSpell's available dictionaries.
+# One name per line.
+# ---
+Andermann
+Dehasque
+Díez
+Dussex
+Emami
+Garbulowski
+Guala
+Hamsaiyni
+Kierczak
+Khoonsari
+Kutschera
+Nalina
+Skłodowska
+Sonnhammer
+Tryggers
+Uller
+Öjefors
