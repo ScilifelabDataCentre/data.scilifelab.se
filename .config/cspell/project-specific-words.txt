@@ -6,5 +6,6 @@
 # ---
 ddls
 DDLS
+hugo
 SciLifeLab
 VEED
