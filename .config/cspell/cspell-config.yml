@@ -61,4 +61,5 @@ ignorePaths:
   - "**/package.json"
   - "**/package-lock.json"
   - "**/static/browserconfig.xml"
+  - "pnpm-lock.yaml"
  
