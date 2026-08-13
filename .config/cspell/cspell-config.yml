@@ -25,29 +25,54 @@ caseSensitive: true
 # These do not require installation or import
 # See https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts
 dictionaries:
+  - approved-names
   # - companies
-  # - cpp-compound-words
+  - cpp-compound-words
   # - fonts
-  - css
-  - docker
+  # - css
+  # - docker
   - forbidden-words
   # - fullstack
-  - html
+  # - html
   # - k8s
   # - latex
   - project-specific-words
   - python
+  - python-common
   # - ruby
   # - sql
-  - typescript
+  # - software-tools
+  # - typescript
 
 # Import project-specific words as a custom dictionary
 dictionaryDefinitions:
   - name: project-specific-words
     path: ./project-specific-words.txt
     addWords: true
+  - name: approved-names
+    path: ./approved-names.txt
+    addWords: true
   - name: forbidden-words
     path: ./forbidden-words.txt
+
+# Language settings for specific file types
+languageSettings:
+  - languageId: html,xml
+    dictionaries:
+      - html
+
+  - languageId: css,scss
+    dictionaries:
+      - css
+
+  - languageId: javascript,javascriptreact
+    dictionaries:
+      - typescript
+
+  - languageId: dockerfile
+    caseSensitive: false
+    dictionaries:
+      - docker
 
 # Patterns to ignore during spell checking
 # cSpell:ignore datacentre

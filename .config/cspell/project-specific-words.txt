@@ -4,12 +4,22 @@
 # not covered by CSpell's available dictionaries.
 # One word per line.
 # ---
+azacytidine
 blobserver
+bisulphite
 ddls
 DDLS
 data-stype
+figshare
+Figshare
+fundings
 hugo
 imjoy
 markdownify
+metabolics
+Palaeogenetics
+NBIS
 SciLifeLab
+Snakemake
 VEED
+Zenodo
