@@ -84,6 +84,7 @@ ignoreRegExpList:
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
   - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
   - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
+  - '/"url"\s*:\s*"[^"]*"/g'
   # - '/(?<=\/)arnold(?=\/)/gi'
   # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
   # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
@@ -121,10 +122,10 @@ overrides:
     words:
       - univ
   
-  - filename: "**/data/services.json"
+  - filename: "**/data/**/*.json"
     ignoreRegExpList:
       # 'Ignore' these fields completely.
-      - '/"(?:url|maintained_by_url|support_email|thumbnail)"\s*:\s*"[^"]*"/g'
+      - '/"(?:maintained_by_url|support_email|thumbnail)"\s*:\s*"[^"]*"/g'
 
       # Allow these words only inside search_tags.
       - '/(?<="search_tags"\s*:\s*\[[^\]]*)\b(?:metatlas|rnafusion|raredisease|cutadapt|SBDI|gbif|GBIF|snakemake|fastq|FASTQ|coidb|sweden|clinvar|ClinVar|ensembl|Ensembl|chanjo2|sarek|multiqc|bioconda|metaanalysis|Olink|OMIM|pathwax|funcoup|BinoX)\b/g'
@@ -132,7 +133,6 @@ overrides:
       # Allow complete nf-core identifiers in names and descriptions.
       - '/\bnf-core\/[A-Za-z0-9][A-Za-z0-9._-]*/g'
       
-  - filename: "**/data/open_science/initiatives.json"
-    ignoreRegExpList:
-      - '/"url"\s*:\s*"[^"]*"/g'
-      
+  # - filename: "**/data/open_science/initiatives.json"
+  #   ignoreRegExpList:
+  #     - '/"url"\s*:\s*"[^"]*"/g'

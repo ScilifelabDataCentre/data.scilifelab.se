@@ -11,6 +11,7 @@ bcl2fastq
 bisulphite
 bioimaging
 blobserver
+BOSC
 CCHF
 Chanjo
 Cutadapt
@@ -31,6 +32,7 @@ GBIF
 germline
 HDCA
 hugo
+IFLA
 imjoy
 inparalogs
 InParanoiDB
@@ -41,6 +43,7 @@ LoqusDB
 markdownify
 metabolics
 NAISS
+OSMI
 Palaeogenetics
 PathwAX
 Phobius
@@ -48,11 +51,16 @@ PNAS
 metabarcoding
 NBIS
 omics
+ORCID
 ortholog
 orthologs
+Palaestra
 replisome
 replisomes
+RRID
+RRIDs
 Sambamba
+SBDI
 SciLifeLab
 Seqera
 Snakemake
