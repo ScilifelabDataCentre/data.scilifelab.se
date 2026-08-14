@@ -83,7 +83,7 @@ ignoreRegExpList:
   - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
   - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
-  - '/decodeURIComponent\(\s*"[^"]*"\s*\)/g' # Ignore decodeURIComponent() calls
+  - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
   # - '/(?<=\/)arnold(?=\/)/gi'
   # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
   # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
@@ -106,6 +106,7 @@ ignorePaths:
   - "**/package-lock.json"
   - "**/static/browserconfig.xml"
   - "**/pnpm-lock.yaml"
+  - "**/layouts/guidance/data_source.html"
  
 overrides:
   - filename: "**/CITATION.cff"

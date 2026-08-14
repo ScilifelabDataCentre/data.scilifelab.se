@@ -18,7 +18,7 @@
 </section>
 
 <script>
-  // Fetch events from URL and return relavant data
+  // Fetch events from URL and return relevant data
   async function getEventsData(url) {
     try {
       // Fetch jobs directly from SciLifeLab WordPress API
@@ -248,7 +248,7 @@
       $events.hide();
       $noFilteredEvents.hide();
 
-      // Show relavant jobs based on selected criteria
+      // Show relevant jobs based on selected criteria
       if (!checkLocations.length && !checkTypes.length) {
         $events.show();
       } else {
@@ -277,7 +277,7 @@
         }
       };
 
-      // Bring the events section top to the veiwport if it isn't
+      // Bring the events section top to the viewport if it isn't
       var tab_top = document.querySelector("section#events-section").getBoundingClientRect().top;
       if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 60); }
     }); // Checkbox "on change" trigger ends here
