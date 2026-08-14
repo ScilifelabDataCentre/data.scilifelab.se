@@ -213,26 +213,22 @@
     } // function "addEvents" ends here
 
     // Call the function to display SLL events
-    // cspell:disable
     getDataFromUrl(
       decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fddls_events.json"),
       addEvents,
       "sll-events-section" // "div id" in open_science/activities page
     );
-    // cspell:enable
  
     // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing
     // let local_events = '{{ .Site.Data.open_science.events | jsonify }}';
     // addEvents(JSON.parse(local_events), "other-events-section");
 
     // Call the function to display other events
-    // cspell:disable
     getDataFromUrl(
       decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Frefs%2Fheads%2Fdevelop%2Fdata%2Fopen_science%2Fevents.json"),
       addEvents,
       "other-events-section" // "div id" in open_science/activities page
     );
-    // cspell:enable
-    
+
   }); // Document "DOMContentLoaded" trigger ends here
 </script>
