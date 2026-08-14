@@ -82,18 +82,19 @@ ignoreRegExpList:
   - Url # Ignore full URLs, such as https://www.example.com
   - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
-  - '/(?<=\/)arnold(?=\/)/gi'
+  - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
+  # - '/(?<=\/)arnold(?=\/)/gi'
   # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
   # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
   # - '/\b(?:[a-z0-9-]+\.)*scilifelab\.se\b/gi'
   # - '/\$[A-Za-z_][A-Za-z0-9_]*/g' # Hugo template variables
-  - '/{{[\s\S]*?}}/g'  # Hugo template actions
-  - '/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi' # Entire script elements
+  # - '/{{[\s\S]*?}}/g'  # Hugo template actions
+  # - '/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi' # Entire script elements
   # - '/"(?:thumbnail|url)"\s*:\s*"[^"]*"/g'
   # - '/^\s*"metatlas",?\s*$/gm'
-  - '/"(?:thumbnail|url|maintained_by_url|support_github|support_website)"\s*:\s*"[^"]*"/g'
-  - '/\bnf-core\/[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?/g'
-  - '/"search_tags"\s*:\s*\[[\s\S]*?\]/g'
+  # - '/"(?:thumbnail|url|maintained_by_url|support_github|support_website)"\s*:\s*"[^"]*"/g'
+  # - '/\bnf-core\/[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?/g'
+  # - '/"search_tags"\s*:\s*\[[\s\S]*?\]/g'
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true
@@ -113,3 +114,7 @@ overrides:
   - filename: "**/config.yaml"
     words:
       - goldmark
+
+  - filename: "**/layouts/jobs/list.html"
+    words:
+      - univ
