@@ -86,7 +86,7 @@ After going to the portal, the first step is to register as a new user by select
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/SUPR_login.png" class="figure-img img-fluid img-adaptive"
        alt="Swedish User and Project Repository website screenshot">
-  <figcaption class="figure-caption">A screenshot fron the SUPR login page.</figcaption>
+  <figcaption class="figure-caption">A screenshot from the SUPR login page.</figcaption>
 </figure>
 
 After registering, you have to apply for a project. To do this, select 'Rounds', then 'Compute Rounds', and then choose an the option most applicable to you e.g. 'NAISS Small Compute'. Most projects in the life sciences field use Rackham as compute resource, and so we recommend it. However, other compute resources may be more suitable for your use. If your data include sensitive data (e.g. human genetic data), your choice of compute resource must cater for such data, e.g. 'NAISS SENS', which includes the compute resource Bianca.

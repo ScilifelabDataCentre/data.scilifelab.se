@@ -38,7 +38,7 @@ This work involves multiple researchers affiliated with SciLifeLab, including a 
 The **GenErode** pipeline was written in Snakemake and Python3. It uses Conda and Singularity containers to achieve reproducibility on high-performance compute clusters. It is possible to run the pipeline on Linux systems, such as high-performance computing (HPC) clusters.
 
 - In adherence with Open Science, the researchers have made the source code freely available on [GitHub](https://github.com/NBISweden/GenErode).
-- The Sumatran rhinoceros test dataset is available in the [Scilifelab Data Repository](https://doi.org/10.17044/scilifelab.19248172), and it can be used to test the GenErode pipeline.
+- The Sumatran rhinoceros test dataset is available in the [SciLifeLab Data Repository](https://doi.org/10.17044/scilifelab.19248172), and it can be used to test the GenErode pipeline.
 
 #### Article
 

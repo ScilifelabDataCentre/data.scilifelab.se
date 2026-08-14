@@ -491,7 +491,7 @@
     ],
     "search_tags": [
       "ELIXIR Core Data Resource",
-      "Interpro",
+      "InterPro",
       "functional protein sequences",
       "protein",
       "sequences",
@@ -2597,7 +2597,7 @@
       "infectious",
       "ELIXIR Core Data Resource"
     ],
-    "name": "Uniprot",
+    "name": "UniProt",
     "description": "A comprehensive resource for protein sequence and annotation data. UniProt is a collaboration between EMBL-EBI, the Swiss Institute of Bioinformatics (SIB), and the Protein Information Resource (PIR).",
     "url": "https://www.uniprot.org/",
     "thumbnail": "/img/data_sources_thumbs/UniProt.png",

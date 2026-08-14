@@ -39,4 +39,4 @@ The updated versions of InParanoid-DIAMOND and Domainoid used to obtain the data
 
 
 #### Infrastructure
-The Department of Biochemistry and Biophysics, Stockholm University and Science for Life Laboratory (Scilifelab) were used for parts of this study.
+The Department of Biochemistry and Biophysics, Stockholm University and Science for Life Laboratory (SciLifeLab) were used for parts of this study.

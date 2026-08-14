@@ -59,7 +59,7 @@ In order to make an application, users must first register as a new user by sele
  <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/SUPR_login.png" class="figure-img img-fluid img-adaptive"
        alt="Swedish User and Project Repository website screenshot">
-  <figcaption class="figure-caption">A screenshot fron the SUPR login page.</figcaption>
+  <figcaption class="figure-caption">A screenshot from the SUPR login page.</figcaption>
 </figure>
 
 After registering, you have to apply for a project. To do this, select 'Rounds', then 'Storage Rounds', and then choose an option most applicable to you.
