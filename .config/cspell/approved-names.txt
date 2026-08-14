@@ -5,6 +5,7 @@
 # One name per line.
 # ---
 Andermann
+Anway
 Akusjärvi
 Altınışık
 Ariño

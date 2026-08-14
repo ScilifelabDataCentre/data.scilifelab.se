@@ -46,7 +46,7 @@ In summary, Dahl, Kotliar, and Bendes _et al._ provide important insights into G
 
 DOI: [10.1126/sciadv.adf9297](https://doi.org/10.1126/sciadv.adf9297)
 
-Dahl, L., Kotliar, I.B., Bendes, A., Dodig-Crnković, T., Fromm, S., Elofsson, A., Uhlén, M., Sakmar, T.P., Schwenk, J.M. (2023). Multiplexed selectivity screening of anti-GPCR antibodies. In: Sciene Advances (Vol. 9, Issue 18, eadf9297).
+Dahl, L., Kotliar, I.B., Bendes, A., Dodig-Crnković, T., Fromm, S., Elofsson, A., Uhlén, M., Sakmar, T.P., Schwenk, J.M. (2023). Multiplexed selectivity screening of anti-GPCR antibodies. In: Science Advances (Vol. 9, Issue 18, eadf9297).
 
 #### Funding
 

@@ -850,7 +850,7 @@
       "load frequency database",
       "gene",
       "genes",
-      "gene pannels",
+      "gene panels",
       "VCF files",
       "variant call format",
       "rare disease",
@@ -1275,8 +1275,7 @@
       "quality-control",
       "reporting",
       "data-visualization",
-      "vizualisation",
-      "visualization"
+      "visualisation",
     ],
     "name": "MultiQC",
     "description": "Aggregate results from bioinformatics analyses across many samples into a single report.",

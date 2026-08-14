@@ -44,9 +44,9 @@
       ""
     ],
     "name": "SRC (VR) Guiding Principles",
-    "description": "The Swedish Research Council's (Vetenskaprådet) strategy and recommendations for open and FAIR research practices", 
+    "description": "The Swedish Research Council's (Vetenskapsrådet) strategy and recommendations for open and FAIR research practices", 
     "thumbnail": "/img/open_science/resources/vetenskapsradet.png",
-    "affiliation": "Swedish Research Council (Vetenskaprådet)",
+    "affiliation": "Swedish Research Council (Vetenskapsrådet)",
     "affiliation_url": "https://www.vr.se/",
     "url": "https://www.vr.se/english/mandates/open-science/open-access-to-research-data/recommendations-for-fair-och-open-research-data.html",
     "thumbnail_border": "p-1"

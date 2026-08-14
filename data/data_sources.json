@@ -467,7 +467,7 @@
       "taxonomic assignments",
       "functional annotations",
       "metabarcoding",
-      "metatranscriptiomic",
+      "metatranscriptomic",
       "metagenomic datasets",
       "microbiome data"
     ],
@@ -1976,7 +1976,7 @@
       "assays"
     ],
     "name": "European Chemical Biology Database",
-    "description": "The central hub for data generated within the EU-OPENSCREEN network. The network collaborates with external users to develop novel molecular tool compounds and early therapeautic candidate molecules.",
+    "description": "The central hub for data generated within the EU-OPENSCREEN network. The network collaborates with external users to develop novel molecular tool compounds and early therapeutic candidate molecules.",
     "url": "https://ecbd.eu/",
     "thumbnail": "/img/data_sources_thumbs/ecdb.png",
     "data": [
@@ -2315,7 +2315,7 @@
       "COVID-19",
       "influenza",
       "Public Health Agency Sweden",
-      "Folkhälasomyndigheten",
+      "Folkhälsomyndigheten",
       "FoHM",
       "epidemiology",
       "registry data"

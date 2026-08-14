@@ -74,7 +74,7 @@ The team has openly shared images ≈75,000 confocal images of SARS-CoV2 infecte
 
 ##### Explore the images
 
-Below, you can explore the immunofluorescence images using the [Vizarr](https://github.com/hms-dbmi/vizarr) image viewer which allows instant visulization of large image dataset. It is powered by [ImJoy](https://imjoy.io).
+Below, you can explore the immunofluorescence images using the [Vizarr](https://github.com/hms-dbmi/vizarr) image viewer which allows instant visualisation of large image dataset. It is powered by [ImJoy](https://imjoy.io).
 
 Select a plate to view using the dropdown below. You can see the HPA ID of the antibody used and protein or gene name on the top left corner of the window. Scroll images using the slider just below or the three dots to the right of antibody ID to type a particular image number. Further down, you can adjust viewing options including changing contrast of each image channel.
 
