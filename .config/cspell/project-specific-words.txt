@@ -21,6 +21,8 @@ ddls
 DDLS
 data-stype
 exome
+EOSC
+FAIRSFAIR
 FASTQ
 figshare
 Figshare
@@ -55,6 +57,7 @@ SciLifeLab
 Seqera
 Snakemake
 SNIC
+SUHF
 SUPR
 TissUUmaps
 transgenerational

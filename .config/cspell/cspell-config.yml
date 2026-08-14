@@ -132,3 +132,7 @@ overrides:
       # Allow complete nf-core identifiers in names and descriptions.
       - '/\bnf-core\/[A-Za-z0-9][A-Za-z0-9._-]*/g'
       
+  - filename: "**/data/open_science/initiatives.json"
+    ignoreRegExpList:
+      - '/"url"\s*:\s*"[^"]*"/g'
+      
