@@ -46,6 +46,7 @@ InParanoiDB
 kcat
 KIARVA
 LIFES
+lipidomics
 LoqusDB
 markdownify
 metabolics
