@@ -5,8 +5,9 @@
 # One word per line.
 # ---
 azacytidine
-blobserver
 bisulphite
+bioimaging
+blobserver
 CCHF
 daphnia
 Daphnia
@@ -14,18 +15,27 @@ DARS
 ddls
 DDLS
 data-stype
+exome
+FASTQ
 figshare
 Figshare
 fundings
+germline
 hugo
 imjoy
+inparalogs
+kcat
 LIFES
 markdownify
 metabolics
 NAISS
 Palaeogenetics
 PNAS
+metabarcoding
 NBIS
+omics
+ortholog
+orthologs
 replisome
 replisomes
 SciLifeLab
