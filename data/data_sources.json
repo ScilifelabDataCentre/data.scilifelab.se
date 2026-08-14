@@ -2011,7 +2011,7 @@
       "genomics",
       "ELIXIR Core Data Resource"
     ],
-    "name": "REACTOME",
+    "name": "Reactome",
     "description": "A graphical map of known biological processes and pathways. Provides tools to visualise, interpret, and analyse pathways to support research. Used for genome analysis, modelling, and systems biology.",
     "url": "https://reactome.org/",
     "data": [
@@ -2220,7 +2220,7 @@
       "cryogenic-EM maps",
       "cryo electron microscopy",
       "imaging data",
-      "cryoelectron microscopy"
+      "cryo-electron microscopy"
     ],
     "name": "Electron Microscopy Public Image Archive",
     "description": "A public resource for raw electron microscopy images. Includes images underpinning 3D cryo-EM maps and tomograms, as well as 3D datasets generated using volume EM techniques and X-ray tomography.",
