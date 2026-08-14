@@ -4,11 +4,16 @@
 # not covered by CSpell's available dictionaries.
 # One word per line.
 # ---
+Amplicon-multi-cutadapt
+ANUBIX
 azacytidine
+bcl2fastq
 bisulphite
 bioimaging
 blobserver
 CCHF
+Chanjo
+Cutadapt
 daphnia
 Daphnia
 DARS
@@ -20,16 +25,23 @@ FASTQ
 figshare
 Figshare
 fundings
+GBIF
 germline
+HDCA
 hugo
 imjoy
 inparalogs
+InParanoiDB
 kcat
+KIARVA
 LIFES
+LoqusDB
 markdownify
 metabolics
 NAISS
 Palaeogenetics
+PathwAX
+Phobius
 PNAS
 metabarcoding
 NBIS
@@ -38,9 +50,13 @@ ortholog
 orthologs
 replisome
 replisomes
+Sambamba
 SciLifeLab
+Seqera
 Snakemake
 SNIC
+SUPR
+TissUUmaps
 transgenerational
 UPPMAX
 VEED

@@ -88,6 +88,11 @@ ignoreRegExpList:
   # - '/\$[A-Za-z_][A-Za-z0-9_]*/g' # Hugo template variables
   - '/{{[\s\S]*?}}/g'  # Hugo template actions
   - '/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi' # Entire script elements
+  # - '/"(?:thumbnail|url)"\s*:\s*"[^"]*"/g'
+  # - '/^\s*"metatlas",?\s*$/gm'
+  - '/"(?:thumbnail|url|maintained_by_url|support_github|support_website)"\s*:\s*"[^"]*"/g'
+  - '/\bnf-core\/[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?/g'
+  - '/"search_tags"\s*:\s*\[[\s\S]*?\]/g'
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true
@@ -99,3 +104,7 @@ ignorePaths:
   - "**/static/browserconfig.xml"
   - "**/pnpm-lock.yaml"
  
+overrides:
+  - filename: "**/CITATION.cff"
+    words: 
+      - orcid
