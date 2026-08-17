@@ -70,7 +70,9 @@ GPCRs
 GWAS
 HDCA
 heterodimeric
+heteroresistance
 heterotrimeric
+hominins
 hugo
 IFLA
 IGHV
@@ -89,6 +91,7 @@ LIFES
 lipidomics
 LNDS
 LoqusDB
+LUMI
 Mahwash
 markdownify
 melanocortin
@@ -102,6 +105,7 @@ OSMI
 palaeobiology
 palaeoclimate
 Palaeogenetics
+palaeogenetics
 Paleovegetation
 palaeovegetation
 PathwAX
@@ -129,6 +133,7 @@ ortholog
 orthologs
 Palaestra
 pharmacoproteomic
+PRACE
 Proteogenomic
 proteogenomic
 ProteomeXchange
@@ -154,6 +159,8 @@ subtomogram
 subtomograms
 SUHF
 SUPR
+Swestore
+Tetralith
 TissUUmaps
 tomograms
 Tracheophyta

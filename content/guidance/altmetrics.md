@@ -82,7 +82,7 @@ Materials from several other resources and guides were used to compile this reso
 
 - **Societal impact:** Alternative metrics enable researchers to understand how their research is spread in society, and how it might be used outside of academia. This includes interest and use by the general public, government, policymakers, and industry.
 
-- **Reporting:** Alternative metrics are being included in the reporting by institutions/organisations (e.g. SciLifelab). For institutions/organisations, it can be important to show that their research is being rapidly disseminated in society. For example, to show that they are making a difference in emerging or relatively slow-growing areas of research.
+- **Reporting:** Alternative metrics are being included in the reporting by institutions/organisations (e.g. SciLifeLab). For institutions/organisations, it can be important to show that their research is being rapidly disseminated in society. For example, to show that they are making a difference in emerging or relatively slow-growing areas of research.
   <br><br>
 
 ### Points to be aware of when using altmetric data

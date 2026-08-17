@@ -256,4 +256,9 @@ overrides:
     words:
       - EGAC
       - EGAS
-      - 
+  
+  - filename: 
+      - "**/content/guidance/altmetrics.md"
+      - "**/data/guidance.json"
+    words: 
+      - Impactstory
