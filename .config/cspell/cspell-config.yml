@@ -88,7 +88,9 @@ ignoreRegExpList:
   - '/images: \[.*\]/g'
   - '/thumbnail: \".*\"/g'
   - '/src\=\".*\"/g'
+  - '/DOI:.*/g'
   - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
+  - 'de novo'
   # - '/(?<=\/)arnold(?=\/)/gi'
   # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
   # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
@@ -201,4 +203,13 @@ overrides:
   - filename: "**/content/highlights/mettl3_localisation.md"
     words:
       - KVVS
-      
+
+  - filename: "**/content/highlights/InParanoiDB.md"
+    words:
+      - Belvu37
+      - Kalign36
+      - Pfam
+  
+  - filename: "**/content/highlights/gpcr_epitomes_drug_development.md"
+    words:
+      - Expi293F

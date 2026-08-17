@@ -4,8 +4,10 @@
 # not covered by CSpell's available dictionaries.
 # One word per line.
 # ---
+Aimovig
 Altmetrics
 altmetrics
+Ameur
 Amplicon-multi-cutadapt
 Amunts
 ANUBIX
@@ -17,14 +19,18 @@ Biobanked
 biobanking
 Bioconductor
 bioimaging
+bioRxiv
 bisulphite
+bitbucket
 blobserver
 BOSC
 Calu-3
+Cavelier
 CCHF
 Ceros
 Chanjo
 CRISPR
+crizotinib
 Cutadapt
 Dahmane
 daphnia
@@ -34,6 +40,7 @@ ddls
 DDLS
 data-stype
 EECS
+elesclomol
 EMBL
 EMDB
 Ensembl
@@ -58,6 +65,7 @@ hugo
 IFLA
 IGHV
 imjoy
+immunocaptured
 INOSC
 inparalogs
 InParanoiDB
@@ -92,9 +100,11 @@ metabolomics
 Miarka
 mitoribosomes
 Mitoribosomes
+nanobodies
 NBIS
 NCBI
 NordForsk
+oligoadenylate
 omic
 omics
 operationalisation
@@ -111,6 +121,7 @@ relocalised
 relocalisation
 replisome
 replisomes
+rimcazole
 RRID
 RRIDs
 Sambamba
@@ -121,6 +132,7 @@ Seqera
 SSMF
 Snakemake
 SNIC
+Spjuth
 subtomogram
 subtomograms
 SUHF
