@@ -135,14 +135,35 @@ overrides:
       
   - filename: "**/data/data_sources.json"
     words:
+      - Bacdive
       - BBMRI-ERIC
       - CCLE
+      - cellosaurus
       - ChEMBL
+      - ChEMBI
+      - Deepview
+      - DIGG
       - ECBD
       - ECDC
       - ELSI
       - EMPIAR
       - GENEVESTIGATOR
       - GISAID
+      - HGNC
       - IDDO
+      - kinetoplastida
+      - metabolights
+      - MetaboLights
+      - metatranscriptomic
+      - MGnify
+      - ModelArchive
+      - modelarchive
+      - Nextstrain
       - NHGRI
+      - Orphadata
+      - orphadata
+      - pombase
+      - pombe
+      - RMSD
+      - SCAPIS
+      - Schizosaccharomyces

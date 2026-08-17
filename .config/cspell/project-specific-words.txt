@@ -8,6 +8,7 @@ Amplicon-multi-cutadapt
 ANUBIX
 azacytidine
 bcl2fastq
+Biobanked
 biobanking
 bioimaging
 bisulphite
@@ -25,8 +26,10 @@ DDLS
 data-stype
 EMBL
 EMDB
+Ensembl
 EOSC
 epigenomic
+eukarya
 exome
 FAIRSFAIR
 FASTQ
