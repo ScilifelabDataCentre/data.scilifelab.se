@@ -93,13 +93,16 @@ Miarka
 mitoribosomes
 Mitoribosomes
 NBIS
+NCBI
 NordForsk
+omic
 omics
 operationalisation
 ORCID
 ortholog
 orthologs
 Palaestra
+pharmacoproteomic
 Proteogenomic
 proteogenomic
 ProteomeXchange

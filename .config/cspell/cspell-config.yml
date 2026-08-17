@@ -191,3 +191,9 @@ overrides:
   - filename: "**/content/highlights/sex_determination_malaria.md"
     words:
       - knowesi
+
+  - filename: "**/content/highlights/multiomics_analysis_all_cancer.md"
+    words:
+      - HNRNPUL
+      - DSRT
+      - HSCT

@@ -11,6 +11,7 @@ Anway
 Akusjärvi
 Altınışık
 Ariño
+Aswad
 Atanassov
 Babačić
 Bagci
@@ -21,6 +22,7 @@ Bergfeldt
 Billker
 Bogdana
 Brandis
+bryostatin
 Burgarella
 Buzzao
 Cipullo
@@ -29,6 +31,7 @@ Díez
 Dulaud
 Dussex
 Emami
+Erkers
 Fange
 Garbulowski
 Girling
@@ -43,6 +46,7 @@ Ineke
 Jahurul
 Jareborg
 Kallberg
+Kallioniemi
 Kerviel
 Kierczak
 Kırdök
@@ -51,13 +55,16 @@ Knöppel
 Kochari
 Koellinger
 Krzewińska
+Kunold
 Kutschera
 Laptev
 Lawniczak
 Lazarou
 Lehtiö
+Luay
 Luijten
 Mermelekas
+Mindus
 Mirazimi
 Modrzynska
 Montandon
@@ -72,13 +79,16 @@ Pernemalm
 Pochon
 Pushparaj
 Rorbach
+Rozbeh
 Salignon
 Schwach
 Senthilkumar
 Sergiev
 Skłodowska
 Sklodowska
+Siavelis
 Sonnhammer
+Struyf
 Suné
 Tewatia
 Tryggers
