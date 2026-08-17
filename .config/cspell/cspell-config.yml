@@ -36,15 +36,15 @@ dictionaries:
 # Import project-specific words as a custom dictionary
 dictionaryDefinitions:
   - name: project-specific-words
-    path: ./project-specific-words.txt
+    path: ./custom-dicts/project-specific-words.txt
     addWords: true
 
   - name: approved-names
-    path: ./approved-names.txt
+    path: ./custom-dicts/approved-names.txt
     addWords: true
 
   - name: forbidden-words
-    path: ./forbidden-words.txt
+    path: ./custom-dicts/forbidden-words.txt
 
   - name: highlight-words
     path: ./custom-dicts/highlight-words.txt
