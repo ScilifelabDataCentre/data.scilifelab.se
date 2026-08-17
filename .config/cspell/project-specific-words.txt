@@ -10,6 +10,7 @@ azacytidine
 bcl2fastq
 Biobanked
 biobanking
+Bioconductor
 bioimaging
 bisulphite
 blobserver
@@ -75,6 +76,7 @@ Proteogenomic
 proteogenomic
 ProteomeXchange
 Reactome
+relocalisation
 replisome
 replisomes
 RRID
