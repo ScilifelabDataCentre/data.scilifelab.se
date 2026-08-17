@@ -38,11 +38,25 @@ dictionaryDefinitions:
   - name: project-specific-words
     path: ./project-specific-words.txt
     addWords: true
+
   - name: approved-names
     path: ./approved-names.txt
     addWords: true
+
   - name: forbidden-words
     path: ./forbidden-words.txt
+
+  - name: highlight-words
+    path: ./custom-dicts/highlight-words.txt
+    addWords: true
+
+  - name: news-words
+    path: ./custom-dicts/news-words.txt
+    addWords: true
+  
+  - name: data-source-words
+    path: ./custom-dicts/data-source-words.txt
+    addWords: true
 
 # Language settings for specific file types
 languageSettings:
@@ -66,24 +80,35 @@ languageSettings:
 # Patterns to ignore during spell checking
 # cSpell:ignore datacentre
 ignoreRegExpList:
+  # Built-in patterns
   - MarkdownLink # Ignore link target, but still check link text
   - Url # Ignore full URLs, such as https://www.example.com
+
+  # Domain patterns
   - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
-  - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
+  - '/scilifelab\.[a-z0-9.-]+/gi'  # Ignore domain names like scilifelab.se, scilifelab.figshare.com
   - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
-  - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
+
+  # DOI patterns
+  - '/\d+\/scilifelab\./gi'        # Ignore DOI format like 10.17044/scilifelab.
+  - '/\d+\/pnas\./gi'  # Ignore PNAS DOIs like 10.1073/pnas.
+  - '/DOI:.*/g'
+
+  # Email patterns
+  - '/@scilifelab\./gi'            # Ignore email addresses like data-platform@scilifelab.se
+
+  # Field patterns in JSON / YAML
   - '/"url"\s*:\s*"[^"]*"/g'
   - '/images: \[.*\]/g'
+  - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
   - '/thumbnail: \".*\"/g'
   - '/src\=\".*\"/g'
-  - '/DOI:.*/g'
-  - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
-  - 'de novo'
-  - - '/scilifelab\.[a-z0-9.-]+/gi'  # Ignore domain names like scilifelab.se, scilifelab.figshare.com
-  - '/\d+\/scilifelab\./gi'        # Ignore DOI format like 10.17044/scilifelab.
-  - '/@scilifelab\./gi'            # Ignore email addresses like data-platform@scilifelab.se
-  - '/\d+\/pnas\./gi'  # Ignore PNAS DOIs like 10.1073/pnas.
+
+  # Other
+  - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
+  - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
   - '/\/subcellbarcode\//gi'  # Ignore /subcellbarcode/ in paths
+  - 'de novo'
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true
@@ -121,118 +146,22 @@ overrides:
       - '/\bnf-core\/[A-Za-z0-9][A-Za-z0-9._-]*/g'
       
   - filename: "**/data/data_sources.json"
-    words:
-      - Bacdive
-      - BBMRI-ERIC
-      - CCLE
-      - cellosaurus
-      - ChEMBL
-      - ChEMBI
-      - Deepview
-      - DIGG
-      - ECBD
-      - ECDC
-      - ELSI
-      - EMPIAR
-      - GENEVESTIGATOR
-      - GISAID
-      - HGNC
-      - IDDO
-      - kinetoplastida
-      - metabolights
-      - MetaboLights
-      - metatranscriptomic
-      - MGnify
-      - ModelArchive
-      - modelarchive
-      - Nextstrain
-      - NHGRI
-      - Orphadata
-      - orphadata
-      - pombase
-      - pombe
-      - RMSD
-      - SCAPIS
-      - Schizosaccharomyces
+    dictionaries:
+      - data-source-words
+
   
   - filename: "**/content/open_science/past_events/2025-06-10.md"
     words:
       - Talarify
 
-  - filename: "**/content/news/2025-09-18.md"
-    words:
-      - PLSNET
+  - filename: "**/content/news/**"
+    dictionaries:
+      - news-words
   
-  - filename: "**/content/news/2021-03-10.md"
-    words:
-      - MSEK
-  
-  - filename: "**/content/highlights/sex_determination_malaria.md"
-    words:
-      - knowesi
+  - filename: "**/content/highlights/**"
+    dictionaries:
+      - highlight-words
 
-  - filename: "**/content/highlights/multiomics_analysis_all_cancer.md"
-    words:
-      - HNRNPUL
-      - DSRT
-      - HSCT
-
-  - filename: "**/content/highlights/mettl3_localisation.md"
-    words:
-      - KVVS
-
-  - filename: "**/content/highlights/InParanoiDB.md"
-    words:
-      - Belvu37
-      - Kalign36
-      - Pfam
-  
-  - filename: "**/content/highlights/gpcr_epitomes_drug_development.md"
-    words:
-      - Expi293F
-      - CGRP
-      - erenumab
-    
-  - filename: "**/content/highlights/GeneSPIDER2.md"
-    words:
-      - NSTC
-      - lqae121
-      - ARACNE
-
-  - filename: "**/content/highlights/FunCoup6.md"
-    words:
-      - Cytoscape
-  
-  - filename: "**/content/highlights/diversity_of_life.md"
-    words:
-      - Malaspina
-      - PRJEB
-  
-  - filename: "**/content/highlights/daphnia_dna_methylation.md"
-    words:
-      - Microcystis
-  
-  - filename: "**/content/highlights/crimean_congo_interactions.md"
-    words:
-      - PRJNA
-      - OXPHOS
-      - PBMCs
-      - CCHFV
-      - Nairoviridae
-  
-  - filename: "**/content/highlights/covimapp.md"
-    words:
-      - proteasomal
-      - Covimapp
-  
-  - filename: "**/content/highlights/cactus.md"
-    words:
-      - atac
-  
-  - filename: "**/content/highlights/bantu_expansion.md"
-    words:
-      - EGAC
-      - EGAS
   
   - filename: 
       - "**/content/guidance/altmetrics.md"
