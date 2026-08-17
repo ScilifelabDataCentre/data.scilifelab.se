@@ -101,6 +101,7 @@ OSMI
 palaeobiology
 palaeoclimate
 Palaeogenetics
+Paleovegetation
 palaeovegetation
 PathwAX
 phenome
