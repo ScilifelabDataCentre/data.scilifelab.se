@@ -43,9 +43,6 @@ dictionaryDefinitions:
     path: ./custom-dicts/approved-names.txt
     addWords: true
 
-  - name: forbidden-words
-    path: ./custom-dicts/forbidden-words.txt
-
   - name: highlight-words
     path: ./custom-dicts/highlight-words.txt
     addWords: true
@@ -57,6 +54,9 @@ dictionaryDefinitions:
   - name: data-source-words
     path: ./custom-dicts/data-source-words.txt
     addWords: true
+
+  - name: forbidden-words
+    path: ./custom-dicts/forbidden-words.txt
 
 # Language settings for specific file types
 languageSettings:
