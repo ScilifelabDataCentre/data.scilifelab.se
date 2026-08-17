@@ -29,6 +29,7 @@ blobserver
 BOSC
 Calu-3
 Cavelier
+CCEM
 CCHF
 Ceros
 Chanjo
@@ -61,6 +62,7 @@ fundings
 GBIF
 genotyping
 germline
+glutaminolysis
 GPCR
 GPCRs
 GWAS

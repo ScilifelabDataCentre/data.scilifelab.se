@@ -234,3 +234,11 @@ overrides:
   - filename: "**/content/highlights/daphnia_dna_methylation.md"
     words:
       - Microcystis
+  
+  - filename: "**/content/highlights/crimean_congo_interactions.md"
+    words:
+      - PRJNA
+      - OXPHOS
+      - PBMCs
+      - CCHFV
+      - Nairoviridae

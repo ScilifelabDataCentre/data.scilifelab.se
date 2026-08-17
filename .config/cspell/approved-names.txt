@@ -10,6 +10,7 @@ Anelda
 Anway
 Akusjärvi
 Altınışık
+Ambikan
 Ariño
 Aswad
 Atanassov
@@ -20,6 +21,7 @@ Barabási
 Barkefors
 Bendes
 Benfeitas
+Bente
 Bergfeldt
 Billker
 Biwer
@@ -37,8 +39,10 @@ Dehasque
 Díez
 Dodig
 Dopico
+Dowall
 Dulaud
 Dussex
+Elaldi
 Emami
 Erkers
 Fabien
@@ -94,6 +98,7 @@ Montandon
 Monteil
 Moussaud
 Nalina
+Neogi
 Nicoletto
 Njenda
 Obiol
@@ -134,6 +139,7 @@ Thombare
 Tjärnberg
 Tryggers
 Uhlén
+Ujjwal
 Uller
 Vaid
 Varnaitė
@@ -145,4 +151,5 @@ Vizarr
 Voet
 Walpot
 Wolmar
+Zivcec
 Öjefors
