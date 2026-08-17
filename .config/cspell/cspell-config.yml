@@ -215,3 +215,9 @@ overrides:
       - Expi293F
       - CGRP
       - erenumab
+    
+  - filename: "**/content/highlights/GeneSPIDER2.md"
+    words:
+      - NSTC
+      - lqae121
+      - ARACNE

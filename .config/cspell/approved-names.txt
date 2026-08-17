@@ -16,6 +16,7 @@ Atanassov
 Babačić
 Bagci
 Banerjea
+Barabási
 Barkefors
 Bendes
 Benfeitas
@@ -48,6 +49,7 @@ Götherström
 Hammarén
 Hamsaiyni
 Hedestam
+Hillerton
 Huma
 Hällberg
 Ineke
@@ -106,6 +108,7 @@ Rozbeh
 Sakmar
 Salignon
 Schwach
+Seçilmiş
 Senthilkumar
 Sergiev
 Sheward
@@ -118,6 +121,7 @@ Suné
 Tanmoy
 Tewatia
 Thombare
+Tjärnberg
 Tryggers
 Uhlén
 Uller
