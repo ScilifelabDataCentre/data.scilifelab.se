@@ -67,6 +67,8 @@ LNDS
 LoqusDB
 markdownify
 metabolics
+Methyladenosine
+METTL
 NAISS
 OSMI
 Palaeogenetics

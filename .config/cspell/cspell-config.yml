@@ -85,6 +85,9 @@ ignoreRegExpList:
   - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
   - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
   - '/"url"\s*:\s*"[^"]*"/g'
+  - '/images: \[.*\]/g'
+  - '/thumbnail: \".*\"/g'
+  - '/src\=\".*\"/g'
   # - '/(?<=\/)arnold(?=\/)/gi'
   # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
   # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
