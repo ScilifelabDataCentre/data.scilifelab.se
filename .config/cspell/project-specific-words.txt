@@ -46,6 +46,7 @@ IFLA
 imjoy
 inparalogs
 InParanoiDB
+inparanoidb
 kcat
 KIARVA
 LIFES

@@ -33,7 +33,7 @@
     - reuse [spelled without a hyphen]
     - email [spelled without a hyphen]
     - SARS-CoV-2, COVID-19
-    - we use the British English “ise” (e.g. “visuali**s**e”, “visuali**s**ation”, “organi**s**ation”)
+    - we use the British English “ise” (e.g. <!-- cspell:disable --> “visuali**s**e”, “visuali**s**ation”, “organi**s**ation” <!-- cspell:enable -->)
 
 - **Titles:** in titles, only the first word and acronyms are capitalised.
 - **Acronyms:** only use acronyms if the full names/phrases would be used three times or more in the text (in other cases spell out all of the words). Spell out acronyms first time they are used. The exceptions to this rule are widely accepted acronyms e.g. DNA and RNA. In these cases, there is no need to spell out the acronym.
