@@ -10,6 +10,7 @@ Anway
 Akusjärvi
 Altınışık
 Ariño
+Atanassov
 Babačić
 Bagci
 Banerjea
@@ -17,8 +18,10 @@ Barkefors
 Benfeitas
 Bergfeldt
 Bogdana
+Brandis
 Burgarella
 Buzzao
+Cipullo
 Dehasque
 Díez
 Dulaud
@@ -45,6 +48,7 @@ Kochari
 Koellinger
 Krzewińska
 Kutschera
+Laptev
 Lehtiö
 Luijten
 Mermelekas
@@ -54,11 +58,15 @@ Nalina
 Oskolkov
 Oyuang
 Panneerselvam
+Pradeepa
 Parul
 Pernemalm
 Pochon
+Pushparaj
+Rorbach
 Salignon
 Senthilkumar
+Sergiev
 Skłodowska
 Sonnhammer
 Suné
