@@ -50,6 +50,7 @@ imjoy
 inparalogs
 InParanoiDB
 inparanoidb
+interactomics
 kcat
 KIARVA
 LIFES
