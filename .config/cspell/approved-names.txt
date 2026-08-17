@@ -12,6 +12,7 @@ Akusjärvi
 Altınışık
 Ambikan
 Ariño
+Asgeirsson
 Aswad
 Atanassov
 Babačić
@@ -51,6 +52,7 @@ Gandasi
 Garbulowski
 Girling
 Golnaz
+Gredmark
 Guala
 Götherström
 Hammarén
@@ -138,6 +140,7 @@ Tewatia
 Thombare
 Tjärnberg
 Tryggers
+Tynell
 Uhlén
 Ujjwal
 Uller

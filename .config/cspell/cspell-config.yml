@@ -242,3 +242,8 @@ overrides:
       - PBMCs
       - CCHFV
       - Nairoviridae
+  
+  - filename: "**content/highlights/covimapp.md"
+    words:
+      - proteasomal
+      - Covimapp

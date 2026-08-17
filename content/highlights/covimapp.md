@@ -52,7 +52,7 @@ In summary, this study is a comprehensive analysis of the soluble blood proteome
 
 DOI: [10.1038/s41467-023-41159-z](https://doi.org/10.1038/s41467-023-41159-z)
 
-Babačić, H., Christ, W., Araújo, J. E., Mermelekas , G., Sharma, N., Tynell , J., García, M., Varnaite, R., Asgeirsson, H., Glans, H., Lehtiö, J., Gredmark-Russ, S., Klingström, J., & Pernemalm, M. (2023) Comprehensive proteomics and meta-analysis of COVID-19 host response. In: Nature communications (Vol. 14, Issue 1, 5921).
+Babačić, H., Christ, W., Araújo, J. E., Mermelekas , G., Sharma, N., Tynell , J., García, M., Varnaitė, R., Asgeirsson, H., Glans, H., Lehtiö, J., Gredmark-Russ, S., Klingström, J., & Pernemalm, M. (2023) Comprehensive proteomics and meta-analysis of COVID-19 host response. In: Nature communications (Vol. 14, Issue 1, 5921).
 
 #### Funding
 
