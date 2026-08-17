@@ -27,23 +27,11 @@ caseSensitive: true
 # See https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts
 dictionaries:
   - approved-names
-  # - companies
   - cpp-compound-words
-  # - fonts
-  # - css
-  # - docker
   - forbidden-words
-  # - fullstack
-  # - html
-  # - k8s
-  # - latex
   - project-specific-words
   - python
   - python-common
-  # - ruby
-  # - sql
-  # - software-tools
-  # - typescript
 
 # Import project-specific words as a custom dictionary
 dictionaryDefinitions:
@@ -96,22 +84,6 @@ ignoreRegExpList:
   - '/@scilifelab\./gi'            # Ignore email addresses like data-platform@scilifelab.se
   - '/\d+\/pnas\./gi'  # Ignore PNAS DOIs like 10.1073/pnas.
   - '/\/subcellbarcode\//gi'  # Ignore /subcellbarcode/ in paths
-  # - '/(?<=\/)arnold(?=\/)/gi'
-  # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
-  # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
-  # - '/\b(?:[a-z0-9-]+\.)*scilifelab\.se\b/gi'
-  # - '/\$[A-Za-z_][A-Za-z0-9_]*/g' # Hugo template variables
-  # - '/{{[\s\S]*?}}/g'  # Hugo template actions
-  # - '/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi' # Entire script elements
-  # - '/"(?:thumbnail|url)"\s*:\s*"[^"]*"/g'
-  # - '/^\s*"metatlas",?\s*$/gm'
-  # - '/"(?:thumbnail|url|maintained_by_url|support_github|support_website)"\s*:\s*"[^"]*"/g'
-  # - '/\bnf-core\/[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?/g'
-  # - '/"search_tags"\s*:\s*\[[\s\S]*?\]/g'
-
-  # scilifelab
-  # subcellbarcode
-  # images: [...]
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true
