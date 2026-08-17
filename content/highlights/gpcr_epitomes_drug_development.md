@@ -1,7 +1,7 @@
 ---
 title: Research into the immunogenicity of GPCR epitopes to enhance future drug development
 date: 2023-12-20
-summary: This study by Dahl, Kotilar and Bendes et al address this challenge of developing a high-throughput method to study GPCRs. Data and app shared.
+summary: This study by Dahl, Kotliar and Bendes et al address this challenge of developing a high-throughput method to study GPCRs. Data and app shared.
 banner: /highlights/Schwenk_gpcr.jpeg
 banner_large: /highlights/Schwenk_gpcr.jpeg
 banner_caption: Visual representation of the methods used in the laboratory. Figure 1A of Dahl et al 2023.

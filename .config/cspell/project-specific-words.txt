@@ -81,6 +81,7 @@ LNDS
 LoqusDB
 Mahwash
 markdownify
+melanocortin
 metabolics
 Methyladenosine
 METTL

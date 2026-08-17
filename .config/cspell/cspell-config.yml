@@ -213,3 +213,5 @@ overrides:
   - filename: "**/content/highlights/gpcr_epitomes_drug_development.md"
     words:
       - Expi293F
+      - CGRP
+      - erenumab
