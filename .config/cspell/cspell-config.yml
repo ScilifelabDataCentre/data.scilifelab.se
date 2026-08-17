@@ -91,6 +91,11 @@ ignoreRegExpList:
   - '/DOI:.*/g'
   - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
   - 'de novo'
+  - - '/scilifelab\.[a-z0-9.-]+/gi'  # Ignore domain names like scilifelab.se, scilifelab.figshare.com
+  - '/\d+\/scilifelab\./gi'        # Ignore DOI format like 10.17044/scilifelab.
+  - '/@scilifelab\./gi'            # Ignore email addresses like data-platform@scilifelab.se
+  - '/\d+\/pnas\./gi'  # Ignore PNAS DOIs like 10.1073/pnas.
+  - '/\/subcellbarcode\//gi'  # Ignore /subcellbarcode/ in paths
   # - '/(?<=\/)arnold(?=\/)/gi'
   # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
   # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
