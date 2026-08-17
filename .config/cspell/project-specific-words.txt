@@ -61,6 +61,7 @@ Figshare
 Fribourg
 fundings
 GBIF
+genotyped
 genotyping
 germline
 glutaminolysis
@@ -147,6 +148,7 @@ Seqera
 SSMF
 Snakemake
 SNIC
+spatiotemporally
 Spjuth
 subtomogram
 subtomograms

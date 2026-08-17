@@ -243,7 +243,17 @@ overrides:
       - CCHFV
       - Nairoviridae
   
-  - filename: "**content/highlights/covimapp.md"
+  - filename: "**/content/highlights/covimapp.md"
     words:
       - proteasomal
       - Covimapp
+  
+  - filename: "**/content/highlights/cactus.md"
+    words:
+      - atac
+  
+  - filename: "**/content/highlights/bantu_expansion.md"
+    words:
+      - EGAC
+      - EGAS
+      - 
