@@ -34,6 +34,7 @@ CCHF
 Ceros
 Chanjo
 choanoflagellates
+coevolving
 CRISPR
 crizotinib
 Cutadapt
@@ -97,7 +98,10 @@ mitoribosomal
 mitoribosome
 NAISS
 OSMI
+palaeobiology
+palaeoclimate
 Palaeogenetics
+palaeovegetation
 PathwAX
 phenome
 Phobius
