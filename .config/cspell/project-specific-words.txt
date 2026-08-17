@@ -4,6 +4,8 @@
 # not covered by CSpell's available dictionaries.
 # One word per line.
 # ---
+Altmetrics
+altmetrics
 Amplicon-multi-cutadapt
 ANUBIX
 azacytidine
@@ -16,9 +18,11 @@ bioimaging
 bisulphite
 blobserver
 BOSC
+Calu-3
 CCHF
 Ceros
 Chanjo
+CRISPR
 Cutadapt
 daphnia
 Daphnia
@@ -42,11 +46,15 @@ fundings
 GBIF
 genotyping
 germline
+GPCR
+GPCRs
 GWAS
 HDCA
+heterotrimeric
 hugo
 IFLA
 imjoy
+INOSC
 inparalogs
 InParanoiDB
 inparanoidb
@@ -69,6 +77,7 @@ PNAS
 metabarcoding
 metabolomic
 metabolomics
+Miarka
 NBIS
 NordForsk
 omics
@@ -89,6 +98,7 @@ RRIDs
 Sambamba
 SBDI
 SciLifeLab
+sedaDNA
 Seqera
 SSMF
 Snakemake
@@ -101,4 +111,5 @@ transcriptomic
 transgenerational
 UPPMAX
 VEED
+Vrije
 Zenodo

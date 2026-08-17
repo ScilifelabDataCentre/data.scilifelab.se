@@ -16,6 +16,7 @@ Banerjea
 Barkefors
 Benfeitas
 Bergfeldt
+Bogdana
 Burgarella
 Buzzao
 Dehasque
@@ -31,6 +32,7 @@ Götherström
 Hammarén
 Hamsaiyni
 Hedestam
+Huma
 Ineke
 Jahurul
 Jareborg
@@ -40,6 +42,7 @@ Kırdök
 Khoonsari
 Knöppel
 Kochari
+Koellinger
 Krzewińska
 Kutschera
 Lehtiö
@@ -58,6 +61,7 @@ Salignon
 Senthilkumar
 Skłodowska
 Sonnhammer
+Suné
 Tewatia
 Tryggers
 Uller
@@ -65,5 +69,6 @@ Vaid
 Varnaitė
 Večeřa
 Vegvari
+Walpot
 Wolmar
 Öjefors
