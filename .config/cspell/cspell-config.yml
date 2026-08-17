@@ -197,3 +197,8 @@ overrides:
       - HNRNPUL
       - DSRT
       - HSCT
+
+  - filename: "**/content/highlights/mettl3_localisation.md"
+    words:
+      - KVVS
+      

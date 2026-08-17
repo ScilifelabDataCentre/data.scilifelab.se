@@ -25,6 +25,7 @@ Brandis
 bryostatin
 Burgarella
 Buzzao
+Chakrabarti
 Cipullo
 Dehasque
 Díez
@@ -33,6 +34,7 @@ Dussex
 Emami
 Erkers
 Fange
+Gandasi
 Garbulowski
 Girling
 Golnaz
@@ -67,6 +69,7 @@ Mermelekas
 Mindus
 Mirazimi
 Modrzynska
+Mondal
 Montandon
 Monteil
 Nalina
@@ -78,6 +81,9 @@ Parul
 Pernemalm
 Pochon
 Pushparaj
+Reinius
+Ringlander
+Robinot
 Rorbach
 Rozbeh
 Salignon
@@ -90,7 +96,9 @@ Siavelis
 Sonnhammer
 Struyf
 Suné
+Tanmoy
 Tewatia
+Thombare
 Tryggers
 Uller
 Vaid
