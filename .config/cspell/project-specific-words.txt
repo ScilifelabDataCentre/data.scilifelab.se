@@ -117,6 +117,8 @@ Seqera
 SSMF
 Snakemake
 SNIC
+subtomogram
+subtomograms
 SUHF
 SUPR
 TissUUmaps
@@ -126,4 +128,5 @@ transgenerational
 UPPMAX
 VEED
 Vrije
+WCMM
 Zenodo

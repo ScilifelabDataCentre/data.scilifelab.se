@@ -88,6 +88,7 @@ ignoreRegExpList:
   - '/images: \[.*\]/g'
   - '/thumbnail: \".*\"/g'
   - '/src\=\".*\"/g'
+  - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
   # - '/(?<=\/)arnold(?=\/)/gi'
   # - '/https?%3A(?:%2F){2}[A-Za-z0-9%._~-]+/gi'
   # - '/\bscilifelab(?=[\\\w.-]*\.[a-z0-9]+\b)/gi'
@@ -187,3 +188,6 @@ overrides:
     words:
       - MSEK
   
+  - filename: "**/content/highlights/sex_determination_malaria.md"
+    words:
+      - knowesi

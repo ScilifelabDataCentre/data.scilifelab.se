@@ -4,6 +4,7 @@
 # not covered by CSpell's available dictionaries.
 # One name per line.
 # ---
+Ahlman
 Andermann
 Anelda
 Anway
@@ -17,6 +18,7 @@ Banerjea
 Barkefors
 Benfeitas
 Bergfeldt
+Billker
 Bogdana
 Brandis
 Burgarella
@@ -29,6 +31,7 @@ Dussex
 Emami
 Fange
 Garbulowski
+Girling
 Golnaz
 Guala
 Götherström
@@ -40,6 +43,7 @@ Ineke
 Jahurul
 Jareborg
 Kallberg
+Kerviel
 Kierczak
 Kırdök
 Khoonsari
@@ -49,10 +53,14 @@ Koellinger
 Krzewińska
 Kutschera
 Laptev
+Lawniczak
+Lazarou
 Lehtiö
 Luijten
 Mermelekas
 Mirazimi
+Modrzynska
+Montandon
 Monteil
 Nalina
 Oskolkov
@@ -65,9 +73,11 @@ Pochon
 Pushparaj
 Rorbach
 Salignon
+Schwach
 Senthilkumar
 Sergiev
 Skłodowska
+Sklodowska
 Sonnhammer
 Suné
 Tewatia
@@ -77,6 +87,7 @@ Vaid
 Varnaitė
 Večeřa
 Vegvari
+Voet
 Walpot
 Wolmar
 Öjefors
