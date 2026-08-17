@@ -4,15 +4,12 @@
 # not covered by CSpell's available dictionaries.
 # One word per line.
 # ---
-Aimovig
 Altmetrics
 altmetrics
-Ameur
 amoebozoans
 Amorphea
 Amorphean
 Amplicon-multi-cutadapt
-Amunts
 ANUBIX
 azacytidine
 BBSRC

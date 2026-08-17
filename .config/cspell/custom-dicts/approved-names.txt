@@ -5,6 +5,8 @@
 # One name per line.
 # ---
 Ahlman
+Ameur
+Amunts
 Andermann
 Anelda
 Anway
