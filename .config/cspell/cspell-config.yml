@@ -221,3 +221,12 @@ overrides:
       - NSTC
       - lqae121
       - ARACNE
+
+  - filename: "**/content/highlights/FunCoup6.md"
+    words:
+      - Cytoscape
+  
+  - filename: "**/content/highlights/diversity_of_life.md"
+    words:
+      - Malaspina
+      - PRJEB

@@ -8,6 +8,9 @@ Aimovig
 Altmetrics
 altmetrics
 Ameur
+amoebozoans
+Amorphea
+Amorphean
 Amplicon-multi-cutadapt
 Amunts
 ANUBIX
@@ -29,6 +32,7 @@ Cavelier
 CCHF
 Ceros
 Chanjo
+choanoflagellates
 CRISPR
 crizotinib
 Cutadapt
