@@ -230,3 +230,7 @@ overrides:
     words:
       - Malaspina
       - PRJEB
+  
+  - filename: "**/content/highlights/daphnia_dna_methylation.md"
+    words:
+      - Microcystis
