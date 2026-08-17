@@ -170,3 +170,7 @@ overrides:
       - RMSD
       - SCAPIS
       - Schizosaccharomyces
+  
+  - filename: "**/content/open_science/past_events/2025-06-10.md"
+    words:
+      - Talarify

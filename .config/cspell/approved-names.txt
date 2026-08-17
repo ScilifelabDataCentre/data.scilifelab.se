@@ -5,6 +5,7 @@
 # One name per line.
 # ---
 Andermann
+Anelda
 Anway
 Akusjärvi
 Altınışık
@@ -23,11 +24,15 @@ Dussex
 Emami
 Fange
 Garbulowski
+Golnaz
 Guala
 Götherström
 Hammarén
 Hamsaiyni
+Hedestam
+Ineke
 Jahurul
+Jareborg
 Kallberg
 Kierczak
 Kırdök
@@ -37,6 +42,7 @@ Kochari
 Krzewińska
 Kutschera
 Lehtiö
+Luijten
 Mermelekas
 Mirazimi
 Monteil
@@ -58,4 +64,5 @@ Vaid
 Varnaitė
 Večeřa
 Vegvari
+Wolmar
 Öjefors

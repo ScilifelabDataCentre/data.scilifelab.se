@@ -8,6 +8,7 @@ Amplicon-multi-cutadapt
 ANUBIX
 azacytidine
 bcl2fastq
+Berzelius
 Biobanked
 biobanking
 Bioconductor
@@ -25,6 +26,7 @@ DARS
 ddls
 DDLS
 data-stype
+EECS
 EMBL
 EMDB
 Ensembl
@@ -52,6 +54,7 @@ kcat
 KIARVA
 LIFES
 lipidomics
+LNDS
 LoqusDB
 markdownify
 metabolics
@@ -68,6 +71,7 @@ metabolomics
 NBIS
 NordForsk
 omics
+operationalisation
 ORCID
 ortholog
 orthologs
