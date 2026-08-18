@@ -15,6 +15,7 @@ language: en-gb,sv
 # Note: These dictionaries must be installed before import
 # (see .github/workflows/cspell.yml)
 import:
+  - "@cspell/dict-en-gb/cspell-ext.json"
   - "@cspell/dict-sv/cspell-ext.json"
   - "@cspell/dict-people-names/cspell-ext.json"
   - "@cspell/dict-medicalterms/cspell-ext.json"
@@ -94,7 +95,7 @@ ignoreRegExpList:
   - '/scilifelab\.[a-z0-9.-]+/gi'  # Ignore domain names like scilifelab.se, scilifelab.figshare.com
   - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
   - '/ddls[a-zA-Z0-9._-]*/g'
-  
+
   # DOI patterns
   - '/\d+\/scilifelab\./gi'        # Ignore DOI format like 10.17044/scilifelab.
   - '/\d+\/pnas\./gi'  # Ignore PNAS DOIs like 10.1073/pnas.
