@@ -12,7 +12,6 @@ Amorphean
 Amplicon-multi-cutadapt
 ANUBIX
 azacytidine
-BBSRC
 bcl2fastq
 Berzelius
 Biobanked
@@ -23,19 +22,12 @@ bioRxiv
 bisulphite
 bitbucket
 blobserver
-BOSC
 Calu-3
-Cavelier
-CCEM
-CCHF
-Ceros
 Chanjo
 choanoflagellates
 coevolving
-CRISPR
 crizotinib
 Cutadapt
-Dahmane
 daphnia
 Daphnia
 DARS

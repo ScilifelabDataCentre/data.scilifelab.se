@@ -26,6 +26,7 @@ caseSensitive: true
 # These do not require installation or import
 # See https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts
 dictionaries:
+  - approved-acronyms
   - approved-names
   - cpp-compound-words
   - forbidden-words
@@ -41,6 +42,10 @@ dictionaryDefinitions:
 
   - name: approved-names
     path: ./custom-dicts/approved-names.txt
+    addWords: true
+  
+  - name: approved-acronyms
+    path: ./custom-dicts/approved-acronyms.txt
     addWords: true
 
   - name: highlight-words
@@ -168,3 +173,4 @@ overrides:
       - "**/data/guidance.json"
     words: 
       - Impactstory
+      - Ceros
