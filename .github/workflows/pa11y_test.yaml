@@ -6,15 +6,15 @@
 # It can also be run manually from repo's GitHub page
 #----------------------------------------------------------------
 
-name: Pa11ly Accessibility Check
+name: Pa11y Accessibility Check
 on:
   workflow_dispatch:
   schedule:
     - cron: '13 13 * * FRI'
 
 jobs:
-    pa11ly:
-        name: Pa11ly Test
+    pa11y:
+        name: Pa11y Test
         runs-on: ubuntu-latest
         steps:
             - name: Check out the repo
@@ -25,10 +25,10 @@ jobs:
               with:
                 node-version: 24.x
             
-            - name: Install Pa11ly CI
+            - name: Install Pa11y CI
               run: npm install -g pa11y-ci
             
-            - name: Run Pa11ly CI
+            - name: Run Pa11y CI
               run: |
                 pa11y-ci \
                   --config ${GITHUB_WORKSPACE}/.github/pa11y.config \

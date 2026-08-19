@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch('/search/index.json')
     .then(response => response.json())
     .then(data => {
-      // Initialize Fuse.js with weighted keys (higher = priority) and adjusted threshold
+      // Initialise Fuse.js with weighted keys (higher = priority) and adjusted threshold
       fuse = new Fuse(data, {
         keys: [
           { name: 'permalink', weight: 0.4 },
