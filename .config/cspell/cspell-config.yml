@@ -135,7 +135,7 @@ ignoreRegExpList:
   # Other
   - '/#datacentre_[a-z0-9_-]+/g' # cspell:disable-line
   - '/decodeURIComponent\([^)]*\)/g'
-  - '/\/subcellbarcode\//gi'  # # cspell:disable-line
+  - '/\/subcellbarcode\//gi'  # cspell:disable-line
   - 'de novo'
   - >-
     /(?<=<div\b[^>]*?\bclass\s*=\s*["'][^"']*)\bgray\b(?=[^"']*["'][^>]*>)/
@@ -164,6 +164,14 @@ overrides:
     words:
       - univ # cspell:disable-line
   
+  - filename: "**/layouts/**/list.html"
+    ignoreRegExpList:
+      # Allow the external API property name.
+      - '/(?<=\?\.)organizer\b/g' # cspell:disable-line
+  
+      # Allow the JavaScript scrolling option.
+      - '/\bbehavior(?=\s*:)/g' # cspell:disable-line
+
   - filename: "**/data/**/*.json"
     ignoreRegExpList:
       # 'Ignore' these fields completely.
@@ -207,7 +215,7 @@ overrides:
       - '/"theme_color"\s*:/g' # cspell:disable-line
 
 
-  - filename: "**/**/*.html"
+  - filename: "**/*.html"
     ignoreRegExpList:
       # Allow the CSS property spelling inside double-quoted inline styles.
       - '/(?<=\bstyle\s*=\s*"[^"]*)\bcolor(?=:)/g' # cspell:disable-line
