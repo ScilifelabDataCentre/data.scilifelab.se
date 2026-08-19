@@ -212,7 +212,7 @@ the [EOSC website](https://eosc.eu/).
 SciLifeLab actively collaborates with the EOSC Association by providing feedback to the EOSC EU Node and by
 participating in several [EOSC-A Task Forces](https://eosc.eu/eosc-task-forces/). It works closely with university
 partners such as Uppsala University, a member of the EOSC Association, as well as through broader European
-collaborations with organizations like CERN and EU projects such as BY-COVID. Through these efforts, SciLifeLab
+collaborations with organisations like CERN and EU projects such as BY-COVID. Through these efforts, SciLifeLab
 supports the development of a robust, interoperable, and researcher-driven European Open Science infrastructure.
 
 {{< banner_image

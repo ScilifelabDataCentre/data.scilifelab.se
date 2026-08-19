@@ -77,12 +77,12 @@
         "maintained_by": {
           "type": "string",
           "minLength": 1,
-          "description": "Name of the individual or organization that maintains the service."
+          "description": "Name of the individual or organisation that maintains the service."
         },
         "maintained_by_url": {
           "type": "string",
           "format": "uri",
-          "description": "OPTIONAL: Web address of the maintaining organization or individual."
+          "description": "OPTIONAL: Web address of the maintaining organisation or individual."
         },
         "support_email": {
           "type": "string",

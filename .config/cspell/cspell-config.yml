@@ -123,6 +123,7 @@ ignoreRegExpList:
   - '/thumbnail: \".*\"/g'
   - '/src\=\".*\"/g'
   - '/"ddls"\s*:/g'
+  - 'color:'
 
   # Other
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
@@ -184,3 +185,17 @@ overrides:
   - filename: "**/content/guidance/**"
     dictionaries:
       - guidance-words
+  
+  - filename: "**/assets/**"
+    ignoreRegExpList:
+      # Allow the CSS property `color:`
+      - '/\bcolor(?=:)/g'
+
+      # Allow `"color"` when used as a dictionary key
+      - '/"color"\s*:/g'
+
+      # Allow the `"backgroundcolor_"` dictionary key
+      - '/"backgroundcolor_"\s*:/g'
+
+      # Allow the `"theme_color"` dictionary key
+      - '/"theme_color"\s*:/g'
