@@ -20,6 +20,7 @@ import:
   - "@cspell/dict-people-names/cspell-ext.json"
   - "@cspell/dict-medicalterms/cspell-ext.json"
   - "@cspell/dict-software-terms/cspell-ext.json"
+  - "@cspell/dict-scientific-terms-gb/cspell-ext.json"
 
 # Spell checking is case-sensitive
 caseSensitive: true
@@ -36,6 +37,7 @@ dictionaries:
   - python
   - python-common
   - software-terms
+  - scientific-terms-gb
 
 # Import project-specific words as a custom dictionary
 dictionaryDefinitions:
@@ -59,8 +61,16 @@ dictionaryDefinitions:
     path: ./custom-dicts/news-words.txt
     addWords: true
   
-  - name: data-source-words
-    path: ./custom-dicts/data-source-words.txt
+  - name: data-words
+    path: ./custom-dicts/data-words.txt
+    addWords: true
+  
+  - name: guidance-words
+    path: ./custom-dicts/guidance-words.txt
+    addWords: true
+  
+  - name: open-science-words
+    path: ./custom-dicts/open-science-words.txt
     addWords: true
 
   - name: forbidden-words
@@ -155,12 +165,11 @@ overrides:
       # Allow complete nf-core identifiers in names and descriptions.
       - '/\bnf-core\/[A-Za-z0-9][A-Za-z0-9._-]*/g'
       
-  - filename: "**/data/data_sources.json"
+  - filename: "**/data/**"
     dictionaries:
-      - data-source-words
+      - data-words
 
-  
-  - filename: "**/content/open_science/past_events/2025-06-10.md"
+  - filename: "**/content/open_science/**"
     words:
       - Talarify
 
@@ -172,10 +181,6 @@ overrides:
     dictionaries:
       - highlight-words
 
-  
-  - filename: 
-      - "**/content/guidance/altmetrics.md"
-      - "**/data/guidance.json"
-    words: 
-      - Impactstory
-      - Ceros
+  - filename: "**/content/guidance/**"
+    dictionaries:
+      - guidance-words

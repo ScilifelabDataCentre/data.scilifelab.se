@@ -32,7 +32,7 @@ Persson, E., & Sonnhammer, E. L. (2023). InParanoiDB 9: ortholog groups for prot
 This work was supported by the Swedish Research Council Project 2015-05342. Open access funding provided by Stockholm University. 
 
 #### Data Availability
-The updated versions of InParanoid-DIAMOND and Domainoid used to obtain the data for InParanoiDB 9 can be found in their respective bitbucket repositories.
+The updated versions of InParanoid-DIAMOND and Domainoid used to obtain the data for InParanoiDB 9 can be found in their respective Bitbucket repositories.
 
 - [InParanoid-DIAMOND](https://bitbucket.org/sonnhammergroup/inparanoid/src/master/) 
 - [Domainoid](https://bitbucket.org/sonnhammergroup/domainoid/src/master/)

@@ -16,7 +16,6 @@ biobanking
 Bioconductor
 bioRxiv
 bisulphite
-bitbucket
 blobserver
 Calu-3
 Chanjo
@@ -45,12 +44,9 @@ immunocaptured
 inparalogs
 InParanoiDB
 inparanoidb
-Itoh
-Jamy
 kcat
 lipidomics
 LoqusDB
-Mahwash
 markdownify
 metabolics
 Methyladenosine
@@ -73,7 +69,6 @@ Miarka
 mitoribosomes
 Mitoribosomes
 nanobodies
-NordForsk
 oligoadenylate
 omic
 omics
@@ -96,10 +91,8 @@ SciLifeLab
 sedaDNA
 Seqera
 spatiotemporally
-Spjuth
 subtomogram
 subtomograms
-Swestore
 Tetralith
 TissUUmaps
 tomograms

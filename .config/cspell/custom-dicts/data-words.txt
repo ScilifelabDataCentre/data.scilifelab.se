@@ -2,6 +2,7 @@ Bacdive
 BBMRI-ERIC
 CCLE
 cellosaurus
+Ceros
 ChEMBL
 ChEMBI
 Deepview
@@ -14,6 +15,7 @@ GENEVESTIGATOR
 GISAID
 HGNC
 IDDO
+Impactstory
 kinetoplastida
 metabolights
 MetaboLights
@@ -23,10 +25,13 @@ ModelArchive
 modelarchive
 Nextstrain
 NHGRI
+NordForsk
 Orphadata
 orphadata
 pombase
 pombe
 RMSD
+Sambamba
 SCAPIS
+Seqera
 Schizosaccharomyces

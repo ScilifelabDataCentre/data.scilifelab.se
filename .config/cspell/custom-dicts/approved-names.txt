@@ -67,7 +67,9 @@ Hillerton
 Huma
 Hällberg
 Ineke
+Itoh
 Jahurul
+Jamy
 Jareborg
 Jayasankar
 Kaimal
@@ -92,6 +94,7 @@ Lazarou
 Lehtiö
 Luay
 Luijten
+Mahwash
 Marabita
 Massana
 McInerney
@@ -142,6 +145,7 @@ Skłodowska
 Sklodowska
 Siavelis
 Sonnhammer
+Spjuth
 Struyf
 Suné
 Tanmoy
