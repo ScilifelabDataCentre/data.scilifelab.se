@@ -223,3 +223,13 @@ overrides:
     ignoreRegExpList:
       # Allow the CSS property spelling inside double-quoted inline styles.
       - '/(?<=\bstyle\s*=\s*"[^"]*)\bcolor(?=:)/g' # cspell:disable-line
+
+  - filename: "**/.github/**/*.{yml,yaml}"
+    words:
+      - ScilifelabDataCentre # cspell:disable-line
+    ignoreRegExpList:
+      # I want to match with the following examples - or have a dict that does this for me
+      # it complains about scilifelabdatacentre, scilifelab and peaceiris
+      # images: ghcr.io/scilifelabdatacentre/data-scilifelab-se
+      # uses: peaceiris/actions-hugo@v3
+      # image-ref: 'ghcr.io/${{ env.REPOSITORY_OWNER }}/data-scilifelab-se:develop'
