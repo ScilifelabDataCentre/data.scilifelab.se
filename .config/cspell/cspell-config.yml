@@ -131,7 +131,7 @@ ignoreRegExpList:
   - '/thumbnail: \".*\"/g'
   - '/src\=\".*\"/g'
   - '/"ddls"\s*:/g'
-  - 'color:'
+  # - 'color:'
 
   # Other
   - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
@@ -196,3 +196,13 @@ overrides:
   - filename: "**/content/guidance/**"
     dictionaries:
       - guidance-words
+
+  - filename: "**/assets/**"
+    ignoreRegExpList:
+      # Allow the CSS property spelling when immediately followed by a colon.
+      - '/\bcolor(?=:)/g' # cspell:disable-line
+
+  - filename: "**/**/*.html"
+    ignoreRegExpList:
+      # Allow the CSS property spelling inside inline style attributes.
+      - '/(?<=\bstyle\s*=\s*["''][^"'']*)\bcolor(?=:)/g' # cspell:disable-line

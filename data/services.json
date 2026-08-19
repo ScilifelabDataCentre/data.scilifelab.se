@@ -923,7 +923,7 @@
       "gene-fusions"
     ],
     "name": "nf-core/rnafusion",
-    "description": "nf-core/rnafusion is a bioinformatics best-practice analysis pipeline for RNA sequencing consisting of several tools designed for detecting and visualizing fusion genes",
+    "description": "nf-core/rnafusion is a bioinformatics best-practice analysis pipeline for RNA sequencing consisting of several tools designed for detecting and visualising fusion genes",
     "thumbnail": "/img/service_thumbnails/nf-core-rnafusion.png",
     "thumbnail_border": true,
     "url": "https://github.com/nf-core/rnafusion",
