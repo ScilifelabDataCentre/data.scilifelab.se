@@ -149,8 +149,6 @@ ignorePaths:
   - "**/custom-dicts/*.txt"
   - "**/static/browserconfig.xml"
   - "**/pnpm-lock.yaml"
-  - "**/layouts/guidance/data_source.html"
-  - "**/assets/site-manifest.json"
  
 overrides:
   - filename: "**/CITATION.cff"
@@ -200,6 +198,13 @@ overrides:
     ignoreRegExpList:
       # Allow the CSS property spelling when immediately followed by a colon.
       - '/\bcolor(?=:)/g' # cspell:disable-line
+    
+      # Allow the first manifest dictionary key.
+      - '/"background_color"\s*:/g' # cspell:disable-line
+
+      # Allow the second manifest dictionary key.
+      - '/"theme_color"\s*:/g' # cspell:disable-line
+
 
   - filename: "**/**/*.html"
     ignoreRegExpList:

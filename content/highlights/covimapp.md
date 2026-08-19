@@ -8,7 +8,7 @@ banner_caption: CoViMAPP logo.
 tags:
   [
     COVID-19,
-    Covimapp,
+    CoViMAPP,
     Meta-analysis,
     R shiny,
     App,

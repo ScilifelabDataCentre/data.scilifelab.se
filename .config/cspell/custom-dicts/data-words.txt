@@ -1,10 +1,8 @@
-Bacdive
 BBMRI-ERIC
 CCLE
 cellosaurus
 Ceros
 ChEMBL
-ChEMBI
 Deepview
 DIGG
 ECBD
