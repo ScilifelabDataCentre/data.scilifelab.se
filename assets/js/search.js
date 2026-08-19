@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /**
-   * Checks if the query is an exact match for any of the prioritized keys.
+   * Checks if the query is an exact match for any of the prioritised keys.
    */
   function isExactMatch(item, query) {
     const lowerQuery = query.toLowerCase();
