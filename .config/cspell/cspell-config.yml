@@ -78,7 +78,7 @@ dictionaryDefinitions:
     path: ./custom-dicts/forbidden-words.txt
 
 # Language settings for specific file types
-# cspell:ignore center gray
+# cspell:ignore gray
 languageSettings:
   - languageId: html,xml
     dictionaries:
@@ -88,14 +88,11 @@ languageSettings:
     dictionaries:
       - css
     ignoreWords:
-      - center
       - gray
 
   - languageId: javascript,javascriptreact
     dictionaries:
       - typescript
-    ignoreWords:
-      - center
 
   - languageId: dockerfile
     caseSensitive: false
@@ -129,7 +126,7 @@ ignoreRegExpList:
   - '/images: \[.*\]/g'
   - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
   - '/thumbnail: \".*\"/g'
-  - '/src\=\".*\"/g'
+  - '/\bsrc\s*=\s*"[^"]*"/g'
   - '/"ddls"\s*:/g' # cspell:disable-line
 
   # Other
@@ -167,11 +164,13 @@ overrides:
     words:
       - univ # cspell:disable-line
   
-  - filename: "**/layouts/**/list.html"
+  - filename: "**/layouts/events/list.html"
     ignoreRegExpList:
       # Allow the external API property name.
       - '/(?<=\?\.)organizer\b/g' # cspell:disable-line
-  
+
+  - filename: "**/layouts/contact/list.html"
+    ignoreRegExpList:
       # Allow the JavaScript scrolling option.
       - '/\bbehavior(?=\s*:)/g' # cspell:disable-line
 
@@ -237,8 +236,14 @@ overrides:
       # Ignore image reference values.
       - '/^\s*image-ref:\s*.*$/gm'
 
-  - filename: 
-      - "**/layouts/partials/schema.html"
-      - "**/data/data_sources.json"
+  - filename: "**/layouts/partials/schema.html"
+    ignoreWords: # ignoreWords to override forbidden-words
+      - Catalog # cspell:disable-line
+    ignoreRegExpList:
+      # Preserve the official Schema.org type identifier.
+      - '/"@type"\s*:\s*"Organization"/g' # cspell:disable-line
+
+
+  - filename: "**/data/data_sources.json"
     ignoreWords: # ignoreWords to override forbidden-words
       - Catalog # cspell:disable-line
