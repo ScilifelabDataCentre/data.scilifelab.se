@@ -133,8 +133,8 @@ ignoreRegExpList:
 
   # Other
   - '/#datacentre_[a-z0-9_-]+/g' # cspell:disable-line
-  - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
-  - '/\/subcellbarcode\//gi'  # Ignore /subcellbarcode/ in paths
+  - '/decodeURIComponent\([^)]*\)/g'
+  - '/\/subcellbarcode\//gi'  # # cspell:disable-line
   - 'de novo'
   - >-
     /(?<=<div\b[^>]*?\bclass\s*=\s*["'][^"']*)\bgray\b(?=[^"']*["'][^>]*>)/
@@ -154,7 +154,7 @@ ignorePaths:
 overrides:
   - filename: "**/CITATION.cff"
     words: 
-      - orcid
+      - orcid # cspell:disable-line
   
   - filename: "**/config.yaml"
     words:
