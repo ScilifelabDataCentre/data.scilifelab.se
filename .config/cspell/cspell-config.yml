@@ -237,6 +237,8 @@ overrides:
       # Ignore image reference values.
       - '/^\s*image-ref:\s*.*$/gm'
 
-  - filename: "**/layouts/partials/schema.html"
-    words: 
-      - Catalog
+  - filename: 
+      - "**/layouts/partials/schema.html"
+      - "**/data/data_sources.json"
+    ignoreWords: # ignoreWords to override forbidden-words
+      - Catalog # cspell:disable-line
