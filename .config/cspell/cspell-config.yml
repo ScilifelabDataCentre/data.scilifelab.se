@@ -146,6 +146,7 @@ useGitignore: true
 ignorePaths:
   - "**/package.json"
   - "**/package-lock.json"
+  - "**/custom-dicts/*.txt"
   - "**/static/browserconfig.xml"
   - "**/pnpm-lock.yaml"
   - "**/layouts/guidance/data_source.html"
