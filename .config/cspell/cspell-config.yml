@@ -158,11 +158,11 @@ overrides:
   
   - filename: "**/config.yaml"
     words:
-      - goldmark
+      - goldmark # cspell:disable-line
 
   - filename: "**/layouts/jobs/list.html"
     words:
-      - univ
+      - univ # cspell:disable-line
   
   - filename: "**/data/**/*.json"
     ignoreRegExpList:
@@ -170,7 +170,7 @@ overrides:
       - '/"(?:maintained_by_url|support_email|thumbnail)"\s*:\s*"[^"]*"/g'
 
       # Allow these words only inside search_tags.
-      - '/(?<="search_tags"\s*:\s*\[[^\]]*)\b(?:embl|Altmetrics|metatlas|rnafusion|raredisease|cutadapt|SBDI|gbif|GBIF|snakemake|fastq|FASTQ|coidb|sweden|clinvar|ClinVar|ensembl|Ensembl|chanjo2|sarek|multiqc|bioconda|metaanalysis|Olink|OMIM|pathwax|funcoup|BinoX|plumx|impactstory|adiposetissue|metagenomes|TCGA|TCIA)\b/g'
+      - '/(?<="search_tags"\s*:\s*\[[^\]]*)\b(?:embl|Altmetrics|metatlas|rnafusion|raredisease|cutadapt|SBDI|gbif|GBIF|snakemake|fastq|FASTQ|coidb|sweden|clinvar|ClinVar|ensembl|Ensembl|chanjo2|sarek|multiqc|bioconda|metaanalysis|Olink|OMIM|pathwax|funcoup|BinoX|plumx|impactstory|adiposetissue|metagenomes|TCGA|TCIA)\b/g' # cspell:disable-line
 
       # Allow complete nf-core identifiers in names and descriptions.
       - '/\bnf-core\/[A-Za-z0-9][A-Za-z0-9._-]*/g'
