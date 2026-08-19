@@ -119,23 +119,30 @@ ignorePaths:
   - "**/pa11y.config"
   - "**/static/browserconfig.xml"
 
-# Language settings for specific file types
-# cspell:ignore gray
+# ---------------------------------------------------------------------------
+# 6. Language-specific settings
+# ---------------------------------------------------------------------------
+
+# Language settings for specific file types.
 languageSettings:
+  # Enable HTML terminology for HTML and XML files.
   - languageId: html,xml
     dictionaries:
       - html
 
+  # Enable CSS terminology and allow valid CSS spelling.
   - languageId: css,scss
     dictionaries:
       - css
     ignoreWords:
-      - gray
+      - gray # cspell:disable-line
 
+  # Enable programming terminology for JavaScript files.
   - languageId: javascript,javascriptreact
     dictionaries:
       - typescript
 
+  # Enable Docker terminology and accept differently cased identifiers.
   - languageId: dockerfile
     caseSensitive: false
     dictionaries:
