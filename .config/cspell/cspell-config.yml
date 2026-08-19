@@ -3,27 +3,40 @@
 # so we may need to use CSpell's ignore functionality in some cases,
 # e.g. before the ignoreRegExpList below.
 ---
+# ---------------------------------------------------------------------------
+# 1. Core settings
+# ---------------------------------------------------------------------------
 # Version of setting file. Always 0.2
 version: "0.2"
 
-# Languages used for spell checking
-# en-gb is British English; sv is Swedish
-# Note: British English may allow some US spellings
+# Use British English and Swedish
+# Note: The British English dictionary includes some US spellings 
 language: en-gb,sv
 
-# Extra dictionaries that are enabled when imported
-# Note: These dictionaries must be installed before import
-# (see .github/workflows/cspell.yml)
+# Treat differently capitalized words as distinct.
+caseSensitive: true
+
+# Exclude files and directories matched by .gitignore.
+useGitignore: true
+
+# ---------------------------------------------------------------------------
+# 2. Installed dictionary packages
+# ---------------------------------------------------------------------------
+
+# Load dictionary extensions installed through .config/cspell/package.json.
+# The GitHub Actions workflow installs them before running CSpell.
+# For local installation instructions, see .config/cspell/README.md.
 import:
   - "@cspell/dict-en-gb/cspell-ext.json"
-  - "@cspell/dict-sv/cspell-ext.json"
-  - "@cspell/dict-people-names/cspell-ext.json"
   - "@cspell/dict-medicalterms/cspell-ext.json"
-  - "@cspell/dict-software-terms/cspell-ext.json"
+  - "@cspell/dict-people-names/cspell-ext.json"
   - "@cspell/dict-scientific-terms-gb/cspell-ext.json"
+  - "@cspell/dict-software-terms/cspell-ext.json"
+  - "@cspell/dict-sv/cspell-ext.json"
 
-# Spell checking is case-sensitive
-caseSensitive: true
+# ---------------------------------------------------------------------------
+# 3. Enabled dictionaries
+# ---------------------------------------------------------------------------
 
 # Additional dictionaries to use during spell checking
 # These do not require installation or import
@@ -137,8 +150,7 @@ ignoreRegExpList:
   - >-
     /(?<=<div\b[^>]*?\bclass\s*=\s*["'][^"']*)\bgray\b(?=[^"']*["'][^>]*>)/
 
-# Skip files that match the globs in the .gitignore file
-useGitignore: true
+
 
 # Paths to ignore during spell checking
 ignorePaths:
