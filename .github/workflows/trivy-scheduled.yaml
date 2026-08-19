@@ -5,7 +5,7 @@
 #
 # This runs on scheduled time (08:15 and 12:15)for the develop image
 # ------------------------------------------------------------------
-
+# cspell:disable
 name: Trivy - scheduled scan
 
 on:

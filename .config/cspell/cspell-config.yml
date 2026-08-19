@@ -227,9 +227,13 @@ overrides:
   - filename: "**/.github/**/*.{yml,yaml}"
     words:
       - ScilifelabDataCentre # cspell:disable-line
+      - sarif # cspell:disable-line
     ignoreRegExpList:
-      # I want to match with the following examples - or have a dict that does this for me
-      # it complains about scilifelabdatacentre, scilifelab and peaceiris
-      # images: ghcr.io/scilifelabdatacentre/data-scilifelab-se
-      # uses: peaceiris/actions-hugo@v3
-      # image-ref: 'ghcr.io/${{ env.REPOSITORY_OWNER }}/data-scilifelab-se:develop'
+      # Ignore GitHub Action identifiers.
+      - '/^\s*uses:\s*\S+/gm'
+
+      # Ignore container image values.
+      - '/^\s*images:\s*.*$/gm'
+
+      # Ignore image reference values.
+      - '/^\s*image-ref:\s*.*$/gm'
