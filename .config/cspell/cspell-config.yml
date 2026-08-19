@@ -147,28 +147,28 @@ languageSettings:
     caseSensitive: false
     dictionaries:
       - docker
-  
 
+# ---------------------------------------------------------------------------
+# 7. Global ignore patterns
+# ---------------------------------------------------------------------------
 
-# Patterns to ignore during spell checking
+# Patterns that may appear across multiple file types.
 ignoreRegExpList:
-  # Built-in patterns
-  - MarkdownLink # Ignore link target, but still check link text
-  - Url # Ignore full URLs, such as https://www.example.com
+  # Links and addresses
+  - MarkdownLink # Link targets but check link text
+  - Url # Complete URLs, such as https://www.example.com
+  - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Bare domain names. cspell:disable-line
+  - '/scilifelab\.[a-z0-9.-]+/gi' # SciLifeLab domain names. cspell:disable-line
+  - '/@scilifelab\./gi' # SciLifeLab email domains. cspell:disable-line
+
+  # DOI identifiers
+  - '/\d+\/scilifelab\./gi' # SciLifeLab DOI prefixes. cspell:disable-line
+  - '/\d+\/pnas\./gi' # PNAS DOI prefixes. cspell:disable-line
+  - '/DOI:.*/g' # Text containing a labelled DOI reference. cspell:disable-line
 
   # Domain patterns
-  - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # cspell:disable-line
-  - '/scilifelab\.[a-z0-9.-]+/gi'  # cspell:disable-line
   - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # cspell:disable-line
   - '/ddls[a-zA-Z0-9._-]*/g'
-
-  # DOI patterns
-  - '/\d+\/scilifelab\./gi' # cspell:disable-line
-  - '/\d+\/pnas\./gi'  # cspell:disable-line
-  - '/DOI:.*/g'
-
-  # Email patterns
-  - '/@scilifelab\./gi' # cspell:disable-line
 
   # Field patterns in JSON / YAML
   - '/"url"\s*:\s*"[^"]*"/g'
