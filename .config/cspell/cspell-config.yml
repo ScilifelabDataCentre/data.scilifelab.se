@@ -130,6 +130,8 @@ ignoreRegExpList:
   - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
   - '/\/subcellbarcode\//gi'  # Ignore /subcellbarcode/ in paths
   - 'de novo'
+  - >-
+    /(?<=<div\b[^>]*?\bclass\s*=\s*["'][^"']*)\bgray\b(?=[^"']*["'][^>]*>)/
 
 # Skip files that match the globs in the .gitignore file
 useGitignore: true

@@ -56,8 +56,6 @@
 !jewelry
 !labor
 !leukemia
-!license
-!licenses
 !localization
 !localizations
 !localized

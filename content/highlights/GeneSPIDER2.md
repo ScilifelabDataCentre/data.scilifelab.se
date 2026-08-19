@@ -36,10 +36,10 @@ GeneSPIDER2 introduces several significant enhancements compared previous GRN in
 - **Scalability**: Ability to simulate GRNs with up to 20,000 genes using a novel modular stitching algorithm based on the Barabási–Albert model.
 - **Perturbation-aware simulation**: First simulator to incorporate knockdown-based genetic perturbations into single-cell data.
 - **Realism**: Synthetic data accurately mimics real CRISPRi Perturb-seq datasets from K562, Calu-3, HCC38, and HCC1143 cell lines in terms of dropout rates, expression distributions, and cluster structures.
-- **Flexibility**: Includes tunable parameters for signal-to-noise ratio (SNR), cluster variance, and dropout modeling.
+- **Flexibility**: Includes tunable parameters for signal-to-noise ratio (SNR), cluster variance, and dropout modelling.
 - **Benchmarking-ready**: Bundles a collection of inference methods (e.g. GENIE3, ARACNE) and allows comprehensive evaluation of GRN reconstruction accuracy.
 
-GeneSPIDER2 was developed to fill a critical gap in benchmarking GRN inference using realistic and scalable simulations. By enabling perturbation modeling in single-cell data, the authors aim to bring researchers one step closer to understanding complex regulatory mechanisms in health and disease. GeneSPIDER2 holds potential to become a standard tool for data-driven investigations across disciplines.
+GeneSPIDER2 was developed to fill a critical gap in benchmarking GRN inference using realistic and scalable simulations. By enabling perturbation modelling in single-cell data, the authors aim to bring researchers one step closer to understanding complex regulatory mechanisms in health and disease. GeneSPIDER2 holds potential to become a standard tool for data-driven investigations across disciplines.
 
 GeneSPIDER2 delivers a highly relevant contribution to the field of transcriptomics and computational biology. Its unique capacity to simulate perturbation-aware single-cell datasets aligns well with the objectives of data platforms supporting systems medicine, pathogen research, and pandemic preparedness. By offering a reliable benchmarking environment, GeneSPIDER2 supports the development and evaluation of inference tools that can decipher regulatory processes underlying infection responses and disease states. As perturbation-based datasets grow in volume and importance, tools like GeneSPIDER2 will be central to extracting meaningful biological insights and informing precision health strategies.
 

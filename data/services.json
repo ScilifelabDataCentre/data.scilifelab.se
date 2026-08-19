@@ -482,8 +482,7 @@
       "genes",
       "tissue",
       "expression",
-      "localisation",
-      "localization"
+      "localisation"
     ],
     "name": "Human Protein Atlas",
     "description": "The Human Protein Atlas aims to map all the human proteins in cells, tissues, and organs using an integration of various omics and imaging technologies",
@@ -846,7 +845,6 @@
       "variants",
       "cases",
       "tumour",
-      "tumor",
       "load frequency database",
       "gene",
       "genes",
@@ -919,7 +917,7 @@
       "detect fusion genes",
       "visualise fusion genes",
       "fusion genes",
-      "visualize fusion genes",
+      "visualise fusion genes",
       "AWS",
       "RNA-seq",
       "RNA",
