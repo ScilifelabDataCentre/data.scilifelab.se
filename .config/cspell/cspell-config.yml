@@ -101,6 +101,23 @@ dictionaryDefinitions:
 # 5. Ignored files
 # ---------------------------------------------------------------------------
 
+# Paths to ignore during spell checking
+ignorePaths:
+  # Package manifests and generated lockfiles.
+  - "**/package.json"
+  - "**/package-lock.json"
+  - "**/pnpm-lock.yaml"
+
+  # Custom dictionary sources are maintained separately.
+  - "**/custom-dicts/*.txt"
+
+  # Repository path and ownership rules.
+  - "**/.gitignore"
+  - "**/CODEOWNERS"
+
+  # Tool configuration containing only selectors, identifiers and metadata.
+  - "**/pa11y.config"
+  - "**/static/browserconfig.xml"
 
 # Language settings for specific file types
 # cspell:ignore gray
@@ -164,16 +181,7 @@ ignoreRegExpList:
 
 
 
-# Paths to ignore during spell checking
-ignorePaths:
-  - "**/package.json"
-  - "**/package-lock.json"
-  - "**/custom-dicts/*.txt"
-  - "**/static/browserconfig.xml"
-  - "**/pnpm-lock.yaml"
-  - "**/CODEOWNERS"
-  - "**/pa11y.config"
-  - "**/.gitignore"
+
  
 overrides:
   - filename: "**/CITATION.cff"
