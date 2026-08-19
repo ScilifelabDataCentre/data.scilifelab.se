@@ -110,9 +110,9 @@ ignoreRegExpList:
   - Url # Ignore full URLs, such as https://www.example.com
 
   # Domain patterns
-  - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
-  - '/scilifelab\.[a-z0-9.-]+/gi'  # cspell:disable-line Ignore domain names like scilifelab.se, scilifelab.figshare.com
-  - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
+  - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # cspell:disable-line
+  - '/scilifelab\.[a-z0-9.-]+/gi'  # cspell:disable-line
+  - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # cspell:disable-line
   - '/ddls[a-zA-Z0-9._-]*/g'
 
   # DOI patterns
@@ -129,11 +129,10 @@ ignoreRegExpList:
   - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
   - '/thumbnail: \".*\"/g'
   - '/src\=\".*\"/g'
-  - '/"ddls"\s*:/g'
-  # - 'color:'
+  - '/"ddls"\s*:/g' # cspell:disable-line
 
   # Other
-  - '/#datacentre_[a-z0-9_-]+/g' # Ignore Slack channel names starting with #datacentre_
+  - '/#datacentre_[a-z0-9_-]+/g' # cspell:disable-line
   - '/decodeURIComponent\([^)]*\)/g' # Ignore decodeURIComponent() calls
   - '/\/subcellbarcode\//gi'  # Ignore /subcellbarcode/ in paths
   - 'de novo'
