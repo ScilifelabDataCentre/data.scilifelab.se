@@ -13,7 +13,7 @@ version: "0.2"
 # Note: The British English dictionary includes some US spellings 
 language: en-gb,sv
 
-# Treat differently capitalized words as distinct.
+# Treat differently capitalised words as distinct.
 caseSensitive: true
 
 # Exclude files and directories matched by .gitignore.
@@ -38,20 +38,20 @@ import:
 # 3. Enabled dictionaries
 # ---------------------------------------------------------------------------
 
-# Additional dictionaries to use during spell checking
-# These do not require installation or import
-# See https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts
+# Dictionaries enabled globally for all checked files.
+# Directory-specific dictionaries are enabled later under overrides.
+# The dictionary extensions imported in section 2 are enabled automatically.
 dictionaries:
+  # Custom dictionaries defined below
   - approved-acronyms
   - approved-names
-  - cpp-compound-words
   - forbidden-words
   - project-specific-words
+
+  # Dictionaries bundled with CSpell
+  - cpp-compound-words
   - python
   - python-common
-  - software-terms
-  - software-tools
-  - scientific-terms-gb
 
 # Import project-specific words as a custom dictionary
 dictionaryDefinitions:
