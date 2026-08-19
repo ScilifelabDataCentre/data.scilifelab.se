@@ -181,8 +181,8 @@ overrides:
       - data-words
 
   - filename: "**/content/open_science/**"
-    words:
-      - Talarify
+    dictionaries:
+      - open-science-words
 
   - filename: "**/content/news/**"
     dictionaries:
