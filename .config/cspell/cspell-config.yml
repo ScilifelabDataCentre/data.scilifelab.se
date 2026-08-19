@@ -53,18 +53,36 @@ dictionaries:
   - python
   - python-common
 
-# Import project-specific words as a custom dictionary
+# ---------------------------------------------------------------------------
+# 4. Custom dictionary definitions
+# ---------------------------------------------------------------------------
+
+# Register custom dictionary files.
+# Dictionaries are enabled globally in section 3 or selectively under overrides.
 dictionaryDefinitions:
-  - name: project-specific-words
-    path: ./custom-dicts/project-specific-words.txt
+  # Globally enabled dictionaries.
+  - name: approved-acronyms
+    path: ./custom-dicts/approved-acronyms.txt
     addWords: true
 
   - name: approved-names
     path: ./custom-dicts/approved-names.txt
     addWords: true
+
+  - name: forbidden-words
+    path: ./custom-dicts/forbidden-words.txt
+
+  - name: project-specific-words
+    path: ./custom-dicts/project-specific-words.txt
+    addWords: true
+
+  # Directory-specific dictionaries enabled under overrides.
+  - name: data-words
+    path: ./custom-dicts/data-words.txt
+    addWords: true
   
-  - name: approved-acronyms
-    path: ./custom-dicts/approved-acronyms.txt
+  - name: guidance-words
+    path: ./custom-dicts/guidance-words.txt
     addWords: true
 
   - name: highlight-words
@@ -75,20 +93,14 @@ dictionaryDefinitions:
     path: ./custom-dicts/news-words.txt
     addWords: true
   
-  - name: data-words
-    path: ./custom-dicts/data-words.txt
-    addWords: true
-  
-  - name: guidance-words
-    path: ./custom-dicts/guidance-words.txt
-    addWords: true
-  
   - name: open-science-words
     path: ./custom-dicts/open-science-words.txt
     addWords: true
 
-  - name: forbidden-words
-    path: ./custom-dicts/forbidden-words.txt
+# ---------------------------------------------------------------------------
+# 5. Ignored files
+# ---------------------------------------------------------------------------
+
 
 # Language settings for specific file types
 # cspell:ignore gray
