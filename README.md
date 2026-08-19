@@ -117,7 +117,7 @@ Scope is optional but nice to have if deemed relevant.
 Examples:
 
 ``` text
-fix(visualization): correct/add genome visualization
+fix(visualisation): correct/add genome visualisation
 feat(dashboard): add SARS-Cov2 dashboard
 style(css): reformat layout classes
 ```
