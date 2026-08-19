@@ -100,7 +100,7 @@ The workflow explicitly includes some default action settings. The workflow woul
   > [!IMPORTANT]
   > Your repository's `.gitignore` should contain `node_modules/`. Do not push the `node_modules/` to your remote branch.
 
-3. _Optional (Recommended):_ Remove words from the `project-specific-words.txt` and `forbidden-words.txt` files. You can also start from scratch completely by removing the example entires (but keep `# cspell:disable` / `# cspell:endable` where present).
+3. _Optional (Recommended):_ Remove words from the `project-specific-words.txt` and `forbidden-words.txt` files. You can also start from scratch completely by removing the example entires (but keep `# cspell:disable` / `# cspell:enable` where present).
     1. Does `project-specific-words.txt` include any words that should be considered incorrect and flagged by the spell checking? If so, remove the words from the file.
     2. Does `forbidden-words.txt` include any words that should be considered correct in your repository? If so, remove the words from the file.
 4. Push all changes to your remote branch.
