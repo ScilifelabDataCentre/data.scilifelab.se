@@ -75,6 +75,7 @@ dictionaryDefinitions:
 
   - name: forbidden-words
     path: ./custom-dicts/forbidden-words.txt
+    caseSensitive: false
 
 # Language settings for specific file types
 # cspell:ignore center gray
