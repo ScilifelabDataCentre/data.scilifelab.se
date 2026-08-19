@@ -104,7 +104,6 @@ languageSettings:
 
 
 # Patterns to ignore during spell checking
-# cSpell:ignore datacentre
 ignoreRegExpList:
   # Built-in patterns
   - MarkdownLink # Ignore link target, but still check link text
@@ -112,17 +111,17 @@ ignoreRegExpList:
 
   # Domain patterns
   - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore domain names without a protocol
-  - '/scilifelab\.[a-z0-9.-]+/gi'  # Ignore domain names like scilifelab.se, scilifelab.figshare.com
+  - '/scilifelab\.[a-z0-9.-]+/gi'  # cspell:disable-line Ignore domain names like scilifelab.se, scilifelab.figshare.com
   - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore scilifelab in image file names
   - '/ddls[a-zA-Z0-9._-]*/g'
 
   # DOI patterns
-  - '/\d+\/scilifelab\./gi'        # Ignore DOI format like 10.17044/scilifelab.
-  - '/\d+\/pnas\./gi'  # Ignore PNAS DOIs like 10.1073/pnas.
+  - '/\d+\/scilifelab\./gi' # cspell:disable-line
+  - '/\d+\/pnas\./gi'  # cspell:disable-line
   - '/DOI:.*/g'
 
   # Email patterns
-  - '/@scilifelab\./gi'            # Ignore email addresses like data-platform@scilifelab.se
+  - '/@scilifelab\./gi' # cspell:disable-line
 
   # Field patterns in JSON / YAML
   - '/"url"\s*:\s*"[^"]*"/g'
