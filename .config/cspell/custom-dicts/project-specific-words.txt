@@ -90,6 +90,7 @@ Sambamba
 SciLifeLab
 sedaDNA
 Seqera
+Snakemake
 spatiotemporally
 subtomogram
 subtomograms
