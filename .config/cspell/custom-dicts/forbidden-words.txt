@@ -9,7 +9,21 @@
 # Each line should start with !
 # ---
 # cspell:disable
+!archea
+!archeological
+!archeology
+!favors
+!hemorrhagic
+!leukemia
+!localization
+!paleoclimate
+!paleovegetation
 !recognize
 !recognized
 !recognizes
+!relocalization
+!remodeling
+!traveling
+!tumor
+!visualization
 # cspell:enable
