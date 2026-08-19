@@ -204,5 +204,5 @@ overrides:
 
   - filename: "**/**/*.html"
     ignoreRegExpList:
-      # Allow the CSS property spelling inside inline style attributes.
-      - '/(?<=\bstyle\s*=\s*["''][^"'']*)\bcolor(?=:)/g' # cspell:disable-line
+      # Allow the CSS property spelling inside double-quoted inline styles.
+      - '/(?<=\bstyle\s*=\s*"[^"]*)\bcolor(?=:)/g' # cspell:disable-line
