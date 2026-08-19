@@ -482,7 +482,8 @@
       "genes",
       "tissue",
       "expression",
-      "localisation"
+      "localisation",
+      "localization"
     ],
     "name": "Human Protein Atlas",
     "description": "The Human Protein Atlas aims to map all the human proteins in cells, tissues, and organs using an integration of various omics and imaging technologies",
@@ -518,6 +519,7 @@
       "NBIS",
       "TissUUmaps",
       "visualisation",
+      "visualization",
       "tissue",
       "in-situ sequencing",
       "spatial omics",
@@ -844,6 +846,7 @@
       "variants",
       "cases",
       "tumour",
+      "tumor",
       "load frequency database",
       "gene",
       "genes",
@@ -915,6 +918,7 @@
       "RNA sequencing",
       "detect fusion genes",
       "visualise fusion genes",
+      "visualize fusion genes",
       "fusion genes",
       "AWS",
       "RNA-seq",
@@ -1271,7 +1275,9 @@
       "quality-control",
       "reporting",
       "data-visualisation",
-      "visualisation"
+      "data-visualization",
+      "visualisation",
+      "visualization"
     ],
     "name": "MultiQC",
     "description": "Aggregate results from bioinformatics analyses across many samples into a single report.",

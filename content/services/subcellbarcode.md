@@ -47,7 +47,9 @@ Processed data from the SubCellBarCode project can be queried and downloaded fro
 
 ## Publications
 
-Orre, L. M., Vesterlund, M., Pan, Y., Arslan, T., Zhu, Y., Woodbridge, A. F., Frings, O., Fredlund, E., Lehtiö, J. (2019). SubCellBarCode: proteome-wide mapping of protein localisation and relocalisation. *Molecular Cell 73*, P166-182.E7. [https://doi.org/10.1016/j.molcel.2018.11.035](https://doi.org/10.1016/j.molcel.2018.11.035).
+<!-- cspell:disable -->
+Orre, L. M., Vesterlund, M., Pan, Y., Arslan, T., Zhu, Y., Woodbridge, A. F., Frings, O., Fredlund, E., Lehtiö, J. (2019). SubCellBarCode: proteome-wide mapping of protein localization and relocalization. *Molecular Cell 73*, P166-182.E7. [https://doi.org/10.1016/j.molcel.2018.11.035](https://doi.org/10.1016/j.molcel.2018.11.035).
+<!-- cspell:enable -->
 
 Arslan, T., Pan, Y., Mermelekas, G., Vesterlund, M., Orre, L. M., Lehtiö, J. (2022). SubCellBarCode: integrated workflow for robust spatial proteomics by mass spectrometry. *Nature Protocols 17*, 1832-1867. [https://doi.org/10.1038/s41596-022-00699-2](https://doi.org/10.1038/s41596-022-00699-2).
 
