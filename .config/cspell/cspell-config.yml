@@ -37,6 +37,7 @@ dictionaries:
   - python
   - python-common
   - software-terms
+  - software-tools
   - scientific-terms-gb
 
 # Import project-specific words as a custom dictionary
@@ -150,6 +151,9 @@ ignorePaths:
   - "**/custom-dicts/*.txt"
   - "**/static/browserconfig.xml"
   - "**/pnpm-lock.yaml"
+  - "**/CODEOWNERS"
+  - "**/pa11y.config"
+  - "**/.gitignore"
  
 overrides:
   - filename: "**/CITATION.cff"
