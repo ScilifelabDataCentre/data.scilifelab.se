@@ -7,7 +7,6 @@
     "items": {
       "type": "object",
       "required": [
-        "target",
         "type",
         "search_tags",
         "name",
@@ -16,19 +15,6 @@
         "maintained_by"
       ],
       "properties": {
-        "target": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "researchers",
-              "facilities"
-            ]
-          },
-          "minItems": 1,
-          "uniqueItems": true,
-          "description": "Target audience for the service."
-        },
         "type": {
           "type": "array",
           "items": {
