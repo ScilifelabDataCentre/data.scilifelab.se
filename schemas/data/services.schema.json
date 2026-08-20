@@ -7,6 +7,7 @@
     "items": {
       "type": "object",
       "required": [
+        "owner",
         "type",
         "search_tags",
         "name",
@@ -15,6 +16,21 @@
         "maintained_by"
       ],
       "properties": {
+        "owner": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "SciLifeLab Data Centre",
+              "NBIS",
+              "SciLifeLab Affiliated",
+              "SciLifeLab Infrastructure"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "responsible for the service."
+        },
         "type": {
           "type": "array",
           "items": {
@@ -94,6 +110,11 @@
           "type": "string",
           "format": "uri",
           "description": "OPTIONAL: Slack channel or workspace URL for service support."
+        },
+        "support_impact": {
+          "type": "string",
+          "format": "uri",
+          "description": "OPTIONAL: Link to dashboard showing impact of the service."
         },
         "data_source_type": {
           "type": "array",
