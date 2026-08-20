@@ -74,7 +74,7 @@
         "url": {
           "type": "string",
           "description": "URL linking to the service.",
-          "pattern": "^(https?:\\/\\/|\\/).+"
+          "pattern": "^(https?:\\/\\/|\\/|mailto:).+"
         },
         "maintained_by": {
           "type": "string",
