@@ -5,7 +5,7 @@ summary: Study gives insight into host-viral interactions of Crimean-Congo haemo
 banner: /highlights/crimean_congo_interactions.jpg
 banner_large: /highlights/crimean_congo_interactions_large.jpg
 banner_caption: Fig 3c. from Neogi et al. (2022). Heatmap of significant correlation (adj. p < 0.05) between key metabolic and signalling pathways. Column and row annotation denotes corresponding pathways.
-tags: [Highlight, Infectious diseases, OXPHOS, Crimean-Congo haemorrhagic fever, Antiviral]
+tags: [Highlight, Infectious diseases, OXPHOS, Crimean-Congo hemorrhagic fever, Antiviral] # cspell:ignore hemorrhagic
 authors: [Katarina Öjefors Stark]
 images: ["/highlights/crimean_congo_interactions.jpg"]
 announcement: "This Data Highlight was originally [published on the Swedish COVID-19 & Pandemic Preparedness Data Portal](https://covid19dataportal.se/highlights/crimean_congo_interactions/)."

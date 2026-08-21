@@ -5,7 +5,7 @@ summary: The study uses a Bayesian deep-learning model trained using fossil evid
 banner: /highlights/still_transition_model.png
 banner_large: /img/misc/new_animated_vegetation_change_gif.gif
 banner_caption: "Animation showing changes in vegetation over time.<br>Courtesy Tobias Andermann, Uppsala University.<br><button class='btn btn-aqua' style='font-size:11px;padding:0.4px 5px 1.5px;' onclick=\"document.querySelector('figure > img').src='/img/misc/new_animated_vegetation_change_gif.gif'\">Replay animation</button>"
-tags: [Highlight, Bayesian, Palaeovegetation, Deep-learning]
+tags: [Highlight, Bayesian, Paleovegetation, Deep-learning] # cspell:ignore Paleovegetation
 authors: [Katarina Öjefors Stark]
 images: [/highlights/still_transition_model.png]
 ---

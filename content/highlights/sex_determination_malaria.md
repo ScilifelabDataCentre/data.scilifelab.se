@@ -28,7 +28,7 @@ This study demonstrates how genome scale functional screens and single cell tran
 
 #### Data
 
-*	Single-cell RNA-seq data is found in the ENA under accession number <!-- cspell:disable --> [PRJEB44892](https://www.ebi.ac.uk/ena/browser/view/PRJEB44892) <!-- enable:enable -->
+*	Single-cell RNA-seq data is found in the ENA under accession number <!-- cspell:ignore PRJEB44892 --> [PRJEB44892](https://www.ebi.ac.uk/ena/browser/view/PRJEB44892) <!-- cspell:enable -->
 *	Bulk RNA-seq data is found in Gene Expression Omnibus: [GSE110201](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE110201), [GSE168817](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168817)
 *	Mass spectrometry proteomics data have been deposited (via PRoteomics IDEntifications) to the ProteomeXchange Consortium: [PXD033827](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD033827)
 *	Supporting files and code are available on [Github](https://github.com/andyrussell/Gametocytogenesis/)
