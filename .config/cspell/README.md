@@ -84,8 +84,8 @@ The workflow explicitly includes some default action settings. The workflow woul
   - `caseSensitive` allows CSpell to distinguish between different casing, e.g. GitHub and github.
   - `useGitignore` tells CSpell to ignore any files that are listed in the `.gitignore`.
   - `import` imports dictionaries that need to be installed in the workflow before CSpell runs, in this case British English, Medical Terms, People Names, Scientific Terms GB, Software Terms and Swedish.
-  - `dictionaries` lists the dictionaries for every checked file. It contains the custom dictionaries defined under `dictionaryDefinitions` and dictionaries bundled with CSpell that do not need installing. Dictionaries that come from `import` are enabled automatically and must not be listed there.
-  - `dictionaryDefinitions` registers the files in `custom-dicts` as dictionaries.
+  - `dictionaries` lists the dictionaries for every checked file. It contains the custom dictionaries defined under `dictionaryDefinitions` and dictionaries bundled with CSpell that do not need installing. Dictionaries that come from `import` are enabled automatically and must not be listed in dictionaries.
+  - `dictionaryDefinitions` registers the files in `custom-dicts` as dictionaries. 
   - `ignoreRegExpList` tells CSpell to ignore specific patterns.
   - `ignorePaths` tells CSpell to ignore specific files in your repository.
   - `languageSettings` specifies some configuration to apply to only specific languages, incl. code languages.
