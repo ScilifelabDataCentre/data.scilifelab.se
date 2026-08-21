@@ -18,6 +18,8 @@ back_to_top_button: true
 
 ## Number of users over time
 
+The number of user accounts in SciLifeLab Data Centre Services over time. Only services that involve the creation of user accounts are included.
+
 <!-- Graph showing users over time -->
 
  <div class="plot_wrapper mb-3">
