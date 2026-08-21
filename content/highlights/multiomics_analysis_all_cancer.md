@@ -28,7 +28,7 @@ The researchers used the approach outlined above to identify a putative therapeu
 
 In summary, multi-omics approaches can be applied to childhood ALL lines for the purposes of potential drug discovery. Such approaches have relevance to precision medicine and can be used to better understand specific mechanisms of drug sensitivity in childhood ALL.
 
-Leo, Aswad, Stahl and colleagues have made their work available as an user-friendly web application (R Shiny app) called [FORALL](https://proteomics.se/forall) *(Functional Omics Research of Acute Lymphoblastic Leukaemia)*. The web application makes it possible for other researchers to further explore the proteomic, transcriptomic, and drug sensitivity data described in the study.
+Leo, Aswad, Stahl and colleagues have made their work available as an user-friendly web application (R Shiny app) called [FORALL](https://proteomics.se/forall) *(Functional Omics Research of Acute Lymphoblastic Leukemia)*. The web application makes it possible for other researchers to further explore the proteomic, transcriptomic, and drug sensitivity data described in the study.
 
 #### Data
 
@@ -49,4 +49,4 @@ Leo, I. R., Aswad, L., Stahl, M., Kunold, E., Post, F., Erkers, T., Struyf, N., 
 
 #### Funding
 
-This study was supported by grants from the Swedish Childhood Cancer Foundation, the Swedish Research Council, Felix Mindus Contribution to Leukaemia research, Dr. Åke Olsson Foundation for Hematological Research, Cancer Society Stockholm and the King Gustaf V Jubilee Fund, and Magnus Bergvalls Stiftelse.
+This study was supported by grants from the Swedish Childhood Cancer Foundation, the Swedish Research Council, Felix Mindus Contribution to Leukemia research, Dr. Åke Olsson Foundation for Hematological Research, Cancer Society Stockholm and the King Gustaf V Jubilee Fund, and Magnus Bergvalls Stiftelse.

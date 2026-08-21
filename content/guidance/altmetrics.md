@@ -45,7 +45,7 @@ Alternative metrics are also available from many journal publishers. Publishers 
 Below is a wordcloud showing all of the types of sources monitored by PlumX, please note that the size of the word does not indicate relative importance or number of e.g. blogs monitored.
 
 <figure class="my-3 figure w-100 text-center">
-  <img src="/img/misc/plumx_cloud.png" alt="PlumX artefacts cloud" class="figure-img img-fluid img-adaptive">
+  <img src="/img/misc/plumx_cloud.png" alt="PlumX artifacts cloud" class="figure-img img-fluid img-adaptive">
   <figcaption class="figure-caption">Word cloud created using <a href="https://wordart.com/">wordart.com</a>. Words are not weighted. Based largely on the 67 “PlumX artefacts”, i.e. the sources tracked by PlumX.</figcaption>
 </figure>
 <br>
@@ -124,7 +124,7 @@ Some factors to consider when choosing a platform for tracking research metrics:
 
 #### Altmetric.com
 
-[Altmetric.com](https://www.altmetric.com) is primarily focused on tracking the online attention that research outputs receive, such as mentions on social media, news articles, and blogs. [Altmetric.com](https://www.altmetric.com) provides a doughnut-shaped visualisation that summarises the sources and volume of online attention received by a research output, as well as a numerical Altmetric Attention Score that reflects the overall level of attention received.
+[Altmetric.com](https://www.altmetric.com) is primarily focused on tracking the online attention that research outputs receive, such as mentions on social media, news articles, and blogs. [Altmetric.com](https://www.altmetric.com) provides a donut-shaped visualisation that summarises the sources and volume of online attention received by a research output, as well as a numerical Altmetric Attention Score that reflects the overall level of attention received.
 
 - **How to access metrics:** [Altmetric.com](https://www.altmetric.com) provides a range of [freely accessible tools](https://www.altmetric.com/solutions/free-tools/) for general use. Among these tools is the [Altmetric Bookmarklet](https://www.altmetric.com/solutions/free-tools/bookmarklet/#), which enables the direct viewing of the altmetric score for any of your research outputs in your browser, if they have a persistent identifier. [Altmetric.com](https://www.altmetric.com) also offers a dedicated section designed for researchers, known as [Tools for Researchers](https://help.altmetric.com/support/solutions/6000139690). This segment offers various resources to aid researchers, including the ability to discover the score for a specific research output, integrate the [altmetric.com](https://www.altmetric.com) badge onto your personal page, and gain insight into best practices for describing altmetric scores. For institutions, the [Altmetric Explorer](https://www.altmetric.com/explorer/login) is available with a subscription, allowing researchers to delve into their comprehensive [altmetric.com](https://www.altmetric.com) score. Through this feature, you can discern where your research is drawing attention and explore strategies for potentially enhancing your score. To access the [Altmetric Explorer](https://www.altmetric.com/explorer/login), reach out to your institution's library for relevant information.
 

@@ -116,11 +116,13 @@ Scope is optional but nice to have if deemed relevant.
 
 Examples:
 
+<!-- cspell:disable -->
 ``` text
-fix(visualisation): correct/add genome visualisation
+fix(vizualisation): correct/add genome visualisation
 feat(dashboard): add SARS-Cov2 dashboard
 style(css): reformat layout classes
 ```
+<!-- cspell:enable -->
 
 For the short description, write as if completing "*If accepted, my changes are going to...*".
 
