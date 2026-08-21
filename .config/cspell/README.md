@@ -62,8 +62,11 @@ This template uses one GitHub Actions workflow file and one CSpell configuration
 | ------ | --------- |
 | `.github/workflows/cspell.yml` | Runs CSpell |
 | `.config/cspell/cspell-config.yml` | CSpell configuration file used by the workflow. Defines languages, dictionaries, ignored patterns and project-specific word lists. |
-| `.config/cspell/project-specific-words.txt` | List of valid repository-specific words that are not covered by any available CSpell dictionaries but that CSpell should allow |
-| `.config/cspell/forbidden-words.txt` | List of words that should be flagged by CSpell but that are allowed by one or more enabled dictionaries |
+| `.config/cspell/custom-dicts/project-specific-words.txt` | Repository-specific words that no CSpell dictionary covers. Enabled globally. |
+| `.config/cspell/custom-dicts/forbidden-words.txt` | Words that an enabled dictionary allows but that should be flagged, e.g. US spellings. Enabled globally. |
+| `.config/cspell/custom-dicts/approved-acronyms.txt` | 	Acronyms used across the repository. Enabled globally. |
+| `.config/cspell/custom-dicts/approved-names.txt` | Personal and organisation names. Enabled globally. |
+| `.config/cspell/custom-dicts/{...}.txt` | Words valid only in one content directory. Enabled per directory under overrides. |
 | `.config/cspell/package.json` / `.config/cspell/package-lock.json` | Define and lock the npm dependencies required by the CSpell configuration, such as additional dictionaries. |
 | `.config/cspell/README.md` | This guide |
 
