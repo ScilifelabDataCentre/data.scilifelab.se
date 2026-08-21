@@ -5,7 +5,7 @@
 #
 # The examples below are US spellings. British English uses "recognise", "recognised", and "recognises".
 # CSpell is disabled below since it will otherwise fail due to this file
-# One word per line
+# One word per line.
 # Each line should start with !
 # ---
 !analyze
