@@ -2,6 +2,6 @@
 #
 # Add words that are valid for the /content/open_science/ directory but
 # not covered by CSpell's available dictionaries.
-# One name per line.
+# One word per line, in alphabetical order.
 # ---
 Talarify

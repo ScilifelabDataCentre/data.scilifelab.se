@@ -2,7 +2,7 @@
 #
 # Add acronyms that are valid for your repository but
 # not covered by CSpell's available dictionaries.
-# One name per line.
+# One acronym per line, in alphabetical order.
 # ---
 ANUBIX
 BBSRC

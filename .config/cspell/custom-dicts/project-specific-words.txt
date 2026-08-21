@@ -2,7 +2,7 @@
 #
 # Add terms that are valid for your repository but
 # not covered by CSpell's available dictionaries.
-# One word per line.
+# One word per line, in alphabetical order.
 # ---
 Altmetrics
 altmetrics
