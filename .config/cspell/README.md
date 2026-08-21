@@ -164,11 +164,11 @@ flowchart TD
 
     I ==> J{"`Word found in a dictionary in <br/> **cspell-dicts** repo?`"}
 
-    J ==>|"`**No**`"| N{"`Is the word a one-off occurence?`"}
+    J ==>|"`**No**`"| N{"`Is the word a one-off occurrence?`"}
     J ==>|"`**Yes**`"| K{"`Is the dictionary<br/>_bundled_ with CSpell?`"}
 
     N ==>|"`**No**`"| M["`Add to a <br/> **custom-dict**`"]
-    N ==|"`**Yes**`"| O["`Disable occurence <br/> within file comment`"]
+    N ==|"`**Yes**`"| O["`Disable occurrence <br/> within file comment`"]
 
     K ==>|"`**No**`"| L[Install and import<br/>the dictionary]
     K ==>|"`**Yes**`"| H
