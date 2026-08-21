@@ -197,22 +197,22 @@ overrides:
     dictionaries:
       - guidance-words
     ignoreRegExpList:
-      - "PlumX artifacts cloud"
-      - "donut-shaped"
+      - "PlumX artifacts" # cspell:disable-line
+      - "donut-shaped" # cspell:disable-line
 
   - filename: "**/content/highlights/**"
     dictionaries:
       - highlight-words
     ignoreRegExpList:
-      - "World Health Organization"
-      - "Functional Omics Research of Acute Lymphoblastic Leukemia"
-      - "Felix Mindus Contribution to Leukemia research"
+      - "World Health Organization" # cspell:disable-line
+      - "Functional Omics Research of Acute Lymphoblastic Leukemia" # cspell:disable-line
+      - "Felix Mindus Contribution to Leukemia research" # cspell:disable-line
 
   - filename: "**/content/news/**"
     dictionaries:
       - news-words
     ignoreRegExpList:
-      - "Department of Microbiology, Tumor and Cell Biology"
+      - "Department of Microbiology, Tumor and Cell Biology" # cspell:disable-line
 
   - filename: "**/content/open_science/**"
     dictionaries:
@@ -332,4 +332,4 @@ overrides:
     ignoreRegExpList:
       # Preserve the official Schema.org type identifier.
       - '/"@type"\s*:\s*"Organization"/g' # cspell:disable-line
-      - "Services catalog"
+      - "Services catalog" # cspell:disable-line
