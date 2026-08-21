@@ -81,9 +81,9 @@ The workflow explicitly includes some default action settings. The workflow woul
   - `files: ''` tells CSpell to check all file types selected by the action. This is the _default_.
 - The CSpell action uses `.config/cspell/cspell-config.yml` for language, dictionary, ignored patterns, and project-specific-word settings.
   - `language` configures the languages used during the spell check, here British English and Swedish
-  - `import` imports dictionaries that need to be installed in the workflow before CSpell runs, in this case Swedish and People Names
+  - `import` imports dictionaries that need to be installed in the workflow before CSpell runs, in this case British English, Medical Terms, People Names, Scientific Terms GB, Software Terms and Swedish.
   - `caseSensitive` allows CSpell to distinguish between different casing, e.g. GitHub and github.
-  - `dictionaries` list dictionaries from the [`cspell-dicts` repository](https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts) that do not require installation before use. They are bundled with CSpell and are enabled when listed under the `dictionaries` section
+  - `dictionaries` lists the dictionaries for every checked file. It contains the custom dictionaries defined under `dictionaryDefinitions` and dictionaries bundled with CSpell that do not need installing. Dictionaries that come from `import` are enabled automatically and must not be listed there.
   - `dictionaryDefinitions` imports the two custom files as dictionaries:
     - `project-specific-words.txt` contains words that are not included in any other [CSpell-available dictionary](https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts) but that we consider correct and CSpell should not flag.
     - `forbidden-words.txt` contains words that are allowed in an enabled CSpell dictionary, but that we want to flag as incorrect, e.g. US English spellings.
