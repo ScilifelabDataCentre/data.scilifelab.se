@@ -37,5 +37,5 @@ pombe
 RMSD
 Sambamba
 SCAPIS
-Seqera
 Schizosaccharomyces
+Seqera

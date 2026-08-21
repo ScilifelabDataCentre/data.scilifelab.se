@@ -4,5 +4,5 @@
 # not covered by CSpell's available dictionaries.
 # One word per line, in alphabetical order.
 # ---
-PLSNET
 MSEK
+PLSNET

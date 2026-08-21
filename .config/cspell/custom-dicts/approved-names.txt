@@ -5,14 +5,14 @@
 # One name per line.
 # ---
 Ahlman
+Akusjärvi
+Altınışık
+Ambikan
 Ameur
 Amunts
 Andermann
 Anelda
 Anway
-Akusjärvi
-Altınışık
-Ambikan
 Ariño
 Asgeirsson
 Aswad
