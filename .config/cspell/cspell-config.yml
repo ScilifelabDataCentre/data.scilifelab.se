@@ -155,20 +155,30 @@ languageSettings:
 # Patterns that may appear across multiple file types.
 ignoreRegExpList:
   # Links and addresses
-  - MarkdownLink # Link targets but check link text
-  - Url # Complete URLs, such as https://www.example.com
-  - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Bare domain names. cspell:disable-line
-  - '/scilifelab\.[a-z0-9.-]+/gi' # SciLifeLab domain names. cspell:disable-line
-  - '/@scilifelab\./gi' # SciLifeLab email domains. cspell:disable-line
+  - MarkdownLink # Ignore link targets but continue checking visible link text.
+  - Url # Ignore complete URLs, such as https://www.example.com
+  - '/\b[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z]{2,}\b/gi' # Ignore bare domain names. # cspell:disable-line
+  - '/scilifelab\.[a-z0-9.-]+/gi' # Ignore SciLifeLab domain names. # cspell:disable-line
+  - '/@scilifelab\./gi' # Ignore SciLifeLab email domains. # cspell:disable-line
 
-  # DOI identifiers
-  - '/\d+\/scilifelab\./gi' # SciLifeLab DOI prefixes. cspell:disable-line
-  - '/\d+\/pnas\./gi' # PNAS DOI prefixes. cspell:disable-line
-  - '/DOI:.*/g' # Text containing a labelled DOI reference. cspell:disable-line
+  # DOI identifiers.
+  - '/\d+\/scilifelab\./gi' # Ignore SciLifeLab DOI prefixes. # cspell:disable-line
+  - '/\d+\/pnas\./gi' # Ignore PNAS DOI prefixes. # cspell:disable-line
+  - '/DOI:.*/g' # Ignore text containing a labelled DOI reference.
 
-  # Domain patterns
-  - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # cspell:disable-line
-  - '/ddls[a-zA-Z0-9._-]*/g'
+  # Project-specific identifiers and paths.
+  - '/ddls[a-zA-Z0-9._-]*/g' # Ignore DDLS identifiers and their suffixes.
+  - '/#datacentre_[a-z0-9_-]+/g' # Ignore Data Centre Slack channels # cspell:disable-line
+  - '/(?<=\/img\/logos\/)scilifelab(?=\\?_thumbnail\.[a-z0-9]+\b)/gi' # Ignore generated SciLifeLab logo filenames. # cspell:disable-line
+  - '/\/subcellbarcode\//gi' # Ignore SubCellBarCode URL path components. # cspell:disable-line
+
+  # Accepted phrase.
+  - "de novo" # Ignore this phrase
+
+# ---------------------------------------------------------------------------
+# 8. File- and directory-specific settings
+# ---------------------------------------------------------------------------
+
 
   # Field patterns in JSON / YAML
   - '/"url"\s*:\s*"[^"]*"/g'
@@ -179,10 +189,7 @@ ignoreRegExpList:
   - '/"ddls"\s*:/g' # cspell:disable-line
 
   # Other
-  - '/#datacentre_[a-z0-9_-]+/g' # cspell:disable-line
   - '/decodeURIComponent\([^)]*\)/g'
-  - '/\/subcellbarcode\//gi'  # cspell:disable-line
-  - 'de novo'
   - >-
     /(?<=<div\b[^>]*?\bclass\s*=\s*["'][^"']*)\bgray\b(?=[^"']*["'][^>]*>)/
 
