@@ -1,3 +1,9 @@
+# Words mentioned in the /data/ directory that are flagged by CSpell but should be allowed
+#
+# Add words that are valid for the /data/ directory but
+# not covered by CSpell's available dictionaries.
+# One name per line.
+# ---
 BBMRI-ERIC
 CCLE
 cellosaurus

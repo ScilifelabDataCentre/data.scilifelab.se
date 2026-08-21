@@ -1,3 +1,9 @@
+# Acronyms in this repository that are flagged by CSpell but should be allowed
+#
+# Add acronyms that are valid for your repository but
+# not covered by CSpell's available dictionaries.
+# One name per line.
+# ---
 ANUBIX
 BBSRC
 BOSC

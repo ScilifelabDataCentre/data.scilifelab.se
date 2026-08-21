@@ -1,1 +1,7 @@
+# Words mentioned in the /content/open_science/ directory that are flagged by CSpell but should be allowed
+#
+# Add words that are valid for the /content/open_science/ directory but
+# not covered by CSpell's available dictionaries.
+# One name per line.
+# ---
 Talarify
