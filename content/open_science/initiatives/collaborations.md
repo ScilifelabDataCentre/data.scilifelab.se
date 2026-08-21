@@ -159,7 +159,9 @@ sustainable research practices, and data-driven innovation.
   alt="OSMI logo"
 >}}
 
-## Open Science Monitoring Initiative <!-- cspell:disable --> {#osmi} <!-- cspell:enable -->
+<!-- cspell:disable -->
+## Open Science Monitoring Initiative {#osmi}
+<!-- cspell:enable -->
 
 SciLifeLab is proud to partner with the
 [Open Science Monitoring Initiative (OSMI)](https://open-science-monitoring.org/)
@@ -192,7 +194,9 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
   alt="EOSC logo"
 >}}
 
-## European Open Science Cloud (EOSC) <!-- cspell:disable --> {#eosc} <!-- cspell:enable -->
+<!-- cspell:disable -->
+## European Open Science Cloud (EOSC) {#eosc} 
+<!-- cspell:enable -->
 
 The European Open Science Cloud (EOSC) is a broad-based initiative aimed at developing a federated, open, and
 multidisciplinary digital environment for European researchers, academics, innovators, and citizen scientists.
@@ -222,7 +226,9 @@ supports the development of a robust, interoperable, and researcher-driven Europ
   alt="nf-core logo"
 >}}
 
-## SciLifeLab & nf-core <!-- cspell:disable --> {#scilifelab-nfcore} <!-- cspell:enable -->
+<!-- cspell:disable -->
+## SciLifeLab & nf-core {#scilifelab-nfcore}
+<!-- cspell:enable -->
 
 SciLifeLab is a founding member of [nf-core](https://nf-co.re/) - a community effort to collect a curated set of
 analysis pipelines and modules built using Nextflow, aimed at enhancing reproducibility and collaboration. Different
