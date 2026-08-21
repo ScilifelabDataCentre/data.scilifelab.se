@@ -179,117 +179,147 @@ ignoreRegExpList:
 # 8. File- and directory-specific settings
 # ---------------------------------------------------------------------------
 
-
-  # Field patterns in JSON / YAML
-  - '/"url"\s*:\s*"[^"]*"/g'
-  - '/images: \[.*\]/g'
-  - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g'
-  - '/thumbnail: \".*\"/g'
-  - '/\bsrc\s*=\s*"[^"]*"/g'
-  - '/"ddls"\s*:/g' # cspell:disable-line
-
-  # Other
-  - '/decodeURIComponent\([^)]*\)/g'
-  - >-
-    /(?<=<div\b[^>]*?\bclass\s*=\s*["'][^"']*)\bgray\b(?=[^"']*["'][^>]*>)/
-
-
-
-
- 
 overrides:
-  - filename: "**/CITATION.cff"
-    words: 
-      - orcid # cspell:disable-line
-  
-  - filename: "**/config.yaml"
-    words:
-      - goldmark # cspell:disable-line
-
-  - filename: "**/layouts/jobs/list.html"
-    words:
-      - univ # cspell:disable-line
-  
-  - filename: "**/layouts/events/list.html"
-    ignoreRegExpList:
-      # Allow the external API property name.
-      - '/(?<=\?\.)organizer\b/g' # cspell:disable-line
-
-  - filename: "**/layouts/contact/list.html"
-    ignoreRegExpList:
-      # Allow the JavaScript scrolling option.
-      - '/\bbehavior(?=\s*:)/g' # cspell:disable-line
-
-  - filename: "**/data/**/*.json"
-    ignoreRegExpList:
-      # 'Ignore' these fields completely.
-      - '/"(?:maintained_by_url|support_email|thumbnail)"\s*:\s*"[^"]*"/g'
-
-      # Allow these words only inside search_tags.
-      - '/(?<="search_tags"\s*:\s*\[[^\]]*)\b(?:Catalog|catalog|embl|localization|tumor|visualization|visualize|Altmetrics|metatlas|rnafusion|raredisease|cutadapt|SBDI|gbif|GBIF|snakemake|fastq|FASTQ|coidb|sweden|clinvar|ClinVar|ensembl|Ensembl|chanjo2|sarek|multiqc|bioconda|metaanalysis|Olink|OMIM|pathwax|funcoup|BinoX|plumx|impactstory|adiposetissue|metagenomes|TCGA|TCIA)\b/g' # cspell:disable-line
-
-      # Allow complete nf-core identifiers in names and descriptions.
-      - '/\bnf-core\/[A-Za-z0-9][A-Za-z0-9._-]*/g'
-      
-  - filename: "**/data/**"
-    dictionaries:
-      - data-words
-
-  - filename: "**/content/open_science/**"
-    dictionaries:
-      - open-science-words
-
-  - filename: "**/content/news/**"
-    dictionaries:
-      - news-words
-  
-  - filename: "**/content/highlights/**"
-    dictionaries:
-      - highlight-words
-
-  - filename: "**/content/guidance/**"
-    dictionaries:
-      - guidance-words
+  # -------------------------------------------------------------------------
+  # Directory-specific settings
+  # -------------------------------------------------------------------------
 
   - filename: "**/assets/**"
     ignoreRegExpList:
       # Allow the CSS property spelling when immediately followed by a colon.
       - '/\bcolor(?=:)/g' # cspell:disable-line
-    
-      # Allow the first manifest dictionary key.
-      - '/"background_color"\s*:/g' # cspell:disable-line
 
-      # Allow the second manifest dictionary key.
+      # Allow the manifest keys separately.
+      - '/"background_color"\s*:/g' # cspell:disable-line
       - '/"theme_color"\s*:/g' # cspell:disable-line
 
+  - filename: "**/content/guidance/**"
+    dictionaries:
+      - guidance-words
+
+  - filename: "**/content/highlights/**"
+    dictionaries:
+      - highlight-words
+
+  - filename: "**/content/news/**"
+    dictionaries:
+      - news-words
+
+  - filename: "**/content/open_science/**"
+    dictionaries:
+      - open-science-words
+
+  - filename: "**/data/**"
+    dictionaries:
+      - data-words
+
+  # -------------------------------------------------------------------------
+  # JSON fields
+  # -------------------------------------------------------------------------
+
+  - filename: "**/*.json"
+    ignoreRegExpList:
+      - '/"url"\s*:\s*"[^"]*"/g' # Ignore complete URL fields.
+
+      # Ignore the project-specific property name.
+      - '/"ddls"\s*:/g' # cspell:disable-line
+
+  - filename: "**/data/**/*.json"
+    ignoreRegExpList:
+      # Ignore fields containing identifiers rather than prose.
+      - '/"(?:maintained_by_url|support_email|thumbnail)"\s*:\s*"[^"]*"/g'
+
+      # Allow selected terms only inside search_tags.
+      - '/(?<="search_tags"\s*:\s*\[[^\]]*)\b(?:Catalog|catalog|embl|localization|tumor|visualization|visualize|Altmetrics|metatlas|rnafusion|raredisease|cutadapt|SBDI|gbif|GBIF|snakemake|fastq|FASTQ|coidb|sweden|clinvar|ClinVar|ensembl|Ensembl|chanjo2|sarek|multiqc|bioconda|metaanalysis|Olink|OMIM|pathwax|funcoup|BinoX|plumx|impactstory|adiposetissue|metagenomes|TCGA|TCIA)\b/g' # cspell:disable-line
+
+      - '/\bnf-core\/[A-Za-z0-9][A-Za-z0-9._-]*/g' # Ignore complete nf-core identifiers.
+
+  - filename: "**/data/data_sources.json"
+    ignoreWords:
+      # Allow proper names while overriding the forbidden dictionary.
+      - Catalog # cspell:disable-line
+
+  # -------------------------------------------------------------------------
+  # Markdown content and front matter
+  # -------------------------------------------------------------------------
+
+  - filename: "**/*.md"
+    ignoreRegExpList:
+      - '/images:\s*\[[^\]]*\]/g' # Ignore image lists.
+      - '/banner(?:_large)?:\s*[a-zA-Z0-9./_-]+/g' # Ignore banner paths.
+      - '/thumbnail:\s*"[^"]*"/g' # Ignore quoted thumbnail paths.
+
+      # Allow the CSS property inside Mermaid class definitions.
+      - '/(?<=^\s*classDef\b[^\n]*)\bcolor(?=:)/gm' # cspell:disable-line
+
+  # -------------------------------------------------------------------------
+  # HTML and embedded markup
+  # -------------------------------------------------------------------------
+
+  - filename:
+      - "**/*.html"
+      - "**/*.md"
+    ignoreRegExpList:
+      - '/\bsrc\s*=\s*"[^"]*"/g' # Ignore double-quoted source attribute values.
+
+      # Allow the US CSS keyword inside div class attributes.
+      - '/(?<=<div\b[^>]*?\bclass\s*=\s*["''][^"'']*)\bgray\b(?=[^"'']*["''][^>]*>)/' # cspell:disable-line
 
   - filename: "**/*.html"
     ignoreRegExpList:
       # Allow the CSS property spelling inside double-quoted inline styles.
       - '/(?<=\bstyle\s*=\s*"[^"]*)\bcolor(?=:)/g' # cspell:disable-line
 
+      # Ignore encoded values passed to this JavaScript function.
+      - '/decodeURIComponent\([^)]*\)/g'
+
+  # -------------------------------------------------------------------------
+  # GitHub Actions
+  # -------------------------------------------------------------------------
+
   - filename: "**/.github/**/*.{yml,yaml}"
     words:
+      # Allow repository-specific workflow identifiers.
       - ScilifelabDataCentre # cspell:disable-line
       - sarif # cspell:disable-line
     ignoreRegExpList:
-      # Ignore GitHub Action identifiers.
-      - '/^\s*uses:\s*\S+/gm'
+      - '/^\s*uses:\s*\S+/gm' # Ignore GitHub Action identifiers.
+      - '/^\s*images:\s*.*$/gm' # Ignore container image values.
+      - '/^\s*image-ref:\s*.*$/gm' # Ignore image reference values.
 
-      # Ignore container image values.
-      - '/^\s*images:\s*.*$/gm'
+  # -------------------------------------------------------------------------
+  # Exact-file exceptions
+  # -------------------------------------------------------------------------
 
-      # Ignore image reference values.
-      - '/^\s*image-ref:\s*.*$/gm'
+  - filename: "**/CITATION.cff"
+    words:
+      # Allow the CFF property name.
+      - orcid # cspell:disable-line
+
+  - filename: "**/config.yaml"
+    words:
+      # Allow the Hugo renderer name.
+      - goldmark # cspell:disable-line
+
+  - filename: "**/layouts/contact/list.html"
+    ignoreRegExpList:
+      # Preserve the JavaScript scrolling option.
+      - '/\bbehavior(?=\s*:)/g' # cspell:disable-line
+
+  - filename: "**/layouts/events/list.html"
+    ignoreRegExpList:
+      # Preserve the external API property name.
+      - '/(?<=\?\.)organizer\b/g' # cspell:disable-line
+
+  - filename: "**/layouts/jobs/list.html"
+    words:
+      # Allow the abbreviated property name.
+      - univ # cspell:disable-line
 
   - filename: "**/layouts/partials/schema.html"
-    ignoreWords: # ignoreWords to override forbidden-words
+    ignoreWords:
+      # Allow the proper name while overriding the forbidden dictionary.
       - Catalog # cspell:disable-line
     ignoreRegExpList:
       # Preserve the official Schema.org type identifier.
       - '/"@type"\s*:\s*"Organization"/g' # cspell:disable-line
-
-
-  - filename: "**/data/data_sources.json"
-    ignoreWords: # ignoreWords to override forbidden-words
-      - Catalog # cspell:disable-line
