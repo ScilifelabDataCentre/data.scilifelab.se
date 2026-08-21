@@ -84,9 +84,7 @@ The workflow explicitly includes some default action settings. The workflow woul
   - `import` imports dictionaries that need to be installed in the workflow before CSpell runs, in this case British English, Medical Terms, People Names, Scientific Terms GB, Software Terms and Swedish.
   - `caseSensitive` allows CSpell to distinguish between different casing, e.g. GitHub and github.
   - `dictionaries` lists the dictionaries for every checked file. It contains the custom dictionaries defined under `dictionaryDefinitions` and dictionaries bundled with CSpell that do not need installing. Dictionaries that come from `import` are enabled automatically and must not be listed there.
-  - `dictionaryDefinitions` imports the two custom files as dictionaries:
-    - `project-specific-words.txt` contains words that are not included in any other [CSpell-available dictionary](https://github.com/streetsidesoftware/cspell-dicts#cspell-dicts) but that we consider correct and CSpell should not flag.
-    - `forbidden-words.txt` contains words that are allowed in an enabled CSpell dictionary, but that we want to flag as incorrect, e.g. US English spellings.
+  - `dictionaryDefinitions` registers the files in `custom-dicts` as dictionaries.
   - `ignoreRegExpList` tells CSpell to ignore specific patterns.
   - `ignorePaths` tells CSpell to ignore specific files in your repository.
 - If CSpell finds spelling issues, the workflow fails. Spelling issues are reported as GitHub annotations, and suggestions are shown when available.
@@ -111,9 +109,13 @@ The workflow explicitly includes some default action settings. The workflow woul
   > [!IMPORTANT]
   > Your repository's `.gitignore` should contain `node_modules/`. Do not push the `node_modules/` to your remote branch.
 
-3. _Optional (Recommended):_ Remove words from the `project-specific-words.txt` and `forbidden-words.txt` files. You can also start from scratch completely by removing the example entires (but keep `# cspell:disable` / `# cspell:enable` where present).
-    1. Does `project-specific-words.txt` include any words that should be considered incorrect and flagged by the spell checking? If so, remove the words from the file.
-    2. Does `forbidden-words.txt` include any words that should be considered correct in your repository? If so, remove the words from the file.
+3. _Optional (Recommended):_ Remove specific words from the files in `custom-dicts/` that do not apply to your repository. You can also start from scratch completely by removing the example entires.
+    1. Does `custom-dicts/forbidden-words.txt` include any words that should be considered correct in your repository? If so, remove the words from the file.
+    2. Do any of the other files include any words that should be considered incorrect and flagged by the spell checking? If so, remove the words from the file.
+
+    > [!WARNING]
+    > If you delete a dictionary file, you must also remove its entry from `dictionaryDefinitions`, otherwise CSpell fails on a missing dictionary path.
+
 4. Push all changes to your remote branch.
 
 After these four steps, you're good to go and have 2 options:
@@ -133,7 +135,7 @@ After these four steps, you're good to go and have 2 options:
 
 ## What to do when CSpell flags a correct word
 
-If CSpell flags a word that you know is correct, **first** check whether it's already covered by a CSpell dictionary. **Do not** immediately add it to `project-specific-words.txt`.
+If CSpell flags a word that you know is correct, **first** check whether it's already covered by a CSpell dictionary. **Do not** immediately add it to one of the custom dictionaries.
 
 The flowchart below shows what to do in different scenarios. These map to specific subsections (found after the flowchart).
 
@@ -234,15 +236,17 @@ The output is a table with the following headers (`Dictionary Location` column i
 
 ### Enable a dictionary
 
-Open your `.config/cspell/cspell-config.yml` file and add the dictionary to `dictionaries`, in alphabetical order.
+Open your `.config/cspell/cspell-config.yml` file and add the dictionary to `dictionaries`, in alphabetical order (within the correct group).
 
 Example:
 
 ```yml
 dictionaries:
-  - companies
-  - cpp-compound-words
-  - fonts
+  - approved-acronyms
+  - approved-names
+  - forbidden-words
+  - project-specific-words
+
   - some-dict  # some-dict is now enabled in the cspell configuration
   [...]
 ```
@@ -280,13 +284,17 @@ If you find a word in a relevant dictionary available in the `cspell-dicts` repo
     - Commit `package.json` and `package-lock.json` so the dictionary dependency is recorded.
     - Do not commit `node_modules/`; make sure `node_modules/` is listed in the repository root `.gitignore`.
 
-2. Import the dictionary in your `.config/cspell/cspell-config.yml`
+2. Import the dictionary in your `.config/cspell/cspell-config.yml`. Note that the list is kept alphabetical.
 
     ```yml
     # Example
     import:
-    - "@cspell/dict-sv/cspell-ext.json"
+    - "@cspell/dict-en-gb/cspell-ext.json"
+    - "@cspell/dict-medicalterms/cspell-ext.json"
     - "@cspell/dict-people-names/cspell-ext.json"
+    - "@cspell/dict-scientific-terms-gb/cspell-ext.json"
+    - "@cspell/dict-software-terms/cspell-ext.json"
+    - "@cspell/dict-sv/cspell-ext.json"
     - "@cspell/dict-<dictionary-id>/cspell-ext.json"
     ```
 
@@ -322,7 +330,7 @@ After adding the word, push the change and check that the PR annotation is gone.
 
 The standard English at the SciLifeLab Data Centre is British English, which is why this CSpell configuration uses `en-gb`.
 
-This does not mean that CSpell will flag every US spelling. Some US spellings may still be accepted because they are included in `en-gb` or in other enabled dictionaries. If a non-British spelling should be avoided in this template but is not flagged by CSpell, add it to the `.config/cspell/forbidden-words.txt` file.
+This does not mean that CSpell will flag every US spelling. Some US spellings may still be accepted because they are included in `en-gb` or in other enabled dictionaries. If a non-British spelling should be avoided in this template but is not flagged by CSpell, add it to the `.config/cspell/custom-dicts/forbidden-words.txt` file.
 
 ```text
 !example
