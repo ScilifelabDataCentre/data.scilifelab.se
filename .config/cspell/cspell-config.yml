@@ -10,7 +10,7 @@
 version: "0.2"
 
 # Use British English and Swedish
-# Note: The British English dictionary includes some US spellings 
+# Note: The British English dictionary includes some US spellings
 language: en-gb,sv
 
 # Treat differently capitalised words as distinct.
@@ -80,7 +80,7 @@ dictionaryDefinitions:
   - name: data-words
     path: ./custom-dicts/data-words.txt
     addWords: true
-  
+
   - name: guidance-words
     path: ./custom-dicts/guidance-words.txt
     addWords: true
@@ -92,7 +92,7 @@ dictionaryDefinitions:
   - name: news-words
     path: ./custom-dicts/news-words.txt
     addWords: true
-  
+
   - name: open-science-words
     path: ./custom-dicts/open-science-words.txt
     addWords: true
