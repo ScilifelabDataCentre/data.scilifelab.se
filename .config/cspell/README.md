@@ -66,7 +66,7 @@ This template uses one GitHub Actions workflow file and one CSpell configuration
 | `.config/cspell/custom-dicts/forbidden-words.txt` | Words that an enabled dictionary allows but that should be flagged, e.g. US spellings. Enabled globally. |
 | `.config/cspell/custom-dicts/approved-acronyms.txt` | 	Acronyms used across the repository. Enabled globally. |
 | `.config/cspell/custom-dicts/approved-names.txt` | Personal and organisation names. Enabled globally. |
-| `.config/cspell/custom-dicts/{...}.txt` | Words valid only in one content directory. Enabled per directory under overrides. |
+| `.config/cspell/custom-dicts/{...}-words.txt` | Words valid only in one content directory. Enabled per directory under overrides. |
 | `.config/cspell/package.json` / `.config/cspell/package-lock.json` | Define and lock the npm dependencies required by the CSpell configuration, such as additional dictionaries. |
 | `.config/cspell/README.md` | This guide |
 
@@ -178,8 +178,8 @@ flowchart TD
     classDef fallback fill:#ffebe9,stroke:#cf222e,color:#24292f,font-size:14px;
 
     class A,B,E,F,J,K,N neutral;
-    class C,D,G,H,I,L do;
-    class M,O fallback;
+    class C,D,G,H,I,L,O do;
+    class M fallback;
 ```
 
 **Jump to:**
@@ -188,7 +188,7 @@ flowchart TD
 - [Enable a dictionary](#enable-a-dictionary)
 - [Search the `cspell-dicts` repo](#search-the-cspell-dicts-repo)
 - [Install and import a dictionary](#install-and-import-a-dictionary)
-- [Add word to `project-specific-words.txt`](#add-word-to-project-specific-wordstxt)
+- [Add word to a custom dictionary](#add-word-to-a-custom-dictionary-configcspellcustom-dicts)
 
 ### Run `cspell trace`
 
@@ -248,11 +248,16 @@ Example:
 
 ```yml
 dictionaries:
+  # Custom dictionaries defined below
   - approved-acronyms
   - approved-names
   - forbidden-words
   - project-specific-words
 
+  # Dictionaries bundled with CSpell
+  - cpp-compound-words
+  - python
+  - python-common
   - some-dict  # some-dict is now enabled in the cspell configuration
   [...]
 ```
@@ -273,7 +278,7 @@ repo:streetsidesoftware/cspell-dicts [YOUR-WORD]
 - Use the `<dictionary-id>` from the file path to find the dictionary in the `cspell-dicts` `README`.
 - If the dictionary **is** marked as Bundled with CSpell, [enable it](#enable-a-dictionary).
 - If the dictionary is **not** marked as `Bundled with CSpell`, [install and import the dictionary package](#install-and-import-a-dictionary).
-- If the search has no relevant results, [add the word to `.config/cspell/project-specific-words.txt`](#add-word-to-project-specific-wordstxt).
+- If the search has no relevant results, [add the word to a custom dictionary](#add-word-to-a-custom-dictionary-configcspellcustom-dicts).
 
 ### Install and import a dictionary
 
@@ -318,7 +323,7 @@ npm uninstall --prefix .config/cspell @cspell/dict-<dictionary-id>
 
 Then also remove the dictionary import from `.config/cspell/cspell-config.yml`.
 
-### Add word to a custom dictionary (`.config/cspell/custom-dicts/)
+### Add word to a custom dictionary (`.config/cspell/custom-dicts/`)
 
 The table below shows when to add a word to the different files under `custom-dicts`. Only add a word to one of the custom dictionaries if the word is correct, relevant to your repository / project, and it doesn't exist in an available CSpell dictionary.
 
