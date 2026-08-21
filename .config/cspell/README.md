@@ -42,10 +42,18 @@ This template uses one GitHub Actions workflow file and one CSpell configuration
 │       └── cspell.yml
 └── .config/
     └── cspell/
+        ├── custom-dicts/
+        │   ├── approved-acronyms.txt
+        │   ├── approved-names.txt
+        │   ├── data-words.txt
+        │   ├── forbidden-words.txt
+        │   ├── guidance-words.txt
+        │   ├── highlight-words.txt
+        │   ├── news-words.txt
+        │   ├── open-science-words.txt
+        │   └── project-specific-words.txt
         ├── README.md
         ├── cspell-config.yml
-        ├── project-specific-words.txt
-        ├── forbidden-words.txt
         ├── package-lock.json
         └── package.json
 ```
