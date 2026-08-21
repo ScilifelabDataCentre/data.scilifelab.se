@@ -100,13 +100,13 @@
                                 <div class="accordion-body px-3 px-lg-2 ms-1 ms-lg-0">`;
       if (eventLocations.length){
         eventsHTML += `<div class="accordion-item border-0 mt-2">
-                            <div class="accordion-header d-none d-lg-block" id="headingType">
+                            <div class="accordion-header d-none d-lg-block" id="headingLocation">
                               <button class="accordion-button custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocation" aria-expanded="true" aria-controls="collapseLocation">
                                 Location
                               </button>
                             </div>
                             <h5 class="d-lg-none">Location</h5>
-                            <div id="collapseLocation" class="accordion-collapse collapse show" aria-labelledby="headingType">
+                            <div id="collapseLocation" class="accordion-collapse collapse show" aria-labelledby="headingLocation">
                               <div class="accordion-body">`;
         eventLocations.forEach((lc) => {
           eventsHTML += `<div class="form-check">   
