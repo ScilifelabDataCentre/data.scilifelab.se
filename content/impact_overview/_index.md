@@ -16,8 +16,10 @@ menu:
 back_to_top_button: true
 ---
 
+## Number of users over time
+
 <!-- Graph showing users over time -->
 
  <div class="plot_wrapper mb-3">
-  <div class="table-responsive">{{< plotly json="/data/KPI_data/yearly_service_users_grouped_bar.json" >}}</div>
+  <div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/yearly_service_users_grouped_bar.json" height="600px" >}}</div>
 </div>
