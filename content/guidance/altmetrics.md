@@ -46,7 +46,7 @@ Below is a wordcloud showing all of the types of sources monitored by PlumX, ple
 
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/plumx_cloud.png" alt="PlumX artifacts cloud" class="figure-img img-fluid img-adaptive">
-  <figcaption class="figure-caption">Word cloud created using <a href="https://wordart.com/">wordart.com</a>. Words are not weighted. Based largely on the 67 “PlumX artefacts”, i.e. the sources tracked by PlumX.</figcaption>
+  <figcaption class="figure-caption">Word cloud created using <a href="https://wordart.com/">wordart.com</a>. Words are not weighted. Based largely on the 67 “PlumX artifacts”, i.e. the sources tracked by PlumX.</figcaption>
 </figure>
 <br>
 <br>
