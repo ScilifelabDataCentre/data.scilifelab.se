@@ -81,12 +81,15 @@ The workflow explicitly includes some default action settings. The workflow woul
   - `files: ''` tells CSpell to check all file types selected by the action. This is the _default_.
 - The CSpell action uses `.config/cspell/cspell-config.yml` for language, dictionary, ignored patterns, and project-specific-word settings.
   - `language` configures the languages used during the spell check, here British English and Swedish
-  - `import` imports dictionaries that need to be installed in the workflow before CSpell runs, in this case British English, Medical Terms, People Names, Scientific Terms GB, Software Terms and Swedish.
   - `caseSensitive` allows CSpell to distinguish between different casing, e.g. GitHub and github.
+  - `useGitignore` tells CSpell to ignore any files that are listed in the `.gitignore`.
+  - `import` imports dictionaries that need to be installed in the workflow before CSpell runs, in this case British English, Medical Terms, People Names, Scientific Terms GB, Software Terms and Swedish.
   - `dictionaries` lists the dictionaries for every checked file. It contains the custom dictionaries defined under `dictionaryDefinitions` and dictionaries bundled with CSpell that do not need installing. Dictionaries that come from `import` are enabled automatically and must not be listed there.
   - `dictionaryDefinitions` registers the files in `custom-dicts` as dictionaries.
   - `ignoreRegExpList` tells CSpell to ignore specific patterns.
   - `ignorePaths` tells CSpell to ignore specific files in your repository.
+  - `languageSettings` specifies some configuration to apply to only specific languages, incl. code languages.
+  - `overrides` contains rules, dictionaries, and single words that should only be enabled in specific files and directories, not globally.
 - If CSpell finds spelling issues, the workflow fails. Spelling issues are reported as GitHub annotations, and suggestions are shown when available.
 
 ## How to use this in your repository
@@ -161,8 +164,11 @@ flowchart TD
 
     I ==> J{"`Word found in a dictionary in </br> **cspell-dicts** repo?`"}
 
-    J ==>|"`**No**`"| M["`Add to <br/> **project-specific-words.txt**`"]
+    J ==>|"`**No**`"| N{"`Is the word a one-off occurence?`"}
     J ==>|"`**Yes**`"| K{"`Is the dictionary<br/>_bundled_ with CSpell?`"}
+
+    N ==>|"`**No**`"| M["`Add to a <br/> **custom-dict**`"]
+    N ==|"`**Yes**`"| O["`Disable occurence <br/> within file comment`"]
 
     K ==>|"`**No**`"| L[Install and import<br/>the dictionary]
     K ==>|"`**Yes**`"| H
@@ -312,17 +318,20 @@ npm uninstall --prefix .config/cspell @cspell/dict-<dictionary-id>
 
 Then also remove the dictionary import from `.config/cspell/cspell-config.yml`.
 
-### Add word to `project-specific-words.txt`
+### Add word to a custom dictionary (`.config/cspell/custom-dicts/)
 
-Only add a word to `.config/cspell/project-specific-words.txt` if it is correct, relevant to this repository, and not covered by a suitable CSpell dictionary.
+The table below shows when to add a word to the different files under `custom-dicts`. Only add a word to one of the custom dictionaries if the word is correct, relevant to your repository / project, and it doesn't exist in an available CSpell dictionary.
+
+| The word is... | Add it to |
+| -------------- | --------- |
+| an acronym | `approved-acronyms.txt` |
+| a person's or organisation's name | `approved-names.txt` |
+| used across the repository | `project-specific-words.txt` |
+| only used/allowed in one directory, e.g. `<specific-directory>` | `<specific-directory>-words.txt` | 
+
+If a word **should** be flagged across all files, add it to `forbidden-words.txt`.
 
 Add one word per line, in alphabetical order.
-
-```text
-example
-project-specific-word
-some-tool-name
-```
 
 After adding the word, push the change and check that the PR annotation is gone.
 
