@@ -64,7 +64,7 @@ This template uses one GitHub Actions workflow file and one CSpell configuration
 | `.config/cspell/cspell-config.yml` | CSpell configuration file used by the workflow. Defines languages, dictionaries, ignored patterns and project-specific word lists. |
 | `.config/cspell/custom-dicts/project-specific-words.txt` | Repository-specific words that no CSpell dictionary covers. Enabled globally. |
 | `.config/cspell/custom-dicts/forbidden-words.txt` | Words that an enabled dictionary allows but that should be flagged, e.g. US spellings. Enabled globally. |
-| `.config/cspell/custom-dicts/approved-acronyms.txt` | 	Acronyms used across the repository. Enabled globally. |
+| `.config/cspell/custom-dicts/approved-acronyms.txt` | Acronyms used across the repository. Enabled globally. |
 | `.config/cspell/custom-dicts/approved-names.txt` | Personal and organisation names. Enabled globally. |
 | `.config/cspell/custom-dicts/{...}-words.txt` | Words valid only in one content directory. Enabled per directory under overrides. |
 | `.config/cspell/package.json` / `.config/cspell/package-lock.json` | Define and lock the npm dependencies required by the CSpell configuration, such as additional dictionaries. |
@@ -104,7 +104,7 @@ The workflow explicitly includes some default action settings. The workflow woul
 
 1. Recreate the file and folder structure shown in the [Files in this setup](#files-in-this-setup) section in your repository, including the exact contents of each file. You can and will alter the contents later, but initially the files should be exact copies. While this README is not technically needed, we do recommend that your repository includes this as well since the information is intended to help you with flagged words and store information you might not remember in the future.
 2. Install the initial CSpell dictionaries specified in `package.json` by running the following command in your repository root:
-  
+
   ```bash
   npm ci --prefix .config/cspell --ignore-scripts
   ```
@@ -335,7 +335,7 @@ The table below shows when to add a word to the different files under `custom-di
 | an acronym | `approved-acronyms.txt` |
 | a person's or organisation's name | `approved-names.txt` |
 | used across the repository | `project-specific-words.txt` |
-| only used/allowed in one directory, e.g. `<specific-directory>` | `<specific-directory>-words.txt` | 
+| only used/allowed in one directory, e.g. `<specific-directory>` | `<specific-directory>-words.txt` |
 
 If a word **should** be flagged across all files, add it to `forbidden-words.txt`.
 
@@ -349,6 +349,9 @@ The standard English at the SciLifeLab Data Centre is British English, which is 
 
 This does not mean that CSpell will flag every US spelling. Some US spellings may still be accepted because they are included in `en-gb` or in other enabled dictionaries. If a non-British spelling should be avoided in this template but is not flagged by CSpell, add it to the `.config/cspell/custom-dicts/forbidden-words.txt` file.
 
+Entries in `forbidden-words.txt` must start with !, and you need to add each capitalisation variant separately.
+
 ```text
 !example
+!Example
 ```
