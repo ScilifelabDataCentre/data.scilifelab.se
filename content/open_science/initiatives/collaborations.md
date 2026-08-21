@@ -23,7 +23,7 @@ via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with th
 
 <!-- cspell:disable -->
 ## CoARA {#coara}
-<!-- cspell:enable >
+<!-- cspell:enable -->
 
 The Coalition for Advancing Research Assessment (CoARA) is a global collective of over 700 member organisations,
 including research institutions, funders, assessment authorities, and professional societies, united to reform how
