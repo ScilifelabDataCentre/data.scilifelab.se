@@ -206,7 +206,7 @@ overrides:
     ignoreRegExpList:
       - "World Health Organization"
       - "Functional Omics Research of Acute Lymphoblastic Leukemia"
-      - "elix Mindus Contribution to Leukemia research"
+      - "Felix Mindus Contribution to Leukemia research"
 
   - filename: "**/content/news/**"
     dictionaries:
