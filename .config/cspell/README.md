@@ -130,12 +130,12 @@ After these four steps, you're good to go and have two options:
 
 1. Run a spell check from your repository root:
 
-  ```bash
-  npx cspell -c .config/cspell/cspell-config.yml --dot --exclude ".git/**" .
-  ```
+    ```bash
+    npx cspell -c .config/cspell/cspell-config.yml --dot --exclude ".git/**" .
+    ```
 
-  > [!NOTE]
-  > The config file is not auto-discovered; you must use the `-c` option or change the config path to `.config/cspell.config.yaml` and update the workflow input.
+    > [!NOTE]
+    > The config file is not auto-discovered; you must use the `-c` option or change the config path to `.config/cspell.config.yaml` and update the workflow input.
 
 2. Fix the misspelled words or follow the guide in the section [What to do when CSpell flags a correct word](#what-to-do-when-cspell-flags-a-correct-word) below.
 
