@@ -173,7 +173,7 @@ ignoreRegExpList:
   - '/\/subcellbarcode\//gi' # Ignore SubCellBarCode URL path components. # cspell:disable-line
 
   # Accepted phrase.
-  - "de novo" # Ignore this phrase
+  - "de novo"
 
 # ---------------------------------------------------------------------------
 # 8. File- and directory-specific settings
