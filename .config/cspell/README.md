@@ -191,6 +191,7 @@ flowchart TD
 - [Enable a dictionary](#enable-a-dictionary)
 - [Search the `cspell-dicts` repo](#search-the-cspell-dicts-repo)
 - [Install and import a dictionary](#install-and-import-a-dictionary)
+- [Disable word occurrence with file comment](https://cspell.org/docs/Configuration/document-settings#enable--disable-checking-sections-of-code)
 - [Add word to a custom dictionary](#add-word-to-a-custom-dictionary-configcspellcustom-dicts)
 
 ### Run `cspell trace`
