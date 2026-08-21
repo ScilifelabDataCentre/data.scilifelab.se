@@ -171,7 +171,7 @@ flowchart TD
     J ==>|"`**Yes**`"| K{"`Is the dictionary<br/>_bundled_ with CSpell?`"}
 
     N ==>|"`**No**`"| M["`Add to a <br/> **custom-dict**`"]
-    N ==>|"`**Yes**`"| O["`Disable occurrence <br/> within file comment`"]
+    N ==>|"`**Yes**`"| O["`Disable occurrence <br/> with file comment`"]
 
     K ==>|"`**No**`"| L[Install and import<br/>the dictionary]
     K ==>|"`**Yes**`"| H
