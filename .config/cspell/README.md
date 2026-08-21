@@ -77,7 +77,7 @@ The workflow explicitly includes some default action settings. The workflow woul
 - The spell check runs when a PR is opened or updated
 - The workflow is configured to check changed files in the PR
   - `incremental_files_only: true` tells CSpell to only check the PR diff, meaning files changed in the PR. It does not check the rest of the repository.
-  - `check_dot_files: true` makes sure that dotfiles are scanned. This includes files under `.github/` and `.config/`. If some dot files should not be scanned, add them to a `ignorePaths:` list in  `.config/cspell/cspell-config.yml`.
+  - `check_dot_files: true` makes sure that dotfiles are scanned. This includes files under `.github/` and `.config/`. If some dot files should not be scanned, add them to an `ignorePaths:` list in `.config/cspell/cspell-config.yml`.
   - `files: ''` tells CSpell to check all file types selected by the action. This is the _default_.
 - The CSpell action uses `.config/cspell/cspell-config.yml` for language, dictionary, ignored patterns, and project-specific-word settings.
   - `language` configures the languages used during the spell check, here British English and Swedish
@@ -106,13 +106,13 @@ The workflow explicitly includes some default action settings. The workflow woul
 2. Install the initial CSpell dictionaries specified in `package.json` by running the following command in your repository root:
   
   ```bash
-  npm ci --prefix .config/cspell
+  npm ci --prefix .config/cspell --ignore-scripts
   ```
 
   > [!IMPORTANT]
   > Your repository's `.gitignore` should contain `node_modules/`. Do not push the `node_modules/` to your remote branch.
 
-3. _Optional (Recommended):_ Remove specific words from the files in `custom-dicts/` that do not apply to your repository. You can also start from scratch completely by removing the example entires.
+3. _Optional (Recommended):_ Remove specific words from the files in `custom-dicts/` that do not apply to your repository. You can also start from scratch completely by removing the example entries.
     1. Does `custom-dicts/forbidden-words.txt` include any words that should be considered correct in your repository? If so, remove the words from the file.
     2. Do any of the other files include any words that should be considered incorrect and flagged by the spell checking? If so, remove the words from the file.
 
@@ -121,7 +121,7 @@ The workflow explicitly includes some default action settings. The workflow woul
 
 4. Push all changes to your remote branch.
 
-After these four steps, you're good to go and have 2 options:
+After these four steps, you're good to go and have two options:
 
 1. Open a PR in your repository and let the workflow run an initial spell check. Then fix the misspelled words, or follow the guide in [What to do when CSpell flags a correct word](#what-to-do-when-cspell-flags-a-correct-word).
 2. [Run the initial spell check locally](#run-the-spell-check-locally)
@@ -131,7 +131,7 @@ After these four steps, you're good to go and have 2 options:
 1. Run a spell check from your repository root:
 
   ```bash
-  npx cspell -c .config/cspell/cspell-config.yml .
+  npx cspell -c .config/cspell/cspell-config.yml --dot --exclude ".git/**" .
   ```
 
 2. Fix the misspelled words or follow the guide in the section [What to do when CSpell flags a correct word](#what-to-do-when-cspell-flags-a-correct-word) below.
@@ -156,13 +156,13 @@ flowchart TD
 
     D ==> E{"`Word found by **cspell trace**?`"}
 
-    E ==>|"`**No**`"| I["`Search the </br> **cspell-dicts** repo`"]
+    E ==>|"`**No**`"| I["`Search the <br/> **cspell-dicts** repo`"]
     E ==>|"`**Yes**`"| F{"`Is that dictionary<br/>_enabled_?`"}
 
     F ==>|"`**No**`"| H[Enable the dictionary<br/>if relevant]
     F ==>|"`**Yes**`"| G[Check spelling,<br/>casing, and config]
 
-    I ==> J{"`Word found in a dictionary in </br> **cspell-dicts** repo?`"}
+    I ==> J{"`Word found in a dictionary in <br/> **cspell-dicts** repo?`"}
 
     J ==>|"`**No**`"| N{"`Is the word a one-off occurence?`"}
     J ==>|"`**Yes**`"| K{"`Is the dictionary<br/>_bundled_ with CSpell?`"}
