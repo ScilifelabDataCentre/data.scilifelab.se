@@ -134,7 +134,7 @@ intuitive and rewarding.
 _Golnaz Taheri_: Start small but make a commitment to being transparent and open.
 Share your data and code early in the process and
 follow the FAIR principles to ensure that your work is accessible and reusable. It’s also important to engage with
-platforms that support Open Science, such as GitHub for code, and utilize institutional resources like NBIS and Bianca
+platforms that support Open Science, such as GitHub for code, and utilise institutional resources like NBIS and Bianca
 for computational support. Finally, prioritise collaboration and ask for feedback from others; Open Science is not just
 about sharing your work, but about creating a community that can help each other advance science more efficiently.
 
