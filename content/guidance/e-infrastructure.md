@@ -89,11 +89,11 @@ After going to the portal, the first step is to register as a new user by select
   <figcaption class="figure-caption">A screenshot from the SUPR login page.</figcaption>
 </figure>
 
-After registering, you have to apply for a project. To do this, select 'Rounds', then 'Compute Rounds', and then choose an the option most applicable to you e.g. 'NAISS Small Compute'. Most projects in the life sciences field use Rackham as compute resource, and so we recommend it. However, other compute resources may be more suitable for your use. If your data include sensitive data (e.g. human genetic data), your choice of compute resource must cater for such data, e.g. 'NAISS SENS', which includes the compute resource Bianca.
+After registering, you have to apply for a project. To do this, select 'Rounds', then 'Compute Rounds', and then choose the option most applicable to you e.g. 'NAISS Small Compute'. Most projects in the life sciences field use Rackham as compute resource, and so we recommend it. However, other compute resources may be more suitable for your use. If your data include sensitive data (e.g. human genetic data), your choice of compute resource must cater for such data, e.g. 'NAISS SENS', which includes the compute resource Bianca.
 
 Your application will then be evaluated. Smaller projects are evaluated on a technical basis, whilst larger projects also include a scientific evaluation.
 
-When you application for resources is approved, you will need to apply for a user account on the compute resource to which your project has been assigned.
+When your application for resources is approved, you will need to apply for a user account on the compute resource to which your project has been assigned.
 
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/NAISS_workflow.png" class="figure-img img-fluid img-adaptive"

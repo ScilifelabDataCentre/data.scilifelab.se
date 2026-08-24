@@ -66,7 +66,7 @@ After registering, you have to apply for a project. To do this, select 'Rounds',
 
 Your application will then be evaluated. Smaller projects are evaluated on a technical basis, whilst larger projects also include a scientific evaluation.
 
-When you application for resources is approved, you will need to apply for a user account on the compute resource to which your project has been assigned.
+When your application for resources is approved, you will need to apply for a user account on the compute resource to which your project has been assigned.
 
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/NAISS_workflow.png" class="figure-img img-fluid img-adaptive"
