@@ -9,6 +9,9 @@ name: Spell Check with CSpell
 on:
   pull_request: # Trigger when PR is opened or updated
 
+permissions:
+  content: read
+
 jobs:
   spellcheck:
     runs-on: ubuntu-latest
@@ -22,7 +25,7 @@ jobs:
 
       # Some dictionaries require installation here
       # and import in the .config/cspell/cspell-config.yml file
-      - name: Install CSpell Dictionaries (Swedish and names)
+      - name: Install CSpell Dictionaries
         run: npm ci --prefix .config/cspell --ignore-scripts
 
       - name: Run CSpell

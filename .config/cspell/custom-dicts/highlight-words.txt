@@ -13,7 +13,6 @@ bryostatin
 CGRP
 CCHFV
 Cytoscape
-CCHFV
 DSRT
 EGAC
 EGAS
