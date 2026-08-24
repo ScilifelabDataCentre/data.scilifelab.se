@@ -24,7 +24,7 @@ In summary, this study showed that human IGH antibody genes are highly variable 
 
 #### Data
 
-Adhering to Open Science and FAIR the researchers have shared sequence data in GenBanka and data in several repositories such as ProteomeXchange, PDB, EMD and SciLifeLab Data Repository.
+Adhering to Open Science and FAIR the researchers have shared sequence data in GenBank and data in several repositories such as ProteomeXchange, PDB, EMD and SciLifeLab Data Repository.
 
 * HC (VDJ) and LC (VJ) sequences of neutralising mAbs available in GenBank through accession id [OP497961 - OP497964](https://www.ncbi.nlm.nih.gov/nuccore/?term=OP497961%3AOP497964%5Bpacc%5D) and [ON086918 - ON086947](https://www.ncbi.nlm.nih.gov/nuccore/?term=ON086918%3AON086947%5Bpacc%5D).
 * The repertoire sequence data is available in [Figshare](http://doi.org/10.17044/scilifelab.19317512) hosted by SciLifeLab.
