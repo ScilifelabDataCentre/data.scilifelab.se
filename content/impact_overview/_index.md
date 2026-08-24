@@ -30,12 +30,12 @@ The number of user accounts in Data Services from SciLifeLab Data Centre over ti
 
 The number of views or visits for Data Services from SciLifeLab Data Centre over time. For SciLifeLab Data Repository, data is taken from the number of times that entries in the repository are viewed. For all other services, the data reflects the number of unqiue visits to the respective webpages.
 
-<!-- Graph showing views over time - NEED TO FINALISE!!-->
-
-## Map of visits/views in the last 12 months
-
-The number of views or visits for different countried for Data Services from SciLifeLab Data Centre over the last year. For SciLifeLab Data Repository, data is taken from the number of times that entries in the repository are viewed. For all other services, the data reflects the number of unqiue visits to the respective webpages.
+<!-- Graph showing views over time-->
 
 <div class="plot_wrapper mb-3">
 <div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/visits_by_service_stacked_bar.json" height="600px" >}}</div>
 </div>
+
+## Map of visits/views in the last 12 months
+
+The number of views or visits for different countried for Data Services from SciLifeLab Data Centre over the last year. For SciLifeLab Data Repository, data is taken from the number of times that entries in the repository are viewed. For all other services, the data reflects the number of unqiue visits to the respective webpages.
