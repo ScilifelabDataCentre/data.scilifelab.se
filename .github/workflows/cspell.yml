@@ -10,7 +10,7 @@ on:
   pull_request: # Trigger when PR is opened or updated
 
 permissions:
-  content: read
+  contents: read
 
 jobs:
   spellcheck:
