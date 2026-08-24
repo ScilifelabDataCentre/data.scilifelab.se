@@ -195,7 +195,7 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
 >}}
 
 <!-- cspell:disable -->
-## European Open Science Cloud (EOSC) {#eosc} 
+## European Open Science Cloud (EOSC) {#eosc}
 <!-- cspell:enable -->
 
 The European Open Science Cloud (EOSC) is a broad-based initiative aimed at developing a federated, open, and
