@@ -68,7 +68,7 @@ In summary, the study demonstrates that immunofluorescence used to identify pote
 
 #### Immunofluorescence images
 
-The team has openly shared images ≈75,000 confocal images of SARS-CoV2 infected and non-infected Vero E6 cell populations under [DOI:10.17044/scilifelab.14315777](https://doi.org/10.17044/scilifelab.14315777):
+The team has openly shared ≈75,000 confocal images of SARS-CoV2 infected and non-infected Vero E6 cell populations under [DOI:10.17044/scilifelab.14315777](https://doi.org/10.17044/scilifelab.14315777):
 
 > Cells had been infected with the virus for 1 h and fixed 24 hour post infection in 96 well plates. Using immunofluorescence (4 colours) cells were stained for the SARS-CoV2 virus (red), the endoplasmic reticulum (yellow) and nucleus (blue) – same for all images in the data set and used as reference markers. On top of this, 700 different target proteins were stained – one per well (green). Images were acquired with an Opera Phoenix microscope at 63X, using 9 FoV and 3 z-planes per protein target.
 
