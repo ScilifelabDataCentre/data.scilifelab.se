@@ -4,7 +4,7 @@ menu:
   open_science:
     name: "Events & Updates"
     weight: 6
-show_section_nav: true
+show_section_nav: false
 back_to_top_button: true
 ---
 

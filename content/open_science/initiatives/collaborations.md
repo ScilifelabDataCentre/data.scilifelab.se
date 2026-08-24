@@ -144,8 +144,7 @@ the equitable and privacy preserving reuse of data and services. SciLifeLab host
 a transatlantic collaboration with GO FAIR US and the [San Diego Supercomputer Center](https://www.sdsc.edu/), where we
 collaborate on FAIR assessment projects (e.g., with [NIH NIAID](https://www.niaid.nih.gov/)). These initiatives share a
 common goal of improving FAIR assessment and certification, and joining the network allows us to look at how we can
-improve the FAIRness of SciLifeLab systems through our community programs. You can
-[view our community initiatives here](#our-initiatives-our-initiatives).
+improve the FAIRness of SciLifeLab systems through our community programs.
 
 Through these initiatives, SciLifeLab aims to strengthen Sweden’s position as a global leader in open science,
 sustainable research practices, and data-driven innovation.
