@@ -28,7 +28,7 @@ The number of user accounts in Data Services from SciLifeLab Data Centre over ti
 
 ## Number of visits/views over time
 
-The number of views or visits for Data Services from SciLifeLab Data Centre over time. For SciLifeLab Data Repository, data is taken from the number of times that entries in the repository are viewed. For all other services, the data reflects the number of unqiue visits to the respective webpages.
+The number of views or visits over time for Data Services from SciLifeLab Data Centre. Data from SciLifeLab Data Repository reflects the number of times that data entries were viewed. For all other services, data reflects the number of visits to the websites.
 
 <!-- Graph showing views over time-->
 
