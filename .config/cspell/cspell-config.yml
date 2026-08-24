@@ -300,7 +300,7 @@ overrides:
   # Exact-file exceptions
   # -------------------------------------------------------------------------
 
-  - filename: "**/bacterial_replication.md" # cspell:disable-line
+  - filename: "**/content/highlights/bacterial_replication.md" # cspell:disable-line
     # Name too close to a real word: Range --> no global ignore
     words:
       - Fange # cspell:disable-line
@@ -315,7 +315,7 @@ overrides:
       # Allow the Hugo renderer name.
       - goldmark # cspell:disable-line
 
-  - filename: "**/generode.md" # cspell:disable-line
+  - filename: "**/content/highlights/generode.md" # cspell:disable-line
     words:
       # Name too close to a real word: Triggers --> no global ignore
       - Tryggers # cspell:disable-line
@@ -345,9 +345,8 @@ overrides:
       - "Services catalog" # cspell:disable-line
 
   - filename:
-      - "**/mettl3_localisation.md" # cspell:disable-line
-      - "**/2023-06-01.md" # cspell:disable-line
-      - "**/2023-06-01a.md" # cspell:disable-line
+      - "**/content/highlights/mettl3_localisation.md" # cspell:disable-line
+      - "**/content/news/2023-06-01.md" # cspell:disable-line
     words:
       # Name too close to a real word --> no global ignore
       - Mondal # (Modal) cspell:disable-line
