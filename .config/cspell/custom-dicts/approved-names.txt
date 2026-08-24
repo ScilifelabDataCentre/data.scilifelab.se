@@ -8,6 +8,8 @@
 #
 # One name per line.
 # ---
+Amunts
+Andermann
 Anelda
 Anway
 Aswad
