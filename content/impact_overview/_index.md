@@ -36,6 +36,6 @@ The number of views or visits for Data Services from SciLifeLab Data Centre over
 
 The number of views or visits for different countried for Data Services from SciLifeLab Data Centre over the last year. For SciLifeLab Data Repository, data is taken from the number of times that entries in the repository are viewed. For all other services, the data reflects the number of unqiue visits to the respective webpages.
 
-<!-- <div class="plot_wrapper mb-3">
-<div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/yearly_service_users_grouped_bar.json" height="600px" >}}</div>
-</div> -->
+<div class="plot_wrapper mb-3">
+<div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/visits_by_service_stacked_bar.json" height="600px" >}}</div>
+</div>
