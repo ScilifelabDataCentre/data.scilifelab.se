@@ -42,6 +42,7 @@ The **GenErode** pipeline was written in Snakemake and Python3. It uses Conda an
 
 #### Article
 
+<!-- cspell:disable-next-line -->
 Kutschera, V. E., Kierczak, M., van der Valk, T., von Seth, J., Dussex, N., Lord, E., Dehasque, M., Stanton, D. W. G., Emami Khoonsari, P., Nystedt, B., Dalén, L., Díez-del-Molino, D. (2022) GenErode: a bioinformatics pipeline to investigate genome erosion in endangered and extinct species. _BMC Bioinformatics 23_, 228. [10.1038/s41467-022-28865-w](https://doi.org/10.1186/s12859-022-04757-0)
 
 #### Funding

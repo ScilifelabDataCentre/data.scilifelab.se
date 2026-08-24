@@ -34,6 +34,7 @@ In accordance with the principles of Open Science, the researchers have made the
 
 DOI: [10.1177/11769351221110872](https://doi.org/10.1177/11769351221110872)
 
+<!-- cspell:disable-next-line -->
 Schaal, W., Ameur, A., Olsson-Strömberg, U., Hermanson, M., Cavelier, L., Spjuth, O. (2022) Migrating to Long-Read Sequencing for Clinical Routine BCR-ABL1 TKI Resistance Mutation Screening. *Cancer Informatics* 21.
 
 #### Funding

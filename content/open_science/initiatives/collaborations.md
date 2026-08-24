@@ -21,9 +21,8 @@ via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with th
   alt="CoARA logo"
 >}}
 
-<!-- cspell:disable -->
+<!-- cspell:disable-next-line -->
 ## CoARA {#coara}
-<!-- cspell:enable -->
 
 The Coalition for Advancing Research Assessment (CoARA) is a global collective of over 700 member organisations,
 including research institutions, funders, assessment authorities, and professional societies, united to reform how
@@ -159,9 +158,8 @@ sustainable research practices, and data-driven innovation.
   alt="OSMI logo"
 >}}
 
-<!-- cspell:disable -->
+<!-- cspell:disable-next-line -->
 ## Open Science Monitoring Initiative {#osmi}
-<!-- cspell:enable -->
 
 SciLifeLab is proud to partner with the
 [Open Science Monitoring Initiative (OSMI)](https://open-science-monitoring.org/)
@@ -194,9 +192,8 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
   alt="EOSC logo"
 >}}
 
-<!-- cspell:disable -->
+<!-- cspell:disable-next-line -->
 ## European Open Science Cloud (EOSC) {#eosc}
-<!-- cspell:enable -->
 
 The European Open Science Cloud (EOSC) is a broad-based initiative aimed at developing a federated, open, and
 multidisciplinary digital environment for European researchers, academics, innovators, and citizen scientists.
@@ -226,9 +223,8 @@ supports the development of a robust, interoperable, and researcher-driven Europ
   alt="nf-core logo"
 >}}
 
-<!-- cspell:disable -->
+<!-- cspell:disable-next-line -->
 ## SciLifeLab & nf-core {#scilifelab-nfcore}
-<!-- cspell:enable -->
 
 SciLifeLab is a founding member of [nf-core](https://nf-co.re/) - a community effort to collect a curated set of
 analysis pipelines and modules built using Nextflow, aimed at enhancing reproducibility and collaboration. Different

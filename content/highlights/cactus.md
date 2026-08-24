@@ -47,6 +47,7 @@ In summary, Cactus is an analysis pipeline that can assist researchers in gainin
 
 DOI: [10.1016/j.ygeno.2024.110858](https://doi.org/10.1016/j.ygeno.2024.110858)
 
+<!-- cspell:disable-next-line -->
 Salignon, J., Millan-Ariño, L., Garcia, M. U., & Riedel C. G. (2024) Cactus: A user-friendly and reproducible ATAC-Seq and mRNA-Seq analysis pipeline for data preprocessing, differential analysis, and enrichment analysis. In: Genomics (Vol: 116, Issue: 4, 110858).
 
 #### Funders

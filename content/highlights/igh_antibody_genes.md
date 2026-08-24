@@ -37,6 +37,7 @@ Adhering to Open Science and FAIR the researchers have shared sequence data in G
 
 DOI: [10.1016/j.immuni.2022.12.005](https://doi.org/10.1016/j.immuni.2022.12.005)
 
+<!-- cspell:disable-next-line -->
 Pushparaj, P., Nicoletto, A., Sheward, D. J., Das, H., Castro Dopico, X., Perez Vidakovics, L., Hanke, L., Chernyshev, M., Narang, S., Kim, S., Fischbach, J., Ekström, S., McInerney, G., Hällberg, B. M., Murrell, B., Corcoran, M., & Karlsson Hedestam, G. B. (2023). Immunoglobulin germline gene polymorphisms influence the function of SARS-CoV-2 neutralizing antibodies. In Immunity (Vol. 56, Issue 1, pp. 193-206.e7).
 
 #### Funding

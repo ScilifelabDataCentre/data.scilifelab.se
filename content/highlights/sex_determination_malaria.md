@@ -36,6 +36,7 @@ This study demonstrates how genome scale functional screens and single cell tran
 
 #### Article
 
+<!-- cspell:disable-next-line -->
 Russell, A. J. C., Sanderson, T., Bushell, E., Talman, A. M., Anar, B., Girling, G., Hunziker, M., Ken, R. S., Martin, J. S., Metcalf, T., Montandon R., Pandey, V., Pardo, M., Roberts, A. B., Sayers, C., Schwach, F., Choudhary, J. S., Rayner, J. C., Voet, T., Modrzynska, K. K., Waters, A. P, Lawniczak, M. K. N., Billker, O. (2023). Regulators of male and female sexual development are critical for the transmission of a malaria parasite. *Cell Host & Microbe 31* 305-319.e10. [10.1016/j.chom.2022.12.011](https://doi.org/10.1016/j.chom.2022.12.011).
 
 #### Funding

@@ -47,6 +47,7 @@ GeneSPIDER2 delivers a highly relevant contribution to the field of transcriptom
 
 DOI: [10.1093/nargab/lqae121](https://doi.org/10.1093/nargab/lqae121)
 
+<!-- cspell:disable-next-line -->
 Garbulowski, M., Hillerton, T., Morgan, D., Seçilmiş, D., Sonnhammer, L., Tjärnberg, A., Nordling, T.E.M, & Sonnhammer, E. L. (2024). GeneSPIDER2: large scale GRN simulation and benchmarking with perturbed single-cell data. NAR Genomics and Bioinformatics, **6(3)**, lqae121.
 
 #### Funders

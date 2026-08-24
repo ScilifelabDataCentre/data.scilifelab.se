@@ -32,6 +32,7 @@ In addition, cryo-electron tomograms revealed a multi-layer selectivity in enter
 
 DOI: [10.1038/s41467-022-33483-7](https://doi.org/10.1038/s41467-022-33483-7)
 
+<!-- cspell:disable-next-line -->
 Dahmane, S., Kerviel, A., Morado, D.R., Shankar, K., Ahlman, B., Lazarou, M., Altan-Bonnet, N., Carlson, L.A. (2022). Membrane-assisted assembly and selective secretory autophagy of enteroviruses. *Nature Communications*,  *13*, 5986.
 
 #### Funding

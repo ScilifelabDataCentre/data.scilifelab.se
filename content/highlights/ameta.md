@@ -42,6 +42,7 @@ In summary, Pochon _et al._ developed a new metagenomic profiling workflow for a
 
 DOI: [https://doi.org/10.1186/s13059-023-03083-9](https://doi.org/10.1186/s13059-023-03083-9)
 
+<!-- cspell:disable-next-line -->
 Pochon, Z., Bergfeldt, N., Kırdök, E., Vicente, M., Naidoo, T., van der Valk, T., Altınışık, N. E., Krzewińska, M., Dalén, L., Götherström, A., Mirabello, C., Unneberg, P., Oskolkov, N. (2023) aMeta: an accurate and memory-efficient ancient metagenomic profiling workflow. In: Genome Biology (Vol: 24, Article no.: 242).
 
 #### Funders

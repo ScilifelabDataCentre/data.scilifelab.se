@@ -39,6 +39,7 @@ Mass spectrometry data are available via [ProteomeXchange](http://proteomecentra
 
 #### Article
 
+<!-- cspell:disable-next-line -->
 Itoh. Y., Khawaja, A., Laptev, I., Cipullo, M., Atanassov, I., Sergiev, P., Rorbach, J., Amunts, A. (2022). Mechanism of mitoribosomal small subunit biogenesis and preinitiation. *Nature*, *606*, 603-608. [10.1038/s41586-022-04795-x](https://doi.org/10.1038/s41586-022-04795-x).
 
 #### Funding
