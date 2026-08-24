@@ -41,6 +41,6 @@ Russell, A. J. C., Sanderson, T., Bushell, E., Talman, A. M., Anar, B., Girling,
 
 #### Funding
 
-The work at Umeå University was funded by the Knut and Alice Wallenberg Foundation, the European Research Council and a Marie Sklodowska-Curie Action fellowship. Research at the Wellcome Sanger Institute was funded by the Wellcome Trust.
+The work at Umeå University was funded by the Knut and Alice Wallenberg Foundation, the European Research Council and a Marie Skłodowska-Curie Action fellowship. Research at the Wellcome Sanger Institute was funded by the Wellcome Trust.
 
 Learn more about the research behind this study: <https://billkerlab.org/>

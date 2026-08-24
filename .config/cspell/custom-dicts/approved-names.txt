@@ -2,6 +2,10 @@
 #
 # Add names that are valid for your repository but
 # not covered by CSpell's available dictionaries.
+#
+# Note: If a name closely resembles a word in an enabled language dictionary,
+# consider adding the name to a file- or folder specific rule in the cspell-config.yml file.
+#
 # One name per line.
 # ---
 Amunts
@@ -17,7 +21,6 @@ Bente
 Bergfeldt
 Billker
 Bogdana
-Brandis
 Burgarella
 Burki
 Buzzao
@@ -26,16 +29,13 @@ Dahmane
 Díez
 Dulaud
 Fabien
-Fange
 Garbulowski
 Golnaz
 Götherström
 Hammarén
 Hamsaiyni
 Hedestam
-Huma
 Ineke
-Itoh
 Jahurul
 Jamy
 Jareborg
@@ -47,7 +47,6 @@ Knöppel
 Kochari
 Koellinger
 Kotliar
-Kutschera
 Lawniczak
 Lawski
 Lehtiö
@@ -58,10 +57,8 @@ Mindus
 Mirabello
 Mirazimi
 Mohanakrishnan
-Mondal
 Nalina
 Neogi
-Nikolay
 Oskolkov
 Panneerselvam
 Pernemalm
@@ -77,13 +74,11 @@ Salignon
 Schlebusch
 Senthilkumar
 Skłodowska
-Sklodowska
 Sonnhammer
 Spjuth
 Suné
 Tanmoy
 Tewatia
-Tryggers
 Ujjwal
 Uller
 Unneberg
