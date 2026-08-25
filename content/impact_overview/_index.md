@@ -20,6 +20,8 @@ back_to_top_button: true
 
 The number of user accounts in Data Services from SciLifeLab Data Centre over time. Only services that involve the creation of user accounts are included.
 
+Please note that the most current year is incomplete.
+
 <!-- Graph showing users over time -->
 
  <div class="plot_wrapper mb-3">
@@ -30,6 +32,8 @@ The number of user accounts in Data Services from SciLifeLab Data Centre over ti
 
 The number of views or visits over time for Data Services from SciLifeLab Data Centre. Numbers from SciLifeLab Data Repository reflects the number of times that data entries were viewed. For all other services, data reflects the number of unique visits to the websites.
 
+Please note that the most current year is incomplete.
+
 <!-- Graph showing views over time-->
 
 <div class="plot_wrapper mb-3">
@@ -39,6 +43,8 @@ The number of views or visits over time for Data Services from SciLifeLab Data C
 ## Map of visits/views in the last 12 months
 
 The number of views or visits for different countries for Data Services from SciLifeLab Data Centre over the last year. For SciLifeLab Data Repository, data is taken from the number of times that entries in the repository are viewed. For all other services, data reflects the number of unique visits to the websites.
+
+Visits/views that are from territories not present on the map, or from an unknown location are not included in the map.
 
 <!-- Graph showing views over time-->
 
