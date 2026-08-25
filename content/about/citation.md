@@ -8,7 +8,7 @@ menu:
   bottom_about:
     name: Cite us
     identifier: citation
-    weight: 30
+    weight: 40
 toc: true
 ---
 
