@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-/* Brand colors
+/* Brand colours
   use 1, 0.75, 0.50, or 0.25
   color: rgba(167, 201, 71, 1);  lime
-  color: rgba(73, 31, 83, 1);  grape, use as "color pop" or on smaller details
+  color: rgba(73, 31, 83, 1);  grape, use as "colour pop" or on smaller details
   color: rgba(4, 92, 100, 1);  teal
   color: rgba(76, 151, 159, 1); aqua
 
@@ -13,7 +13,7 @@
   50%: #A48FA9, RGB: 164/143/169
   25%: #D2C7D4, RGB: 210/199/212
 
-  shades of black between 5-90% used as complementary colors
+  shades of black between 5-90% used as complementary colours
   color: rgba(229, 229, 229, 1); light grey
   color: rgba(166,166,166, 1); medium grey
   color: rgba(63,63,63,1); dark grey
@@ -293,7 +293,7 @@ h5 a:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* Background colors */
+/* Background colours */
 
 .bg-light-gray {
   background-color: #e5e5e5;
@@ -475,11 +475,11 @@ h5 a:hover {
 
 /* Override accordion styles within the data_sources-content */
 .data_sources-content .accordion {
-  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+  --bs-accordion-bg: inherit; /* Use the parent bg-light colour */
 }
 
 .data_sources-content .accordion-button:not(.collapsed) {
-  color: inherit; /* Remove specific active color */
+  color: inherit; /* Remove specific active colour */
 }
 .data_sources-content .accordion-body {
   padding: 0.5rem 0.5rem; /* Adjust these values as needed */
@@ -498,11 +498,11 @@ h5 a:hover {
   padding: 0.5rem;
 }
 #job-filters .accordion {
-  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+  --bs-accordion-bg: inherit; /* Use the parent bg-light colour */
 }
 
 #job-filters  .accordion-button:not(.collapsed) {
-  color: inherit; /* Remove specific active color */
+  color: inherit; /* Remove specific active colour */
 }
 
 #job-filters .accordion-body {
@@ -526,11 +526,11 @@ h5 a:hover {
 }
 /* Events filters */
 #events-filters .accordion {
-  --bs-accordion-bg: inherit; /* Use the parent bg-light color */
+  --bs-accordion-bg: inherit; /* Use the parent bg-light colour */
 }
 
 #events-filters .accordion-button:not(.collapsed) {
-  color: inherit; /* Remove specific active color */
+  color: inherit; /* Remove specific active colour */
 }
 
 #events-filters .accordion-body {
@@ -598,7 +598,7 @@ a.back-to-top.btn:active {
 /* Funding card links styling */
 #fundings-calls-section .card-box a {
   color: inherit;
-  /* Heading color inside the card */
+  /* Heading colour inside the card */
   & h5 {
     color: #045c64;
   };

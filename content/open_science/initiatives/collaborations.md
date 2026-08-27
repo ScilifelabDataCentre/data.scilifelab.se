@@ -21,7 +21,8 @@ via email at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with th
   alt="CoARA logo"
 >}}
 
-## COARA {#coara}
+<!-- cspell:disable-next-line -->
+## CoARA {#coara}
 
 The Coalition for Advancing Research Assessment (CoARA) is a global collective of over 700 member organisations,
 including research institutions, funders, assessment authorities, and professional societies, united to reform how
@@ -156,6 +157,7 @@ sustainable research practices, and data-driven innovation.
   alt="OSMI logo"
 >}}
 
+<!-- cspell:disable-next-line -->
 ## Open Science Monitoring Initiative {#osmi}
 
 SciLifeLab is proud to partner with the
@@ -189,6 +191,7 @@ environments and shaping robust, evidence-informed monitoring frameworks at inst
   alt="EOSC logo"
 >}}
 
+<!-- cspell:disable-next-line -->
 ## European Open Science Cloud (EOSC) {#eosc}
 
 The European Open Science Cloud (EOSC) is a broad-based initiative aimed at developing a federated, open, and
@@ -211,7 +214,7 @@ the [EOSC website](https://eosc.eu/).
 SciLifeLab actively collaborates with the EOSC Association by providing feedback to the EOSC EU Node and by
 participating in several [EOSC-A Task Forces](https://eosc.eu/eosc-task-forces/). It works closely with university
 partners such as Uppsala University, a member of the EOSC Association, as well as through broader European
-collaborations with organizations like CERN and EU projects such as BY-COVID. Through these efforts, SciLifeLab
+collaborations with organisations like CERN and EU projects such as BY-COVID. Through these efforts, SciLifeLab
 supports the development of a robust, interoperable, and researcher-driven European Open Science infrastructure.
 
 {{< banner_image
@@ -219,6 +222,7 @@ supports the development of a robust, interoperable, and researcher-driven Europ
   alt="nf-core logo"
 >}}
 
+<!-- cspell:disable-next-line -->
 ## SciLifeLab & nf-core {#scilifelab-nfcore}
 
 SciLifeLab is a founding member of [nf-core](https://nf-co.re/) - a community effort to collect a curated set of

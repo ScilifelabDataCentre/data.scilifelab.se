@@ -6,7 +6,7 @@ const path = require('path');
 const Ajv = require('ajv');
 const addFormats = require('ajv-formats');
 
-// Initialize AJV with formats support
+// Initialise AJV with formats support
 const ajv = new Ajv({
   allErrors: true,
   verbose: true,

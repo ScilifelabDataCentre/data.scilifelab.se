@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 ? "background-color: #a7c947; color: #000000;" 
                                 : "background-color: #ffc107; color: #000000;";
                         }
-                        noticeContainer.style = `${style}; margin-top: 15px; text-align: center;`; // Add top margin and center text
+                        noticeContainer.style = `${style}; margin-top: 15px; text-align: center;`; // Add top margin and centre text
 
                         const siteLanguage = document.documentElement.lang;
                         let message = notice.message_en;

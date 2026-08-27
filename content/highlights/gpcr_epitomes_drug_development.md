@@ -1,7 +1,7 @@
 ---
 title: Research into the immunogenicity of GPCR epitopes to enhance future drug development
 date: 2023-12-20
-summary: This study by Dahl, Kotilar and Bendes et al address this challenge of developing a high-throughput method to study GPCRs. Data and app shared.
+summary: This study by Dahl, Kotliar and Bendes et al address this challenge of developing a high-throughput method to study GPCRs. Data and app shared.
 banner: /highlights/Schwenk_gpcr.jpeg
 banner_large: /highlights/Schwenk_gpcr.jpeg
 banner_caption: Visual representation of the methods used in the laboratory. Figure 1A of Dahl et al 2023.
@@ -24,7 +24,7 @@ images: [/highlights/Schwenk_gpcr.jpeg]
 
 Proteins in the GPCR superfamily (heterotrimeric guanine-nucleotide-binding regulatory protein (G protein)–coupled receptors) are important in normal cellular physiology and intercellular communication. Disruptions of GPCR signalling are connected to several diseases, such as retinitis pigmentosa (rhodopsin mutations), nephrogenic diabetes insipidus (vasopressin receptor mutations), and obesity (melanocortin receptor mutations).
 
-GPCRs are the targets of about a third of all approved therapeutic drugs, and are therefore important in developing and repurposing therapeutic drugs. Recently, biological drugs that modulate GPCR function based on the binding of anti-GPCR antibodies were introduced, e.g. erenumab, a Calcitonin gene-related peptide (CGRP) -R antagonist for treating migraines (Sweden, Aimovig (c)). However, challenges remain that must be addressed. For example, validating the selectivity of anti-GPCR antibodies across a broader range of GPCRs is difficult because there is a high sequence similarity between GPCRs in the same subfamily. In addition, anti-GPCR antibodies are critical reagents in many bioanalytical methods used to study GPCR biology and pharmacology. Therefore, high-throughput methods are needed to study GPCRs and specific antibodies, in in order to support future pharmaceutical drug development.
+GPCRs are the targets of about a third of all approved therapeutic drugs, and are therefore important in developing and repurposing therapeutic drugs. Recently, biological drugs that modulate GPCR function based on the binding of anti-GPCR antibodies were introduced, e.g. erenumab, a Calcitonin gene-related peptide (CGRP) -R antagonist for treating migraines (Sweden, Aimovig (c)). However, challenges remain that must be addressed. For example, validating the selectivity of anti-GPCR antibodies across a broader range of GPCRs is difficult because there is a high sequence similarity between GPCRs in the same subfamily. In addition, anti-GPCR antibodies are critical reagents in many bioanalytical methods used to study GPCR biology and pharmacology. Therefore, high-throughput methods are needed to study GPCRs and specific antibodies, in order to support future pharmaceutical drug development.
 
 In a 2023 article in Science Advances, researchers from KTH Royal Institute of Technology, The Rockefeller University in New York, and Stockholm University (First author: Leo Dahl, Ilana B. Kotliar, Annika Bendes, Corresponding author: Jochen M. Schwenk, Thomas P. Sakmar) addressed the challenge of developing a high-throughput method to study GPCRs. Spearheaded by the work of three Ph.D. students (Dahl, Kotliar, and Bendes), the team established a framework based on multiplex immunoassays to evaluate the selectivity of anti-GPCR antibodies. A customised library of 215 expressed and solubilised GPCRs from all subfamilies was developed using dual epitope–tagged GPCRs in Expi293F cells (a special kidney HEK 293T cell line). Built on a previous proof-of-concept study, the team profiled over 400 anti-GPCR antibodies from the [Human Protein Atlas](https://www.proteinatlas.org/).
 
@@ -46,7 +46,8 @@ In summary, Dahl, Kotliar, and Bendes _et al._ provide important insights into G
 
 DOI: [10.1126/sciadv.adf9297](https://doi.org/10.1126/sciadv.adf9297)
 
-Dahl, L., Kotliar, I.B., Bendes, A., Dodig-Crnković, T., Fromm, S., Elofsson, A., Uhlén, M., Sakmar, T.P., Schwenk, J.M. (2023). Multiplexed selectivity screening of anti-GPCR antibodies. In: Sciene Advances (Vol. 9, Issue 18, eadf9297).
+<!-- cspell:disable-next-line -->
+Dahl, L., Kotliar, I.B., Bendes, A., Dodig-Crnković, T., Fromm, S., Elofsson, A., Uhlén, M., Sakmar, T.P., Schwenk, J.M. (2023). Multiplexed selectivity screening of anti-GPCR antibodies. In: Science Advances (Vol. 9, Issue 18, eadf9297).
 
 #### Funding
 

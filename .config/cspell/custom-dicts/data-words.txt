@@ -1,0 +1,41 @@
+# Words mentioned in the /data/ directory that are flagged by CSpell but should be allowed
+#
+# Add words that are valid for the /data/ directory but
+# not covered by CSpell's available dictionaries.
+# One word per line, in alphabetical order.
+# ---
+BBMRI-ERIC
+CCLE
+cellosaurus
+Ceros
+ChEMBL
+Deepview
+DIGG
+ECBD
+ECDC
+ELSI
+EMPIAR
+GENEVESTIGATOR
+GISAID
+HGNC
+IDDO
+Impactstory
+kinetoplastida
+metabolights
+MetaboLights
+metatranscriptomic
+MGnify
+ModelArchive
+modelarchive
+Nextstrain
+NHGRI
+NordForsk
+Orphadata
+orphadata
+pombase
+pombe
+RMSD
+Sambamba
+SCAPIS
+Schizosaccharomyces
+Seqera

@@ -44,7 +44,7 @@
         },
         "thumbnail": {
           "type": "string",
-          "description": "OPTIONAL: Path to a thumbnail for the resource card. If emppty, will display the SciLifeLab logo.",
+          "description": "OPTIONAL: Path to a thumbnail for the resource card. If empty, will display the SciLifeLab logo.",
           "anyOf": [
             {
               "pattern": "^\\/img\\/open_science\\/resources\\/[^\\s]+\\.(jpg|jpeg|png|svg)$"

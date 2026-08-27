@@ -1,11 +1,11 @@
 ---
 title: New DNA research into Bantu-speaking populations' expansion provides a resource for future studies
 date: 2024-01-19
-summary: This study by Cesar A. Fortes-Lima, Concetta Burgarella, Rickard Hammarén et al is a comprehensive investigation of the genetic legacy of the Bantu expansion of the genomes of Bantu speaking populations today. The authors make avilable both genotyping information for 1,763 African individuals and whole genomes for 12 Late Iron Age individuals.
+summary: This study by Cesar A. Fortes-Lima, Concetta Burgarella, Rickard Hammarén et al is a comprehensive investigation of the genetic legacy of the Bantu expansion of the genomes of Bantu speaking populations today. The authors make available both genotyping information for 1,763 African individuals and whole genomes for 12 Late Iron Age individuals.
 banner: /highlights/BSP_banner_small.png
 banner_large: /highlights/BSP_banner_large.png
 banner_caption: Image courtesy Fortes-Lima et al 2023
-banner_alt: Figure 1 from Fortes-Lima et al. 2023 showing sampling locations and 3 dimensinality reduction methods applied to the genetic variation of the data in the study.
+banner_alt: Figure 1 from Fortes-Lima et al. 2023 showing sampling locations and 3 dimensionality reduction methods applied to the genetic variation of the data in the study.
 tags:
   [
     Highlight,
@@ -25,11 +25,11 @@ In a recent Nature article, researchers from Uppsala University, SciLifeLab, and
 
 Today, 350 million people across Africa (about 30% of the total population) speak one or more of the around 500 Bantu languages. The expansion of people speaking Bantu languages is considered one of the most dramatic demographic events in Late Holocene Africa. The Holocene is the current geological epoch, from ~12000 years ago until the present day.
 
-Previous studies in linguistics, archaeology, and genetics have, to date, not found the typical serial-founder effect (when small migrant groups settle in new areas, genetic diversity decreases with increasing distance from their origin) for the Bantu expansion. Newer population genetic methods and modeling approaches, which are spatiotemporally sensitive, are therefore warranted.
+Previous studies in linguistics, archaeology, and genetics have, to date, not found the typical serial-founder effect (when small migrant groups settle in new areas, genetic diversity decreases with increasing distance from their origin) for the Bantu expansion. Newer population genetic methods and modelling approaches, which are spatiotemporally sensitive, are therefore warranted.
 
-Archeological findings, such as specimens, clay artifacts, jewelry, and other remnants, were traditionally the only way to study ancient cultures, and how humans expanded in a region. In recent decades, ancient DNA (aDNA) has expanded and enhanced our knowledge of human history. Today, DNA research is an important tool in both the natural (e.g. medicine and health) and social sciences (e.g. archeology and linguistics).
+Archaeological findings, such as specimens, clay artefacts, jewellery, and other remnants, were traditionally the only way to study ancient cultures, and how humans expanded in a region. In recent decades, ancient DNA (aDNA) has expanded and enhanced our knowledge of human history. Today, DNA research is an important tool in both the natural (e.g. medicine and health) and social sciences (e.g. archaeology and linguistics).
 
-Today, whole-genome studies (WGS) of African populations are available, but comprehensive genomic data for BSP from sub-Saharan Africa remain limited. Fortes-Lima, Burgarella, and Hammarén and colleagues, therefore, collected and genotyped a new dataset called the "African Neo" dataset. This dataset consists of 1,526 Bantu speakers from 147 populations across 14 African countries, as well as aDNA WGS data from 12 Late Iron Age individuals found in Zambia. This comprehensive "African Neo" dataset was used to study the demographic history of BSP using various methods such as allele-frequency and haplotype-based methods, genetic diversity summary statistics, and spatial modeling.
+Today, whole-genome studies (WGS) of African populations are available, but comprehensive genomic data for BSP from sub-Saharan Africa remain limited. Fortes-Lima, Burgarella, and Hammarén and colleagues, therefore, collected and genotyped a new dataset called the "African Neo" dataset. This dataset consists of 1,526 Bantu speakers from 147 populations across 14 African countries, as well as aDNA WGS data from 12 Late Iron Age individuals found in Zambia. This comprehensive "African Neo" dataset was used to study the demographic history of BSP using various methods such as allele-frequency and haplotype-based methods, genetic diversity summary statistics, and spatial modelling.
 
 In brief, the results revealed different patterns of admixture between studied and local groups in different regions of sub-equatorial Africa where BSP expanded. The significant gene flow from local groups residing in the regions where the Bantu speakers expanded into suggests that Bantu speakers assimilated into local groups. Overall, the findings suggest that the BSPs expanded out of West Africa and moved south and east in several waves.
 

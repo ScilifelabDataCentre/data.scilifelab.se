@@ -12,7 +12,7 @@ images: ["/highlights/mosquito_transmission_small.jpeg"]
 
 Malaria is caused by protozoa in the *Plasmodium* genus, and is transmitted between humans via a vector; mosquitoes in the *Anopheles* genus. Malaria is endemic in parts of Asia, the Americas, and Africa. Throughout the last few decades, prevention strategies and antimalarial drugs have decreased the number of malaria cases. However, with the repeated evolution of drug resistance, and in the absence of effective vaccines, malaria remains a major health threat. The World Health Organization (WHO) estimated that there were 229 million new cases of malaria, resulting in 400,000 deaths, worldwide in 2019 alone. Common symptoms of malaria include fever, vomiting, tiredness, and headaches. In more severe cases, malaria can lead to jaundice and even death. Today, the majority of severe cases are found in Sub-Saharan Africa ([WHO, 2023](https://www.who.int/news-room/fact-sheets/detail/malaria)).
 
-Of the over 100 Plasmodium species described to date, only five infect humans;  *Plasmodium falciparum*, *P. vivax*, *P. ovale*, *P. malariae*, and *P. knowesi*. Several species infecting rodents have also been identified, among them is *P. berghei*. *P. berghei* provides three advantages for experimental research: (1) its genes can relatively easily disrupted in large numbers to reveal their functions, (2) the parasites can be studied *in vivo*, and (3) it is easy to transmit these parasites safely to mosquitoes in the laboratory.
+Of the over 100 Plasmodium species described to date, only five infect humans;  *Plasmodium falciparum*, *P. vivax*, *P. ovale*, *P. malariae*, and *P. knowlesi*. Several species infecting rodents have also been identified, among them is *P. berghei*. *P. berghei* provides three advantages for experimental research: (1) its genes can relatively easily disrupted in large numbers to reveal their functions, (2) the parasites can be studied *in vivo*, and (3) it is easy to transmit these parasites safely to mosquitoes in the laboratory.
 
 Understanding how malaria parasites are transmitted via mosquitoes is important because it can offer new strategies to prevent the spread of disease. To be able to infect mosquitoes, malaria parasites need to switch from asexual to sexual reproduction. Whilst it is known that a transcription factor (AP2-G) controls this switch, it is not clear how the same protein can control two very different programs of development to produce both female and male cells from an asexual precursor.
 
@@ -28,7 +28,7 @@ This study demonstrates how genome scale functional screens and single cell tran
 
 #### Data
 
-*	Single-cell RNA-seq data is found in the ENA under accession number [PRJEB44892](https://www.ebi.ac.uk/ena/browser/view/PRJEB44892)
+*	Single-cell RNA-seq data is found in the ENA under accession number [PRJEB44892](https://www.ebi.ac.uk/ena/browser/view/PRJEB44892) <!-- cspell:ignore PRJEB44892 -->
 *	Bulk RNA-seq data is found in Gene Expression Omnibus: [GSE110201](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE110201), [GSE168817](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168817)
 *	Mass spectrometry proteomics data have been deposited (via PRoteomics IDEntifications) to the ProteomeXchange Consortium: [PXD033827](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD033827)
 *	Supporting files and code are available on [Github](https://github.com/andyrussell/Gametocytogenesis/)
@@ -36,10 +36,11 @@ This study demonstrates how genome scale functional screens and single cell tran
 
 #### Article
 
+<!-- cspell:disable-next-line -->
 Russell, A. J. C., Sanderson, T., Bushell, E., Talman, A. M., Anar, B., Girling, G., Hunziker, M., Ken, R. S., Martin, J. S., Metcalf, T., Montandon R., Pandey, V., Pardo, M., Roberts, A. B., Sayers, C., Schwach, F., Choudhary, J. S., Rayner, J. C., Voet, T., Modrzynska, K. K., Waters, A. P, Lawniczak, M. K. N., Billker, O. (2023). Regulators of male and female sexual development are critical for the transmission of a malaria parasite. *Cell Host & Microbe 31* 305-319.e10. [10.1016/j.chom.2022.12.011](https://doi.org/10.1016/j.chom.2022.12.011).
 
 #### Funding
 
-The work at Umeå University was funded by the Knut and Alice Wallenberg Foundation, the European Research Council and a Marie Sklodowska-Curie Action fellowship. Research at the Wellcome Sanger Institute was funded by the Wellcome Trust.
+The work at Umeå University was funded by the Knut and Alice Wallenberg Foundation, the European Research Council and a Marie Skłodowska-Curie Action fellowship. Research at the Wellcome Sanger Institute was funded by the Wellcome Trust.
 
 Learn more about the research behind this study: <https://billkerlab.org/>

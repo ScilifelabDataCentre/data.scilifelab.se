@@ -1,7 +1,7 @@
 ---
-title: New study shows that perserverance can be the reason for antibiotic resistance development
+title: New study shows that perseverance can be the reason for antibiotic resistance development
 date: 2023-04-18
-summary: Recent study from Elf lab at Uppsala University/SciLifeLab shows perseverance can be a reason for antibiotic resistance development in.E coli. Image data shared in SciLifeLab Data Repository.
+summary: Recent study from Elf lab at Uppsala University/SciLifeLab shows perseverance can be a reason for antibiotic resistance development in E. coli. Image data shared in SciLifeLab Data Repository.
 banner: /highlights/antibiotic_resistance_development_small.jpg
 banner_large: /highlights/antibiotic_resistance_development.jpg
 banner_caption: Artistic illustration over perseverance courtesy Elf lab / Johan Elf, Irmeli Barkefors

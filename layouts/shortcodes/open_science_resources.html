@@ -78,7 +78,7 @@
     $(".resource").hide();
     $("#no-filtered-resource").hide();
 
-    // Show relavant resources based on selected criteria
+    // Show relevant resources based on selected criteria
     if (!Object.keys(selected_filters).length) {
       // If no filters show all
       $(".resource").show();
@@ -121,7 +121,7 @@
       }
     }
 
-    // Bring the tab top to the veiwport if it isn't
+    // Bring the tab top to the viewport if it isn't
     const top = document.querySelector("h5").getBoundingClientRect().top;
     if (top < 0) {
       $("html").scrollTop(window.pageYOffset + top - 15);

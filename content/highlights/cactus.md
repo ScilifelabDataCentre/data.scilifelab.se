@@ -29,11 +29,11 @@ The costs for next-generation sequencing (NGS) have decreased in recent years, m
 
 Two common methods, mRNA-Seq (which measures gene expression), and ATAC-Seq (which measures chromatin accessibility) are often used for omics research. Today, a number of pipelines are available to analyse either mRNA-Seq and ATAC-Seq data. However, when assessing the main features and implementation of published ATAC-Seq analysis pipeline tools, it is clear that most have limited options for downstream analyses, such as enrichment analysis and integration with mRNA-Seq data. To perform such analyses, researchers therefore require advanced bioinformatics skills.
 
-In the July 2024 edition of Genomics, researchers from Karolinska Institutet and National Genomics Infrastructure (NGI) Sweden (a SciLifeLab infrastruture unit) proposed a new pipeline that can be used for comprehensive ATAC-Seq and mRNA-Seq data analysis ([Salignon _et al._, 2024](https://doi.org/10.1016/j.ygeno.2024.110858)). This analysis pipeline is named Cactus (Chromatin accessibility and transcriptomics unifying software). It allows researchers to perform efficient and reproducible analyses of interrelated changes in chromatin accessibility and gene expression, without the need for advanced bioinformatics skills.
+In the July 2024 edition of Genomics, researchers from Karolinska Institutet and National Genomics Infrastructure (NGI) Sweden (a SciLifeLab infrastructure unit) proposed a new pipeline that can be used for comprehensive ATAC-Seq and mRNA-Seq data analysis ([Salignon _et al._, 2024](https://doi.org/10.1016/j.ygeno.2024.110858)). This analysis pipeline is named Cactus (Chromatin accessibility and transcriptomics unifying software). It allows researchers to perform efficient and reproducible analyses of interrelated changes in chromatin accessibility and gene expression, without the need for advanced bioinformatics skills.
 
 Cactus is coded in Nextflow, and all tools are encapsulated within containers (e.g. Docker or Singularity) or virtual environments (e.g. conda or Mamba). This architecture allows for efficient and reproducible analyses. The Cactus pipeline can analyse mRNA-Seq or ATAC-Seq data either separately or jointly. The pipeline initially acts to preprocess the raw reads. It then performs differential analyses (DA), and divides the results into subsets (Differential Analysis Subsets (DASs)). Lastly, the pipeline performs enrichment analysis on each subset, which allows for comprehensive molecular insights.
 
-The researchers compared the Cactus pipeline with other published ATAC-Seq analysis tools and found that, although some features are available in other tools, Cactus provides multiple unique functionalities. This includes, for example, splitting the DA results into subsets, and enrichment in chromatin states and ChIP-Seq binding sites. Cactus also allows for the creation of customised heatmaps, as well as the reporting of results in merged pdfs and tables.
+The researchers compared the Cactus pipeline with other published ATAC-Seq analysis tools and found that, although some features are available in other tools, Cactus provides multiple unique functionalities. This includes, for example, splitting the DA results into subsets, and enrichment in chromatin states and ChIP-Seq binding sites. Cactus also allows for the creation of customised heatmaps, as well as the reporting of results in merged PDFs and tables.
 
 [Salignon et al. (2024)](https://doi.org/10.1016/j.ygeno.2024.110858) used Cactus to analyse a previously published dataset containing samples from _Caenorhabditis elegans_ and human cells. Cactus confirmed the main findings of the previously published research, and provided additional observations not found in the original study.
 
@@ -47,6 +47,7 @@ In summary, Cactus is an analysis pipeline that can assist researchers in gainin
 
 DOI: [10.1016/j.ygeno.2024.110858](https://doi.org/10.1016/j.ygeno.2024.110858)
 
+<!-- cspell:disable-next-line -->
 Salignon, J., Millan-Ariño, L., Garcia, M. U., & Riedel C. G. (2024) Cactus: A user-friendly and reproducible ATAC-Seq and mRNA-Seq analysis pipeline for data preprocessing, differential analysis, and enrichment analysis. In: Genomics (Vol: 116, Issue: 4, 110858).
 
 #### Funders

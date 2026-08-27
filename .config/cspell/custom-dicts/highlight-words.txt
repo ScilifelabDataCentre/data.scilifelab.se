@@ -1,0 +1,35 @@
+# Words mentioned in the /content/highlights/ directory that are flagged by CSpell but should be allowed
+#
+# Add words that are valid for the /content/highlights/ directory but
+# not covered by CSpell's available dictionaries.
+# One word per line, in alphabetical order.
+# ---
+5-azacytidine
+Aimovig
+ARACNE
+atac
+Belvu37
+bryostatin
+CGRP
+CCHFV
+Cytoscape
+DSRT
+EGAC
+EGAS
+erenumab
+Expi293F
+HNRNPUL
+HSCT
+Kalign36
+KVVS
+lqae121
+Malaspina
+Microcystis
+Nairoviridae
+NSTC
+OXPHOS
+PBMCs
+Pfam
+PRJEB
+PRJNA
+proteasomal

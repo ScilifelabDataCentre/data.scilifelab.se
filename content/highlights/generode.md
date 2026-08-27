@@ -38,10 +38,11 @@ This work involves multiple researchers affiliated with SciLifeLab, including a 
 The **GenErode** pipeline was written in Snakemake and Python3. It uses Conda and Singularity containers to achieve reproducibility on high-performance compute clusters. It is possible to run the pipeline on Linux systems, such as high-performance computing (HPC) clusters.
 
 - In adherence with Open Science, the researchers have made the source code freely available on [GitHub](https://github.com/NBISweden/GenErode).
-- The Sumatran rhinoceros test dataset is available in the [Scilifelab Data Repository](https://doi.org/10.17044/scilifelab.19248172), and it can be used to test the GenErode pipeline.
+- The Sumatran rhinoceros test dataset is available in the [SciLifeLab Data Repository](https://doi.org/10.17044/scilifelab.19248172), and it can be used to test the GenErode pipeline.
 
 #### Article
 
+<!-- cspell:disable-next-line -->
 Kutschera, V. E., Kierczak, M., van der Valk, T., von Seth, J., Dussex, N., Lord, E., Dehasque, M., Stanton, D. W. G., Emami Khoonsari, P., Nystedt, B., Dalén, L., Díez-del-Molino, D. (2022) GenErode: a bioinformatics pipeline to investigate genome erosion in endangered and extinct species. _BMC Bioinformatics 23_, 228. [10.1038/s41467-022-28865-w](https://doi.org/10.1186/s12859-022-04757-0)
 
 #### Funding

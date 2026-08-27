@@ -1,0 +1,8 @@
+# Words mentioned in the /content/guidance/ directory that are flagged by CSpell but should be allowed
+#
+# Add words that are valid for the /content/guidance/ directory but
+# not covered by CSpell's available dictionaries.
+# One word per line, in alphabetical order.
+# ---
+Impactstory
+Swestore

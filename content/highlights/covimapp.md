@@ -8,7 +8,7 @@ banner_caption: CoViMAPP logo.
 tags:
   [
     COVID-19,
-    Covimapp,
+    CoViMAPP,
     Meta-analysis,
     R shiny,
     App,
@@ -30,7 +30,7 @@ Research has shown that cytokine storms (elevated release of cytokines in the bl
 
 Multiple types of circulating molecules (e.g. lipids, metabolites, mRNAs, and proteins) have been studied in COVID-19 patients, but proteins remain the most commonly used in clinical practice. Using global mass spectrometry (MS) methods, studies have identified a few hundred protein biomarkers in plasma or serum. However, the soluble blood proteome is known to contain more than 4,500 proteins, meaning that much of the proteome remains unexplored. Continued research in this area is crucial in order to allow us to prevent the onset of severe COVID-19.
 
-In a recent Nature Communications article by [Babačić _et al._ (2023)](https://doi.org/10.1038/s41467-023-41159-z), researchers from Karolinska Institutet, Karolinska University Hospital, The Laboratory for Molecular Infection Medicine Sweden (MIMS) at Umeå University, Linköping University, and Science for Life Laboratory (SciLifeLab), led by Jonas Klingström and Maria Pernemalm, expanded the coverage of the soluble bood proteome using systematic analyses of circulating soluble proteins and mass spectrometry.
+In a recent Nature Communications article by [Babačić _et al._ (2023)](https://doi.org/10.1038/s41467-023-41159-z), researchers from Karolinska Institutet, Karolinska University Hospital, The Laboratory for Molecular Infection Medicine Sweden (MIMS) at Umeå University, Linköping University, and Science for Life Laboratory (SciLifeLab), led by Jonas Klingström and Maria Pernemalm, expanded the coverage of the soluble blood proteome using systematic analyses of circulating soluble proteins and mass spectrometry.
 
 Babačić and colleagues used serum samples from twenty hospitalised COVID-19 patients (ancestral SARS-CoV-2), and seven PCR-negative and seronegative controls. More information about the cohort used is available in [Varnaitė _et al._ (2020)](https://doi.org/10.4049/jimmunol.2000717). The samples were analysed using high-resolution isoelectric focusing (HiRIEF) coupled with liquid chromatography tandem mass spectrometry (LC-MS/MS). In addition, the researchers performed _in vitro_ SARS-CoV-2 infection experiments in human lung adenocarcinoma (Calu-3) cells to compare to proteome and phosphoproteome changes evident in the blood of COVID-19 patients. The results showed that a large part of the soluble blood proteome was altered in COVID-19 patients compared to healthy controls. COVID-19 patients were, for example, found to have elevated serum levels of NF-kB-, interferon-, purine metabolism-, heat shock-, and proteasomal- proteins. Furthermore, many of these proteins were also found to be changed in _in vitro_ SARS-CoV-2 infection experiments. Additionally, changes were identified in phosphorylated peptides in the serum of both COVID-19 patients and SARS-CoV-2-infected cells.
 
@@ -52,7 +52,8 @@ In summary, this study is a comprehensive analysis of the soluble blood proteome
 
 DOI: [10.1038/s41467-023-41159-z](https://doi.org/10.1038/s41467-023-41159-z)
 
-Babačić, H., Christ, W., Araújo, J. E., Mermelekas , G., Sharma, N., Tynell , J., García, M., Varnaite, R., Asgeirsson, H., Glans, H., Lehtiö, J., Gredmark-Russ, S., Klingström, J., & Pernemalm, M. (2023) Comprehensive proteomics and meta-analysis of COVID-19 host response. In: Nature communications (Vol. 14, Issue 1, 5921).
+<!-- cspell:disable-next-line -->
+Babačić, H., Christ, W., Araújo, J. E., Mermelekas , G., Sharma, N., Tynell , J., García, M., Varnaitė, R., Asgeirsson, H., Glans, H., Lehtiö, J., Gredmark-Russ, S., Klingström, J., & Pernemalm, M. (2023) Comprehensive proteomics and meta-analysis of COVID-19 host response. In: Nature communications (Vol. 14, Issue 1, 5921).
 
 #### Funding
 

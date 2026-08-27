@@ -25,6 +25,7 @@ This resource strongly aligns with the goals of the functional genomics research
 
 DOI: [10.1093/nar/gkae1021](https://doi.org/10.1093/nar/gkae1021)
 
+<!-- cspell:disable-next-line -->
 Buzzao, D., Persson, E., Guala, D., & Sonnhammer, E. L. (2025). FunCoup 6: advancing functional association networks across species with directed links and improved user experience. Nucleic Acids Research, 53(D1), D658-D671.
 
 #### Funders

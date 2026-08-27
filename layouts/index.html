@@ -68,7 +68,7 @@
       {{ end }}
    
 
-      <!-- Data Higlights -->
+      <!-- Data Highlights -->
       {{ with .Site.GetPage "section" "highlights" }}
       <div class="row pb-2 mt-4 pt-2">
         <div class="col">
@@ -192,7 +192,7 @@
 </section>
 
 <script>
-  /* Functions to fetch and load recent items from desired Scilifelan services */
+  /* Functions to fetch and load recent items from desired SciLifeLab services */
 
   document.addEventListener("DOMContentLoaded", function (event) {
     // Takes a URL and calls the callback function pass the data fetched
@@ -283,7 +283,7 @@
       addEvents
     );
 
-    // Creates html entry for each item fetch from Scilifelab Data Repository
+    // Creates html entry for each item fetch from SciLifeLab Data Repository
     function addDataItems(dataArray) {
       var dataItemsHTML = "";
       for (const data of dataArray) {
@@ -314,7 +314,7 @@
       addDataItems
     );
 
-    // Creates html entry for each app fetched from Scilifelab Serve
+    // Creates html entry for each app fetched from SciLifeLab Serve
     function addServeApps(dataArray) {
       var appsRowNode = document.getElementById('recent-serve-apps');
       var appNum = 1;

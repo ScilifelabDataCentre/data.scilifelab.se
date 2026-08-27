@@ -338,11 +338,11 @@
       "sequence data",
       "ARB",
       "bacteria",
-      "archea",
+      "archaea",
       "eukarya"
     ],
     "name": "SILVA",
-    "description": "A comprehensive online resource for quality-checked ribosomal RNA (rRNA) data. Includes aligned small and large subunits of rRNA from all three domains of life (archea, bacteria, eukarya).",
+    "description": "A comprehensive online resource for quality-checked ribosomal RNA (rRNA) data. Includes aligned small and large subunits of rRNA from all three domains of life (archaea, bacteria, eukarya).",
     "thumbnail": "/img/data_sources_thumbs/silva.png",
     "url": "https://www.arb-silva.de/",
     "data": [
@@ -372,7 +372,7 @@
       "enzyme annotation",
       "transporter annotation",
       "UniProtKB",
-      "ChEMBI",
+      "ChEBI",
       "Chemical Entities of Biological Interests"
     ],
     "name": "Rhea",
@@ -467,7 +467,7 @@
       "taxonomic assignments",
       "functional annotations",
       "metabarcoding",
-      "metatranscriptiomic",
+      "metatranscriptomic",
       "metagenomic datasets",
       "microbiome data"
     ],
@@ -491,7 +491,7 @@
     ],
     "search_tags": [
       "ELIXIR Core Data Resource",
-      "Interpro",
+      "InterPro",
       "functional protein sequences",
       "protein",
       "sequences",
@@ -780,7 +780,7 @@
     ],
     "search_tags": [
       "ELIXIR Core Data Resource",
-      "Bacdive",
+      "BacDive",
       "bacterial",
       "bacteria",
       "diversity",
@@ -1976,7 +1976,7 @@
       "assays"
     ],
     "name": "European Chemical Biology Database",
-    "description": "The central hub for data generated within the EU-OPENSCREEN network. The network collaborates with external users to develop novel molecular tool compounds and early therapeautic candidate molecules.",
+    "description": "The central hub for data generated within the EU-OPENSCREEN network. The network collaborates with external users to develop novel molecular tool compounds and early therapeutic candidate molecules.",
     "url": "https://ecbd.eu/",
     "thumbnail": "/img/data_sources_thumbs/ecdb.png",
     "data": [
@@ -2011,7 +2011,7 @@
       "genomics",
       "ELIXIR Core Data Resource"
     ],
-    "name": "REACTOME",
+    "name": "Reactome",
     "description": "A graphical map of known biological processes and pathways. Provides tools to visualise, interpret, and analyse pathways to support research. Used for genome analysis, modelling, and systems biology.",
     "url": "https://reactome.org/",
     "data": [
@@ -2220,7 +2220,7 @@
       "cryogenic-EM maps",
       "cryo electron microscopy",
       "imaging data",
-      "cryoelectron microscopy"
+      "cryo-electron microscopy"
     ],
     "name": "Electron Microscopy Public Image Archive",
     "description": "A public resource for raw electron microscopy images. Includes images underpinning 3D cryo-EM maps and tomograms, as well as 3D datasets generated using volume EM techniques and X-ray tomography.",
@@ -2248,7 +2248,7 @@
       "Precision Medicine and Diagnostics"
     ],
     "search_tags": [
-      "Dryad Digtal Repository",
+      "Dryad Digital Repository",
       "general",
       "data",
       "Repository",
@@ -2309,13 +2309,12 @@
     "search_tags": [
       "infectious disease",
       "pathogen",
-      "Folkhälsomyndigheten",
       "public health",
       "communicable disease",
       "COVID-19",
       "influenza",
       "Public Health Agency Sweden",
-      "Folkhälasomyndigheten",
+      "Folkhälsomyndigheten",
       "FoHM",
       "epidemiology",
       "registry data"
@@ -2597,7 +2596,7 @@
       "infectious",
       "ELIXIR Core Data Resource"
     ],
-    "name": "Uniprot",
+    "name": "UniProt",
     "description": "A comprehensive resource for protein sequence and annotation data. UniProt is a collaboration between EMBL-EBI, the Swiss Institute of Bioinformatics (SIB), and the Protein Information Resource (PIR).",
     "url": "https://www.uniprot.org/",
     "thumbnail": "/img/data_sources_thumbs/UniProt.png",
@@ -2660,6 +2659,7 @@
       "PDC",
       "Proteogenomic Cancer Atlas",
       "Proteomic data",
+      "proteogenomic tumour datasets",
       "proteogenomic tumor datasets",
       "raw mass spectrometry-based data files",
       "NCI",
@@ -2670,7 +2670,7 @@
       "precision medicine"
     ],
     "name": "Proteomic Data Commons",
-    "description": "The PDC represents the NCI's largest public repository of comprehensive proteogenomic tumor datasets. It is essentially a Proteogenomic Cancer Atlas.",
+    "description": "The PDC represents the NCI's largest public repository of comprehensive proteogenomic tumour datasets. It is essentially a Proteogenomic Cancer Atlas.",
     "url": "https://proteomic.datacommons.cancer.gov/pdc/",
     "thumbnail": "/img/data_sources_thumbs/PDC.png",
     "data": [

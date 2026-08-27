@@ -1,0 +1,52 @@
+# Acronyms in this repository that are flagged by CSpell but should be allowed
+#
+# Add acronyms that are valid for your repository but
+# not covered by CSpell's available dictionaries.
+# One acronym per line, in alphabetical order.
+# ---
+ANUBIX
+BBSRC
+BOSC
+CCEM
+CCHF
+CRISPR
+DARS
+DDLS
+EECS
+EMBL
+EMDB
+EOSC
+FAIRSFAIR
+FASTQ
+fastq
+GBIF
+GPCR
+GPCRs
+GWAS
+HDCA
+hugo
+IFLA
+IGHV
+INOSC
+KIARVA
+LIFES
+LNDS
+LUMI
+METTL
+NAISS
+NBIS
+NCBI
+ORCID
+OSMI
+PNAS
+PRACE
+RRID
+RRIDs
+SBDI
+SNIC
+SSMF
+SUHF
+SUPR
+UPPMAX
+VEED
+WCMM
