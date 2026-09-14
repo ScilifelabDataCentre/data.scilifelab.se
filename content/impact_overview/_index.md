@@ -16,38 +16,24 @@ menu:
 back_to_top_button: true
 ---
 
-## Number of users over time
+## Number of users
 
-The number of user accounts in Data Services from SciLifeLab Data Centre over time. Only services that involve the creation of user accounts are included.
+The number of users in services from SciLifeLab Data Centre that involve the creation of user accounts.
 
-Please note that the most current year is incomplete.
-
-<!-- Graph showing users over time -->
+<!-- Treemap of users -->
 
  <div class="plot_wrapper mb-3">
-  <div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/yearly_service_users_grouped_bar.json" height="600px" >}}</div>
+  <div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/treemap_current_users.json" height="600px" >}}</div>
 </div>
 
-## Number of visits/views over time
+## Map of visits for featured services
 
-The number of views or visits over time for Data Services from SciLifeLab Data Centre. Numbers from SciLifeLab Data Repository reflects the number of times that data entries were viewed. For all other services, data reflects the number of unique visits to the websites.
+Visits from different countries to three featured services; SciLifeLab Serve, Swedish Pathogens Portal, and SciLifeLab Data repositories. A 'visit' includes either a unique visit to at least one page, and/or a download from one of the pages (download is only tracked for SciLifeLab Data Repository).
 
-Please note that the most current year is incomplete.
+Please note that the counts include countries with an alpha3 code, and not all of those territories are reflected in the map.
 
 <!-- Graph showing views over time-->
 
 <div class="plot_wrapper mb-3">
-<div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/visits_by_service_stacked_bar.json" height="600px" >}}</div>
-</div>
-
-## Map of visits/views in the last 12 months
-
-The number of views or visits for different countries for Data Services from SciLifeLab Data Centre over the last year. For SciLifeLab Data Repository, data is taken from the number of times that entries in the repository are viewed. For all other services, data reflects the number of unique visits to the websites.
-
-Visits/views that are from territories not present on the map, or from an unknown location are not included in the map.
-
-<!-- Graph showing views over time-->
-
-<div class="plot_wrapper mb-3">
-<div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/country_visits_map.json" height="600px" >}}</div>
+<div class="table-responsive">{{< plotly json="https://raw.githubusercontent.com/ScilifelabDataCentre/data.scilifelab.se/refs/heads/Freya-2612/Liane/data/KPI_data/country_visits_map_v2.json" height="600px" >}}</div>
 </div>
