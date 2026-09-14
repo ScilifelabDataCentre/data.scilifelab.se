@@ -1,0 +1,252 @@
+
+<style>
+  :root{--ink:#1a2b31;--body:#42575D;--muted:#7A8C93;--green:#4B7C18;--green-h:#3c6413;
+    --teal:#0B5560;--teal-d:#1d6e77;--lime:#A7C947;--line:#E4ECEC}
+  *{box-sizing:border-box} html,body{margin:0}
+  .wrap{max-width:720px;margin:0 auto}
+  .tool{background:#fff;border:1px solid #EFF3F3;border-radius:18px;overflow:hidden;
+    box-shadow:0 22px 46px rgba(11,85,99,.16),0 6px 14px rgba(8,47,55,.09)}
+  .head{position:relative;min-height:132px;display:flex;align-items:center;background:#062a31}
+  .head .bg{position:absolute;inset:0}.head .bg svg{position:absolute;inset:0;width:100%;height:100%}
+  .head .scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,19,25,.72),rgba(2,19,25,.5) 55%,rgba(2,19,25,.34))}
+  .head .c{position:relative;padding:22px 30px}
+  .head .ey{color:var(--lime);font-weight:700;font-size:12px;letter-spacing:.05em;margin:0 0 6px;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .head h1{font-family:"Lora",serif;font-weight:600;color:#fff;font-size:26px;margin:0 0 5px;text-shadow:0 1px 12px rgba(0,0,0,.55)}
+  .head .sub{color:#DCEBE8;font-size:14px;margin:0;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+  .body{padding:22px 30px 28px}
+  .prog{height:6px;background:#EEF3F3;border-radius:99px;overflow:hidden;margin-bottom:16px}
+  .prog .bar{height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--lime));transition:width .35s ease}
+  .path{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;min-height:4px}
+  .chip{font-size:11.5px;color:var(--teal-d);background:#EAF3F1;border:1px solid #D8E7E3;border-radius:99px;padding:3px 9px}
+  .q{font-family:"Lora",serif;font-weight:600;font-size:21px;line-height:1.28;margin:2px 0 16px;color:var(--ink)}
+  .info p{font-size:15px;line-height:1.6;color:var(--body);margin:0 0 16px}
+  .opts{display:flex;flex-direction:column;gap:10px}
+  .opt{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;
+    background:#fff;border:1.5px solid #DCE7E7;border-radius:12px;padding:14px 16px;cursor:pointer;
+    font:inherit;font-size:15px;font-weight:700;color:var(--ink);transition:all .15s ease}
+  .opt:hover{border-color:var(--teal);background:#F3F9F8;transform:translateY(-1px);box-shadow:0 6px 16px rgba(11,85,99,.10)}
+  .opt .arw{color:var(--teal);flex:0 0 auto}
+  .nav{display:flex;gap:14px;align-items:center;margin-top:20px}
+  .btn-t{background:none;border:0;font:inherit;font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;padding:6px 0}
+  .btn-t:hover{color:var(--ink)}
+  .result{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .result .top{background:linear-gradient(135deg,#083b45,#0c5a52);padding:18px 20px}
+  .result .kick{color:var(--lime);font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin:0 0 5px}
+  .result h2{font-family:"Lora",serif;font-weight:600;color:#fff;font-size:22px;margin:0}
+  .result .in{padding:18px 20px 20px}
+  .result .in > p{font-size:14.5px;line-height:1.6;color:var(--body);margin:0 0 14px}
+  .result .note{font-size:12.5px;color:var(--muted);background:#F5F9F9;border-radius:8px;padding:10px 12px;line-height:1.5;margin-top:12px}
+  /* service cards */
+  .svcs{display:flex;flex-direction:column;gap:10px}
+  .svc{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;
+    border:1px solid #DCE7E7;border-left:3px solid var(--lime);border-radius:10px;padding:12px 14px;background:#fff;transition:.15s}
+  a.svc:hover{background:#F3F9F8;border-left-color:var(--teal);box-shadow:0 5px 14px rgba(11,85,99,.09);transform:translateY(-1px)}
+  .svc__t{font-weight:700;color:var(--ink);font-size:14.5px}
+  .svc__d{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.45}
+  .svc .arw{color:var(--teal);flex:0 0 auto}
+  .cta{display:flex;margin-top:14px}
+  .cta a{flex:1;text-align:center;background:none;border:1.5px solid #CFE1E1;color:var(--teal-d);
+    text-decoration:none;font-weight:700;font-size:13.5px;padding:11px 14px;border-radius:10px}
+  .cta a:hover{background:#F3F9F8}
+  .foot{font-size:14px;margin:16px 4px 0;line-height:1.55}
+  .foot a{color:var(--teal-d)}
+</style>
+
+<div class="wrap">
+  <div class="tool">
+    <div class="head">
+      <div class="bg"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 2000 340" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+   <stop offset="0" stop-color="#2c6672"/><stop offset="0.5" stop-color="#30a0b4"/><stop offset="1" stop-color="#65c577"/>
+  </linearGradient>
+  <linearGradient id="atmo" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#233e47" stop-opacity="0.35"/><stop offset="0.5" stop-color="#233e47" stop-opacity="0"/>
+   <stop offset="1" stop-color="#233e47" stop-opacity="0.22"/>
+  </linearGradient>
+  <radialGradient id="core" cx="50%" cy="50%" r="50%">
+   <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="30%" stop-color="#ffff8a" stop-opacity="0.22"/>
+   <stop offset="100%" stop-color="#ffff8a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vigB" cx="50%" cy="46%" r="72%">
+   <stop offset="58%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.2"/>
+  </radialGradient>
+  <filter id="bokeh"><feGaussianBlur stdDeviation="24"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+ </defs>
+
+ <rect width="2000" height="340" fill="url(#hg)"/>
+ <g filter="url(#bokeh)"><circle cx="180" cy="120" r="90" fill="#35f6e9" opacity="0.3"/><circle cx="520" cy="240" r="120" fill="#65c577" opacity="0.28"/><circle cx="980" cy="90" r="100" fill="#35c6d4" opacity="0.26"/><circle cx="1450" cy="250" r="130" fill="#66d777" opacity="0.24"/><circle cx="1720" cy="110" r="110" fill="#ffff8a" opacity="0.14"/><circle cx="1180" cy="260" r="90" fill="#35f6e9" opacity="0.2"/></g>
+ <rect width="2000" height="340" fill="url(#atmo)"/>
+
+ <!-- streams behind -->
+ <g fill="none" filter="url(#soft)" opacity="0.7"><path d="M-80 86 C269 109,595 122,960 145" stroke="#aeffff" stroke-width="1.1" opacity="0.51"/><path d="M-80 143 C339 104,750 135,1210 96" stroke="#ffff8a" stroke-width="1.4" opacity="0.67"/><path d="M-80 188 C319 179,706 96,1138 87" stroke="#aeffff" stroke-width="1.6" opacity="0.47"/><path d="M-80 217 C370 245,818 70,1320 98" stroke="#deffff" stroke-width="1.4" opacity="0.52"/></g>
+ <!-- streams front -->
+ <g fill="none" filter="url(#glow)"><path d="M-80 76 C317 101,701 174,1131 199" stroke="#ffff8a" stroke-width="1.7" opacity="0.71"/><path d="M-80 111 C288 148,637 121,1028 158" stroke="#deffff" stroke-width="1.7" opacity="0.41"/><path d="M-80 165 C265 133,587 151,946 119" stroke="#96ffff" stroke-width="1.9" opacity="0.71"/><path d="M-80 194 C347 229,768 82,1239 117" stroke="#ffff8a" stroke-width="2.1" opacity="0.53"/><path d="M-80 244 C264 221,585 114,943 91" stroke="#c6ffff" stroke-width="1.7" opacity="0.47"/></g>
+
+ <!-- network -->
+ <g stroke="#f6ffff" stroke-width="1.2" opacity="0.5" filter="url(#glow)" fill="none"><path d="M880 150 L950 90"/><path d="M950 90 L1030 180"/><path d="M1030 180 L1110 120"/><path d="M1110 120 L1180 220"/><path d="M1180 220 L1260 150"/><path d="M1260 150 L1330 210"/><path d="M1260 150 L1300 90"/><path d="M1330 210 L1300 90"/><path d="M1330 210 L1400 150"/><path d="M1300 90 L1400 150"/></g>
+ <g filter="url(#glow)"><circle cx="880" cy="150" r="4.2" fill="#ffffff"/><circle cx="950" cy="90" r="4.2" fill="#ffffff"/><circle cx="1030" cy="180" r="6.5" fill="#ffffbf"/><circle cx="1030" cy="180" r="2.6" fill="#ffffff"/><circle cx="1110" cy="120" r="4.2" fill="#ffffff"/><circle cx="1180" cy="220" r="4.2" fill="#ffffff"/><circle cx="1260" cy="150" r="6.5" fill="#ffffbf"/><circle cx="1260" cy="150" r="2.6" fill="#ffffff"/><circle cx="1330" cy="210" r="4.2" fill="#ffffff"/><circle cx="1300" cy="90" r="4.2" fill="#ffffff"/><circle cx="1400" cy="150" r="6.5" fill="#ffffbf"/><circle cx="1400" cy="150" r="2.6" fill="#ffffff"/></g>
+
+ <!-- burst core + particles -->
+ <circle cx="1660" cy="168" r="150" fill="url(#core)"/>
+ <g filter="url(#glow)"><circle cx="1713" cy="246" r="2.4" fill="#ffff8a" opacity="0.41"/><circle cx="1487" cy="166" r="1.6" fill="#deffff" opacity="0.25"/><circle cx="1570" cy="264" r="1.5" fill="#deffff" opacity="0.25"/><circle cx="1653" cy="135" r="4.1" fill="#ffffff" opacity="0.77"/><circle cx="1750" cy="150" r="3.2" fill="#f5ff7e" opacity="0.59"/><circle cx="1663" cy="195" r="4.3" fill="#74ffff" opacity="0.81"/><circle cx="1791" cy="84" r="1.4" fill="#deffff" opacity="0.25"/><circle cx="1673" cy="114" r="3.4" fill="#deffff" opacity="0.62"/><circle cx="1711" cy="150" r="4.0" fill="#f5ff7e" opacity="0.74"/><circle cx="1646" cy="110" r="3.2" fill="#deffff" opacity="0.59"/><circle cx="1685" cy="60" r="1.5" fill="#ffffff" opacity="0.25"/><circle cx="1629" cy="264" r="1.9" fill="#f5ff7e" opacity="0.31"/><circle cx="1653" cy="152" r="4.7" fill="#ffffff" opacity="0.89"/><circle cx="1742" cy="186" r="3.4" fill="#ffffff" opacity="0.62"/><circle cx="1701" cy="198" r="3.9" fill="#deffff" opacity="0.72"/><circle cx="1685" cy="164" r="4.7" fill="#74ffff" opacity="0.89"/><circle cx="1713" cy="265" r="1.7" fill="#ffff8a" opacity="0.28"/><circle cx="1699" cy="169" r="4.4" fill="#74ffff" opacity="0.83"/><circle cx="1754" cy="135" r="3.0" fill="#74ffff" opacity="0.53"/><circle cx="1483" cy="170" r="1.5" fill="#ffffff" opacity="0.25"/></g>
+
+ <!-- foreground DOF -->
+ <g filter="url(#bokeh)"><circle cx="120" cy="250" r="70" fill="#35f6e9" opacity="0.18"/><circle cx="1880" cy="120" r="90" fill="#ffff8a" opacity="0.12"/><circle cx="760" cy="60" r="60" fill="#aeffff" opacity="0.12"/></g>
+
+ <rect width="2000" height="340" filter="url(#grain)" opacity="0.05"/>
+ <rect width="2000" height="340" fill="url(#vigB)"/>
+</svg></div><div class="scrim"></div>
+      <div class="c"><h1>Find a service</h1>
+        <p class="sub">Answer a few questions and we&rsquo;ll point you to the right service.</p></div>
+    </div>
+    <div class="body">
+      <div class="prog"><div class="bar" id="bar"></div></div>
+      <div class="path" id="path"></div>
+      <div id="card"></div>
+    </div>
+  </div>
+  <p class="foot">A guided alternative to the Service Finder flowchart. You can also view the original schema as a
+    <a href="/misc/onboarding_schema.pdf">PDF</a>.</p>
+</div>
+
+<script>
+const SERVICES="https://data.scilifelab.se/services", SUPR="https://supr.naiss.se/", CONTACT="mailto:datacentre@scilifelab.se";
+const COMPUTE_NOTE="Clusters such as Alvis, Dardel, BerzeLiUs, Tetralith and the Swedish partition of LUMI can be applied for via SUPR; EuroHPC via the PRACE Peer-Review Tool.";
+
+const NODES = {
+  start:{type:"info", h:"Let\u2019s find the right service",
+    p:"This guided finder walks you through a few questions and suggests suitable SciLifeLab services for your needs.",
+    opts:[{label:"Start", next:"q1"}]},
+  q1:{type:"q", h:"Are you already familiar with good RDM practices?",
+    opts:[{label:"Yes", next:"q2"},{label:"Not yet", next:"a_rdm"}]},
+  a_rdm:{type:"info", h:"Start with the basics",
+    p:"Learn about the Data Life Cycle and the FAIR principles before you proceed.",
+    links:[{label:"RDM Guidelines", url:"https://data-guidelines.scilifelab.se"}],
+    opts:[{label:"Continue", next:"q2"}]},
+  q2:{type:"info", h:"Establish your Data Management Plan",
+    p:"SciLifeLab endorses the Data Stewardship Wizard (DSW) for building your DMP.",
+    links:[{label:"Open DSW", url:"https://dsw.scilifelab.se/"}],
+    opts:[{label:"Continue", next:"q_main"}]},
+
+  q_main:{type:"q", h:"What are you looking for?",
+    opts:[{label:"A computing resource", next:"q7"},
+          {label:"Help working with your data", next:"q4"},
+          {label:"To share or find methods, code and courses", next:"q_share"}]},
+
+  q4:{type:"q", h:"What do you need for your data?",
+    opts:[{label:"Reference datasets", next:"q_gen"},{label:"Storage", next:"q5"},
+          {label:"A repository to publish/share", next:"r_repo"},
+          {label:"Image analysis tools", next:"r_imaging"},{label:"Not sure", next:"r_contact"}]},
+  q_gen:{type:"q", h:"Are you working with genomics?",
+    opts:[{label:"Yes", next:"r_genomics"},{label:"No", next:"r_contact"}]},
+  q5:{type:"q", h:"Will you handle sensitive data?",
+    opts:[{label:"Yes", next:"r_sens"},{label:"No", next:"r_storage"}]},
+
+  q7:{type:"q", h:"Do you need a persistent service?",
+    opts:[{label:"Yes", next:"q8"},{label:"No", next:"q6"}]},
+  q8:{type:"q", h:"Do you wish to share apps or models?",
+    opts:[{label:"Yes", next:"r_serve"},{label:"No", next:"r_cloud"}]},
+  q6:{type:"q", h:"Do you need GPU or storage resources?",
+    opts:[{label:"Storage", next:"r_storage"},{label:"GPU / compute", next:"q9"}]},
+  q9:{type:"q", h:"How large is your computing need?",
+    opts:[{label:"Modest / not sure", next:"r_small"},{label:"Intermediate", next:"r_large"},{label:"Substantial", next:"r_eurohpc"}]},
+
+  q_share:{type:"q", h:"What would you like to share or find?",
+    opts:[{label:"Code, apps or models", next:"r_serve"},
+          {label:"Courses or training", next:"r_training"},
+          {label:"Lab or bioinformatics protocols", next:"r_protocols"}]},
+
+  r_repo:{type:"r", kick:"Recommended", h:"Publish & share your data",
+    services:[{name:"SciLifeLab Data Repository", desc:"Publish and share data, posters, presentations and more \u2014 or find the best repository for your needs.", url:"https://scilifelab.figshare.com/"}]},
+  r_imaging:{type:"r", kick:"Recommended services", h:"Image analysis",
+    services:[
+      {name:"BioImage.io", desc:"Community models and tools for bioimage analysis.", url:"https://bioimage.io"},
+      {name:"TissUUmaps", desc:"Fast browser-based viewer for spatial and tissue image data.", url:"https://tissuumaps.github.io/"},
+      {name:"AIDA Data Hub", desc:"Medical imaging data resources \u2014 you may be eligible to use it.", url:"https://datahub.aida.scilifelab.se"}]},
+  r_genomics:{type:"r", kick:"Recommended services", h:"Genomics reference resources",
+    services:[
+      {name:"Swedish Reference Genome Portal", desc:"Discover and visualise genome assemblies studied in Sweden.", url:"https://genomes.scilifelab.se"},
+      {name:"SweFreq / SweGen", desc:"Aggregated whole-genome variant frequencies for the Swedish population.", url:"https://swefreq.nbis.se"},
+      {name:"GENMOD", desc:"Annotate and model genomic variants."}]},
+  r_contact:{type:"r", kick:"We\u2019ll help you", h:"Data Centre is there for you",
+    p:"Tell us about your needs and we\u2019ll help you find the right service."},
+  r_sens:{type:"r", kick:"Recommended services", h:"Sensitive data",
+    p:"Apply for NAISS SENS using SUPR. Archival / long-term storage remains your hosting organisation\u2019s responsibility.",
+    services:[
+      {name:"NAISS SENS", desc:"Apply via SUPR for sensitive-data compute & storage.", url:"https://supr.naiss.se/"},
+      {name:"UPPMAX", desc:"If you\u2019re affiliated with Uppsala University.", url:"https://www.uppmax.uu.se/"},
+      {name:"Cosmos-SENS", desc:"If you\u2019re affiliated with Lund University."}]},
+  r_storage:{type:"r", kick:"Recommended services", h:"Storage",
+    services:[
+      {name:"SciLifeLab FAIR Storage", desc:"FAIR-aligned storage from the Data Centre.", url:SERVICES},
+      {name:"NAISS Swestore", desc:"National large-scale research data storage.", url:"https://supr.naiss.se/"},
+      {name:"Compute-cluster storage", desc:"Storage attached to HPC clusters."}],
+    note:"Or check your host organisation for local solutions."},
+  r_serve:{type:"r", kick:"Recommended", h:"Share code, apps & models",
+    services:[{name:"SciLifeLab Serve", desc:"Share machine-learning models and data-science apps (Shiny, Dash, Gradio, Streamlit\u2026). Free for Swedish-affiliated researchers.", url:"https://serve.scilifelab.se"}]},
+  r_training:{type:"r", kick:"Recommended", h:"Share & find training",
+    services:[{name:"SciLifeLab Training Hub", desc:"Find courses and training, or announce and share your own with the community.", url:"https://training.scilifelab.se"}]},
+  r_protocols:{type:"r", kick:"Recommended", h:"Share & develop protocols",
+    services:[{name:"SciLifeLab Protocols", desc:"Create, share and develop interactive lab and bioinformatics protocols (powered by protocols.io); each published protocol gets a DOI. Premium access for SciLifeLab-affiliated researchers.", url:"https://www.protocols.io"}]},
+  r_cloud:{type:"r", kick:"Recommended", h:"Persistent service",
+    services:[{name:"Science Cloud", desc:"Apply for a persistent service via SUPR.", url:"https://supr.naiss.se/"}]},
+  r_small:{type:"r", kick:"Recommended", h:"Modest computing need",
+    services:[{name:"NAISS Small / Medium", desc:"Apply via SUPR, or use resources at your hosting organisation.", url:"https://supr.naiss.se/"}], note:COMPUTE_NOTE},
+  r_large:{type:"r", kick:"Recommended", h:"Intermediate computing need",
+    services:[{name:"NAISS Large", desc:"Apply for NAISS Large calls via SUPR.", url:"https://supr.naiss.se/"}], note:COMPUTE_NOTE},
+  r_eurohpc:{type:"r", kick:"Recommended", h:"Substantial computing need",
+    services:[{name:"EuroHPC", desc:"Apply for EuroHPC resources using the PRACE Peer-Review Tool."}], note:COMPUTE_NOTE},
+};
+
+let current="start", history=[], answered=[];
+const card=document.getElementById("card"), bar=document.getElementById("bar"), pathEl=document.getElementById("path");
+const ARROW='<svg class="arw" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+const ARWS='<svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+function choose(next,label){ history.push(current); if(label!==undefined) answered.push(label); current=next; render(); }
+function back(){ if(history.length){ current=history.pop(); answered.pop(); render(); } }
+function restart(){ current="start"; history=[]; answered=[]; render(); }
+
+function svcCards(list){
+  return '<div class="svcs">'+list.map(function(s){
+    var inner='<div><div class="svc__t">'+s.name+'</div>'+(s.desc?'<div class="svc__d">'+s.desc+'</div>':'')+'</div>';
+    return s.url ? '<a class="svc" target="_blank" rel="noopener" href="'+s.url+'">'+inner+ARWS+'</a>'
+                 : '<div class="svc">'+inner+'</div>';
+  }).join('')+'</div>';
+}
+
+function render(){
+  const n=NODES[current];
+  bar.style.width=(n.type==="r"?100:Math.min(88,history.length*18))+"%";
+  pathEl.innerHTML=answered.map(function(a){return '<span class="chip">'+a+'</span>';}).join("");
+  let html="";
+  if(n.type==="q"){
+    html+='<h2 class="q">'+n.h+'</h2><div class="opts">';
+    n.opts.forEach(function(o){ html+='<button class="opt" onclick="choose(\''+o.next+'\',\''+o.label.replace(/'/g,"\\'")+'\')"><span>'+o.label+'</span>'+ARROW+'</button>'; });
+    html+='</div>';
+  } else if(n.type==="info"){
+    html+='<div class="info"><h2 class="q">'+n.h+'</h2><p>'+n.p+'</p>';
+    if(n.links) html+='<div class="cta">'+n.links.map(function(l){return '<a target="_blank" rel="noopener" href="'+l.url+'">'+l.label+'</a>';}).join("")+'</div>';
+    html+='</div><div class="opts" style="margin-top:16px">';
+    n.opts.forEach(function(o){ html+='<button class="opt" onclick="choose(\''+o.next+'\')"><span>'+o.label+'</span>'+ARROW+'</button>'; });
+    html+='</div>';
+  } else {
+    html+='<div class="result"><div class="top"><p class="kick">'+n.kick+'</p><h2>'+n.h+'</h2></div><div class="in">';
+    if(n.p) html+='<p>'+n.p+'</p>';
+    if(n.services) html+=svcCards(n.services);
+    if(n.note) html+='<div class="note">'+n.note+'</div>';
+    html+='</div></div>';
+    html+='<div class="cta"><a target="_blank" rel="noopener" href="'+CONTACT+'">Still not sure? Data Centre is there for you</a></div>';
+  }
+  html+='<div class="nav">';
+  if(history.length) html+='<button class="btn-t" onclick="back()">&larr; Back</button>';
+  if(current!=="start") html+='<button class="btn-t" onclick="restart()">Start over</button>';
+  html+='</div>';
+  card.innerHTML=html;
+}
+render();
+</script>
