@@ -43,18 +43,93 @@
       req.send(null);
     }; // function "getDataFromUrl" ends here
 
+    // WordPress REST returns title/excerpt HTML and event dates inside meta.
+    // Reshape each post into the event object addEvents already renders.
+    function plainText(value) {
+      const el = document.createElement("textarea");
+      el.innerHTML = String(value || "").replace(/<[^>]*>/g, " ");
+      return el.value.replace(/\s+/g, " ").trim();
+    }
+
+    function splitDateTime(value) {
+      if (!value) return ["", ""];
+      const [date, time = ""] = value.split(" ");
+      const [hour, minute] = time.split(":");
+      return [date, hour && minute ? hour + ":" + minute : ""];
+    }
+
+    function mapWordpressEvent(event) {
+      const meta = event.meta || {};
+      const [date_start, time_start] = splitDateTime(meta._EventStartDate);
+      const [date_end, time_end] = splitDateTime(meta._EventEndDate);
+      const externalUrl = meta._EventURL || "";
+      return {
+        title: plainText(event.title && event.title.rendered),
+        type: meta._tribe_events_is_virtual === "yes" ? "Online" : "Event",
+        date_start: date_start,
+        time_start: time_start,
+        date_end: date_end,
+        time_end: time_end,
+        venue: "",
+        organisers: "",
+        event_url: event.link,
+        registration_url: externalUrl && externalUrl !== event.link ? externalUrl : "",
+        description: plainText(event.excerpt && event.excerpt.rendered),
+        _venueId: (meta._EventVenueID || [])[0],
+        _organizerId: (meta._EventOrganizerID || [])[0]
+      };
+    }
+
+    async function titleById(endpoint, id, cache) {
+      if (!id) return "";
+      if (cache.has(id)) return cache.get(id);
+      const url = "https://www.scilifelab.se/wp-json/wp/v2/" + endpoint + "/" + id + "?_fields=title";
+      const response = await fetch(url);
+      if (!response.ok) {
+        cache.set(id, "");
+        return "";
+      }
+      const data = await response.json();
+      const title = plainText(data.title && data.title.rendered);
+      cache.set(id, title);
+      return title;
+    }
+
+    async function loadWordpressEvents(url) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("WordPress events request failed: " + response.status);
+      const events = await response.json();
+      const pages = Number(response.headers.get("X-WP-TotalPages") || 1);
+      for (let page = 2; page <= pages; page++) {
+        const pageResponse = await fetch(url + "&page=" + page);
+        if (!pageResponse.ok) throw new Error("WordPress events request failed: " + pageResponse.status);
+        events.push.apply(events, await pageResponse.json());
+      }
+      const mapped = events.map(mapWordpressEvent);
+      const venues = new Map();
+      const organisers = new Map();
+      await Promise.all(mapped.map(async function (event) {
+        event.venue = await titleById("tribe_venue", event._venueId, venues);
+        event.organisers = await titleById("tribe_organizer", event._organizerId, organisers);
+        delete event._venueId;
+        delete event._organizerId;
+      }));
+      return mapped;
+    }
+
     // Take data about events and displays it
     function addEvents(dataArray, context) {
-      if (context == "sll-events-section") {
+      if (dataArray && dataArray.items) {
         dataArray = dataArray.items;
       };
       let eventList = [];
       dataArray.forEach((event) => {
-        // Show only events that are tagged with "open science" in any capitalisation
+        // Show only events that are tagged with "open science" in any capitalisation.
+        // Events with no category were already selected by the WordPress tag query.
         const category_string = (Array.isArray(event.category) ? event.category : [event.category])
           .join(" ")
           .toLowerCase();
-        if (context === "sll-events-section" && !category_string.includes("open science")) {
+        if (context === "sll-events-section" && event.category && !category_string.includes("open science")) {
           return;
         };
         // Not insterested if the deadline have already passed
@@ -212,12 +287,15 @@
       eventsSection.innerHTML = eventsHTML;
     } // function "addEvents" ends here
 
-    // Call the function to display SLL events
-    getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fddls_events.json"),
-      addEvents,
-      "sll-events-section" // "div id" in open_science/activites page
-    );
+    // Call the function to display SLL events.
+    // https is required: the activities page is served over https, and http would be blocked.
+    const wordpressEventsUrl = decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Fwp%2Fv2%2Ftribe_events%3Ftags%3D7987%26_fields%3Did%2Ctitle%2Clink%2Cexcerpt%2Cmeta%26per_page%3D100");
+    loadWordpressEvents(wordpressEventsUrl)
+      .then(function (events) { addEvents(events, "sll-events-section"); })
+      .catch(function (error) {
+        console.error(error);
+        addEvents([], "sll-events-section");
+      });
  
     // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing
     // let local_events = '{{ .Site.Data.open_science.events | jsonify }}';
