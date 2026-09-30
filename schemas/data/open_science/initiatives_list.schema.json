@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/data/open_science/initiatives_list.schema.json",
+  "title": "Open Science initiatives list schema",
+  "description": "Schema for the filterable initiatives list in the open science section of data.scilifelab.se",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "description", "url", "type", "search_tags"],
+    "properties": {
+      "name": { "type": "string", "minLength": 1, "description": "Name of the initiative." },
+      "description": { "type": "string", "minLength": 1, "description": "Short description of the initiative." },
+      "url": { "type": "string", "pattern": "^(https?:\\/\\/|\\/).+", "description": "Link to the initiative." },
+      "thumbnail": { "type": "string", "minLength": 1, "description": "Path to the card image." },
+      "thumbnail_border": { "type": "boolean" },
+      "type": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1, "uniqueItems": true },
+      "ddls": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+      "data": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+      "search_tags": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1, "uniqueItems": true }
+    },
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,205 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+{{/* Compile list of the data sources in Hugo */}}
+{{ $r_slist := slice }}
+{{ $r_stype := slice }}
+{{ $r_sddls := slice }}
+{{ $r_sdata := slice }}
+
+{{/* Read data sources JSON file */}}
+{{ range .Site.Data.data_sources }}
+  {{ $r_slist = $r_slist | append . }}
+  {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
+  {{ $r_sddls = $r_sddls | append (apply .ddls "lower" ".") }}
+  {{ $r_sdata = $r_sdata | append (apply .data "lower" ".") }}
+{{ end }}
+
+{{/* Read services JSON file */}}
+{{ range where .Site.Data.services "data_source_type" "!=" nil }}
+  {{ $r_slist = $r_slist | append . }}
+  {{ $r_stype = $r_stype | append (apply .data_source_type "lower" ".") }}
+{{ end }}
+
+{{/* Sort and remove duplicates */}}
+{{ $r_slist = sort $r_slist "name" }}
+{{ $r_stype = $r_stype | uniq }}
+{{ $r_sddls = $r_sddls | uniq }}
+{{ $r_sdata = $r_sdata | uniq }}
+
+<!-- Repository content -->
+<div class="data_sources-content">  
+  <div class="row">
+    <div class="col-lg-2 mb-2 mb-lg-0 pe-lg-0">
+      <div class="bg-light" style="position: sticky; top: 15px;">
+        <div class="accordion" id="filterAccordion">
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingFilters">
+              <button class="accordion-button collapsed d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters">
+                Filters
+              </button>
+              <div class="filter-heading d-none d-lg-block mb-lg-0">
+                <h5>Filters</h5>
+              </div>
+            </div>
+            <div id="collapseFilters" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFilters">
+              <div class="accordion-body">
+                <div class="input-group mb-3 mt-0">
+                  <input type="text" id="Search" class="form-control" placeholder="Name/Keywords">
+                  <label class="form-control-label" for="Search" aria-labelledby="Search"></label>
+                </div>
+                <div class="accordion" id="innerAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingResourceType">
+                      <button class="accordion-button custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResourceType" aria-expanded="true" aria-controls="collapseResourceType">
+                        Resource Type
+                      </button>
+                    </h2>
+                    <div id="collapseResourceType" class="accordion-collapse collapse show" aria-labelledby="headingResourceType">
+                      <div class="accordion-body">
+                        {{ range sort $r_stype }}
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="{{ . }}" name="type" value="{{ . | urlize }}">
+                          <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="headingDataType">
+                      <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDataType" aria-expanded="false" aria-controls="collapseDataType">
+                        Data Type
+                      </button>
+                    </h2>
+                    <div id="collapseDataType" class="accordion-collapse collapse" aria-labelledby="headingDataType">
+                      <div class="accordion-body">
+                        {{ range sort $r_sdata }}
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="{{ . }}" name="data" value="{{ . | urlize }}">
+                          <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="headingScientificArea">
+                      <button class="accordion-button collapsed custom-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScientificArea" aria-expanded="false" aria-controls="collapseScientificArea">
+                        Scientific Area
+                      </button>
+                    </h2>
+                    <div id="collapseScientificArea" class="accordion-collapse collapse" aria-labelledby="headingScientificArea">
+                      <div class="accordion-body">
+                        {{ range sort $r_sddls }}
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="{{ . }}" name="ddls" value="{{ . | urlize }}">
+                          <label class="form-check-label" for="{{ . }}">{{ . | humanize }}</label>
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg">
+      <div id="services" class="row g-3 mb-5">
+        {{ range $r_slist }}
+        {{ $type := cond (isset . "data_source_type") .data_source_type .type }}
+        <div class="col-md-6 col-lg-4 service" data-stype="{{ delimit (apply $type "urlize" ".") " " }}" 
+            data-sddls="{{ delimit (apply .ddls "urlize" ".") ":" }}"
+            {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}
+            data-sdata="{{ delimit (apply .data "urlize" ".") ":" }}"
+            {{ with .search_tags }}data-search-tags="{{ delimit . ":" | lower }}"{{ end }}>
+          <div class="card-teal-25">
+            <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
+              <a target="_self" href="{{ .url }}"><img class="img-fluid"
+                  src="{{ with .thumbnail }}{{ . }}{{ else }}{{ "/img/service_thumbnails/scilifelab.jpg" }}{{ end }}"
+                  alt="{{ .name }}"></a>
+            </div>
+            <div class="p-2 card-teal-title">
+              <h5><a href="{{ .url }}" target="_self">{{ .name }}</a></h5>
+            </div>
+            <div class="p-2">
+              {{ .description }}
+            </div>
+            <div class="px-2 pb-2">
+              <b>Type:</b> {{ delimit (apply $type "strings.FirstUpper" ".") ", " }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        <div id="no-filtered-service" style="display:none;">
+          <p class="text-center">No data sources have the given keyword, please try to use another.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Function to search and filter the data sources based on selected input
+  function searchAndFilter (){
+    // Get all the imputs
+    var selected_filters = new Object();
+    var selected_type = $("input:checkbox[name=type]:checked").map(function () {return this.value}).get();
+    if (selected_type.length){ selected_filters['data-stype'] = selected_type };
+    var selected_ddls = $("input:checkbox[name=ddls]:checked").map(function () {return this.value}).get();
+    if (selected_ddls.length){ selected_filters['data-sddls'] = selected_ddls };
+    var selected_data = $("input:checkbox[name=data]:checked").map(function () {return this.value}).get();
+    if (selected_data.length){ selected_filters['data-sdata'] = selected_data };
+    var search_text = $("div.data_sources-content input[type=text]").val().toLowerCase();
+    if (search_text.length){ selected_filters['data-search-tags'] = [search_text] };
+
+    // Hide all services before filtering
+    $(`div.service`).hide();
+    $(`div#no-filtered-service`).hide();
+
+    // Show relavant services based on selected criteria
+    if (!Object.keys(selected_filters).length) {
+      $("div.service").show();
+    } else {
+      var all_selected_services = [];
+      console.log(selected_filters);
+      // Iterate over all selected criteria and collect the services
+      for (var [filter_name, filter_list] of Object.entries(selected_filters)) {
+        var s_services = new Set;
+        filter_list.forEach(function (filter_value) {
+          $(`div.service[${filter_name}*='${filter_value}']`).each(function () { s_services.add(this); });
+        });
+        all_selected_services.push(s_services);
+      };
+      // When multiple criteria selectd it should act as AND not OR
+      selected_services = all_selected_services.reduce(function (x, y) {
+        var z = new Set;
+        x.forEach(v => y.has(v) && z.add(v));
+        return z;
+      });
+      // Set display for event with selected criteria
+      if (selected_services.size) {
+        selected_services.forEach(function (sService) { sService.style.display = ''; })
+      } else {
+        // Display a message if no events available for selected criteria
+        $('div#no-filtered-service').show();
+      };
+    };
+
+    // Bring the tab top to the veiwport if it isn't
+    // var tab_top = document.querySelector("ul.services-tab-list").getBoundingClientRect().top;
+    // if (tab_top < 0){ $("html").scrollTop(window.pageYOffset + tab_top - 15); }
+  }
+
+  // Call the search function on inputs
+  $('input:checkbox').on('change', searchAndFilter);
+  $("input[type=text]").on("input", searchAndFilter);
+</script>
+
+{{ end }}

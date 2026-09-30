@@ -1,0 +1,150 @@
+[
+  {
+    "name": "AI Network",
+    "description": "An initiative to provide an AI community for SciLifeLab researchers and infrastructure users by encouraging collaboration and the sharing of emerging technologies.",
+    "url": "/open_science/scilifelab_ai_network",
+    "thumbnail": "/img/open_science/initiatives/ainw.png",
+    "type": [
+      "SciLifeLab initiative"
+    ],
+    "search_tags": [
+      "AI",
+      "artificial intelligence",
+      "machine learning",
+      "seminar"
+    ]
+  },
+  {
+    "name": "CoARA",
+    "description": "SciLifeLab is a proud member of CoARA, a global coalition dedicated to reforming how research, researchers, and institutions are assessed. CoARA promotes the recognition of diverse research contributions.",
+    "url": "https://www.coara.org",
+    "thumbnail": "/img/open_science/initiatives/coara.png",
+    "thumbnail_border":true, 
+    "type": [
+      "Collaborative initiative"
+    ],
+    "search_tags": [
+      "research assessment",
+      "evaluation",
+      "metrics",
+      "coara",
+      "publication metrics"
+    ]
+  },
+  {
+    "name": "Global Alliance for Genomics and Health (GA4GH)",
+    "description": "SciLifeLab collaborates with GA4GH to advance responsible sharing of genomic and health data through harmonised standards and tools.",
+    "url": "https://www.ga4gh.org",
+    "thumbnail": "/img/open_science/initiatives/ga4gh.png",
+    "thumbnail_border":true, 
+    "type": [
+      "Collaborative initiative"
+    ],
+    "search_tags": [
+      "genomics",
+      "health data",
+      "standards",
+      "data sharing",
+      "GA4GH",
+      "Global Alliance for Genomics and Health",
+      "genetics",
+      "data standards"
+    ]
+  },
+  {
+    "name": "ADORE.software",
+    "description": "SciLifeLab is a signatory of ADORE.software initiative. This declaration emphasises the importance of skilled individuals, supportive infrastructure, and effective funding policies for long-term software impact",
+    "url": "https://adore.software",
+    "thumbnail": "/img/open_science/initiatives/adore.png",
+    "type": [
+      "Collaborative initiative"
+    ],
+    "search_tags": [
+      "research software",
+      "sustainability",
+      "funding",
+      "ADORE.software",
+      "Amsterdam Declaration on Funding Research Software Sustainability"
+    ]
+  },
+  {
+    "name": "LIFES/GoFAIR Sweden",
+    "description": "SciLifeLab collaborates with GoFAIR Sweden to promote FAIR principles in data management and sharing and to foster collaboration among Swedish institutions to make life science data more FAIR.",
+    "url": "https://www.lifes.institute",
+    "thumbnail": "/img/open_science/initiatives/go_fair.png",
+    "thumbnail_border":true, 
+    "type": [
+      "Collaborative initiative"
+    ],
+    "search_tags": [
+      "FAIR",
+      "LIFES",
+      "FAIR assessment"
+    ]
+  },
+  {
+    "name": "The Open Science Monitoring Initiative (OSMI)",
+    "description": "SciLifeLab partners with OSMI to connect individuals and institutions working to implement and advanced Open Science monitoring.",
+    "url": "https://open-science-monitoring.org",
+    "thumbnail": "/img/open_science/initiatives/osmi.png",
+    "thumbnail_border":true, 
+    "type": [
+      "Collaborative initiative"
+    ],
+    "search_tags": [
+      "monitoring",
+      "indicators",
+      "OSMI"
+    ]
+  },
+  {
+    "name": "SciLifeLab Open Science Monitor",
+    "description": "A service that provides a transparent, aggregated view of research outputs affiliated with, hosted by, or enabled through SciLifeLab infrastructures and services. Powered by the OpenAIRE Graph.",
+    "url": "https://scilifelab.openaire.eu",
+    "thumbnail": "/img/open_science/initiatives/OS_Monitor.png",
+    "type": [
+      "SciLifeLab initiative"
+    ],
+    "search_tags": [
+      "monitoring",
+      "dashboard",
+      "publications",
+      "indicators",
+      "research assessment",
+      "research outputs"
+    ]
+  },
+  {
+    "name": "European Open Science Cloud (EOSC)",
+    "description": "SciLifeLab is collaborating with EOSC to help build a federated and open environment for sharing and reusing research data, tools, and services across Europe.",
+    "url": "https://eosc.eu",
+    "thumbnail": "/img/open_science/initiatives/eosc.png",
+    "thumbnail_border":true, 
+    "type": [
+      "Collaborative initiative"
+    ],
+    "search_tags": [
+      "EOSC",
+      "Europe",
+      "infrastructure",
+      "federation"
+    ]
+  },
+  {
+    "name": "nf-core",
+    "description": "SciLifeLab is a founding member of nf-core;  a community effort to enhance reproducibility and collaboration by collating a curated set of analysis pipelines and modules.",
+    "url": "https://nf-co.re",
+    "thumbnail": "/img/open_science/initiatives/nf-core.png",
+    "thumbnail_border":true, 
+    "type": [
+      "Collaborative initiative"
+    ],
+    "search_tags": [
+      "nf-core",
+      "Nextflow",
+      "pipelines",
+      "workflows",
+      "reproducibility"
+    ]
+  }
+]
