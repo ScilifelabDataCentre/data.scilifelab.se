@@ -119,6 +119,34 @@
       return mapped;
     }
 
+    // Browser storage for the mapped SciLifeLab events. A WordPress transient
+    // lives on the WordPress server, which this page cannot write.
+    const wordpressEventsCacheKey = "os-sll-events-v1";
+    const wordpressEventsCacheTtlMs = 60 * 60 * 1000;
+
+    function readCachedWordpressEvents(url) {
+      try {
+        const cached = JSON.parse(localStorage.getItem(wordpressEventsCacheKey) || "null");
+        if (!cached || cached.url !== url || !Array.isArray(cached.events)) return null;
+        if (Date.now() - cached.savedAt > wordpressEventsCacheTtlMs) return null;
+        return cached.events;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function writeCachedWordpressEvents(url, events) {
+      try {
+        localStorage.setItem(wordpressEventsCacheKey, JSON.stringify({
+          url: url,
+          savedAt: Date.now(),
+          events: events
+        }));
+      } catch (error) {
+        // Storage can be unavailable in private browsing or when the quota is full.
+      }
+    }
+
     // Take data about events and displays it
     function addEvents(dataArray, context) {
       if (dataArray && dataArray.items) {
@@ -307,12 +335,20 @@
     // Local test WordPress. Tag 7967 is "open science". The port speaks HTTP;
     // https://localhost:8181 does not complete a TLS handshake.
     const wordpressEventsUrl = "http://localhost:8181/wp-json/wp/v2/tribe_events?tags=7967&_fields=id,title,link,excerpt,meta&per_page=100";
-    loadWordpressEvents(wordpressEventsUrl)
-      .then(function (events) { addEvents(events, "sll-events-section"); })
-      .catch(function (error) {
-        console.error(error);
-        addEvents([], "sll-events-section");
-      });
+    const cachedWordpressEvents = readCachedWordpressEvents(wordpressEventsUrl);
+    if (cachedWordpressEvents) {
+      addEvents(cachedWordpressEvents, "sll-events-section");
+    } else {
+      loadWordpressEvents(wordpressEventsUrl)
+        .then(function (events) {
+          writeCachedWordpressEvents(wordpressEventsUrl, events);
+          addEvents(events, "sll-events-section");
+        })
+        .catch(function (error) {
+          console.error(error);
+          addEvents([], "sll-events-section");
+        });
+    }
  
     // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing
     // let local_events = '{{ .Site.Data.open_science.events | jsonify }}';
