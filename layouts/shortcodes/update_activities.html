@@ -43,108 +43,45 @@
       req.send(null);
     }; // function "getDataFromUrl" ends here
 
-    // WordPress REST returns title/excerpt HTML and event dates inside meta.
-    // Reshape each post into the event object addEvents already renders.
     function plainText(value) {
+      // The Events Calendar prefixes description HTML with a schedule block whose
+      // date/time separator is a literal "@". Drop that block before stripping tags.
+      const withoutSchedule = String(value || "")
+        .replace(/<div class="tribe-events-schedule[\s\S]*?<\/div>/gi, " ");
       const el = document.createElement("textarea");
-      el.innerHTML = String(value || "").replace(/<[^>]*>/g, " ");
+      el.innerHTML = withoutSchedule.replace(/<[^>]*>/g, " ");
       return el.value.replace(/\s+/g, " ").trim();
     }
 
-    function splitDateTime(value) {
-      if (!value) return ["", ""];
-      const [date, time = ""] = value.split(" ");
+    function firstSentences(value, count) {
+      const text = plainText(value);
+      const sentences = text.match(/[^.!?]+[.!?]+/g) || [];
+      if (!sentences.length) return text;
+      return sentences.slice(0, count).join(" ").replace(/\s+/g, " ").trim();
+    }
+
+    function clock(value) {
+      const time = (value || "").split(" ")[1] || "";
       const [hour, minute] = time.split(":");
-      return [date, hour && minute ? hour + ":" + minute : ""];
+      return hour && minute ? hour + ":" + minute : "";
     }
 
-    function mapWordpressEvent(event) {
-      const meta = event.meta || {};
-      const [date_start, time_start] = splitDateTime(meta._EventStartDate);
-      const [date_end, time_end] = splitDateTime(meta._EventEndDate);
-      const externalUrl = meta._EventURL || "";
+    // Tribe Events already nests venue and organiser. Keep only the card fields.
+    function mapTribeEvent(event) {
+      const website = event.website || "";
       return {
-        title: plainText(event.title && event.title.rendered),
-        type: meta._tribe_events_is_virtual === "yes" ? "Online" : "Event",
-        date_start: date_start,
-        time_start: time_start,
-        date_end: date_end,
-        time_end: time_end,
-        venue: "",
-        organisers: "",
-        event_url: event.link,
-        registration_url: externalUrl && externalUrl !== event.link ? externalUrl : "",
-        description: plainText(event.excerpt && event.excerpt.rendered),
-        _venueId: (meta._EventVenueID || [])[0],
-        _organizerId: (meta._EventOrganizerID || [])[0]
+        title: plainText(event.title),
+        type: event.is_virtual ? "Virtual Event" : "Event",
+        date_start: (event.start_date || "").split(" ")[0],
+        time_start: clock(event.start_date),
+        date_end: (event.end_date || "").split(" ")[0],
+        time_end: clock(event.end_date),
+        venue: (event.venue && event.venue.venue) || "",
+        organisers: (event.organizer || []).map(function (org) { return org.organizer; }).filter(Boolean).join(", "),
+        event_url: event.url,
+        registration_url: website && website !== event.url ? website : "",
+        description: plainText(event.excerpt) || firstSentences(event.description, 3)
       };
-    }
-
-    async function titlesByIds(baseUrl, endpoint, ids) {
-      const unique = [...new Set(ids.filter(Boolean))];
-      const titles = new Map();
-      if (!unique.length) return titles;
-      const url = baseUrl + "/wp-json/wp/v2/" + endpoint + "?include=" + unique.join(",") + "&per_page=100&_fields=id,title";
-      const response = await fetch(url);
-      if (!response.ok) return titles;
-      const data = await response.json();
-      data.forEach(function (item) {
-        titles.set(item.id, plainText(item.title && item.title.rendered));
-      });
-      return titles;
-    }
-
-    async function loadWordpressEvents(url) {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error("WordPress events request failed: " + response.status);
-      const events = await response.json();
-      const pages = Number(response.headers.get("X-WP-TotalPages") || 1);
-      for (let page = 2; page <= pages; page++) {
-        const pageResponse = await fetch(url + "&page=" + page);
-        if (!pageResponse.ok) throw new Error("WordPress events request failed: " + pageResponse.status);
-        events.push.apply(events, await pageResponse.json());
-      }
-      const mapped = events.map(mapWordpressEvent);
-      const baseUrl = new URL(url).origin;
-      const [venues, organisers] = await Promise.all([
-        titlesByIds(baseUrl, "tribe_venue", mapped.map(function (event) { return event._venueId; })),
-        titlesByIds(baseUrl, "tribe_organizer", mapped.map(function (event) { return event._organizerId; }))
-      ]);
-      mapped.forEach(function (event) {
-        event.venue = venues.get(event._venueId) || "";
-        event.organisers = organisers.get(event._organizerId) || "";
-        delete event._venueId;
-        delete event._organizerId;
-      });
-      return mapped;
-    }
-
-    // Browser storage for the mapped SciLifeLab events. A WordPress transient
-    // lives on the WordPress server, which this page cannot write.
-    const wordpressEventsCacheKey = "os-sll-events-v1";
-    const wordpressEventsCacheTtlMs = 60 * 60 * 1000;
-
-    function readCachedWordpressEvents(url) {
-      try {
-        const cached = JSON.parse(localStorage.getItem(wordpressEventsCacheKey) || "null");
-        if (!cached || cached.url !== url || !Array.isArray(cached.events)) return null;
-        if (Date.now() - cached.savedAt > wordpressEventsCacheTtlMs) return null;
-        return cached.events;
-      } catch (error) {
-        return null;
-      }
-    }
-
-    function writeCachedWordpressEvents(url, events) {
-      try {
-        localStorage.setItem(wordpressEventsCacheKey, JSON.stringify({
-          url: url,
-          savedAt: Date.now(),
-          events: events
-        }));
-      } catch (error) {
-        // Storage can be unavailable in private browsing or when the quota is full.
-      }
     }
 
     // Take data about events and displays it
@@ -331,24 +268,14 @@
       }
     } // function "addEvents" ends here
 
-    // Call the function to display SLL events.
-    // Local test WordPress. Tag 7967 is "open science". The port speaks HTTP;
-    // https://localhost:8181 does not complete a TLS handshake.
-    const wordpressEventsUrl = "http://localhost:8181/wp-json/wp/v2/tribe_events?tags=7967&_fields=id,title,link,excerpt,meta&per_page=100";
-    const cachedWordpressEvents = readCachedWordpressEvents(wordpressEventsUrl);
-    if (cachedWordpressEvents) {
-      addEvents(cachedWordpressEvents, "sll-events-section");
-    } else {
-      loadWordpressEvents(wordpressEventsUrl)
-        .then(function (events) {
-          writeCachedWordpressEvents(wordpressEventsUrl, events);
-          addEvents(events, "sll-events-section");
-        })
-        .catch(function (error) {
-          console.error(error);
-          addEvents([], "sll-events-section");
-        });
-    }
+    // SciLifeLab events tagged "open science" (tag 7967).
+    getDataFromUrl(
+      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7967%26per_page%3D50"),
+      function (data, context) {
+        addEvents((data.events || []).map(mapTribeEvent), context);
+      },
+      "sll-events-section"
+    );
  
     // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing
     // let local_events = '{{ .Site.Data.open_science.events | jsonify }}';
