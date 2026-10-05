@@ -392,11 +392,11 @@
     "description": "Free consultations and support on all aspects of data management for those working in in Swedish life science research",
     "thumbnail": "/img/service_thumbnails/rdm.jpg",
     "thumbnail_border": true,
-    "url": "https://data-guidelines.scilifelab.se",
+    "url": "https://rdm-guidelines.scilifelab.se",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/",
+    "support_website": "https://rdm-guidelines.scilifelab.se/contact/",
     "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
     "support_status": "https://status.dc.scilifelab.se/793602117"
   },
@@ -1826,7 +1826,7 @@
     "maintained_by": "NBIS, SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/"
+    "support_website": "https://rdm-guidelines.scilifelab.se/contact/"
   },
   {
     "owner": [
