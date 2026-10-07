@@ -17,9 +17,6 @@ Open Science organisations.
 All times are given in Central European Time (CET/CEST). Questions about individual events should be directed to the organisers of that
 event.
 
-## SciLifeLab Events
-
-This section displays events related to Open Science, organised by SciLifeLab.
 <section id="sll-events-section" class="my-4">
   <!-- The events content will be filled by shortcode 'update_activities' that is called below -->
 </section>
