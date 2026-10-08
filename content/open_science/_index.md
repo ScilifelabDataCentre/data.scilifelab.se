@@ -13,7 +13,7 @@ menu:
     weight: 1
 ---
 
-At SciLifeLab, Open Science is a core part of how we support research and infrastructure. We act to equip researchers with the tools and resources needed to leverage Open Science practices effectively, foster a culture of openness, and integrate Open Science principles into our systems and research workflows.
+At SciLifeLab, Open Science is a core part of how we support research and infrastructure. We work to equip researchers with the tools and resources needed to leverage Open Science practices effectively, foster a culture of openness, and integrate Open Science principles into our systems and research workflows.
 
 SciLifeLab supports researchers by providing guidance to help make research outputs discoverable, accessible, and properly credited through open access publishing and community-trusted repositories. By promoting transparency, we encourage fair attribution, ethical sharing, and responsible research practices.
 
