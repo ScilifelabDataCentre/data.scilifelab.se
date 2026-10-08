@@ -1,26 +1,18 @@
 ---
-title: Services
-description: Overview of tools, data sources, and other outputs from SciLifeLab designed to aid life science research.
+title: Data services catalogue
+description: A catalogue of data services available from SciLifeLab
 cascade:
   header_image: /img/illustrations/circos_cropped.png
 menu:
   navbar:
-    name: Services
-    identifier: services
+    name: Data services
+    identifier: Data services
     weight: 10
   bottom_support:
-    name: Services
-    identifier: services
+    name: Data services
+    identifier: Data services
     weight: 10
 back_to_top_button: true
 ---
 
-This page details the services available for **researchers** and **data-producing facilities**. We define services as tools, databases, and support functions (e.g. hosting services) useful in data-driven life science. Use the search function to identify services that may be relevant for you.
-
-Some of the services listed here are hosted by [Scilifelab Data Centre](https://data.scilifelab.se/about/). The **status and uptime** of all such services can be viewed on the [Service status page](https://status.dc.scilifelab.se). To check on the status and uptime of a particular service, click on the <i class="bi-hdd-rack"></i> icon under 'Support' for that service.
-
-We have classified the services by 'Type' to make it easier to understand what the service is. Each service can be accessed by clicking on the name under the thumbnail image. Where possible, we have provided direct links to support email addresses <i class="bi bi-envelope-fill"></i>, support websites <i class="bi bi-globe"></i>, and links to the underlying code <i class="bi bi-github"></i>, among others.
-
-If you know of a relevant service that should be listed below, but is missing, please [get in touch](/contact/) and the team will assess your suggestion ASAP.
-
-We also have a [resources](/resources/) section that offers information that could be useful to those working in data-driven life science (e.g. what compute resources are available in Sweden generally).
+SciLifeLab data services are tools, repositories, and support functions (e.g. hosting services) that can be used in research. Extra information about uptime (<i class="bi-hdd-rack"></i>), contact (<i class="bi bi-envelope-fill"></i>), guidelines/support (<i class="bi bi-globe"></i>), source code (<i class="bi bi-github"></i>), and usage (<i class="bi bi-bar-chart-line-fill"></i>) is linked, where available.
