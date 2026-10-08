@@ -27,6 +27,6 @@ Open Science aims to make scientific research more transparent, accessible, and 
 
 ### Contact us about Open Science
 
-Members of the SciLifeLab Slack workspace can join the #open-science channel.
+Members of the SciLifeLab Slack workspace can join the [#open-science](https://scilifelab.slack.com/archives/C08RYLFQ98R) channel.
 
 Email [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) with 'Open Science' in the subject line.
