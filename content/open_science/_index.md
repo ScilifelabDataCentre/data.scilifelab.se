@@ -13,17 +13,27 @@ menu:
     weight: 1
 ---
 
-At SciLifeLab, Open Science is a core part of how we support research and infrastructure. We work to equip researchers with the tools and resources needed to leverage Open Science practices effectively, foster a culture of openness, and integrate Open Science principles into our systems and research workflows.
+At SciLifeLab, Open Science is a core part of how we support research and infrastructure. We work to equip researchers with the tools and
+resources needed to leverage Open Science practices effectively, foster a culture of openness, and integrate Open Science principles into
+our systems and research workflows.
 
-SciLifeLab supports researchers by providing guidance to help make research outputs discoverable, accessible, and properly credited through open access publishing and community-trusted repositories. By promoting transparency, we encourage fair attribution, ethical sharing, and responsible research practices.
+SciLifeLab supports researchers by providing guidance to help make research outputs discoverable, accessible, and properly credited through
+open access publishing and community-trusted repositories. By promoting transparency, we encourage fair attribution, ethical sharing, and
+responsible research practices.
 
-SciLifeLab stays informed on Open Science policies and guidelines at the national, international, and funder levels, and integrates these into SciLifeLab policies. We also coordinate and support communities that promote collaboration around Open Science and the FAIR principles.
+SciLifeLab stays informed on Open Science policies and guidelines at the national, international, and funder levels, and integrates these
+into SciLifeLab policies. We also coordinate and support communities that promote collaboration around Open Science and the FAIR principles.
 
-Our goal is to provide practical, straightforward guidance on how to navigate these evolving requirements, integrating them into onboarding, systems, and training. Ultimately, we aim to drive cultural change toward FAIR and Open Science, advance scientific discovery through openness, transparency, and collaboration, as well as to foster meaningful connections with the broader public.
+Our goal is to provide practical, straightforward guidance on how to navigate these evolving requirements, integrating them into onboarding,
+systems, and training. Ultimately, we aim to drive cultural change toward FAIR and Open Science, advance scientific discovery through
+openness, transparency, and collaboration, as well as to foster meaningful connections with the broader public.
 
 ### Why is Open Science important to SciLifeLab?
 
-Open Science aims to make scientific research more transparent, accessible, and collaborative. By engaging with Open Science principles, SciLifeLab can further improve the quality and reliability of the scientific outputs we produce and the services that we provide. By engaging with Open Science principles, we ensure that publicly funded research is accessible to the wider community, amplifying our global impact, accelerating innovation and maximising scientific progress and societal benefit.
+Open Science aims to make scientific research more transparent, accessible, and collaborative. By engaging with Open Science principles,
+SciLifeLab can further improve the quality and reliability of the scientific outputs we produce and the services that we provide.
+By engaging with Open Science principles, we ensure that publicly funded research is accessible to the wider community, amplifying our
+global impact, accelerating innovation and maximising scientific progress and societal benefit.
 
 ### Contact us about Open Science
 
