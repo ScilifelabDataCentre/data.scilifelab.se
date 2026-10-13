@@ -1,0 +1,128 @@
+{{/*
+  Filterable card list, modelled on layouts/guidance/data_source.html.
+  Usage in a markdown page:
+    {{< open_science_data_list file="open_science/initiatives_list" type_label="Initiative Type" >}}
+  file:       path of a JSON file under data/ (without ".json")
+  type_label: optional heading for the "type" filter (default "Resource Type")
+*/}}
+{{ $filepath := .Get "file" }}
+{{ $typeLabel := .Get "type_label" | default "Resource Type" }}
+{{ $items := index site.Data (split $filepath "/") }}
+
+{{/* Collect the filter values */}}
+{{ $types := slice }}
+{{ $ddls := slice }}
+{{ $data := slice }}
+{{ range $items }}
+  {{ with .type }}{{ $types = $types | append (apply . "lower" ".") }}{{ end }}
+  {{ with .ddls }}{{ $ddls = $ddls | append (apply . "lower" ".") }}{{ end }}
+  {{ with .data }}{{ $data = $data | append (apply . "lower" ".") }}{{ end }}
+{{ end }}
+{{ $items = sort $items "name" }}
+{{ $types = $types | uniq }}
+{{ $ddls = $ddls | uniq }}
+{{ $data = $data | uniq }}
+
+{{ $groups := slice
+  (dict "key" "type" "label" $typeLabel "values" $types "open" true)
+  (dict "key" "data" "label" "Data Type"     "values" $data  "open" false)
+  (dict "key" "ddls" "label" "Scientific Area" "values" $ddls "open" false)
+}}
+
+<div id="os-data-list" class="row">
+  <!-- Filters -->
+  <div class="col-lg-3 mb-2 mb-lg-0 pe-lg-0">
+    <div class="bg-light" style="position: sticky; top: 15px;">
+      <div class="accordion" id="osFilterAccordion">
+        <div class="accordion-item">
+          <div class="accordion-header" id="osHeadingFilters">
+            <button class="accordion-button collapsed d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#osCollapseFilters" aria-expanded="false" aria-controls="osCollapseFilters">Filters</button>
+            <div class="filter-heading d-none d-lg-block mb-lg-0"><h5>Filters</h5></div>
+          </div>
+          <div id="osCollapseFilters" class="accordion-collapse collapse d-lg-block" aria-labelledby="osHeadingFilters">
+            <div class="accordion-body">
+              <div class="input-group mb-3 mt-0">
+                <input type="text" id="os-data-search" class="form-control" placeholder="Name/Keywords" aria-label="Search by name or keywords">
+              </div>
+              <div class="accordion" id="osInnerAccordion">
+                {{ range $i, $g := $groups }}
+                {{ if $g.values }}
+                <div class="accordion-item {{ if $i }}mt-2{{ end }}">
+                  <h2 class="accordion-header" id="osHeading-{{ $g.key }}">
+                    <button class="accordion-button custom-padding {{ if not $g.open }}collapsed{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#osCollapse-{{ $g.key }}" aria-expanded="{{ $g.open }}" aria-controls="osCollapse-{{ $g.key }}">{{ $g.label }}</button>
+                  </h2>
+                  <div id="osCollapse-{{ $g.key }}" class="accordion-collapse collapse {{ if $g.open }}show{{ end }}" aria-labelledby="osHeading-{{ $g.key }}">
+                    <div class="accordion-body">
+                      {{ range sort $g.values }}
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="os-{{ $g.key }}-{{ . | urlize }}" name="{{ $g.key }}" value="{{ . | urlize }}">
+                        <label class="form-check-label" for="os-{{ $g.key }}-{{ . | urlize }}">{{ . | humanize }}</label>
+                      </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="col-lg">
+    <div class="row g-3 mb-5">
+      {{ range $items }}
+      <div class="col-md-6 col-xl-4 os-data-item"
+           data-type="{{ with .type }}{{ delimit (apply . "urlize" ".") ":" }}{{ end }}"
+           data-ddls="{{ with .ddls }}{{ delimit (apply . "urlize" ".") ":" }}{{ end }}"
+           data-data="{{ with .data }}{{ delimit (apply . "urlize" ".") ":" }}{{ end }}"
+           data-search="{{ lower .name }}:{{ with .search_tags }}{{ delimit . ":" | lower }}{{ end }}">
+        <div class="card-teal-25">
+          <div {{ if .thumbnail_border }}class="px-1 pt-1"{{ end }}>
+            <a href="{{ .url }}"><img class="img-fluid" src="{{ with .thumbnail }}{{ . }}{{ else }}/img/service_thumbnails/scilifelab.jpg{{ end }}" alt="{{ .name }}"></a>
+          </div>
+          <div class="p-2 card-teal-title"><h5><a href="{{ .url }}">{{ .name }}</a></h5></div>
+          <div class="p-2">{{ .description }}</div>
+          {{ with .type }}<div class="px-2 pb-2"><b>Type:</b> {{ delimit (apply . "strings.FirstUpper" ".") ", " }}</div>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+      <div id="os-no-results" style="display:none;">
+        <p class="text-center">Nothing matches the selected filters, please try another keyword.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    var $root = $("#os-data-list");
+    function filterItems() {
+      var filters = {};
+      ["type", "data", "ddls"].forEach(function (key) {
+        var vals = $root.find("input:checkbox[name=" + key + "]:checked").map(function () { return this.value; }).get();
+        if (vals.length) { filters[key] = vals; }
+      });
+      var text = $root.find("#os-data-search").val().toLowerCase().trim();
+      var shown = 0;
+      $root.find(".os-data-item").each(function () {
+        var $el = $(this);
+        // AND between filter groups, OR within a group
+        var ok = Object.keys(filters).every(function (key) {
+          var have = ($el.attr("data-" + key) || "").split(":");
+          return filters[key].some(function (v) { return have.indexOf(v) !== -1; });
+        });
+        if (ok && text) { ok = ($el.attr("data-search") || "").indexOf(text) !== -1; }
+        $el.toggle(ok);
+        if (ok) { shown++; }
+      });
+      $root.find("#os-no-results").toggle(shown === 0);
+    }
+    $root.on("change", "input:checkbox", filterItems);
+    $root.on("input", "#os-data-search", filterItems);
+  });
+</script>
