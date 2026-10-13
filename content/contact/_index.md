@@ -8,7 +8,7 @@ menu:
   bottom_about:
     name: Contact form
     identifier: contact
-    weight: 20
+    weight: 30
 ---
 
 Please use this form to contact SciLifeLab Data Centre. Queries could include, for example, suggestions for new content, reports of bugs on this website, or requests for help from the Data Centre.
