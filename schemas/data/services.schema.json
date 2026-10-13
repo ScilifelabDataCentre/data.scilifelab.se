@@ -51,6 +51,11 @@
           "uniqueItems": true,
           "description": "Search keywords associated with the service."
         },
+        "weight": {
+           "type": "integer",
+            "minimum": 0,
+            "description": "OPTIONAL: Position on the services page. Lower numbers are shown first; services without a weight are listed alphabetically after weighted ones."
+        },
         "name": {
           "type": "string",
           "minLength": 1,

@@ -4,6 +4,9 @@
 # more Hugo stuff
 .hugo_build.lock
 
+# Local dev stuff
+devbox*
+
 # OSX
 .DS_Store
 __pycache__

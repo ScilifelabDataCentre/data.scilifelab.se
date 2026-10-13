@@ -21,6 +21,7 @@
       "Data Centre"
     ],
     "name": "SciLifeLab Serve",
+    "weight": 1,
     "description": "SciLifeLab Serve is a platform offering machine learning model serving, data science app hosting (Shiny, Gradio, Streamlit, Dash, etc.).",
     "url": "https://serve.scilifelab.se/",
     "maintained_by": "SciLifeLab Data Centre",
@@ -50,6 +51,7 @@
       "Tool"
     ],
     "name": "Swedish Pathogens Portal",
+    "weight": 1,
     "description": "Facilitates the sharing and promotion of pandemic preparedness and infectious disease data",
     "thumbnail": "/img/service_thumbnails/pathogens.png",
     "thumbnail_border": true,
@@ -81,6 +83,7 @@
       "Data Repository"
     ],
     "name": "SciLifeLab Data Repository",
+    "weight": 1,
     "description": "Repository for publishing any kind of research-related data, posters, presentations, and more!",
     "thumbnail": "/img/service_thumbnails/figshare.jpg",
     "url": "https://scilifelab.figshare.com/",
@@ -389,14 +392,15 @@
       "SciLifeLab RDM Guidelines"
     ],
     "name": "SciLifeLab RDM Guidelines",
+    "weight": 1,
     "description": "Free consultations and support on all aspects of data management for those working in in Swedish life science research",
     "thumbnail": "/img/service_thumbnails/rdm.jpg",
     "thumbnail_border": true,
-    "url": "https://data-guidelines.scilifelab.se",
+    "url": "https://rdm-guidelines.scilifelab.se",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/",
+    "support_website": "https://rdm-guidelines.scilifelab.se/contact/",
     "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
     "support_status": "https://status.dc.scilifelab.se/793602117"
   },
@@ -498,6 +502,7 @@
       "kcat"
     ],
     "name": "Metabolic Atlas",
+    "weight": 1,
     "description": "Metabolic Atlas is a web platform integrating open-source genome scale metabolic models (GEMs) for easy browsing and analysis.",
     "url": "https://metabolicatlas.org/",
     "thumbnail": "/img/service_thumbnails/meta-atlas.png",
@@ -589,7 +594,8 @@
     "name": "SciLifeLab Order Portals",
     "description": "Instances of a configurable web-based system that enable communication between units and prospective users.",
     "url": "https://orderportal.scilifelab.se/",
-    "thumbnail": "/img/service_thumbnails/scilifelab_green.jpg",
+    "thumbnail": "/img/service_thumbnails/order_portals.png",
+    "thumbnail_border": true,
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se",
@@ -1819,12 +1825,13 @@
     ],
     "name": "Data management support",
     "description": "Data stewards can provide guidance on multiple elements of data management, e.g. Data Management Plans.",
-    "thumbnail": "/img/service_thumbnails/scilifelab_aqua.jpg",
+    "thumbnail": "/img/service_thumbnails/data_management_helpdesk.png",
+    "thumbnail_border":true,
     "url": "mailto:data-management@scilifelab.se?subject=Request%20for%20data%20management%20support",
     "maintained_by": "NBIS, SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "data-management@scilifelab.se",
-    "support_website": "https://data-guidelines.scilifelab.se/contact/"
+    "support_website": "https://rdm-guidelines.scilifelab.se/contact/"
   },
   {
     "owner": [
@@ -1846,6 +1853,7 @@
       "human data"
     ],
     "name": "FEGA Sweden",
+    "weight": 1,
     "description": "Enables sensitive data from Swedish omics research in a responsible, safe, and legally compliant way.",
     "thumbnail": "/img/service_thumbnails/fega-sweden.png",
     "thumbnail_border": true,

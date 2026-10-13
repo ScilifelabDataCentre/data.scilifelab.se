@@ -43,18 +43,60 @@
       req.send(null);
     }; // function "getDataFromUrl" ends here
 
+    function plainText(value) {
+      // The Events Calendar prefixes description HTML with a schedule block whose
+      // date/time separator is a literal "@". Drop that block before stripping tags.
+      const withoutSchedule = String(value || "")
+        .replace(/<div class="tribe-events-schedule[\s\S]*?<\/div>/gi, " ");
+      const el = document.createElement("textarea");
+      el.innerHTML = withoutSchedule.replace(/<[^>]*>/g, " ");
+      return el.value.replace(/\s+/g, " ").trim();
+    }
+
+    function firstSentences(value, count) {
+      const text = plainText(value);
+      const sentences = text.match(/[^.!?]+[.!?]+/g) || [];
+      if (!sentences.length) return text;
+      return sentences.slice(0, count).join(" ").replace(/\s+/g, " ").trim();
+    }
+
+    function clock(value) {
+      const time = (value || "").split(" ")[1] || "";
+      const [hour, minute] = time.split(":");
+      return hour && minute ? hour + ":" + minute : "";
+    }
+
+    // Tribe Events already nests venue and organiser. Keep only the card fields.
+    function mapTribeEvent(event) {
+      const website = event.website || "";
+      return {
+        title: plainText(event.title),
+        type: event.is_virtual ? "Virtual Event" : "Event",
+        date_start: (event.start_date || "").split(" ")[0],
+        time_start: clock(event.start_date),
+        date_end: (event.end_date || "").split(" ")[0],
+        time_end: clock(event.end_date),
+        venue: (event.venue && event.venue.venue) || "",
+        organisers: (event.organizer || []).map(function (org) { return org.organizer; }).filter(Boolean).join(", "),
+        event_url: event.url,
+        registration_url: website && website !== event.url ? website : "",
+        description: plainText(event.excerpt) || firstSentences(event.description, 3)
+      };
+    }
+
     // Take data about events and displays it
     function addEvents(dataArray, context) {
-      if (context == "sll-events-section") {
+      if (dataArray && dataArray.items) {
         dataArray = dataArray.items;
       };
       let eventList = [];
       dataArray.forEach((event) => {
-        // Show only events that are tagged with "open science" in any capitalisation
+        // Show only events that are tagged with "open science" in any capitalisation.
+        // Events with no category were already selected by the WordPress tag query.
         const category_string = (Array.isArray(event.category) ? event.category : [event.category])
           .join(" ")
           .toLowerCase();
-        if (context === "sll-events-section" && !category_string.includes("open science")) {
+        if (context === "sll-events-section" && event.category && !category_string.includes("open science")) {
           return;
         };
         // Not insterested if the deadline have already passed
@@ -68,6 +110,7 @@
         };
       }); // dataArray for each ends here
       eventList = eventList.sort((a,b) => (a.banner_date > b.banner_date) ? 1 : (a.banner_date < b.banner_date) ? -1 : 0);
+      const previewLimit = 3;
       let eventsHTML;
       // If no event to show, display appropriate message
       if (eventList.length === 0) {
@@ -75,10 +118,26 @@
                           There are currently no events to display, but upcoming events will be posted here.
                         </div>`;
       } else {
-        eventsHTML = `<div class="row g-2" id="${context}-container">`;
+        eventsHTML = "";
+        if (context == "sll-events-section") {
+          const seeAllLink = eventList.length > previewLimit
+            ? `<div class="col col-md-5 mt-2 fs-6 text-end">
+                 <a href="#" id="${context}-see-all">See all open science events <i class="bi bi-arrow-right-square-fill" aria-hidden="true"></i></a>
+               </div>`
+            : "";
+          eventsHTML = `<div class="row mb-2 align-items-center">
+                          <div class="col col-md-7">
+                            <h3 id="scilifelab-events" class="mb-0">Open Science Events from SciLifeLab</h3>
+                            <p>This section displays events related to Open Science organised by SciLifeLab.</p>
+                          </div>
+                          ${seeAllLink}
+                        </div>`;
+        }
+        eventsHTML += `<div class="row g-2" id="${context}-container">`;
         eventList.forEach((event, ind) => {
             let event_date = new Date(event.banner_date);
-            eventsHTML += `<div class="col-md-6 col-lg-4 event">
+            const hiddenClass = ind >= previewLimit ? " d-none extra-event" : "";
+            eventsHTML += `<div class="col-md-6 col-lg-4 event${hiddenClass}">
                             <div class="card-box">
                             <div class="d-flex justify-content-between">
                                 <div>
@@ -207,16 +266,31 @@
             </div>`;
         }); // for each events iteration to create html cards ends here
         eventsHTML += `</div>`;
+        if (context !== "sll-events-section" && eventList.length > previewLimit) {
+          eventsHTML += `<div class="mt-3"><button type="button" class="btn btn-details" id="${context}-see-all">See all</button></div>`;
+        }
       };
       let eventsSection = document.getElementById(context);
       eventsSection.innerHTML = eventsHTML;
+      const seeAllButton = document.getElementById(context + "-see-all");
+      if (seeAllButton) {
+        seeAllButton.addEventListener("click", function (clickEvent) {
+          clickEvent.preventDefault();
+          eventsSection.querySelectorAll(".extra-event").forEach(function (card) {
+            card.classList.remove("d-none");
+          });
+          seeAllButton.parentElement.remove();
+        });
+      }
     } // function "addEvents" ends here
 
-    // Call the function to display SLL events
+    // SciLifeLab events tagged "open science" (tag 7967).
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fblobserver.dc.scilifelab.se%2Fblob%2Fddls_events.json"),
-      addEvents,
-      "sll-events-section" // "div id" in open_science/activites page
+      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7967%26per_page%3D100"),
+      function (data, context) {
+        addEvents((data.events || []).map(mapTribeEvent), context);
+      },
+      "sll-events-section"
     );
  
     // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing
