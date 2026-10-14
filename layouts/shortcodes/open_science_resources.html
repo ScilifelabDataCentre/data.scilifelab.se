@@ -1,5 +1,5 @@
 <!--Simple cards which contain title, description and are clickable-->
-{{ $filepath := .Get 0 }}{{ $resources := index site.Data (split $filepath "/") }}
+{{ $filepath := .Get 0 }}{{ $resources := index hugo.Data (split $filepath "/") }}
 
 
 {{ $all_types := slice }}

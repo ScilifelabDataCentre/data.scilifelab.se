@@ -1,6 +1,6 @@
 <!--Reads JSON of team-->
 {{ $filepath := .Get 0 }}
-{{ $data := index site.Data (split $filepath "/") }}
+{{ $data := index hugo.Data (split $filepath "/") }}
 
 <!--Simple cards that can be used for team with name, title and photo-->
 <div class="team-cards-wrapper my-5">

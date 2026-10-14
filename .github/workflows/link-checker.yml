@@ -13,11 +13,16 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v7
-        
+
+      # Use the same Hugo version as the Dockerfile so the checked site matches the deployed one
+      - name: Get Hugo version from Dockerfile
+        id: hugo
+        run: echo "version=$(grep -oP 'ARG HUGO_VERSION="\K[^"]+' Dockerfiles/Dockerfile)" >> "$GITHUB_OUTPUT"
+
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: ${{ steps.hugo.outputs.version }}
           
       - name: Run Hugo
         run: hugo -d dist

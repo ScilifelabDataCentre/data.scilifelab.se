@@ -1,5 +1,5 @@
 <!--Alphabetically sorted glossary with optional image-->
-{{ $filepath := .Get 0 }} {{ $data := index site.Data (split $filepath "/") }}
+{{ $filepath := .Get 0 }} {{ $data := index hugo.Data (split $filepath "/") }}
 {{ define "GlossaryText" }}
 <dl>
   <dt class="h2 mt-4">{{ .term }}</dt>

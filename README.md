@@ -129,42 +129,62 @@ And finally push to your fork:
 git push
 ```
 
-#### Testing locally
+#### Testing locally by installing Hugo
 
-To view your changes as they will appear in the final website, you need to install Hugo.
-You can find instructions on the Hugo website: [https://gohugo.io/](https://gohugo.io/)
+To view your changes as they will appear on the final website, you need to install Hugo.
+You can find instructions on the Hugo website [https://gohugo.io/](https://gohugo.io/) or below. Ideally, install the Hugo version set by `HUGO_VERSION` in [Dockerfiles/Dockerfile](Dockerfiles/Dockerfile).
 
-If you're using Mac OSX, it's recommended to use [Homebrew](https://brew.sh/) -
-if homebrew is already set up, installing Hugo is just a case of:
+<details>
+<summary><b>Linux</b></summary>
+
+```bash
+# run from the repository root
+HUGO_VERSION=$(sed -n 's/^ARG HUGO_VERSION="\(.*\)"/\1/p' Dockerfiles/Dockerfile)
+mkdir -p ~/.local/bin
+wget -qO- "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" | tar xz -C ~/.local/bin hugo
+hugo version
+```
+
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+```bash
+# run from the repository root
+HUGO_VERSION=$(sed -n 's/^ARG HUGO_VERSION="\(.*\)"/\1/p' Dockerfiles/Dockerfile)
+curl -sLO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_darwin-universal.pkg"
+sudo installer -pkg "hugo_${HUGO_VERSION}_darwin-universal.pkg" -target /
+rm "hugo_${HUGO_VERSION}_darwin-universal.pkg"
+hugo version
+```
+
+</details>
+
+<details>
+<summary><b>macOS with Homebrew</b></summary>
 
 ```bash
 brew install hugo
 ```
 
+> [!NOTE]
+> [Homebrew](https://brew.sh/) installs the latest Hugo release, which may be newer than the version used to build the website.
+
+</details>
+
+<details>
+<summary><b>Windows</b></summary>
+
+Follow the [Hugo installation guide for Windows](https://gohugo.io/installation/windows/), or use the [Docker](#docker) option below.
+
+</details>
+
 Once Hugo is installed, simply run the following command in the repository root directory:
 
 ```console
 $ hugo serve
-Start building sites …
-hugo v0.92.0+extended darwin/amd64 BuildDate=unknown
-
-                   | EN
--------------------+-----
-  Pages            | 77
-  Paginator pages  |  0
-  Non-page files   |  0
-  Static files     | 54
-  Processed images |  0
-  Aliases          |  0
-  Sitemaps         |  1
-  Cleaned          |  0
-
-Built in 83 ms
-Watching for changes in /Users/arnold/Documents/data.scilifelab.se/{archetypes,content,data,layouts,static}
-Watching for config changes in /Users/arnold/Documents/data.scilifelab.se/config.yaml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+... (build summary omitted) ...
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
@@ -237,7 +257,14 @@ Before committing your changes, run the linter locally to catch and fix any form
 
 #### Docker
 
-If you would prefer not to use Hugo, you can use the provided Dockerfile to build and run a container.
+To build and view the site with Docker instead of installing Hugo, run:
+
+```bash
+docker build -f Dockerfiles/Dockerfile -t data-scilifelab .
+docker run --rm -p 8080:8080 data-scilifelab
+```
+
+Then open `http://localhost:8080/`. The site does not refresh automatically, so rebuild the image to see new changes.
 
 ### Step 3: Make a pull request
 
