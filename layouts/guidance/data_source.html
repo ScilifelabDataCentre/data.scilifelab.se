@@ -9,7 +9,7 @@
 {{ $r_sdata := slice }}
 
 {{/* Read data sources JSON file */}}
-{{ range .Site.Data.data_sources }}
+{{ range hugo.Data.data_sources }}
   {{ $r_slist = $r_slist | append . }}
   {{ $r_stype = $r_stype | append (apply .type "lower" ".") }}
   {{ $r_sddls = $r_sddls | append (apply .ddls "lower" ".") }}
@@ -17,7 +17,7 @@
 {{ end }}
 
 {{/* Read services JSON file */}}
-{{ range where .Site.Data.services "data_source_type" "!=" nil }}
+{{ range where hugo.Data.services "data_source_type" "!=" nil }}
   {{ $r_slist = $r_slist | append . }}
   {{ $r_stype = $r_stype | append (apply .data_source_type "lower" ".") }}
 {{ end }}

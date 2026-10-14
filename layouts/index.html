@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
-        {{ range first 3 .Site.Data.services }}
+        {{ range first 3 hugo.Data.services }}
         <div class="col">
           <div class="card-teal-25">
             <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
-        {{ range last 3 .Site.Data.services }}
+        {{ range last 3 hugo.Data.services }}
         {{ if in .owner "nbis" }}
         <div class="col">
           <div class="card-teal-25">
@@ -80,7 +80,7 @@
         </div>
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 pb-2">
-        {{ range first 3 .Site.Data.guidance }}
+        {{ range first 3 hugo.Data.guidance }}
         <div class="col">
           <div class="card-teal-25">
             <div {{ if .thumbnail_border }}class="px-1 pt-1" {{ end }}>
