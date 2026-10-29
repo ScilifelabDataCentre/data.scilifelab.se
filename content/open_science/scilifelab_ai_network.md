@@ -3,8 +3,6 @@ title: SciLifeLab AI Network
 Description: Find out more about the network
 ---
 
-## SciLifeLab AI Network
-
 The SciLifeLab AI Network is a community for researchers, technical staff, and developers
 exploring AI in life science research. Through Slack discussions, seminars, and discussion
 groups, members can share experiences, exchange practical knowledge, get peer support, and

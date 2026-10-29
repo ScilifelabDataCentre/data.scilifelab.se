@@ -20,11 +20,8 @@
   {{ end }}
 
   {{ $header_image := $banner_page.Params.header_image | default "/img/illustrations/bubble_matrix.png" }}
-
-  <!--Only the Open Science pages need a different layout-->
-  {{ $is_open_science_page := and (eq .Section "open_science") (not .IsSection) }}
-  {{ $title := cond $is_open_science_page "Open Science" $banner_page.Title }}
-  {{ $text := cond $is_open_science_page ($banner_page.Params.title | default "") ($banner_page.Params.description | default "") }}
+  {{ $title := $banner_page.Title }}
+  {{ $text := $banner_page.Params.description | default "" }}
 
   <header class="header" style="background-image: url('{{ $header_image }}');">
     <div class="container {{ if not $text }}py-2 my-1{{ end }}">

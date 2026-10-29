@@ -1,4 +1,47 @@
 {{ define "main" }}
-  <!-- open science pages have common layout for list and single -->
-  {{ partial "open_science_page.html" . }}
+{{/* Tabs come from pages that set `tab` in front matter, ordered by page weight.
+     Pages without `tab` (AI Network, past events) stay out of the tab list.
+     The overview pane is this section page. Its label is `tab` on _index.md. */}}
+{{ $overviewID := "overview" }}
+{{ $tabs := slice }}
+{{ range .RegularPages.ByWeight }}
+  {{ if .Params.tab }}
+    {{ $tabs = $tabs | append . }}
+  {{ end }}
+{{ end }}
+
+<ul class="nav nav-tabs nav-justified" id="open-science-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="os-tab-{{ $overviewID }}" data-bs-toggle="tab"
+      data-bs-target="#os-pane-{{ $overviewID }}" type="button" role="tab"
+      aria-controls="os-pane-{{ $overviewID }}" aria-selected="true">{{ .Params.tab | default "Overview" }}</button>
+  </li>
+  {{ range $tabs }}
+  {{ $id := .File.ContentBaseName | urlize }}
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="os-tab-{{ $id }}" data-bs-toggle="tab"
+      data-bs-target="#os-pane-{{ $id }}" type="button" role="tab"
+      aria-controls="os-pane-{{ $id }}" aria-selected="false">{{ .Params.tab }}</button>
+  </li>
+  {{ end }}
+</ul>
+
+<div class="tab-content" id="open-science-tab-content">
+  <div class="tab-pane fade show active mt-3" id="os-pane-{{ $overviewID }}" role="tabpanel"
+    aria-labelledby="os-tab-{{ $overviewID }}">
+    {{ .Content }}
+  </div>
+  {{ range $tabs }}
+  {{ $id := .File.ContentBaseName | urlize }}
+  <div class="tab-pane fade mt-3" id="os-pane-{{ $id }}" role="tabpanel" aria-labelledby="os-tab-{{ $id }}">
+    <h3>{{ .Title }}</h3>
+    {{ .Content }}
+    {{ if eq .File.ContentBaseName "initiatives" }}
+      {{ partial "open_science_initiatives.html" . }}
+    {{ else if eq .File.ContentBaseName "activities" }}
+      {{ partial "open_science_activities.html" . }}
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
 {{ end }}

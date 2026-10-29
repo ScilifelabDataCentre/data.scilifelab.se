@@ -1,10 +1,9 @@
 ---
 title: "Initiatives involving SciLifeLab"
-menu:
-  open_science:
-    name: "Initiatives"
-    identifier: "initiatives"
-    weight: 3
+tab: "Initiatives"
+weight: 2
+build:
+  render: never
 ---
 
 SciLifeLab is dedicated to facilitating collaboration, driving innovation, and empowering the
@@ -14,5 +13,3 @@ collaborate with others on other initiatives that align with our commitment to O
 development of research infrastructure.
 
 This page lists both SciLifeLab initiatives and external initiatives supported by SciLifeLab (termed 'collaborative initiatives').
-
-{{< open_science_data_list file="open_science/initiatives_list" type_label="Initiative Type" >}}

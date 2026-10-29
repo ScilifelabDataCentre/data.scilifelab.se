@@ -1,34 +1,3 @@
-<!-- This shortcode consists of code to populate events and news in open_science/activites page -->
-
-<section class="my-4">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
-        {{ $news := where .Site.RegularPages "Section" "eq" "news" }}
-        {{ $os_news := where $news "Params.open_science" "eq" true }}
-        {{ $extra_os_news := where .Site.RegularPages "File.Dir" "eq" "open_science/past_events/" }}
-        {{ $os_news = union $os_news $extra_os_news }}
-        {{ $os_news = sort $os_news "Params.date" "desc" }}
-        {{ range $os_news }}
-        <div class="col">
-            <div class="news-card moving-card">
-                <div aria-hidden="true">
-                    <a href="{{ .RelPermalink }}">
-                        <img class="img-fluid" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ "/img/news/scilifelab.jpg" }}{{ end }}"
-                            alt="news-{{ .Date }}">
-                    </a>
-                </div>
-                <div class="px-3 py-2" style="background-color: #045c64; color: #fff;"> {{ .Date | time.Format ":date_long" }} </div>
-                <div class="px-3 pb-1">
-                    <h5 class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
-                </div>
-            </div>
-        </div>
-        {{ end }}
-      </div>
-</section>
-
-<!-- JS script to load events -->
- <script>
-  // Functions need to be run when the DOM is ready
   document.addEventListener("DOMContentLoaded", function (event) {
 
     // Takes a URL and calls the callback function pass the data fetched
@@ -36,12 +5,33 @@
       let req = new XMLHttpRequest();
       req.overrideMimeType("application/json");
       req.open("GET", url, true);
-      // The function call for fetching data and display
       req.onload = function () {
-        load_callback(JSON.parse(req.responseText), context);
+        if (req.status < 200 || req.status >= 300) {
+          console.error("Error fetching Open Science events:", req.status);
+          load_callback([], context);
+          return;
+        }
+        try {
+          load_callback(JSON.parse(req.responseText), context);
+        } catch (error) {
+          console.error("Error reading Open Science events:", error);
+          load_callback([], context);
+        }
+      };
+      req.onerror = function () {
+        console.error("Error fetching Open Science events");
+        load_callback([], context);
       };
       req.send(null);
-    }; // function "getDataFromUrl" ends here
+    }
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
 
     function plainText(value) {
       // The Events Calendar prefixes description HTML with a schedule block whose
@@ -141,9 +131,9 @@
                             <div class="card-box">
                             <div class="d-flex justify-content-between">
                                 <div>
-                                <span class="badge event-type mb-1">${event.type}</span>
+                                <span class="badge event-type mb-1">${escapeHtml(event.type)}</span>
                                 <h5><a class="" role="button" data-bs-toggle="modal"
-                                    data-bs-target="#descriptionModal-${context}-${ind}">${event.title}</a></h5>
+                                    data-bs-target="#descriptionModal-${context}-${ind}">${escapeHtml(event.title)}</a></h5>
                                 </div>
                                 <div>
                                 <div class="px-2 pb-1 m-2 d-flex flex-column rounded event-date">
@@ -175,14 +165,14 @@
             if (event.organisers){
                 eventsHTML += `<div class="row">
                                 <div class="col">
-                                <b>Organiser(s):</b> ${event.organisers}
+                                <b>Organiser(s):</b> ${escapeHtml(event.organisers)}
                                 </div>
                             </div>`;
             }
             if (event.venue){
                 eventsHTML += `<div class="row">
                                 <div class="col">
-                                <b>Venue:</b> ${event.venue}
+                                <b>Venue:</b> ${escapeHtml(event.venue)}
                                 </div>
                             </div>`;
             }
@@ -197,13 +187,13 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="descriptionModalLabel-${context}-${ind}">${event.title}</h5>
+                                        <h5 class="modal-title" id="descriptionModalLabel-${context}-${ind}">${escapeHtml(event.title)}</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
                                         <div class="col">
-                                            <b>Event type:</b> <span class="badge event-type mb-1">${event.type}</span>
+                                            <b>Event type:</b> <span class="badge event-type mb-1">${escapeHtml(event.type)}</span>
                                         </div>
                                         </div>`;
             if (event_date_time.length > 0){
@@ -223,32 +213,32 @@
             if (event.organisers){
                 eventsHTML += `<div class="row mt-1">
                                 <div class="col">
-                                <b>Organiser(s):</b> ${event.organisers}
+                                <b>Organiser(s):</b> ${escapeHtml(event.organisers)}
                                 </div>
                             </div>`;
             }
             if (event.venue){
                 eventsHTML += `<div class="row mt-1">
                                 <div class="col">
-                                <b>Venue:</b> ${event.venue}
+                                <b>Venue:</b> ${escapeHtml(event.venue)}
                                 </div>
                             </div>`;
             }
             if (event.description){
                 eventsHTML += `<div class="row mt-3">
                                 <div class="col">
-                                <b>Description:</b><br> ${event.description}
+                                <b>Description:</b><br> ${escapeHtml(event.description)}
                                 </div>
                             </div>`;
             }
             eventsHTML += `<div class="row mt-3">
                             <p>For more information, see the event webpage at the link below.</p>
                             <div class="col-md">
-                                <a target="_blank" href="${event.event_url}"><i class="bi bi-globe"></i> Event webpage</a>
+                                <a target="_blank" rel="noopener" href="${escapeHtml(event.event_url)}"><i class="bi bi-globe"></i> Event webpage</a>
                             </div>`;
             if (event.registration_url){
                 eventsHTML += `<div class="col-md">
-                                <a target="_blank" href="${event.registration_url}"><i class="bi bi-globe"></i>
+                                <a target="_blank" rel="noopener" href="${escapeHtml(event.registration_url)}"><i class="bi bi-globe"></i>
                                 Registration</a>
                             </div>`;
             }
@@ -271,6 +261,9 @@
         }
       };
       let eventsSection = document.getElementById(context);
+      if (!eventsSection) {
+        return;
+      }
       eventsSection.innerHTML = eventsHTML;
       const seeAllButton = document.getElementById(context + "-see-all");
       if (seeAllButton) {
@@ -292,17 +285,5 @@
       },
       "sll-events-section"
     );
- 
-    // To test locally uncomment the next two lines and DON'T FORGET to uncomment it back before pushing
-    // let local_events = '{{ hugo.Data.open_science.events | jsonify }}';
-    // addEvents(JSON.parse(local_events), "other-events-section");
 
-    // Call the function to display other events
-    getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fraw.githubusercontent.com%2FScilifelabDataCentre%2Fdata.scilifelab.se%2Frefs%2Fheads%2Fdevelop%2Fdata%2Fopen_science%2Fevents.json"),
-      addEvents,
-      "other-events-section" // "div id" in open_science/activites page
-    );
-
-  }); // Document "DOMContentLoaded" trigger ends here
-</script>
+  });

@@ -1,16 +1,24 @@
 ---
 title: Open Science
 Description: Information about Open Science activities at SciLifeLab
+tab: "Overview"
+weight: 1
 cascade:
-  header_image: /img/illustrations/bubble_matrix.png
+  - header_image: /img/illustrations/bubble_matrix.png
+  - _target:
+      path: /open_science/past_events/**
+      kind: page
+    layout: past_event
+    show_thumbnail_on_page: true
+aliases:
+  - /open_science/initiatives/
+  - /open_science/resources/
+  - /open_science/activities/
 menu:
   navbar:
     name: Open Science
     identifier: open_science
     weight: 100
-  open_science:
-    name: "Overview"
-    weight: 1
 ---
 
 At SciLifeLab, Open Science is a core part of how we support research and infrastructure. We work to equip researchers with the tools and

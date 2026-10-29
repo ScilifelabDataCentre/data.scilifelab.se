@@ -1,15 +1,7 @@
-{{/*
-  Filterable card list, modelled on layouts/guidance/data_source.html.
-  Usage in a markdown page:
-    {{< open_science_data_list file="open_science/initiatives_list" type_label="Initiative Type" >}}
-  file:       path of a JSON file under data/ (without ".json")
-  type_label: optional heading for the "type" filter (default "Resource Type")
-*/}}
-{{ $filepath := .Get "file" }}
-{{ $typeLabel := .Get "type_label" | default "Resource Type" }}
-{{ $items := index hugo.Data (split $filepath "/") }}
+{{/* Filterable initiative cards from data/open_science/initiatives_list.json. */}}
+{{ $items := hugo.Data.open_science.initiatives_list }}
+{{ $typeLabel := "Initiative Type" }}
 
-{{/* Collect the filter values */}}
 {{ $types := slice }}
 {{ $ddls := slice }}
 {{ $data := slice }}
@@ -25,12 +17,11 @@
 
 {{ $groups := slice
   (dict "key" "type" "label" $typeLabel "values" $types "open" true)
-  (dict "key" "data" "label" "Data Type"     "values" $data  "open" false)
+  (dict "key" "data" "label" "Data Type" "values" $data "open" false)
   (dict "key" "ddls" "label" "Scientific Area" "values" $ddls "open" false)
 }}
 
-<div id="os-data-list" class="row">
-  <!-- Filters -->
+<div id="os-data-list" class="data_sources-content row">
   <div class="col-lg-3 mb-2 mb-lg-0 pe-lg-0">
     <div class="bg-light" style="position: sticky; top: 15px;">
       <div class="accordion" id="osFilterAccordion">
@@ -72,7 +63,6 @@
     </div>
   </div>
 
-  <!-- Cards -->
   <div class="col-lg">
     <div class="row g-3 mb-5">
       {{ range $items }}
@@ -111,7 +101,6 @@
       var shown = 0;
       $root.find(".os-data-item").each(function () {
         var $el = $(this);
-        // AND between filter groups, OR within a group
         var ok = Object.keys(filters).every(function (key) {
           var have = ($el.attr("data-" + key) || "").split(":");
           return filters[key].some(function (v) { return have.indexOf(v) !== -1; });
