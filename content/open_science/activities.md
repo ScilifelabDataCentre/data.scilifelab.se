@@ -2,6 +2,8 @@
 title: "Events and Updates"
 tab: "Events & Updates"
 weight: 4
+build:
+  render: never
 menu:
   open_science:
     name: "Events & Updates"
