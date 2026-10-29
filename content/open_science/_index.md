@@ -1,6 +1,8 @@
 ---
 title: Open Science
 Description: Information about Open Science activities at SciLifeLab
+tab: "Overview"
+weight: 1
 cascade:
   header_image: /img/illustrations/bubble_matrix.png
 menu:

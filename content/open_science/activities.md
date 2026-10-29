@@ -1,5 +1,7 @@
 ---
 title: "Events and Updates"
+tab: "Events & Updates"
+weight: 4
 menu:
   open_science:
     name: "Events & Updates"

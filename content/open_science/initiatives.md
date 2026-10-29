@@ -1,5 +1,7 @@
 ---
 title: "Initiatives involving SciLifeLab"
+tab: "Initiatives"
+weight: 2
 menu:
   open_science:
     name: "Initiatives"

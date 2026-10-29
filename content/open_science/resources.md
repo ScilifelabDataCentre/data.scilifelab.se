@@ -1,5 +1,7 @@
 ---
 title: "Training materials, practical guidance, and other useful resources"
+tab: "Resources"
+weight: 3
 menu:
   open_science:
     identifier: "resources"
