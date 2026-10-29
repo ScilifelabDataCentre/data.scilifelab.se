@@ -19,9 +19,6 @@ menu:
     name: Open Science
     identifier: open_science
     weight: 100
-  open_science:
-    name: "Overview"
-    weight: 1
 ---
 
 At SciLifeLab, Open Science is a core part of how we support research and infrastructure. We work to equip researchers with the tools and

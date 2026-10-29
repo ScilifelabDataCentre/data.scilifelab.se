@@ -4,11 +4,6 @@ tab: "Initiatives"
 weight: 2
 build:
   render: never
-menu:
-  open_science:
-    name: "Initiatives"
-    identifier: "initiatives"
-    weight: 3
 ---
 
 SciLifeLab is dedicated to facilitating collaboration, driving innovation, and empowering the

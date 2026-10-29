@@ -4,12 +4,6 @@ tab: "Resources"
 weight: 3
 build:
   render: never
-menu:
-  open_science:
-    identifier: "resources"
-    name: "Resources"
-    weight: 4
-show_section_nav: false
 back_to_top_button: true
 ---
 
