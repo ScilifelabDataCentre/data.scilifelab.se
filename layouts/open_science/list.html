@@ -38,6 +38,8 @@
     {{ .Content }}
     {{ if eq .File.ContentBaseName "initiatives" }}
       {{ partial "open_science_initiatives.html" . }}
+    {{ else if eq .File.ContentBaseName "activities" }}
+      {{ partial "open_science_activities.html" . }}
     {{ end }}
   </div>
   {{ end }}

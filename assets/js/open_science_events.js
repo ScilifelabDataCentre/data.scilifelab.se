@@ -1,0 +1,289 @@
+  document.addEventListener("DOMContentLoaded", function (event) {
+
+    // Takes a URL and calls the callback function pass the data fetched
+    function getDataFromUrl(url, load_callback, context) {
+      let req = new XMLHttpRequest();
+      req.overrideMimeType("application/json");
+      req.open("GET", url, true);
+      req.onload = function () {
+        if (req.status < 200 || req.status >= 300) {
+          console.error("Error fetching Open Science events:", req.status);
+          load_callback([], context);
+          return;
+        }
+        try {
+          load_callback(JSON.parse(req.responseText), context);
+        } catch (error) {
+          console.error("Error reading Open Science events:", error);
+          load_callback([], context);
+        }
+      };
+      req.onerror = function () {
+        console.error("Error fetching Open Science events");
+        load_callback([], context);
+      };
+      req.send(null);
+    }
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function plainText(value) {
+      // The Events Calendar prefixes description HTML with a schedule block whose
+      // date/time separator is a literal "@". Drop that block before stripping tags.
+      const withoutSchedule = String(value || "")
+        .replace(/<div class="tribe-events-schedule[\s\S]*?<\/div>/gi, " ");
+      const el = document.createElement("textarea");
+      el.innerHTML = withoutSchedule.replace(/<[^>]*>/g, " ");
+      return el.value.replace(/\s+/g, " ").trim();
+    }
+
+    function firstSentences(value, count) {
+      const text = plainText(value);
+      const sentences = text.match(/[^.!?]+[.!?]+/g) || [];
+      if (!sentences.length) return text;
+      return sentences.slice(0, count).join(" ").replace(/\s+/g, " ").trim();
+    }
+
+    function clock(value) {
+      const time = (value || "").split(" ")[1] || "";
+      const [hour, minute] = time.split(":");
+      return hour && minute ? hour + ":" + minute : "";
+    }
+
+    // Tribe Events already nests venue and organiser. Keep only the card fields.
+    function mapTribeEvent(event) {
+      const website = event.website || "";
+      return {
+        title: plainText(event.title),
+        type: event.is_virtual ? "Virtual Event" : "Event",
+        date_start: (event.start_date || "").split(" ")[0],
+        time_start: clock(event.start_date),
+        date_end: (event.end_date || "").split(" ")[0],
+        time_end: clock(event.end_date),
+        venue: (event.venue && event.venue.venue) || "",
+        organisers: (event.organizer || []).map(function (org) { return org.organizer; }).filter(Boolean).join(", "),
+        event_url: event.url,
+        registration_url: website && website !== event.url ? website : "",
+        description: plainText(event.excerpt) || firstSentences(event.description, 3)
+      };
+    }
+
+    // Take data about events and displays it
+    function addEvents(dataArray, context) {
+      if (dataArray && dataArray.items) {
+        dataArray = dataArray.items;
+      };
+      let eventList = [];
+      dataArray.forEach((event) => {
+        // Show only events that are tagged with "open science" in any capitalisation.
+        // Events with no category were already selected by the WordPress tag query.
+        const category_string = (Array.isArray(event.category) ? event.category : [event.category])
+          .join(" ")
+          .toLowerCase();
+        if (context === "sll-events-section" && event.category && !category_string.includes("open science")) {
+          return;
+        };
+        // Not insterested if the deadline have already passed
+        event.banner_date = event.date_start || event.registration_deadline;
+        if (typeof event.banner_date !== 'undefined'){
+          let dateString = event.banner_date + (event.time_start ? ' ' + event.time_start : '');
+          let [h, m] = event.time_start ? event.time_start.split(":") : [0, 0];
+          if (new Date(dateString) >= new Date().setHours(h, m)){
+            eventList.push(event);
+          };
+        };
+      }); // dataArray for each ends here
+      eventList = eventList.sort((a,b) => (a.banner_date > b.banner_date) ? 1 : (a.banner_date < b.banner_date) ? -1 : 0);
+      const previewLimit = 3;
+      let eventsHTML;
+      // If no event to show, display appropriate message
+      if (eventList.length === 0) {
+        eventsHTML = `<div class="alert alert-secondary mt-4">
+                          There are currently no events to display, but upcoming events will be posted here.
+                        </div>`;
+      } else {
+        eventsHTML = "";
+        if (context == "sll-events-section") {
+          const seeAllLink = eventList.length > previewLimit
+            ? `<div class="col col-md-5 mt-2 fs-6 text-end">
+                 <a href="#" id="${context}-see-all">See all open science events <i class="bi bi-arrow-right-square-fill" aria-hidden="true"></i></a>
+               </div>`
+            : "";
+          eventsHTML = `<div class="row mb-2 align-items-center">
+                          <div class="col col-md-7">
+                            <h3 id="scilifelab-events" class="mb-0">Open Science Events from SciLifeLab</h3>
+                            <p>This section displays events related to Open Science organised by SciLifeLab.</p>
+                          </div>
+                          ${seeAllLink}
+                        </div>`;
+        }
+        eventsHTML += `<div class="row g-2" id="${context}-container">`;
+        eventList.forEach((event, ind) => {
+            let event_date = new Date(event.banner_date);
+            const hiddenClass = ind >= previewLimit ? " d-none extra-event" : "";
+            eventsHTML += `<div class="col-md-6 col-lg-4 event${hiddenClass}">
+                            <div class="card-box">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                <span class="badge event-type mb-1">${escapeHtml(event.type)}</span>
+                                <h5><a class="" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#descriptionModal-${context}-${ind}">${escapeHtml(event.title)}</a></h5>
+                                </div>
+                                <div>
+                                <div class="px-2 pb-1 m-2 d-flex flex-column rounded event-date">
+                                <div class="px-2 fs-3 mx-auto">${event_date.getDate()}</div>
+                                <div class="pb-1 px-2 mx-auto">${event_date.toLocaleString('default', {'month': 'long'})}</div>
+                                </div>
+                                </div>
+                            </div>`;
+            let event_date_time = [], date_format_options = {'month': 'short', day:'numeric', year: 'numeric'};
+            event.date_start && event_date_time.push(new Date(event.date_start).toLocaleString('en-US', date_format_options));
+            event.time_start && event_date_time.push(event.time_start);
+            (event.date_end || event.time_end) && event_date_time.push("-")
+            event.date_end && event_date_time.push(new Date(event.date_end).toLocaleString('en-US', date_format_options));
+            event.time_end && event_date_time.push(event.time_end);
+            if (event_date_time.length > 0){
+                eventsHTML += `<div class="row mt-3">
+                                <div class="col">
+                                <b>Date and time:</b> ${event_date_time.join(" ")}
+                                </div>
+                            </div>`;
+            }
+            if (event.registration_deadline){
+                eventsHTML += `<div class="row mt-1">
+                                <div class="col">
+                                <b>Registration deadline:</b> ${new Date(event.registration_deadline).toLocaleString('en-US', date_format_options)}
+                                </div>
+                            </div>`;
+            }
+            if (event.organisers){
+                eventsHTML += `<div class="row">
+                                <div class="col">
+                                <b>Organiser(s):</b> ${escapeHtml(event.organisers)}
+                                </div>
+                            </div>`;
+            }
+            if (event.venue){
+                eventsHTML += `<div class="row">
+                                <div class="col">
+                                <b>Venue:</b> ${escapeHtml(event.venue)}
+                                </div>
+                            </div>`;
+            }
+            eventsHTML += `<div class="row mt-3">
+                            <div class="col">
+                                <button type="button" class="btn btn-details btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#descriptionModal-${context}-${ind}">
+                                See details
+                                </button>
+                                <div class="modal fade" id="descriptionModal-${context}-${ind}" tabindex="-1"
+                                aria-labelledby="descriptionModalLabel-${context}-${ind}" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="descriptionModalLabel-${context}-${ind}">${escapeHtml(event.title)}</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                        <div class="col">
+                                            <b>Event type:</b> <span class="badge event-type mb-1">${escapeHtml(event.type)}</span>
+                                        </div>
+                                        </div>`;
+            if (event_date_time.length > 0){
+                eventsHTML += `<div class="row mt-1">
+                                <div class="col">
+                                <b>Date and time:</b> ${event_date_time.join(" ")}
+                                </div>
+                            </div>`;
+            }
+            if (event.registration_deadline){
+                eventsHTML += `<div class="row mt-1">
+                                <div class="col">
+                                <b>Registration deadline:</b> ${new Date(event.registration_deadline).toLocaleString('en-US', date_format_options)}
+                                </div>
+                            </div>`;
+            }
+            if (event.organisers){
+                eventsHTML += `<div class="row mt-1">
+                                <div class="col">
+                                <b>Organiser(s):</b> ${escapeHtml(event.organisers)}
+                                </div>
+                            </div>`;
+            }
+            if (event.venue){
+                eventsHTML += `<div class="row mt-1">
+                                <div class="col">
+                                <b>Venue:</b> ${escapeHtml(event.venue)}
+                                </div>
+                            </div>`;
+            }
+            if (event.description){
+                eventsHTML += `<div class="row mt-3">
+                                <div class="col">
+                                <b>Description:</b><br> ${escapeHtml(event.description)}
+                                </div>
+                            </div>`;
+            }
+            eventsHTML += `<div class="row mt-3">
+                            <p>For more information, see the event webpage at the link below.</p>
+                            <div class="col-md">
+                                <a target="_blank" rel="noopener" href="${escapeHtml(event.event_url)}"><i class="bi bi-globe"></i> Event webpage</a>
+                            </div>`;
+            if (event.registration_url){
+                eventsHTML += `<div class="col-md">
+                                <a target="_blank" rel="noopener" href="${escapeHtml(event.registration_url)}"><i class="bi bi-globe"></i>
+                                Registration</a>
+                            </div>`;
+            }
+            eventsHTML += `</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>`;
+        }); // for each events iteration to create html cards ends here
+        eventsHTML += `</div>`;
+        if (context !== "sll-events-section" && eventList.length > previewLimit) {
+          eventsHTML += `<div class="mt-3"><button type="button" class="btn btn-details" id="${context}-see-all">See all</button></div>`;
+        }
+      };
+      let eventsSection = document.getElementById(context);
+      if (!eventsSection) {
+        return;
+      }
+      eventsSection.innerHTML = eventsHTML;
+      const seeAllButton = document.getElementById(context + "-see-all");
+      if (seeAllButton) {
+        seeAllButton.addEventListener("click", function (clickEvent) {
+          clickEvent.preventDefault();
+          eventsSection.querySelectorAll(".extra-event").forEach(function (card) {
+            card.classList.remove("d-none");
+          });
+          seeAllButton.parentElement.remove();
+        });
+      }
+    } // function "addEvents" ends here
+
+    // SciLifeLab events tagged "open science" (tag 7967).
+    getDataFromUrl(
+      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7967%26per_page%3D100"),
+      function (data, context) {
+        addEvents((data.events || []).map(mapTribeEvent), context);
+      },
+      "sll-events-section"
+    );
+
+  });
