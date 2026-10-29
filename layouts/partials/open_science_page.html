@@ -26,6 +26,9 @@
     <!-- Main content area -->
     <main class="col-md-9 col-xl-10 p-4">
       {{ .Content }}
+      {{ if eq .File.ContentBaseName "initiatives" }}
+        {{ partial "open_science_initiatives.html" . }}
+      {{ end }}
     </main>
   </div>
 </div>

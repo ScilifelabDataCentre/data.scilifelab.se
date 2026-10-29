@@ -36,6 +36,9 @@
   <div class="tab-pane fade mt-3" id="os-pane-{{ $id }}" role="tabpanel" aria-labelledby="os-tab-{{ $id }}">
     <h3>{{ .Title }}</h3>
     {{ .Content }}
+    {{ if eq .File.ContentBaseName "initiatives" }}
+      {{ partial "open_science_initiatives.html" . }}
+    {{ end }}
   </div>
   {{ end }}
 </div>
