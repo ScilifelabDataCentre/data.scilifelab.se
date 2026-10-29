@@ -7,7 +7,7 @@
 */}}
 {{ $filepath := .Get "file" }}
 {{ $typeLabel := .Get "type_label" | default "Resource Type" }}
-{{ $items := index site.Data (split $filepath "/") }}
+{{ $items := index hugo.Data (split $filepath "/") }}
 
 {{/* Collect the filter values */}}
 {{ $types := slice }}
