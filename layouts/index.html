@@ -126,7 +126,7 @@
           <a href="{{ .RelPermalink }}">See all news <i class="bi bi-arrow-right-square-fill"></i></a>
         </div>
         <div id="news-items">
-          {{ range $index, $news := first 3 .RegularPages }}
+          {{ range $index, $news := first 2 .RegularPages }}
           <div class="px-3">
             <span class="news-date small">
               {{ .Date | time.Format ":date_long" }}
