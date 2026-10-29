@@ -66,8 +66,8 @@
                 "name": "High Performance Computing Center North, Umeå University, Umeå, Sweden; Science for Life Laboratory (SciLifeLab), Umeå University, Umeå Sweden"
             },
             "email": "nalina.venkatesh@umu.se",
-            "familyName": "Nalina Hamsaiyni",
-            "givenName": "Venkatesh"
+            "familyName": "Venkatesh",
+            "givenName": "Nalina Hamsaiyni"
         },
         {
             "id": "https://orcid.org/0000-0003-1373-5121",
@@ -160,7 +160,6 @@
         "Docker file"
     ],
     "relatedLink": "https://data.scilifelab.se/",
-    "version": "Release: v1.6.23",
-    "developmentStatus": "active",
-    "issueTracker": "https://github.com/ScilifelabDataCentre/data.scilifelab.se/issues"
+    "version": "1.6.23",
+    "developmentStatus": "active"
 }
