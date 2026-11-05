@@ -6,9 +6,9 @@
 {{ $ddls := slice }}
 {{ $data := slice }}
 {{ range $items }}
-  {{ with .type }}{{ $types = $types | append (apply . "lower" ".") }}{{ end }}
-  {{ with .ddls }}{{ $ddls = $ddls | append (apply . "lower" ".") }}{{ end }}
-  {{ with .data }}{{ $data = $data | append (apply . "lower" ".") }}{{ end }}
+  {{ with .type }}{{ $types = $types | append . }}{{ end }}
+  {{ with .ddls }}{{ $ddls = $ddls | append . }}{{ end }}
+  {{ with .data }}{{ $data = $data | append . }}{{ end }}
 {{ end }}
 {{ $items = sort $items "name" }}
 {{ $types = $types | uniq }}
@@ -47,7 +47,7 @@
                       {{ range sort $g.values }}
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="os-{{ $g.key }}-{{ . | urlize }}" name="{{ $g.key }}" value="{{ . | urlize }}">
-                        <label class="form-check-label" for="os-{{ $g.key }}-{{ . | urlize }}">{{ . | humanize }}</label>
+                        <label class="form-check-label" for="os-{{ $g.key }}-{{ . | urlize }}">{{ . }}</label>
                       </div>
                       {{ end }}
                     </div>
