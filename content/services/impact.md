@@ -1,6 +1,6 @@
 ---
 title: Impact
-description: How SciLifeLab data services are used
+description: The impact of services from SciLifeLab Data Centre
 layout: impact
 menu:
   navbar_top:
