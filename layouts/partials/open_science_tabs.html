@@ -1,0 +1,30 @@
+{{/* Tab bar for the Open Science section. Each tab links to its own page, so every tab has a URL.
+     Tabs come from pages that set `tab` in front matter, ordered by page weight.
+     Pages without `tab` (AI Network, past events) stay out of the bar.
+     The first tab is the section page. Its label is `tab` on _index.md.
+     Expects a dict: "current" (the page being shown) and "section" (the Open Science section page). */}}
+{{ $current := .current }}
+{{ $section := .section }}
+{{ $tabs := slice }}
+{{ range $section.RegularPages.ByWeight }}
+  {{ if .Params.tab }}
+    {{ $tabs = $tabs | append . }}
+  {{ end }}
+{{ end }}
+
+<nav aria-label="Open Science sections">
+  <ul class="nav nav-tabs nav-justified" id="open-science-tabs">
+    <li class="nav-item">
+      {{ $isCurrent := eq $current.RelPermalink $section.RelPermalink }}
+      <a class="nav-link{{ if $isCurrent }} active{{ end }}" href="{{ $section.RelPermalink }}"
+        {{ if $isCurrent }}aria-current="page"{{ end }}>{{ $section.Params.tab | default "Overview" }}</a>
+    </li>
+    {{ range $tabs }}
+    <li class="nav-item">
+      {{ $isCurrent := eq $current.RelPermalink .RelPermalink }}
+      <a class="nav-link{{ if $isCurrent }} active{{ end }}" href="{{ .RelPermalink }}"
+        {{ if $isCurrent }}aria-current="page"{{ end }}>{{ .Params.tab }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
