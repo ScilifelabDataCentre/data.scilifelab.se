@@ -10,10 +10,6 @@ cascade:
       kind: page
     layout: past_event
     show_thumbnail_on_page: true
-aliases:
-  - /open_science/initiatives/
-  - /open_science/resources/
-  - /open_science/activities/
 menu:
   navbar:
     name: Open Science

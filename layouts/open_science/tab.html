@@ -1,0 +1,15 @@
+{{/* One tab of the Open Science section (pages that set `layout: tab`). The banner shows
+     the section title, so the page title is the heading here. */}}
+{{ define "main" }}
+{{ partial "open_science_tabs.html" (dict "current" . "section" .CurrentSection) }}
+
+<div class="mt-3">
+  <h3>{{ .Title }}</h3>
+  {{ .Content }}
+  {{ if eq .File.ContentBaseName "initiatives" }}
+    {{ partial "open_science_initiatives.html" . }}
+  {{ else if eq .File.ContentBaseName "activities" }}
+    {{ partial "open_science_activities.html" . }}
+  {{ end }}
+</div>
+{{ end }}

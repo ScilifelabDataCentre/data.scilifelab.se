@@ -2,8 +2,7 @@
 title: "Events and Updates"
 tab: "Events & Updates"
 weight: 4
-build:
-  render: never
+layout: tab
 back_to_top_button: true
 ---
 
