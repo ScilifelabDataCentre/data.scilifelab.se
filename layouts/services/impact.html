@@ -1,0 +1,191 @@
+{{ define "main" }}
+{{ $summary := hugo.Data.impact.summary }}
+{{ $last12 := $summary.interactions.last_12m }}
+{{ $allTime := $summary.interactions.all_time }}
+{{ $sorted := sort $summary.by_country "interactions" "desc" }}
+{{ $maxValue := index (index $sorted 0) "interactions" }}
+{{ $minValue := index (index $sorted (sub (len $sorted) 1)) "interactions" }}
+{{ $logMin := math.Log (float $minValue) }}
+{{ $logMax := math.Log (float $maxValue) }}
+{{ $logSpan := sub $logMax $logMin }}
+{{ $lookup := dict }}
+{{ range $sorted }}
+  {{ $lookup = merge $lookup (dict .alpha3 .) }}
+{{ end }}
+{{ $fills := slice "rgba(4, 92, 100, 0.25)" "rgba(4, 92, 100, 0.5)" "rgba(4, 92, 100, 0.75)" "#045c64" }}
+{{ $noData := "#e5e5e5" }}
+{{ $icons := dict
+  "dds_projects" "bi-folder2-open"
+  "data_delivered" "bi-cloud-upload"
+  "op_projects" "bi-clipboard-data"
+  "serve_apps" "bi-grid"
+  "data_stored" "bi-hdd"
+  "google_accounts" "bi-people"
+}}
+{{ $downloadWidth := "0%" }}
+{{ $viewWidth := "0%" }}
+{{ $visitWidth := "0%" }}
+{{ if gt $last12.total 0 }}
+  {{ $base := float $last12.total }}
+  {{ $downloadWidth = printf "%.4f%%" (mul (div (float $last12.downloads) $base) 100) }}
+  {{ $viewWidth = printf "%.4f%%" (mul (div (float $last12.views) $base) 100) }}
+  {{ $visitWidth = printf "%.4f%%" (mul (div (float $last12.visits) $base) 100) }}
+{{ end }}
+
+<div class="impact-page">
+  {{ .Content }}
+  <p><strong>Data last updated:</strong> {{ time.Format "2 January 2006" $summary.data_date }}.</p>
+
+  <section class="mb-5" aria-labelledby="impact-interactions">
+    <h3 id="impact-interactions">Interactions</h3>
+    <p>Interactions include views and downloads of data in the SciLifeLab Data Repository, and visits to some other services operated by SciLifeLab Data Centre (specifically data.scilifelab.se, SciLifeLab Serve, SciLifeLab RDM Guidelines, Swedish Pathogens Portal, the Swedish Reference Genome Portal, and SciLifeLab Data Stewardship Wizard). Visit data is tracked using Matomo. Values represent interactions from the last 12 months unless stated otherwise. Bot activity is excluded.</p>
+    <div class="card border-0 bg-light">
+      <div class="card-body">
+        <div class="row g-4 align-items-end">
+          <div class="col-md-5">
+            <p class="fs-1 fw-bold mb-0">{{ lang.FormatNumber 0 $last12.total }}</p>
+            <p class="mb-3">Total interactions, last 12 months</p>
+            <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $allTime.total }}</p>
+            <p class="mb-0">Total interactions, all time</p>
+          </div>
+          <div class="col-md-7">
+            <div class="row row-cols-1 row-cols-sm-3 g-3 mb-3">
+              <div class="col">
+                <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $last12.downloads }}</p>
+                <p class="mb-0">Repository downloads</p>
+              </div>
+              <div class="col">
+                <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $last12.views }}</p>
+                <p class="mb-0">Repository views</p>
+              </div>
+              <div class="col">
+                <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $last12.visits }}</p>
+                <p class="mb-0">Website visits</p>
+              </div>
+            </div>
+            <div class="progress mb-2" style="height: 0.75rem" aria-hidden="true">
+              <div class="progress-bar" style="width: {{ $downloadWidth }}; background-color: #045c64"></div>
+              <div class="progress-bar" style="width: {{ $viewWidth }}; background-color: #A7C947"></div>
+              <div class="progress-bar" style="width: {{ $visitWidth }}; background-color: #a48fa9"></div>
+            </div>
+            <ul class="list-inline small mb-0">
+              <li class="list-inline-item"><span class="d-inline-block me-1 align-middle" style="width: 1.25rem; height: 0.6rem; background-color: #045c64" aria-hidden="true"></span>Repository downloads</li>
+              <li class="list-inline-item"><span class="d-inline-block me-1 align-middle" style="width: 1.25rem; height: 0.6rem; background-color: #A7C947" aria-hidden="true"></span>Repository views</li>
+              <li class="list-inline-item"><span class="d-inline-block me-1 align-middle" style="width: 1.25rem; height: 0.6rem; background-color: #a48fa9" aria-hidden="true"></span>Website visits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="mb-4" aria-labelledby="impact-map-heading">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <svg class="w-100 h-auto d-block" viewBox="0 0 1000 520" role="img" aria-labelledby="impact-map-heading">
+          {{ range $summary.paths }}
+          {{ $fill := $noData }}
+          {{ $count := 0 }}
+          {{ if isset $lookup .a3 }}
+            {{ $row := index $lookup .a3 }}
+            {{ $count = $row.interactions }}
+            {{ $share := 1.0 }}
+            {{ if gt $logSpan 0.0 }}
+              {{ $share = div (sub (math.Log (float $count)) $logMin) $logSpan }}
+            {{ end }}
+            {{ $step := 0 }}
+            {{ if ge $share 0.75 }}
+              {{ $step = 3 }}
+            {{ else if ge $share 0.5 }}
+              {{ $step = 2 }}
+            {{ else if ge $share 0.25 }}
+              {{ $step = 1 }}
+            {{ end }}
+            {{ $fill = index $fills $step }}
+          {{ end }}
+          <path fill="{{ $fill }}" d="{{ .d }}">
+            <title>{{ .name }}{{ if $count }}: {{ lang.FormatNumber 0 $count }} interactions{{ end }}</title>
+          </path>
+          {{ end }}
+        </svg>
+        <p class="d-flex align-items-center flex-wrap gap-1 small mt-2 mb-0">
+          <span>Fewer interactions</span>
+          {{ range $fills }}
+          <span class="d-inline-block" style="width: 1.25rem; height: 0.6rem; background-color: {{ . | safeCSS }}" aria-hidden="true"></span>
+          {{ end }}
+          <span>More interactions</span>
+          <span class="visually-hidden">The shading uses a logarithmic scale.</span>
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <p class="mb-0"><strong>Interactions from different countries:</strong></p>
+        <div class="row row-cols-2 g-3 mb-4">
+          <div class="col">
+            <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $summary.countries_all_time }}</p>
+            <p class="mb-0">Countries interacting, all time</p>
+          </div>
+          <div class="col">
+            <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $summary.countries_last_12m }}</p>
+            <p class="mb-0">Countries interacting, last 12 months</p>
+          </div>
+          <div class="col">
+            <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $summary.repository_countries }}</p>
+            <p class="mb-0">Countries interacting with SciLifeLab Data Repository</p>
+          </div>
+          <div class="col">
+            <p class="fs-4 fw-bold mb-0">{{ lang.FormatNumber 0 $summary.serve_countries }}</p>
+            <p class="mb-0">Countries interacting with SciLifeLab Serve</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-sm caption-top mb-0">
+            <caption>Countries with the most interactions, all time</caption>
+            <thead>
+              <tr>
+                <th scope="col">Country</th>
+                <th scope="col" class="text-end">Interactions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range first 8 $sorted }}
+              <tr>
+                <th scope="row">{{ .name }}</th>
+                <td class="text-end">{{ lang.FormatNumber 0 .interactions }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  <section class="mb-5" aria-labelledby="impact-highlights">
+    <h3 id="impact-highlights">Highlights</h3>
+    <p>Values are since the start of monitoring (all time)</p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+      {{ range $summary.highlights }}
+      {{ $icon := index $icons .id }}
+      <div class="col">
+        <div class="card h-100 border-0 bg-light">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start gap-2">
+              <p class="fs-2 fw-bold mb-0">
+                {{ if .unit }}{{ lang.FormatNumber 1 .value }}{{ else }}{{ lang.FormatNumber 0 .value }}{{ end }}
+                {{ with .unit }}<span class="fs-6 fw-normal">{{ . }}</span>{{ end }}
+              </p>
+              {{ with $icon }}<i class="bi {{ . }} fs-3" aria-hidden="true"></i>{{ end }}
+            </div>
+            <h4 class="h6 mt-2 mb-1">{{ .label }}</h4>
+            {{ with .detail }}<p class="small mb-0">{{ . }}</p>{{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  </section>
+
+</div>
+{{ end }}
