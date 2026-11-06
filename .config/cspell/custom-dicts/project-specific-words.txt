@@ -46,6 +46,7 @@ inparalogs
 InParanoiDB
 inparanoidb
 kcat
+labelledby
 lipidomics
 LoqusDB
 markdownify
@@ -60,6 +61,7 @@ mitoribosome
 mitoribosomes
 Mitoribosomes
 nanobodies
+noopener
 oligoadenylate
 omic
 omics
@@ -88,6 +90,7 @@ replisome
 replisomes
 rimcazole
 Sambamba
+scilifelab
 SciLifeLab
 sedaDNA
 Seqera

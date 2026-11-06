@@ -9,6 +9,7 @@ CCLE
 cellosaurus
 Ceros
 ChEMBL
+coworking
 Deepview
 DIGG
 ECBD
@@ -39,3 +40,4 @@ Sambamba
 SCAPIS
 Schizosaccharomyces
 Seqera
+SUNET

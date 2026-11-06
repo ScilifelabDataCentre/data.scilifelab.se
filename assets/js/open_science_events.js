@@ -279,7 +279,7 @@
 
     // SciLifeLab events tagged "open science" (tag 7967).
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7967%26per_page%3D100"),
+      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7967%26per_page%3D100"), // cspell:disable-line
       function (data, context) {
         addEvents((data.events || []).map(mapTribeEvent), context);
       },

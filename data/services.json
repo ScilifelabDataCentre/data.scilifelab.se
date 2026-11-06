@@ -209,7 +209,7 @@
       "SciLifeLab Affiliation"
     ],
     "search_tags": [
-      "Filesharing",
+      "File sharing",
       "file sharing",
       "collaboration",
       "SUNET drive"
@@ -423,9 +423,9 @@
       "@scilifelab.se"
   ],
     "name": "SciLifeLab Google Workspace",
-    "description": "Contact Data Centre for access to SciLifeLab Google Workspace (including aquiring a @scilifelab.se email addresses).",
+    "description": "Contact Data Centre for access to SciLifeLab Google Workspace (including acquiring a @scilifelab.se email addresses).",
     "maintained_by": "SciLifeLab Data Centre",
-    "url": "mailto:datacentre@scilifelab.se?subject=Request%20acces%20to%20SciLifeLab%20Google%20Workspace",
+    "url": "mailto:datacentre@scilifelab.se?subject=Request%20access%20to%20SciLifeLab%20Google%20Workspace",
     "thumbnail_border": true,
     "thumbnail": "/img/service_thumbnails/Google_Workspace.png",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
@@ -560,7 +560,7 @@
     ],
     "search_tags": [
       "Data.scilifelab.se",
-      "Data Plaform",
+      "Data Platform",
       "SciLifeLab Data Platform",
       "SciLifeLab",
       "Data Centre",
