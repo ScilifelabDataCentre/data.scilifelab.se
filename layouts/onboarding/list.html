@@ -195,7 +195,7 @@
         </p>
         <!-- Sample services cards -->
         <div class="row g-4 mb-4">
-            {{ range .Site.Data.services }}
+            {{ range hugo.Data.services }}
             {{ if in (slice "SciLifeLab RDM Guidelines" "SciLifeLab Data Stewardship Wizard" "SciLifeLab Data Repository") .name }}
             <div class="col-md-6 col-lg-4">
                 <div class="card-teal-25">

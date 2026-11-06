@@ -1,0 +1,34 @@
+{{/* Upcoming SciLifeLab Open Science events, then announcement cards.
+     The events list is filled by assets/js/open_science_events.js. */}}
+<section id="sll-events-section" class="my-4"></section>
+
+<h3>Open Science Announcements from SciLifeLab</h3>
+<p>This section highlights news, announcements and previous online events related to Open Science from SciLifeLab.</p>
+
+<section class="my-4">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
+    {{ $news := where .Site.RegularPages "Section" "eq" "news" }}
+    {{ $osNews := where $news "Params.open_science" "eq" true }}
+    {{ $pastEvents := where .Site.RegularPages "File.Dir" "eq" "open_science/past_events/" }}
+    {{ $osNews = union $osNews $pastEvents }}
+    {{ $osNews = sort $osNews "Params.date" "desc" }}
+    {{ range $osNews }}
+    <div class="col">
+      <div class="news-card moving-card">
+        <div aria-hidden="true">
+          <a href="{{ .RelPermalink }}">
+            <img class="img-fluid" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}/img/news/scilifelab.jpg{{ end }}" alt="{{ .Title }}">
+          </a>
+        </div>
+        <div class="px-3 py-2" style="background-color: #045c64; color: #fff;">{{ .Date | time.Format ":date_long" }}</div>
+        <div class="px-3 pb-1">
+          <h5 class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ $eventsJS := resources.Get "js/open_science_events.js" | minify | fingerprint "md5" }}
+<script src="{{ $eventsJS.RelPermalink }}" defer></script>

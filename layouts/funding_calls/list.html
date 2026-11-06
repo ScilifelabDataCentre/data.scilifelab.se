@@ -14,7 +14,7 @@
 
 <!-- Code for other funding sources starts here -->
 {{/* Get list of other funding sources */}}
-{{ $other_funding_sources := $.Site.Data.funding_sources }}
+{{ $other_funding_sources := hugo.Data.funding_sources }}
 {{ if ge (len $other_funding_sources) 1 }}
 <section>
   <h4 class="mt-4">Other potential funding sources</h4>

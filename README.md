@@ -131,43 +131,63 @@ And finally push to your fork:
 git push
 ```
 
-#### Testing locally
+#### Testing locally by installing Hugo
 
-To view your changes as they will appear in the final website, you need to install Hugo.
-You can find instructions on the Hugo website: [https://gohugo.io/](https://gohugo.io/)
+To view your changes as they will appear on the final website, you need to install Hugo.
+You can find instructions on the Hugo website [https://gohugo.io/](https://gohugo.io/) or below. Ideally, install the Hugo version set by `HUGO_VERSION` in [Dockerfiles/Dockerfile](Dockerfiles/Dockerfile).
 
-If you're using Mac OSX, it's recommended to use [Homebrew](https://brew.sh/) -
-if homebrew is already set up, installing Hugo is just a case of:
+<details>
+<summary><b>Linux</b></summary>
+
+```bash
+# run from the repository root
+HUGO_VERSION=$(sed -n 's/^ARG HUGO_VERSION="\(.*\)"/\1/p' Dockerfiles/Dockerfile)
+mkdir -p ~/.local/bin
+wget -qO- "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" | tar xz -C ~/.local/bin hugo
+hugo version
+```
+
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+```bash
+# run from the repository root
+HUGO_VERSION=$(sed -n 's/^ARG HUGO_VERSION="\(.*\)"/\1/p' Dockerfiles/Dockerfile)
+curl -sLO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_darwin-universal.pkg"
+sudo installer -pkg "hugo_${HUGO_VERSION}_darwin-universal.pkg" -target /
+rm "hugo_${HUGO_VERSION}_darwin-universal.pkg"
+hugo version
+```
+
+</details>
+
+<details>
+<summary><b>macOS with Homebrew</b></summary>
 
 ```bash
 brew install hugo
 ```
+
+> [!NOTE]
+> [Homebrew](https://brew.sh/) installs the latest Hugo release, which may be newer than the version used to build the website.
+
+</details>
+
+<details>
+<summary><b>Windows</b></summary>
+
+Follow the [Hugo installation guide for Windows](https://gohugo.io/installation/windows/), or use the [Docker](#docker) option below.
+
+</details>
 
 Once Hugo is installed, simply run the following command in the repository root directory:
 
 <!-- cspell:disable -->
 ```console
 $ hugo serve
-Start building sites …
-hugo v0.92.0+extended darwin/amd64 BuildDate=unknown
-
-                   | EN
--------------------+-----
-  Pages            | 77
-  Paginator pages  |  0
-  Non-page files   |  0
-  Static files     | 54
-  Processed images |  0
-  Aliases          |  0
-  Sitemaps         |  1
-  Cleaned          |  0
-
-Built in 83 ms
-Watching for changes in /Users/arnold/Documents/data.scilifelab.se/{archetypes,content,data,layouts,static}
-Watching for config changes in /Users/arnold/Documents/data.scilifelab.se/config.yaml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+... (build summary omitted) ...
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
@@ -176,72 +196,16 @@ Press Ctrl+C to stop
 Use the URL printed at the bottom of this message (here, it's `http://localhost:1313/`) to view the site.
 Every time you save a file, the page will automatically refresh in the browser.
 
-#### Configure Markdown Linting Locally (Open Science Content [content/open_science/](content/open_science/))
-
-To ensure consistent markdown formatting across the website, especially for **Open Science content** ([content/open_science/](content/open_science/)), we use `markdownlint-cli2`. The linter uses our custom configuration file ([.github/.markdownlint-cli2.yaml](.github/.markdownlint-cli2.yaml)) which sets specific rules for our markdown files. Follow these steps to run the linter locally before pushing your changes:
-
-> **Important**: To maintain consistency with our GitHub Actions workflow, please ensure you install the same Node.js version as specified in our [markdownlint workflow](.github/workflows/markdownlint.yaml). This ensures your local environment matches our CI/CD environment.
-
-1. **Install Node.js and npm**:
-Following installations instructions are for Node.js version 20 (you should refer to [markdownlint workflow](.github/workflows/markdownlint.yaml) for current nodejs version)
-   <details>
-   <summary><strong>For macOS</strong> (using Homebrew)</summary>
-
-   ```bash
-   # Install Homebrew if you don't have it
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   
-   # Install Node.js (this will include npm)
-   # refer .github/workflows/markdownlint.yaml for exact node version
-   
-   brew install node@20
-   
-   # Add Node.js to your PATH (if not already done)
-   echo 'export PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.zshrc
-   source ~/.zshrc
-   ```
-   </details>
-
-   <details>
-   <summary><strong>For Windows</strong></summary>
-
-   - Download Nodejs LTS (refer [markdownlint workflow](.github/workflows/markdownlint.yaml) for exact nodejs version) installer from [Nodejs official website](https://nodejs.org/)
-   - Run the installer and follow the installation wizard
-   - Restart your terminal after installation
-   </details>
-
-   <details>
-   <summary><strong>For Linux</strong> (Ubuntu/Debian)</summary>
-
-   ```bash
-   # Using NodeSource repository
-   # refer .github/workflows/markdownlint.yaml for exact nodejs version
-   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-   sudo apt-get install -y nodejs
-   ```
-   </details>
-
-2. **Verify Installation**:
-   ```bash
-   node --version  # Should show v20.x.x
-   npm --version   # Should show the npm version
-   ```
-
-3. **Install markdownlint-cli2**:
-   ```bash
-   npm install -g markdownlint-cli2
-   ```
-
-4. **Run the linter**:
-   ```bash
-   markdownlint-cli2 "content/open_science/**/*.md" --config .github/.markdownlint-cli2.yaml
-   ```
-
-Before committing your changes, run the linter locally to catch and fix any formatting issues. This helps maintain consistent markdown style across the project and prevents CI failures. The same checks will be run automatically in our GitHub Actions workflow when you create a pull request. For detailed information about the linting rules, refer to the [markdownlint documentation](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/Rules.md).
-
 #### Docker
 
-If you would prefer not to use Hugo, you can use the provided Dockerfile to build and run a container.
+To build and view the site with Docker instead of installing Hugo, run:
+
+```bash
+docker build -f Dockerfiles/Dockerfile -t data-scilifelab .
+docker run --rm -p 8080:8080 data-scilifelab
+```
+
+Then open `http://localhost:8080/`. The site does not refresh automatically, so rebuild the image to see new changes.
 
 ### Step 3: Make a pull request
 
