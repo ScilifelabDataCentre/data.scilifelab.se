@@ -1,5 +1,5 @@
 # Run htmltest to check for broken external links
-# Scheduled for every first wednesday of the month
+# Scheduled for every first Wednesday of the month
 
 name: Check broken links (htmltest)
 on:

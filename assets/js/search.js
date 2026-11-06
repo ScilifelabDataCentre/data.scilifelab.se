@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch('/search/index.json')
     .then(response => response.json())
     .then(data => {
-      // Initialize Fuse.js with weighted keys (higher = priority) and adjusted threshold
+      // Initialise Fuse.js with weighted keys (higher = priority) and adjusted threshold
       fuse = new Fuse(data, {
         keys: [
           { name: 'permalink', weight: 0.4 },
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { name: 'tags', weight: 0.2 },
           { name: 'summary', weight: 0.1 },
         ],
-        threshold: 0.2,           // allow some fuzziness but favors close matches
+        threshold: 0.2,           // allow some fuzziness but favours close matches
         useExtendedSearch: true,  // enable exact phrase matching
         ignoreLocation: true,     // ignore the position of the query in the field
         includeScore: true,       // include scores to sort exact matches explicitly
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /**
-   * Checks if the query is an exact match for any of the prioritized keys.
+   * Checks if the query is an exact match for any of the prioritised keys.
    */
   function isExactMatch(item, query) {
     const lowerQuery = query.toLowerCase();

@@ -33,7 +33,7 @@
     - reuse [spelled without a hyphen]
     - email [spelled without a hyphen]
     - SARS-CoV-2, COVID-19
-    - we use the British English “ise” (e.g. “visuali**s**e”, “visuali**s**ation”, “organi**s**ation”)
+    - we use the British English “ise” (e.g.<!-- cspell:disable --> “visuali**s**e”, “visuali**s**ation”, “organi**s**ation” <!-- cspell:enable -->)
 
 - **Titles:** in titles, only the first word and acronyms are capitalised.
 - **Acronyms:** only use acronyms if the full names/phrases would be used three times or more in the text (in other cases spell out all of the words). Spell out acronyms first time they are used. The exceptions to this rule are widely accepted acronyms e.g. DNA and RNA. In these cases, there is no need to spell out the acronym.
@@ -143,7 +143,7 @@ We typically describe exactly what data has been shared, how it can be re-used, 
 
 On the top of the file, surrounded by `---`, basic information for this data highlight is provided. It contains the title; publication date (desired; Hugo needs to be run on that day or later for it to appear); summary text that appears on the main page of the Data highlights section; location of the illustration to be displayed on the homepage (`banner`); location of the illustration to be displayed on the page of the highlight (`banner_large`); caption text that will appear under the illustration on the page of the highlight; tags that are appropriate for this data highlight; name(s) of the person or persons who wrote this data highlight.
 
-The title, date, summary, illustrations will appear where they are supposed to be. The tags will appear as links so that other highlights tagged with the same tag can be seen (tags are also used to select similar previosly published highlights that appear on the bottom of each highlight page), and author name(s) will appear as link(s) so that other highlights written byt the same author(s) can be seen.
+The title, date, summary, illustrations will appear where they are supposed to be. The tags will appear as links so that other highlights tagged with the same tag can be seen (tags are also used to select similar previously published highlights that appear on the bottom of each highlight page), and author name(s) will appear as link(s) so that other highlights written by the same author(s) can be seen.
 
 ### Platform news
 

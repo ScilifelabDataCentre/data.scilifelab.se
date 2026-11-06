@@ -7,7 +7,7 @@ aliases:
 
 ## Alternative metrics for research impact
 
-This resource is intended to help you to understand what altmetrics are, why they are important, how to make use of them, and to provide some advice on how to maximise your score. Click on the tabs below to go directly to the subject most of interest to you. There is no need to navigate through the information in a particular order. If you have any comments on this resource, or would like support with using alternative materics (altmetrics), click the button below.
+This resource is intended to help you to understand what altmetrics are, why they are important, how to make use of them, and to provide some advice on how to maximise your score. Click on the tabs below to go directly to the subject most of interest to you. There is no need to navigate through the information in a particular order. If you have any comments on this resource, or would like support with using alternative metrics (altmetrics), click the button below.
 
 <a href="/contact/" class="btn btn-aqua">Click for support</a>
 
@@ -82,7 +82,7 @@ Materials from several other resources and guides were used to compile this reso
 
 - **Societal impact:** Alternative metrics enable researchers to understand how their research is spread in society, and how it might be used outside of academia. This includes interest and use by the general public, government, policymakers, and industry.
 
-- **Reporting:** Alternative metrics are being included in the reporting by institutions/organisations (e.g. SciLifelab). For institutions/organisations, it can be important to show that their research is being rapidly disseminated in society. For example, to show that they are making a difference in emerging or relatively slow-growing areas of research.
+- **Reporting:** Alternative metrics are being included in the reporting by institutions/organisations (e.g. SciLifeLab). For institutions/organisations, it can be important to show that their research is being rapidly disseminated in society. For example, to show that they are making a difference in emerging or relatively slow-growing areas of research.
   <br><br>
 
 ### Points to be aware of when using altmetric data

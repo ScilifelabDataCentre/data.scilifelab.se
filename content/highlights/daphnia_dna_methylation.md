@@ -39,6 +39,7 @@ In summary, Feiner and colleagues findings from *D. magna* suggest that the effe
 
 #### Article
 
+<!-- cspell:disable-next-line -->
 Feiner, N., Radersma, R., Vasquez, L., Ringnér, M., Nystedt, B., Raine, A., Tobi, E. W., Heijmans, B. T., Uller, T. (2022). Environmentally induced DNA methylation is inherited across generations in an aquatic keystone species. *iScience 25*, 104303. [https://doi.org/10.1016/j.isci.2022.104303](https://doi.org/10.1016/j.isci.2022.104303).
 
 #### Funding
