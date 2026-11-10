@@ -28,9 +28,9 @@ Adhering to Open Science and FAIR the researchers have shared sequence data in G
 
 * HC (VDJ) and LC (VJ) sequences of neutralizing mAbs available in GenBank through accession id [OP497961 - OP497964](https://www.ncbi.nlm.nih.gov/nuccore/?term=OP497961%3AOP497964%5Bpacc%5D) and [ON086918 - ON086947](https://www.ncbi.nlm.nih.gov/nuccore/?term=ON086918%3AON086947%5Bpacc%5D).
 * The repertoire sequence data is available in [Figshare](http://doi.org/10.17044/scilifelab.19317512) hosted by SciLifeLab.
-* Cryo-EM structures of CAB-I47 Fabs in complex with the spike trimer are deposited Protein Data Bank ([8A99](https://www.rcsb.org/structure/unreleased/8A99), [8A94](https://www.rcsb.org/structure/8A94), and [8A96](https://www.rcsb.org/structure/8A96)) and Electron Microscopy Data Bank ([EMD-15273](https://www.ebi.ac.uk/emdb/EMD-15273), [EMD-15269](https://www.ebi.ac.uk/emdb/EMD-15269), and [EMD-15271](https://www.ebi.ac.uk/emdb/EMD-15271)).
+* Cryo-EM structures of CAB-I47 Fabs in complex with the spike trimer are deposited Protein Data Bank ([8A99](https://www.rcsb.org/structure/8A99), [8A94](https://www.rcsb.org/structure/8A94), and [8A96](https://www.rcsb.org/structure/8A96)) and Electron Microscopy Data Bank ([EMD-15273](https://www.ebi.ac.uk/emdb/EMD-15273), [EMD-15269](https://www.ebi.ac.uk/emdb/EMD-15269), and [EMD-15271](https://www.ebi.ac.uk/emdb/EMD-15271)).
 * Mass spectrometry raw files and HDX analysis, deposited on ProteomeXchange Consortium via PRIDE. Can be accessed by [PXD031945](https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD031945).
-* The IgDiscover software can be found [here](http://docs.igdiscover.se/en/stable/) _(The plot allele module and the rep-seq analysis tools can be found under IgDiscover v0.12.4.dev22+g0bc3365)_.
+* The IgDiscover software can be found [here](https://gkhlab.gitlab.io/igdiscover22/) _(The plot allele module and the rep-seq analysis tools can be found under IgDiscover v0.12.4.dev22+g0bc3365)_.
 * Supplemental Tables are available [here](https://doi.org/10.17632/mg7p5msrfs.1).
 
 #### Article
