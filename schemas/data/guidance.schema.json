@@ -70,7 +70,7 @@
         "created_by_url": {
           "type": "string",
           "format": "uri",
-          "description": "Web address of the creating organization or individual."
+          "description": "Web address of the creating organisation or individual."
         },
         "support_email": {
           "type": "string",

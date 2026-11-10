@@ -5,7 +5,7 @@ summary: Pochon et al. have developed aMeta; a new metagenomic profiling workflo
 banner: /highlights/ameta.png
 banner_large: /highlights/ameta_large.png
 banner_caption: Image courtesy of Pochon et al. 2023
-banner_alt: Figure 1 from Pochon et al. (2023) showing ancient metgenomic profiling(aMeta) workflow overview.
+banner_alt: Figure 1 from Pochon et al. (2023) showing ancient metagenomic profiling(aMeta) workflow overview.
 tags:
   [
     Ancient DNA,
@@ -42,6 +42,7 @@ In summary, Pochon _et al._ developed a new metagenomic profiling workflow for a
 
 DOI: [https://doi.org/10.1186/s13059-023-03083-9](https://doi.org/10.1186/s13059-023-03083-9)
 
+<!-- cspell:disable-next-line -->
 Pochon, Z., Bergfeldt, N., Kırdök, E., Vicente, M., Naidoo, T., van der Valk, T., Altınışık, N. E., Krzewińska, M., Dalén, L., Götherström, A., Mirabello, C., Unneberg, P., Oskolkov, N. (2023) aMeta: an accurate and memory-efficient ancient metagenomic profiling workflow. In: Genome Biology (Vol: 24, Article no.: 242).
 
 #### Funders

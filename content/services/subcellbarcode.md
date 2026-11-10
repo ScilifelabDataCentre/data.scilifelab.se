@@ -18,7 +18,7 @@ The cellular organisation of proteins has, until recently, been largely unexplor
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/subcellbarcode_method_overview.png" alt="Subcell barcode method" class="figure-img img-fluid w-75 d-none d-xl-inline">
   <img src="/img/misc/subcellbarcode_method_overview.png" alt="Subcell barcode method" class="figure-img img-fluid w-100 d-xl-none">
-  <figcaption class="figure-caption">Overview of latest SubCellBarCode methology, including approximate timings.</figcaption>
+  <figcaption class="figure-caption">Overview of latest SubCellBarCode methodology, including approximate timings.</figcaption>
 </figure>
 
 This section of the SciLifeLab Data Platform has been developed in collaboration with the team working on the SubCellBarCode project. All of the resources produced by the project will be collated here, with the aim of facilitating work on protein subcellular localisation. The page will be continuously updated with the latest outputs from SubCellBarCode and will provide information on how to get support.
@@ -47,8 +47,10 @@ Processed data from the SubCellBarCode project can be queried and downloaded fro
 
 ## Publications
 
+<!-- cspell:disable-next-line -->
 Orre, L. M., Vesterlund, M., Pan, Y., Arslan, T., Zhu, Y., Woodbridge, A. F., Frings, O., Fredlund, E., Lehtiö, J. (2019). SubCellBarCode: proteome-wide mapping of protein localization and relocalization. *Molecular Cell 73*, P166-182.E7. [https://doi.org/10.1016/j.molcel.2018.11.035](https://doi.org/10.1016/j.molcel.2018.11.035).
 
+<!-- cspell:disable-next-line -->
 Arslan, T., Pan, Y., Mermelekas, G., Vesterlund, M., Orre, L. M., Lehtiö, J. (2022). SubCellBarCode: integrated workflow for robust spatial proteomics by mass spectrometry. *Nature Protocols 17*, 1832-1867. [https://doi.org/10.1038/s41596-022-00699-2](https://doi.org/10.1038/s41596-022-00699-2).
 
 ## Available code
@@ -59,7 +61,7 @@ The SubCellBarCode pipeline used in [Arslan & Pan *et al.* (2022)](https://www.n
 
 ## Available data
 
-The mass spectrometry (MS) proteomics data for the analysis of the HeLa cell line are available in the ProtomeXchange Consortium via the jPOST partner repository (identifier: [PXD022533](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD022533)). 
+The mass spectrometry (MS) proteomics data for the analysis of the HeLa cell line are available in the ProteomeXchange Consortium via the jPOST partner repository (identifier: [PXD022533](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD022533)). 
 
 The MS proteomics data for the analysis of the original 5 cell lines (A431, MCF7, H322, HCC827, and U251) was deposited to the ProteomeXchange Consortium via the PRIDE partner repository (identifier: [PXD006895](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD006895)).
 

@@ -5,14 +5,14 @@ summary: Schaal et al. (2022) found that long-read sequencing was more sensitive
 banner: /highlights/long_read_seq_pipeline.png
 banner_large: /highlights/long_read_seq_pipeline.png
 banner_caption: Figure 5 from Schaal et al. (2022) comparing long-read and Sanger sequencing.
-tags: [Cancer, Long-read sequencing, Chronic myeloid leukemia, Tyrosine kinase inhibitors, Workflow, Pipeline, Drug resistance, Highlight]
+tags: [Cancer, Long-read sequencing, Chronic myeloid leukemia, Tyrosine kinase inhibitors, Workflow, Pipeline, Drug resistance, Highlight] # cspell:ignore leukemia
 authors: [Katarina Öjefors Stark]
 images: ["/highlights/long_read_seq_pipeline.png"]
 ---
 
 Bridging the gap between medical research and clinical laboratories is often perceived as a major challenge in healthcare. Clinical laboratories are interested in using the latest medical research technologies to aid patient diagnosis and treatment, but more mature technologies are often used as a routine. This occurs primarily because integrating new technologies into a clinical laboratory setting can be time-consuming, costly, warrant new instrumentation, require staff training, and necessitate additional logistics solutions. However, the rapid implementation of novel technologies into clinical practice is important, especially in cancer research. 
 
-Chronic Myeloid Leukemia (CML) is a well-studied cancer type that affects white blood cells and tends to have a slow progression. Whilst multiple efficient drug treatments are available, including tyrosine kinase inhibitors (TKIs), some patients develop drug resistance. The mechanism behind this drug resistance is not always known, but research has shown that many of these patients have point mutations in the BCR-ABL1 fusion gene, which is the gene that TKIs target. The same gene has also been implicated in Acute Lymphoblastic Leukemia (ALL) drug resistance. 
+Chronic Myeloid Leukaemia (CML) is a well-studied cancer type that affects white blood cells and tends to have a slow progression. Whilst multiple efficient drug treatments are available, including tyrosine kinase inhibitors (TKIs), some patients develop drug resistance. The mechanism behind this drug resistance is not always known, but research has shown that many of these patients have point mutations in the BCR-ABL1 fusion gene, which is the gene that TKIs target. The same gene has also been implicated in Acute Lymphoblastic Leukaemia (ALL) drug resistance. 
 
 To date, identification of the mutations in BCR-ABL1 that are related to drug resistance has usually been done using Sanger sequencing, which has limitations. The use of other research technologies, such as next-generation sequencing (NGS) techniques, could prove valuable in cancer diagnosis and treatments. One of these NGS techniques, called long-read single-molecule sequencing (LR-SMS), could help clinicians to determine the clonal distribution of mutations, and to read through and identify previously uncharacterised structural variations. However, until now, efforts to implement LR-SMS in routine clinical diagnostics have been hindered both by the lack of computational and bioinformatics resources, and the lack of established workflows and tools for organising as well as automating the analysis work needed for LR-SMS.
 
@@ -24,7 +24,7 @@ In brief, the pipeline consisted of seven steps. The first step was filtering. A
 
 Using the pipeline, the researchers were able to compare the results from long-read sequencing with traditional Sanger sequencing, which is used as the routine method at Uppsala University Hospital. Validation checks confirmed that all 17 resistance mutations found by Sanger sequencing were also detected by long-read sequencing. Notably though, 16 additional *de novo* mutations were found only by long-read sequencing. All of these mutations had frequencies below the detection limit for Sanger sequencing. The new pipeline was found to detect all cancer mutations occurring in frequencies higher than 1%. In summary, long-read sequencing was found to have higher sensitivity, and be able to detect emerging TKI resistance mutations earlier than Sanger sequencing.
 
-After implementation and validation, the clinical laboratory at Uppsala University Hospital changed their method, and now uses long-read sequencing for this application. One important factor behind the switch was the user-friendly pipeline information system. The system is comprised of features for data management, analysis, and visualisation, and thus faciltates the use and interpretation of the data by clinicians.
+After implementation and validation, the clinical laboratory at Uppsala University Hospital changed their method, and now uses long-read sequencing for this application. One important factor behind the switch was the user-friendly pipeline information system. The system is comprised of features for data management, analysis, and visualisation, and thus facilitates the use and interpretation of the data by clinicians.
 
 #### Data and code availability
 
@@ -34,6 +34,7 @@ In accordance with the principles of Open Science, the researchers have made the
 
 DOI: [10.1177/11769351221110872](https://doi.org/10.1177/11769351221110872)
 
+<!-- cspell:disable-next-line -->
 Schaal, W., Ameur, A., Olsson-Strömberg, U., Hermanson, M., Cavelier, L., Spjuth, O. (2022) Migrating to Long-Read Sequencing for Clinical Routine BCR-ABL1 TKI Resistance Mutation Screening. *Cancer Informatics* 21.
 
 #### Funding

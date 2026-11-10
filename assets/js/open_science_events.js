@@ -89,7 +89,7 @@
         if (context === "sll-events-section" && event.category && !category_string.includes("open science")) {
           return;
         };
-        // Not insterested if the deadline have already passed
+        // Not interested if the deadline have already passed
         event.banner_date = event.date_start || event.registration_deadline;
         if (typeof event.banner_date !== 'undefined'){
           let dateString = event.banner_date + (event.time_start ? ' ' + event.time_start : '');
@@ -279,7 +279,7 @@
 
     // SciLifeLab events tagged "open science" (tag 7967).
     getDataFromUrl(
-      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7967%26per_page%3D100"),
+      decodeURIComponent("https%3A%2F%2Fwww.scilifelab.se%2Fwp-json%2Ftribe%2Fevents%2Fv1%2Fevents%3Ftags%3D7967%26per_page%3D100"), // cspell:disable-line
       function (data, context) {
         addEvents((data.events || []).map(mapTribeEvent), context);
       },

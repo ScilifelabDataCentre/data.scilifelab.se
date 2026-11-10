@@ -32,6 +32,7 @@ In summary, Jamy and colleagues examined how habitat preference has evolved acro
 
 #### Article
 
+<!-- cspell:disable-next-line -->
 Jamy, M., Biwer, C., Vaulot, D., Obiol, A., Jing, H., Peura, S., Massana, R., & Burki, F. (2022). Global patterns and rates of habitat transitions across the eukaryotic tree of life. Nature Ecology & Evolution, 6(10), 1458-1470. [https://doi.org/10.1038/s41559-022-01838-4](https://doi.org/10.1038/s41559-022-01838-4)
 
 #### Funding

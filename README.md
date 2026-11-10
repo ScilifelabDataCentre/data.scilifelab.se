@@ -116,11 +116,13 @@ Scope is optional but nice to have if deemed relevant.
 
 Examples:
 
+<!-- cspell:disable -->
 ``` text
-fix(visualization): correct/add genome visualization
+fix(vizualisation): correct/add genome visualisation
 feat(dashboard): add SARS-Cov2 dashboard
 style(css): reformat layout classes
 ```
+<!-- cspell:enable -->
 
 For the short description, write as if completing "*If accepted, my changes are going to...*".
 
@@ -182,12 +184,14 @@ Follow the [Hugo installation guide for Windows](https://gohugo.io/installation/
 
 Once Hugo is installed, simply run the following command in the repository root directory:
 
+<!-- cspell:disable -->
 ```console
 $ hugo serve
 ... (build summary omitted) ...
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
+<!-- cspell:enable -->
 
 Use the URL printed at the bottom of this message (here, it's `http://localhost:1313/`) to view the site.
 Every time you save a file, the page will automatically refresh in the browser.

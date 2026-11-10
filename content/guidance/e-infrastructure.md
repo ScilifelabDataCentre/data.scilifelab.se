@@ -25,7 +25,7 @@ Universities often have their own compute resources that they will make availabl
 
 [NAISS](https://www.naiss.se/) (successor to Swedish National Infrastructure for Computing, SNIC) provides resources primarily for simulation and analysis. The resources can be broadly divided into two types; (1) those intended for general high performance compute (HPC) applications, and (2) those designed to handle sensitive data.
 
-Different NAISS resources are likely to be of interest for different fields or types of application. For example, _NAISS SENS_ and _Rackham_, which have rich program stacks oriented towards life sciences, are likely to be of particular interest for bioinformatics. The difference between these two systems is that NAIS SENS is designed to handle sentive data (e.g. human genetic data), whilst Rackham is not. By contrast, those with workloads similar to those associated with traditional HPC, particularly those able to benefit from AMD GPUs, should instead consider making use of _Dardel_.
+Different NAISS resources are likely to be of interest for different fields or types of application. For example, _NAISS SENS_ and _Rackham_, which have rich program stacks oriented towards life sciences, are likely to be of particular interest for bioinformatics. The difference between these two systems is that NAISS SENS is designed to handle sensitive data (e.g. human genetic data), whilst Rackham is not. By contrast, those with workloads similar to those associated with traditional HPC, particularly those able to benefit from AMD GPUs, should instead consider making use of _Dardel_.
 
 NAISS also provides a cloud system (_the Swedish Science Cloud_), as well as a GPU cluster (_Alvis_), which is dedicated to projects based on artificial intelligence (AI) or machine learning (ML). Both the _Swedish Science Cloud_ and _Alvis_ are equipped with NVIDIA GPUs.
 
@@ -67,7 +67,7 @@ For enquiries please contact [aida@nbis.se](mailto:aida@nbis.se).
 
 [EuroHPC](https://eurohpc-ju.europa.eu/index_en) provides multiple compute resources across Europe (e.g. [LUMI](#lumi), described above). Researchers based in Sweden are eligible to apply to use these resources, and their applications will be considered in competition from researchers based in the rest of Europe. As of early 2023, it remains relatively easy to secure compute time at EuroHPC resources due to overcapacity.
 
-As described with [LUMI above](#lumi), portions of EuroHPC resources are allocated for specfic countries, but portions are just allocated for use by researchers in Europe, regardless of the specific country. We encourage researchers to make use of this. Applications can be made via the [European PRACE Portal](https://prace-ri.eu/hpc-access/eurohpc-access/).
+As described with [LUMI above](#lumi), portions of EuroHPC resources are allocated for specific countries, but portions are just allocated for use by researchers in Europe, regardless of the specific country. We encourage researchers to make use of this. Applications can be made via the [European PRACE Portal](https://prace-ri.eu/hpc-access/eurohpc-access/).
 
 ### Resources aimed at data support
 
@@ -86,14 +86,14 @@ After going to the portal, the first step is to register as a new user by select
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/SUPR_login.png" class="figure-img img-fluid img-adaptive"
        alt="Swedish User and Project Repository website screenshot">
-  <figcaption class="figure-caption">A screenshot fron the SUPR login page.</figcaption>
+  <figcaption class="figure-caption">A screenshot from the SUPR login page.</figcaption>
 </figure>
 
-After registering, you have to apply for a project. To do this, select 'Rounds', then 'Compute Rounds', and then choose an the option most applicable to you e.g. 'NAISS Small Compute'. Most projects in the life sciences field use Rackham as compute resource, and so we recommend it. However, other compute resources may be more suitable for your use. If your data include sensitive data (e.g. human genetic data), your choice of compute resource must cater for such data, e.g. 'NAISS SENS', which includes the compute resource Bianca.
+After registering, you have to apply for a project. To do this, select 'Rounds', then 'Compute Rounds', and then choose the option most applicable to you e.g. 'NAISS Small Compute'. Most projects in the life sciences field use Rackham as compute resource, and so we recommend it. However, other compute resources may be more suitable for your use. If your data include sensitive data (e.g. human genetic data), your choice of compute resource must cater for such data, e.g. 'NAISS SENS', which includes the compute resource Bianca.
 
 Your application will then be evaluated. Smaller projects are evaluated on a technical basis, whilst larger projects also include a scientific evaluation.
 
-When you application for resources is approved, you will need to apply for a user account on the compute resource to which your project has been assigned.
+When your application for resources is approved, you will need to apply for a user account on the compute resource to which your project has been assigned.
 
 <figure class="my-3 figure w-100 text-center">
   <img src="/img/misc/NAISS_workflow.png" class="figure-img img-fluid img-adaptive"
