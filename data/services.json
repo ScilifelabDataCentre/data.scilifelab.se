@@ -718,7 +718,7 @@
     "url": "https://tissuumaps.github.io/",
     "thumbnail": "/img/service_thumbnails/tissuumaps.jpg",
     "maintained_by": "TissUUmaps",
-    "maintained_by_url": "https://tissuumaps.github.io/about_us/",
+    "maintained_by_url": "https://tissuumaps.github.io/about/",
     "support_email": "biif@scilifelab.se",
     "support_github": "https://github.com/TissUUmaps/TissUUmaps"
   },
@@ -1646,7 +1646,7 @@
     "url": "https://phobius.sbc.su.se",
     "maintained_by": "Sonnhammer Group",
     "maintained_by_url": "https://sonnhammer.org",
-    "support_website": "https://phobius.sbc.su.se/instructions.html"
+    "support_website": "https://phobius.sbc.su.se/instructions"
   },
   {
     "owner": [

@@ -1096,7 +1096,7 @@
     "name": "BioModels",
     "description": "A repository of mathematical models related to biological and biomedical system. It contains many literature-based physiologically and pharmaceutically relevant mechanistic models.",
     "thumbnail": "/img/data_sources_thumbs/biomodels.png",
-    "url": "http://www.ebi.ac.uk/biomodels/",
+    "url": "https://www.biomodels.org/",
     "data": [
       "Enzymes, pathways, interactions"
     ],
