@@ -1,3 +1,4 @@
+{{ $current_page := .RelPermalink }}
 <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="navbar">
   <div class="container">
     <!-- Logo & Subtitle -->
@@ -15,18 +16,21 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav navbar-top">
           {{ range .Site.Menus.navbar_top }}
-          <li class="nav-item"><a class="nav-link" href="{{ .Page.RelPermalink }}">{{ .Name | safeHTML }}
-          </a></li>
+          <li class="nav-item">
+            <a class="nav-link{{ if eq .Page.RelPermalink $current_page }} active{{ end }}"
+              {{ if eq .Page.RelPermalink $current_page }}aria-current="page"{{ end }}
+              href="{{ .Page.RelPermalink }}">{{ .Name | safeHTML }}</a>
+          </li>
           {{ end }}
         </ul>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mb-2 mb-lg-0 fs-6">
-          {{ $current_page := .RelPermalink }}
           {{ range .Site.Menus.navbar }}
           <li class="nav-item">
-            <a class="nav-link nav-main-menu {{ if eq .Page.RelPermalink $current_page }}active{{ end }}"
-              aria-current="page" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
+            <a class="nav-link nav-main-menu{{ if eq .Page.RelPermalink $current_page }} active{{ end }}"
+              {{ if eq .Page.RelPermalink $current_page }}aria-current="page"{{ end }}
+              href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
           </li>
           {{ end }}
         </ul>
@@ -35,10 +39,18 @@
     <!-- Expandable mobile navbar, visible only on smaller screen -->
     <div class="collapse mobile-navbar" id="navbarMobile">
       <ul class="navbar-nav mb-2 mb-lg-0 fs-6">
+        {{ range .Site.Menus.navbar_top }}
+        <li class="nav-item">
+          <a class="nav-link nav-main-menu{{ if eq .Page.RelPermalink $current_page }} active{{ end }}"
+            {{ if eq .Page.RelPermalink $current_page }}aria-current="page"{{ end }}
+            href="{{ .Page.RelPermalink }}">{{ .Name | safeHTML }}</a>
+        </li>
+        {{ end }}
         {{ range .Site.Menus.navbar }}
         <li class="nav-item">
-          <a class="nav-link nav-main-menu {{ if eq .Page.RelPermalink $current_page }}active{{ end }}"
-            aria-current="page" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
+          <a class="nav-link nav-main-menu{{ if eq .Page.RelPermalink $current_page }} active{{ end }}"
+            {{ if eq .Page.RelPermalink $current_page }}aria-current="page"{{ end }}
+            href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
