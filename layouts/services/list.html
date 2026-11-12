@@ -118,7 +118,7 @@
     $(`div.services`).hide();
     $(`div#no-filtered-services`).hide();
 
-    // Show relavant services based on selected criteria
+    // Show relevant services based on selected criteria
     if (!Object.keys(selected_filters).length) {
       $("div.services").show();
     } else {
@@ -131,7 +131,7 @@
         });
         all_selected_services.push(s_services);
       };
-      // When multiple criteria selectd it should act as AND not OR
+      // When multiple criteria selected it should act as AND not OR
       selected_services = all_selected_services.reduce(function (x, y) {
         var z = new Set;
         x.forEach(v => y.has(v) && z.add(v));

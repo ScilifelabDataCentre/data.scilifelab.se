@@ -1,11 +1,8 @@
 ---
 title: "Training materials, practical guidance, and other useful resources"
-menu:
-  open_science:
-    identifier: "resources"
-    name: "Resources"
-    weight: 4
-show_section_nav: false
+tab: "Resources"
+weight: 3
+layout: tab
 back_to_top_button: true
 ---
 

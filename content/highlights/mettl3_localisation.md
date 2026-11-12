@@ -46,6 +46,7 @@ The researchers first published their articles as a preprint on 22nd December 20
 
 DOI: [10.1101/gr.276407.121](https://doi.org/10.1101/gr.276407.121)
 
+<!-- cspell:disable-next-line -->
 Vaid, R., Mendez, A., Thombare, K., Burgos-Panadero, R., Robinot, R., Fonseca, B. F., Gandasi, N. R., Ringlander, J., Hassan Baig, M., Dong, J.-J., Cho, J. Y., Reinius, B., Chakrabarti, L. A., Nystrom, K., & Mondal, T. (2023). Global loss of cellular m6A RNA methylation following infection with different SARS-CoV-2 variants. In Genome Research (Vol. 33, Issue 3, pp. 299–313).
 
 #### Funding
