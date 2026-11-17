@@ -265,8 +265,7 @@
       "openAIRE",
       "KPIs",
       "publications",
-      "research outputs",
-     "monitoring",
+      "monitoring",
       "dashboard",
       "indicators",
       "research assessment",
@@ -275,7 +274,7 @@
     "name": "SciLifeLab Open Science Monitor",
     "description": "Provides a transparent, aggregated view of research outputs affiliated with, hosted by, or enabled through SciLifeLab infrastructures and services. Powered by the OpenAIRE Graph.",
     "maintained_by": "SciLifeLab Data Centre",
-    "thumbnail": "/img/open_science/initiatives/OS_Monitor.png",
+    "thumbnail": "/img/service_thumbnails/OS_Monitor.png",
     "url": "https://scilifelab.openaire.eu",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se"
