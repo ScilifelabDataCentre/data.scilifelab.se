@@ -31,7 +31,7 @@
     "support_email": "serve@scilifelab.se",
     "support_website": "https://serve.scilifelab.se/docs/",
     "support_status": "https://status.dc.scilifelab.se/795925203",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/8bcddb335945451ba3d1fb8232dd9d9b"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/e8444ab265244a8395e6371c08b9ddcf"
   },
   {
     "owner": [
@@ -61,6 +61,7 @@
     "support_email": "pathogens@scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/pathogens-portal/tree/develop",
     "support_status": "https://status.dc.scilifelab.se/793602036",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/626c55d4195d48eeba5e162dcedb2e0a",
     "data_source_type": [
       "Data source"
     ]
@@ -91,7 +92,7 @@
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "figshare@scilifelab.se",
     "support_website": "https://www.scilifelab.se/data-ai/repository",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/6b18d7f79f23464bb510e8dc06be6e6a",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/da378bda42c7406ca7ff848540930f8d",
     "data_source_type": [
       "Repository"
     ],
@@ -128,7 +129,7 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/de33e302931f40c3aa115e0a38549034"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/4af92d7f06474f2ea981cae75fcf733e"
   },
   {
     "owner": [
@@ -176,7 +177,7 @@
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602112",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/50c100ee5635434bae7f9315fa80235d"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/66752983ebb5475bab3babb4fe023b1c"
   },
   {
     "owner": [
@@ -199,7 +200,7 @@
     "url": "https://scilifelab.slack.com/",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/93ae57afd935431e8d06f1a8049ad93b"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/f9e7e8f358d44dbca491a3e6f7a18015"
   },
   {
     "owner": [
@@ -222,7 +223,7 @@
     "url": "https://scilifelab.drive.sunet.se/",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/d4402d5a18c847a39f48d4ee45c898f3"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/e64a883420944cf289b9549e97352e3c"
   },
   {
     "owner": [
@@ -248,7 +249,36 @@
     "support_email": "datacentre@scilifelab.se",
     "thumbnail": "/img/service_thumbnails/Publications.png",
     "support_status": "https://status.dc.scilifelab.se/793602106",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/50c100ee5635434bae7f9315fa80235d"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/66752983ebb5475bab3babb4fe023b1c"
+  },
+    {
+    "owner": [
+      "SciLifeLab Data Centre"
+    ],
+    "type": [
+      "Everyone"
+    ],
+    "search_tags": [
+      "Open Science",
+      "reporting",
+      "open science monitor",
+      "openAIRE",
+      "KPIs",
+      "publications",
+      "research outputs",
+     "monitoring",
+      "dashboard",
+      "indicators",
+      "research assessment",
+      "research outputs"
+    ],
+    "name": "SciLifeLab Open Science Monitor",
+    "description": "Provides a transparent, aggregated view of research outputs affiliated with, hosted by, or enabled through SciLifeLab infrastructures and services. Powered by the OpenAIRE Graph.",
+    "maintained_by": "SciLifeLab Data Centre",
+    "thumbnail": "/img/open_science/initiatives/OS_Monitor.png",
+    "url": "https://scilifelab.openaire.eu",
+    "maintained_by_url": "https://www.scilifelab.se/data-ai/",
+    "support_email": "datacentre@scilifelab.se"
   },
   {
     "owner": [
@@ -275,7 +305,8 @@
     "thumbnail_border": true,
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/2b3e469d772243238c4b597df5fbf6ad"
   },
   {
     "owner": [
@@ -342,7 +373,7 @@
     "support_website": "https://genomes.scilifelab.se",
     "support_github": "https://github.com/ScilifelabDataCentre/genome-portal",
     "support_status": "https://status.dc.scilifelab.se/797951599",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/57e5e8481d9f41508b5794ab9b9584ff"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/d3eb7c0a673a42d8876e5bfb720682eb"
   },
   {
     "owner": [
@@ -402,7 +433,8 @@
     "support_email": "data-management@scilifelab.se",
     "support_website": "https://rdm-guidelines.scilifelab.se/contact/",
     "support_github": "https://github.com/ScilifelabDataCentre/RDM-guidelines",
-    "support_status": "https://status.dc.scilifelab.se/793602117"
+    "support_status": "https://status.dc.scilifelab.se/793602117",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/172335d356b34327bde3c83d4637d2f7"
   },
   {
     "owner": [
@@ -430,7 +462,7 @@
     "thumbnail": "/img/service_thumbnails/Google_Workspace.png",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/203bf907e6e14b3c893a06b3234344d6"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/1ed1ced506bf45c88abfe459d2ad17d2"
   },
   {
     "owner": [
@@ -454,7 +486,7 @@
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793601941",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/d4402d5a18c847a39f48d4ee45c898f3"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/e64a883420944cf289b9549e97352e3c"
   },
   {
     "owner": [
@@ -549,7 +581,7 @@
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "delivery@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793448467",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/a523a9d4c7384687924d7f30317540b7"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/4ff722703cc54570a24dee02495dd396"
   },
   {
     "owner": [
@@ -574,7 +606,8 @@
     "maintained_by": "SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
-    "support_status": "https://status.dc.scilifelab.se/793602042"
+    "support_status": "https://status.dc.scilifelab.se/793602042",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/3f2afcc35b4040c8b5d74b9f5e0b34d0"
   },
   {
     "owner": [
@@ -600,7 +633,7 @@
     "maintained_by_url": "https://scilifelab.se/data",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602084",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/1a98ecb7be4c47d2ba84b7c839d3aabc"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/c743c213002743cb9cbb19927ecea3e8"
   },
   {
     "owner": [
@@ -626,7 +659,7 @@
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602088",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/1a98ecb7be4c47d2ba84b7c839d3aabc"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/c743c213002743cb9cbb19927ecea3e8"
   },
   {
     "owner": [
@@ -653,7 +686,7 @@
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "datacentre@scilifelab.se",
     "support_status": "https://status.dc.scilifelab.se/793602009",
-    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/2dd586604a5149ef985f8bd4ae2f819d"
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/af1f9581ccb442aeb7f4b2deaf356fd9"
   },
   {
     "owner": [
@@ -833,7 +866,8 @@
     "maintained_by": "NBIS, SciLifeLab Data Centre",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
     "support_email": "data-management@scilifelab.se",
-    "support_status": "https://status.dc.scilifelab.se/793602047"
+    "support_status": "https://status.dc.scilifelab.se/793602047",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/da2247968bae4b82adbcc0d665296d18"
   },
   {
     "owner": [
