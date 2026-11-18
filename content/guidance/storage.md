@@ -18,7 +18,7 @@ Individuals representing multiple compute and storage resources held an event on
 
 Most of the resources described on this page are national and do not require that individuals have a given affiliation in order to make use of the resources. However, this is not true for resources available at a given university. Universities often have storage resources that are available for use by their researchers. It is possible that the easiest way for you to gain access to storage resources is by applying to access those at your university. The IT department of your university should be able to provide information about the resources available and how to access them. Below are links to information about the storage resources at some universities (please note that these external links are maintained at the discretion of the information provider):
 
-- [Chalmers](https://www.chalmers.se/en/infrastructure/ecommons/compute-and-storage/)
+- [Chalmers](https://www.chalmers.se/en/research/infrastructure/ecommons/storage-and-data-management/)
 
 - [Gothenburg University (GU)](https://www.medarbetarportalen.gu.se/service-stod/hantering-av-forskningsdata/steg-3-lagra-forskningsdata/?languageId=100001&skipSSOCheck=true&referer=https%3A%2F%2Fwww.google.com%2F)
 
@@ -30,11 +30,11 @@ Most of the resources described on this page are national and do not require tha
 
 - [Linköping University (LiU)](https://ep.liu.se/en/datamanagement.aspx)
 
-- [Stockholm University (SU)](https://www.su.se/staff/researchers/research-data)
+- [Stockholm University (SU)](https://medarbetare.su.se/en/research/your-research/research-data)
 
 - [Uppsala University (UU)](https://www.uu.se/en/staff/gateway/research/research-data/store-data-and-collaborate/data-storage)
 
-- [Umeå University (UmU)](https://www.umu.se/en/library/research-data/)
+- [Umeå University (UmU)](https://www.umu.se/en/researcher/plan-and-implement/manage-research-data/)
 
 ### National Academic Infrastructure for Supercomputing in Sweden (NAISS)
 
@@ -48,7 +48,7 @@ SciLifeLab will provide access to storage resources at multiple locations across
 
 ### The European Open Science Cloud
 
-Information about EOSC storage services can be found in the [EOSC Portal](https://eosc-portal.eu/). The conditions for access and funding models differ across EOSC storage services, so users are encouraged to check these before applying for access.
+Information about EOSC storage services can be found in the [EOSC Portal](https://open-science-cloud.ec.europa.eu/). The conditions for access and funding models differ across EOSC storage services, so users are encouraged to check these before applying for access.
 
 ## Applying for resources via the SUPR Portal
 
