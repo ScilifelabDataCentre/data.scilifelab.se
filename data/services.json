@@ -277,7 +277,8 @@
     "thumbnail": "/img/service_thumbnails/OS_Monitor.png",
     "url": "https://scilifelab.openaire.eu",
     "maintained_by_url": "https://www.scilifelab.se/data-ai/",
-    "support_email": "datacentre@scilifelab.se"
+    "support_email": "datacentre@scilifelab.se",
+    "support_impact": "https://service-dashboard.dc.scilifelab.se/public-dashboards/5defb76591104460894c19c6361ce18b"
   },
   {
     "owner": [
