@@ -101,7 +101,7 @@
     "name": "SciLifeLab Open Science Monitor",
     "description": "A service that provides a transparent, aggregated view of research outputs affiliated with, hosted by, or enabled through SciLifeLab infrastructures and services. Powered by the OpenAIRE Graph.",
     "url": "https://scilifelab.openaire.eu",
-    "thumbnail": "/img/open_science/initiatives/OS_Monitor.png",
+    "thumbnail": "/img/open_science/initiatives/OS_monitor.png",
     "type": [
       "SciLifeLab initiative"
     ],
