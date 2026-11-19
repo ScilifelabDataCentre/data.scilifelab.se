@@ -29,7 +29,7 @@ jobs:
         run: npm ci --prefix .config/cspell --ignore-scripts
 
       - name: Run CSpell
-        uses: streetsidesoftware/cspell-action@v8
+        uses: streetsidesoftware/cspell-action@v9
         with: # See link at top of file for more configuration options
           files: '' # Include all file types (default)
           check_dot_files: true # Include dotfiles in spell check (incl. .config/, .github/, etc.)
