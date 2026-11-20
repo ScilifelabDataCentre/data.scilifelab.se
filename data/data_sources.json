@@ -8,6 +8,62 @@
     ],
     "search_tags": [
       "pathogens",
+      "COVID-19",
+      "biobank",
+      "SARS-CoV-2",
+      "metadata",
+      "sample"
+    ],
+    "name": "Swedish COVID-19 Sample Collection Database Archive",
+    "description": "Dataset contains archived metadata about the COVID-19 sample collections, a resource associated with the Swedish Pathogens Portal",
+    "thumbnail": "/img/data_sources_thumbs/pathogens.png",
+    "url": "https://doi.org/10.17044/scilifelab.35073844",
+    "data": [
+      "COVID-19",
+      "Pathogens"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Infectious Diseases"
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection"
+    ],
+    "search_tags": [
+      "pathogens",
+      "COVID-19",
+      "publications",
+      "SARS-CoV-2",
+      "data",
+      "visualisation"
+    ],
+    "name": "Swedish COVID-19 publications",
+    "description": "A manually curated dataset and visualisation, which is openly available in the SciLifeLab Data Repository.",
+    "thumbnail": "/img/data_sources_thumbs/pathogens.png",
+    "url": "https://doi.org/10.17044/scilifelab.14124014",
+    "data": [
+      "COVID-19",
+      "Pathogens"
+    ],
+    "thumbnail_border": true,
+    "disease_type": [
+      "Infectious Diseases"
+    ]
+  },
+  {
+    "type": [
+      "Data source"
+    ],
+    "ddls": [
+      "Epidemiology and Biology of Infection"
+    ],
+    "search_tags": [
+      "pathogens",
       "genome",
       "phylogenetic",
       "analysis tools",
