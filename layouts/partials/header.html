@@ -11,7 +11,7 @@
   </header>
 {{ else }}
   {{ $banner_page := . }}
-  {{ if or (eq .Section "news") (eq .Section "news") (eq .Section "authors") }}
+  {{ if eq .Section "news" }}
       {{ $banner_page = .Site.GetPage "section" "news" }}
   {{ else if and .Params.tab (not .IsSection) }}
       {{/* A tab page keeps its section title in the banner, so the banner stays the same across tabs */}}
