@@ -18,3 +18,7 @@ This site is developed and maintained by SciLifeLab Data Centre. Content is also
 The site is funded by the [SciLifeLab & Wallenberg National Program for Data-Driven Life Science (DDLS)](https://www.scilifelab.se/data-driven) and the [Swedish Foundation for Strategic Research (SSF)](https://strategiska.se/en/).
 
 Feedback on any part of the SciLifeLab Data Services site is always welcomed, and can be provided via the [contact page](/contact/).
+
+### History of the site
+
+This site was operated as the SciLifeLab Data Platform between June 2022 and December 2026. References to 'SciLifeLab Data Platform' remain on the site in content where deemed appropriate. This includes, for example, in news items and articles produces during the operation of the website under that name. 
