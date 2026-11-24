@@ -11,9 +11,7 @@
   </header>
 {{ else }}
   {{ $banner_page := . }}
-  {{ if or (eq .Section "highlights") (eq .Section "tags") (eq .Section "authors") }}
-      {{ $banner_page = .Site.GetPage "section" "highlights" }}
-  {{ else if eq .Section "news" }}
+  {{ if eq .Section "news" }}
       {{ $banner_page = .Site.GetPage "section" "news" }}
   {{ else if and .Params.tab (not .IsSection) }}
       {{/* A tab page keeps its section title in the banner, so the banner stays the same across tabs */}}
@@ -44,7 +42,6 @@
         {{ range $index, $ancestor := .Ancestors.Reverse }}
           <!-- Special case check for tags and author pages -->
           {{ if in (slice "Tags" "Authors") $ancestor.Title }}
-            <li class="breadcrumb-item"><a href="/highlights/">Data highlights</a>
             <li class="breadcrumb-item">{{ $ancestor.Title }}</li>
           {{ else }}
             <li class="breadcrumb-item"><a href="{{ $ancestor.RelPermalink }}">{{ $ancestor.Title }}</a></li>
